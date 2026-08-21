@@ -1,0 +1,25 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node / Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Secrets
+.env
+.env.*
+secrets/
+credentials/
+*.pem
+
+# Logs & Temporary Files
+*.log
+tmp/
+temp/
+
+# Build & Dist Outputs (Only unbundled temp files)
+# Note: Keep tracked src/ and dist/ releases
