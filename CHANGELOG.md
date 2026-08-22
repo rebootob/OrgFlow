@@ -1,5 +1,17 @@
 # CHANGELOG — ORGFLOW
 
+## [v0.9.11] - 2026-08-22
+
+### Added
+- **Phase 5E Canonical 7-State Workflow Architecture:** Defined and validated 7-state canonical path (`DRAFT` -> `SUBMITTED` -> `GM_REVIEW` -> `HR_REVIEW` -> `APPROVED` -> `SYSTEM_APPLY` -> `APPLIED`).
+- Implemented configurable approver model for `GM_REVIEW` and `HR_REVIEW` (Zero hardcoded usernames or mandatory department constraints).
+- Verified `SYSTEM_APPLY` transaction boundary enforcing 11 pre-checks before writing to App 792.
+- Built 20 unit regression tests covering all 7 states, cross-dept approvals, security guards, and failure abort gates (20/20 PASS).
+- Verified production apps remain 100% untouched (App 53: 275 records, Apps 791/792/793: 0 records).
+- Created workflow architecture documentation ([`PHASE_5E_FINAL_WORKFLOW_ARCHITECTURE.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/architecture/PHASE_5E_FINAL_WORKFLOW_ARCHITECTURE.md)).
+
+---
+
 ## [v0.9.8] - 2026-08-22
 
 ### Added
