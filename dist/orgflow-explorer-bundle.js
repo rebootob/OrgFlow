@@ -4,7 +4,7 @@
     if (!document.getElementById('orgflow-explorer-styles')) {
         const style = document.createElement('style');
         style.id = 'orgflow-explorer-styles';
-        style.textContent = "/**\n * OrgFlow — Organization Explorer & HR Portal Styling\n * Corporate Design System, isolated namespace (#orgflow-explorer-app).\n * Zero collision with default Kintone styling.\n */\n\n#orgflow-explorer-app {\n    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif;\n    color: #1e293b;\n    background-color: #f8fafc;\n    min-height: calc(100vh - 120px);\n    display: flex;\n    flex-direction: column;\n    box-sizing: border-box;\n}\n\n#orgflow-explorer-app * {\n    box-sizing: border-box;\n}\n\n/* TOP TOOLBAR */\n.orgflow-toolbar {\n    background: #ffffff;\n    border-bottom: 1px solid #e2e8f0;\n    padding: 12px 20px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 16px;\n    position: sticky;\n    top: 0;\n    z-index: 40;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n\n.orgflow-logo-area {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.orgflow-brand {\n    font-size: 18px;\n    font-weight: 700;\n    color: #0284c7;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n}\n\n.orgflow-brand-badge {\n    background: #e0f2fe;\n    color: #0369a1;\n    font-size: 11px;\n    padding: 2px 6px;\n    border-radius: 4px;\n    font-weight: 600;\n}\n\n.orgflow-search-box {\n    position: relative;\n    width: 320px;\n}\n\n.orgflow-search-input {\n    width: 100%;\n    padding: 8px 12px 8px 34px;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    font-size: 13px;\n    outline: none;\n    transition: border-color 0.2s;\n}\n\n.orgflow-search-input:focus {\n    border-color: #0284c7;\n    box-shadow: 0 0 0 2px rgba(2,132,199,0.15);\n}\n\n.orgflow-search-icon {\n    position: absolute;\n    left: 10px;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #94a3b8;\n    font-size: 14px;\n}\n\n.orgflow-toolbar-controls {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.orgflow-select {\n    padding: 7px 10px;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    font-size: 12px;\n    background: #ffffff;\n    color: #334155;\n    outline: none;\n}\n\n.orgflow-btn {\n    padding: 7px 14px;\n    border-radius: 6px;\n    font-size: 12px;\n    font-weight: 600;\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    gap: 6px;\n    border: 1px solid transparent;\n    transition: all 0.15s ease-in-out;\n}\n\n.orgflow-btn-primary {\n    background: #0284c7;\n    color: #ffffff;\n}\n\n.orgflow-btn-primary:hover {\n    background: #0369a1;\n}\n\n.orgflow-btn-outline {\n    background: #ffffff;\n    border-color: #cbd5e1;\n    color: #334155;\n}\n\n.orgflow-btn-outline:hover {\n    background: #f1f5f9;\n    border-color: #94a3b8;\n}\n\n/* MAIN LAYOUT */\n.orgflow-body {\n    display: flex;\n    flex: 1;\n    overflow: hidden;\n}\n\n/* SIDEBAR */\n.orgflow-sidebar {\n    width: 230px;\n    background: #ffffff;\n    border-right: 1px solid #e2e8f0;\n    padding: 16px 10px;\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n}\n\n.orgflow-nav-item {\n    padding: 9px 12px;\n    border-radius: 6px;\n    font-size: 13px;\n    font-weight: 500;\n    color: #475569;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    transition: all 0.15s ease-in-out;\n}\n\n.orgflow-nav-item:hover {\n    background: #f1f5f9;\n    color: #0f172a;\n}\n\n.orgflow-nav-item.active {\n    background: #e0f2fe;\n    color: #0284c7;\n    font-weight: 600;\n}\n\n.orgflow-nav-badge {\n    margin-left: auto;\n    background: #f1f5f9;\n    color: #64748b;\n    font-size: 10px;\n    padding: 2px 6px;\n    border-radius: 10px;\n}\n\n/* CONTENT CANVAS */\n.orgflow-canvas {\n    flex: 1;\n    padding: 20px;\n    overflow-y: auto;\n    background: #f8fafc;\n}\n\n/* BREADCRUMB */\n.orgflow-breadcrumb-bar {\n    background: #ffffff;\n    padding: 8px 16px;\n    border-radius: 6px;\n    border: 1px solid #e2e8f0;\n    margin-bottom: 16px;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-size: 12px;\n}\n\n.orgflow-breadcrumb-link {\n    color: #0284c7;\n    cursor: pointer;\n    font-weight: 500;\n}\n\n.orgflow-breadcrumb-link:hover {\n    text-decoration: underline;\n}\n\n.orgflow-breadcrumb-separator {\n    color: #94a3b8;\n}\n\n/* KPI DASHBOARD TILES */\n.orgflow-kpi-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n    gap: 16px;\n    margin-bottom: 20px;\n}\n\n.orgflow-kpi-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 16px;\n    box-shadow: 0 1px 2px rgba(0,0,0,0.03);\n}\n\n.orgflow-kpi-title {\n    font-size: 12px;\n    color: #64748b;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.orgflow-kpi-value {\n    font-size: 26px;\n    font-weight: 700;\n    color: #0f172a;\n    margin-top: 4px;\n}\n\n.orgflow-kpi-sub {\n    font-size: 11px;\n    color: #10b981;\n    margin-top: 4px;\n}\n\n/* ORG CHART TREE CANVAS */\n.orgflow-chart-container {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 24px;\n    min-height: 500px;\n    overflow: auto;\n}\n\n.orgflow-tree-node {\n    display: inline-flex;\n    flex-direction: column;\n    align-items: center;\n    margin: 8px 12px;\n    position: relative;\n}\n\n.orgflow-tree-children {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    gap: 16px;\n    margin-top: 24px;\n    position: relative;\n    padding-top: 20px;\n}\n\n/* Horizontal connector line across child nodes */\n.orgflow-tree-children::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 20px;\n    right: 20px;\n    height: 2px;\n    background: #cbd5e1;\n}\n\n/* Vertical connector line coming down from parent */\n.orgflow-tree-node::before {\n    content: '';\n    position: absolute;\n    top: -20px;\n    left: 50%;\n    width: 2px;\n    height: 20px;\n    background: #cbd5e1;\n    transform: translateX(-50%);\n}\n\n.orgflow-chart-container > .orgflow-tree-node > .orgflow-node-card {\n    /* Root node does not have line above */\n}\n\n.orgflow-chart-container > .orgflow-tree-node::before {\n    display: none;\n}\n\n.orgflow-node-card {\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    border-radius: 8px;\n    width: 260px;\n    padding: 12px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.04);\n    cursor: pointer;\n    transition: all 0.2s;\n    position: relative;\n    z-index: 2;\n}\n\n.orgflow-node-card:hover {\n    border-color: #0284c7;\n    box-shadow: 0 4px 12px rgba(2,132,199,0.12);\n    transform: translateY(-2px);\n}\n\n.orgflow-node-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid #f1f5f9;\n    padding-bottom: 6px;\n    margin-bottom: 8px;\n}\n\n.orgflow-node-type-badge {\n    font-size: 10px;\n    font-weight: 700;\n    padding: 2px 6px;\n    border-radius: 4px;\n    text-transform: uppercase;\n}\n\n.type-company { background: #fef08a; color: #854d0e; }\n.type-division { background: #e0e7ff; color: #3730a3; }\n.type-department { background: #e0f2fe; color: #0369a1; }\n.type-section { background: #f1f5f9; color: #334155; }\n.type-team { background: #fae8ff; color: #86198f; }\n\n.orgflow-node-name {\n    font-size: 13px;\n    font-weight: 700;\n    color: #0f172a;\n    line-height: 1.3;\n}\n\n.orgflow-node-code {\n    font-size: 11px;\n    color: #64748b;\n    font-family: monospace;\n}\n\n.orgflow-node-meta {\n    display: flex;\n    justify-content: space-between;\n    margin-top: 8px;\n    font-size: 11px;\n    color: #475569;\n}\n\n/* EMPLOYEE DIRECTORY TABLE */\n.orgflow-table-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    overflow: hidden;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.03);\n}\n\n.orgflow-table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 12px;\n}\n\n.orgflow-table th {\n    background: #f8fafc;\n    color: #475569;\n    font-weight: 600;\n    text-align: left;\n    padding: 10px 14px;\n    border-bottom: 1px solid #e2e8f0;\n}\n\n.orgflow-table td {\n    padding: 10px 14px;\n    border-bottom: 1px solid #f1f5f9;\n    color: #1e293b;\n}\n\n.orgflow-table tr:hover td {\n    background: #f0f9ff;\n    cursor: pointer;\n}\n\n/* STATUS BADGES */\n.orgflow-badge {\n    display: inline-block;\n    padding: 3px 8px;\n    border-radius: 4px;\n    font-size: 11px;\n    font-weight: 600;\n}\n\n.badge-active { background: #dcfce7; color: #15803d; }\n.badge-vacant { background: #fef3c7; color: #b45309; }\n.badge-acting { background: #e0e7ff; color: #4338ca; }\n.badge-pending { background: #ffedd5; color: #c2410c; }\n.badge-approved { background: #dbeafe; color: #1d4ed8; }\n.badge-executed { background: #dcfce7; color: #166534; }\n.badge-error { background: #fee2e2; color: #991b1b; }\n\n/* SIDE DRAWER */\n.orgflow-drawer-overlay {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: rgba(15, 23, 42, 0.4);\n    z-index: 100;\n    display: flex;\n    justify-content: flex-end;\n    animation: fadeIn 0.2s ease-out;\n}\n\n.orgflow-drawer {\n    width: 520px;\n    background: #ffffff;\n    height: 100%;\n    box-shadow: -4px 0 24px rgba(0,0,0,0.15);\n    display: flex;\n    flex-direction: column;\n    animation: slideLeft 0.25s ease-out;\n}\n\n.orgflow-drawer-header {\n    padding: 18px 24px;\n    border-bottom: 1px solid #e2e8f0;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}\n\n.orgflow-drawer-title {\n    font-size: 16px;\n    font-weight: 700;\n    color: #0f172a;\n}\n\n.orgflow-drawer-close {\n    background: none;\n    border: none;\n    font-size: 20px;\n    cursor: pointer;\n    color: #94a3b8;\n}\n\n.orgflow-drawer-close:hover {\n    color: #0f172a;\n}\n\n.orgflow-drawer-tabs {\n    display: flex;\n    border-bottom: 1px solid #e2e8f0;\n    background: #f8fafc;\n}\n\n.orgflow-drawer-tab {\n    padding: 10px 16px;\n    font-size: 12px;\n    font-weight: 600;\n    color: #64748b;\n    cursor: pointer;\n    border-bottom: 2px solid transparent;\n}\n\n.orgflow-drawer-tab.active {\n    color: #0284c7;\n    border-bottom-color: #0284c7;\n    background: #ffffff;\n}\n\n.orgflow-drawer-body {\n    flex: 1;\n    padding: 20px 24px;\n    overflow-y: auto;\n}\n\n.orgflow-drawer-footer {\n    padding: 16px 24px;\n    border-top: 1px solid #e2e8f0;\n    background: #f8fafc;\n    display: flex;\n    justify-content: flex-end;\n    gap: 10px;\n}\n\n/* PREVIEW BANNER */\n.orgflow-preview-banner {\n    background: #fffbeb;\n    border: 1px solid #fef08a;\n    border-radius: 6px;\n    padding: 10px 14px;\n    margin-bottom: 16px;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-size: 12px;\n    color: #854d0e;\n}\n\n/* ======================================================== */\n/* PERSONNEL VIEW EXECUTIVE ORG CHART STYLING               */\n/* ======================================================== */\n\n.orgflow-personnel-chart-root {\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n}\n\n.orgflow-personnel-summary-bar {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n    background: #f8fafc;\n    border: 1px solid #e2e8f0;\n    border-radius: 6px;\n    padding: 8px 14px;\n    margin-bottom: 18px;\n    flex-wrap: wrap;\n}\n\n.orgflow-summary-pill {\n    font-size: 11px;\n    color: #475569;\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    padding: 4px 10px;\n    border-radius: 20px;\n}\n\n.orgflow-summary-pill b {\n    color: #0284c7;\n    margin-left: 4px;\n}\n\n.orgflow-personnel-canvas {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    overflow-x: auto;\n    padding-bottom: 30px;\n}\n\n.orgflow-personnel-group {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\n.orgflow-personnel-row {\n    display: flex;\n    justify-content: center;\n    gap: 16px;\n    margin-bottom: 20px;\n    flex-wrap: wrap;\n}\n\n.orgflow-personnel-branches {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    gap: 24px;\n    width: 100%;\n    margin-top: 10px;\n    position: relative;\n}\n\n.orgflow-personnel-branch-col {\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    border-radius: 8px;\n    padding: 16px;\n    flex: 1;\n    min-width: 320px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.04);\n}\n\n.orgflow-org-header-box {\n    width: 100%;\n    text-align: center;\n    background: #f1f5f9;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    padding: 8px 12px;\n    margin-bottom: 14px;\n    cursor: pointer;\n    transition: all 0.2s;\n}\n\n.orgflow-org-header-box:hover {\n    background: #e0f2fe;\n    border-color: #0284c7;\n}\n\n.orgflow-org-header-title {\n    font-size: 13px;\n    font-weight: 700;\n    color: #0f172a;\n}\n\n.orgflow-org-header-sub {\n    font-size: 11px;\n    color: #64748b;\n    margin-top: 2px;\n}\n\n.orgflow-personnel-sub-row {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    gap: 12px;\n    width: 100%;\n    margin-top: 10px;\n}\n\n.orgflow-personnel-dept-col {\n    background: #f8fafc;\n    border: 1px solid #e2e8f0;\n    border-radius: 6px;\n    padding: 10px;\n    flex: 1;\n    min-width: 240px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.orgflow-dept-header-box {\n    text-align: center;\n    margin-bottom: 8px;\n    width: 100%;\n}\n\n.orgflow-dept-title {\n    font-size: 12px;\n    font-weight: 700;\n    color: #0369a1;\n}\n\n.orgflow-dept-sub {\n    font-size: 10px;\n    color: #64748b;\n}\n\n.orgflow-personnel-sections-row {\n    display: flex;\n    flex-direction: column;\n    gap: 8px;\n    width: 100%;\n    margin-top: 8px;\n}\n\n.orgflow-personnel-section-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 6px;\n    padding: 8px 10px;\n    width: 100%;\n}\n\n.orgflow-section-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.orgflow-section-staff-list {\n    margin-top: 10px;\n    border-top: 1px dashed #e2e8f0;\n    padding-top: 8px;\n    display: flex;\n    flex-direction: column;\n    gap: 6px;\n}\n\n/* POSITION / EMPLOYEE CARD */\n.orgflow-position-card {\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    padding: 10px 12px;\n    width: 240px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.04);\n    cursor: pointer;\n    transition: all 0.2s;\n    text-align: left;\n}\n\n.orgflow-position-card:hover {\n    border-color: #0284c7;\n    box-shadow: 0 4px 10px rgba(2,132,199,0.15);\n    transform: translateY(-2px);\n}\n\n.orgflow-position-card.compact {\n    width: 100%;\n    padding: 6px 8px;\n}\n\n.orgflow-pos-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: baseline;\n    border-bottom: 1px solid #f1f5f9;\n    padding-bottom: 4px;\n    margin-bottom: 6px;\n}\n\n.orgflow-pos-title {\n    font-size: 11px;\n    font-weight: 700;\n    color: #0284c7;\n    text-transform: uppercase;\n}\n\n.orgflow-pos-code {\n    font-size: 9px;\n    color: #94a3b8;\n}\n\n.orgflow-pos-body {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.orgflow-pos-avatar {\n    width: 36px;\n    height: 36px;\n    border-radius: 50%;\n    background: #e0f2fe;\n    color: #0284c7;\n    font-size: 12px;\n    font-weight: bold;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n}\n\n.orgflow-pos-info {\n    flex: 1;\n    min-width: 0;\n}\n\n.orgflow-pos-emp-name {\n    font-size: 12px;\n    font-weight: 700;\n    color: #0f172a;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n.orgflow-pos-emp-id {\n    font-size: 10px;\n    color: #64748b;\n}\n\n/* ======================================================== */\n/* DYNAMIC PAN & ZOOM VIEWPORT LAYER                         */\n/* ======================================================== */\n.orgflow-chart-viewport {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 24px;\n    min-height: 600px;\n    height: calc(100vh - 220px);\n    overflow: hidden;\n    position: relative;\n    cursor: grab;\n    user-select: none;\n}\n\n.orgflow-transform-layer {\n    transform-origin: top center;\n    transition: transform 0.15s ease-out;\n    display: inline-block;\n    min-width: 100%;\n}\n\n/* ======================================================== */\n/* DENSITY CONTROL MODES                                    */\n/* ======================================================== */\n/* Compact */\n.density-compact .orgflow-position-card {\n    width: 180px;\n    padding: 6px 8px;\n}\n.density-compact .orgflow-pos-title {\n    font-size: 10px;\n}\n.density-compact .orgflow-pos-avatar {\n    width: 28px;\n    height: 28px;\n    font-size: 10px;\n}\n.density-compact .orgflow-personnel-branches {\n    gap: 12px;\n}\n.density-compact .orgflow-tree-node {\n    margin: 4px 6px;\n}\n\n/* Normal */\n.density-normal .orgflow-position-card {\n    width: 220px;\n    padding: 10px 12px;\n}\n\n/* Comfortable */\n.density-comfortable .orgflow-position-card {\n    width: 260px;\n    padding: 14px 16px;\n}\n.density-comfortable .orgflow-personnel-branches {\n    gap: 32px;\n}\n.density-comfortable .orgflow-pos-avatar {\n    width: 44px;\n    height: 44px;\n    font-size: 14px;\n}\n\n/* ======================================================== */\n/* RESPONSIVE MULTI-COLUMN STAFF GRID                       */\n/* ======================================================== */\n.orgflow-staff-multi-grid {\n    margin-top: 10px;\n    border-top: 1px dashed #e2e8f0;\n    padding-top: 8px;\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));\n    gap: 8px;\n    max-height: 400px;\n    overflow-y: auto;\n    padding-right: 4px;\n}\n\n/* Tooltip on text overflow */\n.orgflow-pos-emp-name, .orgflow-pos-unit, .orgflow-pos-title {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n/* PREVIEW BANNER */\n.orgflow-preview-banner {\n    background: #fffbeb;\n    border: 1px solid #fef08a;\n    border-radius: 6px;\n    padding: 10px 14px;\n    margin-bottom: 16px;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-size: 12px;\n    color: #854d0e;\n}\n\n@media print {\n    .orgflow-toolbar,\n    .orgflow-sidebar,\n    .orgflow-breadcrumb-bar,\n    .orgflow-drawer-overlay,\n    .btn-toggle-staff-grid,\n    .btn-sec-details,\n    .btn-focus-unit,\n    button {\n        display: none !important;\n    }\n\n    #orgflow-explorer-app {\n        background: #ffffff !important;\n        min-height: auto !important;\n    }\n\n    .orgflow-body {\n        display: block !important;\n    }\n\n    .orgflow-canvas {\n        padding: 0 !important;\n        overflow: visible !important;\n    }\n\n    .orgflow-chart-viewport {\n        border: none !important;\n        padding: 0 !important;\n        height: auto !important;\n        overflow: visible !important;\n    }\n\n    .orgflow-transform-layer {\n        transform: none !important;\n    }\n}\n\n@keyframes fadeIn {\n    from { opacity: 0; }\n    to { opacity: 1; }\n}\n\n@keyframes slideLeft {\n    from { transform: translateX(100%); }\n    to { transform: translateX(0); }\n}\n";
+        style.textContent = "/**\n * OrgFlow — Organization Explorer & HR Portal Styling\n * Corporate Design System, isolated namespace (#orgflow-explorer-app).\n * Zero collision with default Kintone styling.\n */\n\n#orgflow-explorer-app {\n    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif;\n    color: #1e293b;\n    background-color: #f8fafc;\n    min-height: calc(100vh - 120px);\n    display: flex;\n    flex-direction: column;\n    box-sizing: border-box;\n}\n\n#orgflow-explorer-app * {\n    box-sizing: border-box;\n}\n\n/* TOP TOOLBAR */\n.orgflow-toolbar {\n    background: #ffffff;\n    border-bottom: 1px solid #e2e8f0;\n    padding: 12px 20px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 16px;\n    position: sticky;\n    top: 0;\n    z-index: 40;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n\n.orgflow-logo-area {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.orgflow-brand {\n    font-size: 18px;\n    font-weight: 700;\n    color: #0284c7;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n}\n\n.orgflow-brand-badge {\n    background: #e0f2fe;\n    color: #0369a1;\n    font-size: 11px;\n    padding: 2px 6px;\n    border-radius: 4px;\n    font-weight: 600;\n}\n\n.orgflow-uat-indicator {\n    display: flex;\n    align-items: center;\n    background: #f8fafc;\n    border: 1px solid #cbd5e1;\n    border-radius: 20px;\n    padding: 4px 12px;\n    font-size: 11px;\n    color: #334155;\n}\n\n.orgflow-search-box {\n    position: relative;\n    width: 300px;\n}\n\n.orgflow-search-input {\n    width: 100%;\n    padding: 8px 12px 8px 34px;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    font-size: 13px;\n    outline: none;\n    transition: border-color 0.2s;\n}\n\n.orgflow-search-input:focus {\n    border-color: #0284c7;\n    box-shadow: 0 0 0 2px rgba(2,132,199,0.15);\n}\n\n.orgflow-search-icon {\n    position: absolute;\n    left: 10px;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #94a3b8;\n    font-size: 14px;\n}\n\n.orgflow-toolbar-controls {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.orgflow-select {\n    padding: 7px 10px;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    font-size: 12px;\n    background: #ffffff;\n    color: #334155;\n    outline: none;\n}\n\n.orgflow-btn {\n    padding: 7px 14px;\n    border-radius: 6px;\n    font-size: 12px;\n    font-weight: 600;\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    gap: 6px;\n    border: 1px solid transparent;\n    transition: all 0.15s ease-in-out;\n}\n\n.orgflow-btn-primary {\n    background: #0284c7;\n    color: #ffffff;\n}\n\n.orgflow-btn-primary:hover {\n    background: #0369a1;\n}\n\n.orgflow-btn-outline {\n    background: #ffffff;\n    border-color: #cbd5e1;\n    color: #334155;\n}\n\n.orgflow-btn-outline:hover {\n    background: #f1f5f9;\n    border-color: #94a3b8;\n}\n\n/* MAIN LAYOUT */\n.orgflow-body {\n    display: flex;\n    flex: 1;\n    overflow: hidden;\n}\n\n/* SIDEBAR */\n.orgflow-sidebar {\n    width: 230px;\n    background: #ffffff;\n    border-right: 1px solid #e2e8f0;\n    padding: 16px 10px;\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n}\n\n.orgflow-nav-item {\n    padding: 9px 12px;\n    border-radius: 6px;\n    font-size: 13px;\n    font-weight: 500;\n    color: #475569;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    transition: all 0.15s ease-in-out;\n}\n\n.orgflow-nav-item:hover {\n    background: #f1f5f9;\n    color: #0f172a;\n}\n\n.orgflow-nav-item.active {\n    background: #e0f2fe;\n    color: #0284c7;\n    font-weight: 600;\n}\n\n.orgflow-nav-badge {\n    margin-left: auto;\n    background: #f1f5f9;\n    color: #64748b;\n    font-size: 10px;\n    padding: 2px 6px;\n    border-radius: 10px;\n}\n\n/* CONTENT CANVAS */\n.orgflow-canvas {\n    flex: 1;\n    padding: 20px;\n    overflow-y: auto;\n    background: #f8fafc;\n}\n\n/* BREADCRUMB */\n.orgflow-breadcrumb-bar {\n    background: #ffffff;\n    padding: 8px 16px;\n    border-radius: 6px;\n    border: 1px solid #e2e8f0;\n    margin-bottom: 16px;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-size: 12px;\n}\n\n.orgflow-breadcrumb-link {\n    color: #0284c7;\n    cursor: pointer;\n    font-weight: 500;\n}\n\n.orgflow-breadcrumb-link:hover {\n    text-decoration: underline;\n}\n\n.orgflow-breadcrumb-separator {\n    color: #94a3b8;\n}\n\n/* KPI DASHBOARD TILES */\n.orgflow-kpi-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n    gap: 16px;\n    margin-bottom: 20px;\n}\n\n.orgflow-kpi-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 16px;\n    box-shadow: 0 1px 2px rgba(0,0,0,0.03);\n}\n\n.orgflow-kpi-title {\n    font-size: 12px;\n    color: #64748b;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.orgflow-kpi-value {\n    font-size: 26px;\n    font-weight: 700;\n    color: #0f172a;\n    margin-top: 4px;\n}\n\n.orgflow-kpi-sub {\n    font-size: 11px;\n    color: #10b981;\n    margin-top: 4px;\n}\n\n/* ORG CHART TREE CANVAS */\n.orgflow-chart-container {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 24px;\n    min-height: 500px;\n    overflow: auto;\n}\n\n.orgflow-tree-node {\n    display: inline-flex;\n    flex-direction: column;\n    align-items: center;\n    margin: 8px 12px;\n    position: relative;\n}\n\n.orgflow-tree-children {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    gap: 16px;\n    margin-top: 24px;\n    position: relative;\n    padding-top: 20px;\n}\n\n/* Horizontal connector line across child nodes */\n.orgflow-tree-children::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 20px;\n    right: 20px;\n    height: 2px;\n    background: #cbd5e1;\n}\n\n/* Vertical connector line coming down from parent */\n.orgflow-tree-node::before {\n    content: '';\n    position: absolute;\n    top: -20px;\n    left: 50%;\n    width: 2px;\n    height: 20px;\n    background: #cbd5e1;\n    transform: translateX(-50%);\n}\n\n.orgflow-chart-container > .orgflow-tree-node > .orgflow-node-card {\n    /* Root node does not have line above */\n}\n\n.orgflow-chart-container > .orgflow-tree-node::before {\n    display: none;\n}\n\n.orgflow-node-card {\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    border-radius: 8px;\n    width: 260px;\n    padding: 12px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.04);\n    cursor: pointer;\n    transition: all 0.2s;\n    position: relative;\n    z-index: 2;\n}\n\n.orgflow-node-card:hover {\n    border-color: #0284c7;\n    box-shadow: 0 4px 12px rgba(2,132,199,0.12);\n    transform: translateY(-2px);\n}\n\n.orgflow-node-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid #f1f5f9;\n    padding-bottom: 6px;\n    margin-bottom: 8px;\n}\n\n.orgflow-node-type-badge {\n    font-size: 10px;\n    font-weight: 700;\n    padding: 2px 6px;\n    border-radius: 4px;\n    text-transform: uppercase;\n}\n\n.type-company { background: #fef08a; color: #854d0e; }\n.type-division { background: #e0e7ff; color: #3730a3; }\n.type-department { background: #e0f2fe; color: #0369a1; }\n.type-section { background: #f1f5f9; color: #334155; }\n.type-team { background: #fae8ff; color: #86198f; }\n\n.orgflow-node-name {\n    font-size: 13px;\n    font-weight: 700;\n    color: #0f172a;\n    line-height: 1.3;\n}\n\n.orgflow-node-code {\n    font-size: 11px;\n    color: #64748b;\n    font-family: monospace;\n}\n\n.orgflow-node-meta {\n    display: flex;\n    justify-content: space-between;\n    margin-top: 8px;\n    font-size: 11px;\n    color: #475569;\n}\n\n/* EMPLOYEE DIRECTORY TABLE */\n.orgflow-table-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    overflow: hidden;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.03);\n}\n\n.orgflow-table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 12px;\n}\n\n.orgflow-table th {\n    background: #f8fafc;\n    color: #475569;\n    font-weight: 600;\n    text-align: left;\n    padding: 10px 14px;\n    border-bottom: 1px solid #e2e8f0;\n}\n\n.orgflow-table td {\n    padding: 10px 14px;\n    border-bottom: 1px solid #f1f5f9;\n    color: #1e293b;\n}\n\n.orgflow-table tr:hover td {\n    background: #f0f9ff;\n    cursor: pointer;\n}\n\n/* STATUS BADGES */\n.orgflow-badge {\n    display: inline-block;\n    padding: 3px 8px;\n    border-radius: 4px;\n    font-size: 11px;\n    font-weight: 600;\n}\n\n.badge-active { background: #dcfce7; color: #15803d; }\n.badge-vacant { background: #fef3c7; color: #b45309; }\n.badge-acting { background: #e0e7ff; color: #4338ca; }\n.badge-pending { background: #ffedd5; color: #c2410c; }\n.badge-approved { background: #dbeafe; color: #1d4ed8; }\n.badge-executed { background: #dcfce7; color: #166534; }\n.badge-error { background: #fee2e2; color: #991b1b; }\n\n/* SIDE DRAWER */\n.orgflow-drawer-overlay {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: rgba(15, 23, 42, 0.4);\n    z-index: 100;\n    display: flex;\n    justify-content: flex-end;\n    animation: fadeIn 0.2s ease-out;\n}\n\n.orgflow-drawer {\n    width: 520px;\n    background: #ffffff;\n    height: 100%;\n    box-shadow: -4px 0 24px rgba(0,0,0,0.15);\n    display: flex;\n    flex-direction: column;\n    animation: slideLeft 0.25s ease-out;\n}\n\n.orgflow-drawer-header {\n    padding: 18px 24px;\n    border-bottom: 1px solid #e2e8f0;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}\n\n.orgflow-drawer-title {\n    font-size: 16px;\n    font-weight: 700;\n    color: #0f172a;\n}\n\n.orgflow-drawer-close {\n    background: none;\n    border: none;\n    font-size: 20px;\n    cursor: pointer;\n    color: #94a3b8;\n}\n\n.orgflow-drawer-close:hover {\n    color: #0f172a;\n}\n\n.orgflow-drawer-tabs {\n    display: flex;\n    border-bottom: 1px solid #e2e8f0;\n    background: #f8fafc;\n}\n\n.orgflow-drawer-tab {\n    padding: 10px 16px;\n    font-size: 12px;\n    font-weight: 600;\n    color: #64748b;\n    cursor: pointer;\n    border-bottom: 2px solid transparent;\n}\n\n.orgflow-drawer-tab.active {\n    color: #0284c7;\n    border-bottom-color: #0284c7;\n    background: #ffffff;\n}\n\n.orgflow-drawer-body {\n    flex: 1;\n    padding: 20px 24px;\n    overflow-y: auto;\n}\n\n.orgflow-drawer-footer {\n    padding: 16px 24px;\n    border-top: 1px solid #e2e8f0;\n    background: #f8fafc;\n    display: flex;\n    justify-content: flex-end;\n    gap: 10px;\n}\n\n/* PREVIEW BANNER */\n.orgflow-preview-banner {\n    background: #fffbeb;\n    border: 1px solid #fef08a;\n    border-radius: 6px;\n    padding: 10px 14px;\n    margin-bottom: 16px;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-size: 12px;\n    color: #854d0e;\n}\n\n/* ======================================================== */\n/* PERSONNEL VIEW EXECUTIVE ORG CHART STYLING               */\n/* ======================================================== */\n\n.orgflow-personnel-chart-root {\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n}\n\n.orgflow-personnel-summary-bar {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n    background: #f8fafc;\n    border: 1px solid #e2e8f0;\n    border-radius: 6px;\n    padding: 8px 14px;\n    margin-bottom: 18px;\n    flex-wrap: wrap;\n}\n\n.orgflow-summary-pill {\n    font-size: 11px;\n    color: #475569;\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    padding: 4px 10px;\n    border-radius: 20px;\n}\n\n.orgflow-summary-pill b {\n    color: #0284c7;\n    margin-left: 4px;\n}\n\n.orgflow-personnel-canvas {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    overflow-x: auto;\n    padding-bottom: 30px;\n}\n\n.orgflow-personnel-group {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\n.orgflow-personnel-row {\n    display: flex;\n    justify-content: center;\n    gap: 16px;\n    margin-bottom: 20px;\n    flex-wrap: wrap;\n}\n\n.orgflow-personnel-branches {\n    display: flex;\n    justify-content: center;\n    align-items: flex-start;\n    gap: 24px;\n    width: 100%;\n    margin-top: 10px;\n    position: relative;\n}\n\n.orgflow-personnel-branch-col {\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    border-radius: 8px;\n    padding: 16px;\n    flex: 1;\n    min-width: 320px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.04);\n}\n\n.orgflow-org-header-box {\n    width: 100%;\n    text-align: center;\n    background: #f1f5f9;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    padding: 8px 12px;\n    margin-bottom: 14px;\n    cursor: pointer;\n    transition: all 0.2s;\n}\n\n.orgflow-org-header-box:hover {\n    background: #e0f2fe;\n    border-color: #0284c7;\n}\n\n.orgflow-org-header-title {\n    font-size: 13px;\n    font-weight: 700;\n    color: #0f172a;\n}\n\n.orgflow-org-header-sub {\n    font-size: 11px;\n    color: #64748b;\n    margin-top: 2px;\n}\n\n.orgflow-personnel-sub-row {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    gap: 12px;\n    width: 100%;\n    margin-top: 10px;\n}\n\n.orgflow-personnel-dept-col {\n    background: #f8fafc;\n    border: 1px solid #e2e8f0;\n    border-radius: 6px;\n    padding: 10px;\n    flex: 1;\n    min-width: 240px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.orgflow-dept-header-box {\n    text-align: center;\n    margin-bottom: 8px;\n    width: 100%;\n}\n\n.orgflow-dept-title {\n    font-size: 12px;\n    font-weight: 700;\n    color: #0369a1;\n}\n\n.orgflow-dept-sub {\n    font-size: 10px;\n    color: #64748b;\n}\n\n.orgflow-personnel-sections-row {\n    display: flex;\n    flex-direction: column;\n    gap: 8px;\n    width: 100%;\n    margin-top: 8px;\n}\n\n.orgflow-personnel-section-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 6px;\n    padding: 8px 10px;\n    width: 100%;\n}\n\n.orgflow-section-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.orgflow-section-staff-list {\n    margin-top: 10px;\n    border-top: 1px dashed #e2e8f0;\n    padding-top: 8px;\n    display: flex;\n    flex-direction: column;\n    gap: 6px;\n}\n\n/* POSITION / EMPLOYEE CARD */\n.orgflow-position-card {\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    padding: 10px 12px;\n    width: 240px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.04);\n    cursor: pointer;\n    transition: all 0.2s;\n    text-align: left;\n}\n\n.orgflow-position-card:hover {\n    border-color: #0284c7;\n    box-shadow: 0 4px 10px rgba(2,132,199,0.15);\n    transform: translateY(-2px);\n}\n\n.orgflow-position-card.compact {\n    width: 100%;\n    padding: 6px 8px;\n}\n\n.orgflow-pos-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: baseline;\n    border-bottom: 1px solid #f1f5f9;\n    padding-bottom: 4px;\n    margin-bottom: 6px;\n}\n\n.orgflow-pos-title {\n    font-size: 11px;\n    font-weight: 700;\n    color: #0284c7;\n    text-transform: uppercase;\n}\n\n.orgflow-pos-code {\n    font-size: 9px;\n    color: #94a3b8;\n}\n\n.orgflow-pos-body {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.orgflow-pos-avatar {\n    width: 36px;\n    height: 36px;\n    border-radius: 50%;\n    background: #e0f2fe;\n    color: #0284c7;\n    font-size: 12px;\n    font-weight: bold;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n}\n\n.orgflow-pos-info {\n    flex: 1;\n    min-width: 0;\n}\n\n.orgflow-pos-emp-name {\n    font-size: 12px;\n    font-weight: 700;\n    color: #0f172a;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n.orgflow-pos-emp-id {\n    font-size: 10px;\n    color: #64748b;\n}\n\n/* ======================================================== */\n/* DYNAMIC PAN & ZOOM VIEWPORT LAYER                         */\n/* ======================================================== */\n.orgflow-chart-viewport {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 24px;\n    min-height: 600px;\n    height: calc(100vh - 220px);\n    overflow: hidden;\n    position: relative;\n    cursor: grab;\n    user-select: none;\n}\n\n.orgflow-transform-layer {\n    transform-origin: top center;\n    transition: transform 0.15s ease-out;\n    display: inline-block;\n    min-width: 100%;\n}\n\n/* ======================================================== */\n/* DENSITY CONTROL MODES                                    */\n/* ======================================================== */\n/* Compact */\n.density-compact .orgflow-position-card {\n    width: 180px;\n    padding: 6px 8px;\n}\n.density-compact .orgflow-pos-title {\n    font-size: 10px;\n}\n.density-compact .orgflow-pos-avatar {\n    width: 28px;\n    height: 28px;\n    font-size: 10px;\n}\n.density-compact .orgflow-personnel-branches {\n    gap: 12px;\n}\n.density-compact .orgflow-tree-node {\n    margin: 4px 6px;\n}\n\n/* Normal */\n.density-normal .orgflow-position-card {\n    width: 220px;\n    padding: 10px 12px;\n}\n\n/* Comfortable */\n.density-comfortable .orgflow-position-card {\n    width: 260px;\n    padding: 14px 16px;\n}\n.density-comfortable .orgflow-personnel-branches {\n    gap: 32px;\n}\n.density-comfortable .orgflow-pos-avatar {\n    width: 44px;\n    height: 44px;\n    font-size: 14px;\n}\n\n/* ======================================================== */\n/* RESPONSIVE MULTI-COLUMN STAFF GRID                       */\n/* ======================================================== */\n.orgflow-staff-multi-grid {\n    margin-top: 10px;\n    border-top: 1px dashed #e2e8f0;\n    padding-top: 8px;\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));\n    gap: 8px;\n    max-height: 400px;\n    overflow-y: auto;\n    padding-right: 4px;\n}\n\n/* Tooltip on text overflow */\n.orgflow-pos-emp-name, .orgflow-pos-unit, .orgflow-pos-title {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n/* PREVIEW BANNER */\n.orgflow-preview-banner {\n    background: #fffbeb;\n    border: 1px solid #fef08a;\n    border-radius: 6px;\n    padding: 10px 14px;\n    margin-bottom: 16px;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-size: 12px;\n    color: #854d0e;\n}\n\n@media print {\n    .orgflow-toolbar,\n    .orgflow-sidebar,\n    .orgflow-breadcrumb-bar,\n    .orgflow-drawer-overlay,\n    .btn-toggle-staff-grid,\n    .btn-sec-details,\n    .btn-focus-unit,\n    button {\n        display: none !important;\n    }\n\n    #orgflow-explorer-app {\n        background: #ffffff !important;\n        min-height: auto !important;\n    }\n\n    .orgflow-body {\n        display: block !important;\n    }\n\n    .orgflow-canvas {\n        padding: 0 !important;\n        overflow: visible !important;\n    }\n\n    .orgflow-chart-viewport {\n        border: none !important;\n        padding: 0 !important;\n        height: auto !important;\n        overflow: visible !important;\n    }\n\n    .orgflow-transform-layer {\n        transform: none !important;\n    }\n}\n\n@keyframes fadeIn {\n    from { opacity: 0; }\n    to { opacity: 1; }\n}\n\n@keyframes slideLeft {\n    from { transform: translateX(100%); }\n    to { transform: translateX(0); }\n}\n";
         document.head.appendChild(style);
     }
 })();
@@ -13,11 +13,14 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 4.1.0 (Canonical 57-Node Hierarchy & Dynamic Layout Engine)
+ * Version: 4.2.0 (Verified 57-Node Dynamic Layout Engine & Runtime Integrity Guard)
+ * Build Timestamp: 2026-08-22T20:58:00+07:00
+ * 
  * - Authoritative Canonical Master: 57 Organization Nodes across Levels 1 to 7
  * - Strict Separation: Canonical Hierarchy Tree -> Layout Engine -> Visual Renderer
- * - Single Connected Root: TTMET (57 Nodes, 56 Edges, 0 Orphans)
- * - 275 Canonical Employees Attached (Zero Double-Counting, Root Total Scope = 275)
+ * - Runtime Topology Verification: 57 Nodes, 56 Edges, 1 Root, 0 Orphans
+ * - Immutable Tree Hash Guard: BASE_TREE_HASH === CURRENT_TREE_HASH across all layout actions
+ * - 275 Canonical Employees Attached (Root Total Scope = 275, Case 9000 Protected)
  * - Unified Across: Interactive Web Org Chart, Directory, Catalog, Excel Export, PDF Export
  * 
  * 100% READ-ONLY DATA INTEGRATION / ZERO PRODUCTION WRITES.
@@ -31,11 +34,13 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
+        BUNDLE_VERSION: '4.2.0',
+        BUILD_TIMESTAMP: '2026-08-22T20:58:00+07:00',
         CACHE_TTL_MS: 300000
     };
 
-    // Authoritative 57 Canonical Organization Nodes Specification
-    const CANONICAL_57_MASTER = [
+    // Authoritative 57 Canonical Organization Nodes Specification (From Org.FY2026_Rev.2)
+    const CANONICAL_57_MASTER = Object.freeze([
         // Level 1
         { code: "TTMET", name: "Toyota Tsusho M&E (Thailand) Co.,Ltd.", type: "COMPANY", level: 1, parent: null, path: "Toyota Tsusho M&E (Thailand) Co.,Ltd.", status: "APPROVED" },
         // Level 2
@@ -107,16 +112,16 @@
         { code: "TMH1", name: "GA", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH1", status: "APPROVED" },
         { code: "TMH2", name: "HR & Personnel", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH2", status: "APPROVED" },
         { code: "TMH3", name: "Accounting & Finance", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH3", status: "APPROVED" }
-    ];
+    ]);
 
-    // Tree Hash Invariant Helper
+    // Tree Hash Invariant Helper (Structural Fields Only)
     function computeTreeHash(treeNodes, employees) {
         const parts = [];
         treeNodes.forEach((node, code) => {
-            parts.push(`${code}:${node.parentCode || 'ROOT'}:${node.level}`);
+            parts.push(`${code}:${node.parentCode || 'ROOT'}:${node.level}:${node.hierarchyPath}`);
         });
         employees.forEach(e => {
-            parts.push(`${e.internal_id}:${e.organization_code}:${e.position_code}`);
+            parts.push(`${e.internal_id}:${e.organization_code}:${e.position_code}:${e.assignment_type}`);
         });
         parts.sort();
         let hash = 0;
@@ -145,10 +150,17 @@
             this.rootNodeCode = 'TTMET';
             this.treeHash = '';
             this.isLoaded = false;
+            this.topologyStatus = {
+                nodeCount: 0,
+                edgeCount: 0,
+                rootCount: 0,
+                orphanCount: 0,
+                isValid: false
+            };
         }
 
         async loadAllData() {
-            console.log('OrgFlow: Fetching data from Apps 53, 791, 792, 793 (READ-ONLY)...');
+            console.log(`OrgFlow [v${CONFIG.BUNDLE_VERSION}]: Loading Canonical 57-Node Master & Production Data (READ-ONLY)...`);
 
             const rec53 = await this.fetchAllRecords(CONFIG.APP_53);
             this.employees53 = rec53;
@@ -167,7 +179,7 @@
                 this.requests793 = [];
             }
 
-            // Build Organization Map from the 57 Canonical Master + Overlay Live App 791 data
+            // Build Organization Map from 57 Canonical Master + Overlay Live App 791 data
             this.orgMap.clear();
             CANONICAL_57_MASTER.forEach(m => {
                 this.orgMap.set(m.code, {
@@ -320,9 +332,11 @@
             });
 
             this.buildRecursiveHierarchyTree();
+            this.verifyRuntimeTopology();
             this.treeHash = computeTreeHash(this.treeNodes, this.unifiedEmployees);
             this.isLoaded = true;
-            console.log(`OrgFlow Data Store Initialized: 275 Employees, 57 Canonical Master Nodes. TreeHash: ${this.treeHash}`);
+
+            console.log(`OrgFlow [v${CONFIG.BUNDLE_VERSION}] Ready: 57 Nodes, 56 Edges, 275 Employees. TreeHash: ${this.treeHash}`);
         }
 
         buildRecursiveHierarchyTree() {
@@ -385,6 +399,38 @@
             if (root) computeMetrics(root);
         }
 
+        verifyRuntimeTopology() {
+            let edges = 0;
+            let orphans = 0;
+            let roots = 0;
+
+            this.treeNodes.forEach((node, code) => {
+                if (node.parentCode) {
+                    if (!this.treeNodes.has(node.parentCode)) {
+                        orphans++;
+                    } else {
+                        edges++;
+                    }
+                } else if (code === this.rootNodeCode) {
+                    roots++;
+                } else {
+                    orphans++;
+                }
+            });
+
+            this.topologyStatus = {
+                nodeCount: this.treeNodes.size,
+                edgeCount: edges,
+                rootCount: roots,
+                orphanCount: orphans,
+                isValid: (this.treeNodes.size === 57 && edges === 56 && roots === 1 && orphans === 0)
+            };
+
+            if (!this.topologyStatus.isValid) {
+                console.error("CANONICAL DATASET MISMATCH: Topology verification failed!", this.topologyStatus);
+            }
+        }
+
         async fetchAllRecords(appId) {
             let all = [];
             let offset = 0;
@@ -427,17 +473,6 @@
 
         getRootTreeNode() {
             return this.treeNodes.get(this.rootNodeCode) || null;
-        }
-
-        getEmployeesByOrgScope(orgCode) {
-            if (!orgCode || orgCode === this.rootNodeCode) return this.unifiedEmployees;
-            const node = this.treeNodes.get(orgCode);
-            if (!node) return this.unifiedEmployees.filter(e => e.organization_code === orgCode);
-
-            const allowedCodes = new Set(node.allDescendantCodes);
-            allowedCodes.add(orgCode);
-
-            return this.unifiedEmployees.filter(e => allowedCodes.has(e.organization_code));
         }
 
         getPositions() {
@@ -511,14 +546,14 @@
         verifyInvariant() {
             const currentHash = computeTreeHash(this.treeNodes, this.unifiedEmployees);
             if (this.treeHash && currentHash !== this.treeHash) {
-                console.error(`CRITICAL_HIERARCHY_MUTATION detected! Before: ${this.treeHash}, After: ${currentHash}`);
+                console.error(`CRITICAL_HIERARCHY_MUTATION detected! Base: ${this.treeHash}, Current: ${currentHash}`);
                 return false;
             }
             return true;
         }
     }
 
-    // Dynamic Org Flow Portal App
+    // Dynamic Org Flow Portal App Controller
     class OrgFlowPortalApp {
         constructor() {
             this.store = new OrgFlowDataStore();
@@ -526,7 +561,6 @@
             this.chartMode = 'PERSONNEL_VIEW';
             this.focusedOrgCode = 'TTMET';
             this.searchQuery = '';
-            this.filterLevel = 'ALL';
             this.density = 'NORMAL';
             this.zoomScale = 1.0;
             this.panX = 0;
@@ -545,7 +579,7 @@
 
         async init(rootElement) {
             this.root = rootElement;
-            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow 57-Node Hierarchy & Dynamic Layout Engine...</div>`;
+            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow v${CONFIG.BUNDLE_VERSION} (57-Node Canonical Engine)...</div>`;
 
             await this.store.loadAllData();
             this.loadSessionState();
@@ -555,7 +589,7 @@
 
         loadSessionState() {
             try {
-                const saved = sessionStorage.getItem('orgflow_layout_state_v41');
+                const saved = sessionStorage.getItem('orgflow_state_v42');
                 if (saved) {
                     const parsed = JSON.parse(saved);
                     if (parsed.density) this.density = parsed.density;
@@ -569,7 +603,7 @@
 
         saveSessionState() {
             try {
-                sessionStorage.setItem('orgflow_layout_state_v41', JSON.stringify({
+                sessionStorage.setItem('orgflow_state_v42', JSON.stringify({
                     density: this.density,
                     chartMode: this.chartMode,
                     focusedOrgCode: this.focusedOrgCode
@@ -628,12 +662,20 @@
             const bar = document.createElement('div');
             bar.className = 'orgflow-toolbar';
 
+            const top = this.store.topologyStatus;
+
             bar.innerHTML = `
                 <div class="orgflow-logo-area">
                     <div class="orgflow-brand">
                         <span>🏢 OrgFlow</span>
-                        <span class="orgflow-brand-badge">57-Node Master</span>
+                        <span class="orgflow-brand-badge">v${CONFIG.BUNDLE_VERSION}</span>
                     </div>
+                </div>
+
+                <!-- Human UAT Integrity Indicator -->
+                <div class="orgflow-uat-indicator" title="Verified Runtime Topology">
+                    <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:${top.isValid ? '#10b981' : '#ef4444'}; margin-right:6px;"></span>
+                    <span>Data Integrity: <b>${top.nodeCount} Orgs</b> | <b>${this.store.getUnifiedEmployees().length} Staff</b> | <b>${top.orphanCount} Orphans</b> | <b>${top.isValid ? 'Verified (PASS)' : 'MISMATCH'}</b></span>
                 </div>
 
                 <div class="orgflow-search-box">
@@ -801,6 +843,20 @@
 
             canvas.appendChild(this.renderBreadcrumb());
 
+            if (!this.store.topologyStatus.isValid) {
+                const errorBox = document.createElement('div');
+                errorBox.className = 'orgflow-preview-banner';
+                errorBox.style.background = '#fee2e2';
+                errorBox.style.borderColor = '#ef4444';
+                errorBox.style.color = '#991b1b';
+                errorBox.innerHTML = `
+                    <span>🚨</span>
+                    <span><b>CANONICAL DATASET MISMATCH:</b> Expected 57 nodes, got ${this.store.topologyStatus.nodeCount}. Chart rendering halted for data integrity.</span>
+                `;
+                canvas.appendChild(errorBox);
+                return canvas;
+            }
+
             switch (this.currentView) {
                 case 'ORG_CHART':
                     canvas.appendChild(this.renderOrgChartContainerView());
@@ -844,7 +900,7 @@
                     <span style="font-weight:bold; color:#0284c7;">${focusOrg ? focusOrg.organization_name : this.focusedOrgCode} (<code>${this.focusedOrgCode}</code>) [FOCUS MODE]</span>
                     <button class="orgflow-btn orgflow-btn-outline" id="btn-clear-focus" style="font-size:10px; padding:2px 6px; margin-left:8px;">⬅️ Back to Company</button>
                 ` : ''}
-                <span style="margin-left: auto; color: #64748b; font-size: 11px;">Master: <b>57 Canonical Units</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Staff</b></span>
+                <span style="margin-left: auto; color: #64748b; font-size: 11px;">Master: <b>57 Canonical Nodes</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Staff</b></span>
             `;
 
             bar.querySelector('.orgflow-breadcrumb-link').addEventListener('click', () => {

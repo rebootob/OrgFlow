@@ -57,9 +57,20 @@
     font-weight: 600;
 }
 
+.orgflow-uat-indicator {
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    color: #334155;
+}
+
 .orgflow-search-box {
     position: relative;
-    width: 320px;
+    width: 300px;
 }
 
 .orgflow-search-input {

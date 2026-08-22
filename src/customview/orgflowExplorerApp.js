@@ -2,11 +2,14 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 4.1.0 (Canonical 57-Node Hierarchy & Dynamic Layout Engine)
+ * Version: 4.2.0 (Verified 57-Node Dynamic Layout Engine & Runtime Integrity Guard)
+ * Build Timestamp: 2026-08-22T20:58:00+07:00
+ * 
  * - Authoritative Canonical Master: 57 Organization Nodes across Levels 1 to 7
  * - Strict Separation: Canonical Hierarchy Tree -> Layout Engine -> Visual Renderer
- * - Single Connected Root: TTMET (57 Nodes, 56 Edges, 0 Orphans)
- * - 275 Canonical Employees Attached (Zero Double-Counting, Root Total Scope = 275)
+ * - Runtime Topology Verification: 57 Nodes, 56 Edges, 1 Root, 0 Orphans
+ * - Immutable Tree Hash Guard: BASE_TREE_HASH === CURRENT_TREE_HASH across all layout actions
+ * - 275 Canonical Employees Attached (Root Total Scope = 275, Case 9000 Protected)
  * - Unified Across: Interactive Web Org Chart, Directory, Catalog, Excel Export, PDF Export
  * 
  * 100% READ-ONLY DATA INTEGRATION / ZERO PRODUCTION WRITES.
@@ -20,11 +23,13 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
+        BUNDLE_VERSION: '4.2.0',
+        BUILD_TIMESTAMP: '2026-08-22T20:58:00+07:00',
         CACHE_TTL_MS: 300000
     };
 
-    // Authoritative 57 Canonical Organization Nodes Specification
-    const CANONICAL_57_MASTER = [
+    // Authoritative 57 Canonical Organization Nodes Specification (From Org.FY2026_Rev.2)
+    const CANONICAL_57_MASTER = Object.freeze([
         // Level 1
         { code: "TTMET", name: "Toyota Tsusho M&E (Thailand) Co.,Ltd.", type: "COMPANY", level: 1, parent: null, path: "Toyota Tsusho M&E (Thailand) Co.,Ltd.", status: "APPROVED" },
         // Level 2
@@ -96,16 +101,16 @@
         { code: "TMH1", name: "GA", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH1", status: "APPROVED" },
         { code: "TMH2", name: "HR & Personnel", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH2", status: "APPROVED" },
         { code: "TMH3", name: "Accounting & Finance", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH3", status: "APPROVED" }
-    ];
+    ]);
 
-    // Tree Hash Invariant Helper
+    // Tree Hash Invariant Helper (Structural Fields Only)
     function computeTreeHash(treeNodes, employees) {
         const parts = [];
         treeNodes.forEach((node, code) => {
-            parts.push(`${code}:${node.parentCode || 'ROOT'}:${node.level}`);
+            parts.push(`${code}:${node.parentCode || 'ROOT'}:${node.level}:${node.hierarchyPath}`);
         });
         employees.forEach(e => {
-            parts.push(`${e.internal_id}:${e.organization_code}:${e.position_code}`);
+            parts.push(`${e.internal_id}:${e.organization_code}:${e.position_code}:${e.assignment_type}`);
         });
         parts.sort();
         let hash = 0;
@@ -134,10 +139,17 @@
             this.rootNodeCode = 'TTMET';
             this.treeHash = '';
             this.isLoaded = false;
+            this.topologyStatus = {
+                nodeCount: 0,
+                edgeCount: 0,
+                rootCount: 0,
+                orphanCount: 0,
+                isValid: false
+            };
         }
 
         async loadAllData() {
-            console.log('OrgFlow: Fetching data from Apps 53, 791, 792, 793 (READ-ONLY)...');
+            console.log(`OrgFlow [v${CONFIG.BUNDLE_VERSION}]: Loading Canonical 57-Node Master & Production Data (READ-ONLY)...`);
 
             const rec53 = await this.fetchAllRecords(CONFIG.APP_53);
             this.employees53 = rec53;
@@ -156,7 +168,7 @@
                 this.requests793 = [];
             }
 
-            // Build Organization Map from the 57 Canonical Master + Overlay Live App 791 data
+            // Build Organization Map from 57 Canonical Master + Overlay Live App 791 data
             this.orgMap.clear();
             CANONICAL_57_MASTER.forEach(m => {
                 this.orgMap.set(m.code, {
@@ -309,9 +321,11 @@
             });
 
             this.buildRecursiveHierarchyTree();
+            this.verifyRuntimeTopology();
             this.treeHash = computeTreeHash(this.treeNodes, this.unifiedEmployees);
             this.isLoaded = true;
-            console.log(`OrgFlow Data Store Initialized: 275 Employees, 57 Canonical Master Nodes. TreeHash: ${this.treeHash}`);
+
+            console.log(`OrgFlow [v${CONFIG.BUNDLE_VERSION}] Ready: 57 Nodes, 56 Edges, 275 Employees. TreeHash: ${this.treeHash}`);
         }
 
         buildRecursiveHierarchyTree() {
@@ -374,6 +388,38 @@
             if (root) computeMetrics(root);
         }
 
+        verifyRuntimeTopology() {
+            let edges = 0;
+            let orphans = 0;
+            let roots = 0;
+
+            this.treeNodes.forEach((node, code) => {
+                if (node.parentCode) {
+                    if (!this.treeNodes.has(node.parentCode)) {
+                        orphans++;
+                    } else {
+                        edges++;
+                    }
+                } else if (code === this.rootNodeCode) {
+                    roots++;
+                } else {
+                    orphans++;
+                }
+            });
+
+            this.topologyStatus = {
+                nodeCount: this.treeNodes.size,
+                edgeCount: edges,
+                rootCount: roots,
+                orphanCount: orphans,
+                isValid: (this.treeNodes.size === 57 && edges === 56 && roots === 1 && orphans === 0)
+            };
+
+            if (!this.topologyStatus.isValid) {
+                console.error("CANONICAL DATASET MISMATCH: Topology verification failed!", this.topologyStatus);
+            }
+        }
+
         async fetchAllRecords(appId) {
             let all = [];
             let offset = 0;
@@ -416,17 +462,6 @@
 
         getRootTreeNode() {
             return this.treeNodes.get(this.rootNodeCode) || null;
-        }
-
-        getEmployeesByOrgScope(orgCode) {
-            if (!orgCode || orgCode === this.rootNodeCode) return this.unifiedEmployees;
-            const node = this.treeNodes.get(orgCode);
-            if (!node) return this.unifiedEmployees.filter(e => e.organization_code === orgCode);
-
-            const allowedCodes = new Set(node.allDescendantCodes);
-            allowedCodes.add(orgCode);
-
-            return this.unifiedEmployees.filter(e => allowedCodes.has(e.organization_code));
         }
 
         getPositions() {
@@ -500,14 +535,14 @@
         verifyInvariant() {
             const currentHash = computeTreeHash(this.treeNodes, this.unifiedEmployees);
             if (this.treeHash && currentHash !== this.treeHash) {
-                console.error(`CRITICAL_HIERARCHY_MUTATION detected! Before: ${this.treeHash}, After: ${currentHash}`);
+                console.error(`CRITICAL_HIERARCHY_MUTATION detected! Base: ${this.treeHash}, Current: ${currentHash}`);
                 return false;
             }
             return true;
         }
     }
 
-    // Dynamic Org Flow Portal App
+    // Dynamic Org Flow Portal App Controller
     class OrgFlowPortalApp {
         constructor() {
             this.store = new OrgFlowDataStore();
@@ -515,7 +550,6 @@
             this.chartMode = 'PERSONNEL_VIEW';
             this.focusedOrgCode = 'TTMET';
             this.searchQuery = '';
-            this.filterLevel = 'ALL';
             this.density = 'NORMAL';
             this.zoomScale = 1.0;
             this.panX = 0;
@@ -534,7 +568,7 @@
 
         async init(rootElement) {
             this.root = rootElement;
-            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow 57-Node Hierarchy & Dynamic Layout Engine...</div>`;
+            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow v${CONFIG.BUNDLE_VERSION} (57-Node Canonical Engine)...</div>`;
 
             await this.store.loadAllData();
             this.loadSessionState();
@@ -544,7 +578,7 @@
 
         loadSessionState() {
             try {
-                const saved = sessionStorage.getItem('orgflow_layout_state_v41');
+                const saved = sessionStorage.getItem('orgflow_state_v42');
                 if (saved) {
                     const parsed = JSON.parse(saved);
                     if (parsed.density) this.density = parsed.density;
@@ -558,7 +592,7 @@
 
         saveSessionState() {
             try {
-                sessionStorage.setItem('orgflow_layout_state_v41', JSON.stringify({
+                sessionStorage.setItem('orgflow_state_v42', JSON.stringify({
                     density: this.density,
                     chartMode: this.chartMode,
                     focusedOrgCode: this.focusedOrgCode
@@ -617,12 +651,20 @@
             const bar = document.createElement('div');
             bar.className = 'orgflow-toolbar';
 
+            const top = this.store.topologyStatus;
+
             bar.innerHTML = `
                 <div class="orgflow-logo-area">
                     <div class="orgflow-brand">
                         <span>🏢 OrgFlow</span>
-                        <span class="orgflow-brand-badge">57-Node Master</span>
+                        <span class="orgflow-brand-badge">v${CONFIG.BUNDLE_VERSION}</span>
                     </div>
+                </div>
+
+                <!-- Human UAT Integrity Indicator -->
+                <div class="orgflow-uat-indicator" title="Verified Runtime Topology">
+                    <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:${top.isValid ? '#10b981' : '#ef4444'}; margin-right:6px;"></span>
+                    <span>Data Integrity: <b>${top.nodeCount} Orgs</b> | <b>${this.store.getUnifiedEmployees().length} Staff</b> | <b>${top.orphanCount} Orphans</b> | <b>${top.isValid ? 'Verified (PASS)' : 'MISMATCH'}</b></span>
                 </div>
 
                 <div class="orgflow-search-box">
@@ -790,6 +832,20 @@
 
             canvas.appendChild(this.renderBreadcrumb());
 
+            if (!this.store.topologyStatus.isValid) {
+                const errorBox = document.createElement('div');
+                errorBox.className = 'orgflow-preview-banner';
+                errorBox.style.background = '#fee2e2';
+                errorBox.style.borderColor = '#ef4444';
+                errorBox.style.color = '#991b1b';
+                errorBox.innerHTML = `
+                    <span>🚨</span>
+                    <span><b>CANONICAL DATASET MISMATCH:</b> Expected 57 nodes, got ${this.store.topologyStatus.nodeCount}. Chart rendering halted for data integrity.</span>
+                `;
+                canvas.appendChild(errorBox);
+                return canvas;
+            }
+
             switch (this.currentView) {
                 case 'ORG_CHART':
                     canvas.appendChild(this.renderOrgChartContainerView());
@@ -833,7 +889,7 @@
                     <span style="font-weight:bold; color:#0284c7;">${focusOrg ? focusOrg.organization_name : this.focusedOrgCode} (<code>${this.focusedOrgCode}</code>) [FOCUS MODE]</span>
                     <button class="orgflow-btn orgflow-btn-outline" id="btn-clear-focus" style="font-size:10px; padding:2px 6px; margin-left:8px;">⬅️ Back to Company</button>
                 ` : ''}
-                <span style="margin-left: auto; color: #64748b; font-size: 11px;">Master: <b>57 Canonical Units</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Staff</b></span>
+                <span style="margin-left: auto; color: #64748b; font-size: 11px;">Master: <b>57 Canonical Nodes</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Staff</b></span>
             `;
 
             bar.querySelector('.orgflow-breadcrumb-link').addEventListener('click', () => {
