@@ -1,0 +1,42 @@
+{
+  "app53_record_count": 275,
+  "unique_record_ids": 275,
+  "unique_employee_numbers": 274,
+  "current_renderer_unique_keys": 274,
+  "collision_confirmed": "YES",
+  "collision_employee_number": "9000",
+  "collision_record_ids": [
+    390,
+    382
+  ],
+  "collision_details": [
+    {
+      "record_id": 390,
+      "internal_id": "ORG-APP53-390",
+      "employee_number_raw": "9000",
+      "employee_number_type": "STRING",
+      "has_leading_zero": false,
+      "name_th": "",
+      "name_en": "Tomita",
+      "raw_position": "",
+      "department": "",
+      "status": ""
+    },
+    {
+      "record_id": 382,
+      "internal_id": "ORG-APP53-382",
+      "employee_number_raw": "9000",
+      "employee_number_type": "STRING",
+      "has_leading_zero": false,
+      "name_th": "",
+      "name_en": "PANU",
+      "raw_position": "DESIGN ENGINEER ASSISTANT MANAGER",
+      "department": "",
+      "status": ""
+    }
+  ],
+  "root_cause": "Map key collision in client-side data store on employee_number '9000' (Tomita vs PANU)",
+  "synthetic_internal_id_safe": "YES",
+  "app792_migration_impact": "LOW",
+  "phase_3_ready": "YES"
+}
