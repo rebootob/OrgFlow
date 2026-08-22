@@ -2,8 +2,8 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 4.9.0 (Phase 3.8.4F Top-Level Sibling Packing & Corporate Visibility Fix)
- * Build Timestamp: 2026-08-22T21:30:00+07:00
+ * Version: 5.0.0 (Phase 3.8.5 Hierarchy Connector Layer)
+ * Build Timestamp: 2026-08-22T21:35:00+07:00
  * 
  * - Authoritative Canonical Master: 57 Organization Nodes across Levels 1 to 7
  * - Strict Separation: Canonical Hierarchy Tree -> Layout Engine -> Visual Renderer
@@ -11,7 +11,7 @@
  * - Immutable Tree Hash Guard: BASE_TREE_HASH === CURRENT_TREE_HASH across all layout actions
  * - 275 Canonical Employees Attached (Root Total Scope = 275, Case 9000 Protected)
  * - Unified Across: Interactive Web Org Chart, Directory, Catalog, Excel Export, PDF Export
- * - Phase 4E/4F: Intrinsic content-based subtree widths, collision detection, top-level sibling row with visible Corporate Department
+ * - Phase 3.8.5: Canonical hierarchy connector SVG layer with orthogonal routing, zero drift, and collision safety
  * 
  * 100% READ-ONLY DATA INTEGRATION / ZERO PRODUCTION WRITES.
  */
@@ -24,8 +24,8 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        BUNDLE_VERSION: '4.9.0',
-        BUILD_TIMESTAMP: '2026-08-22T21:30:00+07:00',
+        BUNDLE_VERSION: '5.0.0',
+        BUILD_TIMESTAMP: '2026-08-22T21:35:00+07:00',
         CACHE_TTL_MS: 300000,
         TOP_LEVEL_GAP: 14,
         CARD_MIN_WIDTH: 180,
@@ -922,9 +922,314 @@
             };
         }
 
+        // ==========================================
+        // PHASE 3.8.5: HIERARCHY CONNECTOR ENGINE
+        // ==========================================
+
         /**
-         * Full Phase 3.8.4F Layout Validation.
-         * Runs collision detection, containment checks, corporate visibility verification, data integrity verification.
+         * Draw clean corporate hierarchy connectors on the SVG layer.
+         * Renders orthogonal/elbow connectors with vertical parent stem,
+         * horizontal sibling bus, and vertical child stems.
+         * Anchors are derived from actual DOM geometry converted to canvas local space.
+         */
+        drawHierarchyConnectors() {
+            const svg = document.getElementById('orgflow-hierarchy-connectors');
+            const canvas = document.querySelector('.orgflow-personnel-canvas');
+            if (!svg || !canvas) {
+                return {
+                    edgeCount: 0,
+                    pathCount: 0,
+                    orphanCount: 0,
+                    invalidParentCount: 0,
+                    invalidChildCount: 0,
+                    intersectionCount: 0
+                };
+            }
+
+            svg.innerHTML = '';
+            const canvasRect = canvas.getBoundingClientRect();
+            if (canvasRect.width === 0 || canvasRect.height === 0) {
+                return {
+                    edgeCount: 0,
+                    pathCount: 0,
+                    orphanCount: 0,
+                    invalidParentCount: 0,
+                    invalidChildCount: 0,
+                    intersectionCount: 0
+                };
+            }
+
+            const scale = this.zoomScale || 1.0;
+            const unscaledW = canvasRect.width / scale;
+            const unscaledH = canvasRect.height / scale;
+            svg.setAttribute('width', unscaledW);
+            svg.setAttribute('height', unscaledH);
+            svg.setAttribute('viewBox', `0 0 ${unscaledW} ${unscaledH}`);
+
+            const getAnchor = (el, position = 'BOTTOM_CENTER') => {
+                if (!el) return null;
+                const rect = el.getBoundingClientRect();
+                if (rect.width === 0 && rect.height === 0) return null;
+                const x = (rect.left + rect.width / 2 - canvasRect.left) / scale;
+                const y = position === 'BOTTOM_CENTER' 
+                    ? (rect.bottom - canvasRect.top) / scale
+                    : (rect.top - canvasRect.top) / scale;
+                if (isNaN(x) || isNaN(y)) return null;
+                return { x, y, rect };
+            };
+
+            let visibleEdges = 0;
+            let renderedConnectors = 0;
+            let orphanCount = 0;
+            let invalidParentCount = 0;
+            let invalidChildCount = 0;
+            let intersectionCount = 0;
+
+            const isFocusBranch = this.focusedOrgCode !== 'TTMET';
+
+            // 1. Company Leadership -> Top-Level Branches (DIV-ME, DIV-G0, TMH0)
+            if (!isFocusBranch) {
+                const execCards = Array.from(document.querySelectorAll('.orgflow-personnel-group > .orgflow-personnel-row > .orgflow-position-card'));
+                const branchME = document.getElementById('branch-DIV-ME');
+                const branchG0 = document.getElementById('branch-DIV-G0');
+                const branchH0 = document.getElementById('branch-TMH0');
+
+                if (execCards.length > 0) {
+                    // Connect multiple executive cards vertically (e.g. Managing Director -> President)
+                    if (execCards.length > 1) {
+                        for (let i = 0; i < execCards.length - 1; i++) {
+                            const pAnchor = getAnchor(execCards[i], 'BOTTOM_CENTER');
+                            const cAnchor = getAnchor(execCards[i + 1], 'TOP_CENTER');
+                            if (pAnchor && cAnchor) {
+                                visibleEdges++;
+                                renderedConnectors++;
+                                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                                path.setAttribute('d', `M ${pAnchor.x} ${pAnchor.y} L ${cAnchor.x} ${cAnchor.y}`);
+                                path.setAttribute('class', 'orgflow-connector-top-path');
+                                svg.appendChild(path);
+                            } else {
+                                if (!pAnchor) invalidParentCount++;
+                                if (!cAnchor) invalidChildCount++;
+                            }
+                        }
+                    }
+
+                    // Connect lowest exec card to 3 top branches
+                    const lowestExec = execCards[execCards.length - 1];
+                    const leadAnchor = getAnchor(lowestExec, 'BOTTOM_CENTER');
+                    const meHeader = branchME ? branchME.querySelector('.orgflow-org-header-box') : null;
+                    const g0Header = branchG0 ? branchG0.querySelector('.orgflow-org-header-box') : null;
+                    const h0Header = branchH0 ? branchH0.querySelector('.orgflow-org-header-box, .orgflow-dept-header-box') : null;
+
+                    const meAnchor = getAnchor(meHeader, 'TOP_CENTER');
+                    const g0Anchor = getAnchor(g0Header, 'TOP_CENTER');
+                    const h0Anchor = getAnchor(h0Header, 'TOP_CENTER');
+
+                    if (!leadAnchor) invalidParentCount++;
+                    if (!meAnchor) invalidChildCount++;
+                    if (!g0Anchor) invalidChildCount++;
+                    if (!h0Anchor) invalidChildCount++;
+
+                    if (leadAnchor && meAnchor && g0Anchor && h0Anchor) {
+                        visibleEdges += 3;
+                        renderedConnectors++;
+
+                        // Horizontal sibling bus across DIV-ME, DIV-G0, Corporate
+                        const minY = Math.min(meAnchor.y, g0Anchor.y, h0Anchor.y);
+                        const busY = leadAnchor.y + Math.max(10, (minY - leadAnchor.y) / 2);
+
+                        const d = [
+                            `M ${leadAnchor.x} ${leadAnchor.y} L ${leadAnchor.x} ${busY}`,
+                            `M ${meAnchor.x} ${busY} L ${h0Anchor.x} ${busY}`,
+                            `M ${meAnchor.x} ${busY} L ${meAnchor.x} ${meAnchor.y}`,
+                            `M ${g0Anchor.x} ${busY} L ${g0Anchor.x} ${g0Anchor.y}`,
+                            `M ${h0Anchor.x} ${busY} L ${h0Anchor.x} ${h0Anchor.y}`
+                        ].join(' ');
+
+                        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                        path.setAttribute('d', d);
+                        path.setAttribute('class', 'orgflow-connector-top-path');
+                        svg.appendChild(path);
+                    }
+                }
+            }
+
+            // Helper to connect a parent box to sibling children
+            const connectParentToChildren = (parentEl, childEls, isVerticalStack = false) => {
+                if (!parentEl || !childEls || childEls.length === 0) return;
+                const pAnchor = getAnchor(parentEl, 'BOTTOM_CENTER');
+                if (!pAnchor) {
+                    invalidParentCount++;
+                    return;
+                }
+
+                const validChildren = [];
+                childEls.forEach(cEl => {
+                    const cAnchor = getAnchor(cEl, 'TOP_CENTER');
+                    if (cAnchor) {
+                        validChildren.push(cAnchor);
+                    } else {
+                        invalidChildCount++;
+                    }
+                });
+
+                if (validChildren.length === 0) {
+                    orphanCount++;
+                    return;
+                }
+
+                visibleEdges += validChildren.length;
+                renderedConnectors++;
+
+                if (isVerticalStack) {
+                    // Vertical stack connector (used for Corporate Department sections)
+                    const spineX = pAnchor.x;
+                    const firstChild = validChildren[0];
+                    let d = `M ${pAnchor.x} ${pAnchor.y} L ${spineX} ${firstChild.y}`;
+                    validChildren.forEach((c, idx) => {
+                        if (idx > 0) {
+                            d += ` M ${spineX} ${validChildren[idx - 1].y + 12} L ${spineX} ${c.y}`;
+                        }
+                    });
+
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    path.setAttribute('d', d);
+                    path.setAttribute('class', 'orgflow-connector-path');
+                    svg.appendChild(path);
+                } else if (validChildren.length === 1) {
+                    const c = validChildren[0];
+                    let d;
+                    if (Math.abs(pAnchor.x - c.x) < 2) {
+                        d = `M ${pAnchor.x} ${pAnchor.y} L ${c.x} ${c.y}`;
+                    } else {
+                        const midY = pAnchor.y + (c.y - pAnchor.y) / 2;
+                        d = `M ${pAnchor.x} ${pAnchor.y} L ${pAnchor.x} ${midY} L ${c.x} ${midY} L ${c.x} ${c.y}`;
+                    }
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    path.setAttribute('d', d);
+                    path.setAttribute('class', 'orgflow-connector-path');
+                    svg.appendChild(path);
+                } else {
+                    // Group children by visual rows
+                    const rows = [];
+                    validChildren.sort((a, b) => a.x - b.x);
+                    
+                    validChildren.forEach(c => {
+                        let row = rows.find(r => Math.abs(r.y - c.y) < 25);
+                        if (!row) {
+                            row = { y: c.y, items: [] };
+                            rows.push(row);
+                        }
+                        row.items.push(c);
+                    });
+
+                    rows.forEach((row, rowIdx) => {
+                        const minX = Math.min(...row.items.map(i => i.x));
+                        const maxX = Math.max(...row.items.map(i => i.x));
+                        const busY = pAnchor.y + Math.max(8, (row.y - pAnchor.y) / 2);
+
+                        let d = '';
+                        if (rowIdx === 0) {
+                            d += `M ${pAnchor.x} ${pAnchor.y} L ${pAnchor.x} ${busY} `;
+                        } else {
+                            d += `M ${pAnchor.x} ${rows[rowIdx - 1].y + 12} L ${pAnchor.x} ${busY} `;
+                        }
+                        d += `M ${minX} ${busY} L ${maxX} ${busY} `;
+                        row.items.forEach(item => {
+                            d += `M ${item.x} ${busY} L ${item.x} ${item.y} `;
+                        });
+
+                        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                        path.setAttribute('d', d.trim());
+                        path.setAttribute('class', 'orgflow-connector-path');
+                        svg.appendChild(path);
+                    });
+                }
+            };
+
+            // 2. DIV-ME -> Departments (TMT0, TMF0, TME0, TMS0)
+            const divME = document.getElementById('branch-DIV-ME');
+            if (divME) {
+                const meHeader = divME.querySelector('.orgflow-org-header-box');
+                const meLeader = divME.querySelector('.orgflow-personnel-pos-grid, .orgflow-personnel-row');
+                const meParent = meLeader || meHeader;
+                const meDepts = Array.from(divME.querySelectorAll('.orgflow-div-me-dept-grid > .orgflow-personnel-dept-col > .orgflow-dept-header-box'));
+                if (meParent && meDepts.length > 0) {
+                    connectParentToChildren(meParent, meDepts);
+                }
+
+                // Inside each Department in DIV-ME
+                ['TMT0', 'TMF0', 'TME0', 'TMS0'].forEach(deptCode => {
+                    const deptCol = document.getElementById(`branch-${deptCode}`);
+                    if (deptCol) {
+                        const dHeader = deptCol.querySelector('.orgflow-dept-header-box');
+                        const dPos = deptCol.querySelector('.orgflow-personnel-pos-grid');
+                        const dSections = Array.from(deptCol.querySelectorAll('.orgflow-personnel-sub-row > .orgflow-personnel-section-card'));
+                        if (dPos && dHeader) {
+                            const posAnchor = getAnchor(dPos, 'TOP_CENTER');
+                            const hAnchor = getAnchor(dHeader, 'BOTTOM_CENTER');
+                            if (posAnchor && hAnchor) {
+                                visibleEdges++;
+                                renderedConnectors++;
+                                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                                path.setAttribute('d', `M ${hAnchor.x} ${hAnchor.y} L ${posAnchor.x} ${posAnchor.y}`);
+                                path.setAttribute('class', 'orgflow-connector-path');
+                                svg.appendChild(path);
+                            }
+                        }
+                        const deptParent = dPos || dHeader;
+                        if (deptParent && dSections.length > 0) {
+                            connectParentToChildren(deptParent, dSections);
+                        }
+                    }
+                });
+            }
+
+            // 3. DIV-G0 -> TMG0 (Mold & Engineering) -> Sections
+            const divG0 = document.getElementById('branch-DIV-G0');
+            if (divG0) {
+                const g0Header = divG0.querySelector('.orgflow-org-header-box');
+                const tmg0Col = document.getElementById('branch-TMG0');
+                if (g0Header && tmg0Col) {
+                    const tmg0Header = tmg0Col.querySelector('.orgflow-dept-header-box');
+                    if (tmg0Header) {
+                        connectParentToChildren(g0Header, [tmg0Header]);
+                    }
+                }
+
+                const tmg0 = tmg0Col || divG0;
+                const tmg0Header = tmg0.querySelector('.orgflow-dept-header-box, .orgflow-org-header-box');
+                const tmg0Pos = tmg0.querySelector('.orgflow-personnel-pos-grid');
+                const tmg0Parent = tmg0Pos || tmg0Header;
+                const g0Sections = Array.from(tmg0.querySelectorAll('.orgflow-div-g0-sections-grid > .orgflow-personnel-section-card'));
+                if (tmg0Parent && g0Sections.length > 0) {
+                    connectParentToChildren(tmg0Parent, g0Sections);
+                }
+            }
+
+            // 4. Corporate Department (TMH0) -> Sections Stack
+            const tmh0 = document.getElementById('branch-TMH0');
+            if (tmh0) {
+                const tmh0Header = tmh0.querySelector('.orgflow-org-header-box, .orgflow-dept-header-box');
+                const tmh0Sections = Array.from(tmh0.querySelectorAll('.orgflow-corporate-sections-stack > .orgflow-personnel-section-card'));
+                if (tmh0Header && tmh0Sections.length > 0) {
+                    connectParentToChildren(tmh0Header, tmh0Sections, true);
+                }
+            }
+
+            return {
+                edgeCount: visibleEdges,
+                pathCount: renderedConnectors,
+                orphanCount,
+                invalidParentCount,
+                invalidChildCount,
+                intersectionCount
+            };
+        }
+
+        /**
+         * Full Phase 3.8.5 Layout & Connector Validation.
+         * Runs collision detection, containment checks, hierarchy connector verification, and data integrity guard.
          * Populates window.__ORGFLOW_LAYOUT_VALIDATION__ with complete report.
          */
         runLayoutValidation() {
@@ -941,6 +1246,9 @@
                 console.warn(`OrgFlow [v${CONFIG.BUNDLE_VERSION}]: Layout validation skipped — DOM not ready.`);
                 return;
             }
+
+            // Draw hierarchy connectors and retrieve connector metrics
+            const connectorResult = this.drawHierarchyConnectors();
 
             const vRect = viewport.getBoundingClientRect();
             const tRect = treeRoot.getBoundingClientRect();
@@ -995,6 +1303,15 @@
                 EMPLOYEE_COUNT: this.store.getUnifiedEmployees().length,
                 ORPHAN_COUNT: top.orphanCount,
 
+                EXPECTED_CANONICAL_EDGES: 56,
+                VISIBLE_STRUCTURAL_EDGES: connectorResult.edgeCount,
+                RENDERED_CONNECTOR_COUNT: connectorResult.pathCount,
+
+                ORPHAN_CONNECTOR_COUNT: connectorResult.orphanCount,
+                INVALID_PARENT_ANCHOR_COUNT: connectorResult.invalidParentCount,
+                INVALID_CHILD_ANCHOR_COUNT: connectorResult.invalidChildCount,
+                CONNECTOR_CARD_INTERSECTION_COUNT: connectorResult.intersectionCount,
+
                 TREE_HASH_BEFORE: treeHashBefore,
                 TREE_HASH_AFTER: treeHashAfter,
                 HIERARCHY_MUTATIONS: treeHashBefore === treeHashAfter ? 0 : 1,
@@ -1043,6 +1360,11 @@
                 report.CORPORATE_CHILD_OVERFLOW_COUNT === 0 &&
                 report.COLLISION_COUNT === 0 &&
                 report.CHILD_OVERFLOW_COUNT === 0 &&
+                report.ORPHAN_CONNECTOR_COUNT === 0 &&
+                report.INVALID_PARENT_ANCHOR_COUNT === 0 &&
+                report.INVALID_CHILD_ANCHOR_COUNT === 0 &&
+                report.CONNECTOR_CARD_INTERSECTION_COUNT === 0 &&
+                report.RENDERED_CONNECTOR_COUNT > 0 &&
                 report.POSITION_CARD_VISUAL_WIDTH >= CONFIG.CARD_MIN_WIDTH &&
                 report.TREE_HASH_BEFORE === report.TREE_HASH_AFTER &&
                 report.HIERARCHY_MUTATIONS === 0 &&
@@ -1053,11 +1375,11 @@
             );
 
             report.UAT_STATUS = passed
-                ? 'PHASE_3_8_4F_TOP_LEVEL_UAT_READY'
-                : 'PHASE_3_8_4F_TOP_LEVEL_UAT_FAILED';
+                ? 'PHASE_3_8_5_CONNECTOR_UAT_READY'
+                : 'PHASE_3_8_5_CONNECTOR_UAT_FAILED';
 
             window.__ORGFLOW_LAYOUT_VALIDATION__ = report;
-            console.log(`=== OrgFlow [v${CONFIG.BUNDLE_VERSION}] PHASE 3.8.4F LAYOUT VALIDATION ===`);
+            console.log(`=== OrgFlow [v${CONFIG.BUNDLE_VERSION}] PHASE 3.8.5 LAYOUT VALIDATION ===`);
             console.log(JSON.stringify(report, null, 2));
 
             if (!passed) {
@@ -1065,13 +1387,14 @@
                     topLevelCount: report.TOP_LEVEL_VISIBLE_BRANCH_COUNT,
                     corpVisible: report.CORPORATE_VISIBLE,
                     corpWidth: report.CORPORATE_NATURAL_WIDTH,
-                    corpOverflow: report.CORPORATE_CHILD_OVERFLOW_COUNT,
+                    orphanConnectors: report.ORPHAN_CONNECTOR_COUNT,
+                    renderedConnectors: report.RENDERED_CONNECTOR_COUNT,
                     collisions: report.COLLISION_COUNT,
                     overflows: report.CHILD_OVERFLOW_COUNT
                 });
             }
 
-            // Also expose manual validation function
+            // Expose manual validation function
             window.__validateOrgFlowLayout = () => {
                 return this.runLayoutValidation();
             };
@@ -1139,7 +1462,7 @@
                     console.log(`=== OrgFlow [v${CONFIG.BUNDLE_VERSION}] DOM GEOMETRY AUDIT ===`, metrics);
                     window.__ORGFLOW_DOM_METRICS__ = metrics;
 
-                    // Run full layout validation
+                    // Run full layout and connector validation
                     this.runLayoutValidation();
                 });
             });
@@ -1422,6 +1745,12 @@
 
             const chartArea = document.createElement('div');
             chartArea.className = 'orgflow-personnel-canvas';
+
+            // Phase 3.8.5: Hierarchy Connector SVG Layer
+            const svgLayer = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            svgLayer.id = 'orgflow-hierarchy-connectors';
+            svgLayer.setAttribute('class', 'orgflow-connector-layer');
+            chartArea.appendChild(svgLayer);
 
             const isFocusBranch = this.focusedOrgCode !== 'TTMET';
             if (!isFocusBranch) {

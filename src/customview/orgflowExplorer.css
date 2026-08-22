@@ -590,6 +590,7 @@
     width: 100%;
     padding-bottom: 24px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .orgflow-personnel-group {
@@ -598,6 +599,8 @@
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
 }
 
 .orgflow-personnel-row {
@@ -1027,9 +1030,32 @@
     box-shadow: 0 0 12px rgba(239, 68, 68, 0.4) !important;
 }
 
-.orgflow-containment-overflow {
-    outline: 3px dashed #f59e0b !important;
-    outline-offset: 1px;
+/* Phase 3.8.5 — Hierarchy Connector SVG Layer */
+.orgflow-connector-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: visible;
+}
+
+.orgflow-connector-path {
+    fill: none;
+    stroke: #94a3b8;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.orgflow-connector-top-path {
+    fill: none;
+    stroke: #64748b;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 @media print {
