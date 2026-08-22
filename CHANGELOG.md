@@ -1,5 +1,17 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.0.0] - 2026-08-22
+
+### Added
+- **Phase 5E Controlled Production Execution:** Configured and deployed Canonical 7-State Process Management to `OrgFlow Org Change Request` App (**App ID: 793**) on Kintone Production (`https://ttmet.cybozu.com`).
+- Verified 7 live statuses read-back (`DRAFT`, `SUBMITTED`, `GM_REVIEW`, `HR_REVIEW`, `APPROVED`, `SYSTEM_APPLY`, `APPLIED`).
+- Implemented configurable, cross-department approver model for `GM_REVIEW` and `HR_REVIEW` (Zero hardcoded usernames).
+- Created pre-change configuration backup in `secure-backup/phase5e_pre_execution_app793_1787382232377/`.
+- Verified protected apps remain 100% untouched (`Employee Namelist` App 53: 275 records; App 791: 0 records; App 792: 0 records; App 793: 0 records).
+- Created execution report ([`PHASE_5E_PRODUCTION_EXECUTION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/deployment/PHASE_5E_PRODUCTION_EXECUTION_REPORT.md)) and rollback plan ([`PHASE_5E_ROLLBACK_PLAN.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/deployment/PHASE_5E_ROLLBACK_PLAN.md)).
+
+---
+
 ## [v0.9.11] - 2026-08-22
 
 ### Added
