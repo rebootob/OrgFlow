@@ -2,13 +2,12 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 4.0.0 (Dynamic Layout Engine & Responsive Executive Org Chart)
+ * Version: 4.1.0 (Canonical 57-Node Hierarchy & Dynamic Layout Engine)
+ * - Authoritative Canonical Master: 57 Organization Nodes across Levels 1 to 7
  * - Strict Separation: Canonical Hierarchy Tree -> Layout Engine -> Visual Renderer
- * - Dynamic Subtree Width & Recursive Coordinate Allocation
- * - Viewport Canvas Pan & Smooth Zoom Engine (40% - 160%)
- * - Interactive Density Controls: Compact | Normal | Comfortable
- * - Smart Staff Aggregation & Multi-Column Section Grids
- * - Focus Mode, Search Auto-Focus, Layout Memory & Tree Hash Invariant Verification
+ * - Single Connected Root: TTMET (57 Nodes, 56 Edges, 0 Orphans)
+ * - 275 Canonical Employees Attached (Zero Double-Counting, Root Total Scope = 275)
+ * - Unified Across: Interactive Web Org Chart, Directory, Catalog, Excel Export, PDF Export
  * 
  * 100% READ-ONLY DATA INTEGRATION / ZERO PRODUCTION WRITES.
  */
@@ -23,6 +22,81 @@
         APP_793: 793,
         CACHE_TTL_MS: 300000
     };
+
+    // Authoritative 57 Canonical Organization Nodes Specification
+    const CANONICAL_57_MASTER = [
+        // Level 1
+        { code: "TTMET", name: "Toyota Tsusho M&E (Thailand) Co.,Ltd.", type: "COMPANY", level: 1, parent: null, path: "Toyota Tsusho M&E (Thailand) Co.,Ltd.", status: "APPROVED" },
+        // Level 2
+        { code: "DIV-ME", name: "Machinery & Engineering Division", type: "DIVISION", level: 2, parent: "TTMET", path: "Toyota Tsusho M&E (Thailand) Co.,Ltd. > Machinery & Engineering Division", status: "APPROVED" },
+        { code: "DIV-G0", name: "GIFU SEIKI Division", type: "DIVISION", level: 2, parent: "TTMET", path: "Toyota Tsusho M&E (Thailand) Co.,Ltd. > GIFU SEIKI Division", status: "APPROVED" },
+        // Level 3 (Departments)
+        { code: "TMT0", name: "Machinery Department", type: "DEPARTMENT", level: 3, parent: "DIV-ME", path: "TTMET > DIV-ME > TMT0", status: "APPROVED" },
+        { code: "TMF0", name: "Industrial Services Department", type: "DEPARTMENT", level: 3, parent: "DIV-ME", path: "TTMET > DIV-ME > TMF0", status: "APPROVED" },
+        { code: "TME0", name: "Eco Energy & Textile Machinery Department", type: "DEPARTMENT", level: 3, parent: "DIV-ME", path: "TTMET > DIV-ME > TME0", status: "APPROVED" },
+        { code: "TMS0", name: "Technical Services Department", type: "DEPARTMENT", level: 3, parent: "DIV-ME", path: "TTMET > DIV-ME > TMS0", status: "APPROVED" },
+        { code: "TMG0", name: "Mold & Engineering Department", type: "DEPARTMENT", level: 3, parent: "DIV-G0", path: "TTMET > DIV-G0 > TMG0", status: "APPROVED" },
+        { code: "TMH0", name: "Corporate Department", type: "DEPARTMENT", level: 3, parent: "TTMET", path: "TTMET > TMH0", status: "APPROVED" },
+        // Level 4 (Sections under Machinery)
+        { code: "TMT1", name: "Export", type: "SECTION", level: 4, parent: "TMT0", path: "TTMET > DIV-ME > TMT0 > TMT1", status: "APPROVED" },
+        { code: "TMT2", name: "Toyota Sales", type: "SECTION", level: 4, parent: "TMT0", path: "TTMET > DIV-ME > TMT0 > TMT2", status: "APPROVED" },
+        // Level 5 (Teams under Machinery)
+        { code: "TMT1-MACH", name: "Machine & Equipments", type: "TEAM", level: 5, parent: "TMT1", path: "TTMET > DIV-ME > TMT0 > TMT1 > TMT1-MACH", status: "APPROVED" },
+        { code: "TMT1-TRIAL", name: "Tool Part & Project", type: "TEAM", level: 5, parent: "TMT1", path: "TTMET > DIV-ME > TMT0 > TMT1 > TMT1-TRIAL", status: "APPROVED" },
+        { code: "TMT2-TOYOTA", name: "TOYOTA", type: "TEAM", level: 5, parent: "TMT2", path: "TTMET > DIV-ME > TMT0 > TMT2 > TMT2-TOYOTA", status: "APPROVED" },
+        { code: "TMT2-STM", name: "STM", type: "TEAM", level: 5, parent: "TMT2", path: "TTMET > DIV-ME > TMT0 > TMT2 > TMT2-STM", status: "APPROVED" },
+        { code: "TMT2-LOGITIC", name: "Logistics", type: "TEAM", level: 5, parent: "TMT2", path: "TTMET > DIV-ME > TMT0 > TMT2 > TMT2-LOGITIC", status: "APPROVED" },
+        // Level 4 (Sections under Industrial Services)
+        { code: "TMF1", name: "Automotive", type: "SECTION", level: 4, parent: "TMF0", path: "TTMET > DIV-ME > TMF0 > TMF1", status: "APPROVED" },
+        { code: "TMF2", name: "Industry", type: "SECTION", level: 4, parent: "TMF0", path: "TTMET > DIV-ME > TMF0 > TMF2", status: "APPROVED" },
+        { code: "TMF3", name: "Sales Engineering", type: "SECTION", level: 4, parent: "TMF0", path: "TTMET > DIV-ME > TMF0 > TMF3", status: "APPROVED" },
+        // Level 5 (Teams under Industrial Services)
+        { code: "TMF1-AUTOMOTIVE", name: "AUTOMOTIVE", type: "TEAM", level: 5, parent: "TMF1", path: "TTMET > DIV-ME > TMF0 > TMF1 > TMF1-AUTOMOTIVE", status: "APPROVED" },
+        { code: "TMF2-INDUSTRY", name: "INDUSTRY", type: "TEAM", level: 5, parent: "TMF2", path: "TTMET > DIV-ME > TMF0 > TMF2 > TMF2-INDUSTRY", status: "APPROVED" },
+        { code: "TMF3-DENSO", name: "DENSO", type: "TEAM", level: 5, parent: "TMF3", path: "TTMET > DIV-ME > TMF0 > TMF3 > TMF3-DENSO", status: "APPROVED" },
+        // Level 4 & 5 (Eco Energy)
+        { code: "TME1", name: "Eco Energy & Textile Machinery", type: "SECTION", level: 4, parent: "TME0", path: "TTMET > DIV-ME > TME0 > TME1", status: "APPROVED" },
+        { code: "TME1-MARK", name: "Marketing (Eco Energy)", type: "TEAM", level: 5, parent: "TME1", path: "TTMET > DIV-ME > TME0 > TME1 > TME1-MARK", status: "APPROVED" },
+        // Level 4 & 5 (Technical Services)
+        { code: "TMS1", name: "Technical Services", type: "SECTION", level: 4, parent: "TMS0", path: "TTMET > DIV-ME > TMS0 > TMS1", status: "APPROVED" },
+        { code: "TMS1-PROJ", name: "Project Management", type: "TEAM", level: 5, parent: "TMS1", path: "TTMET > DIV-ME > TMS0 > TMS1 > TMS1-PROJ", status: "APPROVED" },
+        { code: "TMS1-ENGI", name: "Engineering", type: "TEAM", level: 5, parent: "TMS1", path: "TTMET > DIV-ME > TMS0 > TMS1 > TMS1-ENGI", status: "APPROVED" },
+        { code: "TMS1-SAFE", name: "Safety & ISO", type: "TEAM", level: 5, parent: "TMS1", path: "TTMET > DIV-ME > TMS0 > TMS1 > TMS1-SAFE", status: "APPROVED" },
+        // Level 4 (Functions under TMG0)
+        { code: "TMG0-ADM", name: "Admin", type: "FUNCTION", level: 4, parent: "TMG0", path: "TTMET > DIV-G0 > TMG0 > Admin", status: "APPROVED" },
+        { code: "TMG0-CAD", name: "CAD", type: "FUNCTION", level: 4, parent: "TMG0", path: "TTMET > DIV-G0 > TMG0 > CAD", status: "APPROVED" },
+        { code: "TMG0-MKT", name: "Marketing", type: "FUNCTION", level: 4, parent: "TMG0", path: "TTMET > DIV-G0 > TMG0 > Marketing", status: "APPROVED" },
+        { code: "TMG0-PRD", name: "Production", type: "FUNCTION", level: 4, parent: "TMG0", path: "TTMET > DIV-G0 > TMG0 > Production", status: "APPROVED" },
+        // Level 4 (Sections under GIFU SEIKI)
+        { code: "TMG1", name: "Die Casting", type: "SECTION", level: 4, parent: "TMG0", path: "TTMET > DIV-G0 > TMG0 > TMG1", status: "APPROVED" },
+        { code: "TMG2", name: "Injection", type: "SECTION", level: 4, parent: "TMG0", path: "TTMET > DIV-G0 > TMG0 > TMG2", status: "APPROVED" },
+        // Sub-units under TMG1 Die Casting (Levels 5, 6, 7)
+        { code: "TMG1-ADM", name: "Admin", type: "TEAM", level: 5, parent: "TMG1", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Admin", status: "APPROVED" },
+        { code: "TMG1-ADM-HR", name: "ACC. HR & GA", type: "SUB-TEAM", level: 6, parent: "TMG1-ADM", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Admin > ACC. HR & GA", status: "APPROVED" },
+        { code: "TMG1-CAD", name: "CAD", type: "TEAM", level: 5, parent: "TMG1", path: "TTMET > DIV-G0 > TMG0 > TMG1 > CAD", status: "APPROVED" },
+        { code: "TMG1-MKT", name: "Marketing", type: "TEAM", level: 5, parent: "TMG1", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Marketing", status: "APPROVED" },
+        { code: "TMG1-PRD", name: "Production", type: "TEAM", level: 5, parent: "TMG1", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Production", status: "APPROVED" },
+        { code: "TMG1-PRD-PUR", name: "PC/PUR", type: "SUB-TEAM", level: 6, parent: "TMG1-PRD", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Production > PC/PUR", status: "APPROVED" },
+        { code: "TMG1-PRD-PUR-MC", name: "Machine", type: "FUNCTION", level: 7, parent: "TMG1-PRD-PUR", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Production > PC/PUR > Machine", status: "APPROVED" },
+        { code: "TMG1-PRD-PUR-FN", name: "Finishing", type: "FUNCTION", level: 7, parent: "TMG1-PRD-PUR", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Production > PC/PUR > Finishing", status: "APPROVED" },
+        { code: "TMG1-PRD-PUR-QA", name: "QA", type: "FUNCTION", level: 7, parent: "TMG1-PRD-PUR", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Production > PC/PUR > QA", status: "APPROVED" },
+        { code: "TMG1-PRD-CAM", name: "CAM", type: "SUB-TEAM", level: 6, parent: "TMG1-PRD", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Production > CAM", status: "APPROVED" },
+        { code: "TMG1-PRD-CAM-QC", name: "QC", type: "FUNCTION", level: 7, parent: "TMG1-PRD-CAM", path: "TTMET > DIV-G0 > TMG0 > TMG1 > Production > CAM > QC", status: "APPROVED" },
+        // Sub-units under TMG2 Injection (Levels 5, 6, 7)
+        { code: "TMG2-PRD", name: "Production", type: "TEAM", level: 5, parent: "TMG2", path: "TTMET > DIV-G0 > TMG0 > TMG2 > Production", status: "APPROVED" },
+        { code: "TMG2-PRD-CAM", name: "CAM", type: "SUB-TEAM", level: 6, parent: "TMG2-PRD", path: "TTMET > DIV-G0 > TMG0 > TMG2 > Production > CAM", status: "APPROVED" },
+        { code: "TMG2-PRD-CAM-QC", name: "QC", type: "FUNCTION", level: 7, parent: "TMG2-PRD-CAM", path: "TTMET > DIV-G0 > TMG0 > TMG2 > Production > CAM > QC", status: "APPROVED" },
+        { code: "TMG2-PRD-PUR", name: "PC/PUR", type: "SUB-TEAM", level: 6, parent: "TMG2-PRD", path: "TTMET > DIV-G0 > TMG0 > TMG2 > Production > PC/PUR", status: "APPROVED" },
+        { code: "TMG2-PRD-PUR-MC", name: "Machine", type: "FUNCTION", level: 7, parent: "TMG2-PRD-PUR", path: "TTMET > DIV-G0 > TMG0 > TMG2 > Production > PC/PUR > Machine", status: "APPROVED" },
+        { code: "TMG2-PRD-PUR-FN", name: "Finishing", type: "FUNCTION", level: 7, parent: "TMG2-PRD-PUR", path: "TTMET > DIV-G0 > TMG0 > TMG2 > Production > PC/PUR > Finishing", status: "APPROVED" },
+        { code: "TMG2-PRD-PUR-QA", name: "QA", type: "FUNCTION", level: 7, parent: "TMG2-PRD-PUR", path: "TTMET > DIV-G0 > TMG0 > TMG2 > Production > PC/PUR > QA", status: "APPROVED" },
+        { code: "TMG2-CAD", name: "CAD", type: "TEAM", level: 5, parent: "TMG2", path: "TTMET > DIV-G0 > TMG0 > TMG2 > CAD", status: "APPROVED" },
+        { code: "TMG2-MKT", name: "Marketing", type: "TEAM", level: 5, parent: "TMG2", path: "TTMET > DIV-G0 > TMG0 > TMG2 > Marketing", status: "APPROVED" },
+        // Corporate Department Sections (Level 4)
+        { code: "TMH1", name: "GA", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH1", status: "APPROVED" },
+        { code: "TMH2", name: "HR & Personnel", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH2", status: "APPROVED" },
+        { code: "TMH3", name: "Accounting & Finance", type: "SECTION", level: 4, parent: "TMH0", path: "TTMET > TMH0 > TMH3", status: "APPROVED" }
+    ];
 
     // Tree Hash Invariant Helper
     function computeTreeHash(treeNodes, employees) {
@@ -82,24 +156,31 @@
                 this.requests793 = [];
             }
 
-            // Build Org Map
+            // Build Organization Map from the 57 Canonical Master + Overlay Live App 791 data
             this.orgMap.clear();
+            CANONICAL_57_MASTER.forEach(m => {
+                this.orgMap.set(m.code, {
+                    organization_code: m.code,
+                    organization_name: m.name,
+                    organization_type: m.type,
+                    organization_level: m.level,
+                    parent_organization_code: m.parent,
+                    hierarchy_path: m.path,
+                    code_status: m.status
+                });
+            });
+
+            // Overlay any updated names from App 791 live records
             this.orgs791.forEach(o => {
                 const code = o.organization_code?.value?.trim();
-                if (code) {
-                    this.orgMap.set(code, {
-                        organization_code: code,
-                        organization_name: o.organization_name?.value?.trim() || code,
-                        organization_type: o.organization_type?.value?.trim() || 'DEPARTMENT',
-                        organization_level: parseInt(o.organization_level?.value || '1', 10),
-                        parent_organization_code: (o.parent_organization_code?.value?.trim() === 'ROOT' ? null : o.parent_organization_code?.value?.trim()) || null,
-                        hierarchy_path: o.hierarchy_path?.value?.trim() || code,
-                        code_status: o.code_status?.value?.trim() || 'APPROVED'
-                    });
+                if (code && this.orgMap.has(code)) {
+                    const existing = this.orgMap.get(code);
+                    existing.organization_name = o.organization_name?.value?.trim() || existing.organization_name;
+                    existing.code_status = o.code_status?.value?.trim() || existing.code_status;
                 }
             });
 
-            // Build Employee Map (Synthetic Internal ID)
+            // Build Employee Map (Synthetic Internal ID ORG-APP53-{recordId})
             this.empMap.clear();
             const rawIdentities = [];
             this.employees53.forEach(e => {
@@ -154,7 +235,7 @@
                 });
             });
 
-            // Unified Joining
+            // Disambiguated In-Memory Joining (App 53 + App 792)
             this.unifiedEmployees = [];
             this.historyMap.clear();
 
@@ -230,7 +311,7 @@
             this.buildRecursiveHierarchyTree();
             this.treeHash = computeTreeHash(this.treeNodes, this.unifiedEmployees);
             this.isLoaded = true;
-            console.log(`OrgFlow Data Store Initialized: 275 Employees, 33 Units. TreeHash: ${this.treeHash}`);
+            console.log(`OrgFlow Data Store Initialized: 275 Employees, 57 Canonical Master Nodes. TreeHash: ${this.treeHash}`);
         }
 
         buildRecursiveHierarchyTree() {
@@ -322,7 +403,7 @@
         }
 
         getOrganizations() {
-            return Array.from(this.orgMap.values()).sort((a, b) => a.organization_level - b.organization_level);
+            return Array.from(this.orgMap.values()).sort((a, b) => (a.organization_level - b.organization_level) || a.organization_code.localeCompare(b.organization_code));
         }
 
         getOrgByCode(code) {
@@ -431,11 +512,11 @@
         constructor() {
             this.store = new OrgFlowDataStore();
             this.currentView = 'ORG_CHART';
-            this.chartMode = 'PERSONNEL_VIEW'; // PERSONNEL_VIEW or CANONICAL_STRUCTURE
-            this.focusedOrgCode = 'TTMET'; // Focus Mode Root
+            this.chartMode = 'PERSONNEL_VIEW';
+            this.focusedOrgCode = 'TTMET';
             this.searchQuery = '';
             this.filterLevel = 'ALL';
-            this.density = 'NORMAL'; // COMPACT, NORMAL, COMFORTABLE
+            this.density = 'NORMAL';
             this.zoomScale = 1.0;
             this.panX = 0;
             this.panY = 0;
@@ -447,14 +528,13 @@
             this.drawerTab = 'OVERVIEW';
             this.isChangeWizardOpen = false;
             
-            // Subtree Expansion State Sets
-            this.expandedNodeCodes = new Set(['TTMET', 'DIV-G0', 'DIV-ME', 'TMH0', 'TMT0', 'TMF0', 'TME0', 'TMS0', 'TMG0']);
-            this.expandedStaffSections = new Set(); // Default: Large staff groups collapsed
+            this.expandedNodeCodes = new Set(['TTMET', 'DIV-G0', 'DIV-ME', 'TMH0', 'TMT0', 'TMF0', 'TME0', 'TMS0', 'TMG0', 'TMG1', 'TMG2']);
+            this.expandedStaffSections = new Set();
         }
 
         async init(rootElement) {
             this.root = rootElement;
-            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow Dynamic Layout Engine & Verified Master...</div>`;
+            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow 57-Node Hierarchy & Dynamic Layout Engine...</div>`;
 
             await this.store.loadAllData();
             this.loadSessionState();
@@ -464,7 +544,7 @@
 
         loadSessionState() {
             try {
-                const saved = sessionStorage.getItem('orgflow_layout_state');
+                const saved = sessionStorage.getItem('orgflow_layout_state_v41');
                 if (saved) {
                     const parsed = JSON.parse(saved);
                     if (parsed.density) this.density = parsed.density;
@@ -478,7 +558,7 @@
 
         saveSessionState() {
             try {
-                sessionStorage.setItem('orgflow_layout_state', JSON.stringify({
+                sessionStorage.setItem('orgflow_layout_state_v41', JSON.stringify({
                     density: this.density,
                     chartMode: this.chartMode,
                     focusedOrgCode: this.focusedOrgCode
@@ -491,7 +571,6 @@
         setupResizeObserver() {
             if (window.ResizeObserver) {
                 const ro = new ResizeObserver(() => {
-                    // Update layout on container dimension change without resetting zoom/pan
                     const canvas = document.getElementById('orgflow-chart-canvas');
                     if (canvas && this.currentView === 'ORG_CHART') {
                         this.store.verifyInvariant();
@@ -542,7 +621,7 @@
                 <div class="orgflow-logo-area">
                     <div class="orgflow-brand">
                         <span>🏢 OrgFlow</span>
-                        <span class="orgflow-brand-badge">Org Chart Engine</span>
+                        <span class="orgflow-brand-badge">57-Node Master</span>
                     </div>
                 </div>
 
@@ -552,14 +631,12 @@
                 </div>
 
                 <div class="orgflow-toolbar-controls">
-                    <!-- Density Selector -->
                     <div class="orgflow-btn-group" id="density-control-group">
                         <button class="orgflow-btn ${this.density === 'COMPACT' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" data-density="COMPACT" style="font-size:11px; padding:4px 8px;">Compact</button>
                         <button class="orgflow-btn ${this.density === 'NORMAL' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" data-density="NORMAL" style="font-size:11px; padding:4px 8px;">Normal</button>
                         <button class="orgflow-btn ${this.density === 'COMFORTABLE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" data-density="COMFORTABLE" style="font-size:11px; padding:4px 8px;">Comfortable</button>
                     </div>
 
-                    <!-- Zoom Controls -->
                     <div class="orgflow-btn-group" id="zoom-control-group">
                         <button class="orgflow-btn orgflow-btn-outline" id="btn-zoom-out" style="font-size:11px; padding:4px 8px;">−</button>
                         <button class="orgflow-btn orgflow-btn-outline" id="btn-zoom-val" style="font-size:11px; padding:4px 8px; min-width:48px;">${Math.round(this.zoomScale * 100)}%</button>
@@ -575,7 +652,6 @@
                 </div>
             `;
 
-            // Search
             const searchInput = bar.querySelector('.orgflow-search-input');
             searchInput.addEventListener('input', (e) => {
                 this.searchQuery = e.target.value.toLowerCase().trim();
@@ -585,7 +661,6 @@
                 this.renderContentOnly();
             });
 
-            // Density Controls
             bar.querySelectorAll('#density-control-group button').forEach(btn => {
                 btn.addEventListener('click', () => {
                     this.density = btn.getAttribute('data-density');
@@ -593,7 +668,6 @@
                 });
             });
 
-            // Zoom Controls
             bar.querySelector('#btn-zoom-out').addEventListener('click', () => {
                 this.setZoom(Math.max(0.4, this.zoomScale - 0.1));
             });
@@ -612,7 +686,6 @@
                 this.updateTransform();
             });
 
-            // Toolbar actions
             bar.querySelector('#orgflow-print-btn').addEventListener('click', () => window.print());
             bar.querySelector('#orgflow-export-excel-btn').addEventListener('click', () => this.handleExcelExport());
             bar.querySelector('#orgflow-export-pdf-btn').addEventListener('click', () => this.handlePdfExport());
@@ -760,7 +833,7 @@
                     <span style="font-weight:bold; color:#0284c7;">${focusOrg ? focusOrg.organization_name : this.focusedOrgCode} (<code>${this.focusedOrgCode}</code>) [FOCUS MODE]</span>
                     <button class="orgflow-btn orgflow-btn-outline" id="btn-clear-focus" style="font-size:10px; padding:2px 6px; margin-left:8px;">⬅️ Back to Company</button>
                 ` : ''}
-                <span style="margin-left: auto; color: #64748b; font-size: 11px;">View: <b>${this.chartMode}</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Staff</b></span>
+                <span style="margin-left: auto; color: #64748b; font-size: 11px;">Master: <b>57 Canonical Units</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Staff</b></span>
             `;
 
             bar.querySelector('.orgflow-breadcrumb-link').addEventListener('click', () => {
@@ -785,7 +858,7 @@
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
                     <div style="display: flex; gap: 8px;">
                         <button class="orgflow-btn ${this.chartMode === 'PERSONNEL_VIEW' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-personnel">👥 Personnel View (Executive Org Chart)</button>
-                        <button class="orgflow-btn ${this.chartMode === 'CANONICAL_STRUCTURE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-canonical">🏛️ Canonical Structure (Unit Hierarchy)</button>
+                        <button class="orgflow-btn ${this.chartMode === 'CANONICAL_STRUCTURE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-canonical">🏛️ Canonical Structure (57-Node Hierarchy)</button>
                     </div>
                     <div style="display: flex; gap: 8px; align-items: center;">
                         <button class="orgflow-btn orgflow-btn-outline" id="btn-expand-all" style="font-size:11px; padding:4px 8px;">Expand All</button>
@@ -794,7 +867,6 @@
                     </div>
                 </div>
 
-                <!-- Pan & Zoom Viewport Container -->
                 <div class="orgflow-chart-viewport" id="orgflow-chart-canvas">
                     <div class="orgflow-transform-layer" id="orgflow-transform-layer">
                         <!-- Chart Content Injected Here -->
@@ -852,7 +924,6 @@
                 }
             }
 
-            // Attach Pan & Mouse Wheel Listeners
             setTimeout(() => {
                 this.attachPanZoomEvents(view.querySelector('#orgflow-chart-canvas'));
                 this.updateTransform();
@@ -865,7 +936,6 @@
             if (!viewport) return;
 
             viewport.addEventListener('mousedown', (e) => {
-                // Ignore clicks on buttons/cards
                 if (e.target.closest('.orgflow-node-card') || e.target.closest('.orgflow-position-card') || e.target.closest('button')) return;
                 this.isPanning = true;
                 this.startX = e.clientX - this.panX;
@@ -916,9 +986,10 @@
             headerSummary.className = 'orgflow-personnel-summary-bar';
             headerSummary.innerHTML = `
                 <div class="orgflow-summary-pill"><span>TOTAL EMPLOYEES:</span> <b>${totalEmps}</b></div>
-                <div class="orgflow-summary-pill"><span>CANONICAL POSITIONS:</span> <b>${totalPos}</b></div>
-                <div class="orgflow-summary-pill"><span>MANAGEMENT STAFF:</span> <b>${mgmtCount}</b></div>
-                <div class="orgflow-summary-pill"><span>VACANT POSITIONS:</span> <b>0</b></div>
+                <div class="orgflow-summary-pill"><span>CANONICAL NODES:</span> <b>57</b></div>
+                <div class="orgflow-summary-pill"><span>POSITIONS:</span> <b>${totalPos}</b></div>
+                <div class="orgflow-summary-pill"><span>MANAGEMENT:</span> <b>${mgmtCount}</b></div>
+                <div class="orgflow-summary-pill"><span>VACANCIES:</span> <b>0</b></div>
                 <div class="orgflow-summary-pill"><span>DENSITY:</span> <b>${this.density}</b></div>
             `;
             container.appendChild(headerSummary);
@@ -926,7 +997,6 @@
             const chartArea = document.createElement('div');
             chartArea.className = 'orgflow-personnel-canvas';
 
-            // Top Executives (TTMET)
             const isFocusBranch = this.focusedOrgCode !== 'TTMET';
             if (!isFocusBranch) {
                 const topExecs = this.store.getUnifiedEmployees().filter(e => e.organization_code === 'TTMET');
@@ -940,18 +1010,16 @@
                 });
                 execGroup.appendChild(execCards);
 
-                // Proportional Multi-Branch Allocation
                 const branchRow = document.createElement('div');
                 branchRow.className = 'orgflow-personnel-branches';
 
                 branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME', 2.0));
-                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 1.2));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 1.4));
                 branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0', 1.0));
 
                 execGroup.appendChild(branchRow);
                 chartArea.appendChild(execGroup);
             } else {
-                // Focus Mode for Selected Subtree
                 chartArea.appendChild(this.renderDynamicBranchSubtree(this.focusedOrgCode, 1.0, true));
             }
 
@@ -967,12 +1035,11 @@
             col.className = 'orgflow-personnel-branch-col';
             col.style.flex = flexWeight;
 
-            // Unit Header Box with Focus Action
             const headerBox = document.createElement('div');
             headerBox.className = 'orgflow-org-header-box';
             headerBox.innerHTML = `
                 <div class="orgflow-org-header-title">${node.name}</div>
-                <div class="orgflow-org-header-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b> • Level ${node.level}</div>
+                <div class="orgflow-org-header-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b> • Level ${node.level} (${node.type})</div>
                 ${!isFocusRoot ? `<button class="orgflow-btn orgflow-btn-outline btn-focus-unit" style="margin-top:4px; font-size:9px; padding:2px 6px;">🔍 Focus Subtree</button>` : ''}
             `;
 
@@ -987,7 +1054,6 @@
 
             col.appendChild(headerBox);
 
-            // Direct Leaders / Position Cards at this Tier
             if (node.directEmployees.length > 0) {
                 const leaderRow = document.createElement('div');
                 leaderRow.className = 'orgflow-personnel-row';
@@ -997,13 +1063,12 @@
                 col.appendChild(leaderRow);
             }
 
-            // Subordinate Units / Departments
             if (node.children.length > 0) {
                 const subRow = document.createElement('div');
                 subRow.className = 'orgflow-personnel-sub-row';
 
                 node.children.forEach(child => {
-                    if (child.type === 'SECTION' || child.type === 'TEAM') {
+                    if (child.type === 'SECTION' || child.type === 'TEAM' || child.type === 'SUB-TEAM' || child.type === 'FUNCTION') {
                         subRow.appendChild(this.renderDynamicSectionCard(child.code));
                     } else {
                         subRow.appendChild(this.renderDynamicBranchSubtree(child.code, 1.0));
@@ -1025,26 +1090,34 @@
 
             box.innerHTML = `
                 <div class="orgflow-section-header">
-                    <div style="font-weight:700; color:#0f172a; font-size:12px;">${secNode.name}</div>
-                    <div style="font-size:10px; color:#64748b;"><code>${secNode.code}</code> • <b>${secNode.totalHeadcount} Staff</b></div>
+                    <div>
+                        <div style="font-weight:700; color:#0f172a; font-size:12px;">${secNode.name}</div>
+                        <div style="font-size:10px; color:#64748b;"><code>${secNode.code}</code> • Level ${secNode.level} (${secNode.type})</div>
+                    </div>
+                    <div style="font-size:11px; font-weight:bold; color:#0284c7;">${secNode.totalHeadcount} Staff</div>
                 </div>
                 <div style="margin-top:8px; display:flex; justify-content:space-between; align-items:center;">
-                    <button class="orgflow-btn orgflow-btn-outline btn-toggle-staff-grid" style="font-size:10px; padding:2px 8px;">
-                        ${isStaffExpanded ? '▲ Collapse Staff' : `👥 View Staff (${secNode.directHeadcount})`}
-                    </button>
+                    ${secNode.directHeadcount > 0 ? `
+                        <button class="orgflow-btn orgflow-btn-outline btn-toggle-staff-grid" style="font-size:10px; padding:2px 8px;">
+                            ${isStaffExpanded ? '▲ Collapse Staff' : `👥 View Staff (${secNode.directHeadcount})`}
+                        </button>
+                    ` : '<span style="font-size:10px; color:#94a3b8;">No direct staff</span>'}
                     <button class="orgflow-btn orgflow-btn-outline btn-sec-details" style="font-size:10px; padding:2px 8px;">Details</button>
                 </div>
             `;
 
-            box.querySelector('.btn-toggle-staff-grid').addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (this.expandedStaffSections.has(secCode)) {
-                    this.expandedStaffSections.delete(secCode);
-                } else {
-                    this.expandedStaffSections.add(secCode);
-                }
-                this.renderContentOnly();
-            });
+            const toggleBtn = box.querySelector('.btn-toggle-staff-grid');
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (this.expandedStaffSections.has(secCode)) {
+                        this.expandedStaffSections.delete(secCode);
+                    } else {
+                        this.expandedStaffSections.add(secCode);
+                    }
+                    this.renderContentOnly();
+                });
+            }
 
             box.querySelector('.btn-sec-details').addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -1052,7 +1125,6 @@
                 this.render();
             });
 
-            // If Expanded, Render Responsive Multi-Column Staff Grid
             if (isStaffExpanded && secNode.directEmployees.length > 0) {
                 const grid = document.createElement('div');
                 grid.className = 'orgflow-staff-multi-grid';
@@ -1114,7 +1186,7 @@
         }
 
         // ==========================================
-        // CANONICAL STRUCTURE TREE (UNCHANGED)
+        // 57-NODE CANONICAL STRUCTURE TREE
         // ==========================================
         renderRecursiveCanonicalOrgNode(node) {
             const container = document.createElement('div');
@@ -1130,7 +1202,8 @@
             else if (node.level === 2) card.style.borderLeft = '5px solid #6366f1';
             else if (node.level === 3) card.style.borderLeft = '5px solid #06b6d4';
             else if (node.level === 4) card.style.borderLeft = '5px solid #10b981';
-            else card.style.borderLeft = '4px solid #f59e0b';
+            else if (node.level === 5) card.style.borderLeft = '4px solid #f59e0b';
+            else card.style.borderLeft = '3px solid #8b5cf6';
 
             if (this.searchQuery && (node.code.toLowerCase().includes(this.searchQuery) || node.name.toLowerCase().includes(this.searchQuery))) {
                 card.style.boxShadow = '0 0 0 3px #fef08a, 0 4px 12px rgba(234, 179, 8, 0.25)';
@@ -1139,7 +1212,7 @@
             card.innerHTML = `
                 <div class="orgflow-node-header">
                     <span class="orgflow-node-code">${node.code}</span>
-                    <span class="orgflow-node-type-badge type-${node.type.toLowerCase()}">${node.type}</span>
+                    <span class="orgflow-node-type-badge type-${node.type.toLowerCase()}">${node.type} (L${node.level})</span>
                 </div>
                 <div class="orgflow-node-name">${node.name}</div>
                 <div class="orgflow-node-meta" style="margin-top: 10px; border-top: 1px dashed #e2e8f0; padding-top: 6px;">
@@ -1385,7 +1458,7 @@
             const orgs = this.store.getOrganizations();
             view.innerHTML = `
                 <div style="padding: 14px 16px; border-bottom: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #0f172a;">Canonical Organization Units (${orgs.length} nodes)</div>
+                    <div style="font-weight: 700; color: #0f172a;">Canonical Organization Units (57-Node Master Catalog)</div>
                 </div>
                 <table class="orgflow-table">
                     <thead>
@@ -1395,6 +1468,7 @@
                             <th>Entity Type</th>
                             <th>Level</th>
                             <th>Parent Unit</th>
+                            <th>Hierarchy Path</th>
                             <th style="text-align:right;">Direct HC</th>
                             <th style="text-align:right;">Total Scope</th>
                         </tr>
@@ -1409,6 +1483,7 @@
                                     <td><span class="orgflow-node-type-badge type-${o.organization_type.toLowerCase()}">${o.organization_type}</span></td>
                                     <td>${o.organization_level}</td>
                                     <td><code>${o.parent_organization_code || 'ROOT'}</code></td>
+                                    <td style="font-size:11px; color:#64748b;">${o.hierarchy_path}</td>
                                     <td style="text-align:right; color:#64748b;">${node?.directHeadcount || 0}</td>
                                     <td style="text-align:right; font-weight:bold; color: #0284c7;">${node?.totalHeadcount || 0}</td>
                                 </tr>
@@ -1549,7 +1624,7 @@
                     <div class="orgflow-kpi-card">
                         <div class="orgflow-kpi-title">Canonical Org Units</div>
                         <div class="orgflow-kpi-value">${totalOrgs}</div>
-                        <div class="orgflow-kpi-sub">App 791 Master Tree</div>
+                        <div class="orgflow-kpi-sub">57 Canonical Master Nodes</div>
                     </div>
                     <div class="orgflow-kpi-card">
                         <div class="orgflow-kpi-title">Standard Positions</div>
@@ -1693,7 +1768,7 @@
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
                         <div>
-                            <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Proposed Unit</label>
+                            <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Proposed Unit (57-Node Master)</label>
                             <select class="orgflow-select" id="wizard-prop-org" style="width: 100%;">
                                 ${orgs.map(o => `<option value="${o.organization_code}" ${o.organization_code === e.organization_code ? 'selected' : ''}>${o.organization_code} — ${o.organization_name}</option>`).join('')}
                             </select>
@@ -1744,7 +1819,7 @@
         }
 
         handleExcelExport() {
-            const filename = `OrgFlow_Export_${new Date().toISOString().slice(0, 10)}.csv`;
+            const filename = `OrgFlow_57Node_Export_${new Date().toISOString().slice(0, 10)}.csv`;
             let headers = [
                 'Level',
                 'Hierarchy Path',
@@ -1810,7 +1885,7 @@
             const html = `
                 <html>
                 <head>
-                    <title>OrgFlow — Official Corporate Organization Chart</title>
+                    <title>OrgFlow — Official Corporate Organization Chart (57-Node Hierarchy)</title>
                     <style>
                         @page { size: A3 landscape; margin: 10mm; }
                         body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #1e293b; background: #ffffff; margin: 0; padding: 10px; }
@@ -1829,10 +1904,10 @@
                     <div class="pdf-header">
                         <div>
                             <div class="pdf-title">TOYOTA TSUSHO M&E (THAILAND) CO., LTD.</div>
-                            <div class="pdf-sub">Official Corporate Organization Chart • Scope: <b>${rootNode?.totalHeadcount || 275} Employees</b> • FY2026 Canonical Baseline</div>
+                            <div class="pdf-sub">Official Corporate Organization Chart • Scope: <b>${rootNode?.totalHeadcount || 275} Employees</b> • 57-Node Canonical Baseline</div>
                         </div>
                         <div style="text-align: right; font-size: 10px; color: #64748b;">
-                            Generated: ${new Date().toLocaleDateString()} | Master: App 791 / App 53 / App 792
+                            Generated: ${new Date().toLocaleDateString()} | Master: 57 Canonical Nodes / App 53 (275 Emps) / App 792
                         </div>
                     </div>
 
@@ -1860,7 +1935,7 @@
                                 </div>
                             </div>
 
-                            <div class="branch-col" style="flex: 1.2;">
+                            <div class="branch-col" style="flex: 1.4;">
                                 <div class="branch-title">GIFU SEIKI Division (${divG0?.totalHeadcount || 89} Staff)</div>
                                 <div style="display: flex; justify-content: center;">
                                     ${divG0?.directEmployees.map(renderCard).join('') || ''}
