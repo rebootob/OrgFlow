@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Machine & Equipments",
+    "parent": "Export (TMT1)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Work responsibility / product grouping under Section Export",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Tool Part & Project",
+    "parent": "Export (TMT1)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Work responsibility / product grouping under Section Export",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Tooling",
+    "parent": "Toyota Sales (TMT2)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Product group under Section Toyota Sales",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "STN",
+    "parent": "Toyota Sales (TMT2)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Product group under Section Toyota Sales",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Logistics",
+    "parent": "Toyota Sales (TMT2)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Function under Section Toyota Sales",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Project Team",
+    "parent": "Technical Services (TMS0)",
+    "classification": "SUPPORT_GROUP",
+    "reason": "Project / functional work team under TMS0",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Engineering Team",
+    "parent": "Technical Services (TMS0)",
+    "classification": "SUPPORT_GROUP",
+    "reason": "Engineering work team under TMS0",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Safety Team",
+    "parent": "Technical Services (TMS0)",
+    "classification": "SUPPORT_GROUP",
+    "reason": "Safety work team under TMS0",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Admin",
+    "parent": "Die Casting (TMG1)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Functional task group under TMG1",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "CAD",
+    "parent": "Die Casting (TMG1)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Functional task group under TMG1",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Marketing",
+    "parent": "Die Casting (TMG1)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Functional task group under TMG1",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Production",
+    "parent": "Die Casting (TMG1)",
+    "classification": "FUNCTION_REFERENCE",
+    "reason": "Functional task group under TMG1",
+    "recStorage": "FUNCTION_REFERENCE",
+    "userReview": "YES"
+  },
+  {
+    "name": "Support Marketing",
+    "parent": "Various Sections",
+    "classification": "SUPPORT_FUNCTION",
+    "reason": "Support function boxes (Green boxes 1, 2, 3, 4, 5, 6)",
+    "recStorage": "NOT_REQUIRED",
+    "userReview": "YES"
+  },
+  {
+    "name": "Board of Directors",
+    "parent": "ROOT",
+    "classification": "GOVERNANCE_BODY",
+    "reason": "Governance body above Executive level",
+    "recStorage": "NOT_REQUIRED",
+    "userReview": "NO"
+  },
+  {
+    "name": "President",
+    "parent": "ROOT",
+    "classification": "POSITION",
+    "reason": "Executive position held by Mr. Tsuchihira",
+    "recStorage": "POSITION_MASTER",
+    "userReview": "NO"
+  },
+  {
+    "name": "Vice President",
+    "parent": "ROOT",
+    "classification": "POSITION",
+    "reason": "Executive position held by Ms. Somrudee, Mr. Uchida, Mr. Takeshi Tsuchihira",
+    "recStorage": "POSITION_MASTER",
+    "userReview": "NO"
+  }
+]

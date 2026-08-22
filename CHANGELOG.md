@@ -1,5 +1,19 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.3.6-phase6b3r] - 2026-08-22
+
+### Added
+- **Phase 6B.3R Authoritative Organization Master Reconciliation (100% Read-Only):** Re-extracted verbatim organization nodes directly from primary source of truth `Org.FY2026_Rev.2.pdf`.
+- Corrected official department codes: Machinery (`TMT1`), Industrial Services (`TMT0`), Technical Services (`TMS0`), Corporate (`TMH0`).
+- Set division codes without printed PDF labels to `NULL` (`CODE_NOT_PRESENT_IN_ORG_CHART`) avoiding synthetic code generation.
+- Separated 21 confirmed Organization Master candidate nodes from 16 non-organization boxes (functions, support groups, positions, governance bodies).
+- Generated Tree A (Raw Org Chart Tree) and Tree B (Proposed Kintone System Tree).
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable report ([`PHASE_6B3R_AUTHORITATIVE_ORG_RECONCILIATION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b3r/PHASE_6B3R_AUTHORITATIVE_ORG_RECONCILIATION_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_USER_ORG_STRUCTURE_REVIEW`).
+
+---
+
 ## [v1.4.0-phase6b4] - 2026-08-22
 
 ### Added
