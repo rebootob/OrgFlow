@@ -1,5 +1,18 @@
 # CHANGELOG — ORGFLOW
 
+## [v0.9.5] - 2026-08-22
+
+### Added
+- **Phase 5C Production App Deployment:** Created `OrgFlow Org Assignment History Log` App (**App ID: 792**) on Kintone Production (`https://ttmet.cybozu.com`).
+- Added 9 approved streamlined fields (`internal_id`, `employee_ref`, `dept_code`, `section_code`, `pos_code`, `manager_ref`, `assignment_type`, `effective_start_date`, `effective_end_date`).
+- Verified removal of redundant derived fields (`is_current_active` & `is_acting_temp`) to enforce 100% Single Source of Truth architecture.
+- Deployed live preview to production and verified read-back schema (9/9 Fields Present, 0 Production Records inserted).
+- Verified `Employee Namelist` (App ID 53) remains 100% untouched (275 records, 0 modifications).
+- Verified `OrgFlow Organization Masters` (App ID 791) remains 100% untouched (0 records, 0 modifications).
+- Created deployment verification report ([`PHASE_5C_ASSIGNMENT_LOG_VERIFICATION.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/PHASE_5C_ASSIGNMENT_LOG_VERIFICATION.md)).
+
+---
+
 ## [v0.9.2] - 2026-08-22
 
 ### Added
