@@ -1,0 +1,15 @@
+{
+  "execution_id": "PHASE6A-APPLY-1787384295027",
+  "requestId": "REQ-6A-1787384162463",
+  "employeeRef": "173",
+  "oldAssignmentRecordId": "1",
+  "newAssignmentRecordId": "274",
+  "newAssignmentInternalId": "ASG-REQ-1",
+  "app793FinalStatus": "APPLIED",
+  "app53Writes": 0,
+  "app791Writes": 0,
+  "app792Writes": 2,
+  "app793Writes": 1,
+  "idempotencyPassed": true,
+  "finalStatus": "PASS"
+}

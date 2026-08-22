@@ -1,5 +1,19 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.2.2-phase6a] - 2026-08-22
+
+### Added
+- **Phase 6A Controlled SYSTEM_APPLY Execution (Gate #2 Executed):** Successfully executed atomic transaction for Change Request `REQ-6A-1787384162463` (App 793 Record ID `1`).
+- Updated old baseline assignment (App 792 Record ID `1`: `effective_end_date = 2026-08-31`).
+- Created new current assignment (App 792 Record ID `274`: `pos_code = POS-002`, `effective_start_date = 2026-09-01`, `internal_id = ASG-REQ-1`).
+- Transitioned App 793 status `SYSTEM_APPLY` -> `APPLIED` with `applied_assignment_id = ASG-REQ-1`.
+- Verified idempotency protection: Re-execution on `APPLIED` record correctly blocked by Process Management.
+- Verified 0 writes to App 53 (275 records, 100% untouched) and App 791 (522 records, 100% untouched).
+- Created deliverable report ([`PHASE_6A_SYSTEM_APPLY_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6/PHASE_6A_SYSTEM_APPLY_REPORT.md)).
+- Enforced Mandatory Stop Gate #3 (Stopped at Gate #3 before restoration).
+
+---
+
 ## [v1.2.1-phase6a] - 2026-08-22
 
 ### Added
