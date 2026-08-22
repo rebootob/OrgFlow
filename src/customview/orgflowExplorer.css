@@ -272,7 +272,49 @@
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 8px 12px;
+    position: relative;
+}
+
+.orgflow-tree-children {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+    position: relative;
+    padding-top: 20px;
+}
+
+/* Horizontal connector line across child nodes */
+.orgflow-tree-children::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background: #cbd5e1;
+}
+
+/* Vertical connector line coming down from parent */
+.orgflow-tree-node::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: #cbd5e1;
+    transform: translateX(-50%);
+}
+
+.orgflow-chart-container > .orgflow-tree-node > .orgflow-node-card {
+    /* Root node does not have line above */
+}
+
+.orgflow-chart-container > .orgflow-tree-node::before {
+    display: none;
 }
 
 .orgflow-node-card {
@@ -285,6 +327,7 @@
     cursor: pointer;
     transition: all 0.2s;
     position: relative;
+    z-index: 2;
 }
 
 .orgflow-node-card:hover {

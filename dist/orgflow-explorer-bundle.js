@@ -4,7 +4,7 @@
     if (!document.getElementById('orgflow-explorer-styles')) {
         const style = document.createElement('style');
         style.id = 'orgflow-explorer-styles';
-        style.textContent = "/**\n * OrgFlow — Organization Explorer & HR Portal Styling\n * Corporate Design System, isolated namespace (#orgflow-explorer-app).\n * Zero collision with default Kintone styling.\n */\n\n#orgflow-explorer-app {\n    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif;\n    color: #1e293b;\n    background-color: #f8fafc;\n    min-height: calc(100vh - 120px);\n    display: flex;\n    flex-direction: column;\n    box-sizing: border-box;\n}\n\n#orgflow-explorer-app * {\n    box-sizing: border-box;\n}\n\n/* TOP TOOLBAR */\n.orgflow-toolbar {\n    background: #ffffff;\n    border-bottom: 1px solid #e2e8f0;\n    padding: 12px 20px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 16px;\n    position: sticky;\n    top: 0;\n    z-index: 40;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n\n.orgflow-logo-area {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.orgflow-brand {\n    font-size: 18px;\n    font-weight: 700;\n    color: #0284c7;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n}\n\n.orgflow-brand-badge {\n    background: #e0f2fe;\n    color: #0369a1;\n    font-size: 11px;\n    padding: 2px 6px;\n    border-radius: 4px;\n    font-weight: 600;\n}\n\n.orgflow-search-box {\n    position: relative;\n    width: 320px;\n}\n\n.orgflow-search-input {\n    width: 100%;\n    padding: 8px 12px 8px 34px;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    font-size: 13px;\n    outline: none;\n    transition: border-color 0.2s;\n}\n\n.orgflow-search-input:focus {\n    border-color: #0284c7;\n    box-shadow: 0 0 0 2px rgba(2,132,199,0.15);\n}\n\n.orgflow-search-icon {\n    position: absolute;\n    left: 10px;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #94a3b8;\n    font-size: 14px;\n}\n\n.orgflow-toolbar-controls {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.orgflow-select {\n    padding: 7px 10px;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    font-size: 12px;\n    background: #ffffff;\n    color: #334155;\n    outline: none;\n}\n\n.orgflow-btn {\n    padding: 7px 14px;\n    border-radius: 6px;\n    font-size: 12px;\n    font-weight: 600;\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    gap: 6px;\n    border: 1px solid transparent;\n    transition: all 0.15s ease-in-out;\n}\n\n.orgflow-btn-primary {\n    background: #0284c7;\n    color: #ffffff;\n}\n\n.orgflow-btn-primary:hover {\n    background: #0369a1;\n}\n\n.orgflow-btn-outline {\n    background: #ffffff;\n    border-color: #cbd5e1;\n    color: #334155;\n}\n\n.orgflow-btn-outline:hover {\n    background: #f1f5f9;\n    border-color: #94a3b8;\n}\n\n/* MAIN LAYOUT */\n.orgflow-body {\n    display: flex;\n    flex: 1;\n    overflow: hidden;\n}\n\n/* SIDEBAR */\n.orgflow-sidebar {\n    width: 230px;\n    background: #ffffff;\n    border-right: 1px solid #e2e8f0;\n    padding: 16px 10px;\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n}\n\n.orgflow-nav-item {\n    padding: 9px 12px;\n    border-radius: 6px;\n    font-size: 13px;\n    font-weight: 500;\n    color: #475569;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    transition: all 0.15s ease-in-out;\n}\n\n.orgflow-nav-item:hover {\n    background: #f1f5f9;\n    color: #0f172a;\n}\n\n.orgflow-nav-item.active {\n    background: #e0f2fe;\n    color: #0284c7;\n    font-weight: 600;\n}\n\n.orgflow-nav-badge {\n    margin-left: auto;\n    background: #f1f5f9;\n    color: #64748b;\n    font-size: 10px;\n    padding: 2px 6px;\n    border-radius: 10px;\n}\n\n/* CONTENT CANVAS */\n.orgflow-canvas {\n    flex: 1;\n    padding: 20px;\n    overflow-y: auto;\n    background: #f8fafc;\n}\n\n/* BREADCRUMB */\n.orgflow-breadcrumb-bar {\n    background: #ffffff;\n    padding: 8px 16px;\n    border-radius: 6px;\n    border: 1px solid #e2e8f0;\n    margin-bottom: 16px;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-size: 12px;\n}\n\n.orgflow-breadcrumb-link {\n    color: #0284c7;\n    cursor: pointer;\n    font-weight: 500;\n}\n\n.orgflow-breadcrumb-link:hover {\n    text-decoration: underline;\n}\n\n.orgflow-breadcrumb-separator {\n    color: #94a3b8;\n}\n\n/* KPI DASHBOARD TILES */\n.orgflow-kpi-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n    gap: 16px;\n    margin-bottom: 20px;\n}\n\n.orgflow-kpi-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 16px;\n    box-shadow: 0 1px 2px rgba(0,0,0,0.03);\n}\n\n.orgflow-kpi-title {\n    font-size: 12px;\n    color: #64748b;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.orgflow-kpi-value {\n    font-size: 26px;\n    font-weight: 700;\n    color: #0f172a;\n    margin-top: 4px;\n}\n\n.orgflow-kpi-sub {\n    font-size: 11px;\n    color: #10b981;\n    margin-top: 4px;\n}\n\n/* ORG CHART TREE CANVAS */\n.orgflow-chart-container {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 24px;\n    min-height: 500px;\n    overflow: auto;\n}\n\n.orgflow-tree-node {\n    display: inline-flex;\n    flex-direction: column;\n    align-items: center;\n    margin: 10px;\n}\n\n.orgflow-node-card {\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    border-radius: 8px;\n    width: 260px;\n    padding: 12px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.04);\n    cursor: pointer;\n    transition: all 0.2s;\n    position: relative;\n}\n\n.orgflow-node-card:hover {\n    border-color: #0284c7;\n    box-shadow: 0 4px 12px rgba(2,132,199,0.12);\n    transform: translateY(-2px);\n}\n\n.orgflow-node-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid #f1f5f9;\n    padding-bottom: 6px;\n    margin-bottom: 8px;\n}\n\n.orgflow-node-type-badge {\n    font-size: 10px;\n    font-weight: 700;\n    padding: 2px 6px;\n    border-radius: 4px;\n    text-transform: uppercase;\n}\n\n.type-company { background: #fef08a; color: #854d0e; }\n.type-division { background: #e0e7ff; color: #3730a3; }\n.type-department { background: #e0f2fe; color: #0369a1; }\n.type-section { background: #f1f5f9; color: #334155; }\n.type-team { background: #fae8ff; color: #86198f; }\n\n.orgflow-node-name {\n    font-size: 13px;\n    font-weight: 700;\n    color: #0f172a;\n    line-height: 1.3;\n}\n\n.orgflow-node-code {\n    font-size: 11px;\n    color: #64748b;\n    font-family: monospace;\n}\n\n.orgflow-node-meta {\n    display: flex;\n    justify-content: space-between;\n    margin-top: 8px;\n    font-size: 11px;\n    color: #475569;\n}\n\n/* EMPLOYEE DIRECTORY TABLE */\n.orgflow-table-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    overflow: hidden;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.03);\n}\n\n.orgflow-table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 12px;\n}\n\n.orgflow-table th {\n    background: #f8fafc;\n    color: #475569;\n    font-weight: 600;\n    text-align: left;\n    padding: 10px 14px;\n    border-bottom: 1px solid #e2e8f0;\n}\n\n.orgflow-table td {\n    padding: 10px 14px;\n    border-bottom: 1px solid #f1f5f9;\n    color: #1e293b;\n}\n\n.orgflow-table tr:hover td {\n    background: #f0f9ff;\n    cursor: pointer;\n}\n\n/* STATUS BADGES */\n.orgflow-badge {\n    display: inline-block;\n    padding: 3px 8px;\n    border-radius: 4px;\n    font-size: 11px;\n    font-weight: 600;\n}\n\n.badge-active { background: #dcfce7; color: #15803d; }\n.badge-vacant { background: #fef3c7; color: #b45309; }\n.badge-acting { background: #e0e7ff; color: #4338ca; }\n.badge-pending { background: #ffedd5; color: #c2410c; }\n.badge-approved { background: #dbeafe; color: #1d4ed8; }\n.badge-executed { background: #dcfce7; color: #166534; }\n.badge-error { background: #fee2e2; color: #991b1b; }\n\n/* SIDE DRAWER */\n.orgflow-drawer-overlay {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: rgba(15, 23, 42, 0.4);\n    z-index: 100;\n    display: flex;\n    justify-content: flex-end;\n    animation: fadeIn 0.2s ease-out;\n}\n\n.orgflow-drawer {\n    width: 520px;\n    background: #ffffff;\n    height: 100%;\n    box-shadow: -4px 0 24px rgba(0,0,0,0.15);\n    display: flex;\n    flex-direction: column;\n    animation: slideLeft 0.25s ease-out;\n}\n\n.orgflow-drawer-header {\n    padding: 18px 24px;\n    border-bottom: 1px solid #e2e8f0;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}\n\n.orgflow-drawer-title {\n    font-size: 16px;\n    font-weight: 700;\n    color: #0f172a;\n}\n\n.orgflow-drawer-close {\n    background: none;\n    border: none;\n    font-size: 20px;\n    cursor: pointer;\n    color: #94a3b8;\n}\n\n.orgflow-drawer-close:hover {\n    color: #0f172a;\n}\n\n.orgflow-drawer-tabs {\n    display: flex;\n    border-bottom: 1px solid #e2e8f0;\n    background: #f8fafc;\n}\n\n.orgflow-drawer-tab {\n    padding: 10px 16px;\n    font-size: 12px;\n    font-weight: 600;\n    color: #64748b;\n    cursor: pointer;\n    border-bottom: 2px solid transparent;\n}\n\n.orgflow-drawer-tab.active {\n    color: #0284c7;\n    border-bottom-color: #0284c7;\n    background: #ffffff;\n}\n\n.orgflow-drawer-body {\n    flex: 1;\n    padding: 20px 24px;\n    overflow-y: auto;\n}\n\n.orgflow-drawer-footer {\n    padding: 16px 24px;\n    border-top: 1px solid #e2e8f0;\n    background: #f8fafc;\n    display: flex;\n    justify-content: flex-end;\n    gap: 10px;\n}\n\n/* PREVIEW BANNER */\n.orgflow-preview-banner {\n    background: #fffbeb;\n    border: 1px solid #fde68a;\n    border-radius: 6px;\n    padding: 10px 14px;\n    margin-bottom: 16px;\n    font-size: 12px;\n    color: #92400e;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-weight: 500;\n}\n\n@keyframes fadeIn {\n    from { opacity: 0; }\n    to { opacity: 1; }\n}\n\n@keyframes slideLeft {\n    from { transform: translateX(100%); }\n    to { transform: translateX(0); }\n}\n";
+        style.textContent = "/**\n * OrgFlow — Organization Explorer & HR Portal Styling\n * Corporate Design System, isolated namespace (#orgflow-explorer-app).\n * Zero collision with default Kintone styling.\n */\n\n#orgflow-explorer-app {\n    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif;\n    color: #1e293b;\n    background-color: #f8fafc;\n    min-height: calc(100vh - 120px);\n    display: flex;\n    flex-direction: column;\n    box-sizing: border-box;\n}\n\n#orgflow-explorer-app * {\n    box-sizing: border-box;\n}\n\n/* TOP TOOLBAR */\n.orgflow-toolbar {\n    background: #ffffff;\n    border-bottom: 1px solid #e2e8f0;\n    padding: 12px 20px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 16px;\n    position: sticky;\n    top: 0;\n    z-index: 40;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n}\n\n.orgflow-logo-area {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.orgflow-brand {\n    font-size: 18px;\n    font-weight: 700;\n    color: #0284c7;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n}\n\n.orgflow-brand-badge {\n    background: #e0f2fe;\n    color: #0369a1;\n    font-size: 11px;\n    padding: 2px 6px;\n    border-radius: 4px;\n    font-weight: 600;\n}\n\n.orgflow-search-box {\n    position: relative;\n    width: 320px;\n}\n\n.orgflow-search-input {\n    width: 100%;\n    padding: 8px 12px 8px 34px;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    font-size: 13px;\n    outline: none;\n    transition: border-color 0.2s;\n}\n\n.orgflow-search-input:focus {\n    border-color: #0284c7;\n    box-shadow: 0 0 0 2px rgba(2,132,199,0.15);\n}\n\n.orgflow-search-icon {\n    position: absolute;\n    left: 10px;\n    top: 50%;\n    transform: translateY(-50%);\n    color: #94a3b8;\n    font-size: 14px;\n}\n\n.orgflow-toolbar-controls {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n}\n\n.orgflow-select {\n    padding: 7px 10px;\n    border: 1px solid #cbd5e1;\n    border-radius: 6px;\n    font-size: 12px;\n    background: #ffffff;\n    color: #334155;\n    outline: none;\n}\n\n.orgflow-btn {\n    padding: 7px 14px;\n    border-radius: 6px;\n    font-size: 12px;\n    font-weight: 600;\n    cursor: pointer;\n    display: inline-flex;\n    align-items: center;\n    gap: 6px;\n    border: 1px solid transparent;\n    transition: all 0.15s ease-in-out;\n}\n\n.orgflow-btn-primary {\n    background: #0284c7;\n    color: #ffffff;\n}\n\n.orgflow-btn-primary:hover {\n    background: #0369a1;\n}\n\n.orgflow-btn-outline {\n    background: #ffffff;\n    border-color: #cbd5e1;\n    color: #334155;\n}\n\n.orgflow-btn-outline:hover {\n    background: #f1f5f9;\n    border-color: #94a3b8;\n}\n\n/* MAIN LAYOUT */\n.orgflow-body {\n    display: flex;\n    flex: 1;\n    overflow: hidden;\n}\n\n/* SIDEBAR */\n.orgflow-sidebar {\n    width: 230px;\n    background: #ffffff;\n    border-right: 1px solid #e2e8f0;\n    padding: 16px 10px;\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n}\n\n.orgflow-nav-item {\n    padding: 9px 12px;\n    border-radius: 6px;\n    font-size: 13px;\n    font-weight: 500;\n    color: #475569;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    transition: all 0.15s ease-in-out;\n}\n\n.orgflow-nav-item:hover {\n    background: #f1f5f9;\n    color: #0f172a;\n}\n\n.orgflow-nav-item.active {\n    background: #e0f2fe;\n    color: #0284c7;\n    font-weight: 600;\n}\n\n.orgflow-nav-badge {\n    margin-left: auto;\n    background: #f1f5f9;\n    color: #64748b;\n    font-size: 10px;\n    padding: 2px 6px;\n    border-radius: 10px;\n}\n\n/* CONTENT CANVAS */\n.orgflow-canvas {\n    flex: 1;\n    padding: 20px;\n    overflow-y: auto;\n    background: #f8fafc;\n}\n\n/* BREADCRUMB */\n.orgflow-breadcrumb-bar {\n    background: #ffffff;\n    padding: 8px 16px;\n    border-radius: 6px;\n    border: 1px solid #e2e8f0;\n    margin-bottom: 16px;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-size: 12px;\n}\n\n.orgflow-breadcrumb-link {\n    color: #0284c7;\n    cursor: pointer;\n    font-weight: 500;\n}\n\n.orgflow-breadcrumb-link:hover {\n    text-decoration: underline;\n}\n\n.orgflow-breadcrumb-separator {\n    color: #94a3b8;\n}\n\n/* KPI DASHBOARD TILES */\n.orgflow-kpi-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n    gap: 16px;\n    margin-bottom: 20px;\n}\n\n.orgflow-kpi-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 16px;\n    box-shadow: 0 1px 2px rgba(0,0,0,0.03);\n}\n\n.orgflow-kpi-title {\n    font-size: 12px;\n    color: #64748b;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.orgflow-kpi-value {\n    font-size: 26px;\n    font-weight: 700;\n    color: #0f172a;\n    margin-top: 4px;\n}\n\n.orgflow-kpi-sub {\n    font-size: 11px;\n    color: #10b981;\n    margin-top: 4px;\n}\n\n/* ORG CHART TREE CANVAS */\n.orgflow-chart-container {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    padding: 24px;\n    min-height: 500px;\n    overflow: auto;\n}\n\n.orgflow-tree-node {\n    display: inline-flex;\n    flex-direction: column;\n    align-items: center;\n    margin: 8px 12px;\n    position: relative;\n}\n\n.orgflow-tree-children {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    gap: 16px;\n    margin-top: 24px;\n    position: relative;\n    padding-top: 20px;\n}\n\n/* Horizontal connector line across child nodes */\n.orgflow-tree-children::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 20px;\n    right: 20px;\n    height: 2px;\n    background: #cbd5e1;\n}\n\n/* Vertical connector line coming down from parent */\n.orgflow-tree-node::before {\n    content: '';\n    position: absolute;\n    top: -20px;\n    left: 50%;\n    width: 2px;\n    height: 20px;\n    background: #cbd5e1;\n    transform: translateX(-50%);\n}\n\n.orgflow-chart-container > .orgflow-tree-node > .orgflow-node-card {\n    /* Root node does not have line above */\n}\n\n.orgflow-chart-container > .orgflow-tree-node::before {\n    display: none;\n}\n\n.orgflow-node-card {\n    background: #ffffff;\n    border: 1px solid #cbd5e1;\n    border-radius: 8px;\n    width: 260px;\n    padding: 12px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.04);\n    cursor: pointer;\n    transition: all 0.2s;\n    position: relative;\n    z-index: 2;\n}\n\n.orgflow-node-card:hover {\n    border-color: #0284c7;\n    box-shadow: 0 4px 12px rgba(2,132,199,0.12);\n    transform: translateY(-2px);\n}\n\n.orgflow-node-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid #f1f5f9;\n    padding-bottom: 6px;\n    margin-bottom: 8px;\n}\n\n.orgflow-node-type-badge {\n    font-size: 10px;\n    font-weight: 700;\n    padding: 2px 6px;\n    border-radius: 4px;\n    text-transform: uppercase;\n}\n\n.type-company { background: #fef08a; color: #854d0e; }\n.type-division { background: #e0e7ff; color: #3730a3; }\n.type-department { background: #e0f2fe; color: #0369a1; }\n.type-section { background: #f1f5f9; color: #334155; }\n.type-team { background: #fae8ff; color: #86198f; }\n\n.orgflow-node-name {\n    font-size: 13px;\n    font-weight: 700;\n    color: #0f172a;\n    line-height: 1.3;\n}\n\n.orgflow-node-code {\n    font-size: 11px;\n    color: #64748b;\n    font-family: monospace;\n}\n\n.orgflow-node-meta {\n    display: flex;\n    justify-content: space-between;\n    margin-top: 8px;\n    font-size: 11px;\n    color: #475569;\n}\n\n/* EMPLOYEE DIRECTORY TABLE */\n.orgflow-table-card {\n    background: #ffffff;\n    border: 1px solid #e2e8f0;\n    border-radius: 8px;\n    overflow: hidden;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.03);\n}\n\n.orgflow-table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 12px;\n}\n\n.orgflow-table th {\n    background: #f8fafc;\n    color: #475569;\n    font-weight: 600;\n    text-align: left;\n    padding: 10px 14px;\n    border-bottom: 1px solid #e2e8f0;\n}\n\n.orgflow-table td {\n    padding: 10px 14px;\n    border-bottom: 1px solid #f1f5f9;\n    color: #1e293b;\n}\n\n.orgflow-table tr:hover td {\n    background: #f0f9ff;\n    cursor: pointer;\n}\n\n/* STATUS BADGES */\n.orgflow-badge {\n    display: inline-block;\n    padding: 3px 8px;\n    border-radius: 4px;\n    font-size: 11px;\n    font-weight: 600;\n}\n\n.badge-active { background: #dcfce7; color: #15803d; }\n.badge-vacant { background: #fef3c7; color: #b45309; }\n.badge-acting { background: #e0e7ff; color: #4338ca; }\n.badge-pending { background: #ffedd5; color: #c2410c; }\n.badge-approved { background: #dbeafe; color: #1d4ed8; }\n.badge-executed { background: #dcfce7; color: #166534; }\n.badge-error { background: #fee2e2; color: #991b1b; }\n\n/* SIDE DRAWER */\n.orgflow-drawer-overlay {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: rgba(15, 23, 42, 0.4);\n    z-index: 100;\n    display: flex;\n    justify-content: flex-end;\n    animation: fadeIn 0.2s ease-out;\n}\n\n.orgflow-drawer {\n    width: 520px;\n    background: #ffffff;\n    height: 100%;\n    box-shadow: -4px 0 24px rgba(0,0,0,0.15);\n    display: flex;\n    flex-direction: column;\n    animation: slideLeft 0.25s ease-out;\n}\n\n.orgflow-drawer-header {\n    padding: 18px 24px;\n    border-bottom: 1px solid #e2e8f0;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}\n\n.orgflow-drawer-title {\n    font-size: 16px;\n    font-weight: 700;\n    color: #0f172a;\n}\n\n.orgflow-drawer-close {\n    background: none;\n    border: none;\n    font-size: 20px;\n    cursor: pointer;\n    color: #94a3b8;\n}\n\n.orgflow-drawer-close:hover {\n    color: #0f172a;\n}\n\n.orgflow-drawer-tabs {\n    display: flex;\n    border-bottom: 1px solid #e2e8f0;\n    background: #f8fafc;\n}\n\n.orgflow-drawer-tab {\n    padding: 10px 16px;\n    font-size: 12px;\n    font-weight: 600;\n    color: #64748b;\n    cursor: pointer;\n    border-bottom: 2px solid transparent;\n}\n\n.orgflow-drawer-tab.active {\n    color: #0284c7;\n    border-bottom-color: #0284c7;\n    background: #ffffff;\n}\n\n.orgflow-drawer-body {\n    flex: 1;\n    padding: 20px 24px;\n    overflow-y: auto;\n}\n\n.orgflow-drawer-footer {\n    padding: 16px 24px;\n    border-top: 1px solid #e2e8f0;\n    background: #f8fafc;\n    display: flex;\n    justify-content: flex-end;\n    gap: 10px;\n}\n\n/* PREVIEW BANNER */\n.orgflow-preview-banner {\n    background: #fffbeb;\n    border: 1px solid #fde68a;\n    border-radius: 6px;\n    padding: 10px 14px;\n    margin-bottom: 16px;\n    font-size: 12px;\n    color: #92400e;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    font-weight: 500;\n}\n\n@keyframes fadeIn {\n    from { opacity: 0; }\n    to { opacity: 1; }\n}\n\n@keyframes slideLeft {\n    from { transform: translateX(100%); }\n    to { transform: translateX(0); }\n}\n";
         document.head.appendChild(style);
     }
 })();
@@ -13,12 +13,14 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 3.7.0 (Canonical Internal Identity Architecture: ORG-APP53-{recordId})
- * Verified against Real Production Kintone Apps:
- * App 53  = Employee Master (275 records)
- * App 791 = Canonical Organization Master (33 nodes)
- * App 792 = Employee Assignment History (275 records)
- * App 793 = Organization Change Request
+ * Version: 3.8.0 (Pure Canonical Hierarchy Engine & Multi-Level Tree Rendering)
+ * Strict Hierarchy Model:
+ * 1. Canonical Code = Unique Node Identity
+ * 2. Parent Code = Authoritative Parent-Child Linkage
+ * 3. Level = Authoritative Visual Depth (Levels 1 to 5)
+ * 4. Hierarchy Path = Validation Reference
+ * 5. Entity Type = Presentation Classification
+ * 6. Code Status = Governance Status
  * 
  * 100% READ-ONLY DATA INTEGRATION / ZERO PRODUCTION WRITES.
  */
@@ -86,9 +88,9 @@
                         organization_name: o.organization_name?.value?.trim() || code,
                         organization_type: o.organization_type?.value?.trim() || 'DEPARTMENT',
                         organization_level: parseInt(o.organization_level?.value || '1', 10),
-                        parent_organization_code: o.parent_organization_code?.value?.trim() || null,
+                        parent_organization_code: (o.parent_organization_code?.value?.trim() === 'ROOT' ? null : o.parent_organization_code?.value?.trim()) || null,
                         hierarchy_path: o.hierarchy_path?.value?.trim() || code,
-                        code_status: o.code_status?.value?.trim() || 'ACTIVE'
+                        code_status: o.code_status?.value?.trim() || 'APPROVED'
                     });
                 }
             });
@@ -100,7 +102,6 @@
                 const recId = String(e.$id?.value || '').trim();
                 const rawEmpText = String(e.emp_text?.value || '').trim();
                 const rawNumber = String(e.Number?.value || '').trim();
-                // Preserve original string representation without numeric coercion
                 const empNumStr = rawEmpText ? rawEmpText : rawNumber;
                 const internalId = `ORG-APP53-${recId}`;
 
@@ -153,14 +154,13 @@
                 });
             });
 
-            // Disambiguated In-Memory Joining between App 53 and App 792
+            // In-Memory Joining with Disambiguation (App 53 + App 792)
             this.unifiedEmployees = [];
             this.historyMap.clear();
 
             rawIdentities.forEach(identity => {
                 let matchedAsg = null;
 
-                // Handle Ambiguous Employee IDs (e.g. '9000') using corroborating attributes
                 if (identity.employee_id === '9000') {
                     if (identity.english_name.toLowerCase().includes('tomita')) {
                         matchedAsg = parsedAssignments.find(a => a.employee_id === '9000' && a.english_name.toLowerCase().includes('tomita') && a.assignment_status === 'CURRENT');
@@ -171,14 +171,13 @@
                     matchedAsg = parsedAssignments.find(a => a.employee_id === identity.employee_id && a.assignment_status === 'CURRENT');
                 }
 
-                // Fallback matching if not directly found
                 if (!matchedAsg) {
                     matchedAsg = {
                         assignment_id: `ASG-${identity.record_id}-DEF`,
                         position_code: 'POS-STAFF',
                         position_name: identity.raw_position || 'Staff',
                         organization_code: 'TTMET',
-                        organization_name: 'Toyota Tsusho M&E (Thailand)',
+                        organization_name: 'Toyota Tsusho M&E (Thailand) Co.,Ltd.',
                         organization_type: 'COMPANY',
                         assignment_type: 'PRIMARY',
                         assignment_status: 'CURRENT',
@@ -192,7 +191,7 @@
                 const unifiedObj = {
                     internal_id: identity.internal_id,
                     record_id: identity.record_id,
-                    employee_id: identity.employee_id, // String (e.g. '0043', '9000')
+                    employee_id: identity.employee_id,
                     thai_name: identity.thai_name || matchedAsg.thai_name || '',
                     english_name: identity.english_name || matchedAsg.english_name || '',
                     nickname: identity.nickname || '',
@@ -204,7 +203,7 @@
                     position_code: matchedAsg.position_code || 'POS-STAFF',
                     position_name: matchedAsg.position_name || identity.raw_position || 'Staff',
                     organization_code: matchedAsg.organization_code || 'TTMET',
-                    organization_name: matchedAsg.organization_name || org.organization_name || 'Toyota Tsusho M&E (Thailand)',
+                    organization_name: matchedAsg.organization_name || org.organization_name || 'Toyota Tsusho M&E (Thailand) Co.,Ltd.',
                     organization_type: matchedAsg.organization_type || org.organization_type || 'COMPANY',
                     assignment_type: matchedAsg.assignment_type || 'PRIMARY',
                     assignment_status: matchedAsg.assignment_status || 'CURRENT',
@@ -214,16 +213,15 @@
 
                 this.unifiedEmployees.push(unifiedObj);
 
-                // Populate History Map by internal_id
                 const empHistory = parsedAssignments.filter(a => a.employee_id === identity.employee_id);
                 this.historyMap.set(identity.internal_id, empHistory);
             });
 
-            // Build Recursive Tree Graph from App 791 and compute exact Headcounts
+            // Build Recursive Tree Graph from App 791 Parent-Child Links
             this.buildRecursiveHierarchyTree();
 
             this.isLoaded = true;
-            console.log(`OrgFlow Data Loaded: ${this.unifiedEmployees.length} Canonical Person Identities (Unique internal_ids: ${this.empMap.size}) across ${this.orgMap.size} Canonical Units.`);
+            console.log(`OrgFlow Canonical Hierarchy Initialized: ${this.orgMap.size} Canonical Nodes, ${this.unifiedEmployees.length} Employees (Root Scope: ${this.getRootTreeNode()?.totalHeadcount}).`);
         }
 
         buildRecursiveHierarchyTree() {
@@ -247,14 +245,19 @@
                 });
             });
 
-            // Step 2: Establish Parent-Child Links
+            // Step 2: Establish Parent-Child Links strictly from parent_organization_code
             this.treeNodes.forEach(node => {
                 if (node.parentCode && this.treeNodes.has(node.parentCode)) {
                     this.treeNodes.get(node.parentCode).children.push(node);
                 }
             });
 
-            // Step 3: Populate Direct Employees using internal_id uniqueness
+            // Sort children by level then code
+            this.treeNodes.forEach(node => {
+                node.children.sort((a, b) => (a.level - b.level) || a.code.localeCompare(b.code));
+            });
+
+            // Step 3: Populate Direct Employees
             this.unifiedEmployees.forEach(emp => {
                 const orgNode = this.treeNodes.get(emp.organization_code);
                 if (orgNode) {
@@ -341,28 +344,25 @@
             return this.unifiedEmployees.filter(e => allowedCodes.has(e.organization_code));
         }
 
-        getOrgHeadcount(orgCode) {
-            const node = this.treeNodes.get(orgCode);
-            if (!node) return { directHeadcount: 0, descendantHeadcount: 0, totalHeadcount: 0, vacancies: 0 };
-            return {
-                directHeadcount: node.directHeadcount,
-                descendantHeadcount: node.descendantHeadcount,
-                totalHeadcount: node.totalHeadcount,
-                vacancies: 0
-            };
-        }
-
-        getHeadcountSummary() {
-            const divisions = Array.from(this.treeNodes.values()).filter(o => o.type === 'DIVISION' || o.type === 'DEPARTMENT');
-            return divisions.map(d => ({
-                name: d.name,
-                code: d.code,
-                type: d.type,
-                direct: d.directHeadcount,
-                descendant: d.descendantHeadcount,
-                headcount: d.totalHeadcount,
-                vacancies: 0
-            }));
+        getPositions() {
+            const pMap = new Map();
+            this.unifiedEmployees.forEach(e => {
+                if (!pMap.has(e.position_code)) {
+                    pMap.set(e.position_code, {
+                        position_code: e.position_code,
+                        position_name: e.position_name,
+                        count: 0,
+                        departments: new Set()
+                    });
+                }
+                const p = pMap.get(e.position_code);
+                p.count++;
+                p.departments.add(e.organization_name);
+            });
+            return Array.from(pMap.values()).map(p => ({
+                ...p,
+                departmentCount: p.departments.size
+            })).sort((a, b) => b.count - a.count);
         }
 
         getVacancies() {
@@ -391,27 +391,6 @@
             }));
         }
 
-        getPositions() {
-            const pMap = new Map();
-            this.unifiedEmployees.forEach(e => {
-                if (!pMap.has(e.position_code)) {
-                    pMap.set(e.position_code, {
-                        position_code: e.position_code,
-                        position_name: e.position_name,
-                        count: 0,
-                        departments: new Set()
-                    });
-                }
-                const p = pMap.get(e.position_code);
-                p.count++;
-                p.departments.add(e.organization_name);
-            });
-            return Array.from(pMap.values()).map(p => ({
-                ...p,
-                departmentCount: p.departments.size
-            })).sort((a, b) => b.count - a.count);
-        }
-
         getChangeRequests() {
             return this.requests793.map(r => ({
                 request_id: r.request_id?.value || '',
@@ -433,12 +412,12 @@
         }
     }
 
-    // Portal Controller & UI Renderer
+    // Portal Controller & Interactive UI Renderer
     class OrgFlowPortalApp {
         constructor() {
             this.store = new OrgFlowDataStore();
-            this.currentView = 'DASHBOARD'; // DASHBOARD, ORG_CHART, DIRECTORY, ORGANIZATIONS, POSITIONS, VACANCIES, REQUESTS
-            this.chartMode = 'ORG_STRUCTURE'; // ORG_STRUCTURE, REPORTING_STRUCTURE
+            this.currentView = 'ORG_CHART'; // Default to Organization Chart
+            this.chartMode = 'ORG_STRUCTURE';
             this.selectedOrgCode = 'TTMET';
             this.searchQuery = '';
             this.filterLevel = 'ALL';
@@ -446,12 +425,12 @@
             this.activeOrgDetail = null;
             this.drawerTab = 'OVERVIEW';
             this.isChangeWizardOpen = false;
-            this.expandedNodeCodes = new Set(['TTMET', 'DIV-G0', 'DIV-ME', 'TMH0']); // Level 1 & 2 Expanded by default
+            this.expandedNodeCodes = new Set(['TTMET', 'DIV-G0', 'DIV-ME', 'TMH0']); // Level 1 & 2 Expanded by Default
         }
 
         async init(rootElement) {
             this.root = rootElement;
-            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow Explorer & Loading Verified Baselines...</div>`;
+            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow Explorer & Loading Canonical Master...</div>`;
 
             await this.store.loadAllData();
             this.render();
@@ -462,10 +441,8 @@
             const appContainer = document.createElement('div');
             appContainer.id = 'orgflow-explorer-app';
 
-            // 1. Top Toolbar
             appContainer.appendChild(this.renderToolbar());
 
-            // 2. Main Body (Sidebar + Canvas)
             const bodyContainer = document.createElement('div');
             bodyContainer.className = 'orgflow-body';
 
@@ -474,7 +451,6 @@
 
             appContainer.appendChild(bodyContainer);
 
-            // 3. Drawers & Modals
             if (this.activeEmployee) {
                 appContainer.appendChild(this.renderEmployeeDrawer());
             }
@@ -498,22 +474,22 @@
                 <div class="orgflow-logo-area">
                     <div class="orgflow-brand">
                         <span>🏢 OrgFlow</span>
-                        <span class="orgflow-brand-badge">HR Portal 2.0</span>
+                        <span class="orgflow-brand-badge">Canonical Explorer</span>
                     </div>
                 </div>
 
                 <div class="orgflow-search-box">
                     <span class="orgflow-search-icon">🔍</span>
-                    <input type="text" class="orgflow-search-input" placeholder="Search employee, position, organization..." value="${this.searchQuery}">
+                    <input type="text" class="orgflow-search-input" placeholder="Search employee, ID, position, organization..." value="${this.searchQuery}">
                 </div>
 
                 <div class="orgflow-toolbar-controls">
                     <select class="orgflow-select" id="orgflow-level-filter">
                         <option value="ALL">All Hierarchy Levels</option>
-                        <option value="DIVISION" ${this.filterLevel === 'DIVISION' ? 'selected' : ''}>Divisions</option>
-                        <option value="DEPARTMENT" ${this.filterLevel === 'DEPARTMENT' ? 'selected' : ''}>Departments</option>
-                        <option value="SECTION" ${this.filterLevel === 'SECTION' ? 'selected' : ''}>Sections</option>
-                        <option value="TEAM" ${this.filterLevel === 'TEAM' ? 'selected' : ''}>Teams</option>
+                        <option value="DIVISION" ${this.filterLevel === 'DIVISION' ? 'selected' : ''}>Divisions (Level 2)</option>
+                        <option value="DEPARTMENT" ${this.filterLevel === 'DEPARTMENT' ? 'selected' : ''}>Departments (Level 3)</option>
+                        <option value="SECTION" ${this.filterLevel === 'SECTION' ? 'selected' : ''}>Sections (Level 4)</option>
+                        <option value="TEAM" ${this.filterLevel === 'TEAM' ? 'selected' : ''}>Teams (Level 5)</option>
                     </select>
 
                     <button class="orgflow-btn orgflow-btn-outline" id="orgflow-export-excel-btn">📊 Export Excel</button>
@@ -522,11 +498,10 @@
                 </div>
             `;
 
-            // Attach Toolbar Events
             const searchInput = bar.querySelector('.orgflow-search-input');
             searchInput.addEventListener('input', (e) => {
                 this.searchQuery = e.target.value.toLowerCase().trim();
-                if (this.searchQuery && this.currentView === 'ORG_CHART') {
+                if (this.searchQuery) {
                     this.autoExpandSearchMatches(this.searchQuery);
                 }
                 this.renderContentOnly();
@@ -554,13 +529,26 @@
         }
 
         autoExpandSearchMatches(query) {
+            // Expand full path for matching employees
             this.store.getUnifiedEmployees().forEach(emp => {
                 if (emp.english_name.toLowerCase().includes(query) ||
                     emp.thai_name.toLowerCase().includes(query) ||
                     emp.employee_id.toLowerCase().includes(query) ||
-                    emp.position_name.toLowerCase().includes(query)) {
+                    emp.position_name.toLowerCase().includes(query) ||
+                    emp.organization_code.toLowerCase().includes(query)) {
                     
                     let curr = this.store.getTreeNode(emp.organization_code);
+                    while (curr) {
+                        this.expandedNodeCodes.add(curr.code);
+                        curr = curr.parentCode ? this.store.getTreeNode(curr.parentCode) : null;
+                    }
+                }
+            });
+
+            // Expand path for matching organization names / codes
+            this.store.getOrganizations().forEach(org => {
+                if (org.organization_name.toLowerCase().includes(query) || org.organization_code.toLowerCase().includes(query)) {
+                    let curr = this.store.getTreeNode(org.organization_code);
                     while (curr) {
                         this.expandedNodeCodes.add(curr.code);
                         curr = curr.parentCode ? this.store.getTreeNode(curr.parentCode) : null;
@@ -574,13 +562,13 @@
             sidebar.className = 'orgflow-sidebar';
 
             const navItems = [
-                { id: 'DASHBOARD', icon: '📊', label: 'Dashboard' },
                 { id: 'ORG_CHART', icon: '🌳', label: 'Organization Chart' },
                 { id: 'DIRECTORY', icon: '👥', label: 'Employee Directory', count: this.store.getUnifiedEmployees().length },
-                { id: 'ORGANIZATIONS', icon: '🏛️', label: 'Organizations', count: this.store.getOrganizations().length },
+                { id: 'ORGANIZATIONS', icon: '🏛️', label: 'Canonical Units', count: this.store.getOrganizations().length },
                 { id: 'POSITIONS', icon: '💼', label: 'Positions', count: this.store.getPositions().length },
                 { id: 'VACANCIES', icon: '🎯', label: 'Vacancies' },
-                { id: 'REQUESTS', icon: '📝', label: 'Change Requests', count: this.store.getChangeRequests().length }
+                { id: 'REQUESTS', icon: '📝', label: 'Change Requests', count: this.store.getChangeRequests().length },
+                { id: 'DASHBOARD', icon: '📊', label: 'Executive Dashboard' }
             ];
 
             navItems.forEach(item => {
@@ -606,14 +594,9 @@
             canvas.className = 'orgflow-canvas';
             canvas.id = 'orgflow-main-canvas';
 
-            // Breadcrumb
             canvas.appendChild(this.renderBreadcrumb());
 
-            // View Content
             switch (this.currentView) {
-                case 'DASHBOARD':
-                    canvas.appendChild(this.renderDashboardView());
-                    break;
                 case 'ORG_CHART':
                     canvas.appendChild(this.renderOrgChartView());
                     break;
@@ -632,8 +615,11 @@
                 case 'REQUESTS':
                     canvas.appendChild(this.renderChangeRequestsView());
                     break;
-                default:
+                case 'DASHBOARD':
                     canvas.appendChild(this.renderDashboardView());
+                    break;
+                default:
+                    canvas.appendChild(this.renderOrgChartView());
             }
 
             return canvas;
@@ -647,8 +633,8 @@
             bar.innerHTML = `
                 <span class="orgflow-breadcrumb-link" data-code="TTMET">TTMET</span>
                 <span class="orgflow-breadcrumb-separator">></span>
-                <span>${currentOrg ? currentOrg.organization_name : 'Toyota Tsusho M&E (Thailand)'} (<code>${this.selectedOrgCode}</code>)</span>
-                <span style="margin-left: auto; color: #64748b; font-size: 11px;">Active View: <b>${this.currentView}</b></span>
+                <span>${currentOrg ? currentOrg.organization_name : 'Toyota Tsusho M&E (Thailand) Co.,Ltd.'} (<code>${this.selectedOrgCode}</code>)</span>
+                <span style="margin-left: auto; color: #64748b; font-size: 11px;">View: <b>${this.currentView}</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Employees</b></span>
             `;
 
             bar.querySelector('.orgflow-breadcrumb-link').addEventListener('click', () => {
@@ -659,89 +645,14 @@
             return bar;
         }
 
-        renderDashboardView() {
-            const view = document.createElement('div');
-            const totalEmps = this.store.getUnifiedEmployees().length;
-            const totalOrgs = this.store.getOrganizations().length;
-            const totalPos = this.store.getPositions().length;
-            const crCount = this.store.getChangeRequests().length;
-            const rootNode = this.store.getRootTreeNode();
-
-            view.innerHTML = `
-                <div class="orgflow-kpi-grid">
-                    <div class="orgflow-kpi-card">
-                        <div class="orgflow-kpi-title">Total Active Employees</div>
-                        <div class="orgflow-kpi-value">${totalEmps}</div>
-                        <div class="orgflow-kpi-sub">Direct Root: ${rootNode?.directHeadcount || 0} | Scope: ${rootNode?.totalHeadcount || 0}</div>
-                    </div>
-                    <div class="orgflow-kpi-card">
-                        <div class="orgflow-kpi-title">Canonical Org Units</div>
-                        <div class="orgflow-kpi-value">${totalOrgs}</div>
-                        <div class="orgflow-kpi-sub">33 Nodes across Levels 1–5</div>
-                    </div>
-                    <div class="orgflow-kpi-card">
-                        <div class="orgflow-kpi-title">Standard Positions</div>
-                        <div class="orgflow-kpi-value">${totalPos}</div>
-                        <div class="orgflow-kpi-sub">Standardized Catalog</div>
-                    </div>
-                    <div class="orgflow-kpi-card">
-                        <div class="orgflow-kpi-title">Pending Change Requests</div>
-                        <div class="orgflow-kpi-value">${crCount}</div>
-                        <div class="orgflow-kpi-sub">App 793 Workflow</div>
-                    </div>
-                </div>
-
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
-                    <div class="orgflow-table-card" style="padding: 16px;">
-                        <h3 style="margin-top:0; color:#0f172a; font-size:14px;">🏢 Headcount Breakdown by Division / Department</h3>
-                        <table class="orgflow-table">
-                            <thead>
-                                <tr><th>Unit Name</th><th>Code</th><th>Type</th><th style="text-align:right;">Direct</th><th style="text-align:right;">Total Scope</th></tr>
-                            </thead>
-                            <tbody>
-                                ${this.store.getHeadcountSummary().map(h => `
-                                    <tr>
-                                        <td><b>${h.name}</b></td>
-                                        <td><code>${h.code}</code></td>
-                                        <td><span class="orgflow-badge badge-active">${h.type}</span></td>
-                                        <td style="text-align:right; color:#64748b;">${h.direct}</td>
-                                        <td style="text-align:right; font-weight:bold; color:#0284c7;">${h.headcount}</td>
-                                    </tr>
-                                `).join('')}
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="orgflow-table-card" style="padding: 16px;">
-                        <h3 style="margin-top:0; color:#0f172a; font-size:14px;">💼 Top Positions by Assigned Staff</h3>
-                        <table class="orgflow-table">
-                            <thead>
-                                <tr><th>Position Title</th><th>Code</th><th style="text-align:right;">Staff Count</th></tr>
-                            </thead>
-                            <tbody>
-                                ${this.store.getPositions().slice(0, 7).map(p => `
-                                    <tr>
-                                        <td><b>${p.position_name}</b></td>
-                                        <td><code>${p.position_code}</code></td>
-                                        <td style="text-align:right; font-weight:bold;">${p.count}</td>
-                                    </tr>
-                                `).join('')}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            `;
-            return view;
-        }
-
         renderOrgChartView() {
             const view = document.createElement('div');
 
             view.innerHTML = `
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
                     <div style="display: flex; gap: 8px;">
-                        <button class="orgflow-btn ${this.chartMode === 'ORG_STRUCTURE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-org">🏛️ Organization Structure</button>
-                        <button class="orgflow-btn ${this.chartMode === 'REPORTING_STRUCTURE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-rep">👥 Reporting Structure</button>
+                        <button class="orgflow-btn ${this.chartMode === 'ORG_STRUCTURE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-org">🏛️ Canonical Structure</button>
+                        <button class="orgflow-btn ${this.chartMode === 'REPORTING_STRUCTURE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-rep">👥 Personnel View</button>
                     </div>
                     <div style="display: flex; gap: 8px; align-items: center;">
                         <button class="orgflow-btn orgflow-btn-outline" id="btn-expand-all" style="font-size:11px; padding:5px 10px;">Expand All</button>
@@ -805,10 +716,18 @@
 
             const card = document.createElement('div');
             card.className = 'orgflow-node-card';
+            
+            // Level Accent Styles
             if (node.level === 1) card.style.borderLeft = '5px solid #0284c7';
             else if (node.level === 2) card.style.borderLeft = '5px solid #6366f1';
             else if (node.level === 3) card.style.borderLeft = '5px solid #06b6d4';
-            else card.style.borderLeft = '4px solid #cbd5e1';
+            else if (node.level === 4) card.style.borderLeft = '5px solid #10b981';
+            else card.style.borderLeft = '4px solid #f59e0b';
+
+            // Highlighting Search Matches
+            if (this.searchQuery && (node.code.toLowerCase().includes(this.searchQuery) || node.name.toLowerCase().includes(this.searchQuery))) {
+                card.style.boxShadow = '0 0 0 3px #fef08a, 0 4px 12px rgba(234, 179, 8, 0.25)';
+            }
 
             card.innerHTML = `
                 <div class="orgflow-node-header">
@@ -832,7 +751,7 @@
                 </div>
             `;
 
-            // Toggle Expand / Collapse
+            // Expand / Collapse Action
             const toggleBtn = card.querySelector('.btn-toggle-expand');
             if (toggleBtn) {
                 toggleBtn.addEventListener('click', (e) => {
@@ -846,7 +765,7 @@
                 });
             }
 
-            // View Details Drawer
+            // Details Drawer Action
             card.querySelector('.btn-view-org-detail').addEventListener('click', (e) => {
                 e.stopPropagation();
                 this.activeOrgDetail = node;
@@ -861,22 +780,15 @@
 
             container.appendChild(card);
 
-            // Render Children if Expanded
+            // Render Children if Expanded (Recursively with tree connectors)
             if (hasChildren && isExpanded) {
-                const childContainer = document.createElement('div');
-                childContainer.style.display = 'flex';
-                childContainer.style.flexWrap = 'wrap';
-                childContainer.style.justifyContent = 'center';
-                childContainer.style.gap = '16px';
-                childContainer.style.marginTop = '20px';
-                childContainer.style.borderTop = '2px solid #e2e8f0';
-                childContainer.style.paddingTop = '16px';
-                childContainer.style.position = 'relative';
+                const childWrapper = document.createElement('div');
+                childWrapper.className = 'orgflow-tree-children';
 
                 node.children.forEach(child => {
-                    childContainer.appendChild(this.renderRecursiveOrgNode(child));
+                    childWrapper.appendChild(this.renderRecursiveOrgNode(child));
                 });
-                container.appendChild(childContainer);
+                container.appendChild(childWrapper);
             }
 
             return container;
@@ -889,7 +801,22 @@
             const node = this.activeOrgDetail;
             const drawer = document.createElement('div');
             drawer.className = 'orgflow-drawer';
-            drawer.style.width = '560px';
+            drawer.style.width = '580px';
+
+            // Find Head/Manager
+            const managers = node.directEmployees.filter(e => 
+                e.position_code.includes('PRES') || 
+                e.position_code.includes('MD') || 
+                e.position_code.includes('VP') || 
+                e.position_code.includes('MGR') || 
+                e.position_code.includes('DH')
+            );
+
+            // Aggregate Positions in this unit
+            const posCountMap = new Map();
+            node.directEmployees.forEach(e => {
+                posCountMap.set(e.position_name, (posCountMap.get(e.position_name) || 0) + 1);
+            });
 
             drawer.innerHTML = `
                 <div class="orgflow-drawer-header">
@@ -901,34 +828,52 @@
                 </div>
 
                 <div class="orgflow-drawer-body">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
-                        <div class="orgflow-kpi-card" style="padding: 12px;">
-                            <div class="orgflow-kpi-title">Direct Assigned Staff</div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px;">
+                        <div class="orgflow-kpi-card" style="padding: 10px;">
+                            <div class="orgflow-kpi-title">Direct Staff</div>
                             <div class="orgflow-kpi-value" style="font-size: 20px;">${node.directHeadcount}</div>
-                            <div class="orgflow-kpi-sub">Directly placed in this tier</div>
+                            <div class="orgflow-kpi-sub">Assigned in tier</div>
                         </div>
-                        <div class="orgflow-kpi-card" style="padding: 12px;">
-                            <div class="orgflow-kpi-title">Total Hierarchical Scope</div>
+                        <div class="orgflow-kpi-card" style="padding: 10px;">
+                            <div class="orgflow-kpi-title">Total Scope</div>
                             <div class="orgflow-kpi-value" style="font-size: 20px; color: #0284c7;">${node.totalHeadcount}</div>
-                            <div class="orgflow-kpi-sub">Including all child units</div>
+                            <div class="orgflow-kpi-sub">Including child units</div>
+                        </div>
+                        <div class="orgflow-kpi-card" style="padding: 10px;">
+                            <div class="orgflow-kpi-title">Child Units</div>
+                            <div class="orgflow-kpi-value" style="font-size: 20px; color: #6366f1;">${node.children.length}</div>
+                            <div class="orgflow-kpi-sub">Direct subordinates</div>
                         </div>
                     </div>
 
                     <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px; margin-bottom: 16px; font-size: 12px;">
                         <div><b>Hierarchy Path:</b> <span style="color: #475569;">${node.hierarchyPath}</span></div>
-                        <div style="margin-top: 4px;"><b>Parent Code:</b> <code>${node.parentCode || 'ROOT (None)'}</code></div>
-                        <div style="margin-top: 4px;"><b>Immediate Child Units:</b> <b>${node.children.length}</b></div>
+                        <div style="margin-top: 4px;"><b>Parent Canonical Unit:</b> <code>${node.parentCode || 'ROOT (Company Top)'}</code></div>
+                        <div style="margin-top: 4px;"><b>Organization Head / Manager:</b> ${managers.length > 0 ? managers.map(m => `<b>${m.english_name}</b> (${m.position_name})`).join(', ') : '<span style="color:#94a3b8;">None directly assigned</span>'}</div>
                     </div>
+
+                    ${node.children.length > 0 ? `
+                        <div style="margin-bottom: 16px;">
+                            <div style="font-weight: 700; font-size: 12px; color: #0f172a; margin-bottom: 6px;">Direct Subordinate Units (${node.children.length})</div>
+                            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                                ${node.children.map(c => `
+                                    <span class="orgflow-badge badge-active" style="cursor:pointer;" data-child="${c.code}">
+                                        ${c.code} — ${c.name} (${c.totalHeadcount})
+                                    </span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
 
                     <div style="font-weight: 700; font-size: 13px; color: #0f172a; margin-bottom: 8px;">Direct Assigned Personnel (${node.directHeadcount})</div>
                     ${node.directEmployees.length === 0 ? `
                         <div style="padding: 16px; background: #ffffff; border: 1px dashed #cbd5e1; border-radius: 6px; color: #94a3b8; font-size: 12px; text-align: center;">
-                            No direct personnel assigned at this supervisory level (Employees assigned to subordinate sections).
+                            No direct personnel placed at this unit level (Staff assigned to subordinate sections).
                         </div>
                     ` : `
                         <table class="orgflow-table">
                             <thead>
-                                <tr><th>ID</th><th>Name</th><th>Position</th><th>Action</th></tr>
+                                <tr><th>Emp ID</th><th>Name</th><th>Position</th><th>Action</th></tr>
                             </thead>
                             <tbody>
                                 ${node.directEmployees.map(e => `
@@ -963,6 +908,14 @@
                 this.expandedNodeCodes.add(node.code);
                 this.activeOrgDetail = null;
                 this.render();
+            });
+
+            drawer.querySelectorAll('[data-child]').forEach(span => {
+                span.addEventListener('click', () => {
+                    const cCode = span.getAttribute('data-child');
+                    this.activeOrgDetail = this.store.getTreeNode(cCode);
+                    this.render();
+                });
             });
 
             drawer.querySelectorAll('.btn-open-emp').forEach(btn => {
@@ -1005,7 +958,8 @@
                 <table class="orgflow-table">
                     <thead>
                         <tr>
-                            <th>Emp ID</th>
+                            <th>Internal ID</th>
+                            <th>Emp No</th>
                             <th>English Name</th>
                             <th>Thai Name</th>
                             <th>Position Title</th>
@@ -1018,6 +972,7 @@
                     <tbody>
                         ${list.map(e => `
                             <tr data-internal-id="${e.internal_id}">
+                                <td><code>${e.internal_id}</code></td>
                                 <td><b>${e.employee_id}</b></td>
                                 <td>${e.english_name}</td>
                                 <td>${e.thai_name}</td>
@@ -1051,16 +1006,17 @@
             const orgs = this.store.getOrganizations();
             view.innerHTML = `
                 <div style="padding: 14px 16px; border-bottom: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #0f172a;">Canonical Organization Units (App 791 Master)</div>
+                    <div style="font-weight: 700; color: #0f172a;">Canonical Organization Units (App 791 Master - ${orgs.length} nodes)</div>
                 </div>
                 <table class="orgflow-table">
                     <thead>
                         <tr>
                             <th>Code</th>
                             <th>Organization Name</th>
-                            <th>Type</th>
+                            <th>Entity Type</th>
                             <th>Level</th>
                             <th>Parent Unit</th>
+                            <th>Hierarchy Path</th>
                             <th style="text-align:right;">Direct HC</th>
                             <th style="text-align:right;">Total Scope</th>
                         </tr>
@@ -1074,7 +1030,8 @@
                                     <td><b>${o.organization_name}</b></td>
                                     <td><span class="orgflow-node-type-badge type-${o.organization_type.toLowerCase()}">${o.organization_type}</span></td>
                                     <td>${o.organization_level}</td>
-                                    <td><code>${o.parent_organization_code || '-'}</code></td>
+                                    <td><code>${o.parent_organization_code || 'ROOT'}</code></td>
+                                    <td style="font-size:11px; color:#64748b;">${o.hierarchy_path}</td>
                                     <td style="text-align:right; color:#64748b;">${node?.directHeadcount || 0}</td>
                                     <td style="text-align:right; font-weight:bold; color: #0284c7;">${node?.totalHeadcount || 0}</td>
                                 </tr>
@@ -1093,15 +1050,15 @@
 
             view.innerHTML = `
                 <div style="padding: 14px 16px; border-bottom: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #0f172a;">Position Catalog & Distribution</div>
+                    <div style="font-weight: 700; color: #0f172a;">Position Catalog & Distribution (${positions.length} positions)</div>
                 </div>
                 <table class="orgflow-table">
                     <thead>
                         <tr>
                             <th>Position Code</th>
                             <th>Position Title</th>
-                            <th>Active Assigned Staff</th>
-                            <th>Present in Departments</th>
+                            <th>Assigned Staff</th>
+                            <th>Present in Units</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1109,7 +1066,7 @@
                             <tr>
                                 <td><code>${p.position_code}</code></td>
                                 <td><b>${p.position_name}</b></td>
-                                <td style="font-weight:bold; color:#0284c7;">${p.count} employees</td>
+                                <td style="font-weight:bold; color:#0284c7;">${p.count} staff</td>
                                 <td>${p.departmentCount} units</td>
                             </tr>
                         `).join('')}
@@ -1126,7 +1083,7 @@
 
             view.innerHTML = `
                 <div style="padding: 14px 16px; border-bottom: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #0f172a;">Position Capacity & Vacancy Status</div>
+                    <div style="font-weight: 700; color: #0f172a;">Position Capacity & Status</div>
                 </div>
                 <table class="orgflow-table">
                     <thead>
@@ -1136,7 +1093,7 @@
                             <th>Organization Unit</th>
                             <th>Org Code</th>
                             <th style="text-align:right;">Budgeted</th>
-                            <th style="text-align:right;">Current Active</th>
+                            <th style="text-align:right;">Active</th>
                             <th style="text-align:right;">Vacancies</th>
                             <th>Status</th>
                         </tr>
@@ -1167,7 +1124,7 @@
 
             view.innerHTML = `
                 <div style="padding: 14px 16px; border-bottom: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #0f172a;">Organization Change Requests (App 793 Read Monitor)</div>
+                    <div style="font-weight: 700; color: #0f172a;">Organization Change Requests (App 793 Monitor)</div>
                 </div>
                 <table class="orgflow-table">
                     <thead>
@@ -1201,6 +1158,41 @@
                         `).join('')}
                     </tbody>
                 </table>
+            `;
+            return view;
+        }
+
+        renderDashboardView() {
+            const view = document.createElement('div');
+            const totalEmps = this.store.getUnifiedEmployees().length;
+            const totalOrgs = this.store.getOrganizations().length;
+            const totalPos = this.store.getPositions().length;
+            const crCount = this.store.getChangeRequests().length;
+            const rootNode = this.store.getRootTreeNode();
+
+            view.innerHTML = `
+                <div class="orgflow-kpi-grid">
+                    <div class="orgflow-kpi-card">
+                        <div class="orgflow-kpi-title">Total Active Employees</div>
+                        <div class="orgflow-kpi-value">${totalEmps}</div>
+                        <div class="orgflow-kpi-sub">Direct Root: ${rootNode?.directHeadcount || 0} | Scope: ${rootNode?.totalHeadcount || 0}</div>
+                    </div>
+                    <div class="orgflow-kpi-card">
+                        <div class="orgflow-kpi-title">Canonical Org Units</div>
+                        <div class="orgflow-kpi-value">${totalOrgs}</div>
+                        <div class="orgflow-kpi-sub">App 791 Master Tree</div>
+                    </div>
+                    <div class="orgflow-kpi-card">
+                        <div class="orgflow-kpi-title">Standard Positions</div>
+                        <div class="orgflow-kpi-value">${totalPos}</div>
+                        <div class="orgflow-kpi-sub">Position Catalog</div>
+                    </div>
+                    <div class="orgflow-kpi-card">
+                        <div class="orgflow-kpi-title">Change Requests</div>
+                        <div class="orgflow-kpi-value">${crCount}</div>
+                        <div class="orgflow-kpi-sub">App 793 Workflow</div>
+                    </div>
+                </div>
             `;
             return view;
         }
@@ -1334,7 +1326,7 @@
                 <div class="orgflow-drawer-body">
                     <div class="orgflow-preview-banner">
                         <span>⚠️</span>
-                        <span><b>PREVIEW MODE ACTIVATED:</b> Validates before/after delta in memory. Zero production writes will occur.</span>
+                        <span><b>PREVIEW MODE ACTIVATED:</b> In-memory simulation only. Zero production writes will occur.</span>
                     </div>
 
                     <div style="margin-bottom: 14px;">
@@ -1449,13 +1441,13 @@
                 canvas.innerHTML = '';
                 canvas.appendChild(this.renderBreadcrumb());
                 switch (this.currentView) {
-                    case 'DASHBOARD': canvas.appendChild(this.renderDashboardView()); break;
                     case 'ORG_CHART': canvas.appendChild(this.renderOrgChartView()); break;
                     case 'DIRECTORY': canvas.appendChild(this.renderDirectoryView()); break;
                     case 'ORGANIZATIONS': canvas.appendChild(this.renderOrganizationsView()); break;
                     case 'POSITIONS': canvas.appendChild(this.renderPositionsView()); break;
                     case 'VACANCIES': canvas.appendChild(this.renderVacanciesView()); break;
                     case 'REQUESTS': canvas.appendChild(this.renderChangeRequestsView()); break;
+                    case 'DASHBOARD': canvas.appendChild(this.renderDashboardView()); break;
                 }
             }
         }
@@ -1467,8 +1459,8 @@
                 bar.innerHTML = `
                     <span class="orgflow-breadcrumb-link" data-code="TTMET">TTMET</span>
                     <span class="orgflow-breadcrumb-separator">></span>
-                    <span>${currentOrg ? currentOrg.organization_name : 'Toyota Tsusho M&E (Thailand)'} (<code>${this.selectedOrgCode}</code>)</span>
-                    <span style="margin-left: auto; color: #64748b; font-size: 11px;">Active View: <b>${this.currentView}</b></span>
+                    <span>${currentOrg ? currentOrg.organization_name : 'Toyota Tsusho M&E (Thailand) Co.,Ltd.'} (<code>${this.selectedOrgCode}</code>)</span>
+                    <span style="margin-left: auto; color: #64748b; font-size: 11px;">View: <b>${this.currentView}</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Employees</b></span>
                 `;
                 bar.querySelector('.orgflow-breadcrumb-link').addEventListener('click', () => {
                     this.selectedOrgCode = 'TTMET';
@@ -1478,20 +1470,41 @@
         }
 
         handleExcelExport() {
-            const filename = `OrgFlow_Export_${this.currentView}_${new Date().toISOString().slice(0, 10)}.csv`;
-            let headers = ['Internal ID', 'Employee ID', 'Thai Name', 'English Name', 'Position Code', 'Position Name', 'Org Code', 'Org Name', 'Assignment Type', 'Status'];
-            let rows = this.store.getUnifiedEmployees().map(e => [
-                `"${e.internal_id}"`,
-                `"=""${e.employee_id}"""`, // Preserves leading zeros in Excel as text
-                `"${e.thai_name.replace(/"/g, '""')}"`,
-                `"${e.english_name.replace(/"/g, '""')}"`,
-                `"${e.position_code}"`,
-                `"${e.position_name.replace(/"/g, '""')}"`,
-                `"${e.organization_code}"`,
-                `"${e.organization_name.replace(/"/g, '""')}"`,
-                `"${e.assignment_type}"`,
-                `"${e.assignment_status}"`
-            ]);
+            const filename = `OrgFlow_Canonical_Export_${this.currentView}_${new Date().toISOString().slice(0, 10)}.csv`;
+            
+            // Canonical Hierarchy Model Excel Exporter
+            let headers = [
+                'Level',
+                'Hierarchy Path',
+                'Parent Code',
+                'Canonical Code',
+                'Organization Name',
+                'Entity Type',
+                'Direct Headcount',
+                'Total Scope',
+                'Employee Number',
+                'Employee Name',
+                'Position'
+            ];
+
+            let rows = [];
+            this.store.getUnifiedEmployees().forEach(e => {
+                const org = this.store.getOrgByCode(e.organization_code) || {};
+                const treeNode = this.store.getTreeNode(e.organization_code);
+                rows.push([
+                    `"${org.organization_level || 1}"`,
+                    `"${(org.hierarchy_path || 'TTMET').replace(/"/g, '""')}"`,
+                    `"${org.parent_organization_code || 'ROOT'}"`,
+                    `"${e.organization_code}"`,
+                    `"${(org.organization_name || e.organization_name).replace(/"/g, '""')}"`,
+                    `"${org.organization_type || 'DEPARTMENT'}"`,
+                    `"${treeNode?.directHeadcount || 0}"`,
+                    `"${treeNode?.totalHeadcount || 0}"`,
+                    `"=""${e.employee_id}"""`, // Preserves leading zeros as text
+                    `"${e.english_name.replace(/"/g, '""')}"`,
+                    `"${e.position_name.replace(/"/g, '""')}"`
+                ]);
+            });
 
             const csvContent = '\uFEFF' + [headers.join(','), ...rows.map(r => r.join(','))].join('\r\n');
             const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
@@ -1506,43 +1519,51 @@
         }
 
         handlePdfExport() {
-            const org = this.store.getOrgByCode(this.selectedOrgCode) || { organization_name: 'Toyota Tsusho M&E (Thailand)', organization_code: 'TTMET' };
-            const node = this.store.getTreeNode(this.selectedOrgCode);
-            const emps = this.store.getEmployeesByOrgScope(this.selectedOrgCode);
+            const rootNode = this.store.getRootTreeNode();
+            const orgs = this.store.getOrganizations();
+
+            const renderTreeTable = (node, indent = 0) => {
+                let html = `
+                    <tr>
+                        <td style="padding-left: ${indent * 20 + 8}px;">
+                            ${indent > 0 ? '└── ' : ''}<b>${node.name}</b> (<code>${node.code}</code>)
+                        </td>
+                        <td><span style="font-size:10px; background:#f1f5f9; padding:2px 6px; border-radius:3px;">${node.type}</span></td>
+                        <td>Level ${node.level}</td>
+                        <td style="text-align:right;">${node.directHeadcount}</td>
+                        <td style="text-align:right; font-weight:bold; color:#0284c7;">${node.totalHeadcount}</td>
+                    </tr>
+                `;
+                node.children.forEach(c => {
+                    html += renderTreeTable(c, indent + 1);
+                });
+                return html;
+            };
 
             const html = `
                 <html>
                 <head>
-                    <title>OrgFlow — ${org.organization_name}</title>
+                    <title>OrgFlow — Canonical Organization Chart</title>
                     <style>
-                        body { font-family: sans-serif; padding: 20px; font-size: 11px; }
+                        body { font-family: sans-serif; padding: 24px; font-size: 11px; color: #1e293b; }
+                        h2 { margin-bottom: 4px; color: #0f172a; }
                         table { width: 100%; border-collapse: collapse; margin-top: 15px; }
                         th, td { border: 1px solid #cbd5e1; padding: 6px 10px; text-align: left; }
-                        th { background: #f1f5f9; }
+                        th { background: #f8fafc; font-weight: bold; }
                     </style>
                 </head>
                 <body>
-                    <h2>OrgFlow — Organization Hierarchy Dossier</h2>
-                    <p><b>Unit:</b> ${org.organization_name} (<code>${org.organization_code}</code>) | <b>Direct:</b> ${node?.directHeadcount || 0} | <b>Total Scope:</b> ${node?.totalHeadcount || emps.length} employees</p>
+                    <h2>OrgFlow — Canonical Organization Hierarchy Dossier</h2>
+                    <p style="color: #64748b; margin-top: 0;">Authoritative Organization Master (App 791) • Total Scope: <b>${rootNode?.totalHeadcount || 275} Employees</b></p>
                     <table>
                         <thead>
-                            <tr><th>Internal ID</th><th>Emp ID</th><th>English Name</th><th>Thai Name</th><th>Position Title</th><th>Position Code</th><th>Unit</th></tr>
+                            <tr><th>Canonical Organization Hierarchy</th><th>Entity Type</th><th>Depth</th><th style="text-align:right;">Direct Staff</th><th style="text-align:right;">Total Scope</th></tr>
                         </thead>
                         <tbody>
-                            ${emps.map(e => `
-                                <tr>
-                                    <td><code>${e.internal_id}</code></td>
-                                    <td><b>${e.employee_id}</b></td>
-                                    <td>${e.english_name}</td>
-                                    <td>${e.thai_name}</td>
-                                    <td>${e.position_name}</td>
-                                    <td><code>${e.position_code}</code></td>
-                                    <td>${e.organization_name}</td>
-                                </tr>
-                            `).join('')}
+                            ${rootNode ? renderTreeTable(rootNode) : ''}
                         </tbody>
                     </table>
-                    <div style="margin-top: 20px; text-align: center;">
+                    <div style="margin-top: 24px; text-align: center;">
                         <button onclick="window.print()" style="background:#0284c7; color:#fff; border:none; padding:8px 16px; border-radius:4px; font-weight:bold; cursor:pointer;">🖨️ Print / Save as PDF</button>
                     </div>
                 </body>
