@@ -1,0 +1,10 @@
+{
+  "app53_physical_records": 275,
+  "unique_employee_ids": 274,
+  "duplicate_employee_ids": 1,
+  "logical_persons": 275,
+  "thai_names_present": 255,
+  "english_names_present": 275,
+  "sum_of_name_fields": 530,
+  "proof_statement": "Logical Persons (275) != Thai Names Present (255) + English Names Present (275) = 530. Thai and English names are dual-language attributes of the same physical individual and MUST NEVER be summed to calculate headcount."
+}
