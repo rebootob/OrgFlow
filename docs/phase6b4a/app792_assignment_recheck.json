@@ -1,0 +1,9 @@
+{
+  "totalActiveEmployees": 273,
+  "totalCurrentAssignments": 273,
+  "missingAssignment": 0,
+  "duplicateCurrentAssignment": 0,
+  "orphanCurrentOrganization": 0,
+  "ambiguousCurrentOrganization": 0,
+  "employeeSafetyResult": "PASS — 100% EMPLOYEES SAFE"
+}
