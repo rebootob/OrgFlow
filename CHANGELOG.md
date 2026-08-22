@@ -42,6 +42,19 @@
 
 ---
 
+## [v1.4.6-phase2] - 2026-08-22
+
+### Added
+- **OrgFlow Production Data Repair Phase 2 — App 791 Contaminated Record Deactivation (100% Complete & Certified PASS):** Confirmed all 247 legacy raw Person-as-Department records in App 791 are inactive (Active Person-as-Department records = 0).
+- Took pre-change snapshot in `secure-backup/repair_phase2/` (`app791_before_deactivation.json`, `REPAIR_PHASE2_MANIFEST.json`, `SHA256SUMS.txt`).
+- Conducted READ-ONLY Thai / English semantic audit on all 278 active canonical records (21 org nodes + 271 positions).
+- Verified App 53 (275 records), App 792 (275 records), and App 793 (2 records) remained 100% untouched with 0 unintended writes.
+- Audited and verified all 25/25 post-deactivation acceptance gates passed (G01 to G25).
+- Created deliverable report ([`PHASE_2_APP791_DEACTIVATION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/data-repair/PHASE_2_APP791_DEACTIVATION_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_CANONICAL_THAI_ENGLISH_FIELD_REPAIR_APPROVAL`).
+
+---
+
 ## [v1.4.5-phase1] - 2026-08-22
 
 ### Added

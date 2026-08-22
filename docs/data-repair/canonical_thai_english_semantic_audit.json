@@ -1,0 +1,2504 @@
+[
+  {
+    "recId": "525",
+    "type": "DEPARTMENT",
+    "code": "DIV-GS",
+    "titleTh": "GIFU SEIKI Division",
+    "titleEn": "GIFU SEIKI Division",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "524",
+    "type": "DEPARTMENT",
+    "code": "DIV-ME",
+    "titleTh": "Machinery & Engineering Division",
+    "titleEn": "Machinery & Engineering Division",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "523",
+    "type": "DEPARTMENT",
+    "code": "TTMET",
+    "titleTh": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "titleEn": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "522",
+    "type": "POSITION",
+    "code": "POS-271",
+    "titleTh": "Mr.Panukorn Sathron",
+    "titleEn": "MR.PANUKORN SATHRON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "521",
+    "type": "POSITION",
+    "code": "POS-270",
+    "titleTh": "Mr.Anuphong Longnoi",
+    "titleEn": "MR.ANUPHONG LONGNOI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "520",
+    "type": "POSITION",
+    "code": "POS-269",
+    "titleTh": "Mr.Theeraphat Khiaosaart",
+    "titleEn": "MR.THEERAPHAT KHIAOSAART",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "519",
+    "type": "POSITION",
+    "code": "POS-268",
+    "titleTh": "Mr.Archawa Topuong",
+    "titleEn": "MR.ARCHAWA TOPUONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "518",
+    "type": "POSITION",
+    "code": "POS-267",
+    "titleTh": "Mr.Chetsada Rotthuk",
+    "titleEn": "MR.CHETSADA ROTTHUK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "517",
+    "type": "POSITION",
+    "code": "POS-266",
+    "titleTh": "Ms.Srichanok Saezee",
+    "titleEn": "MS.SRICHANOK SAEZEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "516",
+    "type": "POSITION",
+    "code": "POS-265",
+    "titleTh": "Mr.Keizo Nakae",
+    "titleEn": "MR.KEIZO NAKAE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "515",
+    "type": "POSITION",
+    "code": "POS-264",
+    "titleTh": "Mr.Watchara Khaosam-amg",
+    "titleEn": "MR.WATCHARA KHAOSAM-AMG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "514",
+    "type": "POSITION",
+    "code": "POS-263",
+    "titleTh": "Ms.Phattharanit  Pankhomkow",
+    "titleEn": "MS.PHATTHARANIT PANKHOMKOW",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "513",
+    "type": "POSITION",
+    "code": "POS-262",
+    "titleTh": "Ms.Supattra Saetiaw",
+    "titleEn": "MS.SUPATTRA SAETIAW",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "512",
+    "type": "POSITION",
+    "code": "POS-261",
+    "titleTh": "Mr.Chaiyuth  Sangputta",
+    "titleEn": "MR.CHAIYUTH SANGPUTTA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "511",
+    "type": "POSITION",
+    "code": "POS-260",
+    "titleTh": "Ms.Yanisa Laotoom",
+    "titleEn": "MS.YANISA LAOTOOM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "510",
+    "type": "POSITION",
+    "code": "POS-259",
+    "titleTh": "Ms.Patcharida Pramomgkit",
+    "titleEn": "MS.PATCHARIDA PRAMOMGKIT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "509",
+    "type": "POSITION",
+    "code": "POS-258",
+    "titleTh": "Mr.Teerapong Maingam",
+    "titleEn": "MR.TEERAPONG MAINGAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "508",
+    "type": "POSITION",
+    "code": "POS-257",
+    "titleTh": "Ms.Phitthayaporn Sakulyodmanee",
+    "titleEn": "MS.PHITTHAYAPORN SAKULYODMANEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "507",
+    "type": "POSITION",
+    "code": "POS-256",
+    "titleTh": "Mr.Osami Kondo",
+    "titleEn": "MR.OSAMI KONDO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "506",
+    "type": "POSITION",
+    "code": "POS-255",
+    "titleTh": "Ms.Pannipa  Boonpis",
+    "titleEn": "MS.PANNIPA BOONPIS",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "505",
+    "type": "POSITION",
+    "code": "POS-254",
+    "titleTh": "Ms.Kewalin Seesuksam",
+    "titleEn": "MS.KEWALIN SEESUKSAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "504",
+    "type": "POSITION",
+    "code": "POS-253",
+    "titleTh": "Ms.Nattha Malacham",
+    "titleEn": "MS.NATTHA MALACHAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "503",
+    "type": "POSITION",
+    "code": "POS-252",
+    "titleTh": "Mr.Tawatchai Thonkamson",
+    "titleEn": "MR.TAWATCHAI THONKAMSON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "502",
+    "type": "POSITION",
+    "code": "POS-251",
+    "titleTh": "Mr.Kitiphat Chumdee",
+    "titleEn": "MR.KITIPHAT CHUMDEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "501",
+    "type": "POSITION",
+    "code": "POS-250",
+    "titleTh": "Mr.Tattana Rungroj",
+    "titleEn": "MR.TATTANA RUNGROJ",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "500",
+    "type": "POSITION",
+    "code": "POS-249",
+    "titleTh": "Mr.Jirayu  Jariyaekkapas",
+    "titleEn": "MR.JIRAYU JARIYAEKKAPAS",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "499",
+    "type": "POSITION",
+    "code": "POS-248",
+    "titleTh": "Mr.Kiadtisak  Ketsirikun",
+    "titleEn": "MR.KIADTISAK KETSIRIKUN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "498",
+    "type": "POSITION",
+    "code": "POS-247",
+    "titleTh": "Mr.Tanabodee Khotprom",
+    "titleEn": "MR.TANABODEE KHOTPROM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "497",
+    "type": "POSITION",
+    "code": "POS-246",
+    "titleTh": "Mr.Korathak Yoying",
+    "titleEn": "MR.KORATHAK YOYING",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "496",
+    "type": "POSITION",
+    "code": "POS-245",
+    "titleTh": "Mr.Thanaphat Kaenchai",
+    "titleEn": "MR.THANAPHAT KAENCHAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "495",
+    "type": "POSITION",
+    "code": "POS-244",
+    "titleTh": "Ms.Wipharat Janthason",
+    "titleEn": "MS.WIPHARAT JANTHASON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "494",
+    "type": "POSITION",
+    "code": "POS-243",
+    "titleTh": "Mr.Jetsadaporn Plongkiang",
+    "titleEn": "MR.JETSADAPORN PLONGKIANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "493",
+    "type": "POSITION",
+    "code": "POS-242",
+    "titleTh": "Mr.Phithakchai  Pornphan",
+    "titleEn": "MR.PHITHAKCHAI PORNPHAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "492",
+    "type": "POSITION",
+    "code": "POS-241",
+    "titleTh": "Mr.Kazuhiro Hanamura",
+    "titleEn": "MR.KAZUHIRO HANAMURA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "491",
+    "type": "POSITION",
+    "code": "POS-240",
+    "titleTh": "Mr.Takayoshi  Uchida",
+    "titleEn": "MR.TAKAYOSHI UCHIDA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "490",
+    "type": "POSITION",
+    "code": "POS-239",
+    "titleTh": "Mr.Manoch  Injinda",
+    "titleEn": "MR.MANOCH INJINDA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "489",
+    "type": "POSITION",
+    "code": "POS-238",
+    "titleTh": "Mr.Prasertsak  Khanjaroen",
+    "titleEn": "MR.PRASERTSAK KHANJAROEN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "488",
+    "type": "POSITION",
+    "code": "POS-237",
+    "titleTh": "Mrs.Uthumporn  Thongsee",
+    "titleEn": "MRS.UTHUMPORN THONGSEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "487",
+    "type": "POSITION",
+    "code": "POS-236",
+    "titleTh": "Mr.Phanuwat  Rachalee",
+    "titleEn": "MR.PHANUWAT RACHALEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "486",
+    "type": "POSITION",
+    "code": "POS-235",
+    "titleTh": "Mr.Surawut  Kasasai",
+    "titleEn": "MR.SURAWUT KASASAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "485",
+    "type": "POSITION",
+    "code": "POS-234",
+    "titleTh": "Mr.Phadetkarn  Phukamkom",
+    "titleEn": "MR.PHADETKARN PHUKAMKOM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "484",
+    "type": "POSITION",
+    "code": "POS-233",
+    "titleTh": "Mr.Anurak  Tib-ud",
+    "titleEn": "MR.ANURAK TIB-UD",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "483",
+    "type": "POSITION",
+    "code": "POS-232",
+    "titleTh": "Mr.Anupong  Smantong",
+    "titleEn": "MR.ANUPONG SMANTONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "482",
+    "type": "POSITION",
+    "code": "POS-231",
+    "titleTh": "Mr.Soontorn  Arinpang",
+    "titleEn": "MR.SOONTORN ARINPANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "481",
+    "type": "POSITION",
+    "code": "POS-230",
+    "titleTh": "Mr.Aekkalak  Jaibut",
+    "titleEn": "MR.AEKKALAK JAIBUT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "480",
+    "type": "POSITION",
+    "code": "POS-229",
+    "titleTh": "Ms.Supuntip  Marukun",
+    "titleEn": "MS.SUPUNTIP MARUKUN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "479",
+    "type": "POSITION",
+    "code": "POS-228",
+    "titleTh": "Mr.Nopporn  Kongkasem",
+    "titleEn": "MR.NOPPORN KONGKASEM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "478",
+    "type": "POSITION",
+    "code": "POS-227",
+    "titleTh": "Mr.Teppantong  Boonyok",
+    "titleEn": "MR.TEPPANTONG BOONYOK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "477",
+    "type": "POSITION",
+    "code": "POS-226",
+    "titleTh": "Mr.Treenade Chindalert",
+    "titleEn": "MR.TREENADE CHINDALERT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "476",
+    "type": "POSITION",
+    "code": "POS-225",
+    "titleTh": "Mr.Songsak Photisarn",
+    "titleEn": "MR.SONGSAK PHOTISARN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "475",
+    "type": "POSITION",
+    "code": "POS-224",
+    "titleTh": "Ms.Patcharin  Thaicharoen",
+    "titleEn": "MS.PATCHARIN THAICHAROEN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "474",
+    "type": "POSITION",
+    "code": "POS-223",
+    "titleTh": "Mr.Rakkiaj  Nuampoommarin",
+    "titleEn": "MR.RAKKIAJ NUAMPOOMMARIN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "473",
+    "type": "POSITION",
+    "code": "POS-222",
+    "titleTh": "Ms.Sukanya  Buahombura",
+    "titleEn": "MS.SUKANYA BUAHOMBURA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "472",
+    "type": "POSITION",
+    "code": "POS-221",
+    "titleTh": "Mr.Nopadon  Kongkasame",
+    "titleEn": "MR.NOPADON KONGKASAME",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "471",
+    "type": "POSITION",
+    "code": "POS-220",
+    "titleTh": "Mrs.Kanjana  Takoengphon",
+    "titleEn": "MRS.KANJANA TAKOENGPHON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "470",
+    "type": "POSITION",
+    "code": "POS-219",
+    "titleTh": "Ms.Nuengruethai  Somjit",
+    "titleEn": "MS.NUENGRUETHAI SOMJIT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "469",
+    "type": "POSITION",
+    "code": "POS-218",
+    "titleTh": "Mr.Pichai  Panpia",
+    "titleEn": "MR.PICHAI PANPIA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "468",
+    "type": "POSITION",
+    "code": "POS-217",
+    "titleTh": "Mr.Teerapong  Lasom",
+    "titleEn": "MR.TEERAPONG LASOM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "467",
+    "type": "POSITION",
+    "code": "POS-216",
+    "titleTh": "Ms.Namfon  Paisancharoenmaitree",
+    "titleEn": "MS.NAMFON PAISANCHAROENMAITREE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "466",
+    "type": "POSITION",
+    "code": "POS-215",
+    "titleTh": "Ms.Piengtawan  Chanpitak",
+    "titleEn": "MS.PIENGTAWAN CHANPITAK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "465",
+    "type": "POSITION",
+    "code": "POS-214",
+    "titleTh": "Mr.Sakol  Senapol",
+    "titleEn": "MR.SAKOL SENAPOL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "464",
+    "type": "POSITION",
+    "code": "POS-213",
+    "titleTh": "Mr.Chongkol  Insom",
+    "titleEn": "MR.CHONGKOL INSOM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "463",
+    "type": "POSITION",
+    "code": "POS-212",
+    "titleTh": "Mr.Mongkol  Aongsaenkam",
+    "titleEn": "MR.MONGKOL AONGSAENKAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "462",
+    "type": "POSITION",
+    "code": "POS-211",
+    "titleTh": "Ms.Walaiporn  Chanpitak",
+    "titleEn": "MS.WALAIPORN CHANPITAK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "461",
+    "type": "POSITION",
+    "code": "POS-210",
+    "titleTh": "Ms.Chunkamol  Senajaroen",
+    "titleEn": "MS.CHUNKAMOL SENAJAROEN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "460",
+    "type": "POSITION",
+    "code": "POS-209",
+    "titleTh": "Ms.Wannapa  Laepong",
+    "titleEn": "MS.WANNAPA LAEPONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "459",
+    "type": "POSITION",
+    "code": "POS-208",
+    "titleTh": "Ms.Natta  Niphatthakosolsuk",
+    "titleEn": "MS.NATTA NIPHATTHAKOSOLSUK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "458",
+    "type": "POSITION",
+    "code": "POS-207",
+    "titleTh": "Ms.Phatcharaluk  Kompruan",
+    "titleEn": "MS.PHATCHARALUK KOMPRUAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "457",
+    "type": "POSITION",
+    "code": "POS-206",
+    "titleTh": "Ms.Mudsaya  Sangkla",
+    "titleEn": "MS.MUDSAYA SANGKLA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "456",
+    "type": "POSITION",
+    "code": "POS-205",
+    "titleTh": "Mr.Thiti  Saenkhot",
+    "titleEn": "MR.THITI SAENKHOT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "455",
+    "type": "POSITION",
+    "code": "POS-204",
+    "titleTh": "Mr.Prompan  Kerdsawat",
+    "titleEn": "MR.PROMPAN KERDSAWAT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "454",
+    "type": "POSITION",
+    "code": "POS-203",
+    "titleTh": "Ms.Nadda  Srimontree",
+    "titleEn": "MS.NADDA SRIMONTREE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "453",
+    "type": "POSITION",
+    "code": "POS-202",
+    "titleTh": "Mr.Amnuai  Sukphram",
+    "titleEn": "MR.AMNUAI SUKPHRAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "452",
+    "type": "POSITION",
+    "code": "POS-201",
+    "titleTh": "Mr.Sathit  Krasae",
+    "titleEn": "MR.SATHIT KRASAE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "451",
+    "type": "POSITION",
+    "code": "POS-200",
+    "titleTh": "Ms.Suphaphon  Chanwiset",
+    "titleEn": "MS.SUPHAPHON CHANWISET",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "450",
+    "type": "POSITION",
+    "code": "POS-199",
+    "titleTh": "Mr.Pichai  Wongruen",
+    "titleEn": "MR.PICHAI WONGRUEN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "449",
+    "type": "POSITION",
+    "code": "POS-198",
+    "titleTh": "Mr.Theerawat  Khosarakhoon",
+    "titleEn": "MR.THEERAWAT KHOSARAKHOON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "448",
+    "type": "POSITION",
+    "code": "POS-197",
+    "titleTh": "Ms.Naphat   Ainthanon",
+    "titleEn": "MS.NAPHAT AINTHANON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "447",
+    "type": "POSITION",
+    "code": "POS-196",
+    "titleTh": "Mr.Watcharin  Thadtheang",
+    "titleEn": "MR.WATCHARIN THADTHEANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "446",
+    "type": "POSITION",
+    "code": "POS-195",
+    "titleTh": "Mr.Chockchai  Chaoprajuk",
+    "titleEn": "MR.CHOCKCHAI CHAOPRAJUK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "445",
+    "type": "POSITION",
+    "code": "POS-194",
+    "titleTh": "Mr.Worasak  Benmat",
+    "titleEn": "MR.WORASAK BENMAT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "444",
+    "type": "POSITION",
+    "code": "POS-193",
+    "titleTh": "Mr.Suwinai  Arriauea",
+    "titleEn": "MR.SUWINAI ARRIAUEA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "443",
+    "type": "POSITION",
+    "code": "POS-192",
+    "titleTh": "Ms.Piyaphorn  Kaewdee",
+    "titleEn": "MS.PIYAPHORN KAEWDEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "442",
+    "type": "POSITION",
+    "code": "POS-191",
+    "titleTh": "Mr.SongsatPhoothong",
+    "titleEn": "MR.SONGSATPHOOTHONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "441",
+    "type": "POSITION",
+    "code": "POS-190",
+    "titleTh": "Mr.Apisit  Sukjarean",
+    "titleEn": "MR.APISIT SUKJAREAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "440",
+    "type": "POSITION",
+    "code": "POS-189",
+    "titleTh": "Mr.Watcharaphong  Chaemsai",
+    "titleEn": "MR.WATCHARAPHONG CHAEMSAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "439",
+    "type": "POSITION",
+    "code": "POS-188",
+    "titleTh": "Ms.Supaporn  Boonlert",
+    "titleEn": "MS.SUPAPORN BOONLERT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "438",
+    "type": "POSITION",
+    "code": "POS-187",
+    "titleTh": "Ms.Warissara  Jaihan",
+    "titleEn": "MS.WARISSARA JAIHAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "437",
+    "type": "POSITION",
+    "code": "POS-186",
+    "titleTh": "Mr.Kitti  Chaikla",
+    "titleEn": "MR.KITTI CHAIKLA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "436",
+    "type": "POSITION",
+    "code": "POS-185",
+    "titleTh": "Mr.Adisorn  Srikaewsai",
+    "titleEn": "MR.ADISORN SRIKAEWSAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "435",
+    "type": "POSITION",
+    "code": "POS-184",
+    "titleTh": "Mr.Kriangkai  Chuenmee",
+    "titleEn": "MR.KRIANGKAI CHUENMEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "434",
+    "type": "POSITION",
+    "code": "POS-183",
+    "titleTh": "Ms.Chananthorn  Kobjit",
+    "titleEn": "MS.CHANANTHORN KOBJIT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "433",
+    "type": "POSITION",
+    "code": "POS-182",
+    "titleTh": "Mr.Surathin  Phoonsila",
+    "titleEn": "MR.SURATHIN PHOONSILA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "432",
+    "type": "POSITION",
+    "code": "POS-181",
+    "titleTh": "Mr.Pongsakorn  Chaithep",
+    "titleEn": "MR.PONGSAKORN CHAITHEP",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "431",
+    "type": "POSITION",
+    "code": "POS-180",
+    "titleTh": "Mr.Thara  Thongsee",
+    "titleEn": "MR.THARA THONGSEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "430",
+    "type": "POSITION",
+    "code": "POS-179",
+    "titleTh": "Mrs.Nayada  Sermsiri",
+    "titleEn": "MRS.NAYADA SERMSIRI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "429",
+    "type": "POSITION",
+    "code": "POS-178",
+    "titleTh": "Mr.Tanapol  Saibua",
+    "titleEn": "MR.TANAPOL SAIBUA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "428",
+    "type": "POSITION",
+    "code": "POS-177",
+    "titleTh": "Mr.Thawatchai  Paometwareetorn",
+    "titleEn": "MR.THAWATCHAI PAOMETWAREETORN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "427",
+    "type": "POSITION",
+    "code": "POS-176",
+    "titleTh": "Mr.Sommai  Junket",
+    "titleEn": "MR.SOMMAI JUNKET",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "426",
+    "type": "POSITION",
+    "code": "POS-175",
+    "titleTh": "Mr.Sakkarin  Kaewtib",
+    "titleEn": "MR.SAKKARIN KAEWTIB",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "425",
+    "type": "POSITION",
+    "code": "POS-174",
+    "titleTh": "Ms.Thitaphat  Sutthi",
+    "titleEn": "MS.THITAPHAT SUTTHI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "424",
+    "type": "POSITION",
+    "code": "POS-173",
+    "titleTh": "Ms.Wanida  Nontaphan",
+    "titleEn": "MS.WANIDA NONTAPHAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "423",
+    "type": "POSITION",
+    "code": "POS-172",
+    "titleTh": "Mr.Phattapon  Fuekkhwamdee",
+    "titleEn": "MR.PHATTAPON FUEKKHWAMDEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "422",
+    "type": "POSITION",
+    "code": "POS-171",
+    "titleTh": "Ms.Phichaya  Khwanchuay",
+    "titleEn": "MS.PHICHAYA KHWANCHUAY",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "421",
+    "type": "POSITION",
+    "code": "POS-170",
+    "titleTh": "Mr.Akarapong  Khao-ngam",
+    "titleEn": "MR.AKARAPONG KHAO-NGAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "420",
+    "type": "POSITION",
+    "code": "POS-169",
+    "titleTh": "Mrs.Amporn  Choosawat",
+    "titleEn": "MRS.AMPORN CHOOSAWAT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "419",
+    "type": "POSITION",
+    "code": "POS-168",
+    "titleTh": "Mr.Pitinon  Buntutrakool",
+    "titleEn": "MR.PITINON BUNTUTRAKOOL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "418",
+    "type": "POSITION",
+    "code": "POS-167",
+    "titleTh": "Ms.Sukanya  Maneechot",
+    "titleEn": "MS.SUKANYA MANEECHOT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "417",
+    "type": "POSITION",
+    "code": "POS-166",
+    "titleTh": "Mr.Amnat  Khongyai",
+    "titleEn": "MR.AMNAT KHONGYAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "416",
+    "type": "POSITION",
+    "code": "POS-165",
+    "titleTh": "Mr.Phubodin  Mukdadilok",
+    "titleEn": "MR.PHUBODIN MUKDADILOK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "415",
+    "type": "POSITION",
+    "code": "POS-164",
+    "titleTh": "Mr.Kaweewut  Tangpiboontham",
+    "titleEn": "MR.KAWEEWUT TANGPIBOONTHAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "414",
+    "type": "POSITION",
+    "code": "POS-163",
+    "titleTh": "Mr.Nobpakorn  Namang",
+    "titleEn": "MR.NOBPAKORN NAMANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "413",
+    "type": "POSITION",
+    "code": "POS-162",
+    "titleTh": "Mr.Chanatip Kusua",
+    "titleEn": "MR.CHANATIP KUSUA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "412",
+    "type": "POSITION",
+    "code": "POS-161",
+    "titleTh": "Ms. Rattanaphorn  Phichetchotiwong (TMF1)",
+    "titleEn": "MS. RATTANAPHORN PHICHETCHOTIWONG (TMF1)",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "411",
+    "type": "POSITION",
+    "code": "POS-160",
+    "titleTh": "Ms.Wilailak Jansri (TMF1)",
+    "titleEn": "MS.WILAILAK JANSRI (TMF1)",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "410",
+    "type": "POSITION",
+    "code": "POS-159",
+    "titleTh": "Ms.Jutarat  Sucher (TMF2)",
+    "titleEn": "MS.JUTARAT SUCHER (TMF2)",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "409",
+    "type": "POSITION",
+    "code": "POS-158",
+    "titleTh": "Mr.Yosuke Fujita",
+    "titleEn": "MR.YOSUKE FUJITA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "408",
+    "type": "POSITION",
+    "code": "POS-157",
+    "titleTh": "Mr.Anuwat Boonsodakorn",
+    "titleEn": "MR.ANUWAT BOONSODAKORN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "407",
+    "type": "POSITION",
+    "code": "POS-156",
+    "titleTh": "Mr.Akarawit  Prungkiat",
+    "titleEn": "MR.AKARAWIT PRUNGKIAT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "406",
+    "type": "POSITION",
+    "code": "POS-155",
+    "titleTh": "Mr.Toshikazu  Obata",
+    "titleEn": "MR.TOSHIKAZU OBATA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "405",
+    "type": "POSITION",
+    "code": "POS-154",
+    "titleTh": "Ms.Siriwimon Chuphol",
+    "titleEn": "MS.SIRIWIMON CHUPHOL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "404",
+    "type": "POSITION",
+    "code": "POS-153",
+    "titleTh": "Mr.Anochai  Wongprayoonsri",
+    "titleEn": "MR.ANOCHAI WONGPRAYOONSRI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "403",
+    "type": "POSITION",
+    "code": "POS-152",
+    "titleTh": "Ms.Suwimon Kaenchan",
+    "titleEn": "MS.SUWIMON KAENCHAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "402",
+    "type": "POSITION",
+    "code": "POS-151",
+    "titleTh": "Mr.Shinichiro  Sato",
+    "titleEn": "MR.SHINICHIRO SATO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "401",
+    "type": "POSITION",
+    "code": "POS-150",
+    "titleTh": "Ms.Gallaya  Meeta",
+    "titleEn": "MS.GALLAYA MEETA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "400",
+    "type": "POSITION",
+    "code": "POS-149",
+    "titleTh": "Ms.Rinradee  Suwan",
+    "titleEn": "MS.RINRADEE SUWAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "399",
+    "type": "POSITION",
+    "code": "POS-148",
+    "titleTh": "Mr.Yashikazu  Yamamoto",
+    "titleEn": "MR.YASHIKAZU YAMAMOTO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "398",
+    "type": "POSITION",
+    "code": "POS-147",
+    "titleTh": "Mr.Anucha Thammawong",
+    "titleEn": "MR.ANUCHA THAMMAWONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "397",
+    "type": "POSITION",
+    "code": "POS-146",
+    "titleTh": "Mr.Masato Ueno",
+    "titleEn": "MR.MASATO UENO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "396",
+    "type": "POSITION",
+    "code": "POS-145",
+    "titleTh": "Mr.Samart  Sonsupap",
+    "titleEn": "MR.SAMART SONSUPAP",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "395",
+    "type": "POSITION",
+    "code": "POS-144",
+    "titleTh": "Ms.Radeemas  Juathai",
+    "titleEn": "MS.RADEEMAS JUATHAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "394",
+    "type": "POSITION",
+    "code": "POS-143",
+    "titleTh": "Ms.Kaewkanyapatch  Worrapaphadakul",
+    "titleEn": "MS.KAEWKANYAPATCH WORRAPAPHADAKUL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "393",
+    "type": "POSITION",
+    "code": "POS-142",
+    "titleTh": "Ms.Suttida  Tugkinapong",
+    "titleEn": "MS.SUTTIDA TUGKINAPONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "392",
+    "type": "POSITION",
+    "code": "POS-141",
+    "titleTh": "Ms.Jirawat  Srisawat (TMF3)",
+    "titleEn": "MS.JIRAWAT SRISAWAT (TMF3)",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "391",
+    "type": "POSITION",
+    "code": "POS-140",
+    "titleTh": "Ms.Jirawat  Srisawat (TMF2)",
+    "titleEn": "MS.JIRAWAT SRISAWAT (TMF2)",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "390",
+    "type": "POSITION",
+    "code": "POS-139",
+    "titleTh": "Akinobu  Kito",
+    "titleEn": "AKINOBU KITO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "389",
+    "type": "POSITION",
+    "code": "POS-138",
+    "titleTh": "Ms.Hasuka  Kimura",
+    "titleEn": "MS.HASUKA KIMURA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "388",
+    "type": "POSITION",
+    "code": "POS-137",
+    "titleTh": "Mr.Suwat WIsetsing",
+    "titleEn": "MR.SUWAT WISETSING",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "387",
+    "type": "POSITION",
+    "code": "POS-136",
+    "titleTh": "Ms.Kamonwan  Khamsri",
+    "titleEn": "MS.KAMONWAN KHAMSRI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "386",
+    "type": "POSITION",
+    "code": "POS-135",
+    "titleTh": "Ms.Aonanong  Dumnuy",
+    "titleEn": "MS.AONANONG DUMNUY",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "385",
+    "type": "POSITION",
+    "code": "POS-134",
+    "titleTh": "Mr.Chitchaiya  Thongnak",
+    "titleEn": "MR.CHITCHAIYA THONGNAK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "384",
+    "type": "POSITION",
+    "code": "POS-133",
+    "titleTh": "Mr.Yasuhiro  Tamura",
+    "titleEn": "MR.YASUHIRO TAMURA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "383",
+    "type": "POSITION",
+    "code": "POS-132",
+    "titleTh": "Mr.Takayanagi",
+    "titleEn": "MR.TAKAYANAGI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "382",
+    "type": "POSITION",
+    "code": "POS-131",
+    "titleTh": "Mr.Nut  Promprasit",
+    "titleEn": "MR.NUT PROMPRASIT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "381",
+    "type": "POSITION",
+    "code": "POS-130",
+    "titleTh": "Thaweesak",
+    "titleEn": "THAWEESAK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "380",
+    "type": "POSITION",
+    "code": "POS-129",
+    "titleTh": "Mr. Arut Jindaluang",
+    "titleEn": "MR. ARUT JINDALUANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "379",
+    "type": "POSITION",
+    "code": "POS-128",
+    "titleTh": "Mr. Chanatip Kusua",
+    "titleEn": "MR. CHANATIP KUSUA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "378",
+    "type": "POSITION",
+    "code": "POS-127",
+    "titleTh": "Mr.Natthawut Nakchonlathi",
+    "titleEn": "MR.NATTHAWUT NAKCHONLATHI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "377",
+    "type": "POSITION",
+    "code": "POS-126",
+    "titleTh": "Ms.Yuwarat Bunluekiat",
+    "titleEn": "MS.YUWARAT BUNLUEKIAT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "376",
+    "type": "POSITION",
+    "code": "POS-125",
+    "titleTh": "Ms.Pattama Somngam",
+    "titleEn": "MS.PATTAMA SOMNGAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "375",
+    "type": "POSITION",
+    "code": "POS-124",
+    "titleTh": "Mr.Prajak Malasri",
+    "titleEn": "MR.PRAJAK MALASRI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "374",
+    "type": "POSITION",
+    "code": "POS-123",
+    "titleTh": "Ms.Chatrawee  Phirathawisrikul",
+    "titleEn": "MS.CHATRAWEE PHIRATHAWISRIKUL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "373",
+    "type": "POSITION",
+    "code": "POS-122",
+    "titleTh": "Mr.Piyathana Yindeesuk",
+    "titleEn": "MR.PIYATHANA YINDEESUK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "372",
+    "type": "POSITION",
+    "code": "POS-121",
+    "titleTh": "Mr.Kritsada  Kumda",
+    "titleEn": "MR.KRITSADA KUMDA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "371",
+    "type": "POSITION",
+    "code": "POS-120",
+    "titleTh": "Mr.Narakorn  Mingmuang",
+    "titleEn": "MR.NARAKORN MINGMUANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "370",
+    "type": "POSITION",
+    "code": "POS-119",
+    "titleTh": "Ms.Thantanada  Saehea",
+    "titleEn": "MS.THANTANADA SAEHEA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "369",
+    "type": "POSITION",
+    "code": "POS-118",
+    "titleTh": "Ms.Wandee Lekcharoen",
+    "titleEn": "MS.WANDEE LEKCHAROEN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "368",
+    "type": "POSITION",
+    "code": "POS-117",
+    "titleTh": "Mrs.Nirada  Thangwichitkul",
+    "titleEn": "MRS.NIRADA THANGWICHITKUL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "367",
+    "type": "POSITION",
+    "code": "POS-116",
+    "titleTh": "Mr.Thanut Muangkot",
+    "titleEn": "MR.THANUT MUANGKOT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "366",
+    "type": "POSITION",
+    "code": "POS-115",
+    "titleTh": "Ms.Jongjit  Soda",
+    "titleEn": "MS.JONGJIT SODA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "365",
+    "type": "POSITION",
+    "code": "POS-114",
+    "titleTh": "Ms.Narisara Jantala",
+    "titleEn": "MS.NARISARA JANTALA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "364",
+    "type": "POSITION",
+    "code": "POS-113",
+    "titleTh": "Ms.Saowanee Netpipop",
+    "titleEn": "MS.SAOWANEE NETPIPOP",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "363",
+    "type": "POSITION",
+    "code": "POS-112",
+    "titleTh": "Ms.Darat Pornchuenchuwong",
+    "titleEn": "MS.DARAT PORNCHUENCHUWONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "362",
+    "type": "POSITION",
+    "code": "POS-111",
+    "titleTh": "Ms.Wilailak Jansri",
+    "titleEn": "MS.WILAILAK JANSRI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "361",
+    "type": "POSITION",
+    "code": "POS-110",
+    "titleTh": "Ms.Wanichawan Budda",
+    "titleEn": "MS.WANICHAWAN BUDDA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "360",
+    "type": "POSITION",
+    "code": "POS-109",
+    "titleTh": "Ms.Salisa Rukkanngan",
+    "titleEn": "MS.SALISA RUKKANNGAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "359",
+    "type": "POSITION",
+    "code": "POS-108",
+    "titleTh": "Ms.Voraruethai Wongcharee",
+    "titleEn": "MS.VORARUETHAI WONGCHAREE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "358",
+    "type": "POSITION",
+    "code": "POS-107",
+    "titleTh": "Mr.Somsak Seubjan",
+    "titleEn": "MR.SOMSAK SEUBJAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "357",
+    "type": "POSITION",
+    "code": "POS-106",
+    "titleTh": "Mr.Noppanan  Dechkhan",
+    "titleEn": "MR.NOPPANAN DECHKHAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "356",
+    "type": "POSITION",
+    "code": "POS-105",
+    "titleTh": "Ms.Supparat  Arworn",
+    "titleEn": "MS.SUPPARAT ARWORN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "355",
+    "type": "POSITION",
+    "code": "POS-104",
+    "titleTh": "Ms.Juthaporn  Wongchuensuntorn",
+    "titleEn": "MS.JUTHAPORN WONGCHUENSUNTORN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "354",
+    "type": "POSITION",
+    "code": "POS-103",
+    "titleTh": "Mrs.Araya  Hirunpunthaporn",
+    "titleEn": "MRS.ARAYA HIRUNPUNTHAPORN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "353",
+    "type": "POSITION",
+    "code": "POS-102",
+    "titleTh": "Ms.Somrudee  Pannoo",
+    "titleEn": "MS.SOMRUDEE PANNOO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "352",
+    "type": "POSITION",
+    "code": "POS-101",
+    "titleTh": "Ms.Vassana Maenthong",
+    "titleEn": "MS.VASSANA MAENTHONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "351",
+    "type": "POSITION",
+    "code": "POS-100",
+    "titleTh": "Ms.Kamonwan  Chaisukee",
+    "titleEn": "MS.KAMONWAN CHAISUKEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "350",
+    "type": "POSITION",
+    "code": "POS-099",
+    "titleTh": "Mr.Pitchayadol  Phongsart",
+    "titleEn": "MR.PITCHAYADOL PHONGSART",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "349",
+    "type": "POSITION",
+    "code": "POS-098",
+    "titleTh": "Mr.Worapat Kumsingha",
+    "titleEn": "MR.WORAPAT KUMSINGHA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "348",
+    "type": "POSITION",
+    "code": "POS-097",
+    "titleTh": "Mr.Athasit  Thongtua",
+    "titleEn": "MR.ATHASIT THONGTUA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "347",
+    "type": "POSITION",
+    "code": "POS-096",
+    "titleTh": "Ms.Rossarin  Lerdwatchapon",
+    "titleEn": "MS.ROSSARIN LERDWATCHAPON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "346",
+    "type": "POSITION",
+    "code": "POS-095",
+    "titleTh": "Ms.Jirawat  Srisawat",
+    "titleEn": "MS.JIRAWAT SRISAWAT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "345",
+    "type": "POSITION",
+    "code": "POS-094",
+    "titleTh": "Mr.Satit  Saraisalab",
+    "titleEn": "MR.SATIT SARAISALAB",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "344",
+    "type": "POSITION",
+    "code": "POS-093",
+    "titleTh": "Ms.Dujrudee Aroonjit",
+    "titleEn": "MS.DUJRUDEE AROONJIT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "343",
+    "type": "POSITION",
+    "code": "POS-092",
+    "titleTh": "Mr.Somphort  Limbunjerd",
+    "titleEn": "MR.SOMPHORT LIMBUNJERD",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "342",
+    "type": "POSITION",
+    "code": "POS-091",
+    "titleTh": "Mr.Nuttanun  Lenglerdphol",
+    "titleEn": "MR.NUTTANUN LENGLERDPHOL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "341",
+    "type": "POSITION",
+    "code": "POS-090",
+    "titleTh": "Mr.Surat Luadlai",
+    "titleEn": "MR.SURAT LUADLAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "340",
+    "type": "POSITION",
+    "code": "POS-089",
+    "titleTh": "Mr.Krisana Laohajirapan",
+    "titleEn": "MR.KRISANA LAOHAJIRAPAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "339",
+    "type": "POSITION",
+    "code": "POS-088",
+    "titleTh": "Ms.Penprapa  Muangklang",
+    "titleEn": "MS.PENPRAPA MUANGKLANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "338",
+    "type": "POSITION",
+    "code": "POS-087",
+    "titleTh": "Mr.Pattara Rattanakornkaew",
+    "titleEn": "MR.PATTARA RATTANAKORNKAEW",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "337",
+    "type": "POSITION",
+    "code": "POS-086",
+    "titleTh": "Mr.Narong Kaewsap",
+    "titleEn": "MR.NARONG KAEWSAP",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "336",
+    "type": "POSITION",
+    "code": "POS-085",
+    "titleTh": "Ms.Chayanoot  Pengpinit",
+    "titleEn": "MS.CHAYANOOT PENGPINIT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "335",
+    "type": "POSITION",
+    "code": "POS-084",
+    "titleTh": "Mrs.Pattananrat Ruangteang",
+    "titleEn": "MRS.PATTANANRAT RUANGTEANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "334",
+    "type": "POSITION",
+    "code": "POS-083",
+    "titleTh": "Mr.Akarapoom Chaipet",
+    "titleEn": "MR.AKARAPOOM CHAIPET",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "333",
+    "type": "POSITION",
+    "code": "POS-082",
+    "titleTh": "Mr.Wiched Pratumpap",
+    "titleEn": "MR.WICHED PRATUMPAP",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "332",
+    "type": "POSITION",
+    "code": "POS-081",
+    "titleTh": "Mr.Vitoon Sukvisuttichot",
+    "titleEn": "MR.VITOON SUKVISUTTICHOT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "331",
+    "type": "POSITION",
+    "code": "POS-080",
+    "titleTh": "Mr.Nattapol Kosolkitiwong",
+    "titleEn": "MR.NATTAPOL KOSOLKITIWONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "330",
+    "type": "POSITION",
+    "code": "POS-079",
+    "titleTh": "Ms.Chuleeporn Mainkool",
+    "titleEn": "MS.CHULEEPORN MAINKOOL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "329",
+    "type": "POSITION",
+    "code": "POS-078",
+    "titleTh": "Ms.Hatairat Srikulwong",
+    "titleEn": "MS.HATAIRAT SRIKULWONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "328",
+    "type": "POSITION",
+    "code": "POS-077",
+    "titleTh": "Mr.Keerati Wannaboot",
+    "titleEn": "MR.KEERATI WANNABOOT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "327",
+    "type": "POSITION",
+    "code": "POS-076",
+    "titleTh": "Ms.Nattida Thongwises",
+    "titleEn": "MS.NATTIDA THONGWISES",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "326",
+    "type": "POSITION",
+    "code": "POS-075",
+    "titleTh": "Mr.Sarunyoo Rattanasuwan",
+    "titleEn": "MR.SARUNYOO RATTANASUWAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "325",
+    "type": "POSITION",
+    "code": "POS-074",
+    "titleTh": "Mr.Pongpat Srikhote",
+    "titleEn": "MR.PONGPAT SRIKHOTE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "324",
+    "type": "POSITION",
+    "code": "POS-073",
+    "titleTh": "Ms. Phitchakan Ongsawat",
+    "titleEn": "MS. PHITCHAKAN ONGSAWAT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "323",
+    "type": "POSITION",
+    "code": "POS-072",
+    "titleTh": "Mr.Suthon  Sonsupap",
+    "titleEn": "MR.SUTHON SONSUPAP",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "322",
+    "type": "POSITION",
+    "code": "POS-071",
+    "titleTh": "Ms.Papatchaya Thavornrinnapong",
+    "titleEn": "MS.PAPATCHAYA THAVORNRINNAPONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "321",
+    "type": "POSITION",
+    "code": "POS-070",
+    "titleTh": "Mr.Sorasit  Srisoodchai",
+    "titleEn": "MR.SORASIT SRISOODCHAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "320",
+    "type": "POSITION",
+    "code": "POS-069",
+    "titleTh": "Mr.Nattawud  Samerwong",
+    "titleEn": "MR.NATTAWUD SAMERWONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "319",
+    "type": "POSITION",
+    "code": "POS-068",
+    "titleTh": "Mr.Jakkrit  Paenoi",
+    "titleEn": "MR.JAKKRIT PAENOI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "318",
+    "type": "POSITION",
+    "code": "POS-067",
+    "titleTh": "Mr.Peranut  Hanpratum",
+    "titleEn": "MR.PERANUT HANPRATUM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "317",
+    "type": "POSITION",
+    "code": "POS-066",
+    "titleTh": "Ms.Suthada  Chaimon",
+    "titleEn": "MS.SUTHADA CHAIMON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "316",
+    "type": "POSITION",
+    "code": "POS-065",
+    "titleTh": "Mr.Pawee  Homlirdnalin",
+    "titleEn": "MR.PAWEE HOMLIRDNALIN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "315",
+    "type": "POSITION",
+    "code": "POS-064",
+    "titleTh": "Ms.Warathan  Samart",
+    "titleEn": "MS.WARATHAN SAMART",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "314",
+    "type": "POSITION",
+    "code": "POS-063",
+    "titleTh": "Ms.Kankanit  Nimnoi",
+    "titleEn": "MS.KANKANIT NIMNOI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "313",
+    "type": "POSITION",
+    "code": "POS-062",
+    "titleTh": "Ms.Laksami  Kaewsringam",
+    "titleEn": "MS.LAKSAMI KAEWSRINGAM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "312",
+    "type": "POSITION",
+    "code": "POS-061",
+    "titleTh": "Mr.Prawes  Panyaapiwattana",
+    "titleEn": "MR.PRAWES PANYAAPIWATTANA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "311",
+    "type": "POSITION",
+    "code": "POS-060",
+    "titleTh": "Ms.Nittaya  Homthong",
+    "titleEn": "MS.NITTAYA HOMTHONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "310",
+    "type": "POSITION",
+    "code": "POS-059",
+    "titleTh": "Mr.Nattapon  Puttasee",
+    "titleEn": "MR.NATTAPON PUTTASEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "309",
+    "type": "POSITION",
+    "code": "POS-058",
+    "titleTh": "Ms.Sopida  Khamlarn",
+    "titleEn": "MS.SOPIDA KHAMLARN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "308",
+    "type": "POSITION",
+    "code": "POS-057",
+    "titleTh": "Mr.Pongsakorn  Phopimon",
+    "titleEn": "MR.PONGSAKORN PHOPIMON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "307",
+    "type": "POSITION",
+    "code": "POS-056",
+    "titleTh": "Mr.Natthawut  Kaewkangwan",
+    "titleEn": "MR.NATTHAWUT KAEWKANGWAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "306",
+    "type": "POSITION",
+    "code": "POS-055",
+    "titleTh": "Ms.Jutarat  Sucher",
+    "titleEn": "MS.JUTARAT SUCHER",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "305",
+    "type": "POSITION",
+    "code": "POS-054",
+    "titleTh": "Mr.Jirayusawat  Prasom",
+    "titleEn": "MR.JIRAYUSAWAT PRASOM",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "304",
+    "type": "POSITION",
+    "code": "POS-053",
+    "titleTh": "Mr.Sira  Sowanna",
+    "titleEn": "MR.SIRA SOWANNA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "303",
+    "type": "POSITION",
+    "code": "POS-052",
+    "titleTh": "Mr.Theerapong  Prasan",
+    "titleEn": "MR.THEERAPONG PRASAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "302",
+    "type": "POSITION",
+    "code": "POS-051",
+    "titleTh": "Mr.Mikio Kato",
+    "titleEn": "MR.MIKIO KATO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "301",
+    "type": "POSITION",
+    "code": "POS-050",
+    "titleTh": "Mr.Kunihiko Kuroiwa",
+    "titleEn": "MR.KUNIHIKO KUROIWA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "300",
+    "type": "POSITION",
+    "code": "POS-049",
+    "titleTh": "Mrs.Utsugi Rina",
+    "titleEn": "MRS.UTSUGI RINA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "299",
+    "type": "POSITION",
+    "code": "POS-048",
+    "titleTh": "Mr.Kazutsugu Sakakima",
+    "titleEn": "MR.KAZUTSUGU SAKAKIMA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "298",
+    "type": "POSITION",
+    "code": "POS-047",
+    "titleTh": "Mr.Takuro",
+    "titleEn": "MR.TAKURO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "297",
+    "type": "POSITION",
+    "code": "POS-046",
+    "titleTh": "Mr.Masahito Azumi",
+    "titleEn": "MR.MASAHITO AZUMI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "296",
+    "type": "POSITION",
+    "code": "POS-045",
+    "titleTh": "Mr.Pokpong  Wanichsujit",
+    "titleEn": "MR.POKPONG WANICHSUJIT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "295",
+    "type": "POSITION",
+    "code": "POS-044",
+    "titleTh": "Mr.Hisashi  Nagase",
+    "titleEn": "MR.HISASHI NAGASE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "294",
+    "type": "POSITION",
+    "code": "POS-043",
+    "titleTh": "Mr.Tomoaki  Shirai",
+    "titleEn": "MR.TOMOAKI SHIRAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "293",
+    "type": "POSITION",
+    "code": "POS-042",
+    "titleTh": "Mr.Voraprus  Muangmingsook",
+    "titleEn": "MR.VORAPRUS MUANGMINGSOOK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "292",
+    "type": "POSITION",
+    "code": "POS-041",
+    "titleTh": "Mr. Chisanupong  Kamolchaianan",
+    "titleEn": "MR. CHISANUPONG KAMOLCHAIANAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "291",
+    "type": "POSITION",
+    "code": "POS-040",
+    "titleTh": "Mr.Munenobu  Sato",
+    "titleEn": "MR.MUNENOBU SATO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "290",
+    "type": "POSITION",
+    "code": "POS-039",
+    "titleTh": "Mr.Warut  Asawatreratnakul",
+    "titleEn": "MR.WARUT ASAWATRERATNAKUL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "289",
+    "type": "POSITION",
+    "code": "POS-038",
+    "titleTh": "Mr.Songkran  Khannok",
+    "titleEn": "MR.SONGKRAN KHANNOK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "288",
+    "type": "POSITION",
+    "code": "POS-037",
+    "titleTh": "Mr.Sakchai  Phanthuri",
+    "titleEn": "MR.SAKCHAI PHANTHURI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "287",
+    "type": "POSITION",
+    "code": "POS-036",
+    "titleTh": "Mr.Suthas  Morthai",
+    "titleEn": "MR.SUTHAS MORTHAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "286",
+    "type": "POSITION",
+    "code": "POS-035",
+    "titleTh": "Mr.Mitsukazu Imoto",
+    "titleEn": "MR.MITSUKAZU IMOTO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "285",
+    "type": "POSITION",
+    "code": "POS-034",
+    "titleTh": "Mr.Weerakul  Charoenkul",
+    "titleEn": "MR.WEERAKUL CHAROENKUL",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "284",
+    "type": "POSITION",
+    "code": "POS-033",
+    "titleTh": "Mr.Gritchai  Somphonkrang",
+    "titleEn": "MR.GRITCHAI SOMPHONKRANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "283",
+    "type": "POSITION",
+    "code": "POS-032",
+    "titleTh": "Mr.Makkaphop  Khumsit",
+    "titleEn": "MR.MAKKAPHOP KHUMSIT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "282",
+    "type": "POSITION",
+    "code": "POS-031",
+    "titleTh": "Ms.Priyanat  Sanguansuk",
+    "titleEn": "MS.PRIYANAT SANGUANSUK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "281",
+    "type": "POSITION",
+    "code": "POS-030",
+    "titleTh": "Mr.Takeshi  Ashizawa",
+    "titleEn": "MR.TAKESHI ASHIZAWA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "280",
+    "type": "POSITION",
+    "code": "POS-029",
+    "titleTh": "Ms. Ausanisa Phatinawin",
+    "titleEn": "MS. AUSANISA PHATINAWIN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "279",
+    "type": "POSITION",
+    "code": "POS-028",
+    "titleTh": "Mr.Ronnachai  Dokduan",
+    "titleEn": "MR.RONNACHAI DOKDUAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "278",
+    "type": "POSITION",
+    "code": "POS-027",
+    "titleTh": "Mr.Supanat  Tiansuwan",
+    "titleEn": "MR.SUPANAT TIANSUWAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "277",
+    "type": "POSITION",
+    "code": "POS-026",
+    "titleTh": "Ms.Penpichar  Hutachutha",
+    "titleEn": "MS.PENPICHAR HUTACHUTHA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "276",
+    "type": "POSITION",
+    "code": "POS-025",
+    "titleTh": "Mr.Keisuke  Shigeta",
+    "titleEn": "MR.KEISUKE SHIGETA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "275",
+    "type": "POSITION",
+    "code": "POS-024",
+    "titleTh": "Mr.Wicha  Sarnsawek",
+    "titleEn": "MR.WICHA SARNSAWEK",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "274",
+    "type": "POSITION",
+    "code": "POS-023",
+    "titleTh": "Mr.Tadashi  Onuki",
+    "titleEn": "MR.TADASHI ONUKI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "273",
+    "type": "POSITION",
+    "code": "POS-022",
+    "titleTh": "Mr.Itsara  Kongtawee",
+    "titleEn": "MR.ITSARA KONGTAWEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "272",
+    "type": "POSITION",
+    "code": "POS-021",
+    "titleTh": "Mr.Patipon  Poungjun",
+    "titleEn": "MR.PATIPON POUNGJUN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "271",
+    "type": "POSITION",
+    "code": "POS-020",
+    "titleTh": "Ms.Neen  Noihuahat",
+    "titleEn": "MS.NEEN NOIHUAHAT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "270",
+    "type": "POSITION",
+    "code": "POS-019",
+    "titleTh": "Mr.Narasak Jantaboon",
+    "titleEn": "MR.NARASAK JANTABOON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "269",
+    "type": "POSITION",
+    "code": "POS-018",
+    "titleTh": "Mr. Jedsada  Moonsan",
+    "titleEn": "MR. JEDSADA MOONSAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "268",
+    "type": "POSITION",
+    "code": "POS-017",
+    "titleTh": "Mr.Thanapoom Kesamoon",
+    "titleEn": "MR.THANAPOOM KESAMOON",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "267",
+    "type": "POSITION",
+    "code": "POS-016",
+    "titleTh": "Mr. Tammarat Ponwaree",
+    "titleEn": "MR. TAMMARAT PONWAREE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "266",
+    "type": "POSITION",
+    "code": "POS-015",
+    "titleTh": "Mr.Morita  Jun",
+    "titleEn": "MR.MORITA JUN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "265",
+    "type": "POSITION",
+    "code": "POS-014",
+    "titleTh": "Mr.Thamkarn  Luxsanahut",
+    "titleEn": "MR.THAMKARN LUXSANAHUT",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "264",
+    "type": "POSITION",
+    "code": "POS-013",
+    "titleTh": "Mr.Kanin  Sangthong",
+    "titleEn": "MR.KANIN SANGTHONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "263",
+    "type": "POSITION",
+    "code": "POS-012",
+    "titleTh": "Ms.Pichanan  Liamsuwan",
+    "titleEn": "MS.PICHANAN LIAMSUWAN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "262",
+    "type": "POSITION",
+    "code": "POS-011",
+    "titleTh": "Ms.Chantarat  Rodsawang",
+    "titleEn": "MS.CHANTARAT RODSAWANG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "261",
+    "type": "POSITION",
+    "code": "POS-010",
+    "titleTh": "Ms. Rattanaphorn  Phichetchotiwong",
+    "titleEn": "MS. RATTANAPHORN PHICHETCHOTIWONG",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "260",
+    "type": "POSITION",
+    "code": "POS-009",
+    "titleTh": "Ms.Rossarin  Injun",
+    "titleEn": "MS.ROSSARIN INJUN",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "259",
+    "type": "POSITION",
+    "code": "POS-008",
+    "titleTh": "Mr.Trairat Pandee",
+    "titleEn": "MR.TRAIRAT PANDEE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "258",
+    "type": "POSITION",
+    "code": "POS-007",
+    "titleTh": "Ms.Akari  Suzuki",
+    "titleEn": "MS.AKARI SUZUKI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "257",
+    "type": "POSITION",
+    "code": "POS-006",
+    "titleTh": "Ms.Erika  Gaya",
+    "titleEn": "MS.ERIKA GAYA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "256",
+    "type": "POSITION",
+    "code": "POS-005",
+    "titleTh": "Mr.Shiichi  Makino",
+    "titleEn": "MR.SHIICHI MAKINO",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "255",
+    "type": "POSITION",
+    "code": "POS-004",
+    "titleTh": "Mr.Takeshi  Tsuchihira",
+    "titleEn": "MR.TAKESHI TSUCHIHIRA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "254",
+    "type": "POSITION",
+    "code": "POS-003",
+    "titleTh": "Ms.Thanthip  Phoopadrae",
+    "titleEn": "MS.THANTHIP PHOOPADRAE",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "253",
+    "type": "POSITION",
+    "code": "POS-002",
+    "titleTh": "Mr.Worachai  Wongchana",
+    "titleEn": "MR.WORACHAI WONGCHANA",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "252",
+    "type": "POSITION",
+    "code": "POS-001",
+    "titleTh": "Ms.Promsiri  Pimsakulkrai",
+    "titleEn": "MS.PROMSIRI PIMSAKULKRAI",
+    "issue": "SAME_VALUE_COPIED",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "6",
+    "type": "DEPARTMENT",
+    "code": "TMS0",
+    "titleTh": "Technical Services Department",
+    "titleEn": "น.ส.อะคะริ ซูซูกิ",
+    "issue": "THAI_VALUE_IN_ENGLISH_FIELD",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "5",
+    "type": "DEPARTMENT",
+    "code": "TMT0",
+    "titleTh": "Industrial Services Department",
+    "titleEn": "นายชินิจิ มากิโนะ",
+    "issue": "THAI_VALUE_IN_ENGLISH_FIELD",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "4",
+    "type": "DEPARTMENT",
+    "code": "TMT1",
+    "titleTh": "Machinery Department",
+    "titleEn": "นายทาเคชิ สึชิฮิระ",
+    "issue": "THAI_VALUE_IN_ENGLISH_FIELD",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  },
+  {
+    "recId": "3",
+    "type": "DEPARTMENT",
+    "code": "TMH0",
+    "titleTh": "Corporate Department",
+    "titleEn": "น.ส.ธารทิพย์ ภูพาดแร่",
+    "issue": "THAI_VALUE_IN_ENGLISH_FIELD",
+    "proposedAction": "NEEDS_SEMANTIC_FIELD_REPAIR"
+  }
+]
