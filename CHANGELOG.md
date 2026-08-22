@@ -1,5 +1,18 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.0.3] - 2026-08-22
+
+### Added
+- **Phase 5F.1 Legacy Employee Exception Validation:** Confirmed former employee status for Record ID 390 (Tomita) and Record ID 382 (PANU) with duplicate `Number = 9000`.
+- Classified Records 390 & 382 as `LEGACY_EXCLUDED` and excluded them from App 792 baseline current assignment initialization (0 Current Assignments created for `Number = 9000`).
+- Re-evaluated employee population: 275 Total Source Records $\rightarrow$ **273 Active Eligible Employees** + 2 Legacy Excluded.
+- Re-calculated App 792 baseline assignment candidates: **273 Records** (1 Active Employee = Exactly 1 Assignment Candidate).
+- Verified Gate `G01-A` (`KNOWN LEGACY EXCEPTION` preserved in App 53) and Gate `G01-B` (`PASS` for current migration integrity).
+- Created deliverable report ([`PHASE_5F1_LEGACY_EMPLOYEE_EXCEPTION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/discovery/PHASE_5F1_LEGACY_EMPLOYEE_EXCEPTION_REPORT.md)).
+- Verified 0 writes executed on Production Kintone Apps 53, 791, 792, and 793.
+
+---
+
 ## [v1.0.2] - 2026-08-22
 
 ### Added

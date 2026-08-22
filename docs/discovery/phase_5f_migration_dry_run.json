@@ -4,7 +4,7 @@
   "inactiveEmployees": 0,
   "unknownEmployees": 0,
   "proposedOrgMasters": 524,
-  "proposedAssignments": 275,
+  "proposedAssignments": 273,
   "dataQualityExceptions": 21,
   "acceptanceGates": {
     "G01_EmployeeReferenceIntegrity": "BUSINESS CONFIRMATION REQUIRED",
@@ -18,6 +18,10 @@
     "G09_CrossDeptManagerCompatibility": "PASS",
     "G10_WorkflowApproverIndependence": "PASS",
     "G11_App53Untouched": "PASS (0 Writes)",
-    "G12_ProductionWritesZero": "PASS (0 Writes)"
-  }
+    "G12_ProductionWritesZero": "PASS (0 Writes)",
+    "G01_A_SourceEmployeeReferenceIntegrity": "KNOWN LEGACY EXCEPTION (PRESERVED)",
+    "G01_B_CurrentMigrationReferenceIntegrity": "PASS"
+  },
+  "revalidatedActiveEligible": 273,
+  "legacyExcluded": 2
 }
