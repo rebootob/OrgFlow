@@ -1,0 +1,31 @@
+{
+  "targetRecordId": "1",
+  "targetRequestId": "REQ-6A-1787384162463",
+  "employeeRef": "173",
+  "currentAssignmentId": "1",
+  "currentAssignment": {
+    "dept_code": "DEP-001",
+    "pos_code": "POS-001",
+    "effective_start_date": "2026-01-01",
+    "is_current": "YES"
+  },
+  "proposedAssignment": {
+    "internal_id": "ASG-REQ-1",
+    "employee_ref": "173",
+    "dept_code": "DEP-001",
+    "section_code": "",
+    "pos_code": "POS-002",
+    "manager_ref": "",
+    "assignment_type": "PRIMARY",
+    "effective_start_date": "2026-09-01",
+    "effective_end_date": "",
+    "source_request_id": "REQ-6A-1787384162463",
+    "is_current": "YES"
+  },
+  "actionOnOldAssignment": "Update effective_end_date = 2026-08-31, set is_current = NO",
+  "actionOnNewAssignment": "Insert 1 new record into App 792",
+  "proposedApp53Writes": 0,
+  "proposedApp791Writes": 0,
+  "proposedApp792Writes": 1,
+  "proposedApp793Updates": 1
+}

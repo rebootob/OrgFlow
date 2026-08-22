@@ -1,5 +1,20 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.2.1-phase6a] - 2026-08-22
+
+### Added
+- **Phase 6A Controlled End-to-End Workflow Validation (Gate #1 Executed):** Created controlled Change Request ID `REQ-6A-1787384162463` (App 793 Record ID `1`) for Employee `173`.
+- Executed sequential Process Management workflow: `DRAFT` -> `Submit` -> `SUBMITTED` -> `Send to GM Review` -> `GM_REVIEW`.
+- Verified Test R1 Rejection: `Reject / Return for Correction` (`GM_REVIEW` -> `DRAFT`).
+- Verified Resubmission & Test R2 Rejection: `Reject / Return to GM` (`HR_REVIEW` -> `GM_REVIEW`).
+- Re-approved to final human approval state: `HR Approve` -> **`APPROVED`**.
+- Generated SYSTEM_APPLY Dry-Run / Preview (`PHASE_6A_SYSTEM_APPLY_PREVIEW.json`) and Restoration Plan.
+- Verified 0 writes to App 53, App 791, and App 792.
+- Created deliverable report ([`PHASE_6A_WORKFLOW_TEST_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6/PHASE_6A_WORKFLOW_TEST_REPORT.md)).
+- Enforced Mandatory Stop Gate #2 (Stopped at `APPROVED` state).
+
+---
+
 ## [v1.2.0-phase6a] - 2026-08-22
 
 ### Added
