@@ -1,0 +1,191 @@
+[
+  {
+    "code": "TTMET",
+    "name": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "type": "COMPANY",
+    "parentCode": "",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "DIV-ME",
+    "name": "Machinery & Engineering Division",
+    "type": "DIVISION",
+    "parentCode": "TTMET",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "DIV-GS",
+    "name": "GIFU SEIKI Division",
+    "type": "DIVISION",
+    "parentCode": "TTMET",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM90",
+    "name": "Corporate Department (TM90)",
+    "type": "DEPARTMENT",
+    "parentCode": "TTMET",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM10",
+    "name": "Machinery Department (TM10)",
+    "type": "DEPARTMENT",
+    "parentCode": "DIV-ME",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM70",
+    "name": "Industrial Services Department (TM70)",
+    "type": "DEPARTMENT",
+    "parentCode": "DIV-ME",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TME1",
+    "name": "Eco Energy & Textile Machinery Department (TME1)",
+    "type": "DEPARTMENT",
+    "parentCode": "DIV-ME",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM50",
+    "name": "Technical Services Department (TM50)",
+    "type": "DEPARTMENT",
+    "parentCode": "DIV-ME",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMG0",
+    "name": "Mold & Engineering Department (TMG0)",
+    "type": "DEPARTMENT",
+    "parentCode": "DIV-GS",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMT1",
+    "name": "Export (TMT1)",
+    "type": "SECTION",
+    "parentCode": "TM10",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMT2",
+    "name": "Toyota Sales (TMT2)",
+    "type": "SECTION",
+    "parentCode": "TM10",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMF1",
+    "name": "Automotive (TMF1)",
+    "type": "SECTION",
+    "parentCode": "TM70",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMF2",
+    "name": "Industry (TMF2)",
+    "type": "SECTION",
+    "parentCode": "TM70",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMF3",
+    "name": "Sales Engineering (TMF3)",
+    "type": "SECTION",
+    "parentCode": "TM70",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMG1",
+    "name": "Die Casting (TMG1)",
+    "type": "SECTION",
+    "parentCode": "TMG0",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMG2",
+    "name": "Injection (TMG2)",
+    "type": "SECTION",
+    "parentCode": "TMG0",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM91",
+    "name": "GA (TM91)",
+    "type": "SECTION",
+    "parentCode": "TM90",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM92",
+    "name": "HR & Personnel (TM92)",
+    "type": "SECTION",
+    "parentCode": "TM90",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM93",
+    "name": "Accounting & Finance (TM93)",
+    "type": "SECTION",
+    "parentCode": "TM90",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMT1-ME",
+    "name": "Machine & Equipments",
+    "type": "TEAM",
+    "parentCode": "TMT1",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMT1-TP",
+    "name": "Tool Part & Project",
+    "type": "TEAM",
+    "parentCode": "TMT1",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMT2-TL",
+    "name": "Tooling",
+    "type": "TEAM",
+    "parentCode": "TMT2",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMT2-ST",
+    "name": "STN",
+    "type": "TEAM",
+    "parentCode": "TMT2",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TMT2-LG",
+    "name": "Logistics",
+    "type": "TEAM",
+    "parentCode": "TMT2",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM50-PT",
+    "name": "Project Team",
+    "type": "TEAM",
+    "parentCode": "TM50",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM50-ET",
+    "name": "Engineering Team",
+    "type": "TEAM",
+    "parentCode": "TM50",
+    "codeStatus": "USER_APPROVED"
+  },
+  {
+    "code": "TM50-ST",
+    "name": "Safety Team",
+    "type": "TEAM",
+    "parentCode": "TM50",
+    "codeStatus": "USER_APPROVED"
+  }
+]

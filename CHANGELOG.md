@@ -1,5 +1,18 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.4.0-phase6b4] - 2026-08-22
+
+### Added
+- **Phase 6B.4 Organization Master Code Approval & Baseline Freeze (100% Read-Only):** Approved and frozen all 27 canonical Organization Master codes as version `ORG_MASTER_BASELINE_2026_V1` (SHA-256 Checksum: `a13362dcd813766da7c1a8d9cafb0618fd1e7a8364112a2ac1d88dc66b6569a7`).
+- Conducted pre-migration impact analysis (App 791: CREATE 27 canonical masters, DEPRECATE 251 legacy masters, UNCHANGED 271 Position Masters; App 792: REMAP 273 active current assignments).
+- Performed in-memory dry-run migration simulation (100% PASS with 0 orphan references and 0 duplicate assignments).
+- Prepared zero-downtime rollback plan.
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable report ([`PHASE_6B4_ORGANIZATION_BASELINE_FREEZE_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b4/PHASE_6B4_ORGANIZATION_BASELINE_FREEZE_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_PHASE_6C_MIGRATION_APPROVAL`).
+
+---
+
 ## [v1.3.5-phase6b3] - 2026-08-22
 
 ### Added
