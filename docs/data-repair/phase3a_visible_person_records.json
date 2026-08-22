@@ -1,0 +1,2225 @@
+[
+  {
+    "recId": "251",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายภาณุกร สาธร",
+    "titleEn": "นายภาณุกร สาธร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "250",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอนุพงษ์ หลงน้อย",
+    "titleEn": "นายอนุพงษ์ หลงน้อย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "249",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธีรภัทร์ เขียวสะอาด",
+    "titleEn": "นายธีรภัทร์ เขียวสะอาด",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "248",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอาชวะ  โตพ่วง",
+    "titleEn": "นายอาชวะ โตพ่วง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "247",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเจษฎา  รอดทุกข์",
+    "titleEn": "นายเจษฎา รอดทุกข์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "246",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.ศรีชนก แซ่ซี",
+    "titleEn": "น.ส.ศรีชนก แซ่ซี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "245",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "เคอิโซ นาคาเอะ",
+    "titleEn": "เคอิโซ นาคาเอะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "244",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวัชรา ขาวสำอางค์",
+    "titleEn": "นายวัชรา ขาวสำอางค์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "243",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.ภัทรนิษฐ์  พันธุ์คุ้มเก่า",
+    "titleEn": "น.ส.ภัทรนิษฐ์ พันธุ์คุ้มเก่า",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "242",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.สุพัฒตรา แซ่เตียว",
+    "titleEn": "น.ส.สุพัฒตรา แซ่เตียว",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "241",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายชัยยุทธ์  แสงพุทธา",
+    "titleEn": "นายชัยยุทธ์ แสงพุทธา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "240",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.ญาณิศา  ลาวตูม",
+    "titleEn": "น.ส.ญาณิศา ลาวตูม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "239",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.พัชริดา  ประมงกิจ",
+    "titleEn": "น.ส.พัชริดา ประมงกิจ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "238",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธีรพงศ์ ไม้งาม",
+    "titleEn": "นายธีรพงศ์ ไม้งาม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "237",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.พิทยาภรณ์ สกุลยอดมณี",
+    "titleEn": "น.ส.พิทยาภรณ์ สกุลยอดมณี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "236",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายโอซามิ คอนโด",
+    "titleEn": "นายโอซามิ คอนโด",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "235",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.พันนิภา  บุญพิษ",
+    "titleEn": "น.ส.พันนิภา บุญพิษ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "234",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวเกวลิน  สีสุขสาม",
+    "titleEn": "นางสาวเกวลิน สีสุขสาม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "233",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวณัฎฐา มาลาฉ่ำ",
+    "titleEn": "นางสาวณัฎฐา มาลาฉ่ำ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "232",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธวัชชัย ต่อนคำสนธิ์",
+    "titleEn": "นายธวัชชัย ต่อนคำสนธิ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "231",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายกิตติพัฒน์ ชุ่มดี",
+    "titleEn": "นายกิตติพัฒน์ ชุ่มดี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "230",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายทัตธน รุ่งโรจน์",
+    "titleEn": "นายทัตธน รุ่งโรจน์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "229",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายจิรายุ  จริยาเอกภาส",
+    "titleEn": "นายจิรายุ จริยาเอกภาส",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "228",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเกียรติศักดิ์  เกตุสิริกูล",
+    "titleEn": "นายเกียรติศักดิ์ เกตุสิริกูล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "227",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธนบดี โคตรพรม",
+    "titleEn": "นายธนบดี โคตรพรม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "226",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายกรทักษ์ โยยิ่ง",
+    "titleEn": "นายกรทักษ์ โยยิ่ง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "225",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธนพัฒน์ แก่นใจ",
+    "titleEn": "นายธนพัฒน์ แก่นใจ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "224",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววิพารัตน์ จันทษร",
+    "titleEn": "นางสาววิพารัตน์ จันทษร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "223",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเจษฎาภรณ์ ปล้องกลาง",
+    "titleEn": "นายเจษฎาภรณ์ ปล้องกลาง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "222",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพิทักษชัย  พรพันธ์",
+    "titleEn": "นายพิทักษชัย พรพันธ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "221",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายคาซึฮิโระ ฮานามูระ",
+    "titleEn": "นายคาซึฮิโระ ฮานามูระ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "220",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายทาคาโยชิ อุชิดะ",
+    "titleEn": "นายทาคาโยชิ อุชิดะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "219",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายมาโนชญ์  อินจินดา",
+    "titleEn": "นายมาโนชญ์ อินจินดา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "218",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายประเสริฐศักดิ์  ขันเจริญ",
+    "titleEn": "นายประเสริฐศักดิ์ ขันเจริญ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "217",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางอุทุมพร  ทองศรี",
+    "titleEn": "นางอุทุมพร ทองศรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "216",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายภานุวัฒน์  ราชาลี",
+    "titleEn": "นายภานุวัฒน์ ราชาลี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "215",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสุรวุฒิ  เกษาใส",
+    "titleEn": "นายสุรวุฒิ เกษาใส",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "214",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเผด็จการ  ภูขามคม",
+    "titleEn": "นายเผด็จการ ภูขามคม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "213",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอนุรักษ์  ติ๊บอุด",
+    "titleEn": "นายอนุรักษ์ ติ๊บอุด",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "212",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอนุพงษ์  สมานทอง",
+    "titleEn": "นายอนุพงษ์ สมานทอง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "211",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสุนทร  อะรินแปง",
+    "titleEn": "นายสุนทร อะรินแปง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "210",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเอกลักษณ์  ใจบุตร",
+    "titleEn": "นายเอกลักษณ์ ใจบุตร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "209",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวสุพรรณทิพย์  มฤกุล",
+    "titleEn": "นางสาวสุพรรณทิพย์ มฤกุล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "208",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายนพพร  คงเกษม",
+    "titleEn": "นายนพพร คงเกษม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "207",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเทพพานทอง  บุญยก",
+    "titleEn": "นายเทพพานทอง บุญยก",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "206",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายตรีเนตร  จินดาเลิศ",
+    "titleEn": "นายตรีเนตร จินดาเลิศ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "205",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายทรงศักดิ์โพธิสาร",
+    "titleEn": "นายทรงศักดิ์โพธิสาร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "204",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวพัชรินทร์  ไทยเจริญ",
+    "titleEn": "นางสาวพัชรินทร์ ไทยเจริญ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "203",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายรักเกียรติ  น่วมภุมรินทร์",
+    "titleEn": "นายรักเกียรติ น่วมภุมรินทร์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "202",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวสุกัญญา  บัวฮมบุรา",
+    "titleEn": "นางสาวสุกัญญา บัวฮมบุรา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "201",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายนพดล  คงเกษม",
+    "titleEn": "นายนพดล คงเกษม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "200",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางกาญจนา  ถะเกิงผล",
+    "titleEn": "นางกาญจนา ถะเกิงผล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "199",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวหนึ่งฤทัย  สมจิตร",
+    "titleEn": "นางสาวหนึ่งฤทัย สมจิตร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "198",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพิชัย  ปันเปี้ย",
+    "titleEn": "นายพิชัย ปันเปี้ย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "197",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธีระพงษ์  ลาโสม",
+    "titleEn": "นายธีระพงษ์ ลาโสม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "196",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวน้ำฝนไพศาล  เจริญไมตรี",
+    "titleEn": "นางสาวน้ำฝนไพศาล เจริญไมตรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "195",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวเพียงตะวัน  จันทร์พิทักษ์",
+    "titleEn": "นางสาวเพียงตะวัน จันทร์พิทักษ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "194",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสกล  เสนาพล",
+    "titleEn": "นายสกล เสนาพล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "193",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายจงกช  อินสม",
+    "titleEn": "นายจงกช อินสม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "192",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายมงคล  อ้องแสนคำ",
+    "titleEn": "นายมงคล อ้องแสนคำ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "191",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววลัยพร  จันทร์พิทักษ์",
+    "titleEn": "นางสาววลัยพร จันทร์พิทักษ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "190",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวชื่นกมล  เสนาเจริญ",
+    "titleEn": "นางสาวชื่นกมล เสนาเจริญ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "189",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววรรณภา  แหล่ป้อง",
+    "titleEn": "นางสาววรรณภา แหล่ป้อง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "188",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวนฑาห์  นิพัทธโกศลสุข",
+    "titleEn": "นางสาวนฑาห์ นิพัทธโกศลสุข",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "187",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวพัชรลักษณ์  คำพรวน",
+    "titleEn": "นางสาวพัชรลักษณ์ คำพรวน",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "186",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวมัสยา  แสงกล้า",
+    "titleEn": "นางสาวมัสยา แสงกล้า",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "185",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธิติ  แสนโคตร",
+    "titleEn": "นายธิติ แสนโคตร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "184",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพร้อมพันธ์  เกิดสวัสดิ์",
+    "titleEn": "นายพร้อมพันธ์ เกิดสวัสดิ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "183",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวนัดดา  ศรีมนตรี",
+    "titleEn": "นางสาวนัดดา ศรีมนตรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "182",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอำนวย  สุขพราม",
+    "titleEn": "นายอำนวย สุขพราม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "181",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสถิต  กระแสร์",
+    "titleEn": "นายสถิต กระแสร์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "180",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวสุภาภรณ์  จันทร์วิเศษ",
+    "titleEn": "นางสาวสุภาภรณ์ จันทร์วิเศษ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "179",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพิชัย  วงศ์เรือน",
+    "titleEn": "นายพิชัย วงศ์เรือน",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "178",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธีระวัฒน์  โคสารคุณ",
+    "titleEn": "นายธีระวัฒน์ โคสารคุณ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "177",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวนภัทร  อินทนนท์",
+    "titleEn": "นางสาวนภัทร อินทนนท์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "176",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวัชรินทร์  ทัดเที่ยง",
+    "titleEn": "นายวัชรินทร์ ทัดเที่ยง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "175",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายโชคชัย  เชาว์ประจักษ์",
+    "titleEn": "นายโชคชัย เชาว์ประจักษ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "174",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวรศักดิ์  เบญมาตย์",
+    "titleEn": "นายวรศักดิ์ เบญมาตย์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "173",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสุวินัย  อารีเอื้อ",
+    "titleEn": "นายสุวินัย อารีเอื้อ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "172",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวปิยาภรณ์  แก้วดี",
+    "titleEn": "นางสาวปิยาภรณ์ แก้วดี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "171",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายทรงศาสตร์  ภูธง",
+    "titleEn": "นายทรงศาสตร์ ภูธง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "170",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอภิสิทธิ์  สุขเจริญ",
+    "titleEn": "นายอภิสิทธิ์ สุขเจริญ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "169",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวัชรพงศ์  แจ่มใส",
+    "titleEn": "นายวัชรพงศ์ แจ่มใส",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "168",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวสุภาพร  บุญเลิศ",
+    "titleEn": "นางสาวสุภาพร บุญเลิศ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "167",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววริศรา ใจหาญ",
+    "titleEn": "นางสาววริศรา ใจหาญ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "166",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายกิตติ  ใจกล้า",
+    "titleEn": "นายกิตติ ใจกล้า",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "165",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอดิศร  ศรีแก้วใส",
+    "titleEn": "นายอดิศร ศรีแก้วใส",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "164",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเกรียงไกร  ชื่นหมี้",
+    "titleEn": "นายเกรียงไกร ชื่นหมี้",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "163",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวชนันธร  ขอบจิตร",
+    "titleEn": "นางสาวชนันธร ขอบจิตร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "162",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสุรทิน  พูลศิลา",
+    "titleEn": "นายสุรทิน พูลศิลา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "161",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพงศกร  ไชยเทพ",
+    "titleEn": "นายพงศกร ไชยเทพ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "160",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธารา  ทองศรี",
+    "titleEn": "นายธารา ทองศรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "159",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางณญาดา  เสริมศิริ",
+    "titleEn": "นางณญาดา เสริมศิริ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "158",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธนพล  สายบัว",
+    "titleEn": "นายธนพล สายบัว",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "157",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธวัชชัย  เผ่าเมธวารีธร",
+    "titleEn": "นายธวัชชัย เผ่าเมธวารีธร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "156",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสมหมาย  จันทร์เขต",
+    "titleEn": "นายสมหมาย จันทร์เขต",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "155",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสักรินทร์  แก้วติ๊บ",
+    "titleEn": "นายสักรินทร์ แก้วติ๊บ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "154",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวฐิตพัทธ์  สุทธิ",
+    "titleEn": "นางสาวฐิตพัทธ์ สุทธิ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "153",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววนิดา  นนทพันธุ์",
+    "titleEn": "นางสาววนิดา นนทพันธุ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "152",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพัทธพล  ฝึกความดี",
+    "titleEn": "นายพัทธพล ฝึกความดี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "151",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวภีชญา  ขวัญเฉื่อย",
+    "titleEn": "นางสาวภีชญา ขวัญเฉื่อย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "150",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอัครพงศ์  ขาวงาม",
+    "titleEn": "นายอัครพงศ์ ขาวงาม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "149",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางอำพร  ชูสวัสดิ์",
+    "titleEn": "นางอำพร ชูสวัสดิ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "148",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพิตินนท์  บัณฑุตระกูล",
+    "titleEn": "นายพิตินนท์ บัณฑุตระกูล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "147",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวสุกัญญา  มณีโชติ",
+    "titleEn": "นางสาวสุกัญญา มณีโชติ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "146",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอำนาจ  คงใหญ่",
+    "titleEn": "นายอำนาจ คงใหญ่",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "145",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายภูบดินทร์  มุกดาดิลก",
+    "titleEn": "นายภูบดินทร์ มุกดาดิลก",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "144",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายกวีวุฒิ  ตั้งพิบูลธรรม",
+    "titleEn": "นายกวีวุฒิ ตั้งพิบูลธรรม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "143",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายนพกร  นามัง",
+    "titleEn": "นายนพกร นามัง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "142",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายโยสุเกะ ฟูจิตะ",
+    "titleEn": "นายโยสุเกะ ฟูจิตะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "141",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอนุวัฒน์  บุญโสดากร",
+    "titleEn": "นายอนุวัฒน์ บุญโสดากร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "140",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอัครวิทย์  ปรุงเกียรติ",
+    "titleEn": "นายอัครวิทย์ ปรุงเกียรติ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "139",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.สิริวิมล ชูผล",
+    "titleEn": "น.ส.สิริวิมล ชูผล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "138",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอโนชัย  วงศ์ประยูรศรี",
+    "titleEn": "นายอโนชัย วงศ์ประยูรศรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "137",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.สุวิมล แก่นจันทร์",
+    "titleEn": "น.ส.สุวิมล แก่นจันทร์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "136",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.กัลยา  มีตา",
+    "titleEn": "น.ส.กัลยา มีตา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "135",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.รินรดี  สุวรรณ",
+    "titleEn": "น.ส.รินรดี สุวรรณ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "134",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "โยชิคาซู  ยามาโมโตะ",
+    "titleEn": "โยชิคาซู ยามาโมโตะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "133",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอนุชา  ธรรมวงค์",
+    "titleEn": "นายอนุชา ธรรมวงค์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "132",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายมาซาโตะ อูเอโนะ",
+    "titleEn": "นายมาซาโตะ อูเอโนะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "131",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสามารถ  สอนสุภาพ",
+    "titleEn": "นายสามารถ สอนสุภาพ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "130",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวรดีมาศ  เจือไทย",
+    "titleEn": "นางสาวรดีมาศ เจือไทย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "129",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.แก้วกัญญพัชร  วรปภาดากุล",
+    "titleEn": "น.ส.แก้วกัญญพัชร วรปภาดากุล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "128",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.สุทธิดา  ทักขิณาพงศ์",
+    "titleEn": "น.ส.สุทธิดา ทักขิณาพงศ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "127",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสุวัฒน์  วิเศษสิงห์",
+    "titleEn": "นายสุวัฒน์ วิเศษสิงห์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "126",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.กมลวรรณ  คำศรี",
+    "titleEn": "น.ส.กมลวรรณ คำศรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "125",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวอรอนงค์  ดำนุ้ย",
+    "titleEn": "นางสาวอรอนงค์ ดำนุ้ย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "124",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายชิตไชยา  ทองนาค",
+    "titleEn": "นายชิตไชยา ทองนาค",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "123",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายยาซูฮิโระ  ทามูระ",
+    "titleEn": "นายยาซูฮิโระ ทามูระ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "122",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายทาอิชิ  ทาคายานากิ",
+    "titleEn": "นายทาอิชิ ทาคายานากิ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "121",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายนัท  พรหมประสิทธิ์",
+    "titleEn": "นายนัท พรหมประสิทธิ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "120",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอรุษ จินดาหลวง",
+    "titleEn": "นายอรุษ จินดาหลวง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "119",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายชนาธิป กุซัว",
+    "titleEn": "นายชนาธิป กุซัว",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "118",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายณัฐวุฒิ  นาคชลธี",
+    "titleEn": "นายณัฐวุฒิ นาคชลธี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "117",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.ยุวรัตน์  บรรลือเกียรติ",
+    "titleEn": "น.ส.ยุวรัตน์ บรรลือเกียรติ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "116",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวปัทมา สมงาม",
+    "titleEn": "นางสาวปัทมา สมงาม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "115",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายประจักร มะลาศรี",
+    "titleEn": "นายประจักร มะลาศรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "114",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวฉัตร์รวี  พีระทวีศรีกุล",
+    "titleEn": "นางสาวฉัตร์รวี พีระทวีศรีกุล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "113",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายปิยธนา  ยินดีสุข",
+    "titleEn": "นายปิยธนา ยินดีสุข",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "112",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายกฤษฎา คำดา",
+    "titleEn": "นายกฤษฎา คำดา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "111",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายนรากร มิ่งเมือง",
+    "titleEn": "นายนรากร มิ่งเมือง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "110",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวธัญธนาดา แซ่เหีย",
+    "titleEn": "นางสาวธัญธนาดา แซ่เหีย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "109",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววันดี เล็กเจริญ",
+    "titleEn": "นางสาววันดี เล็กเจริญ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "108",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางณิรดา  ทั้งวิจิตรกุล",
+    "titleEn": "นางณิรดา ทั้งวิจิตรกุล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "107",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธนัท เมืองโคตร",
+    "titleEn": "นายธนัท เมืองโคตร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "106",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวจงจิตต์ โสดา",
+    "titleEn": "นางสาวจงจิตต์ โสดา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "105",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวนริศรา จันทลา",
+    "titleEn": "นางสาวนริศรา จันทลา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "104",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวเสาวนีย์ เนตรพิภพ",
+    "titleEn": "นางสาวเสาวนีย์ เนตรพิภพ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "103",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวดารัตน์ พรชื่นชูวงศ์",
+    "titleEn": "นางสาวดารัตน์ พรชื่นชูวงศ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "102",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววิไลลักษณ์ จันทร์ศรี",
+    "titleEn": "นางสาววิไลลักษณ์ จันทร์ศรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "101",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววณิชวรรณ บุดดา",
+    "titleEn": "นางสาววณิชวรรณ บุดดา",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "100",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวศลิษา รักการงาน",
+    "titleEn": "นางสาวศลิษา รักการงาน",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "99",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววรฤทัย วงชารี",
+    "titleEn": "นางสาววรฤทัย วงชารี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "98",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสมศักดิ์ สืบจันทร์",
+    "titleEn": "นายสมศักดิ์ สืบจันทร์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "97",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายนพนันท์ เดชขันธ์",
+    "titleEn": "นายนพนันท์ เดชขันธ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "96",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวศุภรัตน์  อาวรณ์",
+    "titleEn": "นางสาวศุภรัตน์ อาวรณ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "95",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวจุฑาพร  วงศ์ชื่นสุนทร",
+    "titleEn": "นางสาวจุฑาพร วงศ์ชื่นสุนทร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "94",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางอารยา  หิรัญปัณฑาพร",
+    "titleEn": "นางอารยา หิรัญปัณฑาพร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "93",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวสมฤดี  แป้นหนู",
+    "titleEn": "นางสาวสมฤดี แป้นหนู",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "92",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววาสนา  แม้นทอง",
+    "titleEn": "นางสาววาสนา แม้นทอง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "91",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวกมลวรรณ  ชัยสุขี",
+    "titleEn": "นางสาวกมลวรรณ ชัยสุขี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "90",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพิชยดนย์  พงษ์ศาสตร์",
+    "titleEn": "นายพิชยดนย์ พงษ์ศาสตร์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "89",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวรภัทร  คำสิงห์",
+    "titleEn": "นายวรภัทร คำสิงห์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "88",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอรรถสิทธิ์  ทองทั่ว",
+    "titleEn": "นายอรรถสิทธิ์ ทองทั่ว",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "87",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวรสริน  เลิศวัชพล",
+    "titleEn": "นางสาวรสริน เลิศวัชพล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "86",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวจิรวรรธ  ศรีสวัสดิ์",
+    "titleEn": "นางสาวจิรวรรธ ศรีสวัสดิ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "85",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสาทิตย์ สาหร่ายสลับ",
+    "titleEn": "นายสาทิตย์ สาหร่ายสลับ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "84",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวดุจฤดี  อรุณจิต",
+    "titleEn": "นางสาวดุจฤดี อรุณจิต",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "83",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสมโภช  ลิมป์บรรเจิด",
+    "titleEn": "นายสมโภช ลิมป์บรรเจิด",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "82",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายณัฐนันท์  เล็งเลิศผล",
+    "titleEn": "นายณัฐนันท์ เล็งเลิศผล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "81",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสุรัช  ลวดลาย",
+    "titleEn": "นายสุรัช ลวดลาย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "80",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายกฤษณะ เลาหจีรพันธุ์",
+    "titleEn": "นายกฤษณะ เลาหจีรพันธุ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "79",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวเพ็ญประภา  ม่วงกลาง",
+    "titleEn": "นางสาวเพ็ญประภา ม่วงกลาง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "78",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายภัทร  รัตนกรแก้ว",
+    "titleEn": "นายภัทร รัตนกรแก้ว",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "77",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายณรงค์ แก้วทรัพย์",
+    "titleEn": "นายณรงค์ แก้วทรัพย์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "76",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวชญานุช  เพ็งพินิจ",
+    "titleEn": "นางสาวชญานุช เพ็งพินิจ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "75",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางพัทธนันท์รัชต์ เรืองเที่ยง",
+    "titleEn": "นางพัทธนันท์รัชต์ เรืองเที่ยง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "74",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอัครภูมิ ไชยเพชร",
+    "titleEn": "นายอัครภูมิ ไชยเพชร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "73",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวิเชษฐ์ ประทุมภาพ",
+    "titleEn": "นายวิเชษฐ์ ประทุมภาพ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "72",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวิฑูร  สุขวิสุทธิโชติ",
+    "titleEn": "นายวิฑูร สุขวิสุทธิโชติ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "71",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายณัฐพล โกศลกิติวงศ์",
+    "titleEn": "นายณัฐพล โกศลกิติวงศ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "70",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวชุลีพร เมณฑ์กูล",
+    "titleEn": "นางสาวชุลีพร เมณฑ์กูล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "69",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวหทัยรัตน์ ศรีกุลวงศ์",
+    "titleEn": "นางสาวหทัยรัตน์ ศรีกุลวงศ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "68",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายกีรติ วรรณบุตร",
+    "titleEn": "นายกีรติ วรรณบุตร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "67",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวณัฐธิดา ทองวิเศษ",
+    "titleEn": "นางสาวณัฐธิดา ทองวิเศษ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "66",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายศรันยู รัตนสุวรรณ",
+    "titleEn": "นายศรันยู รัตนสุวรรณ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "65",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพงศ์พัฒน์ ศรีโคตร",
+    "titleEn": "นายพงศ์พัฒน์ ศรีโคตร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "64",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวพิชชากานต์ องค์สวัสดิ์",
+    "titleEn": "นางสาวพิชชากานต์ องค์สวัสดิ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "63",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสุธน  สอนสุภาพ",
+    "titleEn": "นายสุธน สอนสุภาพ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "62",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวปภัชญา  ถาวรรินพงศ์",
+    "titleEn": "นางสาวปภัชญา ถาวรรินพงศ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "61",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสรสิช  ศรีสุดใจ",
+    "titleEn": "นายสรสิช ศรีสุดใจ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "60",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายณัฐวุฒิ  เสมอวงศ์",
+    "titleEn": "นายณัฐวุฒิ เสมอวงศ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "59",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายจักรกฤษณ์  แพน้อย",
+    "titleEn": "นายจักรกฤษณ์ แพน้อย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "58",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพีรณัฐ  หาญประทุม",
+    "titleEn": "นายพีรณัฐ หาญประทุม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "57",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวสุธาดา  ใจมนต์",
+    "titleEn": "นางสาวสุธาดา ใจมนต์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "56",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายปวีร์  หอมเลิศนลิน",
+    "titleEn": "นายปวีร์ หอมเลิศนลิน",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "55",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาววรธัญ  สามารถ",
+    "titleEn": "นางสาววรธัญ สามารถ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "54",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวกันต์กนิษฐ์  นิ่มน้อย",
+    "titleEn": "นางสาวกันต์กนิษฐ์ นิ่มน้อย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "53",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวลักษมี  แก้วศรีงาม",
+    "titleEn": "นางสาวลักษมี แก้วศรีงาม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "52",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายประเวศ  ปัญญาอภิวัฒนะ",
+    "titleEn": "นายประเวศ ปัญญาอภิวัฒนะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "51",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวนิตยา  หอมทอง",
+    "titleEn": "นางสาวนิตยา หอมทอง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "50",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายณัฐพล  พุทธศรี",
+    "titleEn": "นายณัฐพล พุทธศรี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "49",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวโสภิดา  คำล้าน",
+    "titleEn": "นางสาวโสภิดา คำล้าน",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "48",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายพงศกร  โพธิ์พิมล",
+    "titleEn": "นายพงศกร โพธิ์พิมล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "47",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายณัฐวุฒิ  แก้วกังวาล",
+    "titleEn": "นายณัฐวุฒิ แก้วกังวาล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "46",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวจุฑารัตน์  สุเฌอ",
+    "titleEn": "นางสาวจุฑารัตน์ สุเฌอ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "45",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายจิรายุสวัฒ  ประสม",
+    "titleEn": "นายจิรายุสวัฒ ประสม",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "44",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายศิรา  โสวัณณะ",
+    "titleEn": "นายศิรา โสวัณณะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "43",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธีระพงษ์  ประสาร",
+    "titleEn": "นายธีระพงษ์ ประสาร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "42",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายมิคิโอะ  คาโตะ",
+    "titleEn": "นายมิคิโอะ คาโตะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "41",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายทาคุโร  อิโนะอุเอะ",
+    "titleEn": "นายทาคุโร อิโนะอุเอะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "40",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายมาซาฮิโต  อาซูมิ",
+    "titleEn": "นายมาซาฮิโต อาซูมิ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "39",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายปกป้อง วานิชสุจิต",
+    "titleEn": "นายปกป้อง วานิชสุจิต",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "38",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวรภฤศ  ม่วงมิ่งสุข",
+    "titleEn": "นายวรภฤศ ม่วงมิ่งสุข",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "37",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายชิษณุพงศ์  กมลไชยอนันต์",
+    "titleEn": "นายชิษณุพงศ์ กมลไชยอนันต์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "36",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "มูเนะโนบุ  ซาโต้",
+    "titleEn": "มูเนะโนบุ ซาโต้",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "35",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวรุตม์  อัศวตรีรัตนกุล",
+    "titleEn": "นายวรุตม์ อัศวตรีรัตนกุล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "34",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสงกรานต์  ขันนอก",
+    "titleEn": "นายสงกรานต์ ขันนอก",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "33",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายศักดิ์ชัย  พันธุริ",
+    "titleEn": "นายศักดิ์ชัย พันธุริ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "32",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายสุทัศน์  หมอไทย",
+    "titleEn": "นายสุทัศน์ หมอไทย",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "31",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวีรกุล  เจริญกุล",
+    "titleEn": "นายวีรกุล เจริญกุล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "30",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายกฤษณ์ชัย  สมพลกรัง",
+    "titleEn": "นายกฤษณ์ชัย สมพลกรัง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "29",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายมรรคภพ  ขำสิทธิ์",
+    "titleEn": "นายมรรคภพ ขำสิทธิ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "28",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.ปริยนาถ  สงวนสุข",
+    "titleEn": "น.ส.ปริยนาถ สงวนสุข",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "27",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายทาเคชิ  อะชิซาว่า",
+    "titleEn": "นายทาเคชิ อะชิซาว่า",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "26",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นางสาวอุษณิษา ผาตินาวิน",
+    "titleEn": "นางสาวอุษณิษา ผาตินาวิน",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "25",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายรณชัย  ดอกดวน",
+    "titleEn": "นายรณชัย ดอกดวน",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "24",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายศุภณัฐ  เตียรถ์สุวรรณ",
+    "titleEn": "นายศุภณัฐ เตียรถ์สุวรรณ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "23",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.เพ็ญพิชชา  หุตะจูฑะ",
+    "titleEn": "น.ส.เพ็ญพิชชา หุตะจูฑะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "22",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเคอิซุเกะ  ชิเกตะ",
+    "titleEn": "นายเคอิซุเกะ ชิเกตะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "21",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวิชา  สารเสวก",
+    "titleEn": "นายวิชา สารเสวก",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "20",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายอิสระ  คงทวี",
+    "titleEn": "นายอิสระ คงทวี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "19",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายปฏิพล  พวงจันทร์",
+    "titleEn": "นายปฏิพล พวงจันทร์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "18",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.นีร  น้อยหัวหาด",
+    "titleEn": "น.ส.นีร น้อยหัวหาด",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "17",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายนราศักดิ์ จันทบูรณ์",
+    "titleEn": "นายนราศักดิ์ จันทบูรณ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "16",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายเจษฎา  มูลสาร",
+    "titleEn": "นายเจษฎา มูลสาร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "15",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธนภูมิ เกษามูล",
+    "titleEn": "นายธนภูมิ เกษามูล",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "14",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธรรมรัตน์  พลวารี",
+    "titleEn": "นายธรรมรัตน์ พลวารี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "13",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายธัมกาล  ลักษณะหุต",
+    "titleEn": "นายธัมกาล ลักษณะหุต",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "12",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายคณิน  แสงทอง",
+    "titleEn": "นายคณิน แสงทอง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "11",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.พิชชานันท์  เหลี่ยมสุวรรณ",
+    "titleEn": "น.ส.พิชชานันท์ เหลี่ยมสุวรรณ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "10",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.จันทรัสม์  รอดสว่าง",
+    "titleEn": "น.ส.จันทรัสม์ รอดสว่าง",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "9",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.รัตนาภรณ์  พิเชฐโชติวงษ์",
+    "titleEn": "น.ส.รัตนาภรณ์ พิเชฐโชติวงษ์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "8",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.รสริน  อินทร์จันทร์",
+    "titleEn": "น.ส.รสริน อินทร์จันทร์",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "7",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายไตรรัตน์  พันธุ์ดี",
+    "titleEn": "นายไตรรัตน์ พันธุ์ดี",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "2",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "นายวรชัย  วงค์ชะนะ",
+    "titleEn": "นายวรชัย วงค์ชะนะ",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  },
+  {
+    "recId": "1",
+    "masterType": "DEPARTMENT",
+    "isActive": "INACTIVE",
+    "titleTh": "น.ส.พรหมศิริ  พิมพ์สกุลไกร",
+    "titleEn": "น.ส.พรหมศิริ พิมพ์สกุลไกร",
+    "whyVisible": "INACTIVE_RECORD_VISIBLE_IN_ALL_RECORDS_VIEW",
+    "safeToHide": true
+  }
+]

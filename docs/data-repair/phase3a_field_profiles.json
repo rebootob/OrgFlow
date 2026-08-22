@@ -1,0 +1,506 @@
+[
+  {
+    "code": "Text_0",
+    "nonBlankCount": 255,
+    "thaiPct": 93,
+    "latinPct": 0,
+    "blankPct": 7,
+    "mixedCount": 0,
+    "samples": [
+      "นายภาณุกร สาธร",
+      "นายอนุพงษ์ หลงน้อย",
+      "นายธีรภัทร์ เขียวสะอาด"
+    ],
+    "meaning": "LIKELY_THAI_NAME"
+  },
+  {
+    "code": "Drop_down_1",
+    "nonBlankCount": 261,
+    "thaiPct": 0,
+    "latinPct": 95,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "Injection",
+      "Die Casting",
+      "Injection"
+    ],
+    "meaning": "LIKELY_ENGLISH_NAME"
+  },
+  {
+    "code": "Drop_down_0",
+    "nonBlankCount": 266,
+    "thaiPct": 0,
+    "latinPct": 97,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "Mold & Engineering",
+      "Mold & Engineering",
+      "Mold & Engineering"
+    ],
+    "meaning": "LIKELY_ENGLISH_NAME"
+  },
+  {
+    "code": "Text_2",
+    "nonBlankCount": 272,
+    "thaiPct": 0,
+    "latinPct": 99,
+    "blankPct": 1,
+    "mixedCount": 0,
+    "samples": [
+      "Operator",
+      "Operator",
+      "Operator"
+    ],
+    "meaning": "LIKELY_ENGLISH_NAME"
+  },
+  {
+    "code": "Text",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 100,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "Mr.Panukorn Sathron",
+      "Mr.Anuphong Longnoi",
+      "Mr.Theeraphat Khiaosaart"
+    ],
+    "meaning": "LIKELY_ENGLISH_NAME"
+  },
+  {
+    "code": "Text_7",
+    "nonBlankCount": 180,
+    "thaiPct": 0,
+    "latinPct": 65,
+    "blankPct": 35,
+    "mixedCount": 0,
+    "samples": [
+      "Mr.Panukorn / TMG2",
+      "Mr.Anuphong / TMG1",
+      "Mr.Archawa / TMF2"
+    ],
+    "meaning": "AMBIGUOUS"
+  },
+  {
+    "code": "Text_3",
+    "nonBlankCount": 155,
+    "thaiPct": 0,
+    "latinPct": 56,
+    "blankPct": 44,
+    "mixedCount": 0,
+    "samples": [
+      "Toyota  Sales",
+      "Technical Services",
+      "Export"
+    ],
+    "meaning": "AMBIGUOUS"
+  },
+  {
+    "code": "father",
+    "nonBlankCount": 100,
+    "thaiPct": 28,
+    "latinPct": 0,
+    "blankPct": 64,
+    "mixedCount": 0,
+    "samples": [
+      "สมาน",
+      "วิชัย  พันธุ์คุ้มเก่า",
+      "สุธีพ  แซ่เตียว"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Drop_down_2",
+    "nonBlankCount": 87,
+    "thaiPct": 0,
+    "latinPct": 32,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "Production",
+      "Production",
+      "Production"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "mother",
+    "nonBlankCount": 112,
+    "thaiPct": 37,
+    "latinPct": 0,
+    "blankPct": 59,
+    "mixedCount": 0,
+    "samples": [
+      "มุล",
+      "กาญจนา พันธุ์คุ้มเก่า",
+      "สุจิตตรา"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Created_datetime",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 100,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "2026-08-18T11:45:00Z",
+      "2026-08-18T11:44:00Z",
+      "2026-08-18T11:43:00Z"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Radio_button",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 100,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "AMT",
+      "AMT",
+      "AMT"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Radio_button_0",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 100,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "Male",
+      "Male",
+      "Male"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Number",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "295",
+      "294",
+      "293"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Record_number",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "642",
+      "641",
+      "640"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Text_8",
+    "nonBlankCount": 175,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 36,
+    "mixedCount": 0,
+    "samples": [
+      "2",
+      "2",
+      "2"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Text_6",
+    "nonBlankCount": 252,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 8,
+    "mixedCount": 0,
+    "samples": [
+      "34907078",
+      "34907079",
+      "34518425"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Private_Car_Driving_Licence_0",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 100,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "Yes",
+      "Yes",
+      "Yes"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "second_child",
+    "nonBlankCount": 34,
+    "thaiPct": 10,
+    "latinPct": 0,
+    "blankPct": 88,
+    "mixedCount": 0,
+    "samples": [
+      "E",
+      "-",
+      "ด.ญ.ชลิตา เถื่อนฤาชัย"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Text_4",
+    "nonBlankCount": 252,
+    "thaiPct": 0,
+    "latinPct": 92,
+    "blankPct": 8,
+    "mixedCount": 1,
+    "samples": [
+      "puksathorn@gmail.com",
+      "hart0987654321@gmail.com",
+      "theeraphatkhiaosaart@gmail.com"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Drop_down",
+    "nonBlankCount": 273,
+    "thaiPct": 0,
+    "latinPct": 99,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "TMG2",
+      "TMG1",
+      "TMG2"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Text_5",
+    "nonBlankCount": 23,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 92,
+    "mixedCount": 0,
+    "samples": [
+      "70/30",
+      "70/30",
+      "70/30"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Text_1",
+    "nonBlankCount": 26,
+    "thaiPct": 9,
+    "latinPct": 9,
+    "blankPct": 91,
+    "mixedCount": 26,
+    "samples": [
+      "Tone / โตน",
+      "Big / บิ๊ก",
+      "Patty / แพ้ตตี้"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Text_11",
+    "nonBlankCount": 4,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 99,
+    "mixedCount": 0,
+    "samples": [
+      "066-0565504",
+      "061-5383889",
+      "065-9599981"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "emp_text",
+    "nonBlankCount": 196,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 29,
+    "mixedCount": 0,
+    "samples": [
+      "0295",
+      "0294",
+      "0293"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "$revision",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "1",
+      "1",
+      "1"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Date",
+    "nonBlankCount": 268,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "2026-08-03",
+      "2026-08-03",
+      "2026-08-03"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Text_area",
+    "nonBlankCount": 162,
+    "thaiPct": 0,
+    "latinPct": 59,
+    "blankPct": 41,
+    "mixedCount": 0,
+    "samples": [
+      "Each of us is constantly growing, and together we will grow as a team.\n\n1.Safety 0 accidents & compliance violations 0 case.\n・Detailed confirmation of high-risk construction work at the construction inspection meeting.\n\n2.Implementation of information exchange in close cooperation with sales departments and CN departments.\n・Continuation of regular meetings\n・Construction quotations are submitted to the customer through the sales department.\n\n3.Implementation of safety level rankings for internal manpower and contractor\n・For lower-level internal and contractor , training should be implemented more frequently.",
+      "1. Enhance our strength in Engineering function with solution proposal\n2. Enhance a collaboration with TMS1 to increase Maintenance business\n3. Enhance sustainable revenue through Jyobihin and sales activity with DX function\n4. Achieve big project for G4.5 and G5.0 (ATAC&AIPT&DNTH)\n5. Skill-up member for improve core competency and individual skill\n6. Zero violation of credit + Zero accident of all activity + Zero violation of compliance",
+      "1. Enhance our strength in Engineering function with solution proposal\n2. Enhance a collaboration with TMS1 to increase Maintenance business\n3. Enhance sustainable revenue through Jyobihin and sales activity with DX function\n4. Achieve big project for G4.5 and G5.0 (ATAC&AIPT&DNTH)\n5. Skill-up member for improve core competency and individual skill\n6. Zero violation of credit + Zero accident of all activity + Zero violation of compliance"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Updated_datetime",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 100,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "2026-08-18T11:45:00Z",
+      "2026-08-18T11:44:00Z",
+      "2026-08-18T11:43:00Z"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Number_0",
+    "nonBlankCount": 273,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 1,
+    "mixedCount": 0,
+    "samples": [
+      "1",
+      "1",
+      "1"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Spouse",
+    "nonBlankCount": 77,
+    "thaiPct": 23,
+    "latinPct": 3,
+    "blankPct": 72,
+    "mixedCount": 8,
+    "samples": [
+      "C",
+      "-",
+      "นายสุรศักดิ์ เถื่อนฤาชัย"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "third_child",
+    "nonBlankCount": 8,
+    "thaiPct": 3,
+    "latinPct": 0,
+    "blankPct": 97,
+    "mixedCount": 0,
+    "samples": [
+      "F",
+      "ด.ญ.ธนิชา  ทองศรี",
+      "เจริญศักดิ์"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Text_area_0",
+    "nonBlankCount": 163,
+    "thaiPct": 0,
+    "latinPct": 59,
+    "blankPct": 41,
+    "mixedCount": 0,
+    "samples": [
+      "1. Safety 0 Accident & Compliance 0 Case      \n-Ensure work with safety  by preparation completely before working and always manage site with safety by strictly.  \n2.Profitability  Target : Profit 64.5 MB                                                          (Project G.:22.5MB,Engineering G.:35.2MB,Monitoring T:6.8MB)\n-Ensure customer need correctly and select sub-contractor correctly by considering with KPI of SQDC(Safety,Quality,Delivery ,Cost) \n-Especially focus the modification business(profit 25.6 MB)                              \n,general maintenance business(profit 10 MB) and PM business(2.9 MB)\n3.Skill up internal manpower and contractor \n-Internal Manpower : Training the project manager,Target 15 persons            \n-Contractor : Training safety 1 company per month",
+      "1. Achieve Gross profit of budget 97.07 MB\n2. Enhance the Engineering function and maintenance business by collaboration with TMF3 & TMS1\n3. To expand Jyobihin and sales activity with DX function.\n4. To achieve the G4.5 and G5.0 project for ATAC, AIPT & AIAT by provide Project management\n5. Skill-up member for improve core competency or individual skill\n6. Zero violation of credit + Zero accident of all activity + Zero violation of compliance",
+      "1. Achieve Gross of profit 41.7 MB.\n2. Achieve gross profit pf spare part business 21.1MB spot and running (Group B-2,B-3,C-1,C-2)\n3. Achieve of Budget 10.8 MB THB profit for FA, Local MC and 3rd party maintenance (Group B4)\n4. Skill-up members and improvement of operation flow.\n5. Zero violation of credit + Zero accident of all activity + Zero violation of compliance"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "first_child",
+    "nonBlankCount": 71,
+    "thaiPct": 23,
+    "latinPct": 0,
+    "blankPct": 74,
+    "mixedCount": 0,
+    "samples": [
+      "D",
+      "-",
+      "ด.ญ.ศศิวิมล  เถื่อนฤาชัย"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "$id",
+    "nonBlankCount": 275,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "642",
+      "641",
+      "640"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  },
+  {
+    "code": "Expiry_Date",
+    "nonBlankCount": 81,
+    "thaiPct": 0,
+    "latinPct": 0,
+    "blankPct": 0,
+    "mixedCount": 0,
+    "samples": [
+      "2029-09-18",
+      "2028-10-24",
+      "2028-03-27"
+    ],
+    "meaning": "NOT_PERSON_NAME"
+  }
+]

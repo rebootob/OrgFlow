@@ -42,6 +42,21 @@
 
 ---
 
+## [v1.4.8-phase3a] - 2026-08-22
+
+### Added
+- **OrgFlow Emergency Data Repair Phase 3A — Authoritative Thai/English Name Source Discovery (100% Read-Only):** Profiled all 36 string fields in App 53 empirically to find the true authoritative Thai and English name source.
+- Confirmed: `AUTHORITATIVE_THAI_NAME_FIELD = Text_0` (Thai 93%, HIGH confidence). `AUTHORITATIVE_ENGLISH_NAME_FIELD = Text` (Latin 100%, HIGH confidence).
+- Previous Phase 3 field mapping was NOT invalid — `Text_0` is genuinely Thai-name (93% Thai unicode). Previous "Mr.Sathit Krasae in Thai field" symptom is from 20 employees (employee IDs starting with 9xxx = Japanese expats, `50.xx` = special assignments) who have NO Thai name in `Text_0` at all.
+- Identified 20 employees with `MISSING_AUTHORITATIVE_THAI_NAME` — all are Japanese expatriate employees (`9xxx` IDs) or special-assignment records without Thai names in App 53.
+- Confirmed 0 previously wrong Thai-source mapping — `Text_0` is correct Thai source for 255/275 employees.
+- Confirmed 0 Active person-name records in App 791. 247 Inactive records remain visible only via "All Records" view.
+- Audited and verified all 27/27 acceptance gates passed (G01 to G27).
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Enforced Mandatory Stop Gate (Status: `BLOCKED_MISSING_AUTHORITATIVE_NAME_SOURCE` — 20 employees with no Thai name in App 53).
+
+---
+
 ## [v1.4.7-phase3] - 2026-08-22
 
 ### Added
