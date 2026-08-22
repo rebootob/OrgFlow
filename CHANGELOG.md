@@ -42,6 +42,19 @@
 
 ---
 
+## [v1.5.5-phase7.3d] - 2026-08-22
+
+### Added
+- **OrgFlow Phase 7.3D — Evidence-Driven Decision Case Resolution (Strict Read-Only):**
+  - Evaluated all 12 Decision Cases against strict authoritative evidence standard (App 53, Org.FY2026_Rev.2, App 792 history).
+  - Resolved 8 Cases by Evidence with HIGH confidence (covering 17 blocking items).
+  - Isolated exactly 4 Cases requiring explicit Human Decision (3 blank position fields for executive expats + 1 duplicate employee ID #9000).
+  - Maintained 0 production writes, 0 AI translations, 0 entity changes to frozen 34 Org Nodes and 57 Position Masters.
+  - Final Decision: `NO-GO` (Awaiting user selection on the 4 remaining Decision Cases).
+  - System Status: `READY_FOR_USER_DECISION`.
+
+---
+
 ## [v1.5.4-phase7.3c] - 2026-08-22
 
 ### Added
