@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-22T11:16:22.667Z",
+  "total_app53_employees": 275,
+  "canonical_org_nodes": 33,
+  "ready_assignments": 275,
+  "unresolved_assignments": 0,
+  "preserved_app793_requests": 0,
+  "identity_exceptions": 0,
+  "position_exceptions": 0,
+  "org_mapping_exceptions": 0,
+  "org_structure_exceptions": 0,
+  "total_blocking_exceptions": 0,
+  "production_writes": 0,
+  "status": "READY_FOR_CLEAN_REBUILD_APPROVAL",
+  "exceptions": []
+}
