@@ -1,0 +1,54 @@
+# ORGANIZATION MASTER RECONCILIATION MATRIX
+
+| Entity Code | App 791 Title (TH) | Legacy Raw Value (App 53) | Employee Count | Match Status | User Decision Required? | Audit Notes |
+| :---: | :--- | :--- | :---: | :---: | :---: | :--- |
+| `DEP-001` | "น.ส.พรหมศิริ  พิมพ์สกุลไกร" | "น.ส.พรหมศิริ  พิมพ์สกุลไกร" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-002` | "นายวรชัย  วงค์ชะนะ" | "นายวรชัย  วงค์ชะนะ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-003` | "น.ส.ธารทิพย์  ภูพาดแร่" | "น.ส.ธารทิพย์  ภูพาดแร่" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-004` | "นายทาเคชิ สึชิฮิระ" | "นายทาเคชิ สึชิฮิระ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-005` | "นายชินิจิ  มากิโนะ" | "นายชินิจิ  มากิโนะ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-006` | "น.ส.อะคะริ  ซูซูกิ" | "น.ส.อะคะริ  ซูซูกิ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-007` | "นายไตรรัตน์  พันธุ์ดี" | "นายไตรรัตน์  พันธุ์ดี" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-008` | "น.ส.รสริน  อินทร์จันทร์" | "น.ส.รสริน  อินทร์จันทร์" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-009` | "น.ส.รัตนาภรณ์  พิเชฐโชติวงษ์" | "น.ส.รัตนาภรณ์  พิเชฐโชติวงษ์" | 2 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-010` | "น.ส.จันทรัสม์  รอดสว่าง" | "น.ส.จันทรัสม์  รอดสว่าง" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-011` | "น.ส.พิชชานันท์  เหลี่ยมสุวรรณ" | "น.ส.พิชชานันท์  เหลี่ยมสุวรรณ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-012` | "นายคณิน  แสงทอง" | "นายคณิน  แสงทอง" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-013` | "นายธัมกาล  ลักษณะหุต" | "นายธัมกาล  ลักษณะหุต" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-014` | "นายธรรมรัตน์  พลวารี" | "นายธรรมรัตน์  พลวารี" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-015` | "นายธนภูมิ เกษามูล" | "นายธนภูมิ เกษามูล" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-016` | "นายเจษฎา  มูลสาร" | "นายเจษฎา  มูลสาร" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-017` | "นายนราศักดิ์ จันทบูรณ์" | "นายนราศักดิ์ จันทบูรณ์" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-018` | "น.ส.นีร  น้อยหัวหาด" | "น.ส.นีร  น้อยหัวหาด" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-019` | "นายปฏิพล  พวงจันทร์" | "นายปฏิพล  พวงจันทร์" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-020` | "นายอิสระ  คงทวี" | "นายอิสระ  คงทวี" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-021` | "นายวิชา  สารเสวก" | "นายวิชา  สารเสวก" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-022` | "นายเคอิซุเกะ  ชิเกตะ" | "นายเคอิซุเกะ  ชิเกตะ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-023` | "น.ส.เพ็ญพิชชา  หุตะจูฑะ" | "น.ส.เพ็ญพิชชา  หุตะจูฑะ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-024` | "นายศุภณัฐ  เตียรถ์สุวรรณ" | "นายศุภณัฐ  เตียรถ์สุวรรณ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-025` | "นายรณชัย  ดอกดวน" | "นายรณชัย  ดอกดวน" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-026` | "นางสาวอุษณิษา ผาตินาวิน" | "นางสาวอุษณิษา ผาตินาวิน" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-027` | "นายทาเคชิ  อะชิซาว่า" | "นายทาเคชิ  อะชิซาว่า" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-028` | "น.ส.ปริยนาถ  สงวนสุข" | "น.ส.ปริยนาถ  สงวนสุข" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-029` | "นายมรรคภพ  ขำสิทธิ์" | "นายมรรคภพ  ขำสิทธิ์" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-030` | "นายกฤษณ์ชัย  สมพลกรัง" | "นายกฤษณ์ชัย  สมพลกรัง" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-031` | "นายวีรกุล  เจริญกุล" | "นายวีรกุล  เจริญกุล" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-032` | "นายสุทัศน์  หมอไทย" | "นายสุทัศน์  หมอไทย" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-033` | "นายศักดิ์ชัย  พันธุริ" | "นายศักดิ์ชัย  พันธุริ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-034` | "นายสงกรานต์  ขันนอก" | "นายสงกรานต์  ขันนอก" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-035` | "นายวรุตม์  อัศวตรีรัตนกุล" | "นายวรุตม์  อัศวตรีรัตนกุล" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-036` | "มูเนะโนบุ  ซาโต้" | "มูเนะโนบุ  ซาโต้" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-037` | "นายชิษณุพงศ์  กมลไชยอนันต์" | "นายชิษณุพงศ์  กมลไชยอนันต์" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-038` | "นายวรภฤศ  ม่วงมิ่งสุข" | "นายวรภฤศ  ม่วงมิ่งสุข" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-039` | "นายปกป้อง วานิชสุจิต" | "นายปกป้อง วานิชสุจิต" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-040` | "นายมาซาฮิโต  อาซูมิ" | "นายมาซาฮิโต  อาซูมิ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-041` | "นายทาคุโร  อิโนะอุเอะ" | "นายทาคุโร  อิโนะอุเอะ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-042` | "นายมิคิโอะ  คาโตะ" | "นายมิคิโอะ  คาโตะ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-043` | "นายธีระพงษ์  ประสาร" | "นายธีระพงษ์  ประสาร" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-044` | "นายศิรา  โสวัณณะ" | "นายศิรา  โสวัณณะ" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-045` | "นายจิรายุสวัฒ  ประสม" | "นายจิรายุสวัฒ  ประสม" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-046` | "นางสาวจุฑารัตน์  สุเฌอ" | "นางสาวจุฑารัตน์  สุเฌอ" | 2 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-047` | "นายณัฐวุฒิ  แก้วกังวาล" | "นายณัฐวุฒิ  แก้วกังวาล" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-048` | "นายพงศกร  โพธิ์พิมล" | "นายพงศกร  โพธิ์พิมล" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-049` | "นางสาวโสภิดา  คำล้าน" | "นางสาวโสภิดา  คำล้าน" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |
+| `DEP-050` | "นายณัฐพล  พุทธศรี" | "นายณัฐพล  พุทธศรี" | 1 | **`EXACT_MATCH`** | **`NO`** | Exact match between legacy name and App 791 master title. |

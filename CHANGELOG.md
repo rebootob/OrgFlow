@@ -1,5 +1,17 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.3.2-phase6b1a] - 2026-08-22
+
+### Added
+- **Phase 6B.1A Organization Master Name & Code Reconciliation (Strict Read-Only Audit):** Performed 100% read-only reconciliation of legacy raw strings against App 791 masters.
+- Verified 251 EXACT_MATCH department/section master records against App 53 raw strings.
+- Preserved exact legacy business names without AI generation, normalization, or English translation changes.
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable reports in `docs/phase6b1a/` ([`ORGANIZATION_MASTER_RECONCILIATION_MATRIX.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b1a/ORGANIZATION_MASTER_RECONCILIATION_MATRIX.md)).
+- Enforced Mandatory Stop Gate (Stopped for User Review).
+
+---
+
 ## [v1.3.1-phase6b1] - 2026-08-22
 
 ### Added
