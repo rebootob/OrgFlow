@@ -1,0 +1,43 @@
+{
+  "app53": {
+    "total_records": 275,
+    "unique_emp_ids": 274,
+    "duplicate_emp_ids": 1,
+    "duplicate_emp_id_details": [
+      [
+        "9000",
+        [
+          "390",
+          "382"
+        ]
+      ]
+    ],
+    "blank_emp_ids": 0,
+    "thai_names_populated": 255,
+    "english_names_populated": 275,
+    "positions_populated": 272,
+    "active_employees": 275
+  },
+  "app791": {
+    "current_records": 91,
+    "proposed_canonical_nodes": 33,
+    "pending_code_nodes": 24,
+    "duplicate_codes": 0,
+    "orphan_nodes": 0,
+    "circular_hierarchy": 0,
+    "invalid_parent_types": 0
+  },
+  "app792": {
+    "current_records": 275,
+    "proposed_active_assignments": 275,
+    "ready_assignments": 275,
+    "needs_review_assignments": 0
+  },
+  "app793": {
+    "current_records": 2,
+    "proposed_records": 0
+  },
+  "unresolved_employees": 0,
+  "unresolved_org_nodes": 0,
+  "production_writes": 0
+}
