@@ -1,0 +1,14 @@
+[
+  {
+    "app793_id": "2",
+    "request_no": "REQ-2",
+    "status": "DRAFT",
+    "dependency_impact": "PRESERVED_READ_ONLY"
+  },
+  {
+    "app793_id": "1",
+    "request_no": "REQ-1",
+    "status": "DRAFT",
+    "dependency_impact": "PRESERVED_READ_ONLY"
+  }
+]

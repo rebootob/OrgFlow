@@ -1,0 +1,240 @@
+[
+  {
+    "canonical_code": "TTMET",
+    "name": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Toyota Tsusho M&E (Thailand) Co.,Ltd. (COMPANY)"
+  },
+  {
+    "canonical_code": "DIV-ME",
+    "name": "Machinery & Engineering Division",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Machinery & Engineering Division (DIVISION)"
+  },
+  {
+    "canonical_code": "DIV-GS",
+    "name": "GIFU SEIKI Division",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: GIFU SEIKI Division (DIVISION)"
+  },
+  {
+    "canonical_code": "TMH0",
+    "name": "Corporate Department",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Corporate Department (DEPARTMENT)"
+  },
+  {
+    "canonical_code": "TMT1",
+    "name": "Machinery Department",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Machinery Department (DEPARTMENT)"
+  },
+  {
+    "canonical_code": "TMT0",
+    "name": "Industrial Services Department",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Industrial Services Department (DEPARTMENT)"
+  },
+  {
+    "canonical_code": "TME1",
+    "name": "Eco Energy & Textile Machinery Department",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Eco Energy & Textile Machinery Department (DEPARTMENT)"
+  },
+  {
+    "canonical_code": "TMS0",
+    "name": "Technical Services Department",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Technical Services Department (DEPARTMENT)"
+  },
+  {
+    "canonical_code": "TMG0",
+    "name": "Mold & Engineering Department",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Mold & Engineering Department (DEPARTMENT)"
+  },
+  {
+    "canonical_code": "TMT1",
+    "name": "Export",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Export (SECTION)"
+  },
+  {
+    "canonical_code": "TMT1-MACH",
+    "name": "Machine & Equipments",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Machine & Equipments (TEAM)"
+  },
+  {
+    "canonical_code": "TMT1-TOOL",
+    "name": "Tool Part & Project",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Tool Part & Project (TEAM)"
+  },
+  {
+    "canonical_code": "TMT2",
+    "name": "Toyota Sales",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Toyota Sales (SECTION)"
+  },
+  {
+    "canonical_code": "TMT2-TOOL",
+    "name": "Tooling",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Tooling (TEAM)"
+  },
+  {
+    "canonical_code": "TMT2-STN",
+    "name": "STN",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: STN (TEAM)"
+  },
+  {
+    "canonical_code": "TMT2-LOGI",
+    "name": "Logistics",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Logistics (TEAM)"
+  },
+  {
+    "canonical_code": "TMF1",
+    "name": "Automotive",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Automotive (SECTION)"
+  },
+  {
+    "canonical_code": "TMF1-MARK",
+    "name": "Marketing (Automotive)",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Marketing (Automotive) (FUNCTION)"
+  },
+  {
+    "canonical_code": "TMF2",
+    "name": "Industry",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Industry (SECTION)"
+  },
+  {
+    "canonical_code": "TMF2-MARK",
+    "name": "Marketing (Industry)",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Marketing (Industry) (FUNCTION)"
+  },
+  {
+    "canonical_code": "TMF3",
+    "name": "Sales Engineering",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Sales Engineering (SECTION)"
+  },
+  {
+    "canonical_code": "TMF3-SALE",
+    "name": "Sales",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Sales (FUNCTION)"
+  },
+  {
+    "canonical_code": "TMF3-MARK",
+    "name": "Marketing (Sales Engineering)",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Marketing (Sales Engineering) (FUNCTION)"
+  },
+  {
+    "canonical_code": "TME3",
+    "name": "Eco Energy & Textile Machinery",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Eco Energy & Textile Machinery (SECTION)"
+  },
+  {
+    "canonical_code": "TME3-MARK",
+    "name": "Marketing (Eco Energy)",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Marketing (Eco Energy) (FUNCTION)"
+  },
+  {
+    "canonical_code": "TMS1",
+    "name": "Technical Services",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Technical Services (SECTION)"
+  },
+  {
+    "canonical_code": "TMS1-PROJ",
+    "name": "Project Team",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Project Team (TEAM)"
+  },
+  {
+    "canonical_code": "TMS1-ENGI",
+    "name": "Engineering Team",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Engineering Team (TEAM)"
+  },
+  {
+    "canonical_code": "TMS1-SAFE",
+    "name": "Safety Team",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Safety Team (TEAM)"
+  },
+  {
+    "canonical_code": "TMG1",
+    "name": "Die Casting",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Die Casting (SECTION)"
+  },
+  {
+    "canonical_code": "TMG2",
+    "name": "Injection",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Injection (SECTION)"
+  },
+  {
+    "canonical_code": "TMH1",
+    "name": "GA",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: GA (SECTION)"
+  },
+  {
+    "canonical_code": "TMH2",
+    "name": "HR & Personnel",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: HR & Personnel (SECTION)"
+  },
+  {
+    "canonical_code": "TMH3",
+    "name": "Accounting & Finance",
+    "source_type": "OFFICIAL_ORG_CHART",
+    "source_document": "Org.FY2026_Rev.2",
+    "source_reference": "Node: Accounting & Finance (SECTION)"
+  }
+]

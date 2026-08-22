@@ -1,0 +1,1033 @@
+[
+  {
+    "canonical_pos_id": "POS-CAN-001",
+    "position_code": "POS-001",
+    "position_name_en": "Operator",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Operator"
+    ],
+    "employee_count": 32,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "642",
+      "641",
+      "640"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-002",
+    "position_code": "POS-002",
+    "position_name_en": "Marketing Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Marketing Staff"
+    ],
+    "employee_count": 40,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "639",
+      "633",
+      "630"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-003",
+    "position_code": "POS-003",
+    "position_name_en": "Technician",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Technician"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "638",
+      "503"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-004",
+    "position_code": "POS-004",
+    "position_name_en": "Support Marketing Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Support Marketing Staff"
+    ],
+    "employee_count": 11,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "637",
+      "634",
+      "631"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-005",
+    "position_code": "POS-005",
+    "position_name_en": "Coordinator",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Coordinator"
+    ],
+    "employee_count": 11,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "636",
+      "627",
+      "515"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-006",
+    "position_code": "POS-006",
+    "position_name_en": "Marketing Engineer",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Marketing Engineer"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "635",
+      "632",
+      "424"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-007",
+    "position_code": "POS-007",
+    "position_name_en": "Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Staff"
+    ],
+    "employee_count": 21,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "622",
+      "621",
+      "618"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-008",
+    "position_code": "POS-008",
+    "position_name_en": "Engineering Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Engineering Staff"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "619",
+      "512",
+      "501"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-009",
+    "position_code": "POS-009",
+    "position_name_en": "CAM Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "CAM Staff"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "615",
+      "614"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-010",
+    "position_code": "POS-010",
+    "position_name_en": "Design Engineer",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Design Engineer"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "613"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-011",
+    "position_code": "POS-011",
+    "position_name_en": "Factory Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Factory Manager"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "611"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-012",
+    "position_code": "POS-012",
+    "position_name_en": "Vice President",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Vice President"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "610",
+      "457",
+      "367"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-013",
+    "position_code": "POS-013",
+    "position_name_en": "Assistant Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Assistant Chief"
+    ],
+    "employee_count": 13,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "609",
+      "604",
+      "601"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-014",
+    "position_code": "POS-014",
+    "position_name_en": "Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Chief"
+    ],
+    "employee_count": 10,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "605",
+      "596",
+      "593"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-015",
+    "position_code": "POS-015",
+    "position_name_en": "Clerk",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Clerk"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "581"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-016",
+    "position_code": "POS-016",
+    "position_name_en": "Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Manager"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "578",
+      "574",
+      "404"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-017",
+    "position_code": "POS-017",
+    "position_name_en": "Safety Officer& ISO Control",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Safety Officer&  ISO Control"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "562"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-018",
+    "position_code": "POS-018",
+    "position_name_en": "Senior Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Senior Chief"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "547",
+      "545",
+      "531"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-019",
+    "position_code": "POS-019",
+    "position_name_en": "Section Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Section Manager",
+      "Section  Manager"
+    ],
+    "employee_count": 12,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "534",
+      "530",
+      "478"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-020",
+    "position_code": "POS-020",
+    "position_name_en": "Assistant Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Assistant Manager"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "533"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-021",
+    "position_code": "POS-021",
+    "position_name_en": "Messenger",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Messenger"
+    ],
+    "employee_count": 5,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "520",
+      "513",
+      "492"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-022",
+    "position_code": "POS-022",
+    "position_name_en": "Warehouse Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Warehouse Staff"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "519"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-023",
+    "position_code": "POS-023",
+    "position_name_en": "Support Marketing Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Support Marketing Chief"
+    ],
+    "employee_count": 5,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "517",
+      "468",
+      "466"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-024",
+    "position_code": "POS-024",
+    "position_name_en": "Supoort Marketing Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Supoort Marketing Chief"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "516",
+      "410"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-025",
+    "position_code": "POS-025",
+    "position_name_en": "Interpreter",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Interpreter"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "508"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-026",
+    "position_code": "POS-026",
+    "position_name_en": "Accounting Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Accounting Staff"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "506",
+      "433",
+      "355"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-027",
+    "position_code": "POS-027",
+    "position_name_en": "General manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "General manager"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "494"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-028",
+    "position_code": "POS-028",
+    "position_name_en": "IT Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "IT Staff"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "489",
+      "414"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-029",
+    "position_code": "POS-029",
+    "position_name_en": "Trainee",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Trainee"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "487",
+      "483"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-030",
+    "position_code": "POS-030",
+    "position_name_en": "Contract (Japan Support)",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Contract (Japan Support)"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "485"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-031",
+    "position_code": "POS-031",
+    "position_name_en": "Contract (Apite)",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Contract (Apite)"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "484"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-032",
+    "position_code": "POS-032",
+    "position_name_en": "General Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "General Manager"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "480",
+      "377",
+      "357"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-033",
+    "position_code": "POS-033",
+    "position_name_en": "Driver",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Driver"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "479"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-034",
+    "position_code": "POS-034",
+    "position_name_en": "Warehouse Support",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Warehouse Support"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "475"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-035",
+    "position_code": "POS-035",
+    "position_name_en": "Assistant Section Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Assistant Section Manager"
+    ],
+    "employee_count": 12,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "474",
+      "461",
+      "455"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-036",
+    "position_code": "POS-036",
+    "position_name_en": "Marketing Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Marketing Chief",
+      "Marketing  Chief"
+    ],
+    "employee_count": 16,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "473",
+      "471",
+      "470"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-037",
+    "position_code": "POS-037",
+    "position_name_en": "Accounting Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Accounting Chief"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "472"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-038",
+    "position_code": "POS-038",
+    "position_name_en": "Deputy General Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Deputy General Manager"
+    ],
+    "employee_count": 4,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "467",
+      "456",
+      "394"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-039",
+    "position_code": "POS-039",
+    "position_name_en": "Technical Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Technical Chief"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "462",
+      "438"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-040",
+    "position_code": "POS-040",
+    "position_name_en": "Senior Specilaist",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Senior Specilaist"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "459"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-041",
+    "position_code": "POS-041",
+    "position_name_en": "Asst. Section Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Asst. Section Manager"
+    ],
+    "employee_count": 4,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "452",
+      "434",
+      "366"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-042",
+    "position_code": "POS-042",
+    "position_name_en": "Senior Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Senior Manager",
+      "Senior  Manager"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "449",
+      "401"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-043",
+    "position_code": "POS-043",
+    "position_name_en": "Technical Service Engineer",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Technical Service Engineer"
+    ],
+    "employee_count": 4,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "436",
+      "423",
+      "371"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-044",
+    "position_code": "POS-044",
+    "position_name_en": "Chief of Engineer",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Chief of Engineer"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "432",
+      "407",
+      "391"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-045",
+    "position_code": "POS-045",
+    "position_name_en": "Technical Service Chief",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Technical Service Chief"
+    ],
+    "employee_count": 4,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "430",
+      "427",
+      "422"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-046",
+    "position_code": "POS-046",
+    "position_name_en": "Technical Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Technical Staff"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "429"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-047",
+    "position_code": "POS-047",
+    "position_name_en": "Chief of Safety Officer",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Chief of Safety Officer"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "415"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-048",
+    "position_code": "POS-048",
+    "position_name_en": "Supoort Marketing Staff",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Supoort Marketing Staff"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "413",
+      "362"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-049",
+    "position_code": "POS-049",
+    "position_name_en": "Safety",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Safety"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "406"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-050",
+    "position_code": "POS-050",
+    "position_name_en": "Advisor",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Advisor"
+    ],
+    "employee_count": 3,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "405",
+      "388",
+      "375"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-051",
+    "position_code": "POS-051",
+    "position_name_en": "Service Engineer",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Service Engineer"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "399"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-052",
+    "position_code": "POS-052",
+    "position_name_en": "President",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "President"
+    ],
+    "employee_count": 2,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "398",
+      "356"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-053",
+    "position_code": "POS-053",
+    "position_name_en": "Executive Management Coordinator",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Executive Management Coordinator"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "397"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-054",
+    "position_code": "POS-054",
+    "position_name_en": "Specialist",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Specialist"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "393"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-055",
+    "position_code": "POS-055",
+    "position_name_en": "Co Project Manager",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Co Project Manager"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "383"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-056",
+    "position_code": "POS-056",
+    "position_name_en": "DESIGN ENGINEER ASSISTANT MANAGER",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "DESIGN ENGINEER ASSISTANT MANAGER"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "382"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  },
+  {
+    "canonical_pos_id": "POS-CAN-057",
+    "position_code": "POS-057",
+    "position_name_en": "Safety Officer",
+    "position_name_th": null,
+    "raw_titles_found": [
+      "Safety Officer"
+    ],
+    "employee_count": 1,
+    "source_type": "APP53_EMPLOYEE_MASTER",
+    "source_field": "Text_2",
+    "sample_app53_records": [
+      "378"
+    ],
+    "confidence": "HIGH",
+    "review_required": false
+  }
+]
