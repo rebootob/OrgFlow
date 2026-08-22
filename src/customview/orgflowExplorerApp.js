@@ -280,18 +280,27 @@
                 }
 
                 if (!matchedAsg) {
-                    matchedAsg = {
-                        assignment_id: `ASG-${identity.record_id}-DEF`,
-                        position_code: 'POS-STAFF',
-                        position_name: identity.raw_position || 'Staff',
-                        organization_code: 'TTMET',
-                        organization_name: 'Toyota Tsusho M&E (Thailand) Co.,Ltd.',
-                        organization_type: 'COMPANY',
-                        assignment_type: 'PRIMARY',
-                        assignment_status: 'CURRENT',
-                        effective_start_date: identity.start_date,
-                        hierarchy_path: 'TTMET'
-                    };
+                    // Check if employee has a historical/inactive assignment in App 792
+                    const histAsg = (identity.employee_id === '9000')
+                        ? parsedAssignments.find(a => a.employee_id === '9000' && a.english_name.toLowerCase().includes(identity.english_name.toLowerCase().includes('tomita') ? 'tomita' : 'panu'))
+                        : parsedAssignments.find(a => a.employee_id === identity.employee_id);
+
+                    if (histAsg) {
+                        matchedAsg = histAsg;
+                    } else {
+                        matchedAsg = {
+                            assignment_id: `ASG-${identity.record_id}-DEF`,
+                            position_code: 'POS-STAFF',
+                            position_name: identity.raw_position || 'Staff',
+                            organization_code: 'TTMET',
+                            organization_name: 'Toyota Tsusho M&E (Thailand) Co.,Ltd.',
+                            organization_type: 'COMPANY',
+                            assignment_type: 'PRIMARY',
+                            assignment_status: 'CURRENT',
+                            effective_start_date: identity.start_date,
+                            hierarchy_path: 'TTMET'
+                        };
+                    }
                 }
 
                 const org = this.orgMap.get(matchedAsg.organization_code) || {};
@@ -377,6 +386,7 @@
             });
 
             this.unifiedEmployees.forEach(emp => {
+                if (emp.assignment_status !== 'CURRENT') return;
                 const orgNode = this.treeNodes.get(emp.organization_code);
                 if (orgNode) {
                     orgNode.directEmployees.push(emp);
@@ -1909,7 +1919,7 @@
 
             const isFocusBranch = this.focusedOrgCode !== 'TTMET';
             if (!isFocusBranch) {
-                const topExecs = this.store.getUnifiedEmployees().filter(e => e.organization_code === 'TTMET');
+                const topExecs = this.store.getUnifiedEmployees().filter(e => e.organization_code === 'TTMET' && e.assignment_status === 'CURRENT');
                 const execGroup = document.createElement('div');
                 execGroup.className = 'orgflow-personnel-group';
 
