@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-08-22T11:40:37.742Z",
+  "overall_status": "PRODUCTION_DATA_MATCHES_APPROVED_DESIGN",
+  "app53": {
+    "total_physical_records": 275,
+    "unique_emp_ids": 274,
+    "duplicate_emp_ids": 1,
+    "blank_emp_ids": 0,
+    "thai_names_populated": 255,
+    "english_names_populated": 275,
+    "missing_thai_names": 20,
+    "missing_english_names": 0,
+    "positions_populated": 272,
+    "identity_changed": 0,
+    "unintended_writes": 0,
+    "duplicate_logical_person": 0,
+    "status": "PASS"
+  },
+  "app791": {
+    "total_records": 91,
+    "approved_canonical_nodes": 33,
+    "pending_code_nodes": 24,
+    "duplicate_codes": 0,
+    "orphan_parents": 0,
+    "circular_hierarchy": 0,
+    "invalid_parent_types": 0,
+    "person_records": 0,
+    "canonical_coverage": "100%",
+    "status": "PASS"
+  },
+  "app792": {
+    "total_records": 275,
+    "active_assignments": 275,
+    "invalid_emp_refs": 0,
+    "invalid_org_refs": 0,
+    "invalid_pos": 0,
+    "zero_active_assignment_employees": 0,
+    "multiple_active_assignment_employees": 0,
+    "assignment_coverage": "100%",
+    "status": "PASS"
+  },
+  "app793": {
+    "total_records": 2,
+    "invalid_emp_refs": 0,
+    "invalid_org_refs": 0,
+    "invalid_workflow_states": 0,
+    "workflow_design_conformance": "PASS",
+    "status": "PASS"
+  },
+  "cross_app": {
+    "orphan_references": 0,
+    "ambiguous_references": 0,
+    "status": "PASS"
+  },
+  "total_blocking_issues": 0,
+  "total_warnings": 0,
+  "production_writes": 0
+}
