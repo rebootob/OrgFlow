@@ -1,5 +1,20 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.3.5-phase6b3] - 2026-08-22
+
+### Added
+- **Phase 6B.3 Organization Code & Master Finalization (100% Read-Only):** Finalized 27-node canonical Organization Master based on Organization Chart 2026.
+- Audited full 27-node master table across Company, Division, Department, Section, and Team levels.
+- Verified 9/9 Tree Integrity Validations passed (exactly 1 root, 0 orphans, 0 circular references, 27 unique codes, 100% reachability).
+- Verified Position Master separation: 271 Position Masters kept separate with 0 position contamination in Org Master.
+- Evaluated 273/273 active current assignments as 100% uniquely mappable.
+- Built User Decision Table for 10 proposed codes requiring official code approval.
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable report ([`PHASE_6B3_ORGANIZATION_MASTER_FINALIZATION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b3/PHASE_6B3_ORGANIZATION_MASTER_FINALIZATION_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_USER_CODE_APPROVAL`).
+
+---
+
 ## [v1.3.4-phase6b2] - 2026-08-22
 
 ### Added
