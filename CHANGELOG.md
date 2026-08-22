@@ -1,5 +1,17 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.2.0-phase6a] - 2026-08-22
+
+### Added
+- **Phase 6A Controlled End-to-End Transaction Validation (Selection Phase):** Conducted 100% Read-Only discovery and drift check on Production Kintone environment.
+- Selected 1 safe test employee candidate (`Number = 173`, App 792 Assignment ID `1`).
+- Designed safe reversible position change test (BEFORE: `POS-001` $\rightarrow$ PROPOSED: `POS-002` $\rightarrow$ ROLLBACK: `POS-001`).
+- Verified 20/20 Pre-Transaction Safety Gates passed (G01 to G20).
+- Created pre-transaction snapshot and report ([`PHASE_6A_PRE_TRANSACTION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6/PHASE_6A_PRE_TRANSACTION_REPORT.md)).
+- Enforced Mandatory Stop Gate #1 with 0 production writes executed.
+
+---
+
 ## [v1.1.1] - 2026-08-22
 
 ### Added

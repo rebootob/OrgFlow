@@ -1,0 +1,127 @@
+{
+  "snapshotId": "PHASE6A-PRE-1787384004316",
+  "timestamp": "2026-08-22T07:33:24.316Z",
+  "baseline": {
+    "app53_records": 275,
+    "app791_records": 522,
+    "app792_records": 273,
+    "app793_records": 0
+  },
+  "candidate": {
+    "employeeRef": "173",
+    "recordId53": "353",
+    "employeeName": "Marketing Staff",
+    "currentDeptCode": "DEP-001",
+    "currentDeptTitle": "น.ส.พรหมศิริ  พิมพ์สกุลไกร",
+    "currentPosCode": "POS-001",
+    "currentPosTitle": "Ms.Promsiri  Pimsakulkrai",
+    "currentAssignmentId": "1",
+    "currentInternalId": "ASG-MIG-173",
+    "currentEffectiveStart": "2026-01-01",
+    "targetPosCode": "POS-002",
+    "targetPosTitle": "Mr.Worachai  Wongchana",
+    "reasonSafeForTest": "Ordinary staff employee with 1:1 verified baseline assignment, valid references, and 0 active change requests."
+  },
+  "safetyGates": [
+    {
+      "id": "G01",
+      "name": "Employee exists in App 53",
+      "status": "PASS"
+    },
+    {
+      "id": "G02",
+      "name": "Exactly one current assignment in App 792",
+      "status": "PASS"
+    },
+    {
+      "id": "G03",
+      "name": "No duplicate current assignment",
+      "status": "PASS"
+    },
+    {
+      "id": "G04",
+      "name": "No pending request in App 793",
+      "status": "PASS"
+    },
+    {
+      "id": "G05",
+      "name": "Department reference valid",
+      "status": "PASS"
+    },
+    {
+      "id": "G06",
+      "name": "Section reference valid (Optional/Nullable)",
+      "status": "PASS"
+    },
+    {
+      "id": "G07",
+      "name": "Position reference valid",
+      "status": "PASS"
+    },
+    {
+      "id": "G08",
+      "name": "Manager reference valid (Optional/Nullable)",
+      "status": "PASS"
+    },
+    {
+      "id": "G09",
+      "name": "No circular reporting",
+      "status": "PASS"
+    },
+    {
+      "id": "G10",
+      "name": "Target structure valid",
+      "status": "PASS"
+    },
+    {
+      "id": "G11",
+      "name": "Cross-department approver supported",
+      "status": "PASS"
+    },
+    {
+      "id": "G12",
+      "name": "Process Management configuration valid",
+      "status": "PASS"
+    },
+    {
+      "id": "G13",
+      "name": "Reject routes valid (3 Controlled routes)",
+      "status": "PASS"
+    },
+    {
+      "id": "G14",
+      "name": "SYSTEM_APPLY route valid",
+      "status": "PASS"
+    },
+    {
+      "id": "G15",
+      "name": "Rollback snapshot ready",
+      "status": "PASS"
+    },
+    {
+      "id": "G16",
+      "name": "App 53 backup snapshot ready",
+      "status": "PASS"
+    },
+    {
+      "id": "G17",
+      "name": "App 791 backup snapshot ready",
+      "status": "PASS"
+    },
+    {
+      "id": "G18",
+      "name": "App 792 backup snapshot ready",
+      "status": "PASS"
+    },
+    {
+      "id": "G19",
+      "name": "App 793 baseline captured",
+      "status": "PASS"
+    },
+    {
+      "id": "G20",
+      "name": "Git working tree safe",
+      "status": "PASS"
+    }
+  ]
+}
