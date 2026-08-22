@@ -1,0 +1,57 @@
+{
+  "execution_status": "SUCCESS",
+  "final_system_status": "PRODUCTION_VALIDATED",
+  "app791": {
+    "created": 84,
+    "updated": 4,
+    "deactivated": 518,
+    "deleted": 0,
+    "canonical_organizations": 34,
+    "canonical_positions": 57,
+    "total_active": 91,
+    "total_inactive": 518
+  },
+  "app792": {
+    "records_checked": 275,
+    "references_updated": 0,
+    "historical_records_deleted": 0,
+    "unresolved_references": 0
+  },
+  "app793": {
+    "records_checked": 2,
+    "references_updated": 0,
+    "unresolved_references": 0
+  },
+  "app53": {
+    "writes": 0,
+    "employee_records_before": 275,
+    "employee_records_after": 275,
+    "employee_name_changes": 0,
+    "employee_id_changes": 0
+  },
+  "data_integrity": {
+    "duplicate_organization_codes": 0,
+    "duplicate_position_codes": 0,
+    "duplicate_canonical_nodes": 0,
+    "orphan_parents": 0,
+    "circular_hierarchies": 0,
+    "invalid_parent_types": 0,
+    "person_records_in_app791": 0,
+    "thai_english_language_duplicates": 0,
+    "thai_name_contamination": 0,
+    "english_name_contamination": 0,
+    "ai_generated_names": 0,
+    "unresolved_references": 0,
+    "ambiguous_references": 0,
+    "case12_identity_collision": 0
+  },
+  "transactions": {
+    "authorized_writes": 606,
+    "executed_writes": 606,
+    "successful_writes": 606,
+    "failed_writes": 0,
+    "unintended_writes": 0,
+    "rollback_required": "NO",
+    "rollback_executed": "NO"
+  }
+}

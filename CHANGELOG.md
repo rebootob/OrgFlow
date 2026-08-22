@@ -42,6 +42,20 @@
 
 ---
 
+## [v1.6.0-phase7.5] - 2026-08-22
+
+### Added
+- **OrgFlow Phase 7.5 — Controlled Production Execution (App 791 Organization Master Rebuild):**
+  - Executed controlled production rebuild of App 791 (606 authorized mutations, 0 failed writes).
+  - Deactivated 518 contaminated legacy person-instance records (`is_active: INACTIVE`, prefixed with `LEGACY-`).
+  - Created 27 clean canonical organization nodes from `Org.FY2026_Rev.2` and updated 4 canonical departments (`TMH0`, `TMT1`, `TMT0`, `TMS0`).
+  - Created 57 clean canonical Position Masters from App 53 job titles (`POS-001` to `POS-057`).
+  - Live post-execution read-back audit verified: 91 total active master records (34 Orgs + 57 Positions, 0 Person records).
+  - Maintained 100% protection of App 53 (0 writes, 275 records before/after) and App 792/793 historical references.
+  - Final System Status: `PRODUCTION_VALIDATED`.
+
+---
+
 ## [v1.5.7-phase7.4b] - 2026-08-22
 
 ### Added
