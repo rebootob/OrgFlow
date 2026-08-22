@@ -1,0 +1,203 @@
+{
+  "classificationList": 522,
+  "proposedOrgNodes": [
+    {
+      "code": "TTMET",
+      "name": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+      "type": "COMPANY",
+      "parent": "",
+      "active": "YES"
+    },
+    {
+      "code": "DIV-ME",
+      "name": "Machinery & Engineering Division",
+      "type": "DIVISION",
+      "parent": "TTMET",
+      "active": "YES"
+    },
+    {
+      "code": "DIV-GS",
+      "name": "GIFU SEIKI Division",
+      "type": "DIVISION",
+      "parent": "TTMET",
+      "active": "YES"
+    },
+    {
+      "code": "TM90",
+      "name": "Corporate Department (TM90)",
+      "type": "DEPARTMENT",
+      "parent": "TTMET",
+      "active": "YES"
+    },
+    {
+      "code": "TM10",
+      "name": "Machinery Department (TM10)",
+      "type": "DEPARTMENT",
+      "parent": "DIV-ME",
+      "active": "YES"
+    },
+    {
+      "code": "TM70",
+      "name": "Industrial Services Department (TM70)",
+      "type": "DEPARTMENT",
+      "parent": "DIV-ME",
+      "active": "YES"
+    },
+    {
+      "code": "TME1",
+      "name": "Eco Energy & Textile Machinery Department (TME1)",
+      "type": "DEPARTMENT",
+      "parent": "DIV-ME",
+      "active": "YES"
+    },
+    {
+      "code": "TM50",
+      "name": "Technical Services Department (TM50)",
+      "type": "DEPARTMENT",
+      "parent": "DIV-ME",
+      "active": "YES"
+    },
+    {
+      "code": "TMG0",
+      "name": "Mold & Engineering Department (TMG0)",
+      "type": "DEPARTMENT",
+      "parent": "DIV-GS",
+      "active": "YES"
+    },
+    {
+      "code": "TMT1",
+      "name": "Export (TMT1)",
+      "type": "SECTION",
+      "parent": "TM10",
+      "active": "YES"
+    },
+    {
+      "code": "TMT2",
+      "name": "Toyota Sales (TMT2)",
+      "type": "SECTION",
+      "parent": "TM10",
+      "active": "YES"
+    },
+    {
+      "code": "TMF1",
+      "name": "Automotive (TMF1)",
+      "type": "SECTION",
+      "parent": "TM70",
+      "active": "YES"
+    },
+    {
+      "code": "TMF2",
+      "name": "Industry (TMF2)",
+      "type": "SECTION",
+      "parent": "TM70",
+      "active": "YES"
+    },
+    {
+      "code": "TMF3",
+      "name": "Sales Engineering (TMF3)",
+      "type": "SECTION",
+      "parent": "TM70",
+      "active": "YES"
+    },
+    {
+      "code": "TMG1",
+      "name": "Die Casting (TMG1)",
+      "type": "SECTION",
+      "parent": "TMG0",
+      "active": "YES"
+    },
+    {
+      "code": "TMG2",
+      "name": "Injection (TMG2)",
+      "type": "SECTION",
+      "parent": "TMG0",
+      "active": "YES"
+    },
+    {
+      "code": "TM91",
+      "name": "GA (TM91)",
+      "type": "SECTION",
+      "parent": "TM90",
+      "active": "YES"
+    },
+    {
+      "code": "TM92",
+      "name": "HR & Personnel (TM92)",
+      "type": "SECTION",
+      "parent": "TM90",
+      "active": "YES"
+    },
+    {
+      "code": "TM93",
+      "name": "Accounting & Finance (TM93)",
+      "type": "SECTION",
+      "parent": "TM90",
+      "active": "YES"
+    },
+    {
+      "code": "TMT1-ME",
+      "name": "Machine & Equipments",
+      "type": "TEAM",
+      "parent": "TMT1",
+      "active": "YES"
+    },
+    {
+      "code": "TMT1-TP",
+      "name": "Tool Part & Project",
+      "type": "TEAM",
+      "parent": "TMT1",
+      "active": "YES"
+    },
+    {
+      "code": "TMT2-TL",
+      "name": "Tooling",
+      "type": "TEAM",
+      "parent": "TMT2",
+      "active": "YES"
+    },
+    {
+      "code": "TMT2-ST",
+      "name": "STN",
+      "type": "TEAM",
+      "parent": "TMT2",
+      "active": "YES"
+    },
+    {
+      "code": "TMT2-LG",
+      "name": "Logistics",
+      "type": "TEAM",
+      "parent": "TMT2",
+      "active": "YES"
+    },
+    {
+      "code": "TM50-PT",
+      "name": "Project Team",
+      "type": "TEAM",
+      "parent": "TM50",
+      "active": "YES"
+    },
+    {
+      "code": "TM50-ET",
+      "name": "Engineering Team",
+      "type": "TEAM",
+      "parent": "TM50",
+      "active": "YES"
+    },
+    {
+      "code": "TM50-ST",
+      "name": "Safety Team",
+      "type": "TEAM",
+      "parent": "TM50",
+      "active": "YES"
+    }
+  ],
+  "assignmentImpact": {
+    "totalAssignments": 275,
+    "activeAssignments": 273,
+    "autoMappable": 273,
+    "manualReview": 0,
+    "missingOrganization": 0,
+    "missingPosition": 0,
+    "ambiguousMapping": 0
+  }
+}
