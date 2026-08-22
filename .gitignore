@@ -23,3 +23,10 @@ temp/
 
 # Build & Dist Outputs (Only unbundled temp files)
 # Note: Keep tracked src/ and dist/ releases
+
+# Employee Data & Production Backup Storage (DO NOT COMMIT TO GIT)
+secure-backup/
+backups/
+*.json.bak
+*.csv.bak
+
