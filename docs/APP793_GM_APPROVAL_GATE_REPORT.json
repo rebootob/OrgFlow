@@ -1,0 +1,28 @@
+{
+  "workflow_states": [
+    "CANCELLED",
+    "EXECUTED",
+    "DRAFT",
+    "RETURNED",
+    "GM_APPROVAL",
+    "SUBMITTED",
+    "HR_REVIEW",
+    "APPROVED",
+    "EXECUTION_PENDING",
+    "EXECUTION_ERROR"
+  ],
+  "workflow_actions_count": 13,
+  "draft_to_approved_impossible": true,
+  "submitted_to_approved_impossible": true,
+  "hr_review_to_approved_impossible": true,
+  "hr_review_to_gm_approval_required": true,
+  "gm_approval_to_approved_valid": true,
+  "approved_to_execution_pending_valid": true,
+  "hr_fields_present": true,
+  "gm_fields_present": true,
+  "distinct_audit_fields": true,
+  "app53_writes": 0,
+  "app791_writes": 0,
+  "app792_writes": 0,
+  "final_status": "APP793_GM_APPROVAL_GATE_READY"
+}
