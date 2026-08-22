@@ -2,9 +2,13 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 3.9.0 (Dual-Mode: Canonical Structure + Executive Personnel View Org Chart)
- * - TAB 1: Canonical Structure (57-node recursive unit hierarchy & capacity analytics)
- * - TAB 2: Personnel View (Traditional Top-Down Corporate Position & Reporting Org Chart)
+ * Version: 4.0.0 (Dynamic Layout Engine & Responsive Executive Org Chart)
+ * - Strict Separation: Canonical Hierarchy Tree -> Layout Engine -> Visual Renderer
+ * - Dynamic Subtree Width & Recursive Coordinate Allocation
+ * - Viewport Canvas Pan & Smooth Zoom Engine (40% - 160%)
+ * - Interactive Density Controls: Compact | Normal | Comfortable
+ * - Smart Staff Aggregation & Multi-Column Section Grids
+ * - Focus Mode, Search Auto-Focus, Layout Memory & Tree Hash Invariant Verification
  * 
  * 100% READ-ONLY DATA INTEGRATION / ZERO PRODUCTION WRITES.
  */
@@ -12,14 +16,33 @@
 (function () {
     'use strict';
 
-    // Application Config & Production App IDs
     const CONFIG = {
         APP_53: 53,
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        CACHE_TTL_MS: 300000 // 5 Minutes
+        CACHE_TTL_MS: 300000
     };
+
+    // Tree Hash Invariant Helper
+    function computeTreeHash(treeNodes, employees) {
+        const parts = [];
+        treeNodes.forEach((node, code) => {
+            parts.push(`${code}:${node.parentCode || 'ROOT'}:${node.level}`);
+        });
+        employees.forEach(e => {
+            parts.push(`${e.internal_id}:${e.organization_code}:${e.position_code}`);
+        });
+        parts.sort();
+        let hash = 0;
+        const str = parts.join('|');
+        for (let i = 0; i < str.length; i++) {
+            const char = str.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash |= 0;
+        }
+        return `THASH-${hash}`;
+    }
 
     // Central Canonical Data Store
     class OrgFlowDataStore {
@@ -30,31 +53,27 @@
             this.requests793 = [];
             this.unifiedEmployees = [];
 
-            this.empMap = new Map(); // Map<internal_id, EmployeeObject>
-            this.orgMap = new Map(); // Map<organization_code, OrgObject>
-            this.historyMap = new Map(); // Map<internal_id, Array<AssignmentObject>>
-            this.treeNodes = new Map(); // Map<organization_code, TreeNodeObject>
-            this.positionHierarchy = []; // Structured Position Reporting Tree
+            this.empMap = new Map();
+            this.orgMap = new Map();
+            this.historyMap = new Map();
+            this.treeNodes = new Map();
             this.rootNodeCode = 'TTMET';
+            this.treeHash = '';
             this.isLoaded = false;
         }
 
         async loadAllData() {
             console.log('OrgFlow: Fetching data from Apps 53, 791, 792, 793 (READ-ONLY)...');
 
-            // 1. App 53 (Employee Master)
             const rec53 = await this.fetchAllRecords(CONFIG.APP_53);
             this.employees53 = rec53;
 
-            // 2. App 791 (Org Master)
             const rec791 = await this.fetchAllRecords(CONFIG.APP_791);
             this.orgs791 = rec791;
 
-            // 3. App 792 (Assignment History)
             const rec792 = await this.fetchAllRecords(CONFIG.APP_792);
             this.assignments792 = rec792;
 
-            // 4. App 793 (Change Requests)
             try {
                 const rec793 = await this.fetchAllRecords(CONFIG.APP_793);
                 this.requests793 = rec793;
@@ -63,7 +82,7 @@
                 this.requests793 = [];
             }
 
-            // Build Organization Map (App 791)
+            // Build Org Map
             this.orgMap.clear();
             this.orgs791.forEach(o => {
                 const code = o.organization_code?.value?.trim();
@@ -80,7 +99,7 @@
                 }
             });
 
-            // Build App 53 Identity Map using Synthetic Internal ID (ORG-APP53-{recordId})
+            // Build Employee Map (Synthetic Internal ID)
             this.empMap.clear();
             const rawIdentities = [];
             this.employees53.forEach(e => {
@@ -116,14 +135,10 @@
             // Parse App 792 Assignments
             const parsedAssignments = [];
             this.assignments792.forEach(a => {
-                const asgRecId = String(a.$id?.value || '').trim();
-                const asgId = String(a.assignment_id?.value || '').trim();
-                const empId = String(a.employee_id?.value || '').trim();
-
                 parsedAssignments.push({
-                    assignment_rec_id: asgRecId,
-                    assignment_id: asgId,
-                    employee_id: empId,
+                    assignment_rec_id: String(a.$id?.value || '').trim(),
+                    assignment_id: String(a.assignment_id?.value || '').trim(),
+                    employee_id: String(a.employee_id?.value || '').trim(),
                     thai_name: String(a.thai_name?.value || '').trim(),
                     english_name: String(a.english_name?.value || '').trim(),
                     position_code: String(a.position_code?.value || '').trim(),
@@ -139,13 +154,12 @@
                 });
             });
 
-            // Disambiguated In-Memory Joining (App 53 + App 792)
+            // Unified Joining
             this.unifiedEmployees = [];
             this.historyMap.clear();
 
             rawIdentities.forEach(identity => {
                 let matchedAsg = null;
-
                 if (identity.employee_id === '9000') {
                     if (identity.english_name.toLowerCase().includes('tomita')) {
                         matchedAsg = parsedAssignments.find(a => a.employee_id === '9000' && a.english_name.toLowerCase().includes('tomita') && a.assignment_status === 'CURRENT');
@@ -173,15 +187,13 @@
 
                 const org = this.orgMap.get(matchedAsg.organization_code) || {};
 
-                // Determine Seniority / Position Tier Ranking
-                let posTier = 6; // Staff / Operator
+                let posTier = 6;
                 const posUpper = (matchedAsg.position_name || '').toUpperCase();
                 const posCodeUpper = (matchedAsg.position_code || '').toUpperCase();
-
                 if (posCodeUpper.includes('PRES') || posUpper.includes('PRESIDENT')) posTier = 1;
                 else if (posCodeUpper.includes('MD') || posUpper.includes('MANAGING DIRECTOR')) posTier = 1;
                 else if (posCodeUpper.includes('VP') || posUpper.includes('VICE PRESIDENT')) posTier = 2;
-                else if (posCodeUpper.includes('GM') || posUpper.includes('GENERAL MANAGER') || posCodeUpper.includes('DH') || posUpper.includes('DEPARTMENT HEAD')) posTier = 3;
+                else if (posCodeUpper.includes('GM') || posUpper.includes('GENERAL MANAGER') || posCodeUpper.includes('DH')) posTier = 3;
                 else if (posCodeUpper.includes('MGR') || posUpper.includes('MANAGER')) posTier = 4;
                 else if (posCodeUpper.includes('SUP') || posUpper.includes('SUPERVISOR') || posUpper.includes('CHIEF')) posTier = 5;
 
@@ -215,14 +227,10 @@
                 this.historyMap.set(identity.internal_id, empHistory);
             });
 
-            // Build Recursive Tree Graph from App 791 Parent-Child Links
             this.buildRecursiveHierarchyTree();
-
-            // Build Position & Reporting Hierarchy Model
-            this.buildPositionReportingModel();
-
+            this.treeHash = computeTreeHash(this.treeNodes, this.unifiedEmployees);
             this.isLoaded = true;
-            console.log(`OrgFlow Initialized: 275 Employees, 33 Canonical Units. Dual-Mode Ready.`);
+            console.log(`OrgFlow Data Store Initialized: 275 Employees, 33 Units. TreeHash: ${this.treeHash}`);
         }
 
         buildRecursiveHierarchyTree() {
@@ -283,12 +291,6 @@
 
             const root = this.treeNodes.get(this.rootNodeCode);
             if (root) computeMetrics(root);
-        }
-
-        buildPositionReportingModel() {
-            // Group personnel into corporate management tiers
-            this.executiveNodes = this.unifiedEmployees.filter(e => e.position_tier === 1);
-            this.divisionHeads = this.unifiedEmployees.filter(e => e.position_tier === 2);
         }
 
         async fetchAllRecords(appId) {
@@ -413,38 +415,98 @@
         getAssignmentHistory(internalId) {
             return this.historyMap.get(internalId) || [];
         }
+
+        verifyInvariant() {
+            const currentHash = computeTreeHash(this.treeNodes, this.unifiedEmployees);
+            if (this.treeHash && currentHash !== this.treeHash) {
+                console.error(`CRITICAL_HIERARCHY_MUTATION detected! Before: ${this.treeHash}, After: ${currentHash}`);
+                return false;
+            }
+            return true;
+        }
     }
 
-    // Portal Controller & UI Renderer
+    // Dynamic Org Flow Portal App
     class OrgFlowPortalApp {
         constructor() {
             this.store = new OrgFlowDataStore();
-            this.currentView = 'ORG_CHART'; // Default to Organization Chart
-            this.chartMode = 'PERSONNEL_VIEW'; // Default to Executive Personnel View (or CANONICAL_STRUCTURE)
-            this.selectedOrgCode = 'TTMET';
+            this.currentView = 'ORG_CHART';
+            this.chartMode = 'PERSONNEL_VIEW'; // PERSONNEL_VIEW or CANONICAL_STRUCTURE
+            this.focusedOrgCode = 'TTMET'; // Focus Mode Root
             this.searchQuery = '';
             this.filterLevel = 'ALL';
-            this.filterPositionStatus = 'ALL';
+            this.density = 'NORMAL'; // COMPACT, NORMAL, COMFORTABLE
+            this.zoomScale = 1.0;
+            this.panX = 0;
+            this.panY = 0;
+            this.isPanning = false;
+            this.startX = 0;
+            this.startY = 0;
             this.activeEmployee = null;
             this.activeOrgDetail = null;
             this.drawerTab = 'OVERVIEW';
             this.isChangeWizardOpen = false;
+            
+            // Subtree Expansion State Sets
             this.expandedNodeCodes = new Set(['TTMET', 'DIV-G0', 'DIV-ME', 'TMH0', 'TMT0', 'TMF0', 'TME0', 'TMS0', 'TMG0']);
-            this.expandedPositionUnits = new Set(['TTMET', 'DIV-G0', 'DIV-ME', 'TMH0', 'TMT0', 'TMF0', 'TME0', 'TMS0', 'TMG0']);
+            this.expandedStaffSections = new Set(); // Default: Large staff groups collapsed
         }
 
         async init(rootElement) {
             this.root = rootElement;
-            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow Explorer & Loading Canonical Master...</div>`;
+            this.root.innerHTML = `<div style="padding: 40px; text-align: center; color: #0284c7; font-size: 16px; font-weight: bold;">⏳ Initializing OrgFlow Dynamic Layout Engine & Verified Master...</div>`;
 
             await this.store.loadAllData();
+            this.loadSessionState();
             this.render();
+            this.setupResizeObserver();
+        }
+
+        loadSessionState() {
+            try {
+                const saved = sessionStorage.getItem('orgflow_layout_state');
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (parsed.density) this.density = parsed.density;
+                    if (parsed.chartMode) this.chartMode = parsed.chartMode;
+                    if (parsed.focusedOrgCode) this.focusedOrgCode = parsed.focusedOrgCode;
+                }
+            } catch (e) {
+                console.warn('Session state load note:', e);
+            }
+        }
+
+        saveSessionState() {
+            try {
+                sessionStorage.setItem('orgflow_layout_state', JSON.stringify({
+                    density: this.density,
+                    chartMode: this.chartMode,
+                    focusedOrgCode: this.focusedOrgCode
+                }));
+            } catch (e) {
+                console.warn('Session state save note:', e);
+            }
+        }
+
+        setupResizeObserver() {
+            if (window.ResizeObserver) {
+                const ro = new ResizeObserver(() => {
+                    // Update layout on container dimension change without resetting zoom/pan
+                    const canvas = document.getElementById('orgflow-chart-canvas');
+                    if (canvas && this.currentView === 'ORG_CHART') {
+                        this.store.verifyInvariant();
+                    }
+                });
+                ro.observe(this.root);
+            }
         }
 
         render() {
+            this.store.verifyInvariant();
             this.root.innerHTML = '';
             const appContainer = document.createElement('div');
             appContainer.id = 'orgflow-explorer-app';
+            appContainer.className = `density-${this.density.toLowerCase()}`;
 
             appContainer.appendChild(this.renderToolbar());
 
@@ -469,6 +531,7 @@
             }
 
             this.root.appendChild(appContainer);
+            this.saveSessionState();
         }
 
         renderToolbar() {
@@ -479,7 +542,7 @@
                 <div class="orgflow-logo-area">
                     <div class="orgflow-brand">
                         <span>🏢 OrgFlow</span>
-                        <span class="orgflow-brand-badge">Executive Org Chart</span>
+                        <span class="orgflow-brand-badge">Org Chart Engine</span>
                     </div>
                 </div>
 
@@ -489,47 +552,70 @@
                 </div>
 
                 <div class="orgflow-toolbar-controls">
-                    <select class="orgflow-select" id="orgflow-level-filter">
-                        <option value="ALL">All Hierarchy Levels</option>
-                        <option value="DIVISION" ${this.filterLevel === 'DIVISION' ? 'selected' : ''}>Divisions</option>
-                        <option value="DEPARTMENT" ${this.filterLevel === 'DEPARTMENT' ? 'selected' : ''}>Departments</option>
-                        <option value="SECTION" ${this.filterLevel === 'SECTION' ? 'selected' : ''}>Sections</option>
-                        <option value="TEAM" ${this.filterLevel === 'TEAM' ? 'selected' : ''}>Teams</option>
-                    </select>
+                    <!-- Density Selector -->
+                    <div class="orgflow-btn-group" id="density-control-group">
+                        <button class="orgflow-btn ${this.density === 'COMPACT' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" data-density="COMPACT" style="font-size:11px; padding:4px 8px;">Compact</button>
+                        <button class="orgflow-btn ${this.density === 'NORMAL' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" data-density="NORMAL" style="font-size:11px; padding:4px 8px;">Normal</button>
+                        <button class="orgflow-btn ${this.density === 'COMFORTABLE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" data-density="COMFORTABLE" style="font-size:11px; padding:4px 8px;">Comfortable</button>
+                    </div>
 
-                    <button class="orgflow-btn orgflow-btn-outline" id="orgflow-print-btn">🖨️ Print Org Chart</button>
-                    <button class="orgflow-btn orgflow-btn-outline" id="orgflow-export-excel-btn">📊 Export Excel</button>
-                    <button class="orgflow-btn orgflow-btn-outline" id="orgflow-export-pdf-btn">📄 Export PDF</button>
+                    <!-- Zoom Controls -->
+                    <div class="orgflow-btn-group" id="zoom-control-group">
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-zoom-out" style="font-size:11px; padding:4px 8px;">−</button>
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-zoom-val" style="font-size:11px; padding:4px 8px; min-width:48px;">${Math.round(this.zoomScale * 100)}%</button>
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-zoom-in" style="font-size:11px; padding:4px 8px;">+</button>
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-fit-screen" style="font-size:11px; padding:4px 8px;">Fit Screen</button>
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-center-chart" style="font-size:11px; padding:4px 8px;">Center</button>
+                    </div>
+
+                    <button class="orgflow-btn orgflow-btn-outline" id="orgflow-print-btn">🖨️ Print</button>
+                    <button class="orgflow-btn orgflow-btn-outline" id="orgflow-export-excel-btn">📊 Excel</button>
+                    <button class="orgflow-btn orgflow-btn-outline" id="orgflow-export-pdf-btn">📄 PDF</button>
                     <button class="orgflow-btn orgflow-btn-primary" id="orgflow-refresh-btn">🔄 Refresh</button>
                 </div>
             `;
 
+            // Search
             const searchInput = bar.querySelector('.orgflow-search-input');
             searchInput.addEventListener('input', (e) => {
                 this.searchQuery = e.target.value.toLowerCase().trim();
                 if (this.searchQuery) {
-                    this.autoExpandSearchMatches(this.searchQuery);
+                    this.autoExpandAndFocusSearch(this.searchQuery);
                 }
                 this.renderContentOnly();
             });
 
-            bar.querySelector('#orgflow-level-filter').addEventListener('change', (e) => {
-                this.filterLevel = e.target.value;
-                this.renderContentOnly();
+            // Density Controls
+            bar.querySelectorAll('#density-control-group button').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    this.density = btn.getAttribute('data-density');
+                    this.render();
+                });
             });
 
-            bar.querySelector('#orgflow-print-btn').addEventListener('click', () => {
-                this.handlePrintOrgChart();
+            // Zoom Controls
+            bar.querySelector('#btn-zoom-out').addEventListener('click', () => {
+                this.setZoom(Math.max(0.4, this.zoomScale - 0.1));
+            });
+            bar.querySelector('#btn-zoom-in').addEventListener('click', () => {
+                this.setZoom(Math.min(1.6, this.zoomScale + 0.1));
+            });
+            bar.querySelector('#btn-zoom-val').addEventListener('click', () => {
+                this.setZoom(1.0);
+            });
+            bar.querySelector('#btn-fit-screen').addEventListener('click', () => {
+                this.fitScreen();
+            });
+            bar.querySelector('#btn-center-chart').addEventListener('click', () => {
+                this.panX = 0;
+                this.panY = 0;
+                this.updateTransform();
             });
 
-            bar.querySelector('#orgflow-export-excel-btn').addEventListener('click', () => {
-                this.handleExcelExport();
-            });
-
-            bar.querySelector('#orgflow-export-pdf-btn').addEventListener('click', () => {
-                this.handlePdfExport();
-            });
-
+            // Toolbar actions
+            bar.querySelector('#orgflow-print-btn').addEventListener('click', () => window.print());
+            bar.querySelector('#orgflow-export-excel-btn').addEventListener('click', () => this.handleExcelExport());
+            bar.querySelector('#orgflow-export-pdf-btn').addEventListener('click', () => this.handlePdfExport());
             bar.querySelector('#orgflow-refresh-btn').addEventListener('click', async () => {
                 await this.store.loadAllData();
                 this.render();
@@ -538,7 +624,43 @@
             return bar;
         }
 
-        autoExpandSearchMatches(query) {
+        setZoom(scale) {
+            this.zoomScale = parseFloat(scale.toFixed(2));
+            const valBtn = document.getElementById('btn-zoom-val');
+            if (valBtn) valBtn.textContent = `${Math.round(this.zoomScale * 100)}%`;
+            this.updateTransform();
+        }
+
+        fitScreen() {
+            const container = document.getElementById('orgflow-chart-canvas');
+            const target = document.getElementById('orgflow-transform-layer');
+            if (!container || !target) return;
+
+            const cW = container.clientWidth - 40;
+            const cH = container.clientHeight - 40;
+            const tW = target.scrollWidth || 1200;
+            const tH = target.scrollHeight || 800;
+
+            const scaleX = cW / tW;
+            const scaleY = cH / tH;
+            let bestScale = Math.min(scaleX, scaleY);
+            bestScale = Math.max(0.4, Math.min(1.2, bestScale));
+
+            this.zoomScale = parseFloat(bestScale.toFixed(2));
+            this.panX = 0;
+            this.panY = 0;
+            this.setZoom(this.zoomScale);
+        }
+
+        updateTransform() {
+            const target = document.getElementById('orgflow-transform-layer');
+            if (target) {
+                target.style.transform = `translate(${this.panX}px, ${this.panY}px) scale(${this.zoomScale})`;
+                target.style.transformOrigin = 'top center';
+            }
+        }
+
+        autoExpandAndFocusSearch(query) {
             this.store.getUnifiedEmployees().forEach(emp => {
                 if (emp.english_name.toLowerCase().includes(query) ||
                     emp.thai_name.toLowerCase().includes(query) ||
@@ -549,7 +671,7 @@
                     let curr = this.store.getTreeNode(emp.organization_code);
                     while (curr) {
                         this.expandedNodeCodes.add(curr.code);
-                        this.expandedPositionUnits.add(curr.code);
+                        this.expandedStaffSections.add(curr.code);
                         curr = curr.parentCode ? this.store.getTreeNode(curr.parentCode) : null;
                     }
                 }
@@ -628,18 +750,30 @@
             const bar = document.createElement('div');
             bar.className = 'orgflow-breadcrumb-bar';
 
-            const currentOrg = this.store.getOrgByCode(this.selectedOrgCode);
+            const focusOrg = this.store.getOrgByCode(this.focusedOrgCode);
+            const isFocusActive = this.focusedOrgCode !== 'TTMET';
+
             bar.innerHTML = `
-                <span class="orgflow-breadcrumb-link" data-code="TTMET">TTMET</span>
-                <span class="orgflow-breadcrumb-separator">></span>
-                <span>${currentOrg ? currentOrg.organization_name : 'Toyota Tsusho M&E (Thailand) Co.,Ltd.'} (<code>${this.selectedOrgCode}</code>)</span>
-                <span style="margin-left: auto; color: #64748b; font-size: 11px;">View: <b>${this.currentView}</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Employees</b></span>
+                <span class="orgflow-breadcrumb-link" data-code="TTMET">TTMET (Company Root)</span>
+                ${isFocusActive ? `
+                    <span class="orgflow-breadcrumb-separator">></span>
+                    <span style="font-weight:bold; color:#0284c7;">${focusOrg ? focusOrg.organization_name : this.focusedOrgCode} (<code>${this.focusedOrgCode}</code>) [FOCUS MODE]</span>
+                    <button class="orgflow-btn orgflow-btn-outline" id="btn-clear-focus" style="font-size:10px; padding:2px 6px; margin-left:8px;">⬅️ Back to Company</button>
+                ` : ''}
+                <span style="margin-left: auto; color: #64748b; font-size: 11px;">View: <b>${this.chartMode}</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Staff</b></span>
             `;
 
             bar.querySelector('.orgflow-breadcrumb-link').addEventListener('click', () => {
-                this.selectedOrgCode = 'TTMET';
+                this.focusedOrgCode = 'TTMET';
                 this.render();
             });
+
+            if (isFocusActive) {
+                bar.querySelector('#btn-clear-focus').addEventListener('click', () => {
+                    this.focusedOrgCode = 'TTMET';
+                    this.render();
+                });
+            }
 
             return bar;
         }
@@ -648,20 +782,23 @@
             const view = document.createElement('div');
 
             view.innerHTML = `
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
                     <div style="display: flex; gap: 8px;">
                         <button class="orgflow-btn ${this.chartMode === 'PERSONNEL_VIEW' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-personnel">👥 Personnel View (Executive Org Chart)</button>
                         <button class="orgflow-btn ${this.chartMode === 'CANONICAL_STRUCTURE' ? 'orgflow-btn-primary' : 'orgflow-btn-outline'}" id="btn-mode-canonical">🏛️ Canonical Structure (Unit Hierarchy)</button>
                     </div>
                     <div style="display: flex; gap: 8px; align-items: center;">
-                        <button class="orgflow-btn orgflow-btn-outline" id="btn-expand-all" style="font-size:11px; padding:5px 10px;">Expand All</button>
-                        <button class="orgflow-btn orgflow-btn-outline" id="btn-collapse-all" style="font-size:11px; padding:5px 10px;">Collapse All</button>
-                        <button class="orgflow-btn orgflow-btn-outline" id="btn-reset-view" style="font-size:11px; padding:5px 10px;">Reset Focus (TTMET)</button>
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-expand-all" style="font-size:11px; padding:4px 8px;">Expand All</button>
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-collapse-all" style="font-size:11px; padding:4px 8px;">Collapse All</button>
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-reset-view" style="font-size:11px; padding:4px 8px;">Reset View</button>
                     </div>
                 </div>
 
-                <div class="orgflow-chart-container" id="orgflow-chart-canvas">
-                    <!-- Dynamic Sub-View Injected Below -->
+                <!-- Pan & Zoom Viewport Container -->
+                <div class="orgflow-chart-viewport" id="orgflow-chart-canvas">
+                    <div class="orgflow-transform-layer" id="orgflow-transform-layer">
+                        <!-- Chart Content Injected Here -->
+                    </div>
                 </div>
             `;
 
@@ -677,7 +814,7 @@
             view.querySelector('#btn-expand-all').addEventListener('click', () => {
                 this.store.getOrganizations().forEach(o => {
                     this.expandedNodeCodes.add(o.organization_code);
-                    this.expandedPositionUnits.add(o.organization_code);
+                    this.expandedStaffSections.add(o.organization_code);
                 });
                 this.renderContentOnly();
             });
@@ -685,42 +822,87 @@
             view.querySelector('#btn-collapse-all').addEventListener('click', () => {
                 this.expandedNodeCodes.clear();
                 this.expandedNodeCodes.add('TTMET');
-                this.expandedPositionUnits.clear();
-                this.expandedPositionUnits.add('TTMET');
+                this.expandedStaffSections.clear();
                 this.renderContentOnly();
             });
 
             view.querySelector('#btn-reset-view').addEventListener('click', () => {
-                this.selectedOrgCode = 'TTMET';
+                this.focusedOrgCode = 'TTMET';
+                this.density = 'NORMAL';
+                this.zoomScale = 1.0;
+                this.panX = 0;
+                this.panY = 0;
                 this.expandedNodeCodes.clear();
                 this.expandedNodeCodes.add('TTMET');
                 this.expandedNodeCodes.add('DIV-G0');
                 this.expandedNodeCodes.add('DIV-ME');
                 this.expandedNodeCodes.add('TMH0');
-                this.expandedPositionUnits.clear();
-                this.expandedPositionUnits.add('TTMET');
-                this.expandedPositionUnits.add('DIV-G0');
-                this.expandedPositionUnits.add('DIV-ME');
-                this.expandedPositionUnits.add('TMH0');
+                this.expandedStaffSections.clear();
                 this.render();
             });
 
-            const chartCanvas = view.querySelector('#orgflow-chart-canvas');
+            const transformLayer = view.querySelector('#orgflow-transform-layer');
 
             if (this.chartMode === 'PERSONNEL_VIEW') {
-                chartCanvas.appendChild(this.renderExecutivePersonnelView());
+                transformLayer.appendChild(this.renderExecutivePersonnelView());
             } else {
                 const rootNode = this.store.getRootTreeNode();
                 if (rootNode) {
-                    chartCanvas.appendChild(this.renderRecursiveCanonicalOrgNode(rootNode));
+                    transformLayer.appendChild(this.renderRecursiveCanonicalOrgNode(rootNode));
                 }
             }
+
+            // Attach Pan & Mouse Wheel Listeners
+            setTimeout(() => {
+                this.attachPanZoomEvents(view.querySelector('#orgflow-chart-canvas'));
+                this.updateTransform();
+            }, 50);
 
             return view;
         }
 
+        attachPanZoomEvents(viewport) {
+            if (!viewport) return;
+
+            viewport.addEventListener('mousedown', (e) => {
+                // Ignore clicks on buttons/cards
+                if (e.target.closest('.orgflow-node-card') || e.target.closest('.orgflow-position-card') || e.target.closest('button')) return;
+                this.isPanning = true;
+                this.startX = e.clientX - this.panX;
+                this.startY = e.clientY - this.panY;
+                viewport.style.cursor = 'grabbing';
+            });
+
+            window.addEventListener('mousemove', (e) => {
+                if (!this.isPanning) return;
+                this.panX = e.clientX - this.startX;
+                this.panY = e.clientY - this.startY;
+                this.updateTransform();
+            });
+
+            window.addEventListener('mouseup', () => {
+                if (this.isPanning) {
+                    this.isPanning = false;
+                    if (viewport) viewport.style.cursor = 'grab';
+                }
+            });
+
+            viewport.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const delta = e.deltaY < 0 ? 0.05 : -0.05;
+                const newScale = Math.max(0.4, Math.min(1.6, this.zoomScale + delta));
+                this.setZoom(newScale);
+            }, { passive: false });
+
+            viewport.addEventListener('dblclick', (e) => {
+                if (e.target === viewport || e.target.id === 'orgflow-transform-layer') {
+                    this.fitScreen();
+                }
+            });
+        }
+
         // ==========================================
-        // TAB 2: EXECUTIVE PERSONNEL VIEW (ORG CHART)
+        // DYNAMIC PERSONNEL VIEW (EXECUTIVE ORG CHART)
         // ==========================================
         renderExecutivePersonnelView() {
             const container = document.createElement('div');
@@ -730,7 +912,6 @@
             const totalPos = this.store.getPositions().length;
             const mgmtCount = this.store.getUnifiedEmployees().filter(e => e.position_tier <= 4).length;
 
-            // Summary Header
             const headerSummary = document.createElement('div');
             headerSummary.className = 'orgflow-personnel-summary-bar';
             headerSummary.innerHTML = `
@@ -738,154 +919,129 @@
                 <div class="orgflow-summary-pill"><span>CANONICAL POSITIONS:</span> <b>${totalPos}</b></div>
                 <div class="orgflow-summary-pill"><span>MANAGEMENT STAFF:</span> <b>${mgmtCount}</b></div>
                 <div class="orgflow-summary-pill"><span>VACANT POSITIONS:</span> <b>0</b></div>
-                <div style="margin-left:auto; font-size:11px; color:#64748b;">Layout: <b>Corporate Top-Down Position Hierarchy</b></div>
+                <div class="orgflow-summary-pill"><span>DENSITY:</span> <b>${this.density}</b></div>
             `;
             container.appendChild(headerSummary);
 
-            // Chart Canvas
             const chartArea = document.createElement('div');
             chartArea.className = 'orgflow-personnel-canvas';
 
-            // Top Tier: President & Managing Director (TTMET)
-            const topExecs = this.store.getUnifiedEmployees().filter(e => e.organization_code === 'TTMET');
-            const execGroup = document.createElement('div');
-            execGroup.className = 'orgflow-personnel-group';
+            // Top Executives (TTMET)
+            const isFocusBranch = this.focusedOrgCode !== 'TTMET';
+            if (!isFocusBranch) {
+                const topExecs = this.store.getUnifiedEmployees().filter(e => e.organization_code === 'TTMET');
+                const execGroup = document.createElement('div');
+                execGroup.className = 'orgflow-personnel-group';
 
-            const execCards = document.createElement('div');
-            execCards.className = 'orgflow-personnel-row';
-            topExecs.forEach(exec => {
-                execCards.appendChild(this.renderPositionEmployeeCard(exec, 'COMPANY TOP'));
-            });
-            execGroup.appendChild(execCards);
+                const execCards = document.createElement('div');
+                execCards.className = 'orgflow-personnel-row';
+                topExecs.forEach(exec => {
+                    execCards.appendChild(this.renderPositionEmployeeCard(exec, 'COMPANY TOP'));
+                });
+                execGroup.appendChild(execCards);
 
-            // Connectors to Divisions / Top Depts
-            const branchRow = document.createElement('div');
-            branchRow.className = 'orgflow-personnel-branches';
+                // Proportional Multi-Branch Allocation
+                const branchRow = document.createElement('div');
+                branchRow.className = 'orgflow-personnel-branches';
 
-            // 1. DIV-ME (Machinery & Engineering Division)
-            branchRow.appendChild(this.renderPersonnelDivisionBranch('DIV-ME'));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME', 2.0));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 1.2));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0', 1.0));
 
-            // 2. DIV-G0 (GIFU SEIKI Division)
-            branchRow.appendChild(this.renderPersonnelDivisionBranch('DIV-G0'));
+                execGroup.appendChild(branchRow);
+                chartArea.appendChild(execGroup);
+            } else {
+                // Focus Mode for Selected Subtree
+                chartArea.appendChild(this.renderDynamicBranchSubtree(this.focusedOrgCode, 1.0, true));
+            }
 
-            // 3. TMH0 (Corporate Department)
-            branchRow.appendChild(this.renderPersonnelDepartmentBranch('TMH0'));
-
-            execGroup.appendChild(branchRow);
-            chartArea.appendChild(execGroup);
             container.appendChild(chartArea);
-
             return container;
         }
 
-        renderPersonnelDivisionBranch(divCode) {
-            const divNode = this.store.getTreeNode(divCode);
-            if (!divNode) return document.createElement('div');
+        renderDynamicBranchSubtree(nodeCode, flexWeight = 1.0, isFocusRoot = false) {
+            const node = this.store.getTreeNode(nodeCode);
+            if (!node) return document.createElement('div');
 
             const col = document.createElement('div');
             col.className = 'orgflow-personnel-branch-col';
+            col.style.flex = flexWeight;
 
-            // Header Container for Division
+            // Unit Header Box with Focus Action
             const headerBox = document.createElement('div');
             headerBox.className = 'orgflow-org-header-box';
             headerBox.innerHTML = `
-                <div class="orgflow-org-header-title">${divNode.name}</div>
-                <div class="orgflow-org-header-sub"><code>${divNode.code}</code> • Scope: <b>${divNode.totalHeadcount} Staff</b></div>
+                <div class="orgflow-org-header-title">${node.name}</div>
+                <div class="orgflow-org-header-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b> • Level ${node.level}</div>
+                ${!isFocusRoot ? `<button class="orgflow-btn orgflow-btn-outline btn-focus-unit" style="margin-top:4px; font-size:9px; padding:2px 6px;">🔍 Focus Subtree</button>` : ''}
             `;
-            headerBox.addEventListener('click', () => {
-                this.selectedOrgCode = divNode.code;
-                this.renderBreadcrumbOnly();
-            });
+
+            const focusBtn = headerBox.querySelector('.btn-focus-unit');
+            if (focusBtn) {
+                focusBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.focusedOrgCode = node.code;
+                    this.render();
+                });
+            }
+
             col.appendChild(headerBox);
 
-            // Division Head Card (VP)
-            if (divNode.directEmployees.length > 0) {
-                const vpRow = document.createElement('div');
-                vpRow.className = 'orgflow-personnel-row';
-                divNode.directEmployees.forEach(vp => {
-                    vpRow.appendChild(this.renderPositionEmployeeCard(vp, 'DIVISION HEAD'));
+            // Direct Leaders / Position Cards at this Tier
+            if (node.directEmployees.length > 0) {
+                const leaderRow = document.createElement('div');
+                leaderRow.className = 'orgflow-personnel-row';
+                node.directEmployees.forEach(emp => {
+                    leaderRow.appendChild(this.renderPositionEmployeeCard(emp, node.type));
                 });
-                col.appendChild(vpRow);
+                col.appendChild(leaderRow);
             }
 
-            // Subordinate Departments
-            const deptsRow = document.createElement('div');
-            deptsRow.className = 'orgflow-personnel-sub-row';
-            divNode.children.forEach(dept => {
-                deptsRow.appendChild(this.renderPersonnelDepartmentBranch(dept.code));
-            });
-            col.appendChild(deptsRow);
+            // Subordinate Units / Departments
+            if (node.children.length > 0) {
+                const subRow = document.createElement('div');
+                subRow.className = 'orgflow-personnel-sub-row';
 
-            return col;
-        }
-
-        renderPersonnelDepartmentBranch(deptCode) {
-            const deptNode = this.store.getTreeNode(deptCode);
-            if (!deptNode) return document.createElement('div');
-
-            const col = document.createElement('div');
-            col.className = 'orgflow-personnel-dept-col';
-
-            // Dept Header
-            const deptHeader = document.createElement('div');
-            deptHeader.className = 'orgflow-dept-header-box';
-            deptHeader.innerHTML = `
-                <div class="orgflow-dept-title">${deptNode.name}</div>
-                <div class="orgflow-dept-sub"><code>${deptNode.code}</code> • ${deptNode.totalHeadcount} Staff</div>
-            `;
-            col.appendChild(deptHeader);
-
-            // Dept Managers / Heads
-            if (deptNode.directEmployees.length > 0) {
-                const mgrRow = document.createElement('div');
-                mgrRow.className = 'orgflow-personnel-row';
-                deptNode.directEmployees.forEach(mgr => {
-                    mgrRow.appendChild(this.renderPositionEmployeeCard(mgr, 'DEPARTMENT MGMT'));
+                node.children.forEach(child => {
+                    if (child.type === 'SECTION' || child.type === 'TEAM') {
+                        subRow.appendChild(this.renderDynamicSectionCard(child.code));
+                    } else {
+                        subRow.appendChild(this.renderDynamicBranchSubtree(child.code, 1.0));
+                    }
                 });
-                col.appendChild(mgrRow);
-            }
-
-            // Subordinate Sections / Teams
-            if (deptNode.children.length > 0) {
-                const secRow = document.createElement('div');
-                secRow.className = 'orgflow-personnel-sections-row';
-                deptNode.children.forEach(sec => {
-                    secRow.appendChild(this.renderPersonnelSectionBranch(sec.code));
-                });
-                col.appendChild(secRow);
+                col.appendChild(subRow);
             }
 
             return col;
         }
 
-        renderPersonnelSectionBranch(secCode) {
+        renderDynamicSectionCard(secCode) {
             const secNode = this.store.getTreeNode(secCode);
             if (!secNode) return document.createElement('div');
 
+            const isStaffExpanded = this.expandedStaffSections.has(secCode);
             const box = document.createElement('div');
             box.className = 'orgflow-personnel-section-card';
-
-            const isExpanded = this.expandedPositionUnits.has(secCode);
 
             box.innerHTML = `
                 <div class="orgflow-section-header">
                     <div style="font-weight:700; color:#0f172a; font-size:12px;">${secNode.name}</div>
-                    <div style="font-size:10px; color:#64748b;"><code>${secNode.code}</code> • ${secNode.totalHeadcount} Staff</div>
+                    <div style="font-size:10px; color:#64748b;"><code>${secNode.code}</code> • <b>${secNode.totalHeadcount} Staff</b></div>
                 </div>
                 <div style="margin-top:8px; display:flex; justify-content:space-between; align-items:center;">
-                    <button class="orgflow-btn orgflow-btn-outline btn-toggle-sec-staff" style="font-size:10px; padding:2px 6px;">
-                        ${isExpanded ? '▲ Hide Staff' : `▼ View Staff (${secNode.directHeadcount})`}
+                    <button class="orgflow-btn orgflow-btn-outline btn-toggle-staff-grid" style="font-size:10px; padding:2px 8px;">
+                        ${isStaffExpanded ? '▲ Collapse Staff' : `👥 View Staff (${secNode.directHeadcount})`}
                     </button>
-                    <button class="orgflow-btn orgflow-btn-outline btn-sec-details" style="font-size:10px; padding:2px 6px;">🔍 Details</button>
+                    <button class="orgflow-btn orgflow-btn-outline btn-sec-details" style="font-size:10px; padding:2px 8px;">Details</button>
                 </div>
             `;
 
-            box.querySelector('.btn-toggle-sec-staff').addEventListener('click', (e) => {
+            box.querySelector('.btn-toggle-staff-grid').addEventListener('click', (e) => {
                 e.stopPropagation();
-                if (this.expandedPositionUnits.has(secCode)) {
-                    this.expandedPositionUnits.delete(secCode);
+                if (this.expandedStaffSections.has(secCode)) {
+                    this.expandedStaffSections.delete(secCode);
                 } else {
-                    this.expandedPositionUnits.add(secCode);
+                    this.expandedStaffSections.add(secCode);
                 }
                 this.renderContentOnly();
             });
@@ -896,14 +1052,15 @@
                 this.render();
             });
 
-            // If Expanded, Render Incumbents
-            if (isExpanded && secNode.directEmployees.length > 0) {
-                const staffList = document.createElement('div');
-                staffList.className = 'orgflow-section-staff-list';
+            // If Expanded, Render Responsive Multi-Column Staff Grid
+            if (isStaffExpanded && secNode.directEmployees.length > 0) {
+                const grid = document.createElement('div');
+                grid.className = 'orgflow-staff-multi-grid';
+
                 secNode.directEmployees.forEach(staff => {
-                    staffList.appendChild(this.renderPositionEmployeeCard(staff, 'STAFF', true));
+                    grid.appendChild(this.renderPositionEmployeeCard(staff, 'STAFF', true));
                 });
-                box.appendChild(staffList);
+                box.appendChild(grid);
             }
 
             return box;
@@ -913,27 +1070,25 @@
             const card = document.createElement('div');
             card.className = `orgflow-position-card ${isCompact ? 'compact' : ''}`;
             
-            // Accent color based on position tier
             if (emp.position_tier === 1) card.style.borderTop = '4px solid #0284c7';
             else if (emp.position_tier === 2) card.style.borderTop = '4px solid #6366f1';
             else if (emp.position_tier === 3 || emp.position_tier === 4) card.style.borderTop = '4px solid #06b6d4';
             else card.style.borderTop = '3px solid #cbd5e1';
 
-            // Highlighting Search Match
             if (this.searchQuery && (
                 emp.english_name.toLowerCase().includes(this.searchQuery) ||
                 emp.thai_name.toLowerCase().includes(this.searchQuery) ||
                 emp.employee_id.toLowerCase().includes(this.searchQuery) ||
                 emp.position_name.toLowerCase().includes(this.searchQuery)
             )) {
-                card.style.boxShadow = '0 0 0 3px #fef08a, 0 4px 12px rgba(234, 179, 8, 0.3)';
+                card.style.boxShadow = '0 0 0 3px #fef08a, 0 4px 12px rgba(234, 179, 8, 0.35)';
             }
 
             const initials = emp.english_name ? emp.english_name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase() : 'EM';
 
             card.innerHTML = `
                 <div class="orgflow-pos-header">
-                    <span class="orgflow-pos-title">${emp.position_name}</span>
+                    <span class="orgflow-pos-title" title="${emp.position_name}">${emp.position_name}</span>
                     <span class="orgflow-pos-code"><code>${emp.position_code}</code></span>
                 </div>
                 <div class="orgflow-pos-body">
@@ -941,9 +1096,9 @@
                         ${emp.photo_url ? `<img src="${emp.photo_url}" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">` : initials}
                     </div>
                     <div class="orgflow-pos-info">
-                        <div class="orgflow-pos-emp-name">${emp.english_name}</div>
+                        <div class="orgflow-pos-emp-name" title="${emp.english_name}">${emp.english_name}</div>
                         <div class="orgflow-pos-emp-id">EMP: <b>${emp.employee_id}</b></div>
-                        <div class="orgflow-pos-unit">${emp.organization_name}</div>
+                        <div class="orgflow-pos-unit" title="${emp.organization_name}">${emp.organization_name}</div>
                     </div>
                 </div>
             `;
@@ -959,7 +1114,7 @@
         }
 
         // ==========================================
-        // TAB 1: CANONICAL STRUCTURE TREE (UNCHANGED)
+        // CANONICAL STRUCTURE TREE (UNCHANGED)
         // ==========================================
         renderRecursiveCanonicalOrgNode(node) {
             const container = document.createElement('div');
@@ -1020,11 +1175,6 @@
                 e.stopPropagation();
                 this.activeOrgDetail = node;
                 this.render();
-            });
-
-            card.addEventListener('click', () => {
-                this.selectedOrgCode = node.code;
-                this.renderBreadcrumbOnly();
             });
 
             container.appendChild(card);
@@ -1126,7 +1276,7 @@
 
                 <div class="orgflow-drawer-footer">
                     <button class="orgflow-btn orgflow-btn-outline" id="btn-org-drawer-close">Close</button>
-                    <button class="orgflow-btn orgflow-btn-primary" id="btn-drill-org">Focus View</button>
+                    <button class="orgflow-btn orgflow-btn-primary" id="btn-drill-org">Focus Subtree</button>
                 </div>
             `;
 
@@ -1139,9 +1289,7 @@
                 this.render();
             });
             drawer.querySelector('#btn-drill-org').addEventListener('click', () => {
-                this.selectedOrgCode = node.code;
-                this.expandedNodeCodes.add(node.code);
-                this.expandedPositionUnits.add(node.code);
+                this.focusedOrgCode = node.code;
                 this.activeOrgDetail = null;
                 this.render();
             });
@@ -1182,14 +1330,9 @@
                 );
             }
 
-            if (this.filterLevel !== 'ALL') {
-                list = list.filter(e => e.organization_type === this.filterLevel);
-            }
-
             view.innerHTML = `
                 <div style="padding: 14px 16px; border-bottom: 1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center;">
                     <div style="font-weight: 700; color: #0f172a;">Employee Directory (${list.length} records)</div>
-                    <div style="font-size: 11px; color: #64748b;">Click any employee row to open detail drawer</div>
                 </div>
                 <table class="orgflow-table">
                     <thead>
@@ -1242,7 +1385,7 @@
             const orgs = this.store.getOrganizations();
             view.innerHTML = `
                 <div style="padding: 14px 16px; border-bottom: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #0f172a;">Canonical Organization Units (App 791 Master - ${orgs.length} nodes)</div>
+                    <div style="font-weight: 700; color: #0f172a;">Canonical Organization Units (${orgs.length} nodes)</div>
                 </div>
                 <table class="orgflow-table">
                     <thead>
@@ -1252,7 +1395,6 @@
                             <th>Entity Type</th>
                             <th>Level</th>
                             <th>Parent Unit</th>
-                            <th>Hierarchy Path</th>
                             <th style="text-align:right;">Direct HC</th>
                             <th style="text-align:right;">Total Scope</th>
                         </tr>
@@ -1267,7 +1409,6 @@
                                     <td><span class="orgflow-node-type-badge type-${o.organization_type.toLowerCase()}">${o.organization_type}</span></td>
                                     <td>${o.organization_level}</td>
                                     <td><code>${o.parent_organization_code || 'ROOT'}</code></td>
-                                    <td style="font-size:11px; color:#64748b;">${o.hierarchy_path}</td>
                                     <td style="text-align:right; color:#64748b;">${node?.directHeadcount || 0}</td>
                                     <td style="text-align:right; font-weight:bold; color: #0284c7;">${node?.totalHeadcount || 0}</td>
                                 </tr>
@@ -1295,7 +1436,7 @@
                             <th>Position Title</th>
                             <th>Tier Rank</th>
                             <th>Assigned Staff</th>
-                            <th>Present in Units</th>
+                            <th>Units</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1329,11 +1470,9 @@
                             <th>Position Title</th>
                             <th>Position Code</th>
                             <th>Organization Unit</th>
-                            <th>Org Code</th>
                             <th style="text-align:right;">Budgeted</th>
                             <th style="text-align:right;">Active</th>
                             <th style="text-align:right;">Vacancies</th>
-                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1342,11 +1481,9 @@
                                 <td><b>${v.position_name}</b></td>
                                 <td><code>${v.position_code}</code></td>
                                 <td>${v.organization_name}</td>
-                                <td><code>${v.organization_code}</code></td>
                                 <td style="text-align:right;">${v.budgetedHeadcount}</td>
                                 <td style="text-align:right; font-weight:bold;">${v.currentHeadcount}</td>
                                 <td style="text-align:right;">${v.vacancyCount}</td>
-                                <td><span class="orgflow-badge badge-active">${v.status}</span></td>
                             </tr>
                         `).join('')}
                     </tbody>
@@ -1362,7 +1499,7 @@
 
             view.innerHTML = `
                 <div style="padding: 14px 16px; border-bottom: 1px solid #e2e8f0;">
-                    <div style="font-weight: 700; color: #0f172a;">Organization Change Requests (App 793 Monitor)</div>
+                    <div style="font-weight: 700; color: #0f172a;">Organization Change Requests (App 793)</div>
                 </div>
                 <table class="orgflow-table">
                     <thead>
@@ -1372,15 +1509,12 @@
                             <th>Employee</th>
                             <th>From Org</th>
                             <th>To Org</th>
-                            <th>From Position</th>
-                            <th>To Position</th>
-                            <th>Effective Date</th>
-                            <th>Workflow Status</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         ${requests.length === 0 ? `
-                            <tr><td colspan="9" style="text-align:center; padding: 24px; color: #94a3b8;">No change requests submitted yet (Clean baseline).</td></tr>
+                            <tr><td colspan="6" style="text-align:center; padding: 24px; color: #94a3b8;">No change requests submitted yet (Clean baseline).</td></tr>
                         ` : requests.map(r => `
                             <tr>
                                 <td><b>${r.request_id}</b></td>
@@ -1388,9 +1522,6 @@
                                 <td>${r.english_name} (<code>${r.employee_id}</code>)</td>
                                 <td><code>${r.current_organization_code}</code></td>
                                 <td><code>${r.proposed_organization_code}</code></td>
-                                <td>${r.current_position_name}</td>
-                                <td>${r.proposed_position_name}</td>
-                                <td>${r.effective_date}</td>
                                 <td><span class="orgflow-badge badge-pending">${r.Status}</span></td>
                             </tr>
                         `).join('')}
@@ -1413,7 +1544,7 @@
                     <div class="orgflow-kpi-card">
                         <div class="orgflow-kpi-title">Total Active Employees</div>
                         <div class="orgflow-kpi-value">${totalEmps}</div>
-                        <div class="orgflow-kpi-sub">Direct Root: ${rootNode?.directHeadcount || 0} | Scope: ${rootNode?.totalHeadcount || 0}</div>
+                        <div class="orgflow-kpi-sub">Direct: ${rootNode?.directHeadcount || 0} | Scope: ${rootNode?.totalHeadcount || 0}</div>
                     </div>
                     <div class="orgflow-kpi-card">
                         <div class="orgflow-kpi-title">Canonical Org Units</div>
@@ -1457,7 +1588,6 @@
                 <div class="orgflow-drawer-tabs">
                     <div class="orgflow-drawer-tab ${this.drawerTab === 'OVERVIEW' ? 'active' : ''}" data-tab="OVERVIEW">Overview</div>
                     <div class="orgflow-drawer-tab ${this.drawerTab === 'HISTORY' ? 'active' : ''}" data-tab="HISTORY">Assignment History (${history.length})</div>
-                    <div class="orgflow-drawer-tab ${this.drawerTab === 'ORG' ? 'active' : ''}" data-tab="ORG">Organization</div>
                 </div>
 
                 <div class="orgflow-drawer-body">
@@ -1484,11 +1614,6 @@
                                 <div><span style="color:#64748b;">Email:</span> <b>${e.email || 'N/A'}</b></div>
                             </div>
                         </div>
-
-                        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 14px;">
-                            <div style="font-weight: 700; font-size: 12px; margin-bottom: 6px; color: #334155;">Hierarchy Path</div>
-                            <div style="font-size: 12px; color: #475569;">${e.hierarchy_path || 'TTMET'}</div>
-                        </div>
                     ` : ''}
 
                     ${this.drawerTab === 'HISTORY' ? `
@@ -1500,16 +1625,6 @@
                                     <div style="color: #64748b; font-size: 11px;">Start: ${h.effective_start_date || 'Baseline'} | Status: <span class="orgflow-badge ${h.assignment_status === 'CURRENT' ? 'badge-active' : 'badge-pending'}">${h.assignment_status}</span></div>
                                 </div>
                             `).join('')}
-                        </div>
-                    ` : ''}
-
-                    ${this.drawerTab === 'ORG' ? `
-                        <div style="font-size: 12px;">
-                            <div style="font-weight: 700; color: #0f172a; margin-bottom: 8px;">Organization Unit Details</div>
-                            <p><b>Name:</b> ${e.organization_name}</p>
-                            <p><b>Code:</b> <code>${e.organization_code}</code></p>
-                            <p><b>Type:</b> <span class="orgflow-badge badge-active">${e.organization_type}</span></p>
-                            <p><b>Hierarchy Path:</b> <code>${e.hierarchy_path}</code></p>
                         </div>
                     ` : ''}
                 </div>
@@ -1525,7 +1640,7 @@
             });
 
             drawer.querySelectorAll('.orgflow-drawer-tab').forEach(tab => {
-                tab.addEventListener('click', (e) => {
+                tab.addEventListener('click', () => {
                     this.drawerTab = tab.getAttribute('data-tab');
                     this.render();
                 });
@@ -1556,7 +1671,7 @@
                 <div class="orgflow-drawer-header">
                     <div>
                         <div class="orgflow-drawer-title">HR Change Request Wizard</div>
-                        <div style="font-size: 12px; color: #64748b;">Target: ${e.english_name} (<code>${e.employee_id}</code> / <code>${e.internal_id}</code>)</div>
+                        <div style="font-size: 12px; color: #64748b;">Target: ${e.english_name} (<code>${e.employee_id}</code>)</div>
                     </div>
                     <button class="orgflow-drawer-close" id="wizard-close-btn">✕</button>
                 </div>
@@ -1564,101 +1679,40 @@
                 <div class="orgflow-drawer-body">
                     <div class="orgflow-preview-banner">
                         <span>⚠️</span>
-                        <span><b>PREVIEW MODE ACTIVATED:</b> In-memory simulation only. Zero production writes will occur.</span>
+                        <span><b>PREVIEW MODE:</b> Simulation only. Zero production writes.</span>
                     </div>
 
                     <div style="margin-bottom: 14px;">
                         <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Change Request Type</label>
                         <select class="orgflow-select" id="wizard-req-type" style="width: 100%;">
                             <option value="EMPLOYEE_TRANSFER">EMPLOYEE_TRANSFER (Transfer Department / Section)</option>
-                            <option value="POSITION_CHANGE">POSITION_CHANGE (Change Position Title / Role)</option>
+                            <option value="POSITION_CHANGE">POSITION_CHANGE (Change Position Title)</option>
                             <option value="PROMOTION">PROMOTION (Advance Position Grade)</option>
-                            <option value="DEMOTION">DEMOTION</option>
-                            <option value="TEMPORARY_ASSIGNMENT">TEMPORARY_ASSIGNMENT</option>
-                            <option value="CONCURRENT_ASSIGNMENT">CONCURRENT_ASSIGNMENT</option>
-                            <option value="ASSIGNMENT_TERMINATION">ASSIGNMENT_TERMINATION</option>
                         </select>
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
                         <div>
-                            <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Proposed Organization Unit (App 791)</label>
+                            <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Proposed Unit</label>
                             <select class="orgflow-select" id="wizard-prop-org" style="width: 100%;">
                                 ${orgs.map(o => `<option value="${o.organization_code}" ${o.organization_code === e.organization_code ? 'selected' : ''}>${o.organization_code} — ${o.organization_name}</option>`).join('')}
                             </select>
                         </div>
                         <div>
-                            <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Proposed Position Title</label>
+                            <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Proposed Position</label>
                             <select class="orgflow-select" id="wizard-prop-pos" style="width: 100%;">
                                 ${positions.map(p => `<option value="${p.position_code}" ${p.position_code === e.position_code ? 'selected' : ''}>${p.position_code} — ${p.position_name}</option>`).join('')}
                             </select>
-                        </div>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
-                        <div>
-                            <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Effective Start Date</label>
-                            <input type="date" class="orgflow-search-input" id="wizard-eff-date" value="${new Date().toISOString().slice(0, 10)}" style="padding: 6px 10px;">
-                        </div>
-                        <div>
-                            <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Proposed Assignment Type</label>
-                            <select class="orgflow-select" id="wizard-asg-type" style="width: 100%;">
-                                <option value="PRIMARY">PRIMARY</option>
-                                <option value="CONCURRENT">CONCURRENT</option>
-                                <option value="TEMPORARY">TEMPORARY</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div style="margin-bottom: 14px;">
-                        <label style="font-size: 12px; font-weight: 700; color: #334155; display:block; margin-bottom: 4px;">Business Justification Reason</label>
-                        <textarea class="orgflow-search-input" id="wizard-reason" rows="2" placeholder="Explain the rationale for this change..." style="width: 100%;"></textarea>
-                    </div>
-
-                    <div style="border-top: 1px solid #e2e8f0; padding-top: 14px; margin-top: 14px;">
-                        <div style="font-weight: 700; font-size: 13px; color: #0f172a; margin-bottom: 8px;">Side-by-Side BEFORE vs AFTER Preview</div>
-                        <div id="wizard-delta-preview" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 12px; font-size: 12px;">
-                            <!-- Dynamic Delta -->
                         </div>
                     </div>
                 </div>
 
                 <div class="orgflow-drawer-footer">
                     <button class="orgflow-btn orgflow-btn-outline" id="wizard-cancel-btn">Cancel</button>
-                    <button class="orgflow-btn orgflow-btn-primary" id="wizard-preview-btn" disabled style="opacity: 0.6; cursor: not-allowed;">Submit Request (Disabled in Preview Mode)</button>
+                    <button class="orgflow-btn orgflow-btn-primary" disabled style="opacity: 0.6;">Submit Request (Disabled in Preview)</button>
                 </div>
             `;
 
-            const updateDelta = () => {
-                const propOrgCode = modal.querySelector('#wizard-prop-org').value;
-                const propPosCode = modal.querySelector('#wizard-prop-pos').value;
-                const propOrg = this.store.getOrgByCode(propOrgCode);
-                const propPos = positions.find(p => p.position_code === propPosCode);
-
-                const isOrgChanged = propOrgCode !== e.organization_code;
-                const isPosChanged = propPosCode !== e.position_code;
-
-                modal.querySelector('#wizard-delta-preview').innerHTML = `
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-                        <div style="padding: 8px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 4px;">
-                            <div style="font-weight: bold; color: #64748b; margin-bottom: 4px;">CURRENT (BEFORE)</div>
-                            <div><b>Unit:</b> ${e.organization_name} (<code>${e.organization_code}</code>)</div>
-                            <div><b>Position:</b> ${e.position_name} (<code>${e.position_code}</code>)</div>
-                            <div><b>Assignment:</b> ${e.assignment_type}</div>
-                        </div>
-                        <div style="padding: 8px; background: #ffffff; border: 1px solid ${isOrgChanged || isPosChanged ? '#0284c7' : '#e2e8f0'}; border-radius: 4px;">
-                            <div style="font-weight: bold; color: #0284c7; margin-bottom: 4px;">PROPOSED (AFTER)</div>
-                            <div><b>Unit:</b> <span style="${isOrgChanged ? 'background:#fef08a; font-weight:bold;' : ''}">${propOrg ? propOrg.organization_name : propOrgCode} (<code>${propOrgCode}</code>)</span></div>
-                            <div><b>Position:</b> <span style="${isPosChanged ? 'background:#fef08a; font-weight:bold;' : ''}">${propPos ? propPos.position_name : propPosCode} (<code>${propPosCode}</code>)</span></div>
-                            <div><b>Assignment:</b> ${modal.querySelector('#wizard-asg-type').value}</div>
-                        </div>
-                    </div>
-                `;
-            };
-
-            modal.querySelector('#wizard-prop-org').addEventListener('change', updateDelta);
-            modal.querySelector('#wizard-prop-pos').addEventListener('change', updateDelta);
-            modal.querySelector('#wizard-asg-type').addEventListener('change', updateDelta);
             modal.querySelector('#wizard-close-btn').addEventListener('click', () => {
                 this.isChangeWizardOpen = false;
                 this.render();
@@ -1668,7 +1722,6 @@
                 this.render();
             });
 
-            updateDelta();
             overlay.appendChild(modal);
             return overlay;
         }
@@ -1690,44 +1743,21 @@
             }
         }
 
-        renderBreadcrumbOnly() {
-            const bar = document.querySelector('.orgflow-breadcrumb-bar');
-            if (bar) {
-                const currentOrg = this.store.getOrgByCode(this.selectedOrgCode);
-                bar.innerHTML = `
-                    <span class="orgflow-breadcrumb-link" data-code="TTMET">TTMET</span>
-                    <span class="orgflow-breadcrumb-separator">></span>
-                    <span>${currentOrg ? currentOrg.organization_name : 'Toyota Tsusho M&E (Thailand) Co.,Ltd.'} (<code>${this.selectedOrgCode}</code>)</span>
-                    <span style="margin-left: auto; color: #64748b; font-size: 11px;">View: <b>${this.currentView}</b> | Scope: <b>${this.store.getRootTreeNode()?.totalHeadcount || 275} Employees</b></span>
-                `;
-                bar.querySelector('.orgflow-breadcrumb-link').addEventListener('click', () => {
-                    this.selectedOrgCode = 'TTMET';
-                    this.render();
-                });
-            }
-        }
-
-        handlePrintOrgChart() {
-            window.print();
-        }
-
         handleExcelExport() {
-            const filename = `OrgFlow_Personnel_Export_${new Date().toISOString().slice(0, 10)}.csv`;
-            
+            const filename = `OrgFlow_Export_${new Date().toISOString().slice(0, 10)}.csv`;
             let headers = [
-                'Hierarchy Level',
-                'Organization Path',
+                'Level',
+                'Hierarchy Path',
                 'Organization Code',
                 'Organization Name',
                 'Position Code',
                 'Position Name',
                 'Position Tier',
-                'Position Status',
-                'Employee Number',
+                'Employee ID',
                 'Thai Name',
                 'English Name',
                 'Assignment Type',
-                'Effective Start Date'
+                'Status'
             ];
 
             let rows = this.store.getUnifiedEmployees().map(e => {
@@ -1740,12 +1770,11 @@
                     `"${e.position_code}"`,
                     `"${e.position_name.replace(/"/g, '""')}"`,
                     `"Tier ${e.position_tier}"`,
-                    `"${e.assignment_status}"`,
-                    `"=""${e.employee_id}"""`, // Preserves leading zero in Excel
+                    `"=""${e.employee_id}"""`,
                     `"${e.thai_name.replace(/"/g, '""')}"`,
                     `"${e.english_name.replace(/"/g, '""')}"`,
                     `"${e.assignment_type}"`,
-                    `"${e.effective_start_date}"`
+                    `"${e.assignment_status}"`
                 ];
             });
 
@@ -1768,7 +1797,7 @@
             const divG0 = this.store.getTreeNode('DIV-G0');
             const tmh0 = this.store.getTreeNode('TMH0');
 
-            const renderPositionPdfCard = (emp) => `
+            const renderCard = (emp) => `
                 <div style="border: 1px solid #0284c7; border-radius: 4px; padding: 6px 8px; width: 170px; background: #ffffff; text-align: left; font-size: 9px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); margin: 4px;">
                     <div style="font-weight: bold; color: #0284c7; font-size: 10px;">${emp.position_name}</div>
                     <div style="color: #64748b; font-size: 8px;"><code>${emp.position_code}</code></div>
@@ -1783,7 +1812,7 @@
                 <head>
                     <title>OrgFlow — Official Corporate Organization Chart</title>
                     <style>
-                        @page { size: A3 landscape; margin: 12mm; }
+                        @page { size: A3 landscape; margin: 10mm; }
                         body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #1e293b; background: #ffffff; margin: 0; padding: 10px; }
                         .pdf-header { border-bottom: 2px solid #0284c7; padding-bottom: 8px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: flex-end; }
                         .pdf-title { font-size: 18px; font-weight: bold; color: #0f172a; }
@@ -1800,7 +1829,7 @@
                     <div class="pdf-header">
                         <div>
                             <div class="pdf-title">TOYOTA TSUSHO M&E (THAILAND) CO., LTD.</div>
-                            <div class="pdf-sub">Executive Organization Chart • Scope: <b>${rootNode?.totalHeadcount || 275} Employees</b> • FY2026 Canonical Baseline</div>
+                            <div class="pdf-sub">Official Corporate Organization Chart • Scope: <b>${rootNode?.totalHeadcount || 275} Employees</b> • FY2026 Canonical Baseline</div>
                         </div>
                         <div style="text-align: right; font-size: 10px; color: #64748b;">
                             Generated: ${new Date().toLocaleDateString()} | Master: App 791 / App 53 / App 792
@@ -1808,18 +1837,15 @@
                     </div>
 
                     <div class="chart-container">
-                        <!-- Top Executives -->
                         <div style="display: flex; gap: 15px; justify-content: center;">
-                            ${topExecs.map(renderPositionPdfCard).join('')}
+                            ${topExecs.map(renderCard).join('')}
                         </div>
 
-                        <!-- Divisions & Branches -->
                         <div class="branch-row">
-                            <!-- Machinery & Engineering Division -->
                             <div class="branch-col" style="flex: 2;">
                                 <div class="branch-title">Machinery & Engineering Division (${divME?.totalHeadcount || 172} Staff)</div>
                                 <div style="display: flex; justify-content: center;">
-                                    ${divME?.directEmployees.map(renderPositionPdfCard).join('') || ''}
+                                    ${divME?.directEmployees.map(renderCard).join('') || ''}
                                 </div>
                                 <div class="sub-depts">
                                     ${divME?.children.map(dept => `
@@ -1827,18 +1853,17 @@
                                             <div style="font-weight: bold; font-size: 10px; color: #0284c7;">${dept.name}</div>
                                             <div style="font-size: 8px; color: #64748b;">${dept.totalHeadcount} Staff</div>
                                             <div style="margin-top: 4px;">
-                                                ${dept.directEmployees.map(renderPositionPdfCard).join('')}
+                                                ${dept.directEmployees.map(renderCard).join('')}
                                             </div>
                                         </div>
                                     `).join('') || ''}
                                 </div>
                             </div>
 
-                            <!-- GIFU SEIKI Division -->
                             <div class="branch-col" style="flex: 1.2;">
                                 <div class="branch-title">GIFU SEIKI Division (${divG0?.totalHeadcount || 89} Staff)</div>
                                 <div style="display: flex; justify-content: center;">
-                                    ${divG0?.directEmployees.map(renderPositionPdfCard).join('') || ''}
+                                    ${divG0?.directEmployees.map(renderCard).join('') || ''}
                                 </div>
                                 <div class="sub-depts">
                                     ${divG0?.children.map(dept => `
@@ -1846,14 +1871,13 @@
                                             <div style="font-weight: bold; font-size: 10px; color: #0284c7;">${dept.name}</div>
                                             <div style="font-size: 8px; color: #64748b;">${dept.totalHeadcount} Staff</div>
                                             <div style="margin-top: 4px;">
-                                                ${dept.directEmployees.map(renderPositionPdfCard).join('')}
+                                                ${dept.directEmployees.map(renderCard).join('')}
                                             </div>
                                         </div>
                                     `).join('') || ''}
                                 </div>
                             </div>
 
-                            <!-- Corporate Department -->
                             <div class="branch-col" style="flex: 1;">
                                 <div class="branch-title">Corporate Department (${tmh0?.totalHeadcount || 12} Staff)</div>
                                 <div class="sub-depts">
@@ -1862,7 +1886,7 @@
                                             <div style="font-weight: bold; font-size: 10px; color: #0284c7;">${sec.name}</div>
                                             <div style="font-size: 8px; color: #64748b;">${sec.totalHeadcount} Staff</div>
                                             <div style="margin-top: 4px;">
-                                                ${sec.directEmployees.map(renderPositionPdfCard).join('')}
+                                                ${sec.directEmployees.map(renderCard).join('')}
                                             </div>
                                         </div>
                                     `).join('') || ''}

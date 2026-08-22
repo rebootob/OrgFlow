@@ -797,24 +797,116 @@
     color: #64748b;
 }
 
-.orgflow-pos-unit {
+/* ======================================================== */
+/* DYNAMIC PAN & ZOOM VIEWPORT LAYER                         */
+/* ======================================================== */
+.orgflow-chart-viewport {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    min-height: 600px;
+    height: calc(100vh - 220px);
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+    user-select: none;
+}
+
+.orgflow-transform-layer {
+    transform-origin: top center;
+    transition: transform 0.15s ease-out;
+    display: inline-block;
+    min-width: 100%;
+}
+
+/* ======================================================== */
+/* DENSITY CONTROL MODES                                    */
+/* ======================================================== */
+/* Compact */
+.density-compact .orgflow-position-card {
+    width: 180px;
+    padding: 6px 8px;
+}
+.density-compact .orgflow-pos-title {
     font-size: 10px;
-    color: #94a3b8;
+}
+.density-compact .orgflow-pos-avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 10px;
+}
+.density-compact .orgflow-personnel-branches {
+    gap: 12px;
+}
+.density-compact .orgflow-tree-node {
+    margin: 4px 6px;
+}
+
+/* Normal */
+.density-normal .orgflow-position-card {
+    width: 220px;
+    padding: 10px 12px;
+}
+
+/* Comfortable */
+.density-comfortable .orgflow-position-card {
+    width: 260px;
+    padding: 14px 16px;
+}
+.density-comfortable .orgflow-personnel-branches {
+    gap: 32px;
+}
+.density-comfortable .orgflow-pos-avatar {
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+}
+
+/* ======================================================== */
+/* RESPONSIVE MULTI-COLUMN STAFF GRID                       */
+/* ======================================================== */
+.orgflow-staff-multi-grid {
+    margin-top: 10px;
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+/* Tooltip on text overflow */
+.orgflow-pos-emp-name, .orgflow-pos-unit, .orgflow-pos-title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-/* ======================================================== */
-/* PRINT MEDIA QUERY FOR EXECUTIVE DOSSIER                  */
-/* ======================================================== */
+/* PREVIEW BANNER */
+.orgflow-preview-banner {
+    background: #fffbeb;
+    border: 1px solid #fef08a;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #854d0e;
+}
+
 @media print {
     .orgflow-toolbar,
     .orgflow-sidebar,
     .orgflow-breadcrumb-bar,
     .orgflow-drawer-overlay,
-    .btn-toggle-sec-staff,
+    .btn-toggle-staff-grid,
     .btn-sec-details,
+    .btn-focus-unit,
     button {
         display: none !important;
     }
@@ -833,9 +925,15 @@
         overflow: visible !important;
     }
 
-    .orgflow-chart-container {
+    .orgflow-chart-viewport {
         border: none !important;
         padding: 0 !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .orgflow-transform-layer {
+        transform: none !important;
     }
 }
 
