@@ -23,8 +23,8 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        BUNDLE_VERSION: '4.4.0',
-        BUILD_TIMESTAMP: '2026-08-22T21:05:00+07:00',
+        BUNDLE_VERSION: '4.5.0',
+        BUILD_TIMESTAMP: '2026-08-22T21:08:00+07:00',
         CACHE_TTL_MS: 300000
     };
 
@@ -551,7 +551,7 @@
             this.focusedOrgCode = 'TTMET';
             this.searchQuery = '';
             this.density = 'NORMAL';
-            this.zoomScale = 1.0;
+            this.zoomScale = 0.80;
             this.panX = 0;
             this.panY = 0;
             this.isPanning = false;
@@ -574,20 +574,17 @@
             this.loadSessionState();
             this.render();
             this.setupResizeObserver();
-
-            setTimeout(() => {
-                this.fitReadable();
-            }, 100);
         }
 
         loadSessionState() {
             try {
-                const saved = sessionStorage.getItem('orgflow_state_v42');
+                const saved = sessionStorage.getItem('orgflow_state_v45');
                 if (saved) {
                     const parsed = JSON.parse(saved);
                     if (parsed.density) this.density = parsed.density;
                     if (parsed.chartMode) this.chartMode = parsed.chartMode;
                     if (parsed.focusedOrgCode) this.focusedOrgCode = parsed.focusedOrgCode;
+                    if (parsed.zoomScale && parsed.zoomScale >= 0.70) this.zoomScale = parsed.zoomScale;
                 }
             } catch (e) {
                 console.warn('Session state load note:', e);
@@ -596,10 +593,11 @@
 
         saveSessionState() {
             try {
-                sessionStorage.setItem('orgflow_state_v42', JSON.stringify({
+                sessionStorage.setItem('orgflow_state_v45', JSON.stringify({
                     density: this.density,
                     chartMode: this.chartMode,
-                    focusedOrgCode: this.focusedOrgCode
+                    focusedOrgCode: this.focusedOrgCode,
+                    zoomScale: this.zoomScale
                 }));
             } catch (e) {
                 console.warn('Session state save note:', e);
@@ -747,10 +745,16 @@
             return bar;
         }
 
-        setZoom(scale) {
+        setZoom(scale, overviewLabel = false) {
             this.zoomScale = parseFloat(scale.toFixed(2));
             const valBtn = document.getElementById('btn-zoom-val');
-            if (valBtn) valBtn.textContent = `${Math.round(this.zoomScale * 100)}%`;
+            if (valBtn) {
+                if (overviewLabel) {
+                    valBtn.textContent = `${Math.round(this.zoomScale * 100)}% (Overview)`;
+                } else {
+                    valBtn.textContent = `${Math.round(this.zoomScale * 100)}%`;
+                }
+            }
             this.updateTransform();
         }
 
@@ -759,18 +763,13 @@
             const target = document.getElementById('orgflow-transform-layer');
             if (!container || !target) return;
 
-            const cW = container.clientWidth - 20;
-            const cH = container.clientHeight - 20;
-            const tW = target.scrollWidth || 1200;
-            const tH = target.scrollHeight || 800;
+            const cW = container.clientWidth - 40;
+            const tW = target.scrollWidth || 1300;
+            const idealScale = cW / tW;
+            // HARD CLAMP: Minimum 0.70 (70%), Maximum 1.00 (100%)
+            const clampedScale = Math.max(0.70, Math.min(1.00, idealScale));
 
-            const scaleX = cW / tW;
-            const scaleY = cH / tH;
-            let idealScale = Math.min(scaleX, scaleY);
-            // Smart Fit: Clamp to MIN_READABLE_ZOOM (0.70)
-            let smartScale = Math.max(0.70, Math.min(1.10, idealScale));
-
-            this.zoomScale = parseFloat(smartScale.toFixed(2));
+            this.zoomScale = parseFloat(clampedScale.toFixed(2));
             this.panX = 0;
             this.panY = 0;
             this.setZoom(this.zoomScale);
@@ -781,20 +780,20 @@
             const target = document.getElementById('orgflow-transform-layer');
             if (!container || !target) return;
 
-            const cW = container.clientWidth - 20;
-            const cH = container.clientHeight - 20;
-            const tW = target.scrollWidth || 1200;
-            const tH = target.scrollHeight || 800;
+            const cW = container.clientWidth - 40;
+            const cH = container.clientHeight - 40;
+            const tW = target.scrollWidth || 1300;
+            const tH = target.scrollHeight || 900;
 
             const scaleX = cW / tW;
             const scaleY = cH / tH;
-            let idealScale = Math.min(scaleX, scaleY);
-            let overviewScale = Math.max(0.40, Math.min(1.0, idealScale));
+            const idealScale = Math.min(scaleX, scaleY);
+            const overviewScale = Math.max(0.40, Math.min(0.65, idealScale));
 
             this.zoomScale = parseFloat(overviewScale.toFixed(2));
             this.panX = 0;
             this.panY = 0;
-            this.setZoom(this.zoomScale);
+            this.setZoom(this.zoomScale, true);
         }
 
         updateTransform() {
