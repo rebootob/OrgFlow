@@ -25,8 +25,9 @@ temp/
 # Note: Keep tracked src/ and dist/ releases
 
 # Employee Data & Production Backup Storage (DO NOT COMMIT TO GIT)
+# Backup and Local Storage
 secure-backup/
+backup/
 backups/
 *.json.bak
 *.csv.bak
-

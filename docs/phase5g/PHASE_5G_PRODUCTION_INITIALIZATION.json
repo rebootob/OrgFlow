@@ -1,0 +1,13 @@
+{
+  "execution_id": "PHASE5G-1787383432453",
+  "execution_timestamp": "2026-08-22T07:23:54.794Z",
+  "app53_source_records": 275,
+  "eligible_employees": 273,
+  "legacy_excluded": 2,
+  "app791_created_count": 522,
+  "app792_created_count": 273,
+  "num9000_assignments": 0,
+  "acceptanceGatesPassed": 20,
+  "acceptanceGatesTotal": 20,
+  "finalStatus": "PASS"
+}

@@ -1,5 +1,18 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.1.0] - 2026-08-22
+
+### Added
+- **Phase 5G Controlled Production Initialization:** Populated Kintone App 791 (`OrgFlow Organization Masters`) with 522 verified master records (251 Departments + 271 Positions).
+- Populated Kintone App 792 (`OrgFlow Org Assignment History Log`) with 273 verified baseline assignment records (1:1 ratio for all 273 active eligible employees).
+- Enforced strict exclusion for legacy duplicate `Number = 9000` (Record 390 - Tomita & Record 382 - PANU) resulting in 0 active assignments created for `Number = 9000`.
+- Verified 20/20 acceptance gates passed (G01 to G20).
+- Generated SHA-256 pre-change backup snapshots in `backup/phase5g/`.
+- Verified protected apps remain 100% untouched (`Employee Namelist` App 53: 275 records; App 793: 0 records; Other Apps: 0 writes).
+- Created deliverable report ([`PHASE_5G_PRODUCTION_INITIALIZATION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase5g/PHASE_5G_PRODUCTION_INITIALIZATION_REPORT.md)).
+
+---
+
 ## [v1.0.3] - 2026-08-22
 
 ### Added
