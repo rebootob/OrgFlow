@@ -1,5 +1,18 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.3.7-phase6b3r2] - 2026-08-22
+
+### Added
+- **Phase 6B.3R2 Authoritative Text Reference Org Reconciliation (100% Read-Only):** Re-reconciled organization hierarchy based on exact text reference from Org.FY2026_Rev.2.pdf.
+- Realigned Corporate Department (`TMH0`) to Level 1 directly under Company root `TTMET`.
+- Verified official section codes: `TMH1` (GA), `TMH2` (HR & Personnel), `TMH3` (Accounting & Finance), `TME3` (Eco Energy Sec), `TMS1` (Technical Services Sec).
+- Set division codes without printed PDF labels to `NULL`.
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable report ([`PHASE_6B3R2_AUTHORITATIVE_ORG_RECONCILIATION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b3r2/PHASE_6B3R2_AUTHORITATIVE_ORG_RECONCILIATION_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_USER_ORG_TREE_REVIEW`).
+
+---
+
 ## [v1.3.6-phase6b3r] - 2026-08-22
 
 ### Added
