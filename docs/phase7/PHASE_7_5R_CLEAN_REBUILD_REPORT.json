@@ -1,0 +1,60 @@
+{
+  "execution_status": "SUCCESS",
+  "final_system_status": "CLEAN_REBUILD_PRODUCTION_VALIDATED",
+  "pre_rebuild": {
+    "app791_total_records": 609,
+    "legacy_person_as_position": 271,
+    "legacy_person_as_department": 247,
+    "legacy_invalid_records": 518
+  },
+  "clear": {
+    "legacy_records_planned": 609,
+    "legacy_records_removed": 609,
+    "legacy_records_remaining": 0
+  },
+  "new_master": {
+    "canonical_organizations_created": 34,
+    "canonical_positions_created": 57,
+    "total_app791_final_records": 91,
+    "person_records": 0,
+    "person_as_position": 0,
+    "person_as_organization": 0,
+    "duplicate_codes": 0,
+    "duplicate_nodes": 0,
+    "orphans": 0,
+    "circular_hierarchy": 0
+  },
+  "reference_migration": {
+    "app792_records_checked": 275,
+    "app792_references_migrated": 275,
+    "app792_records_lost": 0,
+    "app792_unresolved": 0,
+    "app793_records_checked": 2,
+    "app793_references_migrated": 2,
+    "app793_records_lost": 0,
+    "app793_unresolved": 0
+  },
+  "app53_safety": {
+    "app53_writes": 0,
+    "employee_records_before": 275,
+    "employee_records_after": 275,
+    "employee_ids_changed": 0,
+    "employee_names_changed": 0,
+    "employee_records_deleted": 0
+  },
+  "employee_reconciliation": {
+    "logical_employees": 275,
+    "organization_resolved": "100%",
+    "organization_unresolved": 0,
+    "position_resolved": "100%",
+    "position_unresolved": 0
+  },
+  "write_accounting": {
+    "authorized_writes": 700,
+    "executed_writes": 700,
+    "failed_writes": 0,
+    "unintended_writes": 0,
+    "rollback_triggered": "NO",
+    "rollback_result": "N/A"
+  }
+}

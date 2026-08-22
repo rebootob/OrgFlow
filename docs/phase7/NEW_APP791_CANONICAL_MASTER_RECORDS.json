@@ -1,0 +1,730 @@
+[
+  {
+    "new_record_id": "700",
+    "master_type": "POSITION",
+    "entity_code": "POS-057",
+    "title_en": "Safety Officer",
+    "title_th": "Safety Officer",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "699",
+    "master_type": "POSITION",
+    "entity_code": "POS-056",
+    "title_en": "DESIGN ENGINEER ASSISTANT MANAGER",
+    "title_th": "DESIGN ENGINEER ASSISTANT MANAGER",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "698",
+    "master_type": "POSITION",
+    "entity_code": "POS-055",
+    "title_en": "Co Project Manager",
+    "title_th": "Co Project Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "697",
+    "master_type": "POSITION",
+    "entity_code": "POS-054",
+    "title_en": "Specialist",
+    "title_th": "Specialist",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "696",
+    "master_type": "POSITION",
+    "entity_code": "POS-053",
+    "title_en": "Executive Management Coordinator",
+    "title_th": "Executive Management Coordinator",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "695",
+    "master_type": "POSITION",
+    "entity_code": "POS-052",
+    "title_en": "President",
+    "title_th": "President",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "694",
+    "master_type": "POSITION",
+    "entity_code": "POS-051",
+    "title_en": "Service Engineer",
+    "title_th": "Service Engineer",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "693",
+    "master_type": "POSITION",
+    "entity_code": "POS-050",
+    "title_en": "Advisor",
+    "title_th": "Advisor",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "692",
+    "master_type": "POSITION",
+    "entity_code": "POS-049",
+    "title_en": "Safety",
+    "title_th": "Safety",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "691",
+    "master_type": "POSITION",
+    "entity_code": "POS-048",
+    "title_en": "Supoort Marketing Staff",
+    "title_th": "Supoort Marketing Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "690",
+    "master_type": "POSITION",
+    "entity_code": "POS-047",
+    "title_en": "Chief of Safety Officer",
+    "title_th": "Chief of Safety Officer",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "689",
+    "master_type": "POSITION",
+    "entity_code": "POS-046",
+    "title_en": "Technical Staff",
+    "title_th": "Technical Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "688",
+    "master_type": "POSITION",
+    "entity_code": "POS-045",
+    "title_en": "Technical Service Chief",
+    "title_th": "Technical Service Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "687",
+    "master_type": "POSITION",
+    "entity_code": "POS-044",
+    "title_en": "Chief of Engineer",
+    "title_th": "Chief of Engineer",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "686",
+    "master_type": "POSITION",
+    "entity_code": "POS-043",
+    "title_en": "Technical Service Engineer",
+    "title_th": "Technical Service Engineer",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "685",
+    "master_type": "POSITION",
+    "entity_code": "POS-042",
+    "title_en": "Senior Manager",
+    "title_th": "Senior Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "684",
+    "master_type": "POSITION",
+    "entity_code": "POS-041",
+    "title_en": "Asst. Section Manager",
+    "title_th": "Asst. Section Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "683",
+    "master_type": "POSITION",
+    "entity_code": "POS-040",
+    "title_en": "Senior Specilaist",
+    "title_th": "Senior Specilaist",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "682",
+    "master_type": "POSITION",
+    "entity_code": "POS-039",
+    "title_en": "Technical Chief",
+    "title_th": "Technical Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "681",
+    "master_type": "POSITION",
+    "entity_code": "POS-038",
+    "title_en": "Deputy General Manager",
+    "title_th": "Deputy General Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "680",
+    "master_type": "POSITION",
+    "entity_code": "POS-037",
+    "title_en": "Accounting Chief",
+    "title_th": "Accounting Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "679",
+    "master_type": "POSITION",
+    "entity_code": "POS-036",
+    "title_en": "Marketing Chief",
+    "title_th": "Marketing Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "678",
+    "master_type": "POSITION",
+    "entity_code": "POS-035",
+    "title_en": "Assistant Section Manager",
+    "title_th": "Assistant Section Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "677",
+    "master_type": "POSITION",
+    "entity_code": "POS-034",
+    "title_en": "Warehouse Support",
+    "title_th": "Warehouse Support",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "676",
+    "master_type": "POSITION",
+    "entity_code": "POS-033",
+    "title_en": "Driver",
+    "title_th": "Driver",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "675",
+    "master_type": "POSITION",
+    "entity_code": "POS-032",
+    "title_en": "General Manager",
+    "title_th": "General Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "674",
+    "master_type": "POSITION",
+    "entity_code": "POS-031",
+    "title_en": "Contract (Apite)",
+    "title_th": "Contract (Apite)",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "673",
+    "master_type": "POSITION",
+    "entity_code": "POS-030",
+    "title_en": "Contract (Japan Support)",
+    "title_th": "Contract (Japan Support)",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "672",
+    "master_type": "POSITION",
+    "entity_code": "POS-029",
+    "title_en": "Trainee",
+    "title_th": "Trainee",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "671",
+    "master_type": "POSITION",
+    "entity_code": "POS-028",
+    "title_en": "IT Staff",
+    "title_th": "IT Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "670",
+    "master_type": "POSITION",
+    "entity_code": "POS-027",
+    "title_en": "General manager",
+    "title_th": "General manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "669",
+    "master_type": "POSITION",
+    "entity_code": "POS-026",
+    "title_en": "Accounting Staff",
+    "title_th": "Accounting Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "668",
+    "master_type": "POSITION",
+    "entity_code": "POS-025",
+    "title_en": "Interpreter",
+    "title_th": "Interpreter",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "667",
+    "master_type": "POSITION",
+    "entity_code": "POS-024",
+    "title_en": "Supoort Marketing Chief",
+    "title_th": "Supoort Marketing Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "666",
+    "master_type": "POSITION",
+    "entity_code": "POS-023",
+    "title_en": "Support Marketing Chief",
+    "title_th": "Support Marketing Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "665",
+    "master_type": "POSITION",
+    "entity_code": "POS-022",
+    "title_en": "Warehouse Staff",
+    "title_th": "Warehouse Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "664",
+    "master_type": "POSITION",
+    "entity_code": "POS-021",
+    "title_en": "Messenger",
+    "title_th": "Messenger",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "663",
+    "master_type": "POSITION",
+    "entity_code": "POS-020",
+    "title_en": "Assistant Manager",
+    "title_th": "Assistant Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "662",
+    "master_type": "POSITION",
+    "entity_code": "POS-019",
+    "title_en": "Section Manager",
+    "title_th": "Section Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "661",
+    "master_type": "POSITION",
+    "entity_code": "POS-018",
+    "title_en": "Senior Chief",
+    "title_th": "Senior Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "660",
+    "master_type": "POSITION",
+    "entity_code": "POS-017",
+    "title_en": "Safety Officer& ISO Control",
+    "title_th": "Safety Officer& ISO Control",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "659",
+    "master_type": "POSITION",
+    "entity_code": "POS-016",
+    "title_en": "Manager",
+    "title_th": "Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "658",
+    "master_type": "POSITION",
+    "entity_code": "POS-015",
+    "title_en": "Clerk",
+    "title_th": "Clerk",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "657",
+    "master_type": "POSITION",
+    "entity_code": "POS-014",
+    "title_en": "Chief",
+    "title_th": "Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "656",
+    "master_type": "POSITION",
+    "entity_code": "POS-013",
+    "title_en": "Assistant Chief",
+    "title_th": "Assistant Chief",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "655",
+    "master_type": "POSITION",
+    "entity_code": "POS-012",
+    "title_en": "Vice President",
+    "title_th": "Vice President",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "654",
+    "master_type": "POSITION",
+    "entity_code": "POS-011",
+    "title_en": "Factory Manager",
+    "title_th": "Factory Manager",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "653",
+    "master_type": "POSITION",
+    "entity_code": "POS-010",
+    "title_en": "Design Engineer",
+    "title_th": "Design Engineer",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "652",
+    "master_type": "POSITION",
+    "entity_code": "POS-009",
+    "title_en": "CAM Staff",
+    "title_th": "CAM Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "651",
+    "master_type": "POSITION",
+    "entity_code": "POS-008",
+    "title_en": "Engineering Staff",
+    "title_th": "Engineering Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "650",
+    "master_type": "POSITION",
+    "entity_code": "POS-007",
+    "title_en": "Staff",
+    "title_th": "Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "649",
+    "master_type": "POSITION",
+    "entity_code": "POS-006",
+    "title_en": "Marketing Engineer",
+    "title_th": "Marketing Engineer",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "648",
+    "master_type": "POSITION",
+    "entity_code": "POS-005",
+    "title_en": "Coordinator",
+    "title_th": "Coordinator",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "647",
+    "master_type": "POSITION",
+    "entity_code": "POS-004",
+    "title_en": "Support Marketing Staff",
+    "title_th": "Support Marketing Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "646",
+    "master_type": "POSITION",
+    "entity_code": "POS-003",
+    "title_en": "Technician",
+    "title_th": "Technician",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "645",
+    "master_type": "POSITION",
+    "entity_code": "POS-002",
+    "title_en": "Marketing Staff",
+    "title_th": "Marketing Staff",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "644",
+    "master_type": "POSITION",
+    "entity_code": "POS-001",
+    "title_en": "Operator",
+    "title_th": "Operator",
+    "parent_code": "ROOT"
+  },
+  {
+    "new_record_id": "643",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMS1-SAFE",
+    "title_en": "Safety Team",
+    "title_th": "Safety Team",
+    "parent_code": "TMS1"
+  },
+  {
+    "new_record_id": "642",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMS1-ENGI",
+    "title_en": "Engineering Team",
+    "title_th": "Engineering Team",
+    "parent_code": "TMS1"
+  },
+  {
+    "new_record_id": "641",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMS1-PROJ",
+    "title_en": "Project Team",
+    "title_th": "Project Team",
+    "parent_code": "TMS1"
+  },
+  {
+    "new_record_id": "640",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TME3-MARK",
+    "title_en": "Marketing (Eco Energy)",
+    "title_th": "Marketing (Eco Energy)",
+    "parent_code": "TME3"
+  },
+  {
+    "new_record_id": "639",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMF3-MARK",
+    "title_en": "Marketing (Sales Engineering)",
+    "title_th": "Marketing (Sales Engineering)",
+    "parent_code": "TMF3"
+  },
+  {
+    "new_record_id": "638",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMF3-SALE",
+    "title_en": "Sales",
+    "title_th": "Sales",
+    "parent_code": "TMF3"
+  },
+  {
+    "new_record_id": "637",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMF2-MARK",
+    "title_en": "Marketing (Industry)",
+    "title_th": "Marketing (Industry)",
+    "parent_code": "TMF2"
+  },
+  {
+    "new_record_id": "636",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMF1-MARK",
+    "title_en": "Marketing (Automotive)",
+    "title_th": "Marketing (Automotive)",
+    "parent_code": "TMF1"
+  },
+  {
+    "new_record_id": "635",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT2-LOGI",
+    "title_en": "Logistics",
+    "title_th": "Logistics",
+    "parent_code": "TMT2"
+  },
+  {
+    "new_record_id": "634",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT2-STN",
+    "title_en": "STN",
+    "title_th": "STN",
+    "parent_code": "TMT2"
+  },
+  {
+    "new_record_id": "633",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT2-TOOL",
+    "title_en": "Tooling",
+    "title_th": "Tooling",
+    "parent_code": "TMT2"
+  },
+  {
+    "new_record_id": "632",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT1-TOOL",
+    "title_en": "Tool Part & Project",
+    "title_th": "Tool Part & Project",
+    "parent_code": "TMT1-EXP"
+  },
+  {
+    "new_record_id": "631",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT1-MACH",
+    "title_en": "Machine & Equipments",
+    "title_th": "Machine & Equipments",
+    "parent_code": "TMT1-EXP"
+  },
+  {
+    "new_record_id": "630",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMH3",
+    "title_en": "Accounting & Finance",
+    "title_th": "Accounting & Finance",
+    "parent_code": "TMH0"
+  },
+  {
+    "new_record_id": "629",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMH2",
+    "title_en": "HR & Personnel",
+    "title_th": "HR & Personnel",
+    "parent_code": "TMH0"
+  },
+  {
+    "new_record_id": "628",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMH1",
+    "title_en": "GA",
+    "title_th": "GA",
+    "parent_code": "TMH0"
+  },
+  {
+    "new_record_id": "627",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMG2",
+    "title_en": "Injection",
+    "title_th": "Injection",
+    "parent_code": "TMG0"
+  },
+  {
+    "new_record_id": "626",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMG1",
+    "title_en": "Die Casting",
+    "title_th": "Die Casting",
+    "parent_code": "TMG0"
+  },
+  {
+    "new_record_id": "625",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMS1",
+    "title_en": "Technical Services",
+    "title_th": "Technical Services",
+    "parent_code": "TMS0"
+  },
+  {
+    "new_record_id": "624",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TME3",
+    "title_en": "Eco Energy & Textile Machinery",
+    "title_th": "Eco Energy & Textile Machinery",
+    "parent_code": "TME1"
+  },
+  {
+    "new_record_id": "623",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMF3",
+    "title_en": "Sales Engineering",
+    "title_th": "Sales Engineering",
+    "parent_code": "TMT0"
+  },
+  {
+    "new_record_id": "622",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMF2",
+    "title_en": "Industry",
+    "title_th": "Industry",
+    "parent_code": "TMT0"
+  },
+  {
+    "new_record_id": "621",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMF1",
+    "title_en": "Automotive",
+    "title_th": "Automotive",
+    "parent_code": "TMT0"
+  },
+  {
+    "new_record_id": "620",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT2",
+    "title_en": "Toyota Sales",
+    "title_th": "Toyota Sales",
+    "parent_code": "TMT1"
+  },
+  {
+    "new_record_id": "619",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT1-EXP",
+    "title_en": "Export",
+    "title_th": "Export",
+    "parent_code": "TMT1"
+  },
+  {
+    "new_record_id": "618",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMG0",
+    "title_en": "Mold & Engineering Department",
+    "title_th": "Mold & Engineering Department",
+    "parent_code": "DIV-GS"
+  },
+  {
+    "new_record_id": "617",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMS0",
+    "title_en": "Technical Services Department",
+    "title_th": "Technical Services Department",
+    "parent_code": "DIV-ME"
+  },
+  {
+    "new_record_id": "616",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TME1",
+    "title_en": "Eco Energy & Textile Machinery Department",
+    "title_th": "Eco Energy & Textile Machinery Department",
+    "parent_code": "DIV-ME"
+  },
+  {
+    "new_record_id": "615",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT0",
+    "title_en": "Industrial Services Department",
+    "title_th": "Industrial Services Department",
+    "parent_code": "DIV-ME"
+  },
+  {
+    "new_record_id": "614",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMT1",
+    "title_en": "Machinery Department",
+    "title_th": "Machinery Department",
+    "parent_code": "DIV-ME"
+  },
+  {
+    "new_record_id": "613",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TMH0",
+    "title_en": "Corporate Department",
+    "title_th": "Corporate Department",
+    "parent_code": "TTMET"
+  },
+  {
+    "new_record_id": "612",
+    "master_type": "DEPARTMENT",
+    "entity_code": "DIV-GS",
+    "title_en": "GIFU SEIKI Division",
+    "title_th": "GIFU SEIKI Division",
+    "parent_code": "TTMET"
+  },
+  {
+    "new_record_id": "611",
+    "master_type": "DEPARTMENT",
+    "entity_code": "DIV-ME",
+    "title_en": "Machinery & Engineering Division",
+    "title_th": "Machinery & Engineering Division",
+    "parent_code": "TTMET"
+  },
+  {
+    "new_record_id": "610",
+    "master_type": "DEPARTMENT",
+    "entity_code": "TTMET",
+    "title_en": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "title_th": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "parent_code": "ROOT"
+  }
+]

@@ -1,0 +1,4265 @@
+[
+  {
+    "old_app791_id": "609",
+    "old_code": "POS-057",
+    "old_name": "Safety Officer",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "608",
+    "old_code": "POS-056",
+    "old_name": "DESIGN ENGINEER ASSISTANT MANAGER",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "607",
+    "old_code": "POS-055",
+    "old_name": "Co Project Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "606",
+    "old_code": "POS-054",
+    "old_name": "Specialist",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "605",
+    "old_code": "POS-053",
+    "old_name": "Executive Management Coordinator",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "604",
+    "old_code": "POS-052",
+    "old_name": "President",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "603",
+    "old_code": "POS-051",
+    "old_name": "Service Engineer",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "602",
+    "old_code": "POS-050",
+    "old_name": "Advisor",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "601",
+    "old_code": "POS-049",
+    "old_name": "Safety",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "600",
+    "old_code": "POS-048",
+    "old_name": "Supoort Marketing Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "599",
+    "old_code": "POS-047",
+    "old_name": "Chief of Safety Officer",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "598",
+    "old_code": "POS-046",
+    "old_name": "Technical Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "597",
+    "old_code": "POS-045",
+    "old_name": "Technical Service Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "596",
+    "old_code": "POS-044",
+    "old_name": "Chief of Engineer",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "595",
+    "old_code": "POS-043",
+    "old_name": "Technical Service Engineer",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "594",
+    "old_code": "POS-042",
+    "old_name": "Senior Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "593",
+    "old_code": "POS-041",
+    "old_name": "Asst. Section Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "592",
+    "old_code": "POS-040",
+    "old_name": "Senior Specilaist",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "591",
+    "old_code": "POS-039",
+    "old_name": "Technical Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "590",
+    "old_code": "POS-038",
+    "old_name": "Deputy General Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "589",
+    "old_code": "POS-037",
+    "old_name": "Accounting Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "588",
+    "old_code": "POS-036",
+    "old_name": "Marketing Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "587",
+    "old_code": "POS-035",
+    "old_name": "Assistant Section Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "586",
+    "old_code": "POS-034",
+    "old_name": "Warehouse Support",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "585",
+    "old_code": "POS-033",
+    "old_name": "Driver",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "584",
+    "old_code": "POS-032",
+    "old_name": "General Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "583",
+    "old_code": "POS-031",
+    "old_name": "Contract (Apite)",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "582",
+    "old_code": "POS-030",
+    "old_name": "Contract (Japan Support)",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "581",
+    "old_code": "POS-029",
+    "old_name": "Trainee",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "580",
+    "old_code": "POS-028",
+    "old_name": "IT Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "579",
+    "old_code": "POS-027",
+    "old_name": "General manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "578",
+    "old_code": "POS-026",
+    "old_name": "Accounting Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "577",
+    "old_code": "POS-025",
+    "old_name": "Interpreter",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "576",
+    "old_code": "POS-024",
+    "old_name": "Supoort Marketing Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "575",
+    "old_code": "POS-023",
+    "old_name": "Support Marketing Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "574",
+    "old_code": "POS-022",
+    "old_name": "Warehouse Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "573",
+    "old_code": "POS-021",
+    "old_name": "Messenger",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "572",
+    "old_code": "POS-020",
+    "old_name": "Assistant Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "571",
+    "old_code": "POS-019",
+    "old_name": "Section Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "570",
+    "old_code": "POS-018",
+    "old_name": "Senior Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "569",
+    "old_code": "POS-017",
+    "old_name": "Safety Officer& ISO Control",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "568",
+    "old_code": "POS-016",
+    "old_name": "Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "567",
+    "old_code": "POS-015",
+    "old_name": "Clerk",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "566",
+    "old_code": "POS-014",
+    "old_name": "Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "565",
+    "old_code": "POS-013",
+    "old_name": "Assistant Chief",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "564",
+    "old_code": "POS-012",
+    "old_name": "Vice President",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "563",
+    "old_code": "POS-011",
+    "old_name": "Factory Manager",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "562",
+    "old_code": "POS-010",
+    "old_name": "Design Engineer",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "561",
+    "old_code": "POS-009",
+    "old_name": "CAM Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "560",
+    "old_code": "POS-008",
+    "old_name": "Engineering Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "559",
+    "old_code": "POS-007",
+    "old_name": "Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "558",
+    "old_code": "POS-006",
+    "old_name": "Marketing Engineer",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "557",
+    "old_code": "POS-005",
+    "old_name": "Coordinator",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "556",
+    "old_code": "POS-004",
+    "old_name": "Support Marketing Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "555",
+    "old_code": "POS-003",
+    "old_name": "Technician",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "554",
+    "old_code": "POS-002",
+    "old_name": "Marketing Staff",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "553",
+    "old_code": "POS-001",
+    "old_name": "Operator",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "552",
+    "old_code": "TMH3",
+    "old_name": "Accounting & Finance",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMH3"
+  },
+  {
+    "old_app791_id": "551",
+    "old_code": "TMH2",
+    "old_name": "HR & Personnel",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMH2"
+  },
+  {
+    "old_app791_id": "550",
+    "old_code": "TMH1",
+    "old_name": "GA",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMH1"
+  },
+  {
+    "old_app791_id": "549",
+    "old_code": "TMG2",
+    "old_name": "Injection",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMG2"
+  },
+  {
+    "old_app791_id": "548",
+    "old_code": "TMG1",
+    "old_name": "Die Casting",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMG1"
+  },
+  {
+    "old_app791_id": "547",
+    "old_code": "TMS1-SAFE",
+    "old_name": "Safety Team",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMS1-SAFE"
+  },
+  {
+    "old_app791_id": "546",
+    "old_code": "TMS1-ENGI",
+    "old_name": "Engineering Team",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMS1-ENGI"
+  },
+  {
+    "old_app791_id": "545",
+    "old_code": "TMS1-PROJ",
+    "old_name": "Project Team",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMS1-PROJ"
+  },
+  {
+    "old_app791_id": "544",
+    "old_code": "TMS1",
+    "old_name": "Technical Services",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMS1"
+  },
+  {
+    "old_app791_id": "543",
+    "old_code": "TME3-MARK",
+    "old_name": "Marketing (Eco Energy)",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TME3-MARK"
+  },
+  {
+    "old_app791_id": "542",
+    "old_code": "TME3",
+    "old_name": "Eco Energy & Textile Machinery",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TME3"
+  },
+  {
+    "old_app791_id": "541",
+    "old_code": "TMF3-MARK",
+    "old_name": "Marketing (Sales Engineering)",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMF3-MARK"
+  },
+  {
+    "old_app791_id": "540",
+    "old_code": "TMF3-SALE",
+    "old_name": "Sales",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMF3-SALE"
+  },
+  {
+    "old_app791_id": "539",
+    "old_code": "TMF3",
+    "old_name": "Sales Engineering",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMF3"
+  },
+  {
+    "old_app791_id": "538",
+    "old_code": "TMF2-MARK",
+    "old_name": "Marketing (Industry)",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMF2-MARK"
+  },
+  {
+    "old_app791_id": "537",
+    "old_code": "TMF2",
+    "old_name": "Industry",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMF2"
+  },
+  {
+    "old_app791_id": "536",
+    "old_code": "TMF1-MARK",
+    "old_name": "Marketing (Automotive)",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMF1-MARK"
+  },
+  {
+    "old_app791_id": "535",
+    "old_code": "TMF1",
+    "old_name": "Automotive",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMF1"
+  },
+  {
+    "old_app791_id": "534",
+    "old_code": "TMT2-LOGI",
+    "old_name": "Logistics",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT2-LOGI"
+  },
+  {
+    "old_app791_id": "533",
+    "old_code": "TMT2-STN",
+    "old_name": "STN",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT2-STN"
+  },
+  {
+    "old_app791_id": "532",
+    "old_code": "TMT2-TOOL",
+    "old_name": "Tooling",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT2-TOOL"
+  },
+  {
+    "old_app791_id": "531",
+    "old_code": "TMT2",
+    "old_name": "Toyota Sales",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT2"
+  },
+  {
+    "old_app791_id": "530",
+    "old_code": "TMT1-TOOL",
+    "old_name": "Tool Part & Project",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT1-TOOL"
+  },
+  {
+    "old_app791_id": "529",
+    "old_code": "TMT1-MACH",
+    "old_name": "Machine & Equipments",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT1-MACH"
+  },
+  {
+    "old_app791_id": "528",
+    "old_code": "TMT1-EXP",
+    "old_name": "Export",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT1-EXP"
+  },
+  {
+    "old_app791_id": "527",
+    "old_code": "TMG0",
+    "old_name": "Mold & Engineering Department",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMG0"
+  },
+  {
+    "old_app791_id": "526",
+    "old_code": "TME1",
+    "old_name": "Eco Energy & Textile Machinery Department",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TME1"
+  },
+  {
+    "old_app791_id": "525",
+    "old_code": "DIV-GS",
+    "old_name": "GIFU SEIKI Division",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "DIV-GS"
+  },
+  {
+    "old_app791_id": "524",
+    "old_code": "DIV-ME",
+    "old_name": "Machinery & Engineering Division",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "DIV-ME"
+  },
+  {
+    "old_app791_id": "523",
+    "old_code": "TTMET",
+    "old_name": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TTMET"
+  },
+  {
+    "old_app791_id": "522",
+    "old_code": "LEGACY-POS-271",
+    "old_name": "MR.PANUKORN SATHRON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "521",
+    "old_code": "LEGACY-POS-270",
+    "old_name": "MR.ANUPHONG LONGNOI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "520",
+    "old_code": "LEGACY-POS-269",
+    "old_name": "MR.THEERAPHAT KHIAOSAART",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "519",
+    "old_code": "LEGACY-POS-268",
+    "old_name": "MR.ARCHAWA TOPUONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "518",
+    "old_code": "LEGACY-POS-267",
+    "old_name": "MR.CHETSADA ROTTHUK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "517",
+    "old_code": "LEGACY-POS-266",
+    "old_name": "MS.SRICHANOK SAEZEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "516",
+    "old_code": "LEGACY-POS-265",
+    "old_name": "MR.KEIZO NAKAE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "515",
+    "old_code": "LEGACY-POS-264",
+    "old_name": "MR.WATCHARA KHAOSAM-AMG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "514",
+    "old_code": "LEGACY-POS-263",
+    "old_name": "MS.PHATTHARANIT PANKHOMKOW",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "513",
+    "old_code": "LEGACY-POS-262",
+    "old_name": "MS.SUPATTRA SAETIAW",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "512",
+    "old_code": "LEGACY-POS-261",
+    "old_name": "MR.CHAIYUTH SANGPUTTA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "511",
+    "old_code": "LEGACY-POS-260",
+    "old_name": "MS.YANISA LAOTOOM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "510",
+    "old_code": "LEGACY-POS-259",
+    "old_name": "MS.PATCHARIDA PRAMOMGKIT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "509",
+    "old_code": "LEGACY-POS-258",
+    "old_name": "MR.TEERAPONG MAINGAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "508",
+    "old_code": "LEGACY-POS-257",
+    "old_name": "MS.PHITTHAYAPORN SAKULYODMANEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "507",
+    "old_code": "LEGACY-POS-256",
+    "old_name": "MR.OSAMI KONDO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "506",
+    "old_code": "LEGACY-POS-255",
+    "old_name": "MS.PANNIPA BOONPIS",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "505",
+    "old_code": "LEGACY-POS-254",
+    "old_name": "MS.KEWALIN SEESUKSAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "504",
+    "old_code": "LEGACY-POS-253",
+    "old_name": "MS.NATTHA MALACHAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "503",
+    "old_code": "LEGACY-POS-252",
+    "old_name": "MR.TAWATCHAI THONKAMSON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "502",
+    "old_code": "LEGACY-POS-251",
+    "old_name": "MR.KITIPHAT CHUMDEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "501",
+    "old_code": "LEGACY-POS-250",
+    "old_name": "MR.TATTANA RUNGROJ",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "500",
+    "old_code": "LEGACY-POS-249",
+    "old_name": "MR.JIRAYU JARIYAEKKAPAS",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "499",
+    "old_code": "LEGACY-POS-248",
+    "old_name": "MR.KIADTISAK KETSIRIKUN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "498",
+    "old_code": "LEGACY-POS-247",
+    "old_name": "MR.TANABODEE KHOTPROM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "497",
+    "old_code": "LEGACY-POS-246",
+    "old_name": "MR.KORATHAK YOYING",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "496",
+    "old_code": "LEGACY-POS-245",
+    "old_name": "MR.THANAPHAT KAENCHAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "495",
+    "old_code": "LEGACY-POS-244",
+    "old_name": "MS.WIPHARAT JANTHASON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "494",
+    "old_code": "LEGACY-POS-243",
+    "old_name": "MR.JETSADAPORN PLONGKIANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "493",
+    "old_code": "LEGACY-POS-242",
+    "old_name": "MR.PHITHAKCHAI PORNPHAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "492",
+    "old_code": "LEGACY-POS-241",
+    "old_name": "MR.KAZUHIRO HANAMURA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "491",
+    "old_code": "LEGACY-POS-240",
+    "old_name": "MR.TAKAYOSHI UCHIDA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "490",
+    "old_code": "LEGACY-POS-239",
+    "old_name": "MR.MANOCH INJINDA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "489",
+    "old_code": "LEGACY-POS-238",
+    "old_name": "MR.PRASERTSAK KHANJAROEN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "488",
+    "old_code": "LEGACY-POS-237",
+    "old_name": "MRS.UTHUMPORN THONGSEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "487",
+    "old_code": "LEGACY-POS-236",
+    "old_name": "MR.PHANUWAT RACHALEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "486",
+    "old_code": "LEGACY-POS-235",
+    "old_name": "MR.SURAWUT KASASAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "485",
+    "old_code": "LEGACY-POS-234",
+    "old_name": "MR.PHADETKARN PHUKAMKOM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "484",
+    "old_code": "LEGACY-POS-233",
+    "old_name": "MR.ANURAK TIB-UD",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "483",
+    "old_code": "LEGACY-POS-232",
+    "old_name": "MR.ANUPONG SMANTONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "482",
+    "old_code": "LEGACY-POS-231",
+    "old_name": "MR.SOONTORN ARINPANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "481",
+    "old_code": "LEGACY-POS-230",
+    "old_name": "MR.AEKKALAK JAIBUT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "480",
+    "old_code": "LEGACY-POS-229",
+    "old_name": "MS.SUPUNTIP MARUKUN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "479",
+    "old_code": "LEGACY-POS-228",
+    "old_name": "MR.NOPPORN KONGKASEM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "478",
+    "old_code": "LEGACY-POS-227",
+    "old_name": "MR.TEPPANTONG BOONYOK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "477",
+    "old_code": "LEGACY-POS-226",
+    "old_name": "MR.TREENADE CHINDALERT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "476",
+    "old_code": "LEGACY-POS-225",
+    "old_name": "MR.SONGSAK PHOTISARN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "475",
+    "old_code": "LEGACY-POS-224",
+    "old_name": "MS.PATCHARIN THAICHAROEN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "474",
+    "old_code": "LEGACY-POS-223",
+    "old_name": "MR.RAKKIAJ NUAMPOOMMARIN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "473",
+    "old_code": "LEGACY-POS-222",
+    "old_name": "MS.SUKANYA BUAHOMBURA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "472",
+    "old_code": "LEGACY-POS-221",
+    "old_name": "MR.NOPADON KONGKASAME",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "471",
+    "old_code": "LEGACY-POS-220",
+    "old_name": "MRS.KANJANA TAKOENGPHON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "470",
+    "old_code": "LEGACY-POS-219",
+    "old_name": "MS.NUENGRUETHAI SOMJIT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "469",
+    "old_code": "LEGACY-POS-218",
+    "old_name": "MR.PICHAI PANPIA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "468",
+    "old_code": "LEGACY-POS-217",
+    "old_name": "MR.TEERAPONG LASOM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "467",
+    "old_code": "LEGACY-POS-216",
+    "old_name": "MS.NAMFON PAISANCHAROENMAITREE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "466",
+    "old_code": "LEGACY-POS-215",
+    "old_name": "MS.PIENGTAWAN CHANPITAK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "465",
+    "old_code": "LEGACY-POS-214",
+    "old_name": "MR.SAKOL SENAPOL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "464",
+    "old_code": "LEGACY-POS-213",
+    "old_name": "MR.CHONGKOL INSOM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "463",
+    "old_code": "LEGACY-POS-212",
+    "old_name": "MR.MONGKOL AONGSAENKAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "462",
+    "old_code": "LEGACY-POS-211",
+    "old_name": "MS.WALAIPORN CHANPITAK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "461",
+    "old_code": "LEGACY-POS-210",
+    "old_name": "MS.CHUNKAMOL SENAJAROEN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "460",
+    "old_code": "LEGACY-POS-209",
+    "old_name": "MS.WANNAPA LAEPONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "459",
+    "old_code": "LEGACY-POS-208",
+    "old_name": "MS.NATTA NIPHATTHAKOSOLSUK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "458",
+    "old_code": "LEGACY-POS-207",
+    "old_name": "MS.PHATCHARALUK KOMPRUAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "457",
+    "old_code": "LEGACY-POS-206",
+    "old_name": "MS.MUDSAYA SANGKLA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "456",
+    "old_code": "LEGACY-POS-205",
+    "old_name": "MR.THITI SAENKHOT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "455",
+    "old_code": "LEGACY-POS-204",
+    "old_name": "MR.PROMPAN KERDSAWAT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "454",
+    "old_code": "LEGACY-POS-203",
+    "old_name": "MS.NADDA SRIMONTREE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "453",
+    "old_code": "LEGACY-POS-202",
+    "old_name": "MR.AMNUAI SUKPHRAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "452",
+    "old_code": "LEGACY-POS-201",
+    "old_name": "MR.SATHIT KRASAE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "451",
+    "old_code": "LEGACY-POS-200",
+    "old_name": "MS.SUPHAPHON CHANWISET",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "450",
+    "old_code": "LEGACY-POS-199",
+    "old_name": "MR.PICHAI WONGRUEN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "449",
+    "old_code": "LEGACY-POS-198",
+    "old_name": "MR.THEERAWAT KHOSARAKHOON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "448",
+    "old_code": "LEGACY-POS-197",
+    "old_name": "MS.NAPHAT AINTHANON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "447",
+    "old_code": "LEGACY-POS-196",
+    "old_name": "MR.WATCHARIN THADTHEANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "446",
+    "old_code": "LEGACY-POS-195",
+    "old_name": "MR.CHOCKCHAI CHAOPRAJUK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "445",
+    "old_code": "LEGACY-POS-194",
+    "old_name": "MR.WORASAK BENMAT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "444",
+    "old_code": "LEGACY-POS-193",
+    "old_name": "MR.SUWINAI ARRIAUEA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "443",
+    "old_code": "LEGACY-POS-192",
+    "old_name": "MS.PIYAPHORN KAEWDEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "442",
+    "old_code": "LEGACY-POS-191",
+    "old_name": "MR.SONGSATPHOOTHONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "441",
+    "old_code": "LEGACY-POS-190",
+    "old_name": "MR.APISIT SUKJAREAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "440",
+    "old_code": "LEGACY-POS-189",
+    "old_name": "MR.WATCHARAPHONG CHAEMSAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "439",
+    "old_code": "LEGACY-POS-188",
+    "old_name": "MS.SUPAPORN BOONLERT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "438",
+    "old_code": "LEGACY-POS-187",
+    "old_name": "MS.WARISSARA JAIHAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "437",
+    "old_code": "LEGACY-POS-186",
+    "old_name": "MR.KITTI CHAIKLA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "436",
+    "old_code": "LEGACY-POS-185",
+    "old_name": "MR.ADISORN SRIKAEWSAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "435",
+    "old_code": "LEGACY-POS-184",
+    "old_name": "MR.KRIANGKAI CHUENMEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "434",
+    "old_code": "LEGACY-POS-183",
+    "old_name": "MS.CHANANTHORN KOBJIT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "433",
+    "old_code": "LEGACY-POS-182",
+    "old_name": "MR.SURATHIN PHOONSILA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "432",
+    "old_code": "LEGACY-POS-181",
+    "old_name": "MR.PONGSAKORN CHAITHEP",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "431",
+    "old_code": "LEGACY-POS-180",
+    "old_name": "MR.THARA THONGSEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "430",
+    "old_code": "LEGACY-POS-179",
+    "old_name": "MRS.NAYADA SERMSIRI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "429",
+    "old_code": "LEGACY-POS-178",
+    "old_name": "MR.TANAPOL SAIBUA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "428",
+    "old_code": "LEGACY-POS-177",
+    "old_name": "MR.THAWATCHAI PAOMETWAREETORN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "427",
+    "old_code": "LEGACY-POS-176",
+    "old_name": "MR.SOMMAI JUNKET",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "426",
+    "old_code": "LEGACY-POS-175",
+    "old_name": "MR.SAKKARIN KAEWTIB",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "425",
+    "old_code": "LEGACY-POS-174",
+    "old_name": "MS.THITAPHAT SUTTHI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "424",
+    "old_code": "LEGACY-POS-173",
+    "old_name": "MS.WANIDA NONTAPHAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "423",
+    "old_code": "LEGACY-POS-172",
+    "old_name": "MR.PHATTAPON FUEKKHWAMDEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "422",
+    "old_code": "LEGACY-POS-171",
+    "old_name": "MS.PHICHAYA KHWANCHUAY",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "421",
+    "old_code": "LEGACY-POS-170",
+    "old_name": "MR.AKARAPONG KHAO-NGAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "420",
+    "old_code": "LEGACY-POS-169",
+    "old_name": "MRS.AMPORN CHOOSAWAT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "419",
+    "old_code": "LEGACY-POS-168",
+    "old_name": "MR.PITINON BUNTUTRAKOOL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "418",
+    "old_code": "LEGACY-POS-167",
+    "old_name": "MS.SUKANYA MANEECHOT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "417",
+    "old_code": "LEGACY-POS-166",
+    "old_name": "MR.AMNAT KHONGYAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "416",
+    "old_code": "LEGACY-POS-165",
+    "old_name": "MR.PHUBODIN MUKDADILOK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "415",
+    "old_code": "LEGACY-POS-164",
+    "old_name": "MR.KAWEEWUT TANGPIBOONTHAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "414",
+    "old_code": "LEGACY-POS-163",
+    "old_name": "MR.NOBPAKORN NAMANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "413",
+    "old_code": "LEGACY-POS-162",
+    "old_name": "MR.CHANATIP KUSUA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "412",
+    "old_code": "LEGACY-POS-161",
+    "old_name": "MS. RATTANAPHORN PHICHETCHOTIWONG (TMF1)",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "411",
+    "old_code": "LEGACY-POS-160",
+    "old_name": "MS.WILAILAK JANSRI (TMF1)",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "410",
+    "old_code": "LEGACY-POS-159",
+    "old_name": "MS.JUTARAT SUCHER (TMF2)",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "409",
+    "old_code": "LEGACY-POS-158",
+    "old_name": "MR.YOSUKE FUJITA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "408",
+    "old_code": "LEGACY-POS-157",
+    "old_name": "MR.ANUWAT BOONSODAKORN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "407",
+    "old_code": "LEGACY-POS-156",
+    "old_name": "MR.AKARAWIT PRUNGKIAT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "406",
+    "old_code": "LEGACY-POS-155",
+    "old_name": "MR.TOSHIKAZU OBATA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "405",
+    "old_code": "LEGACY-POS-154",
+    "old_name": "MS.SIRIWIMON CHUPHOL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "404",
+    "old_code": "LEGACY-POS-153",
+    "old_name": "MR.ANOCHAI WONGPRAYOONSRI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "403",
+    "old_code": "LEGACY-POS-152",
+    "old_name": "MS.SUWIMON KAENCHAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "402",
+    "old_code": "LEGACY-POS-151",
+    "old_name": "MR.SHINICHIRO SATO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "401",
+    "old_code": "LEGACY-POS-150",
+    "old_name": "MS.GALLAYA MEETA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "400",
+    "old_code": "LEGACY-POS-149",
+    "old_name": "MS.RINRADEE SUWAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "399",
+    "old_code": "LEGACY-POS-148",
+    "old_name": "MR.YASHIKAZU YAMAMOTO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "398",
+    "old_code": "LEGACY-POS-147",
+    "old_name": "MR.ANUCHA THAMMAWONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "397",
+    "old_code": "LEGACY-POS-146",
+    "old_name": "MR.MASATO UENO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "396",
+    "old_code": "LEGACY-POS-145",
+    "old_name": "MR.SAMART SONSUPAP",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "395",
+    "old_code": "LEGACY-POS-144",
+    "old_name": "MS.RADEEMAS JUATHAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "394",
+    "old_code": "LEGACY-POS-143",
+    "old_name": "MS.KAEWKANYAPATCH WORRAPAPHADAKUL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "393",
+    "old_code": "LEGACY-POS-142",
+    "old_name": "MS.SUTTIDA TUGKINAPONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "392",
+    "old_code": "LEGACY-POS-141",
+    "old_name": "MS.JIRAWAT SRISAWAT (TMF3)",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "391",
+    "old_code": "LEGACY-POS-140",
+    "old_name": "MS.JIRAWAT SRISAWAT (TMF2)",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "390",
+    "old_code": "LEGACY-POS-139",
+    "old_name": "AKINOBU KITO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "389",
+    "old_code": "LEGACY-POS-138",
+    "old_name": "MS.HASUKA KIMURA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "388",
+    "old_code": "LEGACY-POS-137",
+    "old_name": "MR.SUWAT WISETSING",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "387",
+    "old_code": "LEGACY-POS-136",
+    "old_name": "MS.KAMONWAN KHAMSRI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "386",
+    "old_code": "LEGACY-POS-135",
+    "old_name": "MS.AONANONG DUMNUY",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "385",
+    "old_code": "LEGACY-POS-134",
+    "old_name": "MR.CHITCHAIYA THONGNAK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "384",
+    "old_code": "LEGACY-POS-133",
+    "old_name": "MR.YASUHIRO TAMURA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "383",
+    "old_code": "LEGACY-POS-132",
+    "old_name": "MR.TAKAYANAGI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "382",
+    "old_code": "LEGACY-POS-131",
+    "old_name": "MR.NUT PROMPRASIT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "381",
+    "old_code": "LEGACY-POS-130",
+    "old_name": "THAWEESAK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "380",
+    "old_code": "LEGACY-POS-129",
+    "old_name": "MR. ARUT JINDALUANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "379",
+    "old_code": "LEGACY-POS-128",
+    "old_name": "MR. CHANATIP KUSUA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "378",
+    "old_code": "LEGACY-POS-127",
+    "old_name": "MR.NATTHAWUT NAKCHONLATHI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "377",
+    "old_code": "LEGACY-POS-126",
+    "old_name": "MS.YUWARAT BUNLUEKIAT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "376",
+    "old_code": "LEGACY-POS-125",
+    "old_name": "MS.PATTAMA SOMNGAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "375",
+    "old_code": "LEGACY-POS-124",
+    "old_name": "MR.PRAJAK MALASRI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "374",
+    "old_code": "LEGACY-POS-123",
+    "old_name": "MS.CHATRAWEE PHIRATHAWISRIKUL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "373",
+    "old_code": "LEGACY-POS-122",
+    "old_name": "MR.PIYATHANA YINDEESUK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "372",
+    "old_code": "LEGACY-POS-121",
+    "old_name": "MR.KRITSADA KUMDA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "371",
+    "old_code": "LEGACY-POS-120",
+    "old_name": "MR.NARAKORN MINGMUANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "370",
+    "old_code": "LEGACY-POS-119",
+    "old_name": "MS.THANTANADA SAEHEA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "369",
+    "old_code": "LEGACY-POS-118",
+    "old_name": "MS.WANDEE LEKCHAROEN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "368",
+    "old_code": "LEGACY-POS-117",
+    "old_name": "MRS.NIRADA THANGWICHITKUL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "367",
+    "old_code": "LEGACY-POS-116",
+    "old_name": "MR.THANUT MUANGKOT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "366",
+    "old_code": "LEGACY-POS-115",
+    "old_name": "MS.JONGJIT SODA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "365",
+    "old_code": "LEGACY-POS-114",
+    "old_name": "MS.NARISARA JANTALA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "364",
+    "old_code": "LEGACY-POS-113",
+    "old_name": "MS.SAOWANEE NETPIPOP",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "363",
+    "old_code": "LEGACY-POS-112",
+    "old_name": "MS.DARAT PORNCHUENCHUWONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "362",
+    "old_code": "LEGACY-POS-111",
+    "old_name": "MS.WILAILAK JANSRI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "361",
+    "old_code": "LEGACY-POS-110",
+    "old_name": "MS.WANICHAWAN BUDDA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "360",
+    "old_code": "LEGACY-POS-109",
+    "old_name": "MS.SALISA RUKKANNGAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "359",
+    "old_code": "LEGACY-POS-108",
+    "old_name": "MS.VORARUETHAI WONGCHAREE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "358",
+    "old_code": "LEGACY-POS-107",
+    "old_name": "MR.SOMSAK SEUBJAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "357",
+    "old_code": "LEGACY-POS-106",
+    "old_name": "MR.NOPPANAN DECHKHAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "356",
+    "old_code": "LEGACY-POS-105",
+    "old_name": "MS.SUPPARAT ARWORN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "355",
+    "old_code": "LEGACY-POS-104",
+    "old_name": "MS.JUTHAPORN WONGCHUENSUNTORN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "354",
+    "old_code": "LEGACY-POS-103",
+    "old_name": "MRS.ARAYA HIRUNPUNTHAPORN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "353",
+    "old_code": "LEGACY-POS-102",
+    "old_name": "MS.SOMRUDEE PANNOO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "352",
+    "old_code": "LEGACY-POS-101",
+    "old_name": "MS.VASSANA MAENTHONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "351",
+    "old_code": "LEGACY-POS-100",
+    "old_name": "MS.KAMONWAN CHAISUKEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "350",
+    "old_code": "LEGACY-POS-099",
+    "old_name": "MR.PITCHAYADOL PHONGSART",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "349",
+    "old_code": "LEGACY-POS-098",
+    "old_name": "MR.WORAPAT KUMSINGHA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "348",
+    "old_code": "LEGACY-POS-097",
+    "old_name": "MR.ATHASIT THONGTUA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "347",
+    "old_code": "LEGACY-POS-096",
+    "old_name": "MS.ROSSARIN LERDWATCHAPON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "346",
+    "old_code": "LEGACY-POS-095",
+    "old_name": "MS.JIRAWAT SRISAWAT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "345",
+    "old_code": "LEGACY-POS-094",
+    "old_name": "MR.SATIT SARAISALAB",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "344",
+    "old_code": "LEGACY-POS-093",
+    "old_name": "MS.DUJRUDEE AROONJIT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "343",
+    "old_code": "LEGACY-POS-092",
+    "old_name": "MR.SOMPHORT LIMBUNJERD",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "342",
+    "old_code": "LEGACY-POS-091",
+    "old_name": "MR.NUTTANUN LENGLERDPHOL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "341",
+    "old_code": "LEGACY-POS-090",
+    "old_name": "MR.SURAT LUADLAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "340",
+    "old_code": "LEGACY-POS-089",
+    "old_name": "MR.KRISANA LAOHAJIRAPAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "339",
+    "old_code": "LEGACY-POS-088",
+    "old_name": "MS.PENPRAPA MUANGKLANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "338",
+    "old_code": "LEGACY-POS-087",
+    "old_name": "MR.PATTARA RATTANAKORNKAEW",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "337",
+    "old_code": "LEGACY-POS-086",
+    "old_name": "MR.NARONG KAEWSAP",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "336",
+    "old_code": "LEGACY-POS-085",
+    "old_name": "MS.CHAYANOOT PENGPINIT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "335",
+    "old_code": "LEGACY-POS-084",
+    "old_name": "MRS.PATTANANRAT RUANGTEANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "334",
+    "old_code": "LEGACY-POS-083",
+    "old_name": "MR.AKARAPOOM CHAIPET",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "333",
+    "old_code": "LEGACY-POS-082",
+    "old_name": "MR.WICHED PRATUMPAP",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "332",
+    "old_code": "LEGACY-POS-081",
+    "old_name": "MR.VITOON SUKVISUTTICHOT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "331",
+    "old_code": "LEGACY-POS-080",
+    "old_name": "MR.NATTAPOL KOSOLKITIWONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "330",
+    "old_code": "LEGACY-POS-079",
+    "old_name": "MS.CHULEEPORN MAINKOOL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "329",
+    "old_code": "LEGACY-POS-078",
+    "old_name": "MS.HATAIRAT SRIKULWONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "328",
+    "old_code": "LEGACY-POS-077",
+    "old_name": "MR.KEERATI WANNABOOT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "327",
+    "old_code": "LEGACY-POS-076",
+    "old_name": "MS.NATTIDA THONGWISES",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "326",
+    "old_code": "LEGACY-POS-075",
+    "old_name": "MR.SARUNYOO RATTANASUWAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "325",
+    "old_code": "LEGACY-POS-074",
+    "old_name": "MR.PONGPAT SRIKHOTE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "324",
+    "old_code": "LEGACY-POS-073",
+    "old_name": "MS. PHITCHAKAN ONGSAWAT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "323",
+    "old_code": "LEGACY-POS-072",
+    "old_name": "MR.SUTHON SONSUPAP",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "322",
+    "old_code": "LEGACY-POS-071",
+    "old_name": "MS.PAPATCHAYA THAVORNRINNAPONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "321",
+    "old_code": "LEGACY-POS-070",
+    "old_name": "MR.SORASIT SRISOODCHAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "320",
+    "old_code": "LEGACY-POS-069",
+    "old_name": "MR.NATTAWUD SAMERWONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "319",
+    "old_code": "LEGACY-POS-068",
+    "old_name": "MR.JAKKRIT PAENOI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "318",
+    "old_code": "LEGACY-POS-067",
+    "old_name": "MR.PERANUT HANPRATUM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "317",
+    "old_code": "LEGACY-POS-066",
+    "old_name": "MS.SUTHADA CHAIMON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "316",
+    "old_code": "LEGACY-POS-065",
+    "old_name": "MR.PAWEE HOMLIRDNALIN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "315",
+    "old_code": "LEGACY-POS-064",
+    "old_name": "MS.WARATHAN SAMART",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "314",
+    "old_code": "LEGACY-POS-063",
+    "old_name": "MS.KANKANIT NIMNOI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "313",
+    "old_code": "LEGACY-POS-062",
+    "old_name": "MS.LAKSAMI KAEWSRINGAM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "312",
+    "old_code": "LEGACY-POS-061",
+    "old_name": "MR.PRAWES PANYAAPIWATTANA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "311",
+    "old_code": "LEGACY-POS-060",
+    "old_name": "MS.NITTAYA HOMTHONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "310",
+    "old_code": "LEGACY-POS-059",
+    "old_name": "MR.NATTAPON PUTTASEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "309",
+    "old_code": "LEGACY-POS-058",
+    "old_name": "MS.SOPIDA KHAMLARN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "308",
+    "old_code": "LEGACY-POS-057",
+    "old_name": "MR.PONGSAKORN PHOPIMON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "307",
+    "old_code": "LEGACY-POS-056",
+    "old_name": "MR.NATTHAWUT KAEWKANGWAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "306",
+    "old_code": "LEGACY-POS-055",
+    "old_name": "MS.JUTARAT SUCHER",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "305",
+    "old_code": "LEGACY-POS-054",
+    "old_name": "MR.JIRAYUSAWAT PRASOM",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "304",
+    "old_code": "LEGACY-POS-053",
+    "old_name": "MR.SIRA SOWANNA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "303",
+    "old_code": "LEGACY-POS-052",
+    "old_name": "MR.THEERAPONG PRASAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "302",
+    "old_code": "LEGACY-POS-051",
+    "old_name": "MR.MIKIO KATO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "301",
+    "old_code": "LEGACY-POS-050",
+    "old_name": "MR.KUNIHIKO KUROIWA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "300",
+    "old_code": "LEGACY-POS-049",
+    "old_name": "MRS.UTSUGI RINA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "299",
+    "old_code": "LEGACY-POS-048",
+    "old_name": "MR.KAZUTSUGU SAKAKIMA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "298",
+    "old_code": "LEGACY-POS-047",
+    "old_name": "MR.TAKURO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "297",
+    "old_code": "LEGACY-POS-046",
+    "old_name": "MR.MASAHITO AZUMI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "296",
+    "old_code": "LEGACY-POS-045",
+    "old_name": "MR.POKPONG WANICHSUJIT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "295",
+    "old_code": "LEGACY-POS-044",
+    "old_name": "MR.HISASHI NAGASE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "294",
+    "old_code": "LEGACY-POS-043",
+    "old_name": "MR.TOMOAKI SHIRAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "293",
+    "old_code": "LEGACY-POS-042",
+    "old_name": "MR.VORAPRUS MUANGMINGSOOK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "292",
+    "old_code": "LEGACY-POS-041",
+    "old_name": "MR. CHISANUPONG KAMOLCHAIANAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "291",
+    "old_code": "LEGACY-POS-040",
+    "old_name": "MR.MUNENOBU SATO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "290",
+    "old_code": "LEGACY-POS-039",
+    "old_name": "MR.WARUT ASAWATRERATNAKUL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "289",
+    "old_code": "LEGACY-POS-038",
+    "old_name": "MR.SONGKRAN KHANNOK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "288",
+    "old_code": "LEGACY-POS-037",
+    "old_name": "MR.SAKCHAI PHANTHURI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "287",
+    "old_code": "LEGACY-POS-036",
+    "old_name": "MR.SUTHAS MORTHAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "286",
+    "old_code": "LEGACY-POS-035",
+    "old_name": "MR.MITSUKAZU IMOTO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "285",
+    "old_code": "LEGACY-POS-034",
+    "old_name": "MR.WEERAKUL CHAROENKUL",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "284",
+    "old_code": "LEGACY-POS-033",
+    "old_name": "MR.GRITCHAI SOMPHONKRANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "283",
+    "old_code": "LEGACY-POS-032",
+    "old_name": "MR.MAKKAPHOP KHUMSIT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "282",
+    "old_code": "LEGACY-POS-031",
+    "old_name": "MS.PRIYANAT SANGUANSUK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "281",
+    "old_code": "LEGACY-POS-030",
+    "old_name": "MR.TAKESHI ASHIZAWA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "280",
+    "old_code": "LEGACY-POS-029",
+    "old_name": "MS. AUSANISA PHATINAWIN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "279",
+    "old_code": "LEGACY-POS-028",
+    "old_name": "MR.RONNACHAI DOKDUAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "278",
+    "old_code": "LEGACY-POS-027",
+    "old_name": "MR.SUPANAT TIANSUWAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "277",
+    "old_code": "LEGACY-POS-026",
+    "old_name": "MS.PENPICHAR HUTACHUTHA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "276",
+    "old_code": "LEGACY-POS-025",
+    "old_name": "MR.KEISUKE SHIGETA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "275",
+    "old_code": "LEGACY-POS-024",
+    "old_name": "MR.WICHA SARNSAWEK",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "274",
+    "old_code": "LEGACY-POS-023",
+    "old_name": "MR.TADASHI ONUKI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "273",
+    "old_code": "LEGACY-POS-022",
+    "old_name": "MR.ITSARA KONGTAWEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "272",
+    "old_code": "LEGACY-POS-021",
+    "old_name": "MR.PATIPON POUNGJUN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "271",
+    "old_code": "LEGACY-POS-020",
+    "old_name": "MS.NEEN NOIHUAHAT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "270",
+    "old_code": "LEGACY-POS-019",
+    "old_name": "MR.NARASAK JANTABOON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "269",
+    "old_code": "LEGACY-POS-018",
+    "old_name": "MR. JEDSADA MOONSAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "268",
+    "old_code": "LEGACY-POS-017",
+    "old_name": "MR.THANAPOOM KESAMOON",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "267",
+    "old_code": "LEGACY-POS-016",
+    "old_name": "MR. TAMMARAT PONWAREE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "266",
+    "old_code": "LEGACY-POS-015",
+    "old_name": "MR.MORITA JUN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "265",
+    "old_code": "LEGACY-POS-014",
+    "old_name": "MR.THAMKARN LUXSANAHUT",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "264",
+    "old_code": "LEGACY-POS-013",
+    "old_name": "MR.KANIN SANGTHONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "263",
+    "old_code": "LEGACY-POS-012",
+    "old_name": "MS.PICHANAN LIAMSUWAN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "262",
+    "old_code": "LEGACY-POS-011",
+    "old_name": "MS.CHANTARAT RODSAWANG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "261",
+    "old_code": "LEGACY-POS-010",
+    "old_name": "MS. RATTANAPHORN PHICHETCHOTIWONG",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "260",
+    "old_code": "LEGACY-POS-009",
+    "old_name": "MS.ROSSARIN INJUN",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "259",
+    "old_code": "LEGACY-POS-008",
+    "old_name": "MR.TRAIRAT PANDEE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "258",
+    "old_code": "LEGACY-POS-007",
+    "old_name": "MS.AKARI SUZUKI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "257",
+    "old_code": "LEGACY-POS-006",
+    "old_name": "MS.ERIKA GAYA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "256",
+    "old_code": "LEGACY-POS-005",
+    "old_name": "MR.SHIICHI MAKINO",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "255",
+    "old_code": "LEGACY-POS-004",
+    "old_name": "MR.TAKESHI TSUCHIHIRA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "254",
+    "old_code": "LEGACY-POS-003",
+    "old_name": "MS.THANTHIP PHOOPADRAE",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "253",
+    "old_code": "LEGACY-POS-002",
+    "old_name": "MR.WORACHAI WONGCHANA",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "252",
+    "old_code": "LEGACY-POS-001",
+    "old_name": "MS.PROMSIRI PIMSAKULKRAI",
+    "old_type": "POSITION",
+    "replacement_target": "CANONICAL_POSITION_MASTER"
+  },
+  {
+    "old_app791_id": "251",
+    "old_code": "DEP-251",
+    "old_name": "นายภาณุกร สาธร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "250",
+    "old_code": "DEP-250",
+    "old_name": "นายอนุพงษ์ หลงน้อย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "249",
+    "old_code": "DEP-249",
+    "old_name": "นายธีรภัทร์ เขียวสะอาด",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "248",
+    "old_code": "DEP-248",
+    "old_name": "นายอาชวะ โตพ่วง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "247",
+    "old_code": "DEP-247",
+    "old_name": "นายเจษฎา รอดทุกข์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "246",
+    "old_code": "DEP-246",
+    "old_name": "น.ส.ศรีชนก แซ่ซี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "245",
+    "old_code": "DEP-245",
+    "old_name": "เคอิโซ นาคาเอะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "244",
+    "old_code": "DEP-244",
+    "old_name": "นายวัชรา ขาวสำอางค์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "243",
+    "old_code": "DEP-243",
+    "old_name": "น.ส.ภัทรนิษฐ์ พันธุ์คุ้มเก่า",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "242",
+    "old_code": "DEP-242",
+    "old_name": "น.ส.สุพัฒตรา แซ่เตียว",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "241",
+    "old_code": "DEP-241",
+    "old_name": "นายชัยยุทธ์ แสงพุทธา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "240",
+    "old_code": "DEP-240",
+    "old_name": "น.ส.ญาณิศา ลาวตูม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "239",
+    "old_code": "DEP-239",
+    "old_name": "น.ส.พัชริดา ประมงกิจ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "238",
+    "old_code": "DEP-238",
+    "old_name": "นายธีรพงศ์ ไม้งาม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "237",
+    "old_code": "DEP-237",
+    "old_name": "น.ส.พิทยาภรณ์ สกุลยอดมณี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "236",
+    "old_code": "DEP-236",
+    "old_name": "นายโอซามิ คอนโด",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "235",
+    "old_code": "DEP-235",
+    "old_name": "น.ส.พันนิภา บุญพิษ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "234",
+    "old_code": "DEP-234",
+    "old_name": "นางสาวเกวลิน สีสุขสาม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "233",
+    "old_code": "DEP-233",
+    "old_name": "นางสาวณัฎฐา มาลาฉ่ำ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "232",
+    "old_code": "DEP-232",
+    "old_name": "นายธวัชชัย ต่อนคำสนธิ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "231",
+    "old_code": "DEP-231",
+    "old_name": "นายกิตติพัฒน์ ชุ่มดี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "230",
+    "old_code": "DEP-230",
+    "old_name": "นายทัตธน รุ่งโรจน์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "229",
+    "old_code": "DEP-229",
+    "old_name": "นายจิรายุ จริยาเอกภาส",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "228",
+    "old_code": "DEP-228",
+    "old_name": "นายเกียรติศักดิ์ เกตุสิริกูล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "227",
+    "old_code": "DEP-227",
+    "old_name": "นายธนบดี โคตรพรม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "226",
+    "old_code": "DEP-226",
+    "old_name": "นายกรทักษ์ โยยิ่ง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "225",
+    "old_code": "DEP-225",
+    "old_name": "นายธนพัฒน์ แก่นใจ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "224",
+    "old_code": "DEP-224",
+    "old_name": "นางสาววิพารัตน์ จันทษร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "223",
+    "old_code": "DEP-223",
+    "old_name": "นายเจษฎาภรณ์ ปล้องกลาง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "222",
+    "old_code": "DEP-222",
+    "old_name": "นายพิทักษชัย พรพันธ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "221",
+    "old_code": "DEP-221",
+    "old_name": "นายคาซึฮิโระ ฮานามูระ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "220",
+    "old_code": "DEP-220",
+    "old_name": "นายทาคาโยชิ อุชิดะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "219",
+    "old_code": "DEP-219",
+    "old_name": "นายมาโนชญ์ อินจินดา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "218",
+    "old_code": "DEP-218",
+    "old_name": "นายประเสริฐศักดิ์ ขันเจริญ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "217",
+    "old_code": "DEP-217",
+    "old_name": "นางอุทุมพร ทองศรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "216",
+    "old_code": "DEP-216",
+    "old_name": "นายภานุวัฒน์ ราชาลี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "215",
+    "old_code": "DEP-215",
+    "old_name": "นายสุรวุฒิ เกษาใส",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "214",
+    "old_code": "DEP-214",
+    "old_name": "นายเผด็จการ ภูขามคม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "213",
+    "old_code": "DEP-213",
+    "old_name": "นายอนุรักษ์ ติ๊บอุด",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "212",
+    "old_code": "DEP-212",
+    "old_name": "นายอนุพงษ์ สมานทอง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "211",
+    "old_code": "DEP-211",
+    "old_name": "นายสุนทร อะรินแปง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "210",
+    "old_code": "DEP-210",
+    "old_name": "นายเอกลักษณ์ ใจบุตร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "209",
+    "old_code": "DEP-209",
+    "old_name": "นางสาวสุพรรณทิพย์ มฤกุล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "208",
+    "old_code": "DEP-208",
+    "old_name": "นายนพพร คงเกษม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "207",
+    "old_code": "DEP-207",
+    "old_name": "นายเทพพานทอง บุญยก",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "206",
+    "old_code": "DEP-206",
+    "old_name": "นายตรีเนตร จินดาเลิศ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "205",
+    "old_code": "DEP-205",
+    "old_name": "นายทรงศักดิ์โพธิสาร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "204",
+    "old_code": "DEP-204",
+    "old_name": "นางสาวพัชรินทร์ ไทยเจริญ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "203",
+    "old_code": "DEP-203",
+    "old_name": "นายรักเกียรติ น่วมภุมรินทร์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "202",
+    "old_code": "DEP-202",
+    "old_name": "นางสาวสุกัญญา บัวฮมบุรา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "201",
+    "old_code": "DEP-201",
+    "old_name": "นายนพดล คงเกษม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "200",
+    "old_code": "DEP-200",
+    "old_name": "นางกาญจนา ถะเกิงผล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "199",
+    "old_code": "DEP-199",
+    "old_name": "นางสาวหนึ่งฤทัย สมจิตร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "198",
+    "old_code": "DEP-198",
+    "old_name": "นายพิชัย ปันเปี้ย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "197",
+    "old_code": "DEP-197",
+    "old_name": "นายธีระพงษ์ ลาโสม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "196",
+    "old_code": "DEP-196",
+    "old_name": "นางสาวน้ำฝนไพศาล เจริญไมตรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "195",
+    "old_code": "DEP-195",
+    "old_name": "นางสาวเพียงตะวัน จันทร์พิทักษ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "194",
+    "old_code": "DEP-194",
+    "old_name": "นายสกล เสนาพล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "193",
+    "old_code": "DEP-193",
+    "old_name": "นายจงกช อินสม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "192",
+    "old_code": "DEP-192",
+    "old_name": "นายมงคล อ้องแสนคำ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "191",
+    "old_code": "DEP-191",
+    "old_name": "นางสาววลัยพร จันทร์พิทักษ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "190",
+    "old_code": "DEP-190",
+    "old_name": "นางสาวชื่นกมล เสนาเจริญ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "189",
+    "old_code": "DEP-189",
+    "old_name": "นางสาววรรณภา แหล่ป้อง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "188",
+    "old_code": "DEP-188",
+    "old_name": "นางสาวนฑาห์ นิพัทธโกศลสุข",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "187",
+    "old_code": "DEP-187",
+    "old_name": "นางสาวพัชรลักษณ์ คำพรวน",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "186",
+    "old_code": "DEP-186",
+    "old_name": "นางสาวมัสยา แสงกล้า",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "185",
+    "old_code": "DEP-185",
+    "old_name": "นายธิติ แสนโคตร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "184",
+    "old_code": "DEP-184",
+    "old_name": "นายพร้อมพันธ์ เกิดสวัสดิ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "183",
+    "old_code": "DEP-183",
+    "old_name": "นางสาวนัดดา ศรีมนตรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "182",
+    "old_code": "DEP-182",
+    "old_name": "นายอำนวย สุขพราม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "181",
+    "old_code": "DEP-181",
+    "old_name": "นายสถิต กระแสร์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "180",
+    "old_code": "DEP-180",
+    "old_name": "นางสาวสุภาภรณ์ จันทร์วิเศษ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "179",
+    "old_code": "DEP-179",
+    "old_name": "นายพิชัย วงศ์เรือน",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "178",
+    "old_code": "DEP-178",
+    "old_name": "นายธีระวัฒน์ โคสารคุณ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "177",
+    "old_code": "DEP-177",
+    "old_name": "นางสาวนภัทร อินทนนท์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "176",
+    "old_code": "DEP-176",
+    "old_name": "นายวัชรินทร์ ทัดเที่ยง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "175",
+    "old_code": "DEP-175",
+    "old_name": "นายโชคชัย เชาว์ประจักษ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "174",
+    "old_code": "DEP-174",
+    "old_name": "นายวรศักดิ์ เบญมาตย์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "173",
+    "old_code": "DEP-173",
+    "old_name": "นายสุวินัย อารีเอื้อ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "172",
+    "old_code": "DEP-172",
+    "old_name": "นางสาวปิยาภรณ์ แก้วดี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "171",
+    "old_code": "DEP-171",
+    "old_name": "นายทรงศาสตร์ ภูธง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "170",
+    "old_code": "DEP-170",
+    "old_name": "นายอภิสิทธิ์ สุขเจริญ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "169",
+    "old_code": "DEP-169",
+    "old_name": "นายวัชรพงศ์ แจ่มใส",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "168",
+    "old_code": "DEP-168",
+    "old_name": "นางสาวสุภาพร บุญเลิศ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "167",
+    "old_code": "DEP-167",
+    "old_name": "นางสาววริศรา ใจหาญ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "166",
+    "old_code": "DEP-166",
+    "old_name": "นายกิตติ ใจกล้า",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "165",
+    "old_code": "DEP-165",
+    "old_name": "นายอดิศร ศรีแก้วใส",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "164",
+    "old_code": "DEP-164",
+    "old_name": "นายเกรียงไกร ชื่นหมี้",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "163",
+    "old_code": "DEP-163",
+    "old_name": "นางสาวชนันธร ขอบจิตร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "162",
+    "old_code": "DEP-162",
+    "old_name": "นายสุรทิน พูลศิลา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "161",
+    "old_code": "DEP-161",
+    "old_name": "นายพงศกร ไชยเทพ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "160",
+    "old_code": "DEP-160",
+    "old_name": "นายธารา ทองศรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "159",
+    "old_code": "DEP-159",
+    "old_name": "นางณญาดา เสริมศิริ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "158",
+    "old_code": "DEP-158",
+    "old_name": "นายธนพล สายบัว",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "157",
+    "old_code": "DEP-157",
+    "old_name": "นายธวัชชัย เผ่าเมธวารีธร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "156",
+    "old_code": "DEP-156",
+    "old_name": "นายสมหมาย จันทร์เขต",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "155",
+    "old_code": "DEP-155",
+    "old_name": "นายสักรินทร์ แก้วติ๊บ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "154",
+    "old_code": "DEP-154",
+    "old_name": "นางสาวฐิตพัทธ์ สุทธิ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "153",
+    "old_code": "DEP-153",
+    "old_name": "นางสาววนิดา นนทพันธุ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "152",
+    "old_code": "DEP-152",
+    "old_name": "นายพัทธพล ฝึกความดี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "151",
+    "old_code": "DEP-151",
+    "old_name": "นางสาวภีชญา ขวัญเฉื่อย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "150",
+    "old_code": "DEP-150",
+    "old_name": "นายอัครพงศ์ ขาวงาม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "149",
+    "old_code": "DEP-149",
+    "old_name": "นางอำพร ชูสวัสดิ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "148",
+    "old_code": "DEP-148",
+    "old_name": "นายพิตินนท์ บัณฑุตระกูล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "147",
+    "old_code": "DEP-147",
+    "old_name": "นางสาวสุกัญญา มณีโชติ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "146",
+    "old_code": "DEP-146",
+    "old_name": "นายอำนาจ คงใหญ่",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "145",
+    "old_code": "DEP-145",
+    "old_name": "นายภูบดินทร์ มุกดาดิลก",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "144",
+    "old_code": "DEP-144",
+    "old_name": "นายกวีวุฒิ ตั้งพิบูลธรรม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "143",
+    "old_code": "DEP-143",
+    "old_name": "นายนพกร นามัง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "142",
+    "old_code": "DEP-142",
+    "old_name": "นายโยสุเกะ ฟูจิตะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "141",
+    "old_code": "DEP-141",
+    "old_name": "นายอนุวัฒน์ บุญโสดากร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "140",
+    "old_code": "DEP-140",
+    "old_name": "นายอัครวิทย์ ปรุงเกียรติ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "139",
+    "old_code": "DEP-139",
+    "old_name": "น.ส.สิริวิมล ชูผล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "138",
+    "old_code": "DEP-138",
+    "old_name": "นายอโนชัย วงศ์ประยูรศรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "137",
+    "old_code": "DEP-137",
+    "old_name": "น.ส.สุวิมล แก่นจันทร์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "136",
+    "old_code": "DEP-136",
+    "old_name": "น.ส.กัลยา มีตา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "135",
+    "old_code": "DEP-135",
+    "old_name": "น.ส.รินรดี สุวรรณ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "134",
+    "old_code": "DEP-134",
+    "old_name": "โยชิคาซู ยามาโมโตะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "133",
+    "old_code": "DEP-133",
+    "old_name": "นายอนุชา ธรรมวงค์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "132",
+    "old_code": "DEP-132",
+    "old_name": "นายมาซาโตะ อูเอโนะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "131",
+    "old_code": "DEP-131",
+    "old_name": "นายสามารถ สอนสุภาพ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "130",
+    "old_code": "DEP-130",
+    "old_name": "นางสาวรดีมาศ เจือไทย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "129",
+    "old_code": "DEP-129",
+    "old_name": "น.ส.แก้วกัญญพัชร วรปภาดากุล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "128",
+    "old_code": "DEP-128",
+    "old_name": "น.ส.สุทธิดา ทักขิณาพงศ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "127",
+    "old_code": "DEP-127",
+    "old_name": "นายสุวัฒน์ วิเศษสิงห์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "126",
+    "old_code": "DEP-126",
+    "old_name": "น.ส.กมลวรรณ คำศรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "125",
+    "old_code": "DEP-125",
+    "old_name": "นางสาวอรอนงค์ ดำนุ้ย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "124",
+    "old_code": "DEP-124",
+    "old_name": "นายชิตไชยา ทองนาค",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "123",
+    "old_code": "DEP-123",
+    "old_name": "นายยาซูฮิโระ ทามูระ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "122",
+    "old_code": "DEP-122",
+    "old_name": "นายทาอิชิ ทาคายานากิ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "121",
+    "old_code": "DEP-121",
+    "old_name": "นายนัท พรหมประสิทธิ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "120",
+    "old_code": "DEP-120",
+    "old_name": "นายอรุษ จินดาหลวง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "119",
+    "old_code": "DEP-119",
+    "old_name": "นายชนาธิป กุซัว",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "118",
+    "old_code": "DEP-118",
+    "old_name": "นายณัฐวุฒิ นาคชลธี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "117",
+    "old_code": "DEP-117",
+    "old_name": "น.ส.ยุวรัตน์ บรรลือเกียรติ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "116",
+    "old_code": "DEP-116",
+    "old_name": "นางสาวปัทมา สมงาม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "115",
+    "old_code": "DEP-115",
+    "old_name": "นายประจักร มะลาศรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "114",
+    "old_code": "DEP-114",
+    "old_name": "นางสาวฉัตร์รวี พีระทวีศรีกุล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "113",
+    "old_code": "DEP-113",
+    "old_name": "นายปิยธนา ยินดีสุข",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "112",
+    "old_code": "DEP-112",
+    "old_name": "นายกฤษฎา คำดา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "111",
+    "old_code": "DEP-111",
+    "old_name": "นายนรากร มิ่งเมือง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "110",
+    "old_code": "DEP-110",
+    "old_name": "นางสาวธัญธนาดา แซ่เหีย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "109",
+    "old_code": "DEP-109",
+    "old_name": "นางสาววันดี เล็กเจริญ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "108",
+    "old_code": "DEP-108",
+    "old_name": "นางณิรดา ทั้งวิจิตรกุล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "107",
+    "old_code": "DEP-107",
+    "old_name": "นายธนัท เมืองโคตร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "106",
+    "old_code": "DEP-106",
+    "old_name": "นางสาวจงจิตต์ โสดา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "105",
+    "old_code": "DEP-105",
+    "old_name": "นางสาวนริศรา จันทลา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "104",
+    "old_code": "DEP-104",
+    "old_name": "นางสาวเสาวนีย์ เนตรพิภพ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "103",
+    "old_code": "DEP-103",
+    "old_name": "นางสาวดารัตน์ พรชื่นชูวงศ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "102",
+    "old_code": "DEP-102",
+    "old_name": "นางสาววิไลลักษณ์ จันทร์ศรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "101",
+    "old_code": "DEP-101",
+    "old_name": "นางสาววณิชวรรณ บุดดา",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "100",
+    "old_code": "DEP-100",
+    "old_name": "นางสาวศลิษา รักการงาน",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "99",
+    "old_code": "DEP-099",
+    "old_name": "นางสาววรฤทัย วงชารี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "98",
+    "old_code": "DEP-098",
+    "old_name": "นายสมศักดิ์ สืบจันทร์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "97",
+    "old_code": "DEP-097",
+    "old_name": "นายนพนันท์ เดชขันธ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "96",
+    "old_code": "DEP-096",
+    "old_name": "นางสาวศุภรัตน์ อาวรณ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "95",
+    "old_code": "DEP-095",
+    "old_name": "นางสาวจุฑาพร วงศ์ชื่นสุนทร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "94",
+    "old_code": "DEP-094",
+    "old_name": "นางอารยา หิรัญปัณฑาพร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "93",
+    "old_code": "DEP-093",
+    "old_name": "นางสาวสมฤดี แป้นหนู",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "92",
+    "old_code": "DEP-092",
+    "old_name": "นางสาววาสนา แม้นทอง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "91",
+    "old_code": "DEP-091",
+    "old_name": "นางสาวกมลวรรณ ชัยสุขี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "90",
+    "old_code": "DEP-090",
+    "old_name": "นายพิชยดนย์ พงษ์ศาสตร์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "89",
+    "old_code": "DEP-089",
+    "old_name": "นายวรภัทร คำสิงห์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "88",
+    "old_code": "DEP-088",
+    "old_name": "นายอรรถสิทธิ์ ทองทั่ว",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "87",
+    "old_code": "DEP-087",
+    "old_name": "นางสาวรสริน เลิศวัชพล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "86",
+    "old_code": "DEP-086",
+    "old_name": "นางสาวจิรวรรธ ศรีสวัสดิ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "85",
+    "old_code": "DEP-085",
+    "old_name": "นายสาทิตย์ สาหร่ายสลับ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "84",
+    "old_code": "DEP-084",
+    "old_name": "นางสาวดุจฤดี อรุณจิต",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "83",
+    "old_code": "DEP-083",
+    "old_name": "นายสมโภช ลิมป์บรรเจิด",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "82",
+    "old_code": "DEP-082",
+    "old_name": "นายณัฐนันท์ เล็งเลิศผล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "81",
+    "old_code": "DEP-081",
+    "old_name": "นายสุรัช ลวดลาย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "80",
+    "old_code": "DEP-080",
+    "old_name": "นายกฤษณะ เลาหจีรพันธุ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "79",
+    "old_code": "DEP-079",
+    "old_name": "นางสาวเพ็ญประภา ม่วงกลาง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "78",
+    "old_code": "DEP-078",
+    "old_name": "นายภัทร รัตนกรแก้ว",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "77",
+    "old_code": "DEP-077",
+    "old_name": "นายณรงค์ แก้วทรัพย์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "76",
+    "old_code": "DEP-076",
+    "old_name": "นางสาวชญานุช เพ็งพินิจ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "75",
+    "old_code": "DEP-075",
+    "old_name": "นางพัทธนันท์รัชต์ เรืองเที่ยง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "74",
+    "old_code": "DEP-074",
+    "old_name": "นายอัครภูมิ ไชยเพชร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "73",
+    "old_code": "DEP-073",
+    "old_name": "นายวิเชษฐ์ ประทุมภาพ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "72",
+    "old_code": "DEP-072",
+    "old_name": "นายวิฑูร สุขวิสุทธิโชติ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "71",
+    "old_code": "DEP-071",
+    "old_name": "นายณัฐพล โกศลกิติวงศ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "70",
+    "old_code": "DEP-070",
+    "old_name": "นางสาวชุลีพร เมณฑ์กูล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "69",
+    "old_code": "DEP-069",
+    "old_name": "นางสาวหทัยรัตน์ ศรีกุลวงศ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "68",
+    "old_code": "DEP-068",
+    "old_name": "นายกีรติ วรรณบุตร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "67",
+    "old_code": "DEP-067",
+    "old_name": "นางสาวณัฐธิดา ทองวิเศษ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "66",
+    "old_code": "DEP-066",
+    "old_name": "นายศรันยู รัตนสุวรรณ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "65",
+    "old_code": "DEP-065",
+    "old_name": "นายพงศ์พัฒน์ ศรีโคตร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "64",
+    "old_code": "DEP-064",
+    "old_name": "นางสาวพิชชากานต์ องค์สวัสดิ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "63",
+    "old_code": "DEP-063",
+    "old_name": "นายสุธน สอนสุภาพ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "62",
+    "old_code": "DEP-062",
+    "old_name": "นางสาวปภัชญา ถาวรรินพงศ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "61",
+    "old_code": "DEP-061",
+    "old_name": "นายสรสิช ศรีสุดใจ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "60",
+    "old_code": "DEP-060",
+    "old_name": "นายณัฐวุฒิ เสมอวงศ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "59",
+    "old_code": "DEP-059",
+    "old_name": "นายจักรกฤษณ์ แพน้อย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "58",
+    "old_code": "DEP-058",
+    "old_name": "นายพีรณัฐ หาญประทุม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "57",
+    "old_code": "DEP-057",
+    "old_name": "นางสาวสุธาดา ใจมนต์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "56",
+    "old_code": "DEP-056",
+    "old_name": "นายปวีร์ หอมเลิศนลิน",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "55",
+    "old_code": "DEP-055",
+    "old_name": "นางสาววรธัญ สามารถ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "54",
+    "old_code": "DEP-054",
+    "old_name": "นางสาวกันต์กนิษฐ์ นิ่มน้อย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "53",
+    "old_code": "DEP-053",
+    "old_name": "นางสาวลักษมี แก้วศรีงาม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "52",
+    "old_code": "DEP-052",
+    "old_name": "นายประเวศ ปัญญาอภิวัฒนะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "51",
+    "old_code": "DEP-051",
+    "old_name": "นางสาวนิตยา หอมทอง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "50",
+    "old_code": "DEP-050",
+    "old_name": "นายณัฐพล พุทธศรี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "49",
+    "old_code": "DEP-049",
+    "old_name": "นางสาวโสภิดา คำล้าน",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "48",
+    "old_code": "DEP-048",
+    "old_name": "นายพงศกร โพธิ์พิมล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "47",
+    "old_code": "DEP-047",
+    "old_name": "นายณัฐวุฒิ แก้วกังวาล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "46",
+    "old_code": "DEP-046",
+    "old_name": "นางสาวจุฑารัตน์ สุเฌอ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "45",
+    "old_code": "DEP-045",
+    "old_name": "นายจิรายุสวัฒ ประสม",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "44",
+    "old_code": "DEP-044",
+    "old_name": "นายศิรา โสวัณณะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "43",
+    "old_code": "DEP-043",
+    "old_name": "นายธีระพงษ์ ประสาร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "42",
+    "old_code": "DEP-042",
+    "old_name": "นายมิคิโอะ คาโตะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "41",
+    "old_code": "DEP-041",
+    "old_name": "นายทาคุโร อิโนะอุเอะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "40",
+    "old_code": "DEP-040",
+    "old_name": "นายมาซาฮิโต อาซูมิ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "39",
+    "old_code": "DEP-039",
+    "old_name": "นายปกป้อง วานิชสุจิต",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "38",
+    "old_code": "DEP-038",
+    "old_name": "นายวรภฤศ ม่วงมิ่งสุข",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "37",
+    "old_code": "DEP-037",
+    "old_name": "นายชิษณุพงศ์ กมลไชยอนันต์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "36",
+    "old_code": "DEP-036",
+    "old_name": "มูเนะโนบุ ซาโต้",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "35",
+    "old_code": "DEP-035",
+    "old_name": "นายวรุตม์ อัศวตรีรัตนกุล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "34",
+    "old_code": "DEP-034",
+    "old_name": "นายสงกรานต์ ขันนอก",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "33",
+    "old_code": "DEP-033",
+    "old_name": "นายศักดิ์ชัย พันธุริ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "32",
+    "old_code": "DEP-032",
+    "old_name": "นายสุทัศน์ หมอไทย",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "31",
+    "old_code": "DEP-031",
+    "old_name": "นายวีรกุล เจริญกุล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "30",
+    "old_code": "DEP-030",
+    "old_name": "นายกฤษณ์ชัย สมพลกรัง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "29",
+    "old_code": "DEP-029",
+    "old_name": "นายมรรคภพ ขำสิทธิ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "28",
+    "old_code": "DEP-028",
+    "old_name": "น.ส.ปริยนาถ สงวนสุข",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "27",
+    "old_code": "DEP-027",
+    "old_name": "นายทาเคชิ อะชิซาว่า",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "26",
+    "old_code": "DEP-026",
+    "old_name": "นางสาวอุษณิษา ผาตินาวิน",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "25",
+    "old_code": "DEP-025",
+    "old_name": "นายรณชัย ดอกดวน",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "24",
+    "old_code": "DEP-024",
+    "old_name": "นายศุภณัฐ เตียรถ์สุวรรณ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "23",
+    "old_code": "DEP-023",
+    "old_name": "น.ส.เพ็ญพิชชา หุตะจูฑะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "22",
+    "old_code": "DEP-022",
+    "old_name": "นายเคอิซุเกะ ชิเกตะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "21",
+    "old_code": "DEP-021",
+    "old_name": "นายวิชา สารเสวก",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "20",
+    "old_code": "DEP-020",
+    "old_name": "นายอิสระ คงทวี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "19",
+    "old_code": "DEP-019",
+    "old_name": "นายปฏิพล พวงจันทร์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "18",
+    "old_code": "DEP-018",
+    "old_name": "น.ส.นีร น้อยหัวหาด",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "17",
+    "old_code": "DEP-017",
+    "old_name": "นายนราศักดิ์ จันทบูรณ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "16",
+    "old_code": "DEP-016",
+    "old_name": "นายเจษฎา มูลสาร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "15",
+    "old_code": "DEP-015",
+    "old_name": "นายธนภูมิ เกษามูล",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "14",
+    "old_code": "DEP-014",
+    "old_name": "นายธรรมรัตน์ พลวารี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "13",
+    "old_code": "DEP-013",
+    "old_name": "นายธัมกาล ลักษณะหุต",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "12",
+    "old_code": "DEP-012",
+    "old_name": "นายคณิน แสงทอง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "11",
+    "old_code": "DEP-011",
+    "old_name": "น.ส.พิชชานันท์ เหลี่ยมสุวรรณ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "10",
+    "old_code": "DEP-010",
+    "old_name": "น.ส.จันทรัสม์ รอดสว่าง",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "9",
+    "old_code": "DEP-009",
+    "old_name": "น.ส.รัตนาภรณ์ พิเชฐโชติวงษ์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "8",
+    "old_code": "DEP-008",
+    "old_name": "น.ส.รสริน อินทร์จันทร์",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "7",
+    "old_code": "DEP-007",
+    "old_name": "นายไตรรัตน์ พันธุ์ดี",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "6",
+    "old_code": "TMS0",
+    "old_name": "Technical Services Department",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMS0"
+  },
+  {
+    "old_app791_id": "5",
+    "old_code": "TMT0",
+    "old_name": "Industrial Services Department",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT0"
+  },
+  {
+    "old_app791_id": "4",
+    "old_code": "TMT1",
+    "old_name": "Machinery Department",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMT1"
+  },
+  {
+    "old_app791_id": "3",
+    "old_code": "TMH0",
+    "old_name": "Corporate Department",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "TMH0"
+  },
+  {
+    "old_app791_id": "2",
+    "old_code": "DEP-002",
+    "old_name": "นายวรชัย วงค์ชะนะ",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  },
+  {
+    "old_app791_id": "1",
+    "old_code": "DEP-001",
+    "old_name": "น.ส.พรหมศิริ พิมพ์สกุลไกร",
+    "old_type": "DEPARTMENT",
+    "replacement_target": "SUPERSEDED_LEGACY"
+  }
+]

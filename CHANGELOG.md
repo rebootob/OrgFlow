@@ -42,6 +42,21 @@
 
 ---
 
+## [v1.7.0-phase7.5r] - 2026-08-22
+
+### Added
+- **OrgFlow Phase 7.5R — Full Clean Rebuild Production Execution (App 791 Purge & Clean Master Recreation):**
+  - Generated complete pre-clear backup snapshots: `APP791_FULL_PRE_CLEAR_BACKUP.json`, `APP791_FULL_PRE_CLEAR_BACKUP.csv`, and SHA256 checksum file.
+  - Frozen permanent reference crosswalk for App 792 and App 793 dependencies.
+  - Completely purged all 609 legacy contaminated records from App 791 (Legacy records remaining = 0).
+  - Recreated all 34 Canonical Organization Nodes in strict hierarchy order (Company -> Division -> Department -> Section -> Team) from `Org.FY2026_Rev.2`.
+  - Recreated all 57 clean Canonical Position Masters from App 53 job titles (`POS-001` to `POS-057`).
+  - Verified live Production post-rebuild state: App 791 contains exactly 91 active records (0 Person records, 0 legacy contamination).
+  - Maintained 100% safety of App 53 (0 writes, 275 records intact) and App 792 / App 793 historical integrity.
+  - Final System Status: `CLEAN_REBUILD_PRODUCTION_VALIDATED`.
+
+---
+
 ## [v1.6.0-phase7.5] - 2026-08-22
 
 ### Added
