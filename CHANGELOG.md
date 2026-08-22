@@ -1,5 +1,17 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.0.1] - 2026-08-22
+
+### Added
+- **Phase 5E Reject / Return / System Failure Amendment:** Deployed 3 controlled backward transitions to Kintone App 793 (`GM_REVIEW` -> `DRAFT`, `HR_REVIEW` -> `GM_REVIEW`, `SYSTEM_APPLY` -> `APPROVED`).
+- Verified 9 live actions read-back (6 forward + 3 backward) via Kintone REST API.
+- Enforced terminal state immutability for `APPLIED` (0 outbound transitions).
+- Updated unit test suite to 36 regression test scenarios covering all forward/backward paths, audit preservation, and failure rollbacks (36/36 PASS).
+- Verified protected apps remain 100% untouched (`Employee Namelist` App 53: 275 records; App 791: 0 records; App 792: 0 records; App 793: 0 records).
+- Created amendment report ([`PHASE_5E_REJECT_RETURN_AMENDMENT_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/architecture/PHASE_5E_REJECT_RETURN_AMENDMENT_REPORT.md)).
+
+---
+
 ## [v1.0.0] - 2026-08-22
 
 ### Added

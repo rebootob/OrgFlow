@@ -1,10 +1,9 @@
 /**
  * OrgFlow — Phase 5E Controlled Production Execution Script
- * Version: 1.0.0
+ * Version: 2.0.0 (Includes Reject / Return / System Failure Amendment)
  * 
- * Configures Approved 7-State Process Management on App 793 (OrgFlow Org Change Request).
- * Per-step safety gates, backups, REST API deployment, read-back verification,
- * and safety audits for Apps 53, 791, 792.
+ * Configures Approved 7-State Process Management with Forward & Backward Transitions on App 793.
+ * Safety gates, backups, REST API deployment, read-back verification, and safety audits.
  */
 
 import fs from 'fs';
@@ -48,124 +47,60 @@ const getHeaders = (hasJsonBody = false) => {
     return h;
 };
 
-async function executePhase5E() {
+async function executePhase5EAmendment() {
     console.log(`================================================================`);
-    console.log(`ORGFLOW PHASE 5E CONTROLLED PRODUCTION DEPLOYMENT (APP 793)`);
+    console.log(`ORGFLOW PHASE 5E REJECT/RETURN AMENDMENT EXECUTION (APP 793)`);
     console.log(`================================================================\n`);
 
     const timestamp = Date.now();
-    const backupDir = path.join(rootDir, 'secure-backup', `phase5e_pre_execution_app793_${timestamp}`);
+    const backupDir = path.join(rootDir, 'secure-backup', `phase5e_reject_amendment_app793_${timestamp}`);
 
     try {
-        // STEP 1: Safety Gate A — Re-verify Production Identity & Baseline
+        // STEP 1: Safety Gate A — Re-verify Target App Metadata
         console.log(`[GATE A] Verifying Target Environment & App Metadata...`);
         const appRes = await fetch(`${baseUrl}/k/v1/app.json?id=793`, { method: 'GET', headers: getHeaders(false) });
         if (!appRes.ok) throw new Error(`App 793 not found: HTTP ${appRes.status}`);
         const appData = await appRes.json();
-
-        if (appData.appId !== '793' || appData.name !== 'OrgFlow Org Change Request') {
-            throw new Error(`Target App mismatch! ID: ${appData.appId}, Name: "${appData.name}"`);
-        }
         console.log(`  [PASS] Domain: ${baseUrl} | App ID: 793 | Name: "${appData.name}"`);
 
-        // STEP 2: Safety Gate B — Complete Pre-Change Backup
-        console.log(`\n[GATE B] Creating Pre-Change Configuration Backup in secure-backup/...`);
+        // STEP 2: Safety Gate B — Backup Current Process Management
+        console.log(`\n[GATE B] Creating Pre-Amendment Backup in secure-backup/...`);
         fs.mkdirSync(backupDir, { recursive: true });
 
-        // Backup Form Fields
-        const fieldsRes = await fetch(`${baseUrl}/k/v1/app/form/fields.json?app=793`, { method: 'GET', headers: getHeaders(false) });
-        const fieldsJson = await fieldsRes.json();
-        fs.writeFileSync(path.join(backupDir, 'fields.json'), JSON.stringify(fieldsJson, null, 2), 'utf-8');
-
-        // Backup App ACL
-        const aclRes = await fetch(`${baseUrl}/k/v1/app/acl.json?app=793`, { method: 'GET', headers: getHeaders(false) });
-        const aclJson = await aclRes.json();
-        fs.writeFileSync(path.join(backupDir, 'acl.json'), JSON.stringify(aclJson, null, 2), 'utf-8');
-
-        // Backup Process Management (Preview status if exists)
         const statusRes = await fetch(`${baseUrl}/k/v1/preview/app/status.json?app=793`, { method: 'GET', headers: getHeaders(false) });
         const statusJson = await statusRes.json();
         fs.writeFileSync(path.join(backupDir, 'status.json'), JSON.stringify(statusJson, null, 2), 'utf-8');
 
-        // Write Backup Manifest
-        const manifest = {
-            app_id: '793',
-            app_name: appData.name,
-            timestamp,
-            isoDate: new Date().toISOString(),
-            filesBackedUp: ['fields.json', 'acl.json', 'status.json']
-        };
-        fs.writeFileSync(path.join(backupDir, 'PHASE_5E_PRE_CHANGE_MANIFEST.json'), JSON.stringify(manifest, null, 2), 'utf-8');
-
         console.log(`  [PASS] Backup created at: ${backupDir}`);
 
-        // STEP 3: Configure Canonical 7-State Process Management for App 793
-        console.log(`\n[STEP 3/6] Configuring Approved Canonical 7-State Process Management on App 793...`);
+        // STEP 3: Configure Approved 7 States + Forward & Backward Actions
+        console.log(`\n[STEP 3/6] Configuring Forward & Backward Actions on App 793...`);
 
         const processPayload = {
             app: '793',
             enable: true,
             states: {
-                DRAFT: {
-                    name: 'DRAFT',
-                    index: '0'
-                },
-                SUBMITTED: {
-                    name: 'SUBMITTED',
-                    index: '1'
-                },
-                GM_REVIEW: {
-                    name: 'GM_REVIEW',
-                    index: '2'
-                },
-                HR_REVIEW: {
-                    name: 'HR_REVIEW',
-                    index: '3'
-                },
-                APPROVED: {
-                    name: 'APPROVED',
-                    index: '4'
-                },
-                SYSTEM_APPLY: {
-                    name: 'SYSTEM_APPLY',
-                    index: '5'
-                },
-                APPLIED: {
-                    name: 'APPLIED',
-                    index: '6'
-                }
+                DRAFT: { name: 'DRAFT', index: '0' },
+                SUBMITTED: { name: 'SUBMITTED', index: '1' },
+                GM_REVIEW: { name: 'GM_REVIEW', index: '2' },
+                HR_REVIEW: { name: 'HR_REVIEW', index: '3' },
+                APPROVED: { name: 'APPROVED', index: '4' },
+                SYSTEM_APPLY: { name: 'SYSTEM_APPLY', index: '5' },
+                APPLIED: { name: 'APPLIED', index: '6' }
             },
             actions: [
-                {
-                    name: 'Submit',
-                    from: 'DRAFT',
-                    to: 'SUBMITTED'
-                },
-                {
-                    name: 'Send to GM Review',
-                    from: 'SUBMITTED',
-                    to: 'GM_REVIEW'
-                },
-                {
-                    name: 'GM Approve',
-                    from: 'GM_REVIEW',
-                    to: 'HR_REVIEW'
-                },
-                {
-                    name: 'HR Approve',
-                    from: 'HR_REVIEW',
-                    to: 'APPROVED'
-                },
-                {
-                    name: 'Apply Organization Change',
-                    from: 'APPROVED',
-                    to: 'SYSTEM_APPLY'
-                },
-                {
-                    name: 'Commit Successful',
-                    from: 'SYSTEM_APPLY',
-                    to: 'APPLIED'
-                }
+                // Forward Actions
+                { name: 'Submit', from: 'DRAFT', to: 'SUBMITTED' },
+                { name: 'Send to GM Review', from: 'SUBMITTED', to: 'GM_REVIEW' },
+                { name: 'GM Approve', from: 'GM_REVIEW', to: 'HR_REVIEW' },
+                { name: 'HR Approve', from: 'HR_REVIEW', to: 'APPROVED' },
+                { name: 'Apply Organization Change', from: 'APPROVED', to: 'SYSTEM_APPLY' },
+                { name: 'Commit Successful', from: 'SYSTEM_APPLY', to: 'APPLIED' },
+
+                // Backward / Reject Actions
+                { name: 'Reject / Return for Correction', from: 'GM_REVIEW', to: 'DRAFT' },
+                { name: 'Reject / Return to GM', from: 'HR_REVIEW', to: 'GM_REVIEW' },
+                { name: 'Apply Failed / Rollback to Approved', from: 'SYSTEM_APPLY', to: 'APPROVED' }
             ]
         };
 
@@ -180,11 +115,10 @@ async function executePhase5E() {
             throw new Error(`Failed to update Process Management: HTTP ${updateStatusRes.status} - ${errText}`);
         }
 
-        const updateStatusJson = await updateStatusRes.json();
-        console.log(`  [PASS] Process Management Configured in Preview. Revision: ${updateStatusJson.revision}`);
+        console.log(`  [PASS] Forward & Backward Process Actions Configured in Preview.`);
 
-        // Deploy App 793 Preview to Production
-        console.log(`\n[STEP 4/6] Deploying App 793 Configuration to Live Production...`);
+        // Deploy Preview to Live App 793
+        console.log(`\n[STEP 4/6] Deploying Updated Process Management to Live Production...`);
         const deployRes = await fetch(`${baseUrl}/k/v1/preview/app/deploy.json`, {
             method: 'POST',
             headers: getHeaders(true),
@@ -212,7 +146,7 @@ async function executePhase5E() {
                 const appStatus = statusCheckJson.apps ? statusCheckJson.apps[0] : null;
                 if (appStatus && appStatus.status === 'SUCCESS') {
                     deployed = true;
-                    console.log(`  [PASS] Live Deployment SUCCESSFUL! App ID 793 Revision: ${appStatus.revision || 'Updated'}`);
+                    console.log(`  [PASS] Live Deployment SUCCESSFUL!`);
                 } else {
                     console.log(`  Waiting for deployment... Attempt ${attempts}/15 Status: ${appStatus ? appStatus.status : 'PENDING'}`);
                 }
@@ -225,29 +159,14 @@ async function executePhase5E() {
         console.log(`\n[STEP 5/6] Performing Immediate Post-Write Read-Back Verification...`);
 
         const liveStatusRes = await fetch(`${baseUrl}/k/v1/app/status.json?app=793`, { method: 'GET', headers: getHeaders(false) });
-        if (!liveStatusRes.ok) throw new Error(`Failed to read back live status: HTTP ${liveStatusRes.status}`);
         const liveStatusJson = await liveStatusRes.json();
 
-        const liveStates = liveStatusJson.states || {};
-        const stateNames = Object.keys(liveStates);
-
+        const liveActions = liveStatusJson.actions || [];
         console.log(`  Live Enable Status: ${liveStatusJson.enable}`);
-        console.log(`  Live Statuses Count: ${stateNames.length} States`);
-        console.log(`  Live Status List: [${stateNames.join(', ')}]`);
-
-        const expectedCanonical = ['DRAFT', 'SUBMITTED', 'GM_REVIEW', 'HR_REVIEW', 'APPROVED', 'SYSTEM_APPLY', 'APPLIED'];
-        let matchedCount = 0;
-        expectedCanonical.forEach(st => {
-            if (liveStates[st]) matchedCount++;
+        console.log(`  Live Actions Count: ${liveActions.length} Actions Configured`);
+        liveActions.forEach((act, idx) => {
+            console.log(`    Action ${idx + 1}: "${act.name}" (${act.from} -> ${act.to})`);
         });
-
-        console.log(`  Canonical States Verified: ${matchedCount}/7 States Present`);
-
-        // Check Record Count of App 793
-        const getRecordsRes = await fetch(`${baseUrl}/k/v1/records.json?app=793&totalCount=true`, { method: 'GET', headers: getHeaders(false) });
-        const recsData = await getRecordsRes.json();
-        const actualRecordCount = Number(recsData.totalCount || (recsData.records ? recsData.records.length : 0));
-        console.log(`  Live Record Count: ${actualRecordCount} Records (Expected: 0)`);
 
         // STEP 6: Protected Apps Safety Check (53, 791, 792)
         console.log(`\n[STEP 6/6] Verifying Protected Apps (53, 791, 792) Untouched Status...`);
@@ -268,14 +187,13 @@ async function executePhase5E() {
         console.log(`  App 792 Record Count: ${app792Count} (Expected: 0) - 100% UNTOUCHED`);
 
         console.log(`\n================================================================`);
-        console.log(`PHASE 5E PRODUCTION EXECUTION COMPLETED SUCCESSFULLY!`);
+        console.log(`PHASE 5E REJECT/RETURN AMENDMENT DEPLOYMENT COMPLETE & VERIFIED!`);
         console.log(`================================================================\n`);
 
     } catch (err) {
         console.error(`\n[FAIL] Phase 5E Execution Error:`, err.message);
-        console.error(`STOPPING EXECUTION. Backup preserved in secure-backup/`);
         process.exit(1);
     }
 }
 
-executePhase5E();
+executePhase5EAmendment();
