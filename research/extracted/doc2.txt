@@ -1,0 +1,1127 @@
+Professional Organization Charts in Kintone: JavaScript Rendering Architecture and Implementation Research
+
+Executive summary
+
+For a Kintone-based HR organization explorer with rich employee cards, variable-size departments, collapsed staff groups, search, zoom/pan, PDF/Excel export, and strict hierarchy integrity, the strongest architecture is not a monolithic charting library. The most controllable design is a hybrid:
+
+Kintone records → canonical normalized model → runtime integrity validation → bottom-up layout engine → HTML/CSS node layer + SVG connector layer → one shared pan/zoom transform.
+
+This architecture fits Kintone particularly well because Kintone exposes supported JavaScript event hooks and UI insertion points, while record data can be retrieved through its REST API. A full-screen chart can live in a Custom View, while toolbar controls can use supported Kintone UI spaces rather than modifying Kintone's internal DOM. Kintone's official examples use app.record.index.show for record-list customizations and kintone.app.getHeaderMenuSpaceElement() for controls. [1]
+
+For your current OrgFlow implementation, I would not replace the Phase 3.8.4F layout with D3, GoJS, React Flow, or another renderer wholesale. You have already stabilized the difficult part: a variable-size 57-node organization structure with three visible top-level branches and collision-free packing. Replacing that renderer now would create unnecessary regression risk. The best next step is to preserve the existing HTML geometry and implement Phase 3.8.5 as an SVG connector layer, optionally using small D3 modules such as d3-selection and d3-zoom, rather than adopting full D3 rendering. D3 explicitly supports HTML, SVG and Canvas, its modules can be consumed independently, and its zoom behavior is rendering-technology agnostic. [2]
+
+For a greenfield Kintone org chart, d3-org-chart is probably the fastest open-source route to a polished result: it is MIT-licensed, D3-based and designed specifically for organization charts, with custom content, expand/collapse, fit, centering, search, zoom and export capabilities. [3] For an enterprise product where commercial licensing is acceptable, GoJS offers much more built-in diagram infrastructure, including tree layout, link routing and image/SVG export; GoJS is commercial rather than open source. [4]
+
+For complex DAG-like reporting structures rather than a strict organization tree, ELK Layered or a Sugiyama-family layout is stronger than ordinary tree layout. Sugiyama, Tagawa and Toda's 1981 framework was specifically developed for automatic visual representations of hierarchical system structures, while ELK today provides layered, tree, radial, force, rectangle-packing and other layout engines. [5]
+
+The most important architectural rule is that organization structure and personnel reporting structure must remain two separate graph domains:
+
+Organization structural edgeCanonical Parent Code    ↓Company → Division → Department → SectionPersonnel reporting edgeVerified Reports-To    ↓Position/Employee → Position/Employee
+
+A department ParentCode must never be interpreted as an employee ReportsTo, and a visually senior title must never create a reporting edge automatically.
+
+The implementation priorities I recommend are:
+
+Tier
+
+Approach
+
+Best use
+
+Engineering estimate
+
+Main risk
+
+Quick integration
+
+d3-org-chart or dabeng OrgChart
+
+New, conventional org chart with modest customization
+
+Prototype: 3–7 days; hardened: 1–2 weeks
+
+Library's layout assumptions may fight specialized branch packing
+
+Balanced — recommended for OrgFlow
+
+HTML/CSS cards + SVG connectors + custom intrinsic layout + selected D3 modules
+
+Variable content, Kintone vanilla JS, strict hierarchy invariants
+
+Core: 1–2 weeks; hardened: 2–4 weeks
+
+More custom layout code to maintain
+
+Enterprise-grade
+
+GoJS, or HTML/SVG + ELK.js
+
+Complex routing, editing, DAG reporting, long-term diagram platform
+
+4–8+ weeks
+
+Migration cost; GoJS licensing or ELK integration complexity
+
+These time ranges are engineering estimates rather than vendor estimates.
+
+A second current recommendation concerns deployment tooling: do not build a new workflow around @kintone/customize-uploader now. Kintone announced that Customize Uploader reaches end of support in August 2026 and directs developers to migrate to cli-kintone; cli-kintone customize apply now applies JavaScript/CSS customization from a manifest. [6]
+
+Kintone integration, data model, and integrity
+
+A robust organization chart should treat Kintone as the system-of-record and application shell, not as the diagram layout engine. The viewer should read records, normalize them into a renderer-neutral graph, validate that graph, and only then render it.
+
+Kintone's Get Records API returns at most 500 records per request, and the conventional offset method is limited to an offset of 10,000. Kintone documents seek, cursor and offset strategies for larger retrievals. [7] For your current scale of 57 organization nodes and 275 employees, record volume is modest, but implementing a GET-only seek reader still gives the chart a safe path to larger datasets without relying on the Cursor API.
+
+Recommended Kintone integration points
+
+Concern
+
+Recommended integration
+
+Full chart canvas
+
+Kintone Custom View containing an owned root such as #orgflow-root
+
+Toolbar
+
+Custom View toolbar or kintone.app.getHeaderMenuSpaceElement()
+
+Initialization
+
+app.record.index.show when using a record-list/Custom View
+
+Data
+
+GET Records API, preferably normalized through one data-access layer
+
+Employee photos/files
+
+Existing Kintone attachment fileKey + Download File GET
+
+Generated Excel/PDF
+
+Browser-side download; do not upload back to Kintone in zero-write mode
+
+JavaScript/CSS deployment
+
+cli-kintone customize apply with versioned build artifacts
+
+Local development
+
+HTTPS-hosted local customization files are supported in Kintone's development workflow
+
+Production
+
+Immutable/versioned bundle + runtime BUILD_ID and dataset diagnostics
+
+Kintone's official customization material demonstrates the record-list event and header-space pattern; its official development setup also documents HTTPS-hosted local JavaScript/CSS during customization development. [8]
+
+Kintone's file APIs distinguish file upload from download. Uploading a file is a write operation that returns a fileKey for subsequent attachment to a record, while downloading an existing file uses its fileKey. For your strict zero-write explorer, existing photos may therefore be downloaded, but generated PNG/PDF files should remain browser downloads rather than being uploaded to Kintone. [9]
+
+Rendering pipeline
+
+The important property of this pipeline is that screen layout is downstream from the canonical model. Compact/Normal/Comfortable modes, zoom, pan, staff expansion, branch packing and responsive reflow are not permitted to mutate parentCode, canonical identity or reporting relationships.
+
+Canonical data model
+
+For your use case, I recommend at least four explicit model types rather than one overloaded node structure.
+
+For employee identity, use a canonical internal key such as an immutable HR identity or Kintone record identity. Keep employee number as a string, not a number. This matches the requirements already discovered in your OrgFlow data: a value such as 0043 must retain its leading zero, while duplicate business numbers such as 9000 cannot safely serve as a primary key.
+
+A normalized representation can look like this:
+
+function field(record, code, fallback = "") {  return record?.[code]?.value ?? fallback;}function normalizeOrganization(orgRecords) {  const nodes = orgRecords.map((r) => ({    id: String(field(r, "CanonicalCode")),    canonicalCode: String(field(r, "CanonicalCode")),    parentId: field(r, "ParentCode") || null,    parentCode: field(r, "ParentCode") || null,    name: String(field(r, "OrganizationName")),    entityType: String(field(r, "EntityType")),    level: Number(field(r, "HierarchyLevel", 0)),    hierarchyPath: String(field(r, "HierarchyPath")),    sortOrder: Number(field(r, "SortOrder", 0)),  }));  const orgEdges = nodes    .filter((n) => n.parentId)    .map((n) => ({      id: `org:${n.parentId}->${n.id}`,      source: n.parentId,      target: n.id,      type: "organization",    }));  return { nodes, orgEdges };}function normalizeEmployees(records) {  return records.map((r) => ({    // Prefer a dedicated immutable identity field when available.    employeeKey: String(field(r, "EmployeeUID", field(r, "$id"))),    employeeNumber: String(field(r, "EmployeeNumber")),    name: String(field(r, "EmployeeName")),    orgCode: String(field(r, "CanonicalOrgCode")),    positionId: String(field(r, "PositionId")),  }));}function normalizePositions(records) {  const positions = records.map((r) => ({    id: String(field(r, "PositionId")),    orgCode: String(field(r, "CanonicalOrgCode")),    title: String(field(r, "PositionTitle")),    occupantKey: String(field(r, "EmployeeUID")),    reportsToPositionId: String(field(r, "ReportsToPositionId")),  }));  // Only explicit/verified Reports-To values create reporting edges.  const reportingEdges = positions    .filter((p) => p.reportsToPositionId)    .map((p) => ({      id: `report:${p.reportsToPositionId}->${p.id}`,      source: p.reportsToPositionId,      target: p.id,      type: "reporting",    }));  return { positions, reportingEdges };}
+
+Read-only Kintone retrieval
+
+The following pattern uses GET requests only and follows the seek-pagination idea documented by Kintone. GET Records can return up to 500 records at a time. [10]
+
+async function getAllRecordsReadOnly(appId, fields = []) {  const records = [];  let lastId = 0;  while (true) {    const params = {      app: appId,      query: `$id > ${lastId} order by $id asc limit 500`,    };    // Omitting "fields" makes $id reliably available for seek pagination.    if (fields.length > 0) {      params.fields = Array.from(new Set(["$id", ...fields]));    }    const response = await kintone.api(      kintone.api.url("/k/v1/records.json", true),      "GET",      params    );    if (!response.records.length) break;    records.push(...response.records);    const tail = response.records[response.records.length - 1];    lastId = Number(tail.$id.value);    if (response.records.length < 500) break;  }  return records;}
+
+For a strict interpretation of your zero production writes rule, this is preferable to creating cursors, because the chart viewer can remain entirely GET-driven rather than invoking a POST merely to establish a read cursor.
+
+Runtime topology validation and structural hashing
+
+Hash only structural fields. UI state such as x, y, width, height, zoom, expansion, highlight, current search and viewport dimensions should not participate in the canonical tree hash.
+
+async function sha256Hex(text) {  const bytes = new TextEncoder().encode(text);  const digest = await crypto.subtle.digest("SHA-256", bytes);  return [...new Uint8Array(digest)]    .map((b) => b.toString(16).padStart(2, "0"))    .join("");}async function structuralTreeHash(nodes) {  const canonical = nodes    .map((n) => ({      canonicalCode: n.canonicalCode,      parentCode: n.parentCode ?? "",      level: n.level,      hierarchyPath: n.hierarchyPath,    }))    .sort((a, b) =>      a.canonicalCode.localeCompare(b.canonicalCode)    );  return sha256Hex(JSON.stringify(canonical));}function validateTopology(nodes) {  const byId = new Map(nodes.map((n) => [n.id, n]));  const roots = nodes.filter((n) => !n.parentId);  const orphans = nodes.filter(    (n) => n.parentId && !byId.has(n.parentId)  );  const edgeCount = nodes.filter((n) => n.parentId).length;  // Cycle detection for canonical organization relationships.  const WHITE = 0;  const GREY = 1;  const BLACK = 2;  const states = new Map(nodes.map((n) => [n.id, WHITE]));  const cycles = [];  function visit(id, stack = []) {    const state = states.get(id);    if (state === GREY) {      cycles.push([...stack, id]);      return;    }    if (state === BLACK) return;    states.set(id, GREY);    const children = nodes.filter((n) => n.parentId === id);    for (const child of children) {      visit(child.id, [...stack, id]);    }    states.set(id, BLACK);  }  for (const root of roots) visit(root.id);  return {    nodeCount: nodes.length,    edgeCount,    rootCount: roots.length,    orphanCount: orphans.length,    orphanIds: orphans.map((n) => n.id),    cycleCount: cycles.length,    cycles,  };}
+
+For the OrgFlow baseline discussed in this project, the expected organization topology remains:
+
+CANONICAL_NODE_COUNT = 57ORG_EDGE_COUNT        = 56ROOT_COUNT            = 1ORPHAN_COUNT          = 0EMPLOYEE_COUNT        = 275
+
+Reporting edges should be counted separately. They must not be included in the canonical 56 structural organization edges.
+
+Rendering architecture and layout algorithms
+
+D3 itself deliberately works with web standards and can render through HTML, SVG or Canvas. Cytoscape.js, by contrast, primarily uses Canvas for rendering; vis-network also renders its network in HTML Canvas. [11] This difference matters significantly for an HR org chart because your nodes are not simple circles: they contain names, employee IDs, job titles, action buttons, staff counts, expansion controls, search highlighting and potentially accessible interactive content.
+
+My architecture recommendation is therefore an inference from those rendering models: rich employee/organization cards are easiest to maintain as normal HTML, while links are easiest to render as SVG paths behind those cards.
+
+Architecture
+
+Strengths
+
+Weaknesses
+
+Fit for OrgFlow
+
+HTML nodes + SVG links
+
+Full CSS/card freedom; DOM measurement; accessibility; crisp connectors; straightforward z-order
+
+Requires custom link/layout coordination
+
+Excellent — recommended
+
+Pure SVG
+
+Excellent links, vector export, one coordinate system
+
+Rich card widgets are more cumbersome
+
+Good
+
+Canvas
+
+High rendering throughput; smooth network interaction
+
+Nodes are pixels rather than individual DOM cards; DOM geometry/accessibility require additional architecture
+
+Medium
+
+React component graph
+
+Excellent custom nodes and interactions
+
+Introduces React runtime/build architecture
+
+Good only if React is already strategic
+
+Diagram framework
+
+Layout/routing/export built in
+
+Heavier abstraction or commercial licensing
+
+Good enterprise option
+
+Layout algorithm choice
+
+D3's tree layout implements the Reingold–Tilford tidy-tree approach and notes the linear-time improvement by Buchheim and collaborators. The original Reingold–Tilford work targeted aesthetically compact tree drawings; Buchheim, Jünger and Leipert later published a linear-time improvement to Walker's general-tree algorithm. [12]
+
+Sugiyama's layered framework addresses more general hierarchical directed structures; this becomes useful when reporting relationships form a DAG rather than a pure tree. [13] ELK provides production-oriented layered, tree, force, radial and rectangle-packing algorithms, among others. [14]
+
+Algorithm
+
+Appropriate use
+
+Org-chart assessment
+
+Tidy tree / Reingold–Tilford
+
+Strict parent→child tree
+
+Strong baseline, especially for simple nodes
+
+Variable-size tidy tree
+
+Strict tree with different card sizes
+
+Very strong; d3-flextree or custom intrinsic sizing
+
+Sugiyama / layered DAG
+
+Reporting lines with cross-links or DAG structure
+
+Excellent for complex reporting graphs
+
+ELK Layered
+
+Compounds, ports, routing constraints, advanced DAGs
+
+Enterprise-grade layout choice
+
+Radial
+
+Exploration where depth matters more than card reading
+
+Poor primary layout for HR cards
+
+Force-directed
+
+Relationship exploration with no strict row semantics
+
+Poor default for canonical org hierarchy
+
+Masonry-like packing
+
+Packing sibling subtrees with different heights
+
+Useful as an internal visual packing rule, not as hierarchy
+
+Bottom-up intrinsic sizing
+
+Rich variable-size organizational subtrees
+
+Best match for your current layout
+
+D3 supports both Cartesian and polar hierarchical forms and provides a separate force-layout module, while ELK exposes radial, force and layered alternatives. [15]
+
+Why bottom-up intrinsic sizing fits your chart
+
+The hard problem in your organization is not the number of nodes. It is that one department may contain one short section while another contains many management cards, collapsed employee groups and deeper subunits.
+
+A percentage allocation such as:
+
+DIV-ME = 44%DIV-G0 = 36%Corporate = 20%
+
+is fundamentally less robust than:
+
+Measure leaf cards      ↓Measure sections      ↓Pack section siblings      ↓Measure departments      ↓Pack department siblings      ↓Measure divisions      ↓Pack top-level divisions      ↓Natural tree width/height      ↓One global transform
+
+The second design guarantees that a parent's size is derived from the content it must contain. It also explains why your later Phase 3.8.4E/F layouts became much more stable after moving away from percentage squeezing.
+
+Connector strategy
+
+For a classic organization chart, use orthogonal connectors rather than diagonal paths:
+
+             Parent               │               │        ───────┼────────        │      │       │      Child  Child   Child
+
+For parent P and child C, define:
+
+P = parent bottom-center anchorC = child top-center anchorM = Y coordinate in the gap between parent and child rowM P.x P.yV MH C.xV C.y
+
+This produces the SVG path:
+
+`M ${px} ${py} V ${midY} H ${cx} V ${cy}`
+
+A more polished implementation groups children under a common parent into one horizontal sibling bus, so the shared segment is rendered once.
+
+For your application, connector semantics should remain explicitly separated:
+
+const connectorSets = {  organization: orgEdges,        // canonical Parent Code  reporting: reportingEdges,     // explicit verified Reports-To};
+
+This prevents a visual layout engine from inventing personnel reporting relationships.
+
+Responsive model
+
+D3's zoom behavior supports mouse/touch zoom and pan and can restrict both scale and translation; it is agnostic to HTML, SVG or Canvas. [16] That makes it useful even when D3 does not own the node renderer.
+
+The correct responsive model is:
+
+ResizeObserver      ↓Measure available viewport      ↓Repack variable-size sibling groups      ↓Recalculate natural dimensions      ↓Preserve user zoom/focus      ↓Redraw connectors
+
+not:
+
+Resize  ↓Scale entire chart smaller until everything fits
+
+Your distinction between Fit Readable and Fit Entire Org is therefore architecturally sound:
+
+Fit Readable    scale ∈ [0.70, 1.00]    height may overflow    pan/scroll allowedFit Entire Org    scale may fall below 0.70    overview only
+
+This is particularly important for desktop HR systems because fitting the full tree mathematically is not the same as making it usable.
+
+Library comparison and Kintone fit
+
+The “bundle size” values below are deliberately qualitative rather than fabricated KB numbers. Exact minified/gzipped output depends on version, modules imported, tree-shaking, extensions, React runtime and your bundler configuration. D3 is explicitly modular, for example, so importing only hierarchy/selection/zoom has a materially different footprint from shipping the complete bundle. [17] Validate final size using the actual production Vite/Rollup/Webpack build.
+
+Library
+
+License
+
+Bundle size
+
+Layout types supported
+
+Connector style
+
+Ease of Kintone integration
+
+Export support
+
+Recommended when
+
+D3.js
+
+ISC
+
+Small–Medium when modular
+
+Tree, cluster; force and many specialized modules
+
+Fully custom SVG paths
+
+Excellent in vanilla JS
+
+SVG/Canvas/browser pipeline; Excel external
+
+Maximum control; custom HTML+SVG architecture. [18]
+
+d3-org-chart
+
+MIT project
+
+Medium
+
+Org-specific flexible tree
+
+Built-in customizable links
+
+Excellent
+
+Image/export features; PDF pipeline external as needed
+
+Fastest greenfield professional org chart. [3]
+
+dagre-d3
+
+MIT
+
+Medium
+
+Layered directed graph
+
+SVG edges produced from Dagre routing
+
+Good
+
+SVG-derived export; Excel external
+
+DAG/layered charts where rich nested branch containers are not central. [19]
+
+Cytoscape.js
+
+MIT
+
+Medium–Large
+
+Breadth-first, force/CoSE; extension ecosystem incl. ELK
+
+Canvas graph edges
+
+Good
+
+PNG/JPG/SVG; PDF extension available; Excel external
+
+Large/general relationship graph more than HTML-card org chart. [20]
+
+GoJS
+
+Commercial proprietary
+
+Medium–Large
+
+Tree and broad diagram layouts
+
+Strong native link/routing model
+
+Very good
+
+SVG, PNG/JPEG; PDF via export pipeline
+
+Enterprise diagram product, commercial license acceptable. [4]
+
+mxGraph / diagrams.net
+
+Apache-2.0 codebase
+
+Large
+
+Hierarchical and diagram-oriented layouts
+
+Strong legacy diagram routing
+
+Technically good, strategically poor
+
+Strong diagram ecosystem
+
+Existing mxGraph deployment only; official repo advises against new projects. [21]
+
+OrgChart / dabeng
+
+MIT
+
+Small–Medium
+
+Tree; four directions; hybrid/large-chart modes
+
+Built-in tree connectors
+
+Very easy
+
+Picture export; PDF examples use browser helpers
+
+Straightforward conventional org tree with less bespoke geometry. [22]
+
+React Flow
+
+MIT
+
+Medium–Large + React
+
+External Dagre/D3/ELK positioning commonly used
+
+SVG straight, step, smooth-step, Bézier/custom
+
+Medium in vanilla Kintone; excellent in React
+
+Image via html-to-image pattern; PDF external
+
+App is already React or becomes node-editor-like. [23]
+
+vis-network
+
+MIT or Apache-2.0
+
+Medium–Large
+
+Hierarchical + physics/general network
+
+Canvas edges
+
+Easy
+
+Canvas snapshot/custom export; Excel external
+
+Generic interactive network, not rich HTML HR cards. [24]
+
+Native HTML + SVG helpers
+
+Browser APIs; depends on helpers
+
+Smallest
+
+Your own intrinsic/tree algorithm
+
+Exact orthogonal/bus paths
+
+Excellent
+
+SVG/browser print + deterministic data exports
+
+Existing OrgFlow Phase 3.8.4F: best choice
+
+D3.js
+
+D3 is the strongest low-level choice for this project because it does not force you to surrender ownership of the DOM. D3 is intentionally low-level, web-standard based and capable of working with HTML, SVG and Canvas. Its hierarchy module turns tabular parent IDs into hierarchy structures through stratify, and d3-zoom can handle the world transform independently of the renderer. [25]
+
+Pros for Kintone: framework-free, works directly inside Kintone customization, modular, ideal for a custom SVG connector overlay, easy to coexist with your existing cards.
+
+Cons: D3 gives building blocks rather than a finished HR organization chart. Collision logic, variable-size subtree packing, export semantics and card interaction remain your responsibility.
+
+d3-org-chart
+
+The open-source bumbeishvili/org-chart project is specifically designed for org charts and is MIT licensed. Its documented feature set includes custom node content, expand/collapse, fit, centering/highlighting, zoom, export, search, multiple roots, horizontal views, paging and data-driven size. [3]
+
+For a new project this would be my quick-integration winner. For your existing chart, however, replacing the approved layout would be unnecessary. One additional enterprise consideration is to review transitive dependency licenses during your legal/software-composition scan rather than assuming the top-level MIT license is the only license involved.
+
+Example shape:
+
+async function renderWithD3OrgChart(model, mount) {  const data = model.nodes.map((n) => ({    id: n.id,    parentId: n.parentId,    name: n.name,    entityType: n.entityType,  }));  const chart = new d3.OrgChart()    .container(mount)    .data(data)    .nodeWidth(() => 220)    .nodeHeight(() => 110)    .render();  return {    type: "dom",    connectorMode: "native",    instance: chart,  };}
+
+dagre-d3
+
+Dagre-D3 is an MIT-licensed D3 renderer for directed graph layouts and is natural for layered graph structures. [19] It is a stronger fit for flat graph nodes plus edges than for the highly nested visual containers you now have in DIV-ME/DIV-G0.
+
+async function renderWithDagreD3(model, svgElement) {  const graph = new dagreD3.graphlib.Graph()    .setGraph({ rankdir: "TB", nodesep: 28, ranksep: 60 })    .setDefaultEdgeLabel(() => ({}));  for (const node of model.nodes) {    graph.setNode(node.id, {      label: node.name,      width: 220,      height: 90,    });  }  for (const edge of model.orgEdges) {    graph.setEdge(edge.source, edge.target);  }  const inner = d3.select(svgElement).append("g");  new dagreD3.render()(inner, graph);  return {    type: "svg",    connectorMode: "native",    instance: graph,  };}
+
+Cytoscape.js
+
+Cytoscape.js is MIT-licensed, dependency-free at its core, Canvas-rendered, and supports PNG/JPG/SVG output; its extension ecosystem includes ELK integration. [26] This is excellent for relationship/network views, but it is less natural when every employee node should remain a conventional HTML card with buttons, tooltips and complex responsive content.
+
+async function renderWithCytoscape(model, mount) {  const elements = [    ...model.nodes.map((n) => ({      data: { id: n.id, label: n.name },    })),    ...model.orgEdges.map((e) => ({      data: {        id: e.id,        source: e.source,        target: e.target,      },    })),  ];  const cy = cytoscape({    container: mount,    elements,    layout: {      name: "breadthfirst",      directed: true,      spacingFactor: 1.2,    },  });  return {    type: "canvas",    connectorMode: "native",    instance: cy,  };}
+
+For Canvas renderers, getBoundingClientRect() measures the chart canvas, not individual Cytoscape nodes. Node collision validation therefore needs Cytoscape's internal node bounding boxes rather than DOM rectangles. That is one reason the HTML/SVG architecture is simpler for your existing UAT metric strategy.
+
+GoJS
+
+GoJS is a commercial diagramming framework rather than an open-source library; deployed applications require an appropriate license key. [27] Its TreeLayout provides spacing, compaction, breadth limits, child-row wrapping, sorting and link routing controls. [28] That makes it much closer to a complete diagram platform than D3.
+
+async function renderWithGoJS(model, mountId) {  const diagram = new go.Diagram(mountId, {    layout: new go.TreeLayout({      angle: 90,      layerSpacing: 60,      nodeSpacing: 24,    }),  });  diagram.model = new go.GraphLinksModel(    model.nodes.map((n) => ({      key: n.id,      name: n.name,    })),    model.orgEdges.map((e) => ({      from: e.source,      to: e.target,    }))  );  return {    type: "diagram",    connectorMode: "native",    instance: diagram,  };}
+
+GoJS also documents SVG and raster export APIs, including Diagram.makeSvg() and image creation. [29]
+
+mxGraph / diagrams.net
+
+mxGraph uses SVG and HTML and was a highly capable browser diagramming library, but its own repository now explicitly states that it is not advised for new projects because future browser changes may break the aging codebase. [30] The JavaScript code is Apache-2.0 licensed. [31]
+
+async function renderWithMxGraph(model, mount) {  const graph = new mxGraph(mount);  const parent = graph.getDefaultParent();  const vertices = new Map();  graph.getModel().beginUpdate();  try {    for (const n of model.nodes) {      vertices.set(        n.id,        graph.insertVertex(          parent,          n.id,          n.name,          0,          0,          220,          90        )      );    }    for (const edge of model.orgEdges) {      graph.insertEdge(        parent,        edge.id,        "",        vertices.get(edge.source),        vertices.get(edge.target)      );    }    const layout = new mxHierarchicalLayout(      graph,      mxConstants.DIRECTION_NORTH    );    layout.execute(parent);  } finally {    graph.getModel().endUpdate();  }  return {    type: "diagram",    connectorMode: "native",    instance: graph,  };}
+
+For a new Kintone implementation I would choose a modern alternative rather than mxGraph.
+
+OrgChart.js / dabeng OrgChart
+
+Dabeng's OrgChart is MIT licensed and supports JSON data, expand/collapse, four orientations, pan/zoom, node customization and multiple/hybrid approaches for larger organization charts. [32] Its export example uses client-side browser helpers including html2canvas and jsPDF. [33]
+
+async function renderWithDabeng(model) {  const nested = toNestedTree(model.nodes);  const chart = new OrgChart({    chartContainer: "#orgflow-chart",    data: nested,    pan: true,    zoom: true,    nodeId: "id",    nodeTitle: "name",  });  return {    type: "dom",    connectorMode: "native",    instance: chart,  };}
+
+It is attractive for a simple conventional org chart. Your current complex layout, however, already exceeds the typical “one card per hierarchy node” pattern.
+
+React Flow
+
+React Flow is MIT licensed and designed for node-based interfaces in React. [34] Its edges are SVG-based, and its official API provides straight, Bézier, simple-Bézier and smooth-step path generation plus fully custom SVG edges. [35]
+
+function OrgFlowGraph({ model }) {  const nodes = model.nodes.map((n) => ({    id: n.id,    position: layoutPositions.get(n.id),    data: n,    type: "orgCard",  }));  const edges = model.orgEdges.map((e) => ({    id: e.id,    source: e.source,    target: e.target,    type: "smoothstep",  }));  return (    <ReactFlow      nodes={nodes}      edges={edges}      nodeTypes={nodeTypes}      fitView={false}    />  );}
+
+It is a good choice if OrgFlow becomes a React application or an interactive node editor. For vanilla Kintone, React itself becomes an additional architectural dependency without solving a problem your current renderer cannot already solve.
+
+vis-network
+
+Vis Network uses Canvas, supports hierarchical layout and offers settings such as level separation, node spacing, tree spacing and directed ordering. [24] It is dual-licensed under MIT and Apache 2.0. [36]
+
+async function renderWithVis(model, mount) {  const nodes = new vis.DataSet(    model.nodes.map((n) => ({      id: n.id,      label: n.name,      level: n.level,    }))  );  const edges = new vis.DataSet(    model.orgEdges.map((e) => ({      from: e.source,      to: e.target,    }))  );  const network = new vis.Network(    mount,    { nodes, edges },    {      layout: {        hierarchical: {          enabled: true,          direction: "UD",          sortMethod: "directed",        },      },      physics: false,    }  );  return {    type: "canvas",    connectorMode: "native",    instance: network,  };}
+
+Vis-network's own repository positions it as a general network visualization capable of handling up to a few thousand nodes/edges with clustering for larger cases. [36] That scale is unnecessary for the current 57-node corporate tree, while Canvas gives up much of the HTML-card advantage.
+
+Common Kintone boot wrapper
+
+Each renderer should receive exactly the same normalized model:
+
+async function bootRenderer(renderer) {  const beforeModel = await loadCanonicalModel();  const topology = validateTopology(beforeModel.nodes);  if (    topology.orphanCount !== 0 ||    topology.cycleCount !== 0  ) {    throw new Error(      `Canonical topology invalid: ${JSON.stringify(topology)}`    );  }  const beforeHash = await structuralTreeHash(beforeModel.nodes);  const rendererApi = await renderer(beforeModel);  await afterTwoFrames();  // Do not regenerate structure from DOM.  const afterHash = await structuralTreeHash(beforeModel.nodes);  if (afterHash !== beforeHash) {    throw new Error("CRITICAL_HIERARCHY_MUTATION");  }  const geometry = await validateRenderedGeometry(rendererApi);  return {    topology,    beforeHash,    afterHash,    geometry,  };}function afterTwoFrames() {  return new Promise((resolve) => {    requestAnimationFrame(() => {      requestAnimationFrame(resolve);    });  });}
+
+That common adapter is more important than the choice of visualization library: the library never becomes the canonical organization database.
+
+Reference implementation blueprint
+
+For your existing OrgFlow, this is the architecture I would implement now:
+
+#orgflow-viewport    │    └── #orgflow-world          transform: translate(...) scale(...)          transform-origin: 0 0          │          ├── svg#orgflow-connectors          │      ├── organization connector paths          │      └── verified reporting connector paths          │          └── div#orgflow-nodes                 ├── leadership                 ├── DIV-ME subtree                 ├── DIV-G0 subtree                 └── Corporate subtree
+
+Only #orgflow-world receives pan/zoom transformation. No division, department, card or connector layer gets an independent scale().
+
+Minimal SVG connector layer anchored to DOM nodes
+
+The following example explicitly uses getBoundingClientRect(), converts screen coordinates back to natural world coordinates, and keeps the SVG and HTML nodes under the same transform.
+
+<div id="orgflow-viewport">  <div id="orgflow-world">    <svg id="orgflow-connectors" aria-hidden="true"></svg>    <div id="orgflow-nodes"></div>  </div></div>
+
+#orgflow-viewport {  position: relative;  overflow: auto;  height: calc(100vh - 220px);}#orgflow-world {  position: relative;  transform-origin: 0 0;}#orgflow-connectors {  position: absolute;  inset: 0;  z-index: 0;  pointer-events: none;  overflow: visible;}#orgflow-nodes {  position: relative;  z-index: 1;}.orgflow-card {  position: absolute;}
+
+const SVG_NS = "http://www.w3.org/2000/svg";const viewState = {  scale: 0.85,  panX: 0,  panY: 0,};function applyWorldTransform() {  const world = document.querySelector("#orgflow-world");  world.style.transform =    `translate(${viewState.panX}px, ${viewState.panY}px) ` +    `scale(${viewState.scale})`;}function screenToWorld(screenX, screenY) {  const viewport =    document.querySelector("#orgflow-viewport");  const rect = viewport.getBoundingClientRect();  // Assumes transform-origin: 0 0 and the world has exactly  // one translate + scale transform.  return {    x:      (screenX - rect.left - viewState.panX) /      viewState.scale,    y:      (screenY - rect.top - viewState.panY) /      viewState.scale,  };}function getAnchors(element) {  const rect = element.getBoundingClientRect();  const top = screenToWorld(    rect.left + rect.width / 2,    rect.top  );  const bottom = screenToWorld(    rect.left + rect.width / 2,    rect.bottom  );  return { top, bottom };}function createPath(d, className) {  const path = document.createElementNS(SVG_NS, "path");  path.setAttribute("d", d);  path.setAttribute("fill", "none");  path.setAttribute("stroke", "currentColor");  path.setAttribute("stroke-width", "1.25");  path.setAttribute("vector-effect", "non-scaling-stroke");  path.classList.add(className);  return path;}function drawOrthogonalConnector(svg, parentEl, childEl, type) {  const parent = getAnchors(parentEl).bottom;  const child = getAnchors(childEl).top;  // Put the elbow/bus in the clear vertical gap.  const midY = parent.y + (child.y - parent.y) / 2;  const d = [    `M ${parent.x} ${parent.y}`,    `V ${midY}`,    `H ${child.x}`,    `V ${child.y}`,  ].join(" ");  svg.appendChild(    createPath(      d,      type === "reporting"        ? "orgflow-reporting-connector"        : "orgflow-org-connector"    )  );}function redrawConnectors(model) {  const svg =    document.querySelector("#orgflow-connectors");  svg.replaceChildren();  for (const edge of model.orgEdges) {    const parent = document.querySelector(      `[data-org-node-id="${CSS.escape(edge.source)}"]`    );    const child = document.querySelector(      `[data-org-node-id="${CSS.escape(edge.target)}"]`    );    if (!parent || !child) continue;    if (      parent.hidden ||      child.hidden ||      !parent.getClientRects().length ||      !child.getClientRects().length    ) {      continue;    }    drawOrthogonalConnector(      svg,      parent,      child,      "organization"    );  }  for (const edge of model.reportingEdges) {    const manager = document.querySelector(      `[data-position-id="${CSS.escape(edge.source)}"]`    );    const report = document.querySelector(      `[data-position-id="${CSS.escape(edge.target)}"]`    );    if (!manager || !report) continue;    drawOrthogonalConnector(      svg,      manager,      report,      "reporting"    );  }}
+
+An SVG overlay is especially natural here because React Flow's official implementation also represents custom edges as SVG paths, including step-style paths. [35] Your implementation simply keeps the HTML node renderer you already own.
+
+For a shared sibling bus, group edges by parent:
+
+function groupEdgesByParent(edges) {  return Map.groupBy(edges, (edge) => edge.source);}
+
+Then draw:
+
+parent bottom     │     │─────┼──────────────── sibling bus│    │            │A    B            C
+
+rather than independently drawing three overlapping parent stems.
+
+Bottom-up intrinsic subtree measurement pseudocode
+
+measureSubtree(node):    measure node's own header / visible cards    if no structural children:        requiredWidth  = ownMinimumWidth        requiredHeight = ownContentHeight        return metrics    childMetrics =        for each structural child:            measureSubtree(child)    candidateArrangements =        pack children with 1 column        pack children with 2 columns        ...        pack children with max allowed columns    reject candidate if:        any child becomes narrower than minimum readable width        any child overlaps another child    score candidate using:        total height        unused horizontal area        row imbalance        number of isolated items in last row        readability penalty    best = candidate with lowest cost    node.requiredWidth =        max(            ownMinimumWidth,            best.requiredWidth + horizontalPadding * 2        )    node.requiredHeight =        ownHeaderHeight        + verticalGap        + best.requiredHeight        + verticalPadding * 2    store child x/y offsets from best arrangement    return node metrics
+
+A vanilla-JavaScript version:
+
+const LAYOUT = Object.freeze({  gapX: 16,  gapY: 16,  paddingX: 16,  paddingY: 16,  maxColumns: 4,});function chunk(array, size) {  const result = [];  for (let i = 0; i < array.length; i += size) {    result.push(array.slice(i, i + size));  }  return result;}function evaluatePacking(children, columns) {  const rows = chunk(children, columns);  let totalHeight = 0;  let maxRowWidth = 0;  let unusedSlots = 0;  const positioned = [];  rows.forEach((row, rowIndex) => {    const rowWidth =      row.reduce((sum, child) => sum + child.width, 0) +      Math.max(0, row.length - 1) * LAYOUT.gapX;    const rowHeight = Math.max(      ...row.map((child) => child.height)    );    maxRowWidth = Math.max(maxRowWidth, rowWidth);    if (rowIndex > 0) {      totalHeight += LAYOUT.gapY;    }    let x = 0;    for (const child of row) {      positioned.push({        child,        x,        y: totalHeight,      });      x += child.width + LAYOUT.gapX;    }    totalHeight += rowHeight;    unusedSlots += columns - row.length;  });  // Penalize tall layouts and awkward sparse final rows.  const score =    totalHeight +    maxRowWidth * 0.08 +    unusedSlots * 40;  return {    columns,    width: maxRowWidth,    height: totalHeight,    positioned,    score,  };}function measureSubtree(node) {  const childLayouts =    node.children.map(measureSubtree);  if (!childLayouts.length) {    node.layout = {      node,      width: node.intrinsicWidth,      height: node.intrinsicHeight,      children: [],      columns: 0,    };    return node.layout;  }  const maxColumns = Math.min(    LAYOUT.maxColumns,    childLayouts.length  );  const candidates = [];  for (let columns = 1; columns <= maxColumns; columns++) {    candidates.push(      evaluatePacking(childLayouts, columns)    );  }  candidates.sort((a, b) => a.score - b.score);  const best = candidates[0];  const width = Math.max(    node.intrinsicWidth,    best.width + LAYOUT.paddingX * 2  );  const height =    node.intrinsicHeight +    LAYOUT.gapY +    best.height +    LAYOUT.paddingY * 2;  node.layout = {    node,    width,    height,    columns: best.columns,    children: best.positioned.map((entry) => ({      ...entry,      x: entry.x + LAYOUT.paddingX,      y:        entry.y +        node.intrinsicHeight +        LAYOUT.gapY +        LAYOUT.paddingY,    })),  };  return node.layout;}
+
+This is intentionally not a general Sugiyama implementation. It is a layout policy optimized for your variable-size corporate subtree containers.
+
+For a strict single-node-per-tree-node model, D3's built-in tree layout already provides compact Reingold–Tilford positioning. [37] For compound DAGs or advanced routing, ELK Layered is a better alternative to continuously extending a home-grown algorithm. ELK's current reference includes many options covering spacing, edge routing, crossing minimization, hierarchy handling and related constraints. [38]
+
+Fit Readable algorithm
+
+The most important constraint is that Fit Readable should never use chart height to force a scale below readability. Height may overflow and the viewport can scroll vertically.
+
+const MIN_READABLE_SCALE = 0.70;const MAX_READABLE_SCALE = 1.00;const TARGET_WIDTH_USAGE = 0.90;function clamp(value, min, max) {  return Math.max(min, Math.min(max, value));}async function fitReadable() {  const viewport =    document.querySelector("#orgflow-viewport");  const world =    document.querySelector("#orgflow-world");  // worldNaturalWidth should be produced by the layout engine  // and explicitly assigned so offsetWidth represents the model.  const naturalWidth = world.offsetWidth;  if (!naturalWidth) {    throw new Error("Cannot Fit Readable: natural width is 0");  }  const targetWidth =    viewport.clientWidth * TARGET_WIDTH_USAGE;  const calculatedScale =    targetWidth / naturalWidth;  const scale = clamp(    calculatedScale,    MIN_READABLE_SCALE,    MAX_READABLE_SCALE  );  viewState.scale = scale;  // Horizontal center. Negative pan is fine when tree is  // wider than the viewport.  viewState.panX =    (viewport.clientWidth - naturalWidth * scale) / 2;  // Keep company leadership near the top rather than vertically  // centering an extremely tall tree.  viewState.panY = 24;  applyWorldTransform();  await afterTwoFrames();  const actualWidth =    world.getBoundingClientRect().width;  const actualScaleRatio =    actualWidth / naturalWidth;  const scaleError =    Math.abs(actualScaleRatio - scale);  if (scaleError > 0.02) {    throw new Error(      `Scale validation failed: commanded=${scale}, ` +      `actual=${actualScaleRatio}`    );  }  return {    naturalWidth,    viewportWidth: viewport.clientWidth,    commandedScale: scale,    actualScaleRatio,    actualWidth,    widthUsagePercent:      (actualWidth / viewport.clientWidth) * 100,  };}
+
+The corresponding overview operation can legitimately use height:
+
+async function fitEntireOrg() {  const viewport =    document.querySelector("#orgflow-viewport");  const world =    document.querySelector("#orgflow-world");  const w = world.offsetWidth;  const h = world.offsetHeight;  const sx = viewport.clientWidth / w;  const sy = viewport.clientHeight / h;  // Overview, not readable working mode.  viewState.scale = clamp(    Math.min(sx, sy) * 0.95,    0.40,    1.00  );  applyWorldTransform();}
+
+The fact that D3's zoom abstraction separates transform state from rendering technology makes it a good candidate for managing this final world transform without taking over the layout. [16]
+
+Collision detection
+
+Do not compare every nested container against every other nested element, because a child should naturally intersect its parent. Collision detection should compare visual peers such as siblings, top-level branches or cards within a packing group.
+
+function rectanglesOverlap(a, b, gap = 0) {  return !(    a.right + gap <= b.left ||    b.right + gap <= a.left ||    a.bottom + gap <= b.top ||    b.bottom + gap <= a.top  );}function detectSiblingCollisions(parentId, gap = 4) {  const elements = [    ...document.querySelectorAll(      `[data-layout-parent="${CSS.escape(parentId)}"]`    ),  ].filter(    (el) =>      !el.hidden &&      el.getClientRects().length > 0  );  const collisions = [];  for (let i = 0; i < elements.length; i++) {    for (let j = i + 1; j < elements.length; j++) {      const a = elements[i];      const b = elements[j];      const rectA = a.getBoundingClientRect();      const rectB = b.getBoundingClientRect();      if (rectanglesOverlap(rectA, rectB, gap)) {        collisions.push({          a:            a.dataset.orgNodeId ??            a.dataset.positionId ??            a.id,          b:            b.dataset.orgNodeId ??            b.dataset.positionId ??            b.id,          rectA,          rectB,        });      }    }  }  return collisions;}function detectAllSiblingCollisions() {  const parentIds = new Set(    [...document.querySelectorAll("[data-layout-parent]")]      .map((el) => el.dataset.layoutParent)      .filter(Boolean)  );  return [...parentIds].flatMap((parentId) =>    detectSiblingCollisions(parentId)  );}
+
+For the present chart size, an O(n²) peer collision check is perfectly reasonable. If the chart eventually grows by orders of magnitude, a spatial index can replace pairwise comparison.
+
+Connector/card intersection validation
+
+A useful addition for Phase 3.8.5 is to sample every orthogonal path segment against card rectangles. At minimum, each connector can be represented as line segments:
+
+Parent stem:(px, py) → (px, midY)Horizontal bus:(px, midY) → (cx, midY)Child stem:(cx, midY) → (cx, cy)
+
+and compared with card bounds excluding the source and target cards.
+
+Your automated invariant should become:
+
+CONNECTOR_CARD_INTERSECTION_COUNT = 0ORPHAN_CONNECTOR_COUNT            = 0INVALID_PARENT_ANCHOR_COUNT       = 0INVALID_CHILD_ANCHOR_COUNT        = 0
+
+That is substantially stronger than visually eyeballing connector paths.
+
+Performance, accessibility, export, caching, and production safety
+
+At 57 organization nodes and 275 employees, the system does not need a Canvas renderer for performance. The larger performance risk is unnecessary full DOM reconstruction when staff groups, density or viewport dimensions change.
+
+A good interaction budget is:
+
+Pan / Zoom    → transform only    → NO relayout    → NO data fetch    → NO structural hash regeneration requiredResize    → debounce    → repack if geometry threshold changed    → redraw connectorsExpand / Collapse subtree    → recalculate affected subtree    → propagate parent dimensions upward    → reposition affected siblings    → redraw connectorsSearch    → index lookup    → highlight    → pan/center target    → NO hierarchy mutation
+
+D3 zoom is specifically designed to handle multiple input modalities and can constrain scale/translation, so it is a good interaction layer even when the node/layout implementation is custom. [16]
+
+ResizeObserver callbacks should schedule layout through requestAnimationFrame or a 75–150 ms debounce rather than re-running the entire geometry engine on every intermediate resize event. For React Flow, the project's own performance guidance emphasizes minimizing unnecessary node/edge state changes and memoizing expensive components; the same principle applies to vanilla Kintone. [39]
+
+Virtualization is probably unnecessary for the canonical 57 organization nodes. It becomes useful if hundreds or thousands of employee cards are simultaneously expanded. A better first optimization is aggregation:
+
+Die Casting59 Staff[ View Staff (59) ]
+
+rather than rendering all 59 employee cards on initial load.
+
+Accessibility
+
+The HTML+SVG architecture has an important practical advantage: card content can remain ordinary semantic HTML. This is an architectural inference based on the fact that D3 can operate on normal HTML/SVG, whereas Cytoscape.js and vis-network render their graph content on Canvas. [11]
+
+Recommended semantics include:
+
+<article  class="org-card"  data-org-node-id="TMT0"  aria-labelledby="org-TMT0-name">  <h3 id="org-TMT0-name">    Machinery Department  </h3>  <button    aria-expanded="false"    aria-controls="staff-TMT0"  >    View Staff (15)  </button>  <div id="staff-TMT0" hidden>    ...  </div></article>
+
+Keyboard users should be able to operate search, staff expansion, focus-subtree and toolbar controls without relying on drag-to-pan. Zoom buttons should supplement, not replace, pointer-wheel zoom. Focus should remain visible after search or subtree focusing.
+
+Connector SVG should generally use:
+
+<svg aria-hidden="true" ...>
+
+because the visual line is redundant when the underlying semantic parent/child relationship is represented in accessible content and navigation.
+
+PDF and Excel consistency
+
+The key export rule should be:
+
+Web, Excel and PDF consume one normalized canonical model; they do not consume one another.
+
+Kintone's official Excel-export tutorial demonstrates client-side Excel generation from records using SheetJS and FileSaver. [40] That is the correct conceptual approach: Excel should serialize canonical data rows, not scrape the current visible DOM.
+
+For example:
+
+CanonicalModel   │   ├── Interactive screen renderer   │      ├── zoom   │      ├── pan   │      └── collapsed staff   │   ├── Excel exporter   │      └── all canonical rows   │   └── PDF renderer          └── deterministic print layout
+
+The Excel data should remain independent of:
+
+current zoomcurrent panCompact/Normal/Comfortablecollapsed statebrowser viewportfocused subtreesearch highlight
+
+PDF should similarly have its own deterministic layout, usually landscape and potentially paginated. A quick PNG/screenshot export is useful for ad-hoc sharing, but it should not be the authoritative HR export because viewport state can omit information.
+
+GoJS supports native SVG and raster-generation APIs. [29] Cytoscape.js supports PNG/JPG/SVG output and also has a PDF export extension. [41] Dabeng's example uses html2canvas and jsPDF for chart export. [33] React Flow's official ecosystem demonstrates image export through html-to-image; that is useful for snapshots, although a deterministic print model is still preferable for your canonical PDF. [42]
+
+Cache busting and deployment
+
+This area has changed recently and matters because the current date is August 2026. Kintone has announced end-of-support in August 2026 for Customize Uploader and directs developers to cli-kintone; cli-kintone customize apply, customize export and customize init now cover customization workflows. [43]
+
+A production build should use names such as:
+
+orgflow.20260822.a81c4f2.jsorgflow.20260822.a81c4f2.css
+
+and expose:
+
+window.ORGFLOW_BUILD = Object.freeze({  buildId: "20260822-a81c4f2",  schemaVersion: "orgflow-model-v3",  builtAt: "2026-08-22T...",});
+
+The build ID should be shown only in an HR/Admin diagnostic panel:
+
+Build: 20260822-a81c4f2Organizations: 57Employees: 275Orphans: 0Tree: Verified
+
+This is more reliable for UAT than asking whether the browser “probably” loaded the newest script.
+
+An example current deployment command is:
+
+cli-kintone customize apply \  --base-url https://YOUR_DOMAIN.cybozu.com \  --app YOUR_APP_ID \  --username "$KINTONE_USERNAME" \  --password "$KINTONE_PASSWORD" \  --input customize-manifest.json
+
+The current customize apply command documents password authentication for this operation, so deployment credentials should be stored in an appropriate secure CI/environment-secret mechanism rather than source control. [44]
+
+Strict zero-write production policy
+
+The Organization Explorer should have a small explicit API boundary:
+
+const ReadOnlyKintone = Object.freeze({  async getRecords(params) {    return kintone.api(      kintone.api.url("/k/v1/records.json", true),      "GET",      params    );  },  async downloadFile(fileKey) {    return kintone.api(      kintone.api.url("/k/v1/file.json", true),      "GET",      { fileKey }    );  },});
+
+Do not expose generic:
+
+POSTPUTDELETE
+
+functions to the rendering bundle.
+
+This is especially important because Kintone's customization preview/test context should not be treated as a data sandbox: Kintone documents that API activity from customization testing can still act on deployed application data. [45]
+
+For your UAT, I would additionally intercept calls in the browser and record:
+
+GET_COUNTPOST_COUNTPUT_COUNTDELETE_COUNTPOST_COUNT   = 0PUT_COUNT    = 0DELETE_COUNT = 0
+
+rather than relying only on developer intent.
+
+Verification, UAT, and final recommendations
+
+For this project, numeric validation should be treated as a rendering contract, not just as diagnostic logging.
+
+Recommended verification metrics
+
+Metric
+
+OrgFlow acceptance target
+
+Why
+
+CANONICAL_NODE_COUNT
+
+57
+
+Canonical organization completeness
+
+ORG_EDGE_COUNT
+
+56
+
+Structural relationships only
+
+ROOT_COUNT
+
+1
+
+Single company root
+
+ORPHAN_COUNT
+
+0
+
+No unresolved Parent Code
+
+EMPLOYEE_COUNT
+
+275
+
+Current canonical employee population
+
+TREE_HASH_BEFORE == TREE_HASH_AFTER
+
+true
+
+UI did not mutate canonical structure
+
+HIERARCHY_MUTATIONS
+
+0
+
+Hard invariant
+
+TOP_LEVEL_EXPECTED_BRANCH_COUNT
+
+3
+
+DIV-ME, DIV-G0, Corporate
+
+TOP_LEVEL_VISIBLE_BRANCH_COUNT
+
+3
+
+Human-readable company overview
+
+CORPORATE_VISIBLE
+
+true
+
+Prevent regression to collapsed/off-canvas branch
+
+COLLISION_COUNT
+
+0
+
+No sibling geometry intersection
+
+CHILD_OVERFLOW_COUNT
+
+0
+
+Children contained by their visual parent
+
+ORPHAN_CONNECTOR_COUNT
+
+0
+
+Every visible connector has valid endpoints
+
+CONNECTOR_CARD_INTERSECTION_COUNT
+
+0
+
+Lines do not cut through cards
+
+FIT_READABLE_SCALE
+
+≥ 0.70
+
+Readability floor
+
+ACTUAL_SCALE_ERROR
+
+≤ 2%
+
+Detect double scaling
+
+Normal card visual width
+
+target ≥ ~170 px
+
+Readable employee/position content
+
+Viewport width usage
+
+normally ~75–95%
+
+Diagnostic, not hard layout objective
+
+App 53/791/792/793 writes
+
+0
+
+Production safety
+
+The width-usage number must be calculated from the actual rendered rectangle, not the theoretical layout width:
+
+function measureViewportUsage() {  const viewport =    document.querySelector("#orgflow-viewport");  const world =    document.querySelector("#orgflow-world");  const viewportRect =    viewport.getBoundingClientRect();  const worldRect =    world.getBoundingClientRect();  return {    viewportWidth: viewportRect.width,    actualTreeWidth: worldRect.width,    viewportUsagePercent:      (worldRect.width / viewportRect.width) * 100,  };}
+
+For the three top-level branches:
+
+function validateTopLevelBranches() {  const expected = [    "DIV-ME",    "DIV-G0",    "TMH0",  ];  const results = expected.map((id) => {    const element = document.querySelector(      `[data-org-node-id="${id}"]`    );    if (!element) {      return {        id,        visible: false,        reason: "missing-dom",      };    }    const rect = element.getBoundingClientRect();    return {      id,      visible:        rect.width > 0 &&        rect.height > 0 &&        element.getClientRects().length > 0,      width: rect.width,      height: rect.height,      left: rect.left,      right: rect.right,    };  });  return {    expectedCount: expected.length,    visibleCount:      results.filter((x) => x.visible).length,    results,  };}
+
+Human UAT sequence
+
+I would freeze this exact UAT sequence for the Organization Explorer:
+
+DATA✓ 57 canonical org nodes✓ 56 canonical org edges✓ 275 employees✓ 0 orphans✓ one root✓ structural hash capturedCOMPANY VIEW✓ Managing leadership visible✓ DIV-ME visible✓ DIV-G0 visible✓ Corporate visible✓ all three are visually siblings✓ Corporate contains GA / HR / Accounting & FinanceCONNECTORS✓ organization connectors follow Parent Code only✓ reporting connectors follow verified Reports-To only✓ no inferred reporting relationship✓ no line crosses a card✓ no orphan line✓ no connector driftLAYOUT✓ collision count = 0✓ child overflow = 0✓ Machinery management grid readable✓ DIV-G0 sections readable✓ Corporate remains compact✓ no branch is shrunk to a vertical stripRESPONSIVE✓ Compact✓ Normal✓ Comfortable✓ Fit Readable >= 70%✓ Fit Entire Org works separately✓ Center does not alter zoom✓ browser resize preserves readable scale✓ pan✓ horizontal scroll✓ vertical scroll✓ Focus SubtreeINTERACTION✓ Expand / Collapse✓ Expand Staff✓ Search employee 0043✓ Search both independent identities associated with business number 9000✓ staff collapse immediately reclaims spaceEXPORT✓ Web node count = 57✓ Excel node count = 57✓ PDF node count = 57✓ employee identity count reconciles✓ current zoom/pan does not alter export datasetFINAL INTEGRITY✓ hash after all operations == initial hash✓ hierarchy mutations = 0✓ POST = 0✓ PUT = 0✓ DELETE = 0
+
+Recommended architecture for the current OrgFlow implementation
+
+My strongest recommendation is:
+
+KEEP──────────────────────────────────────────Existing Phase 3.8.4F HTML/CSS node rendererExisting bottom-up intrinsic geometryExisting collision-free top-level packingExisting DIV-ME / DIV-G0 / Corporate geometryExisting staff-collapse strategyExisting search/focus logicADD──────────────────────────────────────────Native SVG connector overlaySeparate orgEdges[] / reportingEdges[]D3 zoom only if it simplifies interactionDOM anchor calculationConnector collision/intersection validatorBuild/version diagnosticDeterministic PDF modelDO NOT REPLACE──────────────────────────────────────────Do not migrate renderer to React FlowDo not migrate renderer to CytoscapeDo not migrate renderer to GoJSDo not replace current geometry with d3-org-chartDo not restart percentage-based sizing
+
+D3's modular architecture makes this selective adoption practical; you can use only the modules you need rather than adopting D3 as the entire UI framework. [46]
+
+For Phase 3.8.5 specifically, I would use native SVG first, with D3 only if it simplifies selection/zoom. Your current requirement is a connector problem, not a layout-engine problem.
+
+Quick-integration option
+
+For a new Kintone application where the desired result is a conventional employee org chart rather than your current compound Division→Department→Section→Position layout:
+
+Use d3-org-chart.
+
+It already targets organization charts and supports many of the interactions you have been implementing manually. [3]
+
+Recommended stack:
+
+Kintone Custom View+d3-org-chart+Kintone REST GET+canonical adapter+Web Crypto hash validator+SheetJS Excel+dedicated PDF exporter
+
+Estimated production effort: approximately 1–2 weeks for a modest chart, more if the canonical hierarchy contains mixed organization nodes and personnel-reporting nodes.
+
+Primary risk: the more you need branch-specific layouts like “four departments across, but management positions internally in a three-column grid,” the more you begin fighting a generic org-chart library's layout assumptions.
+
+Balanced option — my recommendation
+
+Use:
+
+Kintone+Vanilla JS / TypeScript+HTML/CSS cards+SVG connector layer+custom bottom-up intrinsic layout+D3 hierarchy/zoom only where useful
+
+This keeps the DOM fully accessible and measurable, supports your getBoundingClientRect() UAT process, separates structural and reporting connectors cleanly, and preserves the layout engine already proven in your Human UAT.
+
+Estimated effort from the current state: the difficult geometry work is already largely complete; a hardened connector layer plus validation is materially less work than replacing the entire chart.
+
+Primary risk: custom geometry must remain covered by automated collision and scale tests, because there is no library vendor guaranteeing the layout.
+
+Enterprise-grade option
+
+There are two credible enterprise routes.
+
+GoJS is the first when commercial licensing is acceptable. It gives a full diagram platform with tree layout, configurable spacing/compaction, link routing and export facilities, at the cost of a commercial license and a significant migration from your current DOM renderer. [4]
+
+The open-source-oriented alternative is:
+
+HTML/CSS presentation+SVG connectors+ELK.js layout computation
+
+ELK is specifically a layout kernel rather than a viewer; the Eclipse project describes it as a collection of layout algorithms plus infrastructure bridging layout algorithms and diagram viewers/editors. [47] Its available algorithms include Layered, tree-oriented approaches, radial, force and rectangle packing. [48] ELK's Layered algorithm is particularly attractive if future OrgFlow requirements introduce multiple reporting lines, matrix management, dotted-line relationships or other structures that cease to be a pure tree.
+
+ELK 0.12.0 is present in the current Eclipse release line as of 2026, so unlike legacy mxGraph it is an actively current layout technology. [49]
+
+Primary documentation, repositories, and demos
+
+The most useful primary references for implementation are:
+
+Kintone JavaScript API and Get Records for application integration. [50]
+
+Kintone bulk record retrieval for seek/cursor/offset choices. [51]
+
+cli-kintone customization migration and customize apply for the current deployment path. [52]
+
+D3, D3 Hierarchy, D3 Tree and D3 Zoom for the modular hybrid approach. [53]
+
+d3-org-chart repository and demo for the quickest dedicated open-source org-chart implementation. [3]
+
+Cytoscape.js for general graph/network visualization and its ELK extension ecosystem. [26]
+
+GoJS TreeLayout for a mature enterprise tree/diagram architecture. [28]
+
+React Flow custom edges for useful SVG-edge design patterns even if React Flow itself is not adopted. [35]
+
+vis-network hierarchical layout and examples for Canvas/network alternatives. [54]
+
+dabeng OrgChart for a simple MIT-licensed HTML/CSS org-chart alternative. [55]
+
+Eclipse Layout Kernel and ELK algorithm reference for advanced layout computation. [56]
+
+For the underlying algorithms, the key research foundations are Sugiyama, Tagawa & Toda, “Methods for Visual Understanding of Hierarchical System Structures,” IEEE Transactions on Systems, Man, and Cybernetics 11(2), 109–125, DOI 10.1109/TSMC.1981.4308636, and Reingold & Tilford, “Tidier Drawings of Trees,” IEEE Transactions on Software Engineering 7, 223–228. [57]
+
+The architectural conclusion is therefore quite specific: for the OrgFlow system as it exists today, preserve the current collision-free HTML layout, add a semantic-safe SVG connector layer, maintain one immutable normalized model for Web/Excel/PDF, use a single global pan/zoom transform, and treat DOM geometry and structural hashes as executable UAT invariants. A full library migration becomes worthwhile only if future requirements move the product from a readable organization explorer into a general-purpose graph editor or matrix-reporting platform.
+
+[1] [50] https://kintone.dev/en/docs/kintone/js-api/
+
+https://kintone.dev/en/docs/kintone/js-api/
+
+[2] [11] [25] [53] https://d3js.org/what-is-d3
+
+https://d3js.org/what-is-d3
+
+[3] https://github.com/bumbeishvili/org-chart
+
+https://github.com/bumbeishvili/org-chart
+
+[4] [27] https://gojs.net/latest/learn/deployment
+
+https://gojs.net/latest/learn/deployment
+
+[5] [13] [57] https://ui.adsabs.harvard.edu/abs/1981ITSMC..11..109S/abstract
+
+https://ui.adsabs.harvard.edu/abs/1981ITSMC..11..109S/abstract
+
+[6] [43] [52] https://kintone.dev/en/news/api-updates/2026-01-2nd-cli-kintone/
+
+https://kintone.dev/en/news/api-updates/2026-01-2nd-cli-kintone/
+
+[7] [10] https://kintone.dev/en/docs/kintone/rest-api/records/get-records/
+
+https://kintone.dev/en/docs/kintone/rest-api/records/get-records/
+
+[8] https://kintone.dev/en/tutorials/embedding/add-buttons-to-the-record-list-page/
+
+https://kintone.dev/en/tutorials/embedding/add-buttons-to-the-record-list-page/
+
+[9] https://kintone.dev/en/docs/kintone/rest-api/files/upload-file/
+
+https://kintone.dev/en/docs/kintone/rest-api/files/upload-file/
+
+[12] [37] https://d3js.org/d3-hierarchy/tree
+
+https://d3js.org/d3-hierarchy/tree
+
+[14] [48] https://eclipse.dev/elk/reference/algorithms.html
+
+https://eclipse.dev/elk/reference/algorithms.html
+
+[15] https://d3js.org/d3-hierarchy
+
+https://d3js.org/d3-hierarchy
+
+[16] https://d3js.org/d3-zoom
+
+https://d3js.org/d3-zoom
+
+[17] [46] https://d3js.org/api
+
+https://d3js.org/api
+
+[18] https://github.com/d3/d3/blob/main/package.json
+
+https://github.com/d3/d3/blob/main/package.json
+
+[19] https://github.com/dagrejs/dagre-d3
+
+https://github.com/dagrejs/dagre-d3
+
+[20] [26] [41] https://js.cytoscape.org/
+
+https://js.cytoscape.org/
+
+[21] [30] https://github.com/jgraph/mxgraph
+
+https://github.com/jgraph/mxgraph
+
+[22] [55] https://github.com/dabeng/OrgChart
+
+https://github.com/dabeng/OrgChart
+
+[23] [34] https://github.com/xyflow/xyflow
+
+https://github.com/xyflow/xyflow
+
+[24] [36] https://github.com/visjs/vis-network
+
+https://github.com/visjs/vis-network
+
+[28] https://gojs.net/latest/api/symbols/TreeLayout.html
+
+https://gojs.net/latest/api/symbols/TreeLayout.html
+
+[29] https://gojs.net/latest/learn/makingSVG
+
+https://gojs.net/latest/learn/makingSVG
+
+[31] https://github.com/jgraph/mxgraph-js
+
+https://github.com/jgraph/mxgraph-js
+
+[32] https://github.com/dabeng/OrgChart-Webcomponents/blob/master/README.md
+
+https://github.com/dabeng/OrgChart-Webcomponents/blob/master/README.md
+
+[33] https://github.com/dabeng/OrgChart/blob/master/demo/export-chart.html
+
+https://github.com/dabeng/OrgChart/blob/master/demo/export-chart.html
+
+[35] https://reactflow.dev/learn/customization/custom-edges
+
+https://reactflow.dev/learn/customization/custom-edges
+
+[38] https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html
+
+https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html
+
+[39] https://reactflow.dev/learn/advanced-use/performance
+
+https://reactflow.dev/learn/advanced-use/performance
+
+[40] https://kintone.dev/en/tutorials/3rd-party-services/export-records-to-an-excel-file/
+
+https://kintone.dev/en/tutorials/3rd-party-services/export-records-to-an-excel-file/
+
+[42] https://reactflow.dev/examples/misc/download-image
+
+https://reactflow.dev/examples/misc/download-image
+
+[44] https://cli.kintone.dev/guide/commands/customize-apply/
+
+https://cli.kintone.dev/guide/commands/customize-apply/
+
+[45] https://kintone.dev/en/docs/kintone/js-api/overview/kintone-js-api-overview/
+
+https://kintone.dev/en/docs/kintone/js-api/overview/kintone-js-api-overview/
+
+[47] [56] https://eclipse.dev/elk/
+
+https://eclipse.dev/elk/
+
+[49] https://eclipse.dev/elk/downloads/releasenotes/release-0.12.0.html
+
+https://eclipse.dev/elk/downloads/releasenotes/release-0.12.0.html
+
+[51] https://kintone.dev/en/tutorials/development-productivity/the-three-methods-for-bulk-record-retrieval/
+
+https://kintone.dev/en/tutorials/development-productivity/the-three-methods-for-bulk-record-retrieval/
+
+[54] https://visjs.github.io/vis-network/docs/network/layout.html
+
+https://visjs.github.io/vis-network/docs/network/layout.html

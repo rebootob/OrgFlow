@@ -1,0 +1,859 @@
+Professional Organization Charts in Kintone for OrgFlow
+
+Executive summary
+
+For OrgFlow’s current state—57 canonical organization nodes, 275 employees, stable 3.8.4F geometry, and a strict zero-write requirement for Apps 53/791/792/793—the best next step is not to replace the chart renderer. The lowest-risk architecture is to preserve the existing HTML card geometry and add a native SVG connector layer, optionally using only small D3 modules such as d3-zoom for viewport interaction. D3 is deliberately low-level, supports SVG/HTML/Canvas interaction, provides zoom/pan behavior, and includes hierarchy/tree algorithms, but it does not force OrgFlow into a new visual model. [1]
+
+My preferred stack for OrgFlow is therefore:
+
+Kintone Custom View + existing OrgFlow DOM + native SVG connector overlay + small D3 modules where useful.
+
+For Phase 3.8.5, D3's tree layout should not replace the accepted layout. Use the current DOM as the geometry authority, obtain actual card coordinates with getBoundingClientRect(), convert them into canvas-local coordinates, and render canonical parent-child edges as orthogonal SVG paths behind the cards. getBoundingClientRect() is specifically standardized to return an element's bounding rectangle, while Resize Observer is standardized for responding to element-size changes; those two browser primitives match the geometry requirements that emerged from phases 3.8.4C–F. [2]
+
+For a future full renderer replacement, my open-source fallback is Cytoscape.js + ELK. Cytoscape.js has first-class panning, zooming, fit/center APIs, graph models and a broad layout-extension ecosystem including ELK. It is a substantially larger migration because it would assume ownership of node positioning rather than preserving the HTML geometry you have already validated. [3]
+
+If commercial licensing is acceptable and OrgFlow later prioritizes a turnkey diagramming engine over preserving its Kintone DOM, GoJS is technically very strong: it has an official organization-chart implementation, TreeLayout, Overview navigation, Canvas and SVG renderers, built-in zoom/scrolling, links/routing, exports, and read-only diagram mode. It is, however, commercially licensed rather than open source. [4]
+
+For Kintone integration, OrgFlow should run as a direct JavaScript customization on a Custom View, initialized from app.record.index.show. That event fires after a record-list/custom-view display and supports asynchronous handlers through Promises. Read canonical data through kintone.api() using only GET operations; the Get Records endpoint returns up to 500 records per request, so the present 57-node/275-employee datasets fit comfortably within one request per current app if their records are separated as described. Kintone currently documents a domain concurrency limit of 100 API requests and a default daily limit of 10,000 requests per app, so four parallel read operations are well below the concurrency ceiling. [5]
+
+The immediate architectural recommendation is:
+
+Decision
+
+Recommendation
+
+Phase 3.8.5 renderer
+
+Keep current OrgFlow DOM; add native SVG connectors
+
+JavaScript library
+
+D3 modules selectively, primarily d3-zoom if needed
+
+Geometry authority
+
+Actual DOM, not theoretical layout metrics
+
+Connector source
+
+Canonical organization edges only
+
+Reporting connectors
+
+Separate collection; only verified Reports-To edges
+
+Scaling
+
+One translate + scale authority around both nodes and SVG
+
+Fit Readable
+
+Width-oriented, hard-clamped to a readable scale
+
+Resize
+
+ResizeObserver + debounced/rAF geometry refresh
+
+Full-renderer fallback
+
+Cytoscape.js + ELK
+
+Commercial alternative
+
+GoJS, with BALKAN OrgChart JS as another turnkey option
+
+Mermaid
+
+Documentation/export diagrams, not the main runtime OrgFlow renderer
+
+Kintone authentication
+
+Browser session through kintone.api() for direct customization
+
+Production mutation
+
+None: Apps 53/791/792/793 remain GET-only
+
+Excel/PDF
+
+Continue generating from the canonical model, not the viewport
+
+Library landscape and recommended technology
+
+Candidate comparison
+
+The “bundle footprint” column below is deliberately a relative engineering classification rather than a fabricated KB figure. The projects do not publish directly comparable minified+gzip/brotli sizes for the exact feature combinations OrgFlow would use; module selection, optional extensions, tree-shaking, and commercial/community builds materially change the production result. For example, D3 is modular, Cytoscape layouts can be separate extensions, and maxGraph has been moving toward greater modularity/tree-shaking. Exact production bytes should therefore be measured from the OrgFlow build artifact. [6]
+
+Candidate
+
+Rendering / connectors
+
+Pan / zoom & layout
+
+License
+
+Relative footprint
+
+Learning curve
+
+Fit for Kintone / OrgFlow
+
+D3 + native SVG
+
+Excellent custom SVG paths; HTML/SVG/Canvas can participate in interaction
+
+d3-zoom; d3-hierarchy; tidy tree() based on Reingold–Tilford/Buchheim
+
+ISC
+
+Small–medium when importing modules only
+
+Medium-high
+
+Best for 3.8.5. Lets us retain every existing DOM card and add only the missing geometry/connector layer. [7]
+
+Cytoscape.js + ELK
+
+Native graph nodes/edges; strong graph model
+
+Built-in pan/zoom/fit/center; ELK, Dagre, fCoSE and other layout extensions
+
+MIT
+
+Medium–large with layout extensions
+
+Medium
+
+Best open-source fallback for a future renderer rewrite. More invasive for the current locked DOM geometry. [8]
+
+GoJS
+
+Nodes/Links, routing, ports; Canvas or SVG renderer
+
+TreeLayout, Overview, scrolling, zooming, viewport controls
+
+Commercial
+
+Medium–large
+
+Medium
+
+Technically excellent turnkey choice. Official org-chart sample includes TreeLayout, search and Overview; commercial license is the key trade-off. [4]
+
+maxGraph
+
+Diagram vertices/edges with explicit connection constraints/points
+
+General diagramming/layout infrastructure
+
+Apache 2.0
+
+Medium–large, increasingly modular
+
+High
+
+Strong if OrgFlow later becomes a full visual diagram editor. More framework than needed for a connector-only phase. [9]
+
+Draw2D
+
+HTML5 diagrams, graph connections and editing concepts
+
+Diagram-centric rather than org-chart-specific
+
+MIT
+
+Medium
+
+Medium-high
+
+Viable but less compelling than D3/maxGraph/Cytoscape for a new 2026 architecture. [10]
+
+BALKAN OrgChart JS
+
+Purpose-built org-chart engine with an SVG-oriented rendering stack and relationship types
+
+Built-in navigation, pan/zoom, minimap, expand/collapse and org-chart features
+
+Community + commercial editions
+
+Medium–large turnkey
+
+Low-medium
+
+Very attractive for a greenfield org chart, but it would take ownership of layout, making it a poor fit for the locked 3.8.4F geometry. Commercial/intranet licensing must also be evaluated. [11]
+
+vis-network
+
+Interactive network nodes/edges
+
+Hierarchical layouts, navigation, auto resize, overlap/layout controls
+
+Apache 2.0 / MIT
+
+Medium
+
+Low-medium
+
+Good for network visualization; less natural for OrgFlow's nested department containers and rich Kintone HTML cards. [12]
+
+Mermaid
+
+Text definitions rendered as diagrams/flowcharts
+
+Automatic diagram layout; not designed as an application-grade interactive org workspace
+
+MIT
+
+Large if full package is used
+
+Low
+
+Excellent for specifications, documentation and generated snapshots—not the primary interactive Personnel View. Flowcharts are defined as nodes and edges and Mermaid can be used through its JavaScript API or CLI. [13]
+
+Why D3/native SVG wins for the current OrgFlow phase
+
+The crucial distinction is that Phase 3.8.5 is not a layout project anymore. Phases 3.8.4C–F already established and stabilized natural sizing, true scale, collision-free sibling placement and top-level branch visibility. Any library that automatically recalculates node positions now introduces unnecessary regression risk.
+
+D3 fits differently from GoJS, OrgChart JS or Cytoscape: it can be used as a collection of primitives rather than a complete diagram owner. d3-zoom supports panning and zooming independently of whether the visible content is HTML, SVG or Canvas; d3-hierarchy is available later if OrgFlow ever chooses to replace the current layout. [14]
+
+That permits this division of responsibility:
+
+Canonical OrgFlow model        │        ├── Existing OrgFlow HTML renderer   ← DO NOT RE-LAYOUT IN 3.8.5        │        └── Connector adapter                 │                 └── SVG paths derived from real DOM anchors
+
+The full-renderer fallback should be Cytoscape.js + ELK rather than immediately moving to another bespoke layout implementation. Cytoscape exposes explicit viewport zoom, pan, center and fit operations and supports external hierarchical layout adapters such as ELK. [3]
+
+The commercial full-renderer alternative is GoJS. GoJS's Diagram owns its hosting DIV, draws to Canvas by default or can use an SVG renderer, manages zoom/scrolling/document bounds, provides layouts and routing, can produce SVG/image snapshots, and can operate in read-only mode. Its official organization-chart sample already demonstrates TreeLayout, navigation overview and search. [15]
+
+BALKAN OrgChart JS is the easiest purpose-built option to evaluate if the company wants an org chart product rather than a visualization toolkit. Its official documentation includes org-specific relationships, exports and navigation, but its Community and Commercial licensing model must be factored into an internal Kintone deployment. [16]
+
+Where Mermaid belongs
+
+Mermaid is valuable in OrgFlow documentation, not as the interactive 275-person application renderer. Its core model is text-defined diagrams; flowcharts consist of nodes and edges, and diagrams can be produced from the JavaScript API or through the CLI. That is ideal for architecture diagrams, canonical-tree diagnostics, design documents and possibly deterministic documentation exports. [17]
+
+For example, a developer-facing diagnostic could be generated as:
+
+That is useful as an independent structural check, but the runtime Kintone UI requires richer cards, buttons, focus navigation, collapsed staff, dynamic geometry, hit testing and precise viewport state.
+
+Kintone integration architectures
+
+Kintone's JavaScript customization API is well suited to a direct-in-app implementation. app.record.index.show is fired after the list/custom-view page is rendered and can return a Promise; the JavaScript API exposes kintone.api() for REST calls and record-list/header DOM integration methods. Kintone also supports Custom Views plus JavaScript/CSS customization, making the view itself a sensible host for OrgFlow. [18]
+
+Lightweight DOM plus SVG overlay — recommended
+
+This architecture keeps Phase 3.8.4F exactly where it is.
+
+getBoundingClientRect() gives the rendered element rectangle; Resize Observer exists specifically to observe changes in element dimensions. SVG is a vector-graphics standard, making it suitable for scale-independent connector paths. [19]
+
+The DOM structure should look approximately like:
+
+<div class="orgflow-canvas">  <div class="orgflow-world">    <svg      class="orgflow-connectors"      aria-hidden="true"      focusable="false">    </svg>    <div class="orgflow-nodes">      <!-- Existing Phase 3.8.4F cards remain here -->    </div>  </div></div>
+
+.orgflow-canvas {  position: relative;  overflow: auto;}.orgflow-world {  position: relative;  transform-origin: 0 0;}.orgflow-connectors {  position: absolute;  inset: 0;  overflow: visible;  pointer-events: none;  z-index: 0;}.orgflow-nodes {  position: relative;  z-index: 1;}
+
+The decisive rule is:
+
+.orgflow-world is the only zoom/pan transform authority.
+
+Neither individual branches nor the SVG layer should receive separate scale factors.
+
+This directly prevents the double-scaling problem that OrgFlow encountered in 3.8.4C.
+
+Full renderer architecture — fallback
+
+If OrgFlow later decides that maintaining a bespoke intrinsic-layout engine is too expensive, switch behind a feature flag to Cytoscape.js + ELK, or to GoJS if commercial licensing is approved.
+
+Cytoscape's API exposes zoom bounds, user zoom/pan controls, fit/center operations and layout creation; ELK is available as a Cytoscape layout adapter. [3]
+
+GoJS goes further toward a complete diagram application: its Diagram controls its Canvas/SVG representation, model, links, layouts, viewport, scrolling and scale. This convenience is also why adopting it would be a renderer migration, not a connector patch. [20]
+
+Direct DOM versus iframe embedding
+
+For OrgFlow today, use direct DOM integration. It allows kintone.api() to operate inside the user's current Kintone session and lets the connector layer measure the exact card elements already rendered by the application. Kintone documents kintone.api() as its JavaScript REST-request API, and Get Records accepts session authentication as well as other authentication methods. [21]
+
+An iframe is more appropriate only if a future renderer becomes a separately deployed application. Its benefit is CSS/runtime isolation; its cost is a separate lifecycle, cross-window focus and sizing, and a data bridge. In that design I would not place Kintone API tokens into browser iframe code. Have the Kintone parent retrieve permitted data and send an immutable view model through postMessage, or use a controlled server-side authentication path.
+
+Kintone also exposes kintone.proxy() when a customization must call an external API and needs to avoid browser CORS restrictions. [22]
+
+For the current project:
+
+Direct DOM wins decisively.
+
+Geometry, connectors, and ES6 reference implementation
+
+Read-only Kintone data access
+
+The Get Records API is a GET endpoint and retrieves at most 500 records per request. For OrgFlow's current 57 canonical nodes and 275 employees, that ceiling is not a problem for a single app dataset of those sizes. Kintone's app.record.index.show handler can return a Promise, so initialization can await the complete read pipeline before rendering connectors. [23]
+
+A production-safe wrapper should make methods other than GET impossible in the OrgFlow visualization module:
+
+(() => {  'use strict';  const ORGFLOW_APPS = Object.freeze({    organization: 53,    employees: 791,    positions: 792,    reporting: 793,  });  /**   * OrgFlow read-only Kintone API gateway.   * No caller can select POST / PUT / DELETE.   */  async function kintoneGet(path, params) {    const url = kintone.api.url(path, true);    return kintone.api(url, 'GET', Object.freeze({ ...params }));  }  async function getRecordsReadOnly({    app,    fields,    condition = '',    limit = 500,  }) {    if (!Number.isInteger(app) || app <= 0) {      throw new TypeError(`Invalid Kintone app ID: ${app}`);    }    if (limit < 1 || limit > 500) {      throw new RangeError('Kintone Get Records limit must be 1..500');    }    const clauses = [];    if (condition.trim()) {      clauses.push(condition.trim());    }    clauses.push('order by $id asc');    clauses.push(`limit ${limit}`);    const response = await kintoneGet('/k/v1/records.json', {      app,      fields,      query: clauses.join(' '),      totalCount: true,    });    return {      records: response.records,      totalCount: Number(response.totalCount ?? response.records.length),    };  }  /**   * FIELD CODES BELOW ARE PLACEHOLDERS.   * Bind them to the verified OrgFlow schema; do not infer them.   */  async function fetchOrgFlowSnapshot() {    const [organization, employees, positions, reporting] =      await Promise.all([        getRecordsReadOnly({          app: ORGFLOW_APPS.organization,          fields: ['$id', 'OrgCode', 'ParentOrgCode', 'OrgName', 'OrgLevel'],        }),        getRecordsReadOnly({          app: ORGFLOW_APPS.employees,          fields: ['$id', 'EmployeeId', 'EmployeeName', 'OrgCode', 'PositionCode'],        }),        getRecordsReadOnly({          app: ORGFLOW_APPS.positions,          fields: ['$id', 'PositionCode', 'PositionName', 'OrgCode'],        }),        getRecordsReadOnly({          app: ORGFLOW_APPS.reporting,          fields: ['$id', 'PositionCode', 'ReportsToPositionCode', 'Verified'],        }),      ]);    return Object.freeze({      organization: Object.freeze(organization.records),      employees: Object.freeze(employees.records),      positions: Object.freeze(positions.records),      reporting: Object.freeze(reporting.records),    });  }  window.OrgFlowReadOnly = Object.freeze({    fetchOrgFlowSnapshot,  });})();
+
+Kintone currently permits up to 100 concurrent API requests per domain; the four GETs above are therefore nowhere near that platform limit. The REST API overview also documents a default daily API allowance of 10,000 requests per app. [24]
+
+For Phase 3.8.5, I would deliberately avoid Kintone's cursor API, even though it exists for large result sets, because creating a cursor uses POST. It does not mean the same thing as changing a record, but the current OrgFlow safety policy is stricter than necessary and benefits from having an unambiguous “GET only” rule. The current data volume does not require a cursor anyway. Kintone documents cursor creation separately and permits up to 500 records per cursor retrieval. [25]
+
+Stable canonical tree hash
+
+The connector renderer should prove that it did not mutate hierarchy:
+
+async function computeCanonicalTreeHash(nodes) {  const canonical = nodes    .map((node) => ({      id: String(node.id),      parentId: node.parentId == null ? '' : String(node.parentId),    }))    .sort((a, b) => a.id.localeCompare(b.id))    .map(({ id, parentId }) => `${id}\u001F${parentId}`)    .join('\u001E');  const bytes = new TextEncoder().encode(canonical);  const hash = await crypto.subtle.digest('SHA-256', bytes);  return Array.from(new Uint8Array(hash))    .map((value) => value.toString(16).padStart(2, '0'))    .join('');}
+
+Only hierarchy-defining canonical keys should participate in this particular hash. Employee display names, zoom, density and card dimensions should not.
+
+For OrgFlow's current gate, the expected invariant remains:
+
+CANONICAL_NODE_COUNT = 57EDGE_COUNT           = 56EMPLOYEE_COUNT       = 275ORPHAN_COUNT         = 0TREE_HASH_BEFORE == TREE_HASH_AFTERHIERARCHY_MUTATIONS  = 0
+
+Organization edges versus reporting edges
+
+This is important enough to enforce at the type/model boundary:
+
+function buildOrganizationEdges(canonicalNodes) {  const ids = new Set(canonicalNodes.map((node) => node.id));  return canonicalNodes    .filter((node) => node.parentId != null)    .map((node) => {      if (!ids.has(node.parentId)) {        throw new Error(          `Canonical orphan: ${node.id} -> missing ${node.parentId}`        );      }      return Object.freeze({        type: 'organization',        from: node.parentId,        to: node.id,      });    });}function buildVerifiedReportingEdges(reportingRows) {  return reportingRows    .filter((row) => row.verified === true)    .map((row) =>      Object.freeze({        type: 'reporting',        from: row.managerPositionId,        to: row.positionId,      })    );}
+
+Never derive person/reporting edges from card position, title wording or ParentOrgCode.
+
+In particular, do not hard-code “Managing Director → President” unless the verified reporting dataset explicitly says so.
+
+DOM anchor measurement
+
+W3C's CSSOM View specification defines getBoundingClientRect() as the geometry interface for an element's rendered bounding box. [26]
+
+Because OrgFlow has one global transform, transformed viewport coordinates can be converted back to world coordinates:
+
+function getUniformWorldScale(world) {  const visual = world.getBoundingClientRect();  if (world.offsetWidth <= 0 || world.offsetHeight <= 0) {    throw new Error('Org world has zero logical dimensions');  }  const scaleX = visual.width / world.offsetWidth;  const scaleY = visual.height / world.offsetHeight;  if (!Number.isFinite(scaleX) || !Number.isFinite(scaleY)) {    throw new Error('Invalid OrgFlow scale');  }  if (Math.abs(scaleX - scaleY) > 0.01) {    throw new Error(      `Non-uniform scaling detected: scaleX=${scaleX}, scaleY=${scaleY}`    );  }  return (scaleX + scaleY) / 2;}function measureNodeAnchors(element, world) {  const rect = element.getBoundingClientRect();  const worldRect = world.getBoundingClientRect();  const scale = getUniformWorldScale(world);  const toWorld = (viewportX, viewportY) => ({    x: (viewportX - worldRect.left) / scale,    y: (viewportY - worldRect.top) / scale,  });  return Object.freeze({    topCenter: toWorld(      rect.left + rect.width / 2,      rect.top    ),    bottomCenter: toWorld(      rect.left + rect.width / 2,      rect.bottom    ),    visualRect: rect,  });}
+
+This should run only after the browser has settled the card layout:
+
+function afterTwoAnimationFrames() {  return new Promise((resolve) => {    requestAnimationFrame(() => {      requestAnimationFrame(resolve);    });  });}
+
+That “two frame” policy is a practical OrgFlow synchronization rule rather than a platform requirement.
+
+SVG connector rendering
+
+SVG is particularly suitable here because its path coordinates remain vector-based under global scaling. [27]
+
+const SVG_NS = 'http://www.w3.org/2000/svg';function createSvgPath(d, className = 'orgflow-org-connector') {  const path = document.createElementNS(SVG_NS, 'path');  path.setAttribute('d', d);  path.setAttribute('fill', 'none');  path.setAttribute('vector-effect', 'non-scaling-stroke');  path.classList.add(className);  return path;}function orthogonalPath(parentBottom, childTop, busY) {  return [    `M ${parentBottom.x} ${parentBottom.y}`,    `V ${busY}`,    `H ${childTop.x}`,    `V ${childTop.y}`,  ].join(' ');}function renderOrganizationConnectors({  svg,  world,  edges,  elementByNodeId,}) {  const fragment = document.createDocumentFragment();  // Batch geometry reads before DOM writes.  const anchors = new Map();  for (const [nodeId, element] of elementByNodeId.entries()) {    if (!element || element.offsetParent === null) continue;    anchors.set(nodeId, measureNodeAnchors(element, world));  }  for (const edge of edges) {    const parent = anchors.get(edge.from);    const child = anchors.get(edge.to);    if (!parent || !child) {      continue;    }    const availableVerticalGap =      child.topCenter.y - parent.bottomCenter.y;    const busY =      parent.bottomCenter.y +      Math.max(12, availableVerticalGap * 0.45);    const path = createSvgPath(      orthogonalPath(        parent.bottomCenter,        child.topCenter,        busY      )    );    path.dataset.from = String(edge.from);    path.dataset.to = String(edge.to);    fragment.appendChild(path);  }  svg.replaceChildren(fragment);}
+
+Suggested CSS:
+
+.orgflow-org-connector {  stroke: #8b95a1;  stroke-width: 1.25;  stroke-linecap: round;  stroke-linejoin: round;}.orgflow-reporting-connector {  stroke: #687380;  stroke-width: 1.25;  stroke-dasharray: 4 3;}.orgflow-connectors {  pointer-events: none;}
+
+The reporting-line style is optional; semantic correctness matters more than stylistic distinction.
+
+One scale transform
+
+Do not transform individual departments, the connector SVG or specific branches:
+
+function applyWorldTransform(world, {  scale,  translateX,  translateY,}) {  if (!(scale > 0)) {    throw new RangeError('Scale must be positive');  }  world.style.transformOrigin = '0 0';  world.style.transform =    `translate3d(${translateX}px, ${translateY}px, 0) scale(${scale})`;  world.dataset.orgflowScale = String(scale);}
+
+Because both SVG and node layers are children of .orgflow-world, this produces:
+
+Canvas  └── Org World   ← ONE transform       ├── SVG connectors       └── HTML cards
+
+rather than:
+
+Canvas  ├── scaled nodes  └── separately scaled SVG   ← connector drift risk
+
+Fit Readable versus Fit Entire Org
+
+Cytoscape itself distinguishes fit/zoom operations and supports minimum zoom bounds, which reinforces the broader design principle that “fit” and “zoom” are viewport operations, not tree mutations. [28]
+
+For OrgFlow, retain the stronger semantics developed during UAT:
+
+function clamp(value, min, max) {  return Math.min(max, Math.max(min, value));}/** * Width-oriented readability fit. * Height is intentionally allowed to overflow. */function calculateFitReadable({  viewportWidth,  naturalTreeWidth,  targetWidthUsage = 0.90,  minReadableScale = 0.75,  maxReadableScale = 1.00,}) {  if (viewportWidth <= 0 || naturalTreeWidth <= 0) {    throw new RangeError('Invalid viewport/tree dimensions');  }  const ideal =    (viewportWidth * targetWidthUsage) / naturalTreeWidth;  return clamp(    ideal,    minReadableScale,    maxReadableScale  );}function calculateFitEntireOrg({  viewportWidth,  viewportHeight,  naturalTreeWidth,  naturalTreeHeight,  padding = 32,}) {  const usableWidth = Math.max(1, viewportWidth - 2 * padding);  const usableHeight = Math.max(1, viewportHeight - 2 * padding);  return Math.min(    usableWidth / naturalTreeWidth,    usableHeight / naturalTreeHeight,    1  );}
+
+That preserves the UX distinction:
+
+Fit Readable    → readability first    → do not fit height    → scale floor    → scrolling/panning allowedFit Entire Org    → overview    → may deliberately use 45–60%    → not the default working mode
+
+DOM geometry audit
+
+function intersects(a, b, gap = 0) {  return !(    a.right + gap <= b.left ||    b.right + gap <= a.left ||    a.bottom + gap <= b.top ||    b.bottom + gap <= a.top  );}function auditSiblingCollisions(groups, gap = 4) {  const collisions = [];  for (const siblings of groups) {    for (let i = 0; i < siblings.length; i += 1) {      for (let j = i + 1; j < siblings.length; j += 1) {        const a = siblings[i];        const b = siblings[j];        const rectA = a.element.getBoundingClientRect();        const rectB = b.element.getBoundingClientRect();        if (intersects(rectA, rectB, gap)) {          collisions.push({            a: a.id,            b: b.id,            rectA,            rectB,          });        }      }    }  }  return collisions;}function auditContainment(parentElement, childElements) {  const parent = parentElement.getBoundingClientRect();  return childElements    .map((element) => ({      element,      rect: element.getBoundingClientRect(),    }))    .filter(({ rect }) =>      rect.left < parent.left ||      rect.right > parent.right ||      rect.top < parent.top ||      rect.bottom > parent.bottom    );}function auditScale(world, commandedScale, tolerance = 0.02) {  const actualScale = getUniformWorldScale(world);  return {    commandedScale,    actualScale,    difference: Math.abs(actualScale - commandedScale),    passed:      Math.abs(actualScale - commandedScale) <= tolerance,  };}
+
+Collision-free packing algorithm for a future renderer
+
+This algorithm is not to be activated during Phase 3.8.5; it describes the architecture to keep if OrgFlow later replaces or expands its current intrinsic layout.
+
+measureSubtree(node):    if node is a visual leaf:        return {            width  = minimum readable card width,            height = measured card height        }    childMetrics = []    for each visible structural child:        childMetrics.push(measureSubtree(child))    candidates = generatePackingCandidates(        childMetrics,        availableWidth,        densityMode    )    for each candidate:        reject candidate if:            any card width < readable minimum        place candidate virtually        reject candidate if:            any sibling rectangles intersect        score =            unusedHorizontalSpacePenalty          + excessiveHeightPenalty          + rowImbalancePenalty          + orphanLastRowPenalty    arrangement = candidate with lowest valid score    node.requiredWidth =        max(            nodeHeaderMinimumWidth,            arrangement.requiredWidth        )        + horizontalPadding    node.requiredHeight =        headerHeight        + verticalGap        + arrangement.requiredHeight        + verticalPadding    return dimensionslayoutRoot(root):    dimensions = measureSubtree(root)    assignCoordinatesTopDown(root, dimensions)    assert collisionCount == 0    assert childOverflowCount == 0    render    measureActualDOM    assert actualCollisionCount == 0
+
+The conceptual foundation is compatible with tree-layout research; D3's tree() itself implements a tidy tree based on Reingold–Tilford with the Buchheim improvement, although OrgFlow's mixed department/position grids require more custom packing than a conventional tidy tree. [29]
+
+Phase 3.8.5 implementation, Kintone safety, and migration
+
+Minimal connector-layer implementation
+
+Kintone's app.record.index.show can run whenever the list/custom view is displayed and again in response to view operations, so the runtime needs an idempotent initialization/disposal guard rather than blindly inserting a second SVG each time. [30]
+
+I recommend this implementation sequence:
+
+Freeze the current 3.8.4F baseline. Record the getBoundingClientRect() of the three top-level branches, major departments, representative position cards, world width/height and current scale. The connector patch must not materially change these dimensions.
+
+Add an OrgFlow view guard. Initialize only on the Personnel View's verified viewId, not on every record list.
+
+Fetch all data through a GET-only gateway. Use Kintone session-authenticated kintone.api() in the browser; request only required field codes. Kintone's Get Records endpoint supports session authentication and allows selecting fields, which also minimizes transferred/exposed data. [31]
+
+Normalize an immutable snapshot. Construct organizationNodes, employees, positions, organizationEdges, and separately verifiedReportingEdges.
+
+Calculate TREE_HASH_BEFORE. Reject initialization if canonical count, edge count, orphan count or expected root topology is invalid.
+
+Reuse the existing cards unchanged. Insert only <svg class="orgflow-connectors"> behind them.
+
+Wait for stable render and measure. Read node anchors in one batch using getBoundingClientRect().
+
+Draw only visible structural edges. Hidden/collapsed descendant nodes do not get paths.
+
+Install remeasurement triggers. ResizeObserver, density changes, expand/collapse, focus-subtree changes and any operation that changes card geometry call one debounced scheduleConnectorRender().
+
+Validate before declaring readiness. Compare geometry to the 3.8.4F baseline, recalculate the canonical hash, inspect collisions/containment, check path anchors and perform a real screenshot UAT.
+
+A safe event bootstrap:
+
+(() => {  'use strict';  const ORGFLOW_VIEW_ID = 123456; // Replace with verified Kintone View ID.  kintone.events.on('app.record.index.show', async (event) => {    if (event.viewId !== ORGFLOW_VIEW_ID) {      return event;    }    // Prevent duplicate runtimes when index.show fires again.    if (window.__orgflowRuntime?.dispose) {      window.__orgflowRuntime.dispose();    }    const runtime = new OrgFlowConnectorRuntime({      root: document.querySelector('[data-orgflow-root]'),    });    window.__orgflowRuntime = runtime;    await runtime.start();    return event;  });})();
+
+Kintone documents viewId, viewName and viewType on this event and permits Promise-based processing. [32]
+
+Connector refresh scheduler
+
+function createRenderScheduler(render) {  let rafId = 0;  let timerId = 0;  return function schedule() {    window.clearTimeout(timerId);    timerId = window.setTimeout(() => {      if (rafId) {        cancelAnimationFrame(rafId);      }      rafId = requestAnimationFrame(() => {        rafId = requestAnimationFrame(() => {          rafId = 0;          render();        });      });    }, 40);  };}
+
+And a ResizeObserver:
+
+const scheduleConnectors = createRenderScheduler(  () => runtime.renderConnectors());const resizeObserver = new ResizeObserver(() => {  scheduleConnectors();});resizeObserver.observe(canvasElement);resizeObserver.observe(worldElement);
+
+Resize Observer is standardized specifically for observing size changes of elements. [33]
+
+Zero-production-write enforcement
+
+For Phase 3.8.5, production safety should be both architectural and testable.
+
+The visualization bundle should contain no calls to record-add/update/delete endpoints. Kintone clearly separates Get Records (GET) from state-changing APIs such as status updates (PUT). [34]
+
+I would make CI reject prohibited REST methods in the Personnel View bundle:
+
+const PROHIBITED_METHODS = new Set([  'POST',  'PUT',  'DELETE',]);function assertReadOnlyMethod(method) {  if (PROHIBITED_METHODS.has(String(method).toUpperCase())) {    throw new Error(      `OrgFlow production-safety violation: ${method} is prohibited`    );  }}
+
+For the visualization module, the intended runtime metric remains:
+
+App53_WRITES  = 0App791_WRITES = 0App792_WRITES = 0App793_WRITES = 0
+
+Kintone's API request limits also argue against unnecessary reloads: cache one immutable snapshot per view lifecycle instead of refetching every time the user zooms, pans or expands a purely visual branch. [24]
+
+Export architecture
+
+Do not make Excel or PDF exports depend on:
+
+current DOM widthcurrent scalecurrent panFit ReadableFit Entire Orgcollapsed/expanded statebrowser viewportscreen density mode
+
+Instead:
+
+Canonical model       ├── Interactive screen renderer       ├── Excel serializer       └── Deterministic PDF/print renderer
+
+That preserves the key guarantee already established in OrgFlow: a user changing zoom must not change organizational truth.
+
+GoJS and BALKAN have built-in export capabilities if a future migration chooses those libraries—GoJS can create SVG/image snapshots and BALKAN documents PDF/PNG/SVG exports—but OrgFlow's canonical Excel/PDF pipeline should remain independent even if one of those renderers is adopted. [35]
+
+Migration path
+
+Do not perform a “big-bang” renderer replacement.
+
+The safe path is:
+
+3.8.4FExisting accepted HTML layout        │        ▼3.8.5Add SVG connector overlay only        │        ▼Post-3.8.5Modularize data adapter / viewport / exports        │        ▼Optional Renderer POCCytoscape+ELK or GoJS behind feature flag        │        ▼Compare against accepted DOM implementation        │        ▼Migrate only if measurable advantage justifies it
+
+That preserves all the human UAT work already invested in 3.8.4C–F.
+
+Performance, accessibility, and UAT
+
+Performance design
+
+At the present project scale, 57 structural nodes and 275 employees do not justify a heavy virtualization framework by themselves. The more important optimization is to avoid rendering all 275 employee cards simultaneously when staff groups are collapsed and to avoid repeatedly reading/writing layout during pan/zoom.
+
+Recommended working budgets for OrgFlow—not platform limits—are:
+
+Operation
+
+OrgFlow engineering target
+
+Pan/zoom
+
+No canonical re-render
+
+Connector geometry update after simple interaction
+
+One animation-frame cycle where practical
+
+Resize debounce
+
+~40–100 ms
+
+Connector DOM replacement
+
+Visible edges only
+
+Data fetch during zoom/pan
+
+0 calls
+
+Tree hash during zoom/pan
+
+0 recomputations
+
+Full canonical reload
+
+Only explicit Refresh / view initialization
+
+Employee expansion
+
+Affected subtree only
+
+Pan/zoom transform authority
+
+Exactly one
+
+Connector/node layout passes
+
+Batch reads, then batch writes
+
+The performance checklist should be:
+
+Keep collapsed staff collapsed. Do not instantiate 59 Die Casting employees merely to draw a “59 Staff” label.
+
+Cache elementByNodeId; do not query the whole DOM for every edge.
+
+Batch getBoundingClientRect() reads before SVG writes.
+
+Reuse the existing SVG element and replace/update path children instead of rebuilding the application.
+
+Recalculate connectors only after geometry-changing operations; pan and zoom should normally need no path recomputation if SVG and cards share the same transform.
+
+Use ResizeObserver for actual container changes rather than polling. [33]
+
+Keep Kintone reads out of viewport operations; Kintone documents API request limits, so visual interaction should stay entirely client-side after the snapshot loads. [24]
+
+One particularly important result follows from the shared-world architecture:
+
+Pan and zoom do not require recalculating connector coordinates at all.
+
+If HTML cards and SVG paths live in the same coordinate space and their common ancestor is transformed, both move together. Connector recomputation is required only when layout geometry changes: density, expand/collapse, responsive re-packing, text-size change, or subtree focus reconstruction.
+
+Accessibility design
+
+WCAG 2.2 includes requirements around visible keyboard focus and minimum target sizes; the Target Size (Minimum) criterion specifies 24 by 24 CSS pixels unless an exception applies. WAI-ARIA's Authoring Practices also define keyboard interaction expectations for hierarchical/treegrid widgets. [36]
+
+For OrgFlow:
+
+Connectors are decorative semantics, so set SVG aria-hidden="true" and communicate hierarchy through card semantics, labels and keyboard behavior.
+
+Every focused organization/position card needs a visible focus indicator.
+
+Use a roving tabindex strategy rather than forcing users through every View Staff and Details button before reaching the next organizational node.
+
+Enter/Space can open a node; Left/Right or Up/Down can navigate structural relations if OrgFlow explicitly implements the corresponding tree interaction model.
+
+Do not assign role="tree" or treegrid" merely for appearance; use the ARIA pattern only if the required keyboard semantics are implemented. WAI-ARIA APG provides the expected keyboard model for treegrids. [37]
+
+Focus Subtree should move programmatic focus to the new focused branch heading.
+
+Search results should announce the matched person's name and organization through an appropriate live status region.
+
+Do not encode Organization versus Reporting connectors by color alone.
+
+Buttons such as Details, View Staff, Fit Readable and zoom controls should meet practical target sizing consistent with the WCAG minimum-target criterion. [38]
+
+A useful card structure is:
+
+<article  class="orgflow-position-card"  tabindex="0"  aria-labelledby="pos-POS-MGR-title pos-POS-MGR-person"  data-node-id="POS-MGR">  <div id="pos-POS-MGR-title">    Factory Manager  </div>  <div id="pos-POS-MGR-person">    Mr. Example Employee  </div>  <button type="button">    Details  </button></article>
+
+Phase-gate UAT mapping
+
+Phase
+
+What it proved / must continue proving
+
+Automated assertion
+
+3.8.4C — True scale
+
+Reported zoom must equal rendered zoom; no hidden/double scaling
+
+abs(actualScale - commandedScale) <= tolerance; at scale 1, visual width ≈ logical width
+
+3.8.4D — Packing
+
+Horizontal space may be used without destroying subtree readability
+
+Minimum card-width check; balanced grid checks; no geometry compression below threshold
+
+3.8.4E — Collision free
+
+Intrinsic subtree geometry must not overlap
+
+COLLISION_COUNT === 0; CHILD_OVERFLOW_COUNT === 0
+
+3.8.4F — Top-level visibility
+
+DIV-ME, DIV-G0 and Corporate remain visible siblings
+
+TOP_LEVEL_VISIBLE_BRANCH_COUNT === 3; Corporate width > 0 and children contained
+
+3.8.5 — Connectors
+
+Canonical edges can be understood without moving the accepted layout
+
+Hash unchanged; geometry delta ≤ tolerance; invalid anchors 0; orphan connectors 0; connector/card intersections 0
+
+The critical 3.8.5 geometry-lock test should snapshot all important rectangles before and after SVG injection:
+
+function snapshotGeometry(elements) {  return new Map(    Array.from(elements, (element) => {      const r = element.getBoundingClientRect();      return [        element.dataset.nodeId,        {          left: r.left,          top: r.top,          width: r.width,          height: r.height,        },      ];    })  );}function compareGeometry(before, after, tolerance = 1) {  const failures = [];  for (const [id, a] of before.entries()) {    const b = after.get(id);    if (!b) {      failures.push({ id, reason: 'missing-after' });      continue;    }    for (const field of ['left', 'top', 'width', 'height']) {      const delta = Math.abs(a[field] - b[field]);      if (delta > tolerance) {        failures.push({          id,          field,          before: a[field],          after: b[field],          delta,        });      }    }  }  return failures;}
+
+For 3.8.5:
+
+GEOMETRY_LOCK_FAILURE_COUNT = 0
+
+is more important than whether a developer thinks the new connector version “looks roughly the same.”
+
+Connector-specific UAT
+
+The automated UAT gate should report:
+
+EXPECTED_CANONICAL_EDGES =VISIBLE_STRUCTURAL_EDGES =RENDERED_CONNECTOR_COUNT =ORPHAN_CONNECTOR_COUNT =INVALID_PARENT_ANCHOR_COUNT =INVALID_CHILD_ANCHOR_COUNT =CONNECTOR_CARD_INTERSECTION_COUNT =COLLISION_COUNT =CHILD_OVERFLOW_COUNT =GEOMETRY_LOCK_FAILURE_COUNT =TREE_HASH_BEFORE =TREE_HASH_AFTER =HIERARCHY_MUTATIONS =TOP_LEVEL_VISIBLE_BRANCH_COUNT =App53_WRITES =App791_WRITES =App792_WRITES =App793_WRITES =
+
+Pass conditions:
+
+ORPHAN_CONNECTOR_COUNT            = 0INVALID_PARENT_ANCHOR_COUNT       = 0INVALID_CHILD_ANCHOR_COUNT        = 0CONNECTOR_CARD_INTERSECTION_COUNT = 0COLLISION_COUNT                   = 0CHILD_OVERFLOW_COUNT              = 0GEOMETRY_LOCK_FAILURE_COUNT       = 0TREE_HASH_BEFORE == TREE_HASH_AFTERHIERARCHY_MUTATIONS = 0TOP_LEVEL_VISIBLE_BRANCH_COUNT = 3App53_WRITES  = 0App791_WRITES = 0App792_WRITES = 0App793_WRITES = 0
+
+RENDERED_CONNECTOR_COUNT need not equal 56 while the Personnel View is collapsed, because not every canonical edge necessarily has two currently visible endpoint cards. What must hold is:
+
+RENDERED_CONNECTOR_COUNT==VISIBLE_STRUCTURAL_EDGES
+
+This distinction matters for collapsed departments and Focus Subtree.
+
+Screenshot UAT
+
+Do not accept a console report alone.
+
+Capture real browser output for at least:
+
+Scenario
+
+Required observation
+
+1920×1080 Normal
+
+Leadership and all 3 top-level branches readable
+
+1920×1080 Compact
+
+No connector drift after density change
+
+Normal 100%
+
+Lines terminate exactly at card anchors
+
+Fit Readable
+
+Readable scale retained; no line/card drift
+
+Fit Entire Org
+
+Overview can shrink but connectors remain attached
+
+DIV-ME Focus Subtree
+
+Only relevant focused hierarchy visible
+
+GIFU Focus Subtree
+
+Section links follow actual cards
+
+Corporate
+
+Three corporate sections remain contained
+
+Expand/Collapse
+
+No orphan/floating connectors
+
+View Staff open/close
+
+Structural connectors unchanged unless container geometry genuinely moves
+
+Browser resize
+
+No stale lines
+
+Search + Center
+
+Center changes viewport, not hierarchy
+
+The screenshot is the final authority whenever metrics and visible output disagree—the exact lesson from 3.8.4C and the reported-versus-actual width/scale mismatch.
+
+Sprint plan and acceptance criteria
+
+Four-week implementation roadmap
+
+The sequencing below deliberately minimizes the amount of code allowed to change before the connector layer has passed UAT.
+
+Week one — connector foundation
+
+Deliver only the minimal 3.8.5 layer:
+
+Existing DOM+SVG background+canonical structural edges+actual DOM anchors+tree hash+geometry lock
+
+Acceptance requires:
+
+TREE_HASH_BEFORE == TREE_HASH_AFTERHIERARCHY_MUTATIONS = 0GEOMETRY_LOCK_FAILURE_COUNT = 0INVALID_PARENT_ANCHOR_COUNT = 0INVALID_CHILD_ANCHOR_COUNT = 0COLLISION_COUNT = 0CHILD_OVERFLOW_COUNT = 0Apps 53/791/792/793 writes = 0
+
+Do not redesign DIV-ME, DIV-G0 or Corporate.
+
+Week two — interaction and accessibility
+
+Wire connector updates to:
+
+ResizeDensityExpandCollapseFocus SubtreeText wrap/layout change
+
+Pan and zoom should normally move connectors automatically through the shared transform rather than recomputing them.
+
+Add keyboard focus behavior, meaningful card labels, minimum target sizing, visible focus and connector aria-hidden. WCAG 2.2 and WAI-ARIA APG should be the acceptance references. [39]
+
+Week three — hardening
+
+Test:
+
+57 canonical nodes56 canonical structural edges275 employees0 orphans
+
+Stress expanded departments, repeated density switching, rapid resizing and search/focus cycles.
+
+No Kintone request should be triggered by:
+
+panzoomcenterdensitystaff collapsestaff expansion
+
+unless the application intentionally lazy-loads previously unfetched employee records.
+
+Verify PDF/Excel still use the canonical model and remain independent of the interactive canvas.
+
+Week four — deployment and human UAT
+
+Deploy through the existing Kintone JavaScript/CSS customization route. Kintone supports app JavaScript/CSS customizations and provides app-event APIs for the runtime integration. [40]
+
+Perform real screenshots, not just metrics.
+
+The final gate should be:
+
+PHASE_3_8_5_CONNECTOR_UAT_READY
+
+only when all of the following are simultaneously true:
+
+Canonical hierarchy unchanged57 nodes56 canonical edges275 employees0 orphans3 top-level branches still visible0 branch collisions0 child overflow0 geometry regression0 invalid connector anchors0 orphan connectors0 connector/card intersectionsConnector alignment survives:- 100% zoom- Fit Readable- Fit Entire Org- pan- Compact- Normal- resize- expand/collapse- Focus SubtreeApps 53 / 791 / 792 / 793:0 production writes
+
+Prioritized recommendation
+
+First choice — implement now:Native SVG connector overlay + existing OrgFlow DOM + selective D3 modules. D3 gives OrgFlow standards-based, low-level visualization and zoom primitives without forcing a new node layout, while SVG and actual DOM measurements satisfy the anchor and geometry requirements that the 3.8.4 iterations exposed. [41]
+
+Fallback if the custom renderer eventually becomes too costly:Cytoscape.js + ELK. It provides an open-source graph model, zoom/pan/fit controls and mature layout extensions, but should be evaluated in a separate Kintone Custom View behind a feature flag rather than replacing the accepted OrgFlow view in-place. [3]
+
+Commercial alternative:GoJS is the strongest candidate if licensing cost is acceptable and the objective changes from “preserve our accepted Kintone DOM” to “adopt a complete diagramming platform.” Its official org-chart sample, TreeLayout, link routing, Canvas/SVG rendering, zoom/scrolling and export support are a close functional match to the long-term OrgFlow requirements. [4]
+
+Turnkey org-chart alternative:BALKAN OrgChart JS deserves a proof-of-concept if the organization prefers an org-chart-specific commercial product with built-in navigation and exports. Its existing licensing model and its ownership of layout make it less suitable for Phase 3.8.5 but potentially attractive for a future greenfield renderer. [16]
+
+The architectural rule I would lock into OrgFlow now is therefore:
+
+CANONICAL DATA      │      ▼READ-ONLY VIEW MODEL      │      ├──────────────────────────────┐      ▼                              ▼LOCKED HTML GEOMETRY           DETERMINISTIC EXPORTS      │                         Excel / PDF      ▼ACTUAL DOM MEASUREMENT      │      ▼SVG CONNECTOR LAYER      │      ▼ONE SHARED PAN / ZOOM TRANSFORM
+
+This solves the missing organization-chart semantics without reopening the geometry problems that phases 3.8.4C, 3.8.4D, 3.8.4E and 3.8.4F already solved.
+
+[1] [7] [14] [41] d3-zoom | D3 by Observable - D3.js
+
+https://d3js.org/d3-zoom?utm_source=chatgpt.com
+
+[2] [19] [26] CSSOM View Module
+
+https://www.w3.org/TR/cssom-view-1/?utm_source=chatgpt.com
+
+[3] [8] [28] Cytoscape.js
+
+https://js.cytoscape.org/?utm_source=chatgpt.com
+
+[4] [15] Organizational Chart Diagram with Overview and Search - GoJS
+
+https://gojs.net/latest/samples/orgChartStatic?utm_source=chatgpt.com
+
+[5] [18] [30] [32] Onload Event - Kintone Developer Program
+
+https://kintone.dev/en/docs/kintone/js-api/events/idx/index-show-event/?utm_source=chatgpt.com
+
+[6] API index | D3 by Observable
+
+https://d3js.org/api?utm_source=chatgpt.com
+
+[9] Graph | @maxgraph/core
+
+https://maxgraph.github.io/maxGraph/api-docs/classes/Graph.html?utm_source=chatgpt.com
+
+[10] GitHub - freegroup/draw2d: Create Visio like drawings, diagrams or ...
+
+https://github.com/freegroup/draw2d?utm_source=chatgpt.com
+
+[11] [16] Getting Started - OrgChart JS Documentation
+
+https://balkan.app/OrgChartJS/docs/GettingStarted?utm_source=chatgpt.com
+
+[12] Vis Network Examples
+
+https://visjs.github.io/vis-network/examples/?utm_source=chatgpt.com
+
+[13] [17] Flowcharts Syntax | Mermaid
+
+https://mermaid.js.org/syntax/flowchart.html?utm_source=chatgpt.com
+
+[20] [35] Diagram | GoJS API
+
+https://gojs.net/latest/api/symbols/Diagram.html?utm_source=chatgpt.com
+
+[21] Kintone JavaScript API
+
+https://kintone.dev/en/docs/kintone/js-api/?utm_source=chatgpt.com
+
+[22] External API Requests - Kintone Developer Program
+
+https://kintone.dev/en/docs/kintone/js-api/proxy/?utm_source=chatgpt.com
+
+[23] [31] [34] Get Records - Kintone Developer Program
+
+https://kintone.dev/en/docs/kintone/rest-api/records/get-records/?utm_source=chatgpt.com
+
+[24] Kintone REST API Overview
+
+https://kintone.dev/en/docs/kintone/rest-api/overview/kintone-rest-api-overview/?utm_source=chatgpt.com
+
+[25] Add Cursor - Kintone Developer Program
+
+https://kintone.dev/en/docs/kintone/rest-api/records/create-cursor/?utm_source=chatgpt.com
+
+[27] Scalable Vector Graphics (SVG) 2 - W3C
+
+https://www.w3.org/TR/SVG2/?utm_source=chatgpt.com
+
+[29] Tree | D3 by Observable
+
+https://d3js.org/d3-hierarchy/tree?utm_source=chatgpt.com
+
+[33] Resize Observer - W3C
+
+https://www.w3.org/TR/resize-observer/?utm_source=chatgpt.com
+
+[36] [39] Web Content Accessibility Guidelines (WCAG) 2.2
+
+https://www.w3.org/TR/WCAG22/?utm_source=chatgpt.com
+
+[37] Treegrid Pattern | APG | WAI
+
+https://www.w3.org/WAI/ARIA/apg/patterns/treegrid/?utm_source=chatgpt.com
+
+[38] Understanding SC 2.5.8: Target Size (Minimum) (Level AA)
+
+https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html?utm_source=chatgpt.com
+
+[40] How to Attach Scripts to Kintone Apps
+
+https://kintone.dev/en/tutorials/introduction-to-kintone-customizations/how-to-attach-scripts-to-kintone-apps/?utm_source=chatgpt.com
