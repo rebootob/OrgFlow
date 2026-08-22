@@ -23,8 +23,8 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        BUNDLE_VERSION: '4.2.0',
-        BUILD_TIMESTAMP: '2026-08-22T20:58:00+07:00',
+        BUNDLE_VERSION: '4.3.0',
+        BUILD_TIMESTAMP: '2026-08-22T21:02:00+07:00',
         CACHE_TTL_MS: 300000
     };
 
@@ -1069,9 +1069,10 @@
                 const branchRow = document.createElement('div');
                 branchRow.className = 'orgflow-personnel-branches';
 
+                // Divisions & Corporate Department with Proportional Flex Weights
                 branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME', 2.0));
-                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 1.4));
-                branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0', 1.0));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 1.3));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0', 0.9));
 
                 execGroup.appendChild(branchRow);
                 chartArea.appendChild(execGroup);
@@ -1087,17 +1088,31 @@
             const node = this.store.getTreeNode(nodeCode);
             if (!node) return document.createElement('div');
 
+            const isDept = node.type === 'DEPARTMENT';
+            const isDiv = node.type === 'DIVISION';
+
             const col = document.createElement('div');
-            col.className = 'orgflow-personnel-branch-col';
-            col.style.flex = flexWeight;
+            col.className = isDept ? 'orgflow-personnel-dept-col' : 'orgflow-personnel-branch-col';
+            if (isDiv) {
+                col.style.flex = flexWeight;
+            }
 
             const headerBox = document.createElement('div');
-            headerBox.className = 'orgflow-org-header-box';
-            headerBox.innerHTML = `
-                <div class="orgflow-org-header-title">${node.name}</div>
-                <div class="orgflow-org-header-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b> • Level ${node.level} (${node.type})</div>
-                ${!isFocusRoot ? `<button class="orgflow-btn orgflow-btn-outline btn-focus-unit" style="margin-top:4px; font-size:9px; padding:2px 6px;">🔍 Focus Subtree</button>` : ''}
-            `;
+            headerBox.className = isDept ? 'orgflow-dept-header-box' : 'orgflow-org-header-box';
+            
+            if (isDept) {
+                headerBox.innerHTML = `
+                    <div class="orgflow-dept-title">${node.name}</div>
+                    <div class="orgflow-dept-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b></div>
+                    ${!isFocusRoot ? `<button class="orgflow-btn orgflow-btn-outline btn-focus-unit" style="margin-top:2px; font-size:8px; padding:1px 5px;">🔍 Focus</button>` : ''}
+                `;
+            } else {
+                headerBox.innerHTML = `
+                    <div class="orgflow-org-header-title">${node.name}</div>
+                    <div class="orgflow-org-header-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b> • Level ${node.level} (${node.type})</div>
+                    ${!isFocusRoot ? `<button class="orgflow-btn orgflow-btn-outline btn-focus-unit" style="margin-top:4px; font-size:9px; padding:2px 6px;">🔍 Focus Subtree</button>` : ''}
+                `;
+            }
 
             const focusBtn = headerBox.querySelector('.btn-focus-unit');
             if (focusBtn) {
@@ -1113,6 +1128,7 @@
             if (node.directEmployees.length > 0) {
                 const leaderRow = document.createElement('div');
                 leaderRow.className = 'orgflow-personnel-row';
+                leaderRow.style.marginBottom = '8px';
                 node.directEmployees.forEach(emp => {
                     leaderRow.appendChild(this.renderPositionEmployeeCard(emp, node.type));
                 });
