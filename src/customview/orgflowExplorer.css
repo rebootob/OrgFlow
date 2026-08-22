@@ -521,16 +521,322 @@
 /* PREVIEW BANNER */
 .orgflow-preview-banner {
     background: #fffbeb;
-    border: 1px solid #fde68a;
+    border: 1px solid #fef08a;
     border-radius: 6px;
     padding: 10px 14px;
     margin-bottom: 16px;
-    font-size: 12px;
-    color: #92400e;
     display: flex;
     align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #854d0e;
+}
+
+/* ======================================================== */
+/* PERSONNEL VIEW EXECUTIVE ORG CHART STYLING               */
+/* ======================================================== */
+
+.orgflow-personnel-chart-root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.orgflow-personnel-summary-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.orgflow-summary-pill {
+    font-size: 11px;
+    color: #475569;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.orgflow-summary-pill b {
+    color: #0284c7;
+    margin-left: 4px;
+}
+
+.orgflow-personnel-canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 30px;
+}
+
+.orgflow-personnel-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.orgflow-personnel-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.orgflow-personnel-branches {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.orgflow-personnel-branch-col {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 16px;
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.orgflow-org-header-box {
+    width: 100%;
+    text-align: center;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.orgflow-org-header-box:hover {
+    background: #e0f2fe;
+    border-color: #0284c7;
+}
+
+.orgflow-org-header-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.orgflow-org-header-sub {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.orgflow-personnel-sub-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.orgflow-personnel-dept-col {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px;
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orgflow-dept-header-box {
+    text-align: center;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.orgflow-dept-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0369a1;
+}
+
+.orgflow-dept-sub {
+    font-size: 10px;
+    color: #64748b;
+}
+
+.orgflow-personnel-sections-row {
+    display: flex;
+    flex-direction: column;
     gap: 8px;
-    font-weight: 500;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.orgflow-personnel-section-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 8px 10px;
+    width: 100%;
+}
+
+.orgflow-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orgflow-section-staff-list {
+    margin-top: 10px;
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* POSITION / EMPLOYEE CARD */
+.orgflow-position-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 10px 12px;
+    width: 240px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.orgflow-position-card:hover {
+    border-color: #0284c7;
+    box-shadow: 0 4px 10px rgba(2,132,199,0.15);
+    transform: translateY(-2px);
+}
+
+.orgflow-position-card.compact {
+    width: 100%;
+    padding: 6px 8px;
+}
+
+.orgflow-pos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+.orgflow-pos-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #0284c7;
+    text-transform: uppercase;
+}
+
+.orgflow-pos-code {
+    font-size: 9px;
+    color: #94a3b8;
+}
+
+.orgflow-pos-body {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.orgflow-pos-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e0f2fe;
+    color: #0284c7;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.orgflow-pos-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.orgflow-pos-emp-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.orgflow-pos-emp-id {
+    font-size: 10px;
+    color: #64748b;
+}
+
+.orgflow-pos-unit {
+    font-size: 10px;
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ======================================================== */
+/* PRINT MEDIA QUERY FOR EXECUTIVE DOSSIER                  */
+/* ======================================================== */
+@media print {
+    .orgflow-toolbar,
+    .orgflow-sidebar,
+    .orgflow-breadcrumb-bar,
+    .orgflow-drawer-overlay,
+    .btn-toggle-sec-staff,
+    .btn-sec-details,
+    button {
+        display: none !important;
+    }
+
+    #orgflow-explorer-app {
+        background: #ffffff !important;
+        min-height: auto !important;
+    }
+
+    .orgflow-body {
+        display: block !important;
+    }
+
+    .orgflow-canvas {
+        padding: 0 !important;
+        overflow: visible !important;
+    }
+
+    .orgflow-chart-container {
+        border: none !important;
+        padding: 0 !important;
+    }
 }
 
 @keyframes fadeIn {
