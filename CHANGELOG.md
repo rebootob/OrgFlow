@@ -1,5 +1,20 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.3.8-phase6b3r3] - 2026-08-22
+
+### Added
+- **Phase 6B.3R3 Final Authoritative Organization Tree Verification (100% Read-Only):** Conducted full node-by-node verification of all 34 nodes from Org.FY2026_Rev.2.pdf.
+- Handled duplicate names (e.g. Marketing under 6 sections) via distinct hierarchy_path context without merging.
+- Enforced zero invented codes (`entity_code = NULL` for nodes without printed PDF codes).
+- Isolated special structures (Support Marketing, Safety Officer, BCP Office, Board of Directors, Executive Positions).
+- Audited and verified 18/18 mandatory acceptance gates passed (G01 to G18).
+- Evaluated 273/273 active current assignments as 100% mappable with 0 orphan assignments.
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable report ([`PHASE_6B3R3_FINAL_AUTHORITATIVE_ORG_VERIFICATION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b3r3/PHASE_6B3R3_FINAL_AUTHORITATIVE_ORG_VERIFICATION_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_FINAL_ORG_MASTER_APPROVAL`).
+
+---
+
 ## [v1.3.7-phase6b3r2] - 2026-08-22
 
 ### Added

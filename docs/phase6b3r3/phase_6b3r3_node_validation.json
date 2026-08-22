@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "code": "TTMET",
+    "type": "COMPANY",
+    "parentName": "ROOT",
+    "parentCode": "",
+    "path": "TTMET",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Machinery & Engineering Division",
+    "code": null,
+    "type": "DIVISION",
+    "parentName": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "parentCode": "TTMET",
+    "path": "TTMET -> Machinery & Engineering Division",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "GIFU SEIKI Division",
+    "code": null,
+    "type": "DIVISION",
+    "parentName": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "parentCode": "TTMET",
+    "path": "TTMET -> GIFU SEIKI Division",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Corporate Department",
+    "code": "TMH0",
+    "type": "DEPARTMENT",
+    "parentName": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "parentCode": "TTMET",
+    "path": "TTMET -> Corporate Department",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Machinery Department",
+    "code": "TMT1",
+    "type": "DEPARTMENT",
+    "parentName": "Machinery & Engineering Division",
+    "parentCode": null,
+    "path": "TTMET -> Machinery & Engineering Division -> Machinery Department",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Industrial Services Department",
+    "code": "TMT0",
+    "type": "DEPARTMENT",
+    "parentName": "Machinery & Engineering Division",
+    "parentCode": null,
+    "path": "TTMET -> Machinery & Engineering Division -> Industrial Services Department",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Eco Energy & Textile Machinery Department",
+    "code": "TME1",
+    "type": "DEPARTMENT",
+    "parentName": "Machinery & Engineering Division",
+    "parentCode": null,
+    "path": "TTMET -> Machinery & Engineering Division -> Eco Energy & Textile Machinery Department",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Technical Services Department",
+    "code": "TMS0",
+    "type": "DEPARTMENT",
+    "parentName": "Machinery & Engineering Division",
+    "parentCode": null,
+    "path": "TTMET -> Machinery & Engineering Division -> Technical Services Department",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Mold & Engineering Department",
+    "code": "TMG0",
+    "type": "DEPARTMENT",
+    "parentName": "GIFU SEIKI Division",
+    "parentCode": null,
+    "path": "TTMET -> GIFU SEIKI Division -> Mold & Engineering Department",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Export",
+    "code": "TMT1",
+    "type": "SECTION",
+    "parentName": "Machinery Department",
+    "parentCode": "TMT1",
+    "path": "... -> Machinery Department -> Export",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Machine & Equipments",
+    "code": null,
+    "type": "TEAM",
+    "parentName": "Export",
+    "parentCode": "TMT1",
+    "path": "... -> Export -> Machine & Equipments",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Tool Part & Project",
+    "code": null,
+    "type": "TEAM",
+    "parentName": "Export",
+    "parentCode": "TMT1",
+    "path": "... -> Export -> Tool Part & Project",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Toyota Sales",
+    "code": "TMT2",
+    "type": "SECTION",
+    "parentName": "Machinery Department",
+    "parentCode": "TMT1",
+    "path": "... -> Machinery Department -> Toyota Sales",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Tooling",
+    "code": null,
+    "type": "TEAM",
+    "parentName": "Toyota Sales",
+    "parentCode": "TMT2",
+    "path": "... -> Toyota Sales -> Tooling",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "STN",
+    "code": null,
+    "type": "TEAM",
+    "parentName": "Toyota Sales",
+    "parentCode": "TMT2",
+    "path": "... -> Toyota Sales -> STN",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Logistics",
+    "code": null,
+    "type": "TEAM",
+    "parentName": "Toyota Sales",
+    "parentCode": "TMT2",
+    "path": "... -> Toyota Sales -> Logistics",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Automotive",
+    "code": "TMF1",
+    "type": "SECTION",
+    "parentName": "Industrial Services Department",
+    "parentCode": "TMT0",
+    "path": "... -> Industrial Services Department -> Automotive",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Marketing (Automotive)",
+    "code": null,
+    "type": "FUNCTION",
+    "parentName": "Automotive",
+    "parentCode": "TMF1",
+    "path": "... -> Automotive -> Marketing",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Industry",
+    "code": "TMF2",
+    "type": "SECTION",
+    "parentName": "Industrial Services Department",
+    "parentCode": "TMT0",
+    "path": "... -> Industrial Services Department -> Industry",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Marketing (Industry)",
+    "code": null,
+    "type": "FUNCTION",
+    "parentName": "Industry",
+    "parentCode": "TMF2",
+    "path": "... -> Industry -> Marketing",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Sales Engineering",
+    "code": "TMF3",
+    "type": "SECTION",
+    "parentName": "Industrial Services Department",
+    "parentCode": "TMT0",
+    "path": "... -> Industrial Services Department -> Sales Engineering",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Sales",
+    "code": null,
+    "type": "FUNCTION",
+    "parentName": "Sales Engineering",
+    "parentCode": "TMF3",
+    "path": "... -> Sales Engineering -> Sales",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Marketing (Sales Engineering)",
+    "code": null,
+    "type": "FUNCTION",
+    "parentName": "Sales Engineering",
+    "parentCode": "TMF3",
+    "path": "... -> Sales Engineering -> Marketing",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Eco Energy & Textile Machinery",
+    "code": "TME3",
+    "type": "SECTION",
+    "parentName": "Eco Energy & Textile Machinery Department",
+    "parentCode": "TME1",
+    "path": "... -> Eco Energy Department -> Eco Energy Sec",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Marketing (Eco Energy)",
+    "code": null,
+    "type": "FUNCTION",
+    "parentName": "Eco Energy & Textile Machinery Sec",
+    "parentCode": "TME3",
+    "path": "... -> Eco Energy Sec -> Marketing",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Technical Services",
+    "code": "TMS1",
+    "type": "SECTION",
+    "parentName": "Technical Services Department",
+    "parentCode": "TMS0",
+    "path": "... -> Technical Services Dept -> Technical Services Sec",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Project Team",
+    "code": null,
+    "type": "TEAM",
+    "parentName": "Technical Services Sec",
+    "parentCode": "TMS1",
+    "path": "... -> Technical Services Sec -> Project Team",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Engineering Team",
+    "code": null,
+    "type": "TEAM",
+    "parentName": "Technical Services Sec",
+    "parentCode": "TMS1",
+    "path": "... -> Technical Services Sec -> Engineering Team",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Safety Team",
+    "code": null,
+    "type": "TEAM",
+    "parentName": "Technical Services Sec",
+    "parentCode": "TMS1",
+    "path": "... -> Technical Services Sec -> Safety Team",
+    "sourceStatus": "NO_OFFICIAL_CODE"
+  },
+  {
+    "name": "Die Casting",
+    "code": "TMG1",
+    "type": "SECTION",
+    "parentName": "Mold & Engineering Department",
+    "parentCode": "TMG0",
+    "path": "... -> Mold & Eng Dept -> Die Casting",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Injection",
+    "code": "TMG2",
+    "type": "SECTION",
+    "parentName": "Mold & Engineering Department",
+    "parentCode": "TMG0",
+    "path": "... -> Mold & Eng Dept -> Injection",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "GA",
+    "code": "TMH1",
+    "type": "SECTION",
+    "parentName": "Corporate Department",
+    "parentCode": "TMH0",
+    "path": "... -> Corporate Dept -> GA",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "HR & Personnel",
+    "code": "TMH2",
+    "type": "SECTION",
+    "parentName": "Corporate Department",
+    "parentCode": "TMH0",
+    "path": "... -> Corporate Dept -> HR & Personnel",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  },
+  {
+    "name": "Accounting & Finance",
+    "code": "TMH3",
+    "type": "SECTION",
+    "parentName": "Corporate Department",
+    "parentCode": "TMH0",
+    "path": "... -> Corporate Dept -> Accounting & Finance",
+    "sourceStatus": "EXPLICIT_IN_AUTHORITATIVE_REFERENCE"
+  }
+]
