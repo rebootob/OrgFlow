@@ -1,0 +1,247 @@
+{
+  "total_app792_records": 275,
+  "employees_checked": 275,
+  "distinct_position_names": 39,
+  "distinct_position_codes": 14,
+  "distinct_organization_codes": 14,
+  "fully_correct_records": 275,
+  "incorrect_records": 0,
+  "ambiguous_records": 0,
+  "position_summary": [
+    {
+      "position_name": "Chief",
+      "position_code": "POS-CHF",
+      "employee_count": 57,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Marketing Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 40,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Operator",
+      "position_code": "POS-OPR",
+      "employee_count": 32,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Manager",
+      "position_code": "POS-MGR",
+      "employee_count": 30,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 21,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Engineer",
+      "position_code": "POS-ENG",
+      "employee_count": 15,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Coordinator",
+      "position_code": "POS-CRD",
+      "employee_count": 12,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Support Marketing Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 11,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "General Manager",
+      "position_code": "POS-GM",
+      "employee_count": 5,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Messenger",
+      "position_code": "POS-STAFF",
+      "employee_count": 5,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Advisor",
+      "position_code": "POS-ADV",
+      "employee_count": 4,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Deputy General Manager",
+      "position_code": "POS-DGM",
+      "employee_count": 4,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Accounting Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 3,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Vice President",
+      "position_code": "POS-STAFF",
+      "employee_count": 3,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "President",
+      "position_code": "POS-STAFF",
+      "employee_count": 2,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Supoort Marketing Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 2,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Safety Officer",
+      "position_code": "POS-SFT",
+      "employee_count": 2,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Assistant Manager",
+      "position_code": "POS-AST-MGR",
+      "employee_count": 2,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "IT Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 2,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Trainee",
+      "position_code": "POS-STAFF",
+      "employee_count": 2,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Technician",
+      "position_code": "POS-TECH",
+      "employee_count": 2,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "CAM Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 2,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Co Project Manager",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Managing Director",
+      "position_code": "POS-MD",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Specialist",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Senior  Manager",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Section  Manager",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Safety",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Technical Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Senior Manager",
+      "position_code": "POS-SR-MGR",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Senior Specilaist",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Warehouse Support",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Driver",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Contract (Apite)",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Contract (Japan Support)",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Interpreter",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Warehouse Staff",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Clerk",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    },
+    {
+      "position_name": "Factory Manager",
+      "position_code": "POS-STAFF",
+      "employee_count": 1,
+      "consistency_status": "PASS"
+    }
+  ],
+  "exceptions": []
+}
