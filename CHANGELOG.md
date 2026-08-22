@@ -1,5 +1,17 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.3.3-phase6b1b] - 2026-08-22
+
+### Added
+- **Phase 6B.1B Authoritative Org Chart Name Extraction & Master Crosswalk (Strict Read-Only Audit):** Extracted 27 verbatim business hierarchy nodes directly from Organization Chart 2026 (OrgFY2026).
+- Conducted strict textual crosswalk comparison against App 791 masters. Identified 27 MISSING_IN_APP791 official English Org Chart structural nodes.
+- Discovered structural naming gap between App 791's Thai employee-centric names (`"น.ส.พรหมศิริ พิมพ์สกุลไกร"`) and Org Chart 2026's official English structural names (`"Machinery Department (TM10)"`).
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable reports in `docs/phase6b1b/` ([`ORG_CHART_TO_APP791_CROSSWALK.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b1b/ORG_CHART_TO_APP791_CROSSWALK.md)).
+- Enforced Mandatory Stop Gate (Stopped for Business Name Review).
+
+---
+
 ## [v1.3.2-phase6b1a] - 2026-08-22
 
 ### Added
