@@ -1,0 +1,60 @@
+[TTMET] Toyota Tsusho M&E (Thailand) Co.,Ltd. (COMPANY) - Level 1
+│
+├── [DIV-ME] Machinery & Engineering Division (DIVISION) - Level 2
+│   ├── [TMT0] Machinery Department (DEPARTMENT) - Level 3
+│   │   ├── [TMT1] Export (SECTION) - Level 4
+│   │   │   ├── [TMT1-MACH] Machine & Equipments (TEAM) - Level 5
+│   │   │   └── [TMT1-TRIAL] Tool Part & Project (TEAM) - Level 5
+│   │   └── [TMT2] Toyota Sales (SECTION) - Level 4
+│   │       ├── [TMT2-TOYOTA] TOYOTA (TEAM) - Level 5
+│   │       ├── [TMT2-STM] STM (TEAM) - Level 5
+│   │       └── [TMT2-LOGITIC] Logistics (TEAM) - Level 5
+│   ├── [TMF0] Industrial Services Department (DEPARTMENT) - Level 3
+│   │   ├── [TMF1] Automotive (SECTION) - Level 4
+│   │   │   └── [TMF1-AUTOMOTIVE] AUTOMOTIVE (TEAM) - Level 5
+│   │   ├── [TMF2] Industry (SECTION) - Level 4
+│   │   │   └── [TMF2-INDUSTRY] INDUSTRY (TEAM) - Level 5
+│   │   └── [TMF3] Sales Engineering (SECTION) - Level 4
+│   │       └── [TMF3-DENSO] DENSO (TEAM) - Level 5
+│   ├── [TME0] Eco Energy & Textile Machinery Department (DEPARTMENT) - Level 3
+│   │   └── [TME1] Eco Energy & Textile Machinery (SECTION) - Level 4
+│   │       └── [TME1-MARK] Marketing (Eco Energy) (TEAM) - Level 5
+│   └── [TMS0] Technical Services Department (DEPARTMENT) - Level 3
+│       └── [TMS1] Technical Services (SECTION) - Level 4
+│           ├── [TMS1-PROJ] Project Management (TEAM) - Level 5
+│           ├── [TMS1-ENGI] Engineering (TEAM) - Level 5
+│           └── [TMS1-SAFE] Safety & ISO (TEAM) - Level 5
+│
+├── [DIV-G0] GIFU SEIKI Division (DIVISION) - Level 2
+│   └── [TMG0] Mold & Engineering Department (DEPARTMENT) - Level 3
+│       ├── Admin (FUNCTION) - Level 4 [CODE TBD]
+│       ├── CAD (FUNCTION) - Level 4 [CODE TBD]
+│       ├── Marketing (FUNCTION) - Level 4 [CODE TBD]
+│       ├── Production (FUNCTION) - Level 4 [CODE TBD]
+│       ├── [TMG1] Die Casting (SECTION) - Level 4
+│       │   ├── Admin (TEAM) - Level 5 [CODE TBD]
+│       │   │   └── ACC. HR & GA (SUB-TEAM) - Level 6 [CODE TBD]
+│       │   ├── CAD (TEAM) - Level 5 [CODE TBD]
+│       │   ├── Marketing (TEAM) - Level 5 [CODE TBD]
+│       │   └── Production (TEAM) - Level 5 [CODE TBD]
+│       │       ├── PC/PUR (SUB-TEAM) - Level 6 [CODE TBD]
+│       │       │   ├── Machine (FUNCTION) - Level 7 [CODE TBD]
+│       │       │   ├── Finishing (FUNCTION) - Level 7 [CODE TBD]
+│       │       │   └── QA (FUNCTION) - Level 7 [CODE TBD]
+│       │       └── CAM (SUB-TEAM) - Level 6 [CODE TBD]
+│       │           └── QC (FUNCTION) - Level 7 [CODE TBD]
+│       └── [TMG2] Injection (SECTION) - Level 4
+│           ├── Production (TEAM) - Level 5 [CODE TBD]
+│           │   ├── CAM (SUB-TEAM) - Level 6 [CODE TBD]
+│           │   │   └── QC (FUNCTION) - Level 7 [CODE TBD]
+│           │   └── PC/PUR (SUB-TEAM) - Level 6 [CODE TBD]
+│           │       ├── Machine (FUNCTION) - Level 7 [CODE TBD]
+│           │       ├── Finishing (FUNCTION) - Level 7 [CODE TBD]
+│           │       └── QA (FUNCTION) - Level 7 [CODE TBD]
+│           ├── CAD (TEAM) - Level 5 [CODE TBD]
+│           └── Marketing (TEAM) - Level 5 [CODE TBD]
+│
+└── [TMH0] Corporate Department (DEPARTMENT) - Level 3
+    ├── [TMH1] GA (SECTION) - Level 4
+    ├── [TMH2] HR & Personnel (SECTION) - Level 4
+    └── [TMH3] Accounting & Finance (SECTION) - Level 4
