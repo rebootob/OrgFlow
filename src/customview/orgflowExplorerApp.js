@@ -23,8 +23,8 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        BUNDLE_VERSION: '4.5.0',
-        BUILD_TIMESTAMP: '2026-08-22T21:08:00+07:00',
+        BUNDLE_VERSION: '4.6.0',
+        BUILD_TIMESTAMP: '2026-08-22T21:11:00+07:00',
         CACHE_TTL_MS: 300000
     };
 
@@ -802,6 +802,60 @@
                 target.style.transform = `translate(${this.panX}px, ${this.panY}px) scale(${this.zoomScale})`;
                 target.style.transformOrigin = 'top center';
             }
+            this.auditDOMGeometry();
+        }
+
+        auditDOMGeometry() {
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    const viewport = document.getElementById('orgflow-chart-canvas');
+                    const target = document.getElementById('orgflow-transform-layer');
+                    const treeRoot = document.querySelector('.orgflow-personnel-chart-root') || target;
+                    const divME = document.getElementById('branch-DIV-ME');
+                    const divG0 = document.getElementById('branch-DIV-G0');
+                    const tmh0 = document.getElementById('branch-TMH0');
+                    const posCard = document.querySelector('.orgflow-position-card');
+
+                    if (!viewport || !treeRoot) return;
+
+                    const vRect = viewport.getBoundingClientRect();
+                    const tRect = treeRoot.getBoundingClientRect();
+                    const meRect = divME ? divME.getBoundingClientRect() : null;
+                    const g0Rect = divG0 ? divG0.getBoundingClientRect() : null;
+                    const h0Rect = tmh0 ? tmh0.getBoundingClientRect() : null;
+                    const pRect = posCard ? posCard.getBoundingClientRect() : null;
+
+                    const logicalWidth = treeRoot.offsetWidth || treeRoot.scrollWidth;
+                    const visualWidth = tRect.width;
+                    const widthUsagePercent = ((visualWidth / vRect.width) * 100).toFixed(1);
+                    const leftUnused = Math.max(0, (tRect.left - vRect.left)).toFixed(1);
+                    const rightUnused = Math.max(0, (vRect.right - tRect.right)).toFixed(1);
+
+                    const metrics = {
+                        VIEWPORT_WIDTH: Math.round(vRect.width),
+                        VIEWPORT_HEIGHT: Math.round(vRect.height),
+                        LOGICAL_TREE_WIDTH: Math.round(logicalWidth),
+                        LOGICAL_TREE_HEIGHT: Math.round(treeRoot.offsetHeight || treeRoot.scrollHeight),
+                        ACTUAL_TREE_WIDTH: Math.round(tRect.width),
+                        ACTUAL_TREE_HEIGHT: Math.round(tRect.height),
+                        TREE_LEFT: Math.round(tRect.left),
+                        TREE_RIGHT: Math.round(tRect.right),
+                        LEFT_UNUSED_SPACE: `${leftUnused}px`,
+                        RIGHT_UNUSED_SPACE: `${rightUnused}px`,
+                        VIEWPORT_WIDTH_USAGE_PERCENT: `${widthUsagePercent}%`,
+                        SCALE_COMMAND: this.zoomScale,
+                        ACTUAL_SCALE_RATIO: (visualWidth / logicalWidth).toFixed(3),
+                        POSITION_CARD_LOGICAL_WIDTH: posCard ? posCard.offsetWidth : 215,
+                        POSITION_CARD_ACTUAL_WIDTH: pRect ? Math.round(pRect.width) : 185,
+                        DIV_ME_ACTUAL_WIDTH: meRect ? Math.round(meRect.width) : 0,
+                        DIV_G0_ACTUAL_WIDTH: g0Rect ? Math.round(g0Rect.width) : 0,
+                        CORPORATE_ACTUAL_WIDTH: h0Rect ? Math.round(h0Rect.width) : 0
+                    };
+
+                    console.log('=== OrgFlow [v4.6.0] ACTUAL DOM GEOMETRY AUDIT ===', metrics);
+                    window.__ORGFLOW_DOM_METRICS__ = metrics;
+                });
+            });
         }
 
         autoExpandAndFocusSearch(query) {
@@ -1121,6 +1175,7 @@
             const isDiv = node.type === 'DIVISION';
 
             const col = document.createElement('div');
+            col.id = `branch-${nodeCode}`;
             col.className = isDept ? 'orgflow-personnel-dept-col' : 'orgflow-personnel-branch-col';
             if (isDiv) {
                 col.style.flex = flexWeight;
