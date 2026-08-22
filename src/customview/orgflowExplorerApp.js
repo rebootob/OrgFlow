@@ -23,8 +23,8 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        BUNDLE_VERSION: '4.6.0',
-        BUILD_TIMESTAMP: '2026-08-22T21:11:00+07:00',
+        BUNDLE_VERSION: '4.7.0',
+        BUILD_TIMESTAMP: '2026-08-22T21:14:00+07:00',
         CACHE_TTL_MS: 300000
     };
 
@@ -1152,9 +1152,9 @@
                 const branchRow = document.createElement('div');
                 branchRow.className = 'orgflow-personnel-branches';
 
-                // Divisions & Corporate Department with Proportional Flex Weights
-                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME', 2.2));
-                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 1.8));
+                // Divisions & Corporate Department with Proportional Flex Weights (48% / 34% / 18%)
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME', 2.8));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 2.0));
                 branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0', 1.0));
 
                 execGroup.appendChild(branchRow);
@@ -1221,8 +1221,17 @@
             }
 
             if (node.children.length > 0) {
+                const isDivME = node.code === 'DIV-ME';
+                const isDivG0 = node.code === 'DIV-G0' || node.code === 'TMG0';
+                const isTMH0 = node.code === 'TMH0';
+
+                let subRowClass = 'orgflow-personnel-sub-row';
+                if (isDivME) subRowClass = 'orgflow-div-me-dept-grid';
+                else if (isDivG0) subRowClass = 'orgflow-div-g0-sections-grid';
+                else if (isTMH0) subRowClass = 'orgflow-corporate-sections-stack';
+
                 const subRow = document.createElement('div');
-                subRow.className = 'orgflow-personnel-sub-row';
+                subRow.className = subRowClass;
 
                 node.children.forEach(child => {
                     if (child.type === 'SECTION' || child.type === 'TEAM' || child.type === 'SUB-TEAM' || child.type === 'FUNCTION') {

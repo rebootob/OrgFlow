@@ -670,10 +670,45 @@
 /* Multi-Column Position Grid */
 .orgflow-personnel-pos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    gap: 6px;
     width: 100%;
     margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+/* DIV-ME 4-Department Responsive Grid */
+.orgflow-div-me-dept-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 8px;
+    width: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1650px) {
+    .orgflow-div-me-dept-grid {
+        grid-template-columns: repeat(2, minmax(210px, 1fr));
+    }
+}
+
+/* DIV-G0 2-Column Section Grid */
+.orgflow-div-g0-sections-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    gap: 8px;
+    width: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+/* Corporate 1-Column Section Stack */
+.orgflow-corporate-sections-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -694,8 +729,7 @@
     border: 1px solid #e2e8f0;
     border-radius: 6px;
     padding: 8px;
-    min-width: 220px;
-    flex: 1 1 220px;
+    width: 100%;
     height: auto;
     align-self: flex-start;
     display: flex;
