@@ -42,6 +42,20 @@
 
 ---
 
+## [v2.0.0-full-clean-rebuild] - 2026-08-22
+
+### Added
+- **OrgFlow Full Clean Rebuild V2 (100% English Field Names & `lower_snake_case` Field Codes):**
+  - Completely purged legacy contaminated data across Apps 791, 792, and 793.
+  - Rebuilt and deployed clean English form schemas for App 791, App 792, and App 793 (0 Non-English field labels, 0 invalid field codes).
+  - Populated App 791 with 33 canonical organization nodes from `OrgFlow_Canonical_Organization_Master.xlsx`.
+  - Populated App 792 with 275 verified baseline current assignments connecting all App 53 employees to canonical organization codes.
+  - Reset App 793 to clean workflow baseline with English Process Management lifecycle states (`DRAFT` -> `SUBMITTED` -> `GM_REVIEW` -> `HR_REVIEW` -> `APPROVED` -> `SYSTEM_APPLY` -> `APPLIED`).
+  - Verified 100% data integrity with App 53 (0 writes, 275 records intact).
+  - Final Status: `CLEAN_REBUILD_VALIDATED`.
+
+---
+
 ## [v1.7.0-phase7.5r] - 2026-08-22
 
 ### Added

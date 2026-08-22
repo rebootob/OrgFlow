@@ -1,0 +1,47 @@
+{
+  "execution_status": "SUCCESS",
+  "final_status": "CLEAN_REBUILD_VALIDATED",
+  "app53": {
+    "records": 275,
+    "writes": 0,
+    "employee_ids_changed": 0,
+    "names_changed": 0
+  },
+  "app791": {
+    "old_records_deleted": 91,
+    "new_records_created": 33,
+    "canonical_organizations": 33,
+    "duplicate_codes": 0,
+    "orphans": 0,
+    "circular_hierarchy": 0,
+    "invalid_parent": 0,
+    "person_records": 0
+  },
+  "app792": {
+    "old_records_deleted": 275,
+    "new_assignments_created": 275,
+    "employees_evaluated": 275,
+    "employees_matched": 275,
+    "employees_unresolved": 0,
+    "invalid_employee_references": 0,
+    "invalid_organization_references": 0,
+    "semantic_mapping_mismatches": 0,
+    "zero_current_assignment": 0,
+    "multiple_current_assignment": 0,
+    "position_mapping_errors": 0
+  },
+  "app793": {
+    "old_records_deleted": 2,
+    "new_records_created": 0,
+    "workflow_configuration": "DRAFT -> SUBMITTED -> GM_REVIEW -> HR_REVIEW -> APPROVED -> SYSTEM_APPLY -> APPLIED",
+    "forward_transitions": 6,
+    "reject_return_transitions": 3,
+    "hardcoded_approvers": 0
+  },
+  "field_language": {
+    "app791_non_english_field_labels": 0,
+    "app792_non_english_field_labels": 0,
+    "app793_non_english_field_labels": 0,
+    "invalid_field_codes": 0
+  }
+}
