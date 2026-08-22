@@ -1,0 +1,16 @@
+{
+  "execution_id": "PHASE6A-FINAL-1787384418693",
+  "testEmployee": "173",
+  "originalRequestId": "REQ-6A-1787384162463",
+  "restorationRequestId": "REQ-6A-RESTORE-1787384414718",
+  "restorationRecordId": "2",
+  "restorationAssignmentRecordId": "275",
+  "baselinePosition": "POS-001",
+  "testPosition": "POS-002",
+  "restoredPosition": "POS-001",
+  "assignmentTimelineCount": 3,
+  "activeAssignmentCount": 1,
+  "acceptanceCriteriaPassed": 16,
+  "acceptanceCriteriaTotal": 16,
+  "finalStatus": "PHASE 6A COMPLETE — PASS"
+}

@@ -1,5 +1,18 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.2.3-phase6a] - 2026-08-22
+
+### Added
+- **Phase 6A Controlled End-to-End Transaction Validation (FINAL PASS):** Successfully executed controlled restoration transaction for Employee `173` via App 793 Change Request ID `2` (`REQ-6A-RESTORE-1787384414718`).
+- Restored Employee `173` to original baseline position (`POS-001`) while preserving full truthful historical audit trail in App 792.
+- Verified 3 assignment timeline records for Employee `173` in App 792 (Record ID `1`: `POS-001` Historical; Record ID `274`: `POS-002` Historical; Record ID `275`: `POS-001` Current Active).
+- Verified 1:1 cardinality ratio: Employee `173` has exactly 1 current active assignment.
+- Verified 16/16 final acceptance criteria passed.
+- Verified 0 writes to App 53 (275 records, 100% untouched) and App 791 (522 records, 100% untouched).
+- Created final deliverable report ([`PHASE_6A_FINAL_VERIFICATION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6/PHASE_6A_FINAL_VERIFICATION_REPORT.md)).
+
+---
+
 ## [v1.2.2-phase6a] - 2026-08-22
 
 ### Added
