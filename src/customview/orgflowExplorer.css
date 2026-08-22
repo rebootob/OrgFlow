@@ -618,10 +618,10 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: nowrap;
-    gap: 14px;
+    gap: 16px;
     width: max-content;
     min-width: 100%;
-    margin-top: 6px;
+    margin-top: 8px;
     position: relative;
     box-sizing: border-box;
 }
@@ -630,17 +630,17 @@
     flex-grow: 0 !important;
     flex-shrink: 0 !important;
     flex-basis: auto !important;
-    min-width: 280px;
+    min-width: 260px;
     box-sizing: border-box;
 }
 
-/* Independent Subtree Column — Intrinsic Width (Phase 4F) */
+/* Independent Subtree Column — Intrinsic Width (Phase 3.8.6) */
 .orgflow-personnel-branch-col {
     background: #ffffff;
     border: 1px solid #cbd5e1;
     border-radius: 8px;
     padding: 12px;
-    min-width: 280px;
+    min-width: 260px;
     height: auto;
     align-self: flex-start;
     flex-grow: 0;
@@ -695,20 +695,20 @@
     box-sizing: border-box;
 }
 
-/* DIV-ME Department Layout — Intrinsic Flex-Wrap (Phase 4E) */
+/* DIV-ME Department Layout — 2-Column Responsive Grid (Phase 3.8.6) */
 .orgflow-div-me-dept-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 10px;
     width: 100%;
     align-items: flex-start;
     box-sizing: border-box;
 }
 
 .orgflow-div-me-dept-grid > * {
-    flex: 1 1 200px;
-    min-width: 200px;
-    max-width: 100%;
+    width: 100%;
+    min-width: 250px;
+    box-sizing: border-box;
 }
 
 /* DIV-G0 2-Column Section Grid */
@@ -721,25 +721,25 @@
     box-sizing: border-box;
 }
 
-/* Corporate 1-Column Section Stack (Phase 4F) */
+/* Corporate 1-Column Section Stack (Phase 3.8.6) */
 .orgflow-corporate-sections-stack {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 100%;
-    min-width: 260px;
+    min-width: 250px;
     box-sizing: border-box;
 }
 
 .orgflow-corporate-sections-stack .orgflow-personnel-section-card {
-    min-width: 250px;
+    min-width: 240px;
     width: 100%;
     box-sizing: border-box;
 }
 
 #branch-TMH0 {
-    min-width: 280px;
-    max-width: 380px;
+    min-width: 260px;
+    max-width: 320px;
     flex-grow: 0 !important;
     flex-shrink: 0 !important;
     flex-basis: auto !important;
