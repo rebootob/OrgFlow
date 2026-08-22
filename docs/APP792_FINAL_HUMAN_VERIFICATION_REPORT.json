@@ -1,0 +1,3295 @@
+{
+  "total_proposed_updates_reviewed": 49,
+  "safe_update": 49,
+  "keep_current": 0,
+  "human_review": 0,
+  "position_changes": 26,
+  "organization_changes": 10,
+  "both_position_and_organization_changes": 13,
+  "final_status": "READY_FOR_CORRECTION_APPROVAL",
+  "verified_cases": [
+    {
+      "employee_id": "0289",
+      "english_name": "Mr.Chaiyuth  Sangputta",
+      "thai_name": "นายชัยยุทธ์  แสงพุทธา",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMF3",
+        "organization_name": "Sales Engineering",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF3",
+        "organization_name": "Sales Engineering",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Chaiyuth - Staff (TMF3)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Chaiyuth - Staff (TMF3)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF3",
+          "proposed_value": "TMF3",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Chaiyuth - Staff (TMF3)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Sales Engineering",
+          "proposed_value": "Sales Engineering",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF3",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF3",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9049",
+      "english_name": "Mr.Osami Kondo",
+      "thai_name": "นายโอซามิ คอนโด",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Coordinator",
+        "position_code": "POS-CRD",
+        "organization_code": "TMT1",
+        "organization_name": "Export",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Coordinator",
+        "position_code": "POS-CRD",
+        "organization_code": "TMT0",
+        "organization_name": "Machinery Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Kondo - Coordinator (TMT0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Coordinator",
+          "proposed_value": "Coordinator",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Kondo - Coordinator (TMT0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-CRD",
+          "proposed_value": "POS-CRD",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Coordinator",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT1",
+          "proposed_value": "TMT0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Kondo - Coordinator (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Export",
+          "proposed_value": "Machinery Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0277",
+      "english_name": "Mr.Kiadtisak  Ketsirikun",
+      "thai_name": "นายเกียรติศักดิ์  เกตุสิริกูล",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Kiadtisak - Staff (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Kiadtisak - Staff (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Kiadtisak - Staff (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "272",
+      "english_name": "Mr.Phithakchai  Pornphan",
+      "thai_name": "นายพิทักษชัย  พรพันธ์",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMF3",
+        "organization_name": "Sales Engineering",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF3",
+        "organization_name": "Sales Engineering",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Phithakchai - Staff (TMF3)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Phithakchai - Staff (TMF3)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF3",
+          "proposed_value": "TMF3",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Phithakchai - Staff (TMF3)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Sales Engineering",
+          "proposed_value": "Sales Engineering",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF3",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF3",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9048",
+      "english_name": "Mr.Kazuhiro Hanamura",
+      "thai_name": "นายคาซึฮิโระ ฮานามูระ",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Factory Manager",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMG1",
+        "organization_name": "Die Casting",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Factory Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMG0",
+        "organization_name": "Mold & Engineering Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Hanamura - Factory Manager (TMG0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Factory Manager",
+          "proposed_value": "Factory Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Hanamura - Factory Manager (TMG0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Factory Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMG1",
+          "proposed_value": "TMG0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Hanamura - Factory Manager (TMG0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Die Casting",
+          "proposed_value": "Mold & Engineering Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMG0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMG0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9047",
+      "english_name": "Mr.Takayoshi  Uchida",
+      "thai_name": "นายทาคาโยชิ อุชิดะ",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Vice President",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMG1",
+        "organization_name": "Die Casting",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Vice President",
+        "position_code": "POS-VP",
+        "organization_code": "DIV-G0",
+        "organization_name": "GIFU SEIKI Division",
+        "organization_type": "DIVISION"
+      },
+      "pdf_evidence": "PDF: Mr.Takayoshi Uchida - Vice President (DIV-G0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Vice President",
+          "proposed_value": "Vice President",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Takayoshi Uchida - Vice President (DIV-G0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-VP",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Vice President",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMG1",
+          "proposed_value": "DIV-G0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Takayoshi Uchida - Vice President (DIV-G0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Die Casting",
+          "proposed_value": "GIFU SEIKI Division",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for DIV-G0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DIVISION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for DIV-G0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "242",
+      "english_name": "Ms.Wannapa  Laepong",
+      "thai_name": "นางสาววรรณภา  แหล่ป้อง",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMG1",
+        "organization_name": "Die Casting",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Chief",
+        "position_code": "POS-AST-CHF",
+        "organization_code": "TMG1",
+        "organization_name": "Die Casting",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Wannapa - Assistant Chief (TMG1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Chief",
+          "proposed_value": "Assistant Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Wannapa - Assistant Chief (TMG1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-CHF",
+          "proposed_value": "POS-AST-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMG1",
+          "proposed_value": "TMG1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Wannapa - Assistant Chief (TMG1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Die Casting",
+          "proposed_value": "Die Casting",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMG1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMG1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "245",
+      "english_name": "Ms.Mudsaya  Sangkla",
+      "thai_name": "นางสาวมัสยา  แสงกล้า",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMG2",
+        "organization_name": "Injection",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Chief",
+        "position_code": "POS-AST-CHF",
+        "organization_code": "TMG2",
+        "organization_name": "Injection",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Mudsaya - Assistant Chief (TMG2)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Chief",
+          "proposed_value": "Assistant Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Mudsaya - Assistant Chief (TMG2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-CHF",
+          "proposed_value": "POS-AST-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMG2",
+          "proposed_value": "TMG2",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Mudsaya - Assistant Chief (TMG2)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Injection",
+          "proposed_value": "Injection",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMG2",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMG2",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "259",
+      "english_name": "Ms.Piyaphorn  Kaewdee",
+      "thai_name": "นางสาวปิยาภรณ์  แก้วดี",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Safety Officer",
+        "position_code": "POS-SFT",
+        "organization_code": "TMG1",
+        "organization_name": "Die Casting",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Safety Officer",
+        "position_code": "POS-SFT",
+        "organization_code": "TMG0",
+        "organization_name": "Mold & Engineering Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Ms.Piyaphorn - Safety Officer (TMG0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Safety Officer",
+          "proposed_value": "Safety Officer",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Piyaphorn - Safety Officer (TMG0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-SFT",
+          "proposed_value": "POS-SFT",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Safety Officer",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMG1",
+          "proposed_value": "TMG0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Piyaphorn - Safety Officer (TMG0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Die Casting",
+          "proposed_value": "Mold & Engineering Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMG0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMG0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "262",
+      "english_name": "Mr.Surathin  Phoonsila",
+      "thai_name": "นายสุรทิน  พูลศิลา",
+      "classification": "CONFIRMED_POSITION_AND_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Operator",
+        "position_code": "POS-OPR",
+        "organization_code": "TMG1",
+        "organization_name": "Die Casting",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Surat - Assistant Manager (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Operator",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Surat - Assistant Manager (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-OPR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMG1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Surat - Assistant Manager (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Die Casting",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "168.01",
+      "english_name": "Ms. Rattanaphorn  Phichetchotiwong (TMF1)",
+      "thai_name": "น.ส.รัตนาภรณ์  พิเชฐโชติวงษ์",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Support Marketing Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF2",
+        "organization_name": "Industry",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Rattanaphorn - Staff (TMF2)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Support Marketing Staff",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Rattanaphorn - Staff (TMF2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF1",
+          "proposed_value": "TMF2",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Rattanaphorn - Staff (TMF2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Automotive",
+          "proposed_value": "Industry",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF2",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF2",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0191",
+      "english_name": "Mr.Akarawit  Prungkiat",
+      "thai_name": "นายอัครวิทย์  ปรุงเกียรติ",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Akarawit - Staff (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Akarawit - Staff (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Akarawit - Staff (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9043",
+      "english_name": "Mr.Masato Ueno",
+      "thai_name": "นายมาซาโตะ อูเอโนะ",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Coordinator",
+        "position_code": "POS-CRD",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Coordinator",
+        "position_code": "POS-CRD",
+        "organization_code": "TMT0",
+        "organization_name": "Machinery Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Ueno - Coordinator (TMT0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Coordinator",
+          "proposed_value": "Coordinator",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Ueno - Coordinator (TMT0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-CRD",
+          "proposed_value": "POS-CRD",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Coordinator",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT2",
+          "proposed_value": "TMT0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Ueno - Coordinator (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Toyota Sales",
+          "proposed_value": "Machinery Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0184",
+      "english_name": "Mr.Samart  Sonsupap",
+      "thai_name": "นายสามารถ  สอนสุภาพ",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Samart - Staff (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Samart - Staff (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Samart - Staff (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "50.03",
+      "english_name": "Ms.Jirawat  Srisawat (TMF3)",
+      "thai_name": "NULL",
+      "classification": "CONFIRMED_POSITION_AND_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Support Marketing Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF3",
+        "organization_name": "Sales Engineering",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Support Marketing Staff",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF3",
+          "proposed_value": "TMF1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Sales Engineering",
+          "proposed_value": "Automotive",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF1",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "50.02",
+      "english_name": "Ms.Jirawat  Srisawat (TMF2)",
+      "thai_name": "NULL",
+      "classification": "CONFIRMED_POSITION_AND_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Support Marketing Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF2",
+        "organization_name": "Industry",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Support Marketing Staff",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF2",
+          "proposed_value": "TMF1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Industry",
+          "proposed_value": "Automotive",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF1",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0050_2",
+      "english_name": "Ms.Jirawat  Srisawat",
+      "thai_name": "NULL",
+      "classification": "CONFIRMED_POSITION_AND_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Support Marketing Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF2",
+        "organization_name": "Industry",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Support Marketing Staff",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF2",
+          "proposed_value": "TMF1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Jirawat - Chief (TMF1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Industry",
+          "proposed_value": "Automotive",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF1",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9041",
+      "english_name": "Akinobu  Kito",
+      "thai_name": "NULL",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "General Manager",
+        "position_code": "POS-GM",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "General Manager",
+        "position_code": "POS-GM",
+        "organization_code": "TMF0",
+        "organization_name": "Industrial Services Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Kito - General Manager (TMF0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "General Manager",
+          "proposed_value": "General Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Kito - General Manager (TMF0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-GM",
+          "proposed_value": "POS-GM",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position General Manager",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF1",
+          "proposed_value": "TMF0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Kito - General Manager (TMF0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Automotive",
+          "proposed_value": "Industrial Services Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0007",
+      "english_name": "Mr.Prajak Malasri",
+      "thai_name": "นายประจักร มะลาศรี",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Driver",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMH2",
+        "organization_name": "HR & Personnel",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMH2",
+        "organization_name": "HR & Personnel",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Prajak - Staff (TMH2)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Driver",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Prajak - Staff (TMH2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMH2",
+          "proposed_value": "TMH2",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Prajak - Staff (TMH2)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "HR & Personnel",
+          "proposed_value": "HR & Personnel",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMH2",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMH2",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0016",
+      "english_name": "Ms.Thantanada  Saehea",
+      "thai_name": "นางสาวธัญธนาดา แซ่เหีย",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Thantanada - Assistant Manager (TMT2)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Thantanada - Assistant Manager (TMT2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT2",
+          "proposed_value": "TMT2",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Thantanada - Assistant Manager (TMT2)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Toyota Sales",
+          "proposed_value": "Toyota Sales",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT2",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT2",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0027",
+      "english_name": "Ms.Darat Pornchuenchuwong",
+      "thai_name": "นางสาวดารัตน์ พรชื่นชูวงศ์",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Deputy General Manager",
+        "position_code": "POS-DGM",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Deputy General Manager",
+        "position_code": "POS-DGM",
+        "organization_code": "TMT0",
+        "organization_name": "Machinery Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Ms.Darat Pornchuenchuwong - Deputy General Manager (TMT0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Deputy General Manager",
+          "proposed_value": "Deputy General Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Darat Pornchuenchuwong - Deputy General Manager (TMT0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-DGM",
+          "proposed_value": "POS-DGM",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Deputy General Manager",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT2",
+          "proposed_value": "TMT0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Darat Pornchuenchuwong - Deputy General Manager (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Toyota Sales",
+          "proposed_value": "Machinery Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0031",
+      "english_name": "Ms.Wanichawan Budda",
+      "thai_name": "นางสาววณิชวรรณ บุดดา",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Support Marketing Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Wanichawan - Chief (TMT2)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Support Marketing Staff",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Wanichawan - Chief (TMT2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT2",
+          "proposed_value": "TMT2",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Wanichawan - Chief (TMT2)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Toyota Sales",
+          "proposed_value": "Toyota Sales",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT2",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT2",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0038",
+      "english_name": "Mr.Noppanan  Dechkhan",
+      "thai_name": "นายนพนันท์ เดชขันธ์",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Noppanan - Assistant Manager (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Noppanan - Assistant Manager (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Noppanan - Assistant Manager (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0043",
+      "english_name": "Ms.Somrudee  Pannoo",
+      "thai_name": "นางสาวสมฤดี  แป้นหนู",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Vice President",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMT1",
+        "organization_name": "Export",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Vice President",
+        "position_code": "POS-VP",
+        "organization_code": "DIV-ME",
+        "organization_name": "Machinery & Engineering Division",
+        "organization_type": "DIVISION"
+      },
+      "pdf_evidence": "PDF: Ms.Somrudee Pannoo - Vice President (DIV-ME)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Vice President",
+          "proposed_value": "Vice President",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Somrudee Pannoo - Vice President (DIV-ME)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-VP",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Vice President",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT1",
+          "proposed_value": "DIV-ME",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Somrudee Pannoo - Vice President (DIV-ME)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Export",
+          "proposed_value": "Machinery & Engineering Division",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for DIV-ME",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DIVISION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for DIV-ME",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0044",
+      "english_name": "Ms.Vassana Maenthong",
+      "thai_name": "นางสาววาสนา  แม้นทอง",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Deputy General Manager",
+        "position_code": "POS-DGM",
+        "organization_code": "TMF3",
+        "organization_name": "Sales Engineering",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Deputy General Manager",
+        "position_code": "POS-DGM",
+        "organization_code": "TMF0",
+        "organization_name": "Industrial Services Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Ms.Vassana Maenthong - Deputy General Manager (TMF0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Deputy General Manager",
+          "proposed_value": "Deputy General Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Vassana Maenthong - Deputy General Manager (TMF0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-DGM",
+          "proposed_value": "POS-DGM",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Deputy General Manager",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF3",
+          "proposed_value": "TMF0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Vassana Maenthong - Deputy General Manager (TMF0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Sales Engineering",
+          "proposed_value": "Industrial Services Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0045",
+      "english_name": "Ms.Kamonwan  Chaisukee",
+      "thai_name": "นางสาวกมลวรรณ  ชัยสุขี",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Kamonwan - Staff (TMF1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Kamonwan - Staff (TMF1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF1",
+          "proposed_value": "TMF1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Kamonwan - Staff (TMF1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Automotive",
+          "proposed_value": "Automotive",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0048",
+      "english_name": "Mr.Athasit  Thongtua",
+      "thai_name": "นายอรรถสิทธิ์  ทองทั่ว",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMT1",
+        "organization_name": "Export",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMT1",
+        "organization_name": "Export",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Athasit - Assistant Manager (TMT1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Athasit - Assistant Manager (TMT1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT1",
+          "proposed_value": "TMT1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Athasit - Assistant Manager (TMT1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Export",
+          "proposed_value": "Export",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0052",
+      "english_name": "Ms.Dujrudee Aroonjit",
+      "thai_name": "นางสาวดุจฤดี  อรุณจิต",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Dujrudee - Assistant Manager (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Dujrudee - Assistant Manager (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Dujrudee - Assistant Manager (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0053",
+      "english_name": "Mr.Somphort  Limbunjerd",
+      "thai_name": "นายสมโภช  ลิมป์บรรเจิด",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Somphort - Assistant Manager (TMT2)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Somphort - Assistant Manager (TMT2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT2",
+          "proposed_value": "TMT2",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Somphort - Assistant Manager (TMT2)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Toyota Sales",
+          "proposed_value": "Toyota Sales",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT2",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT2",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0063",
+      "english_name": "Mr.Surat Luadlai",
+      "thai_name": "นายสุรัช  ลวดลาย",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Surat - Assistant Manager (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Surat - Assistant Manager (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Surat - Assistant Manager (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0067",
+      "english_name": "Mr.Krisana Laohajirapan",
+      "thai_name": "นายกฤษณะ เลาหจีรพันธุ์",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMT1",
+        "organization_name": "Export",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMT1",
+        "organization_name": "Export",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Krisana - Assistant Manager (TMT1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Krisana - Assistant Manager (TMT1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT1",
+          "proposed_value": "TMT1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Krisana - Assistant Manager (TMT1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Export",
+          "proposed_value": "Export",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0075",
+      "english_name": "Mr.Narong Kaewsap",
+      "thai_name": "นายณรงค์ แก้วทรัพย์",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Narong - Assistant Manager (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Narong - Assistant Manager (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Narong - Assistant Manager (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0078",
+      "english_name": "Mrs.Pattananrat Ruangteang",
+      "thai_name": "นางพัทธนันท์รัชต์ เรืองเที่ยง",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMH1",
+        "organization_name": "GA",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMH1",
+        "organization_name": "GA",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mrs.Pattananrat - Assistant Manager (TMH1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mrs.Pattananrat - Assistant Manager (TMH1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMH1",
+          "proposed_value": "TMH1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mrs.Pattananrat - Assistant Manager (TMH1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "GA",
+          "proposed_value": "GA",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMH1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMH1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0099",
+      "english_name": "Ms.Chuleeporn Mainkool",
+      "thai_name": "นางสาวชุลีพร เมณฑ์กูล",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TMF2",
+        "organization_name": "Industry",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TMF2",
+        "organization_name": "Industry",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Chuleeporn - Assistant Manager (TMF2)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Chuleeporn - Assistant Manager (TMF2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF2",
+          "proposed_value": "TMF2",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Chuleeporn - Assistant Manager (TMF2)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Industry",
+          "proposed_value": "Industry",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMF2",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMF2",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0104",
+      "english_name": "Mr.Keerati Wannaboot",
+      "thai_name": "นายกีรติ วรรณบุตร",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Keerati - Chief (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Keerati - Chief (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Keerati - Chief (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0112",
+      "english_name": "Mr.Suthon  Sonsupap",
+      "thai_name": "นายสุธน  สอนสุภาพ",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Suthon - Chief (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Chief",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Suthon - Chief (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-CHF",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Suthon - Chief (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Automotive",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0134",
+      "english_name": "Mr.Natthawut  Kaewkangwan",
+      "thai_name": "นายณัฐวุฒิ  แก้วกังวาล",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Marketing Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF1",
+        "organization_name": "Automotive",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TME1",
+        "organization_name": "Eco Energy & Textile Machinery",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Natthawut Kaewkangwan - Staff (TME1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Marketing Staff",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Natthawut Kaewkangwan - Staff (TME1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF1",
+          "proposed_value": "TME1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Natthawut Kaewkangwan - Staff (TME1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Automotive",
+          "proposed_value": "Eco Energy & Textile Machinery",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TME1",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TME1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0138",
+      "english_name": "Mr.Theerapong  Prasan",
+      "thai_name": "นายธีระพงษ์  ประสาร",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Theerapong - Chief (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Theerapong - Chief (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Theerapong - Chief (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9027",
+      "english_name": "Mr.Masahito Azumi",
+      "thai_name": "นายมาซาฮิโต  อาซูมิ",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Coordinator",
+        "position_code": "POS-CRD",
+        "organization_code": "TMF2",
+        "organization_name": "Industry",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Coordinator",
+        "position_code": "POS-CRD",
+        "organization_code": "TMT0",
+        "organization_name": "Machinery Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Masahito Azumi - Coordinator (TMT0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Coordinator",
+          "proposed_value": "Coordinator",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Masahito Azumi - Coordinator (TMT0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-CRD",
+          "proposed_value": "POS-CRD",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Coordinator",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF2",
+          "proposed_value": "TMT0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Masahito Azumi - Coordinator (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Industry",
+          "proposed_value": "Machinery Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9029",
+      "english_name": "Mr.Munenobu  Sato",
+      "thai_name": "มูเนะโนบุ  ซาโต้",
+      "classification": "CONFIRMED_POSITION_AND_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Deputy General Manager",
+        "position_code": "POS-DGM",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Co - General Manager",
+        "position_code": "POS-GM",
+        "organization_code": "TMT0",
+        "organization_name": "Machinery Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Munenobu Sato - Co - General Manager (TMT0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Deputy General Manager",
+          "proposed_value": "Co - General Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Munenobu Sato - Co - General Manager (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-DGM",
+          "proposed_value": "POS-GM",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Co - General Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMT0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Munenobu Sato - Co - General Manager (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Machinery Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0146",
+      "english_name": "Mr.Sakchai  Phanthuri",
+      "thai_name": "นายศักดิ์ชัย  พันธุริ",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Sakchai - Chief (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Sakchai - Chief (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Sakchai - Chief (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0148",
+      "english_name": "Mr.Weerakul  Charoenkul",
+      "thai_name": "นายวีรกุล  เจริญกุล",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Deputy General Manager",
+        "position_code": "POS-DGM",
+        "organization_code": "TMT1",
+        "organization_name": "Export",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Deputy General Manager",
+        "position_code": "POS-DGM",
+        "organization_code": "TMT0",
+        "organization_name": "Machinery Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Weerakul Charoenkul - Deputy General Manager (TMT0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Deputy General Manager",
+          "proposed_value": "Deputy General Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Weerakul Charoenkul - Deputy General Manager (TMT0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-DGM",
+          "proposed_value": "POS-DGM",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Deputy General Manager",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMT1",
+          "proposed_value": "TMT0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Weerakul Charoenkul - Deputy General Manager (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Export",
+          "proposed_value": "Machinery Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0151",
+      "english_name": "Ms.Priyanat  Sanguansuk",
+      "thai_name": "น.ส.ปริยนาถ  สงวนสุข",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Manager",
+        "position_code": "POS-MGR",
+        "organization_code": "TME1",
+        "organization_name": "Eco Energy & Textile Machinery",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Assistant Manager",
+        "position_code": "POS-AST-MGR",
+        "organization_code": "TME1",
+        "organization_name": "Eco Energy & Textile Machinery",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Priyanat - Assistant Manager (TME1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Manager",
+          "proposed_value": "Assistant Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Priyanat - Assistant Manager (TME1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-MGR",
+          "proposed_value": "POS-AST-MGR",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Assistant Manager",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TME1",
+          "proposed_value": "TME1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Priyanat - Assistant Manager (TME1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Eco Energy & Textile Machinery",
+          "proposed_value": "Eco Energy & Textile Machinery",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TME1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TME1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9031",
+      "english_name": "Mr.Keisuke  Shigeta",
+      "thai_name": "นายเคอิซุเกะ  ชิเกตะ",
+      "classification": "CONFIRMED_POSITION_AND_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "General Manager",
+        "position_code": "POS-GM",
+        "organization_code": "TME1",
+        "organization_name": "Eco Energy & Textile Machinery",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Senior Advisor",
+        "position_code": "POS-ADV",
+        "organization_code": "TMT0",
+        "organization_name": "Machinery Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Keisuke Shigeta - Senior Advisor (TMT0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "General Manager",
+          "proposed_value": "Senior Advisor",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Keisuke Shigeta - Senior Advisor (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-GM",
+          "proposed_value": "POS-ADV",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Senior Advisor",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TME1",
+          "proposed_value": "TMT0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Keisuke Shigeta - Senior Advisor (TMT0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Eco Energy & Textile Machinery",
+          "proposed_value": "Machinery Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0160",
+      "english_name": "Mr.Narasak Jantaboon",
+      "thai_name": "นายนราศักดิ์ จันทบูรณ์",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Narasak - Staff (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Narasak - Staff (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Narasak - Staff (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0169",
+      "english_name": "Ms.Rossarin  Injun",
+      "thai_name": "น.ส.รสริน  อินทร์จันทร์",
+      "classification": "CONFIRMED_POSITION_AND_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "Marketing Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF3",
+        "organization_name": "Sales Engineering",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Chief",
+        "position_code": "POS-CHF",
+        "organization_code": "TMT2",
+        "organization_name": "Toyota Sales",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Ms.Rossarin Injun - Chief (TMT2)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Marketing Staff",
+          "proposed_value": "Chief",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Rossarin Injun - Chief (TMT2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-CHF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Chief",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF3",
+          "proposed_value": "TMT2",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Ms.Rossarin Injun - Chief (TMT2)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Sales Engineering",
+          "proposed_value": "Toyota Sales",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMT2",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMT2",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "0170",
+      "english_name": "Mr.Trairat Pandee",
+      "thai_name": "นายไตรรัตน์  พันธุ์ดี",
+      "classification": "CONFIRMED_POSITION_ERROR",
+      "pos_changed": true,
+      "org_changed": false,
+      "current_state": {
+        "position_name": "Engineer",
+        "position_code": "POS-ENG",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "Staff",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "pdf_evidence": "PDF: Mr.Trairat - Staff (TMS1)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "Engineer",
+          "proposed_value": "Staff",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Trairat - Staff (TMS1)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-ENG",
+          "proposed_value": "POS-STAFF",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position Staff",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS1",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Trairat - Staff (TMS1)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS1",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "SECTION",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS1",
+          "decision": "KEEP"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9035",
+      "english_name": "Mr.Shiichi  Makino",
+      "thai_name": "นายชินิจิ  มากิโนะ",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": false,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "General Manager",
+        "position_code": "POS-GM",
+        "organization_code": "TMS1",
+        "organization_name": "Technical Services",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "General Manager",
+        "position_code": "POS-GM",
+        "organization_code": "TMS0",
+        "organization_name": "Technical Services Department",
+        "organization_type": "DEPARTMENT"
+      },
+      "pdf_evidence": "PDF: Mr.Shiichi Makino - General Manager (TMS0)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "General Manager",
+          "proposed_value": "General Manager",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Shiichi Makino - General Manager (TMS0)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-GM",
+          "proposed_value": "POS-GM",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position General Manager",
+          "decision": "KEEP"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMS1",
+          "proposed_value": "TMS0",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Shiichi Makino - General Manager (TMS0)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Technical Services",
+          "proposed_value": "Technical Services Department",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TMS0",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "DEPARTMENT",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TMS0",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    },
+    {
+      "employee_id": "9037",
+      "english_name": "Mr.Takeshi  Tsuchihira",
+      "thai_name": "นายทาเคชิ สึชิฮิระ",
+      "classification": "CONFIRMED_ORGANIZATION_ERROR",
+      "pos_changed": true,
+      "org_changed": true,
+      "current_state": {
+        "position_name": "President",
+        "position_code": "POS-STAFF",
+        "organization_code": "TMF2",
+        "organization_name": "Industry",
+        "organization_type": "SECTION"
+      },
+      "proposed_state": {
+        "position_name": "President",
+        "position_code": "POS-PRES",
+        "organization_code": "TTMET",
+        "organization_name": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+        "organization_type": "COMPANY"
+      },
+      "pdf_evidence": "PDF: Mr.Takeshi Tsuchihira - President (TTMET)",
+      "field_decisions": [
+        {
+          "field": "position_name",
+          "current_value": "President",
+          "proposed_value": "President",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Takeshi Tsuchihira - President (TTMET)",
+          "decision": "KEEP"
+        },
+        {
+          "field": "position_code",
+          "current_value": "POS-STAFF",
+          "proposed_value": "POS-PRES",
+          "source": "Canonical Dictionary",
+          "evidence": "Mapped from proposed position President",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_code",
+          "current_value": "TMF2",
+          "proposed_value": "TTMET",
+          "source": "PDF Page 1",
+          "evidence": "PDF: Mr.Takeshi Tsuchihira - President (TTMET)",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_name",
+          "current_value": "Industry",
+          "proposed_value": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical name for TTMET",
+          "decision": "CHANGE"
+        },
+        {
+          "field": "organization_type",
+          "current_value": "SECTION",
+          "proposed_value": "COMPANY",
+          "source": "App 791 Canonical Master",
+          "evidence": "Canonical entity type for TTMET",
+          "decision": "CHANGE"
+        }
+      ],
+      "final_action": "SAFE_UPDATE",
+      "confidence": "HIGH"
+    }
+  ]
+}
