@@ -1,5 +1,17 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.0.2] - 2026-08-22
+
+### Added
+- **Phase 5F Master Data Discovery & Migration Dry-Run:** Analyzed all 275 Production records in `Employee Namelist` (App ID 53) in 100% Read-Only mode.
+- Discovered 251 distinct departments and 273 distinct positions.
+- Generated in-memory proposed Org Masters for App 791 (524 candidate records) and baseline assignments for App 792 (275 candidate records).
+- Audited 12 acceptance gates and generated data quality exception register (21 exception items logged).
+- Created deliverable markdown reports and machine-readable JSON artifacts in `docs/discovery/`.
+- Verified 0 writes executed on Production Kintone Apps 53, 791, 792, and 793.
+
+---
+
 ## [v1.0.1] - 2026-08-22
 
 ### Added

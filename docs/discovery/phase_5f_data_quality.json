@@ -1,0 +1,233 @@
+[
+  {
+    "employeeRef": "9036",
+    "recordId": "358",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9033",
+    "recordId": "367",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9032",
+    "recordId": "375",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9000",
+    "recordId": "382",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9028",
+    "recordId": "388",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9000",
+    "recordId": "390",
+    "fieldCode": "Number",
+    "currentValue": "9000",
+    "issueType": "DUPLICATE_EMPLOYEE_NUMBER",
+    "severity": "HIGH",
+    "suggestedResolution": "Manual Review & ID Reconciliation",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9000",
+    "recordId": "390",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9021",
+    "recordId": "397",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9022",
+    "recordId": "398",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9025",
+    "recordId": "402",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9020",
+    "recordId": "403",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9015",
+    "recordId": "404",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9011",
+    "recordId": "405",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "8017",
+    "recordId": "485",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9040",
+    "recordId": "493",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9041",
+    "recordId": "494",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "50.2",
+    "recordId": "495",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "50.02",
+    "recordId": "496",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "50.03",
+    "recordId": "497",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9042",
+    "recordId": "507",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  },
+  {
+    "employeeRef": "9045",
+    "recordId": "511",
+    "fieldCode": "Text_0",
+    "currentValue": "",
+    "issueType": "MISSING_DEPARTMENT",
+    "severity": "MEDIUM",
+    "suggestedResolution": "Assign Department",
+    "autoFixSafe": false,
+    "humanReviewRequired": true
+  }
+]

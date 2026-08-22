@@ -1,0 +1,23 @@
+{
+  "sourceEmployees": 275,
+  "activeEmployees": 275,
+  "inactiveEmployees": 0,
+  "unknownEmployees": 0,
+  "proposedOrgMasters": 524,
+  "proposedAssignments": 275,
+  "dataQualityExceptions": 21,
+  "acceptanceGates": {
+    "G01_EmployeeReferenceIntegrity": "BUSINESS CONFIRMATION REQUIRED",
+    "G02_DepartmentMappingIntegrity": "PASS",
+    "G03_PositionMappingIntegrity": "PASS",
+    "G04_EntityCodeUniqueness": "PASS",
+    "G05_CurrentAssignmentUniqueness": "PASS",
+    "G06_ZeroOrphanReferences": "PASS",
+    "G07_NoFabricatedHistoricalData": "PASS",
+    "G08_OrgRestructuringCompatibility": "PASS",
+    "G09_CrossDeptManagerCompatibility": "PASS",
+    "G10_WorkflowApproverIndependence": "PASS",
+    "G11_App53Untouched": "PASS (0 Writes)",
+    "G12_ProductionWritesZero": "PASS (0 Writes)"
+  }
+}
