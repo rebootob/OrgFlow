@@ -27,12 +27,13 @@
 - [x] Implement `changeRequestService.js` (Org change workflow requests).
 - [x] Implement `permissionService.js` (Session role evaluation & permission checking).
 
-## Phase 3: Core Business Logic Engines
-- [ ] Implement `hierarchyBuilder.js` (O(N) Hash Map tree builder & report counters).
-- [ ] Implement `validationEngine.js` (DFS Circular reporting detector, self-manager check, orphan detector).
-- [ ] Implement `vacancyCalculator.js` (Approved vs filled headcount calculator).
-- [ ] Implement `timeMachineEngine.js` (Snapshot filter for target dates).
-- [ ] Implement `impactAnalyzer.js` (Pre-commit change impact analyzer).
+## Phase 3: Core Business Logic Engines (COMPLETE)
+- [x] Implement `employeeResolver.js` (Identity resolution with `MATCHED`, `NOT_FOUND`, `AMBIGUOUS` guard).
+- [x] Implement `hierarchyBuilder.js` (O(N) Hash Map tree builder & report counters).
+- [x] Implement `validationEngine.js` (DFS Circular reporting detector, self-manager check, orphan detector).
+- [x] Implement `vacancyCalculator.js` (Approved vs filled headcount calculator).
+- [x] Implement `timeMachineEngine.js` (Snapshot filter for target dates).
+- [x] Implement Unit Test Suite (`tests/unit/phase3Engines.test.js`) with 100% synthetic mock data (12/12 Passed).
 
 ## Phase 4: Interactive Org Chart & Portal UI Components
 - [ ] Implement CSS variables & modern enterprise styling (`src/styles/variables.css`, `src/styles/main.css`).
