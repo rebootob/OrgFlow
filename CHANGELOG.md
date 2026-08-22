@@ -1,5 +1,20 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.1.1] - 2026-08-22
+
+### Added
+- **Phase 5H Baseline Integrity & HR Operational Readiness Validation:** Conducted 100% Read-Only audit of live Production Kintone environment.
+- Verified 1:1 cardinality ratio: 273 active eligible employees map to exactly 273 current assignments in App 792.
+- Verified 100% Department reference resolution and 100% Position reference resolution against App 791 (522 Org Master records).
+- Reconciled headcount: Sum of Department Headcounts = 273, Sum of Position Headcounts = 273.
+- Verified 0 active assignments created for legacy duplicate `Number = 9000` (Record 390 & Record 382).
+- Audited 30/30 acceptance gates passed (G01 to G30).
+- Simulated HR business views, tested 12 HR operational scenarios, and generated human-readable Org Tree.
+- Created deliverable reports in `docs/phase5h/` ([`PHASE_5H_OPERATIONAL_READINESS_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase5h/PHASE_5H_OPERATIONAL_READINESS_REPORT.md)).
+- Verified 0 writes executed on Production Kintone Apps 53, 791, 792, and 793.
+
+---
+
 ## [v1.1.0] - 2026-08-22
 
 ### Added

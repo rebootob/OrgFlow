@@ -1,0 +1,77 @@
+[
+  {
+    "deptCode": "DEP-001",
+    "titleTH": "น.ส.พรหมศิริ  พิมพ์สกุลไกร",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-002",
+    "titleTH": "นายวรชัย  วงค์ชะนะ",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-003",
+    "titleTH": "น.ส.ธารทิพย์  ภูพาดแร่",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-004",
+    "titleTH": "นายทาเคชิ สึชิฮิระ",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-005",
+    "titleTH": "นายชินิจิ  มากิโนะ",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-006",
+    "titleTH": "น.ส.อะคะริ  ซูซูกิ",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-007",
+    "titleTH": "นายไตรรัตน์  พันธุ์ดี",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-008",
+    "titleTH": "น.ส.รสริน  อินทร์จันทร์",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-009",
+    "titleTH": "น.ส.รัตนาภรณ์  พิเชฐโชติวงษ์",
+    "employeeCount": 2
+  },
+  {
+    "deptCode": "DEP-010",
+    "titleTH": "น.ส.จันทรัสม์  รอดสว่าง",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-011",
+    "titleTH": "น.ส.พิชชานันท์  เหลี่ยมสุวรรณ",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-012",
+    "titleTH": "นายคณิน  แสงทอง",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-013",
+    "titleTH": "นายธัมกาล  ลักษณะหุต",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-014",
+    "titleTH": "นายธรรมรัตน์  พลวารี",
+    "employeeCount": 1
+  },
+  {
+    "deptCode": "DEP-015",
+    "titleTH": "นายธนภูมิ เกษามูล",
+    "employeeCount": 1
+  }
+]
