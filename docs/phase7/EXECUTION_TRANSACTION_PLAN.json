@@ -1,0 +1,5651 @@
+[
+  {
+    "sequence": 1,
+    "app_id": 791,
+    "record_id": "525",
+    "action": "KEEP",
+    "target_code": "DIV-GS",
+    "target_name": "GIFU SEIKI Division",
+    "reason": "Active canonical root/division node matching Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 2,
+    "app_id": 791,
+    "record_id": "524",
+    "action": "KEEP",
+    "target_code": "DIV-ME",
+    "target_name": "Machinery & Engineering Division",
+    "reason": "Active canonical root/division node matching Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 3,
+    "app_id": 791,
+    "record_id": "523",
+    "action": "KEEP",
+    "target_code": "TTMET",
+    "target_name": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "reason": "Active canonical root/division node matching Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 4,
+    "app_id": 791,
+    "record_id": "522",
+    "action": "DEACTIVATE",
+    "target_code": "POS-271",
+    "target_name": "MR.PANUKORN SATHRON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 5,
+    "app_id": 791,
+    "record_id": "521",
+    "action": "DEACTIVATE",
+    "target_code": "POS-270",
+    "target_name": "MR.ANUPHONG LONGNOI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 6,
+    "app_id": 791,
+    "record_id": "520",
+    "action": "DEACTIVATE",
+    "target_code": "POS-269",
+    "target_name": "MR.THEERAPHAT KHIAOSAART",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 7,
+    "app_id": 791,
+    "record_id": "519",
+    "action": "DEACTIVATE",
+    "target_code": "POS-268",
+    "target_name": "MR.ARCHAWA TOPUONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 8,
+    "app_id": 791,
+    "record_id": "518",
+    "action": "DEACTIVATE",
+    "target_code": "POS-267",
+    "target_name": "MR.CHETSADA ROTTHUK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 9,
+    "app_id": 791,
+    "record_id": "517",
+    "action": "DEACTIVATE",
+    "target_code": "POS-266",
+    "target_name": "MS.SRICHANOK SAEZEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 10,
+    "app_id": 791,
+    "record_id": "516",
+    "action": "DEACTIVATE",
+    "target_code": "POS-265",
+    "target_name": "MR.KEIZO NAKAE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 11,
+    "app_id": 791,
+    "record_id": "515",
+    "action": "DEACTIVATE",
+    "target_code": "POS-264",
+    "target_name": "MR.WATCHARA KHAOSAM-AMG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 12,
+    "app_id": 791,
+    "record_id": "514",
+    "action": "DEACTIVATE",
+    "target_code": "POS-263",
+    "target_name": "MS.PHATTHARANIT PANKHOMKOW",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 13,
+    "app_id": 791,
+    "record_id": "513",
+    "action": "DEACTIVATE",
+    "target_code": "POS-262",
+    "target_name": "MS.SUPATTRA SAETIAW",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 14,
+    "app_id": 791,
+    "record_id": "512",
+    "action": "DEACTIVATE",
+    "target_code": "POS-261",
+    "target_name": "MR.CHAIYUTH SANGPUTTA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 15,
+    "app_id": 791,
+    "record_id": "511",
+    "action": "DEACTIVATE",
+    "target_code": "POS-260",
+    "target_name": "MS.YANISA LAOTOOM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 16,
+    "app_id": 791,
+    "record_id": "510",
+    "action": "DEACTIVATE",
+    "target_code": "POS-259",
+    "target_name": "MS.PATCHARIDA PRAMOMGKIT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 17,
+    "app_id": 791,
+    "record_id": "509",
+    "action": "DEACTIVATE",
+    "target_code": "POS-258",
+    "target_name": "MR.TEERAPONG MAINGAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 18,
+    "app_id": 791,
+    "record_id": "508",
+    "action": "DEACTIVATE",
+    "target_code": "POS-257",
+    "target_name": "MS.PHITTHAYAPORN SAKULYODMANEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 19,
+    "app_id": 791,
+    "record_id": "507",
+    "action": "DEACTIVATE",
+    "target_code": "POS-256",
+    "target_name": "MR.OSAMI KONDO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 20,
+    "app_id": 791,
+    "record_id": "506",
+    "action": "DEACTIVATE",
+    "target_code": "POS-255",
+    "target_name": "MS.PANNIPA BOONPIS",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 21,
+    "app_id": 791,
+    "record_id": "505",
+    "action": "DEACTIVATE",
+    "target_code": "POS-254",
+    "target_name": "MS.KEWALIN SEESUKSAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 22,
+    "app_id": 791,
+    "record_id": "504",
+    "action": "DEACTIVATE",
+    "target_code": "POS-253",
+    "target_name": "MS.NATTHA MALACHAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 23,
+    "app_id": 791,
+    "record_id": "503",
+    "action": "DEACTIVATE",
+    "target_code": "POS-252",
+    "target_name": "MR.TAWATCHAI THONKAMSON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 24,
+    "app_id": 791,
+    "record_id": "502",
+    "action": "DEACTIVATE",
+    "target_code": "POS-251",
+    "target_name": "MR.KITIPHAT CHUMDEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 25,
+    "app_id": 791,
+    "record_id": "501",
+    "action": "DEACTIVATE",
+    "target_code": "POS-250",
+    "target_name": "MR.TATTANA RUNGROJ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 26,
+    "app_id": 791,
+    "record_id": "500",
+    "action": "DEACTIVATE",
+    "target_code": "POS-249",
+    "target_name": "MR.JIRAYU JARIYAEKKAPAS",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 27,
+    "app_id": 791,
+    "record_id": "499",
+    "action": "DEACTIVATE",
+    "target_code": "POS-248",
+    "target_name": "MR.KIADTISAK KETSIRIKUN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 28,
+    "app_id": 791,
+    "record_id": "498",
+    "action": "DEACTIVATE",
+    "target_code": "POS-247",
+    "target_name": "MR.TANABODEE KHOTPROM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 29,
+    "app_id": 791,
+    "record_id": "497",
+    "action": "DEACTIVATE",
+    "target_code": "POS-246",
+    "target_name": "MR.KORATHAK YOYING",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 30,
+    "app_id": 791,
+    "record_id": "496",
+    "action": "DEACTIVATE",
+    "target_code": "POS-245",
+    "target_name": "MR.THANAPHAT KAENCHAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 31,
+    "app_id": 791,
+    "record_id": "495",
+    "action": "DEACTIVATE",
+    "target_code": "POS-244",
+    "target_name": "MS.WIPHARAT JANTHASON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 32,
+    "app_id": 791,
+    "record_id": "494",
+    "action": "DEACTIVATE",
+    "target_code": "POS-243",
+    "target_name": "MR.JETSADAPORN PLONGKIANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 33,
+    "app_id": 791,
+    "record_id": "493",
+    "action": "DEACTIVATE",
+    "target_code": "POS-242",
+    "target_name": "MR.PHITHAKCHAI PORNPHAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 34,
+    "app_id": 791,
+    "record_id": "492",
+    "action": "DEACTIVATE",
+    "target_code": "POS-241",
+    "target_name": "MR.KAZUHIRO HANAMURA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 35,
+    "app_id": 791,
+    "record_id": "491",
+    "action": "DEACTIVATE",
+    "target_code": "POS-240",
+    "target_name": "MR.TAKAYOSHI UCHIDA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 36,
+    "app_id": 791,
+    "record_id": "490",
+    "action": "DEACTIVATE",
+    "target_code": "POS-239",
+    "target_name": "MR.MANOCH INJINDA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 37,
+    "app_id": 791,
+    "record_id": "489",
+    "action": "DEACTIVATE",
+    "target_code": "POS-238",
+    "target_name": "MR.PRASERTSAK KHANJAROEN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 38,
+    "app_id": 791,
+    "record_id": "488",
+    "action": "DEACTIVATE",
+    "target_code": "POS-237",
+    "target_name": "MRS.UTHUMPORN THONGSEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 39,
+    "app_id": 791,
+    "record_id": "487",
+    "action": "DEACTIVATE",
+    "target_code": "POS-236",
+    "target_name": "MR.PHANUWAT RACHALEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 40,
+    "app_id": 791,
+    "record_id": "486",
+    "action": "DEACTIVATE",
+    "target_code": "POS-235",
+    "target_name": "MR.SURAWUT KASASAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 41,
+    "app_id": 791,
+    "record_id": "485",
+    "action": "DEACTIVATE",
+    "target_code": "POS-234",
+    "target_name": "MR.PHADETKARN PHUKAMKOM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 42,
+    "app_id": 791,
+    "record_id": "484",
+    "action": "DEACTIVATE",
+    "target_code": "POS-233",
+    "target_name": "MR.ANURAK TIB-UD",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 43,
+    "app_id": 791,
+    "record_id": "483",
+    "action": "DEACTIVATE",
+    "target_code": "POS-232",
+    "target_name": "MR.ANUPONG SMANTONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 44,
+    "app_id": 791,
+    "record_id": "482",
+    "action": "DEACTIVATE",
+    "target_code": "POS-231",
+    "target_name": "MR.SOONTORN ARINPANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 45,
+    "app_id": 791,
+    "record_id": "481",
+    "action": "DEACTIVATE",
+    "target_code": "POS-230",
+    "target_name": "MR.AEKKALAK JAIBUT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 46,
+    "app_id": 791,
+    "record_id": "480",
+    "action": "DEACTIVATE",
+    "target_code": "POS-229",
+    "target_name": "MS.SUPUNTIP MARUKUN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 47,
+    "app_id": 791,
+    "record_id": "479",
+    "action": "DEACTIVATE",
+    "target_code": "POS-228",
+    "target_name": "MR.NOPPORN KONGKASEM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 48,
+    "app_id": 791,
+    "record_id": "478",
+    "action": "DEACTIVATE",
+    "target_code": "POS-227",
+    "target_name": "MR.TEPPANTONG BOONYOK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 49,
+    "app_id": 791,
+    "record_id": "477",
+    "action": "DEACTIVATE",
+    "target_code": "POS-226",
+    "target_name": "MR.TREENADE CHINDALERT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 50,
+    "app_id": 791,
+    "record_id": "476",
+    "action": "DEACTIVATE",
+    "target_code": "POS-225",
+    "target_name": "MR.SONGSAK PHOTISARN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 51,
+    "app_id": 791,
+    "record_id": "475",
+    "action": "DEACTIVATE",
+    "target_code": "POS-224",
+    "target_name": "MS.PATCHARIN THAICHAROEN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 52,
+    "app_id": 791,
+    "record_id": "474",
+    "action": "DEACTIVATE",
+    "target_code": "POS-223",
+    "target_name": "MR.RAKKIAJ NUAMPOOMMARIN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 53,
+    "app_id": 791,
+    "record_id": "473",
+    "action": "DEACTIVATE",
+    "target_code": "POS-222",
+    "target_name": "MS.SUKANYA BUAHOMBURA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 54,
+    "app_id": 791,
+    "record_id": "472",
+    "action": "DEACTIVATE",
+    "target_code": "POS-221",
+    "target_name": "MR.NOPADON KONGKASAME",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 55,
+    "app_id": 791,
+    "record_id": "471",
+    "action": "DEACTIVATE",
+    "target_code": "POS-220",
+    "target_name": "MRS.KANJANA TAKOENGPHON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 56,
+    "app_id": 791,
+    "record_id": "470",
+    "action": "DEACTIVATE",
+    "target_code": "POS-219",
+    "target_name": "MS.NUENGRUETHAI SOMJIT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 57,
+    "app_id": 791,
+    "record_id": "469",
+    "action": "DEACTIVATE",
+    "target_code": "POS-218",
+    "target_name": "MR.PICHAI PANPIA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 58,
+    "app_id": 791,
+    "record_id": "468",
+    "action": "DEACTIVATE",
+    "target_code": "POS-217",
+    "target_name": "MR.TEERAPONG LASOM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 59,
+    "app_id": 791,
+    "record_id": "467",
+    "action": "DEACTIVATE",
+    "target_code": "POS-216",
+    "target_name": "MS.NAMFON PAISANCHAROENMAITREE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 60,
+    "app_id": 791,
+    "record_id": "466",
+    "action": "DEACTIVATE",
+    "target_code": "POS-215",
+    "target_name": "MS.PIENGTAWAN CHANPITAK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 61,
+    "app_id": 791,
+    "record_id": "465",
+    "action": "DEACTIVATE",
+    "target_code": "POS-214",
+    "target_name": "MR.SAKOL SENAPOL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 62,
+    "app_id": 791,
+    "record_id": "464",
+    "action": "DEACTIVATE",
+    "target_code": "POS-213",
+    "target_name": "MR.CHONGKOL INSOM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 63,
+    "app_id": 791,
+    "record_id": "463",
+    "action": "DEACTIVATE",
+    "target_code": "POS-212",
+    "target_name": "MR.MONGKOL AONGSAENKAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 64,
+    "app_id": 791,
+    "record_id": "462",
+    "action": "DEACTIVATE",
+    "target_code": "POS-211",
+    "target_name": "MS.WALAIPORN CHANPITAK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 65,
+    "app_id": 791,
+    "record_id": "461",
+    "action": "DEACTIVATE",
+    "target_code": "POS-210",
+    "target_name": "MS.CHUNKAMOL SENAJAROEN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 66,
+    "app_id": 791,
+    "record_id": "460",
+    "action": "DEACTIVATE",
+    "target_code": "POS-209",
+    "target_name": "MS.WANNAPA LAEPONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 67,
+    "app_id": 791,
+    "record_id": "459",
+    "action": "DEACTIVATE",
+    "target_code": "POS-208",
+    "target_name": "MS.NATTA NIPHATTHAKOSOLSUK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 68,
+    "app_id": 791,
+    "record_id": "458",
+    "action": "DEACTIVATE",
+    "target_code": "POS-207",
+    "target_name": "MS.PHATCHARALUK KOMPRUAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 69,
+    "app_id": 791,
+    "record_id": "457",
+    "action": "DEACTIVATE",
+    "target_code": "POS-206",
+    "target_name": "MS.MUDSAYA SANGKLA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 70,
+    "app_id": 791,
+    "record_id": "456",
+    "action": "DEACTIVATE",
+    "target_code": "POS-205",
+    "target_name": "MR.THITI SAENKHOT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 71,
+    "app_id": 791,
+    "record_id": "455",
+    "action": "DEACTIVATE",
+    "target_code": "POS-204",
+    "target_name": "MR.PROMPAN KERDSAWAT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 72,
+    "app_id": 791,
+    "record_id": "454",
+    "action": "DEACTIVATE",
+    "target_code": "POS-203",
+    "target_name": "MS.NADDA SRIMONTREE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 73,
+    "app_id": 791,
+    "record_id": "453",
+    "action": "DEACTIVATE",
+    "target_code": "POS-202",
+    "target_name": "MR.AMNUAI SUKPHRAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 74,
+    "app_id": 791,
+    "record_id": "452",
+    "action": "DEACTIVATE",
+    "target_code": "POS-201",
+    "target_name": "MR.SATHIT KRASAE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 75,
+    "app_id": 791,
+    "record_id": "451",
+    "action": "DEACTIVATE",
+    "target_code": "POS-200",
+    "target_name": "MS.SUPHAPHON CHANWISET",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 76,
+    "app_id": 791,
+    "record_id": "450",
+    "action": "DEACTIVATE",
+    "target_code": "POS-199",
+    "target_name": "MR.PICHAI WONGRUEN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 77,
+    "app_id": 791,
+    "record_id": "449",
+    "action": "DEACTIVATE",
+    "target_code": "POS-198",
+    "target_name": "MR.THEERAWAT KHOSARAKHOON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 78,
+    "app_id": 791,
+    "record_id": "448",
+    "action": "DEACTIVATE",
+    "target_code": "POS-197",
+    "target_name": "MS.NAPHAT AINTHANON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 79,
+    "app_id": 791,
+    "record_id": "447",
+    "action": "DEACTIVATE",
+    "target_code": "POS-196",
+    "target_name": "MR.WATCHARIN THADTHEANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 80,
+    "app_id": 791,
+    "record_id": "446",
+    "action": "DEACTIVATE",
+    "target_code": "POS-195",
+    "target_name": "MR.CHOCKCHAI CHAOPRAJUK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 81,
+    "app_id": 791,
+    "record_id": "445",
+    "action": "DEACTIVATE",
+    "target_code": "POS-194",
+    "target_name": "MR.WORASAK BENMAT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 82,
+    "app_id": 791,
+    "record_id": "444",
+    "action": "DEACTIVATE",
+    "target_code": "POS-193",
+    "target_name": "MR.SUWINAI ARRIAUEA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 83,
+    "app_id": 791,
+    "record_id": "443",
+    "action": "DEACTIVATE",
+    "target_code": "POS-192",
+    "target_name": "MS.PIYAPHORN KAEWDEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 84,
+    "app_id": 791,
+    "record_id": "442",
+    "action": "DEACTIVATE",
+    "target_code": "POS-191",
+    "target_name": "MR.SONGSATPHOOTHONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 85,
+    "app_id": 791,
+    "record_id": "441",
+    "action": "DEACTIVATE",
+    "target_code": "POS-190",
+    "target_name": "MR.APISIT SUKJAREAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 86,
+    "app_id": 791,
+    "record_id": "440",
+    "action": "DEACTIVATE",
+    "target_code": "POS-189",
+    "target_name": "MR.WATCHARAPHONG CHAEMSAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 87,
+    "app_id": 791,
+    "record_id": "439",
+    "action": "DEACTIVATE",
+    "target_code": "POS-188",
+    "target_name": "MS.SUPAPORN BOONLERT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 88,
+    "app_id": 791,
+    "record_id": "438",
+    "action": "DEACTIVATE",
+    "target_code": "POS-187",
+    "target_name": "MS.WARISSARA JAIHAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 89,
+    "app_id": 791,
+    "record_id": "437",
+    "action": "DEACTIVATE",
+    "target_code": "POS-186",
+    "target_name": "MR.KITTI CHAIKLA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 90,
+    "app_id": 791,
+    "record_id": "436",
+    "action": "DEACTIVATE",
+    "target_code": "POS-185",
+    "target_name": "MR.ADISORN SRIKAEWSAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 91,
+    "app_id": 791,
+    "record_id": "435",
+    "action": "DEACTIVATE",
+    "target_code": "POS-184",
+    "target_name": "MR.KRIANGKAI CHUENMEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 92,
+    "app_id": 791,
+    "record_id": "434",
+    "action": "DEACTIVATE",
+    "target_code": "POS-183",
+    "target_name": "MS.CHANANTHORN KOBJIT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 93,
+    "app_id": 791,
+    "record_id": "433",
+    "action": "DEACTIVATE",
+    "target_code": "POS-182",
+    "target_name": "MR.SURATHIN PHOONSILA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 94,
+    "app_id": 791,
+    "record_id": "432",
+    "action": "DEACTIVATE",
+    "target_code": "POS-181",
+    "target_name": "MR.PONGSAKORN CHAITHEP",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 95,
+    "app_id": 791,
+    "record_id": "431",
+    "action": "DEACTIVATE",
+    "target_code": "POS-180",
+    "target_name": "MR.THARA THONGSEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 96,
+    "app_id": 791,
+    "record_id": "430",
+    "action": "DEACTIVATE",
+    "target_code": "POS-179",
+    "target_name": "MRS.NAYADA SERMSIRI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 97,
+    "app_id": 791,
+    "record_id": "429",
+    "action": "DEACTIVATE",
+    "target_code": "POS-178",
+    "target_name": "MR.TANAPOL SAIBUA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 98,
+    "app_id": 791,
+    "record_id": "428",
+    "action": "DEACTIVATE",
+    "target_code": "POS-177",
+    "target_name": "MR.THAWATCHAI PAOMETWAREETORN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 99,
+    "app_id": 791,
+    "record_id": "427",
+    "action": "DEACTIVATE",
+    "target_code": "POS-176",
+    "target_name": "MR.SOMMAI JUNKET",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 100,
+    "app_id": 791,
+    "record_id": "426",
+    "action": "DEACTIVATE",
+    "target_code": "POS-175",
+    "target_name": "MR.SAKKARIN KAEWTIB",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 101,
+    "app_id": 791,
+    "record_id": "425",
+    "action": "DEACTIVATE",
+    "target_code": "POS-174",
+    "target_name": "MS.THITAPHAT SUTTHI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 102,
+    "app_id": 791,
+    "record_id": "424",
+    "action": "DEACTIVATE",
+    "target_code": "POS-173",
+    "target_name": "MS.WANIDA NONTAPHAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 103,
+    "app_id": 791,
+    "record_id": "423",
+    "action": "DEACTIVATE",
+    "target_code": "POS-172",
+    "target_name": "MR.PHATTAPON FUEKKHWAMDEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 104,
+    "app_id": 791,
+    "record_id": "422",
+    "action": "DEACTIVATE",
+    "target_code": "POS-171",
+    "target_name": "MS.PHICHAYA KHWANCHUAY",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 105,
+    "app_id": 791,
+    "record_id": "421",
+    "action": "DEACTIVATE",
+    "target_code": "POS-170",
+    "target_name": "MR.AKARAPONG KHAO-NGAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 106,
+    "app_id": 791,
+    "record_id": "420",
+    "action": "DEACTIVATE",
+    "target_code": "POS-169",
+    "target_name": "MRS.AMPORN CHOOSAWAT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 107,
+    "app_id": 791,
+    "record_id": "419",
+    "action": "DEACTIVATE",
+    "target_code": "POS-168",
+    "target_name": "MR.PITINON BUNTUTRAKOOL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 108,
+    "app_id": 791,
+    "record_id": "418",
+    "action": "DEACTIVATE",
+    "target_code": "POS-167",
+    "target_name": "MS.SUKANYA MANEECHOT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 109,
+    "app_id": 791,
+    "record_id": "417",
+    "action": "DEACTIVATE",
+    "target_code": "POS-166",
+    "target_name": "MR.AMNAT KHONGYAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 110,
+    "app_id": 791,
+    "record_id": "416",
+    "action": "DEACTIVATE",
+    "target_code": "POS-165",
+    "target_name": "MR.PHUBODIN MUKDADILOK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 111,
+    "app_id": 791,
+    "record_id": "415",
+    "action": "DEACTIVATE",
+    "target_code": "POS-164",
+    "target_name": "MR.KAWEEWUT TANGPIBOONTHAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 112,
+    "app_id": 791,
+    "record_id": "414",
+    "action": "DEACTIVATE",
+    "target_code": "POS-163",
+    "target_name": "MR.NOBPAKORN NAMANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 113,
+    "app_id": 791,
+    "record_id": "413",
+    "action": "DEACTIVATE",
+    "target_code": "POS-162",
+    "target_name": "MR.CHANATIP KUSUA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 114,
+    "app_id": 791,
+    "record_id": "412",
+    "action": "DEACTIVATE",
+    "target_code": "POS-161",
+    "target_name": "MS. RATTANAPHORN PHICHETCHOTIWONG (TMF1)",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 115,
+    "app_id": 791,
+    "record_id": "411",
+    "action": "DEACTIVATE",
+    "target_code": "POS-160",
+    "target_name": "MS.WILAILAK JANSRI (TMF1)",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 116,
+    "app_id": 791,
+    "record_id": "410",
+    "action": "DEACTIVATE",
+    "target_code": "POS-159",
+    "target_name": "MS.JUTARAT SUCHER (TMF2)",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 117,
+    "app_id": 791,
+    "record_id": "409",
+    "action": "DEACTIVATE",
+    "target_code": "POS-158",
+    "target_name": "MR.YOSUKE FUJITA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 118,
+    "app_id": 791,
+    "record_id": "408",
+    "action": "DEACTIVATE",
+    "target_code": "POS-157",
+    "target_name": "MR.ANUWAT BOONSODAKORN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 119,
+    "app_id": 791,
+    "record_id": "407",
+    "action": "DEACTIVATE",
+    "target_code": "POS-156",
+    "target_name": "MR.AKARAWIT PRUNGKIAT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 120,
+    "app_id": 791,
+    "record_id": "406",
+    "action": "DEACTIVATE",
+    "target_code": "POS-155",
+    "target_name": "MR.TOSHIKAZU OBATA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 121,
+    "app_id": 791,
+    "record_id": "405",
+    "action": "DEACTIVATE",
+    "target_code": "POS-154",
+    "target_name": "MS.SIRIWIMON CHUPHOL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 122,
+    "app_id": 791,
+    "record_id": "404",
+    "action": "DEACTIVATE",
+    "target_code": "POS-153",
+    "target_name": "MR.ANOCHAI WONGPRAYOONSRI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 123,
+    "app_id": 791,
+    "record_id": "403",
+    "action": "DEACTIVATE",
+    "target_code": "POS-152",
+    "target_name": "MS.SUWIMON KAENCHAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 124,
+    "app_id": 791,
+    "record_id": "402",
+    "action": "DEACTIVATE",
+    "target_code": "POS-151",
+    "target_name": "MR.SHINICHIRO SATO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 125,
+    "app_id": 791,
+    "record_id": "401",
+    "action": "DEACTIVATE",
+    "target_code": "POS-150",
+    "target_name": "MS.GALLAYA MEETA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 126,
+    "app_id": 791,
+    "record_id": "400",
+    "action": "DEACTIVATE",
+    "target_code": "POS-149",
+    "target_name": "MS.RINRADEE SUWAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 127,
+    "app_id": 791,
+    "record_id": "399",
+    "action": "DEACTIVATE",
+    "target_code": "POS-148",
+    "target_name": "MR.YASHIKAZU YAMAMOTO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 128,
+    "app_id": 791,
+    "record_id": "398",
+    "action": "DEACTIVATE",
+    "target_code": "POS-147",
+    "target_name": "MR.ANUCHA THAMMAWONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 129,
+    "app_id": 791,
+    "record_id": "397",
+    "action": "DEACTIVATE",
+    "target_code": "POS-146",
+    "target_name": "MR.MASATO UENO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 130,
+    "app_id": 791,
+    "record_id": "396",
+    "action": "DEACTIVATE",
+    "target_code": "POS-145",
+    "target_name": "MR.SAMART SONSUPAP",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 131,
+    "app_id": 791,
+    "record_id": "395",
+    "action": "DEACTIVATE",
+    "target_code": "POS-144",
+    "target_name": "MS.RADEEMAS JUATHAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 132,
+    "app_id": 791,
+    "record_id": "394",
+    "action": "DEACTIVATE",
+    "target_code": "POS-143",
+    "target_name": "MS.KAEWKANYAPATCH WORRAPAPHADAKUL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 133,
+    "app_id": 791,
+    "record_id": "393",
+    "action": "DEACTIVATE",
+    "target_code": "POS-142",
+    "target_name": "MS.SUTTIDA TUGKINAPONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 134,
+    "app_id": 791,
+    "record_id": "392",
+    "action": "DEACTIVATE",
+    "target_code": "POS-141",
+    "target_name": "MS.JIRAWAT SRISAWAT (TMF3)",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 135,
+    "app_id": 791,
+    "record_id": "391",
+    "action": "DEACTIVATE",
+    "target_code": "POS-140",
+    "target_name": "MS.JIRAWAT SRISAWAT (TMF2)",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 136,
+    "app_id": 791,
+    "record_id": "390",
+    "action": "DEACTIVATE",
+    "target_code": "POS-139",
+    "target_name": "AKINOBU KITO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 137,
+    "app_id": 791,
+    "record_id": "389",
+    "action": "DEACTIVATE",
+    "target_code": "POS-138",
+    "target_name": "MS.HASUKA KIMURA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 138,
+    "app_id": 791,
+    "record_id": "388",
+    "action": "DEACTIVATE",
+    "target_code": "POS-137",
+    "target_name": "MR.SUWAT WISETSING",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 139,
+    "app_id": 791,
+    "record_id": "387",
+    "action": "DEACTIVATE",
+    "target_code": "POS-136",
+    "target_name": "MS.KAMONWAN KHAMSRI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 140,
+    "app_id": 791,
+    "record_id": "386",
+    "action": "DEACTIVATE",
+    "target_code": "POS-135",
+    "target_name": "MS.AONANONG DUMNUY",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 141,
+    "app_id": 791,
+    "record_id": "385",
+    "action": "DEACTIVATE",
+    "target_code": "POS-134",
+    "target_name": "MR.CHITCHAIYA THONGNAK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 142,
+    "app_id": 791,
+    "record_id": "384",
+    "action": "DEACTIVATE",
+    "target_code": "POS-133",
+    "target_name": "MR.YASUHIRO TAMURA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 143,
+    "app_id": 791,
+    "record_id": "383",
+    "action": "DEACTIVATE",
+    "target_code": "POS-132",
+    "target_name": "MR.TAKAYANAGI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 144,
+    "app_id": 791,
+    "record_id": "382",
+    "action": "DEACTIVATE",
+    "target_code": "POS-131",
+    "target_name": "MR.NUT PROMPRASIT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 145,
+    "app_id": 791,
+    "record_id": "381",
+    "action": "DEACTIVATE",
+    "target_code": "POS-130",
+    "target_name": "THAWEESAK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 146,
+    "app_id": 791,
+    "record_id": "380",
+    "action": "DEACTIVATE",
+    "target_code": "POS-129",
+    "target_name": "MR. ARUT JINDALUANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 147,
+    "app_id": 791,
+    "record_id": "379",
+    "action": "DEACTIVATE",
+    "target_code": "POS-128",
+    "target_name": "MR. CHANATIP KUSUA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 148,
+    "app_id": 791,
+    "record_id": "378",
+    "action": "DEACTIVATE",
+    "target_code": "POS-127",
+    "target_name": "MR.NATTHAWUT NAKCHONLATHI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 149,
+    "app_id": 791,
+    "record_id": "377",
+    "action": "DEACTIVATE",
+    "target_code": "POS-126",
+    "target_name": "MS.YUWARAT BUNLUEKIAT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 150,
+    "app_id": 791,
+    "record_id": "376",
+    "action": "DEACTIVATE",
+    "target_code": "POS-125",
+    "target_name": "MS.PATTAMA SOMNGAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 151,
+    "app_id": 791,
+    "record_id": "375",
+    "action": "DEACTIVATE",
+    "target_code": "POS-124",
+    "target_name": "MR.PRAJAK MALASRI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 152,
+    "app_id": 791,
+    "record_id": "374",
+    "action": "DEACTIVATE",
+    "target_code": "POS-123",
+    "target_name": "MS.CHATRAWEE PHIRATHAWISRIKUL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 153,
+    "app_id": 791,
+    "record_id": "373",
+    "action": "DEACTIVATE",
+    "target_code": "POS-122",
+    "target_name": "MR.PIYATHANA YINDEESUK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 154,
+    "app_id": 791,
+    "record_id": "372",
+    "action": "DEACTIVATE",
+    "target_code": "POS-121",
+    "target_name": "MR.KRITSADA KUMDA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 155,
+    "app_id": 791,
+    "record_id": "371",
+    "action": "DEACTIVATE",
+    "target_code": "POS-120",
+    "target_name": "MR.NARAKORN MINGMUANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 156,
+    "app_id": 791,
+    "record_id": "370",
+    "action": "DEACTIVATE",
+    "target_code": "POS-119",
+    "target_name": "MS.THANTANADA SAEHEA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 157,
+    "app_id": 791,
+    "record_id": "369",
+    "action": "DEACTIVATE",
+    "target_code": "POS-118",
+    "target_name": "MS.WANDEE LEKCHAROEN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 158,
+    "app_id": 791,
+    "record_id": "368",
+    "action": "DEACTIVATE",
+    "target_code": "POS-117",
+    "target_name": "MRS.NIRADA THANGWICHITKUL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 159,
+    "app_id": 791,
+    "record_id": "367",
+    "action": "DEACTIVATE",
+    "target_code": "POS-116",
+    "target_name": "MR.THANUT MUANGKOT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 160,
+    "app_id": 791,
+    "record_id": "366",
+    "action": "DEACTIVATE",
+    "target_code": "POS-115",
+    "target_name": "MS.JONGJIT SODA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 161,
+    "app_id": 791,
+    "record_id": "365",
+    "action": "DEACTIVATE",
+    "target_code": "POS-114",
+    "target_name": "MS.NARISARA JANTALA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 162,
+    "app_id": 791,
+    "record_id": "364",
+    "action": "DEACTIVATE",
+    "target_code": "POS-113",
+    "target_name": "MS.SAOWANEE NETPIPOP",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 163,
+    "app_id": 791,
+    "record_id": "363",
+    "action": "DEACTIVATE",
+    "target_code": "POS-112",
+    "target_name": "MS.DARAT PORNCHUENCHUWONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 164,
+    "app_id": 791,
+    "record_id": "362",
+    "action": "DEACTIVATE",
+    "target_code": "POS-111",
+    "target_name": "MS.WILAILAK JANSRI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 165,
+    "app_id": 791,
+    "record_id": "361",
+    "action": "DEACTIVATE",
+    "target_code": "POS-110",
+    "target_name": "MS.WANICHAWAN BUDDA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 166,
+    "app_id": 791,
+    "record_id": "360",
+    "action": "DEACTIVATE",
+    "target_code": "POS-109",
+    "target_name": "MS.SALISA RUKKANNGAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 167,
+    "app_id": 791,
+    "record_id": "359",
+    "action": "DEACTIVATE",
+    "target_code": "POS-108",
+    "target_name": "MS.VORARUETHAI WONGCHAREE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 168,
+    "app_id": 791,
+    "record_id": "358",
+    "action": "DEACTIVATE",
+    "target_code": "POS-107",
+    "target_name": "MR.SOMSAK SEUBJAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 169,
+    "app_id": 791,
+    "record_id": "357",
+    "action": "DEACTIVATE",
+    "target_code": "POS-106",
+    "target_name": "MR.NOPPANAN DECHKHAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 170,
+    "app_id": 791,
+    "record_id": "356",
+    "action": "DEACTIVATE",
+    "target_code": "POS-105",
+    "target_name": "MS.SUPPARAT ARWORN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 171,
+    "app_id": 791,
+    "record_id": "355",
+    "action": "DEACTIVATE",
+    "target_code": "POS-104",
+    "target_name": "MS.JUTHAPORN WONGCHUENSUNTORN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 172,
+    "app_id": 791,
+    "record_id": "354",
+    "action": "DEACTIVATE",
+    "target_code": "POS-103",
+    "target_name": "MRS.ARAYA HIRUNPUNTHAPORN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 173,
+    "app_id": 791,
+    "record_id": "353",
+    "action": "DEACTIVATE",
+    "target_code": "POS-102",
+    "target_name": "MS.SOMRUDEE PANNOO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 174,
+    "app_id": 791,
+    "record_id": "352",
+    "action": "DEACTIVATE",
+    "target_code": "POS-101",
+    "target_name": "MS.VASSANA MAENTHONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 175,
+    "app_id": 791,
+    "record_id": "351",
+    "action": "DEACTIVATE",
+    "target_code": "POS-100",
+    "target_name": "MS.KAMONWAN CHAISUKEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 176,
+    "app_id": 791,
+    "record_id": "350",
+    "action": "DEACTIVATE",
+    "target_code": "POS-099",
+    "target_name": "MR.PITCHAYADOL PHONGSART",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 177,
+    "app_id": 791,
+    "record_id": "349",
+    "action": "DEACTIVATE",
+    "target_code": "POS-098",
+    "target_name": "MR.WORAPAT KUMSINGHA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 178,
+    "app_id": 791,
+    "record_id": "348",
+    "action": "DEACTIVATE",
+    "target_code": "POS-097",
+    "target_name": "MR.ATHASIT THONGTUA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 179,
+    "app_id": 791,
+    "record_id": "347",
+    "action": "DEACTIVATE",
+    "target_code": "POS-096",
+    "target_name": "MS.ROSSARIN LERDWATCHAPON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 180,
+    "app_id": 791,
+    "record_id": "346",
+    "action": "DEACTIVATE",
+    "target_code": "POS-095",
+    "target_name": "MS.JIRAWAT SRISAWAT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 181,
+    "app_id": 791,
+    "record_id": "345",
+    "action": "DEACTIVATE",
+    "target_code": "POS-094",
+    "target_name": "MR.SATIT SARAISALAB",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 182,
+    "app_id": 791,
+    "record_id": "344",
+    "action": "DEACTIVATE",
+    "target_code": "POS-093",
+    "target_name": "MS.DUJRUDEE AROONJIT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 183,
+    "app_id": 791,
+    "record_id": "343",
+    "action": "DEACTIVATE",
+    "target_code": "POS-092",
+    "target_name": "MR.SOMPHORT LIMBUNJERD",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 184,
+    "app_id": 791,
+    "record_id": "342",
+    "action": "DEACTIVATE",
+    "target_code": "POS-091",
+    "target_name": "MR.NUTTANUN LENGLERDPHOL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 185,
+    "app_id": 791,
+    "record_id": "341",
+    "action": "DEACTIVATE",
+    "target_code": "POS-090",
+    "target_name": "MR.SURAT LUADLAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 186,
+    "app_id": 791,
+    "record_id": "340",
+    "action": "DEACTIVATE",
+    "target_code": "POS-089",
+    "target_name": "MR.KRISANA LAOHAJIRAPAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 187,
+    "app_id": 791,
+    "record_id": "339",
+    "action": "DEACTIVATE",
+    "target_code": "POS-088",
+    "target_name": "MS.PENPRAPA MUANGKLANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 188,
+    "app_id": 791,
+    "record_id": "338",
+    "action": "DEACTIVATE",
+    "target_code": "POS-087",
+    "target_name": "MR.PATTARA RATTANAKORNKAEW",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 189,
+    "app_id": 791,
+    "record_id": "337",
+    "action": "DEACTIVATE",
+    "target_code": "POS-086",
+    "target_name": "MR.NARONG KAEWSAP",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 190,
+    "app_id": 791,
+    "record_id": "336",
+    "action": "DEACTIVATE",
+    "target_code": "POS-085",
+    "target_name": "MS.CHAYANOOT PENGPINIT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 191,
+    "app_id": 791,
+    "record_id": "335",
+    "action": "DEACTIVATE",
+    "target_code": "POS-084",
+    "target_name": "MRS.PATTANANRAT RUANGTEANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 192,
+    "app_id": 791,
+    "record_id": "334",
+    "action": "DEACTIVATE",
+    "target_code": "POS-083",
+    "target_name": "MR.AKARAPOOM CHAIPET",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 193,
+    "app_id": 791,
+    "record_id": "333",
+    "action": "DEACTIVATE",
+    "target_code": "POS-082",
+    "target_name": "MR.WICHED PRATUMPAP",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 194,
+    "app_id": 791,
+    "record_id": "332",
+    "action": "DEACTIVATE",
+    "target_code": "POS-081",
+    "target_name": "MR.VITOON SUKVISUTTICHOT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 195,
+    "app_id": 791,
+    "record_id": "331",
+    "action": "DEACTIVATE",
+    "target_code": "POS-080",
+    "target_name": "MR.NATTAPOL KOSOLKITIWONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 196,
+    "app_id": 791,
+    "record_id": "330",
+    "action": "DEACTIVATE",
+    "target_code": "POS-079",
+    "target_name": "MS.CHULEEPORN MAINKOOL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 197,
+    "app_id": 791,
+    "record_id": "329",
+    "action": "DEACTIVATE",
+    "target_code": "POS-078",
+    "target_name": "MS.HATAIRAT SRIKULWONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 198,
+    "app_id": 791,
+    "record_id": "328",
+    "action": "DEACTIVATE",
+    "target_code": "POS-077",
+    "target_name": "MR.KEERATI WANNABOOT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 199,
+    "app_id": 791,
+    "record_id": "327",
+    "action": "DEACTIVATE",
+    "target_code": "POS-076",
+    "target_name": "MS.NATTIDA THONGWISES",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 200,
+    "app_id": 791,
+    "record_id": "326",
+    "action": "DEACTIVATE",
+    "target_code": "POS-075",
+    "target_name": "MR.SARUNYOO RATTANASUWAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 201,
+    "app_id": 791,
+    "record_id": "325",
+    "action": "DEACTIVATE",
+    "target_code": "POS-074",
+    "target_name": "MR.PONGPAT SRIKHOTE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 202,
+    "app_id": 791,
+    "record_id": "324",
+    "action": "DEACTIVATE",
+    "target_code": "POS-073",
+    "target_name": "MS. PHITCHAKAN ONGSAWAT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 203,
+    "app_id": 791,
+    "record_id": "323",
+    "action": "DEACTIVATE",
+    "target_code": "POS-072",
+    "target_name": "MR.SUTHON SONSUPAP",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 204,
+    "app_id": 791,
+    "record_id": "322",
+    "action": "DEACTIVATE",
+    "target_code": "POS-071",
+    "target_name": "MS.PAPATCHAYA THAVORNRINNAPONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 205,
+    "app_id": 791,
+    "record_id": "321",
+    "action": "DEACTIVATE",
+    "target_code": "POS-070",
+    "target_name": "MR.SORASIT SRISOODCHAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 206,
+    "app_id": 791,
+    "record_id": "320",
+    "action": "DEACTIVATE",
+    "target_code": "POS-069",
+    "target_name": "MR.NATTAWUD SAMERWONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 207,
+    "app_id": 791,
+    "record_id": "319",
+    "action": "DEACTIVATE",
+    "target_code": "POS-068",
+    "target_name": "MR.JAKKRIT PAENOI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 208,
+    "app_id": 791,
+    "record_id": "318",
+    "action": "DEACTIVATE",
+    "target_code": "POS-067",
+    "target_name": "MR.PERANUT HANPRATUM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 209,
+    "app_id": 791,
+    "record_id": "317",
+    "action": "DEACTIVATE",
+    "target_code": "POS-066",
+    "target_name": "MS.SUTHADA CHAIMON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 210,
+    "app_id": 791,
+    "record_id": "316",
+    "action": "DEACTIVATE",
+    "target_code": "POS-065",
+    "target_name": "MR.PAWEE HOMLIRDNALIN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 211,
+    "app_id": 791,
+    "record_id": "315",
+    "action": "DEACTIVATE",
+    "target_code": "POS-064",
+    "target_name": "MS.WARATHAN SAMART",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 212,
+    "app_id": 791,
+    "record_id": "314",
+    "action": "DEACTIVATE",
+    "target_code": "POS-063",
+    "target_name": "MS.KANKANIT NIMNOI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 213,
+    "app_id": 791,
+    "record_id": "313",
+    "action": "DEACTIVATE",
+    "target_code": "POS-062",
+    "target_name": "MS.LAKSAMI KAEWSRINGAM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 214,
+    "app_id": 791,
+    "record_id": "312",
+    "action": "DEACTIVATE",
+    "target_code": "POS-061",
+    "target_name": "MR.PRAWES PANYAAPIWATTANA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 215,
+    "app_id": 791,
+    "record_id": "311",
+    "action": "DEACTIVATE",
+    "target_code": "POS-060",
+    "target_name": "MS.NITTAYA HOMTHONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 216,
+    "app_id": 791,
+    "record_id": "310",
+    "action": "DEACTIVATE",
+    "target_code": "POS-059",
+    "target_name": "MR.NATTAPON PUTTASEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 217,
+    "app_id": 791,
+    "record_id": "309",
+    "action": "DEACTIVATE",
+    "target_code": "POS-058",
+    "target_name": "MS.SOPIDA KHAMLARN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 218,
+    "app_id": 791,
+    "record_id": "308",
+    "action": "DEACTIVATE",
+    "target_code": "POS-057",
+    "target_name": "MR.PONGSAKORN PHOPIMON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 219,
+    "app_id": 791,
+    "record_id": "307",
+    "action": "DEACTIVATE",
+    "target_code": "POS-056",
+    "target_name": "MR.NATTHAWUT KAEWKANGWAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 220,
+    "app_id": 791,
+    "record_id": "306",
+    "action": "DEACTIVATE",
+    "target_code": "POS-055",
+    "target_name": "MS.JUTARAT SUCHER",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 221,
+    "app_id": 791,
+    "record_id": "305",
+    "action": "DEACTIVATE",
+    "target_code": "POS-054",
+    "target_name": "MR.JIRAYUSAWAT PRASOM",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 222,
+    "app_id": 791,
+    "record_id": "304",
+    "action": "DEACTIVATE",
+    "target_code": "POS-053",
+    "target_name": "MR.SIRA SOWANNA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 223,
+    "app_id": 791,
+    "record_id": "303",
+    "action": "DEACTIVATE",
+    "target_code": "POS-052",
+    "target_name": "MR.THEERAPONG PRASAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 224,
+    "app_id": 791,
+    "record_id": "302",
+    "action": "DEACTIVATE",
+    "target_code": "POS-051",
+    "target_name": "MR.MIKIO KATO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 225,
+    "app_id": 791,
+    "record_id": "301",
+    "action": "DEACTIVATE",
+    "target_code": "POS-050",
+    "target_name": "MR.KUNIHIKO KUROIWA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 226,
+    "app_id": 791,
+    "record_id": "300",
+    "action": "DEACTIVATE",
+    "target_code": "POS-049",
+    "target_name": "MRS.UTSUGI RINA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 227,
+    "app_id": 791,
+    "record_id": "299",
+    "action": "DEACTIVATE",
+    "target_code": "POS-048",
+    "target_name": "MR.KAZUTSUGU SAKAKIMA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 228,
+    "app_id": 791,
+    "record_id": "298",
+    "action": "DEACTIVATE",
+    "target_code": "POS-047",
+    "target_name": "MR.TAKURO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 229,
+    "app_id": 791,
+    "record_id": "297",
+    "action": "DEACTIVATE",
+    "target_code": "POS-046",
+    "target_name": "MR.MASAHITO AZUMI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 230,
+    "app_id": 791,
+    "record_id": "296",
+    "action": "DEACTIVATE",
+    "target_code": "POS-045",
+    "target_name": "MR.POKPONG WANICHSUJIT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 231,
+    "app_id": 791,
+    "record_id": "295",
+    "action": "DEACTIVATE",
+    "target_code": "POS-044",
+    "target_name": "MR.HISASHI NAGASE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 232,
+    "app_id": 791,
+    "record_id": "294",
+    "action": "DEACTIVATE",
+    "target_code": "POS-043",
+    "target_name": "MR.TOMOAKI SHIRAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 233,
+    "app_id": 791,
+    "record_id": "293",
+    "action": "DEACTIVATE",
+    "target_code": "POS-042",
+    "target_name": "MR.VORAPRUS MUANGMINGSOOK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 234,
+    "app_id": 791,
+    "record_id": "292",
+    "action": "DEACTIVATE",
+    "target_code": "POS-041",
+    "target_name": "MR. CHISANUPONG KAMOLCHAIANAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 235,
+    "app_id": 791,
+    "record_id": "291",
+    "action": "DEACTIVATE",
+    "target_code": "POS-040",
+    "target_name": "MR.MUNENOBU SATO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 236,
+    "app_id": 791,
+    "record_id": "290",
+    "action": "DEACTIVATE",
+    "target_code": "POS-039",
+    "target_name": "MR.WARUT ASAWATRERATNAKUL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 237,
+    "app_id": 791,
+    "record_id": "289",
+    "action": "DEACTIVATE",
+    "target_code": "POS-038",
+    "target_name": "MR.SONGKRAN KHANNOK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 238,
+    "app_id": 791,
+    "record_id": "288",
+    "action": "DEACTIVATE",
+    "target_code": "POS-037",
+    "target_name": "MR.SAKCHAI PHANTHURI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 239,
+    "app_id": 791,
+    "record_id": "287",
+    "action": "DEACTIVATE",
+    "target_code": "POS-036",
+    "target_name": "MR.SUTHAS MORTHAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 240,
+    "app_id": 791,
+    "record_id": "286",
+    "action": "DEACTIVATE",
+    "target_code": "POS-035",
+    "target_name": "MR.MITSUKAZU IMOTO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 241,
+    "app_id": 791,
+    "record_id": "285",
+    "action": "DEACTIVATE",
+    "target_code": "POS-034",
+    "target_name": "MR.WEERAKUL CHAROENKUL",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 242,
+    "app_id": 791,
+    "record_id": "284",
+    "action": "DEACTIVATE",
+    "target_code": "POS-033",
+    "target_name": "MR.GRITCHAI SOMPHONKRANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 243,
+    "app_id": 791,
+    "record_id": "283",
+    "action": "DEACTIVATE",
+    "target_code": "POS-032",
+    "target_name": "MR.MAKKAPHOP KHUMSIT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 244,
+    "app_id": 791,
+    "record_id": "282",
+    "action": "DEACTIVATE",
+    "target_code": "POS-031",
+    "target_name": "MS.PRIYANAT SANGUANSUK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 245,
+    "app_id": 791,
+    "record_id": "281",
+    "action": "DEACTIVATE",
+    "target_code": "POS-030",
+    "target_name": "MR.TAKESHI ASHIZAWA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 246,
+    "app_id": 791,
+    "record_id": "280",
+    "action": "DEACTIVATE",
+    "target_code": "POS-029",
+    "target_name": "MS. AUSANISA PHATINAWIN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 247,
+    "app_id": 791,
+    "record_id": "279",
+    "action": "DEACTIVATE",
+    "target_code": "POS-028",
+    "target_name": "MR.RONNACHAI DOKDUAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 248,
+    "app_id": 791,
+    "record_id": "278",
+    "action": "DEACTIVATE",
+    "target_code": "POS-027",
+    "target_name": "MR.SUPANAT TIANSUWAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 249,
+    "app_id": 791,
+    "record_id": "277",
+    "action": "DEACTIVATE",
+    "target_code": "POS-026",
+    "target_name": "MS.PENPICHAR HUTACHUTHA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 250,
+    "app_id": 791,
+    "record_id": "276",
+    "action": "DEACTIVATE",
+    "target_code": "POS-025",
+    "target_name": "MR.KEISUKE SHIGETA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 251,
+    "app_id": 791,
+    "record_id": "275",
+    "action": "DEACTIVATE",
+    "target_code": "POS-024",
+    "target_name": "MR.WICHA SARNSAWEK",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 252,
+    "app_id": 791,
+    "record_id": "274",
+    "action": "DEACTIVATE",
+    "target_code": "POS-023",
+    "target_name": "MR.TADASHI ONUKI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 253,
+    "app_id": 791,
+    "record_id": "273",
+    "action": "DEACTIVATE",
+    "target_code": "POS-022",
+    "target_name": "MR.ITSARA KONGTAWEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 254,
+    "app_id": 791,
+    "record_id": "272",
+    "action": "DEACTIVATE",
+    "target_code": "POS-021",
+    "target_name": "MR.PATIPON POUNGJUN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 255,
+    "app_id": 791,
+    "record_id": "271",
+    "action": "DEACTIVATE",
+    "target_code": "POS-020",
+    "target_name": "MS.NEEN NOIHUAHAT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 256,
+    "app_id": 791,
+    "record_id": "270",
+    "action": "DEACTIVATE",
+    "target_code": "POS-019",
+    "target_name": "MR.NARASAK JANTABOON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 257,
+    "app_id": 791,
+    "record_id": "269",
+    "action": "DEACTIVATE",
+    "target_code": "POS-018",
+    "target_name": "MR. JEDSADA MOONSAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 258,
+    "app_id": 791,
+    "record_id": "268",
+    "action": "DEACTIVATE",
+    "target_code": "POS-017",
+    "target_name": "MR.THANAPOOM KESAMOON",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 259,
+    "app_id": 791,
+    "record_id": "267",
+    "action": "DEACTIVATE",
+    "target_code": "POS-016",
+    "target_name": "MR. TAMMARAT PONWAREE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 260,
+    "app_id": 791,
+    "record_id": "266",
+    "action": "DEACTIVATE",
+    "target_code": "POS-015",
+    "target_name": "MR.MORITA JUN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 261,
+    "app_id": 791,
+    "record_id": "265",
+    "action": "DEACTIVATE",
+    "target_code": "POS-014",
+    "target_name": "MR.THAMKARN LUXSANAHUT",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 262,
+    "app_id": 791,
+    "record_id": "264",
+    "action": "DEACTIVATE",
+    "target_code": "POS-013",
+    "target_name": "MR.KANIN SANGTHONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 263,
+    "app_id": 791,
+    "record_id": "263",
+    "action": "DEACTIVATE",
+    "target_code": "POS-012",
+    "target_name": "MS.PICHANAN LIAMSUWAN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 264,
+    "app_id": 791,
+    "record_id": "262",
+    "action": "DEACTIVATE",
+    "target_code": "POS-011",
+    "target_name": "MS.CHANTARAT RODSAWANG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 265,
+    "app_id": 791,
+    "record_id": "261",
+    "action": "DEACTIVATE",
+    "target_code": "POS-010",
+    "target_name": "MS. RATTANAPHORN PHICHETCHOTIWONG",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 266,
+    "app_id": 791,
+    "record_id": "260",
+    "action": "DEACTIVATE",
+    "target_code": "POS-009",
+    "target_name": "MS.ROSSARIN INJUN",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 267,
+    "app_id": 791,
+    "record_id": "259",
+    "action": "DEACTIVATE",
+    "target_code": "POS-008",
+    "target_name": "MR.TRAIRAT PANDEE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 268,
+    "app_id": 791,
+    "record_id": "258",
+    "action": "DEACTIVATE",
+    "target_code": "POS-007",
+    "target_name": "MS.AKARI SUZUKI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 269,
+    "app_id": 791,
+    "record_id": "257",
+    "action": "DEACTIVATE",
+    "target_code": "POS-006",
+    "target_name": "MS.ERIKA GAYA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 270,
+    "app_id": 791,
+    "record_id": "256",
+    "action": "DEACTIVATE",
+    "target_code": "POS-005",
+    "target_name": "MR.SHIICHI MAKINO",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 271,
+    "app_id": 791,
+    "record_id": "255",
+    "action": "DEACTIVATE",
+    "target_code": "POS-004",
+    "target_name": "MR.TAKESHI TSUCHIHIRA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 272,
+    "app_id": 791,
+    "record_id": "254",
+    "action": "DEACTIVATE",
+    "target_code": "POS-003",
+    "target_name": "MS.THANTHIP PHOOPADRAE",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 273,
+    "app_id": 791,
+    "record_id": "253",
+    "action": "DEACTIVATE",
+    "target_code": "POS-002",
+    "target_name": "MR.WORACHAI WONGCHANA",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 274,
+    "app_id": 791,
+    "record_id": "252",
+    "action": "DEACTIVATE",
+    "target_code": "POS-001",
+    "target_name": "MS.PROMSIRI PIMSAKULKRAI",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 275,
+    "app_id": 791,
+    "record_id": "251",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-251",
+    "target_name": "นายภาณุกร สาธร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 276,
+    "app_id": 791,
+    "record_id": "250",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-250",
+    "target_name": "นายอนุพงษ์ หลงน้อย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 277,
+    "app_id": 791,
+    "record_id": "249",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-249",
+    "target_name": "นายธีรภัทร์ เขียวสะอาด",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 278,
+    "app_id": 791,
+    "record_id": "248",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-248",
+    "target_name": "นายอาชวะ โตพ่วง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 279,
+    "app_id": 791,
+    "record_id": "247",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-247",
+    "target_name": "นายเจษฎา รอดทุกข์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 280,
+    "app_id": 791,
+    "record_id": "246",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-246",
+    "target_name": "น.ส.ศรีชนก แซ่ซี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 281,
+    "app_id": 791,
+    "record_id": "245",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-245",
+    "target_name": "เคอิโซ นาคาเอะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 282,
+    "app_id": 791,
+    "record_id": "244",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-244",
+    "target_name": "นายวัชรา ขาวสำอางค์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 283,
+    "app_id": 791,
+    "record_id": "243",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-243",
+    "target_name": "น.ส.ภัทรนิษฐ์ พันธุ์คุ้มเก่า",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 284,
+    "app_id": 791,
+    "record_id": "242",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-242",
+    "target_name": "น.ส.สุพัฒตรา แซ่เตียว",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 285,
+    "app_id": 791,
+    "record_id": "241",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-241",
+    "target_name": "นายชัยยุทธ์ แสงพุทธา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 286,
+    "app_id": 791,
+    "record_id": "240",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-240",
+    "target_name": "น.ส.ญาณิศา ลาวตูม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 287,
+    "app_id": 791,
+    "record_id": "239",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-239",
+    "target_name": "น.ส.พัชริดา ประมงกิจ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 288,
+    "app_id": 791,
+    "record_id": "238",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-238",
+    "target_name": "นายธีรพงศ์ ไม้งาม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 289,
+    "app_id": 791,
+    "record_id": "237",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-237",
+    "target_name": "น.ส.พิทยาภรณ์ สกุลยอดมณี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 290,
+    "app_id": 791,
+    "record_id": "236",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-236",
+    "target_name": "นายโอซามิ คอนโด",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 291,
+    "app_id": 791,
+    "record_id": "235",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-235",
+    "target_name": "น.ส.พันนิภา บุญพิษ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 292,
+    "app_id": 791,
+    "record_id": "234",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-234",
+    "target_name": "นางสาวเกวลิน สีสุขสาม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 293,
+    "app_id": 791,
+    "record_id": "233",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-233",
+    "target_name": "นางสาวณัฎฐา มาลาฉ่ำ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 294,
+    "app_id": 791,
+    "record_id": "232",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-232",
+    "target_name": "นายธวัชชัย ต่อนคำสนธิ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 295,
+    "app_id": 791,
+    "record_id": "231",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-231",
+    "target_name": "นายกิตติพัฒน์ ชุ่มดี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 296,
+    "app_id": 791,
+    "record_id": "230",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-230",
+    "target_name": "นายทัตธน รุ่งโรจน์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 297,
+    "app_id": 791,
+    "record_id": "229",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-229",
+    "target_name": "นายจิรายุ จริยาเอกภาส",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 298,
+    "app_id": 791,
+    "record_id": "228",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-228",
+    "target_name": "นายเกียรติศักดิ์ เกตุสิริกูล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 299,
+    "app_id": 791,
+    "record_id": "227",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-227",
+    "target_name": "นายธนบดี โคตรพรม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 300,
+    "app_id": 791,
+    "record_id": "226",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-226",
+    "target_name": "นายกรทักษ์ โยยิ่ง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 301,
+    "app_id": 791,
+    "record_id": "225",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-225",
+    "target_name": "นายธนพัฒน์ แก่นใจ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 302,
+    "app_id": 791,
+    "record_id": "224",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-224",
+    "target_name": "นางสาววิพารัตน์ จันทษร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 303,
+    "app_id": 791,
+    "record_id": "223",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-223",
+    "target_name": "นายเจษฎาภรณ์ ปล้องกลาง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 304,
+    "app_id": 791,
+    "record_id": "222",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-222",
+    "target_name": "นายพิทักษชัย พรพันธ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 305,
+    "app_id": 791,
+    "record_id": "221",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-221",
+    "target_name": "นายคาซึฮิโระ ฮานามูระ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 306,
+    "app_id": 791,
+    "record_id": "220",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-220",
+    "target_name": "นายทาคาโยชิ อุชิดะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 307,
+    "app_id": 791,
+    "record_id": "219",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-219",
+    "target_name": "นายมาโนชญ์ อินจินดา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 308,
+    "app_id": 791,
+    "record_id": "218",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-218",
+    "target_name": "นายประเสริฐศักดิ์ ขันเจริญ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 309,
+    "app_id": 791,
+    "record_id": "217",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-217",
+    "target_name": "นางอุทุมพร ทองศรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 310,
+    "app_id": 791,
+    "record_id": "216",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-216",
+    "target_name": "นายภานุวัฒน์ ราชาลี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 311,
+    "app_id": 791,
+    "record_id": "215",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-215",
+    "target_name": "นายสุรวุฒิ เกษาใส",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 312,
+    "app_id": 791,
+    "record_id": "214",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-214",
+    "target_name": "นายเผด็จการ ภูขามคม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 313,
+    "app_id": 791,
+    "record_id": "213",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-213",
+    "target_name": "นายอนุรักษ์ ติ๊บอุด",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 314,
+    "app_id": 791,
+    "record_id": "212",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-212",
+    "target_name": "นายอนุพงษ์ สมานทอง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 315,
+    "app_id": 791,
+    "record_id": "211",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-211",
+    "target_name": "นายสุนทร อะรินแปง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 316,
+    "app_id": 791,
+    "record_id": "210",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-210",
+    "target_name": "นายเอกลักษณ์ ใจบุตร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 317,
+    "app_id": 791,
+    "record_id": "209",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-209",
+    "target_name": "นางสาวสุพรรณทิพย์ มฤกุล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 318,
+    "app_id": 791,
+    "record_id": "208",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-208",
+    "target_name": "นายนพพร คงเกษม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 319,
+    "app_id": 791,
+    "record_id": "207",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-207",
+    "target_name": "นายเทพพานทอง บุญยก",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 320,
+    "app_id": 791,
+    "record_id": "206",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-206",
+    "target_name": "นายตรีเนตร จินดาเลิศ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 321,
+    "app_id": 791,
+    "record_id": "205",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-205",
+    "target_name": "นายทรงศักดิ์โพธิสาร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 322,
+    "app_id": 791,
+    "record_id": "204",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-204",
+    "target_name": "นางสาวพัชรินทร์ ไทยเจริญ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 323,
+    "app_id": 791,
+    "record_id": "203",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-203",
+    "target_name": "นายรักเกียรติ น่วมภุมรินทร์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 324,
+    "app_id": 791,
+    "record_id": "202",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-202",
+    "target_name": "นางสาวสุกัญญา บัวฮมบุรา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 325,
+    "app_id": 791,
+    "record_id": "201",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-201",
+    "target_name": "นายนพดล คงเกษม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 326,
+    "app_id": 791,
+    "record_id": "200",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-200",
+    "target_name": "นางกาญจนา ถะเกิงผล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 327,
+    "app_id": 791,
+    "record_id": "199",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-199",
+    "target_name": "นางสาวหนึ่งฤทัย สมจิตร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 328,
+    "app_id": 791,
+    "record_id": "198",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-198",
+    "target_name": "นายพิชัย ปันเปี้ย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 329,
+    "app_id": 791,
+    "record_id": "197",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-197",
+    "target_name": "นายธีระพงษ์ ลาโสม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 330,
+    "app_id": 791,
+    "record_id": "196",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-196",
+    "target_name": "นางสาวน้ำฝนไพศาล เจริญไมตรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 331,
+    "app_id": 791,
+    "record_id": "195",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-195",
+    "target_name": "นางสาวเพียงตะวัน จันทร์พิทักษ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 332,
+    "app_id": 791,
+    "record_id": "194",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-194",
+    "target_name": "นายสกล เสนาพล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 333,
+    "app_id": 791,
+    "record_id": "193",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-193",
+    "target_name": "นายจงกช อินสม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 334,
+    "app_id": 791,
+    "record_id": "192",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-192",
+    "target_name": "นายมงคล อ้องแสนคำ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 335,
+    "app_id": 791,
+    "record_id": "191",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-191",
+    "target_name": "นางสาววลัยพร จันทร์พิทักษ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 336,
+    "app_id": 791,
+    "record_id": "190",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-190",
+    "target_name": "นางสาวชื่นกมล เสนาเจริญ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 337,
+    "app_id": 791,
+    "record_id": "189",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-189",
+    "target_name": "นางสาววรรณภา แหล่ป้อง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 338,
+    "app_id": 791,
+    "record_id": "188",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-188",
+    "target_name": "นางสาวนฑาห์ นิพัทธโกศลสุข",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 339,
+    "app_id": 791,
+    "record_id": "187",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-187",
+    "target_name": "นางสาวพัชรลักษณ์ คำพรวน",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 340,
+    "app_id": 791,
+    "record_id": "186",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-186",
+    "target_name": "นางสาวมัสยา แสงกล้า",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 341,
+    "app_id": 791,
+    "record_id": "185",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-185",
+    "target_name": "นายธิติ แสนโคตร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 342,
+    "app_id": 791,
+    "record_id": "184",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-184",
+    "target_name": "นายพร้อมพันธ์ เกิดสวัสดิ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 343,
+    "app_id": 791,
+    "record_id": "183",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-183",
+    "target_name": "นางสาวนัดดา ศรีมนตรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 344,
+    "app_id": 791,
+    "record_id": "182",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-182",
+    "target_name": "นายอำนวย สุขพราม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 345,
+    "app_id": 791,
+    "record_id": "181",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-181",
+    "target_name": "นายสถิต กระแสร์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 346,
+    "app_id": 791,
+    "record_id": "180",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-180",
+    "target_name": "นางสาวสุภาภรณ์ จันทร์วิเศษ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 347,
+    "app_id": 791,
+    "record_id": "179",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-179",
+    "target_name": "นายพิชัย วงศ์เรือน",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 348,
+    "app_id": 791,
+    "record_id": "178",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-178",
+    "target_name": "นายธีระวัฒน์ โคสารคุณ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 349,
+    "app_id": 791,
+    "record_id": "177",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-177",
+    "target_name": "นางสาวนภัทร อินทนนท์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 350,
+    "app_id": 791,
+    "record_id": "176",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-176",
+    "target_name": "นายวัชรินทร์ ทัดเที่ยง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 351,
+    "app_id": 791,
+    "record_id": "175",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-175",
+    "target_name": "นายโชคชัย เชาว์ประจักษ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 352,
+    "app_id": 791,
+    "record_id": "174",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-174",
+    "target_name": "นายวรศักดิ์ เบญมาตย์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 353,
+    "app_id": 791,
+    "record_id": "173",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-173",
+    "target_name": "นายสุวินัย อารีเอื้อ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 354,
+    "app_id": 791,
+    "record_id": "172",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-172",
+    "target_name": "นางสาวปิยาภรณ์ แก้วดี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 355,
+    "app_id": 791,
+    "record_id": "171",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-171",
+    "target_name": "นายทรงศาสตร์ ภูธง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 356,
+    "app_id": 791,
+    "record_id": "170",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-170",
+    "target_name": "นายอภิสิทธิ์ สุขเจริญ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 357,
+    "app_id": 791,
+    "record_id": "169",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-169",
+    "target_name": "นายวัชรพงศ์ แจ่มใส",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 358,
+    "app_id": 791,
+    "record_id": "168",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-168",
+    "target_name": "นางสาวสุภาพร บุญเลิศ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 359,
+    "app_id": 791,
+    "record_id": "167",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-167",
+    "target_name": "นางสาววริศรา ใจหาญ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 360,
+    "app_id": 791,
+    "record_id": "166",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-166",
+    "target_name": "นายกิตติ ใจกล้า",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 361,
+    "app_id": 791,
+    "record_id": "165",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-165",
+    "target_name": "นายอดิศร ศรีแก้วใส",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 362,
+    "app_id": 791,
+    "record_id": "164",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-164",
+    "target_name": "นายเกรียงไกร ชื่นหมี้",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 363,
+    "app_id": 791,
+    "record_id": "163",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-163",
+    "target_name": "นางสาวชนันธร ขอบจิตร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 364,
+    "app_id": 791,
+    "record_id": "162",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-162",
+    "target_name": "นายสุรทิน พูลศิลา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 365,
+    "app_id": 791,
+    "record_id": "161",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-161",
+    "target_name": "นายพงศกร ไชยเทพ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 366,
+    "app_id": 791,
+    "record_id": "160",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-160",
+    "target_name": "นายธารา ทองศรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 367,
+    "app_id": 791,
+    "record_id": "159",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-159",
+    "target_name": "นางณญาดา เสริมศิริ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 368,
+    "app_id": 791,
+    "record_id": "158",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-158",
+    "target_name": "นายธนพล สายบัว",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 369,
+    "app_id": 791,
+    "record_id": "157",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-157",
+    "target_name": "นายธวัชชัย เผ่าเมธวารีธร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 370,
+    "app_id": 791,
+    "record_id": "156",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-156",
+    "target_name": "นายสมหมาย จันทร์เขต",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 371,
+    "app_id": 791,
+    "record_id": "155",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-155",
+    "target_name": "นายสักรินทร์ แก้วติ๊บ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 372,
+    "app_id": 791,
+    "record_id": "154",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-154",
+    "target_name": "นางสาวฐิตพัทธ์ สุทธิ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 373,
+    "app_id": 791,
+    "record_id": "153",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-153",
+    "target_name": "นางสาววนิดา นนทพันธุ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 374,
+    "app_id": 791,
+    "record_id": "152",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-152",
+    "target_name": "นายพัทธพล ฝึกความดี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 375,
+    "app_id": 791,
+    "record_id": "151",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-151",
+    "target_name": "นางสาวภีชญา ขวัญเฉื่อย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 376,
+    "app_id": 791,
+    "record_id": "150",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-150",
+    "target_name": "นายอัครพงศ์ ขาวงาม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 377,
+    "app_id": 791,
+    "record_id": "149",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-149",
+    "target_name": "นางอำพร ชูสวัสดิ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 378,
+    "app_id": 791,
+    "record_id": "148",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-148",
+    "target_name": "นายพิตินนท์ บัณฑุตระกูล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 379,
+    "app_id": 791,
+    "record_id": "147",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-147",
+    "target_name": "นางสาวสุกัญญา มณีโชติ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 380,
+    "app_id": 791,
+    "record_id": "146",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-146",
+    "target_name": "นายอำนาจ คงใหญ่",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 381,
+    "app_id": 791,
+    "record_id": "145",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-145",
+    "target_name": "นายภูบดินทร์ มุกดาดิลก",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 382,
+    "app_id": 791,
+    "record_id": "144",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-144",
+    "target_name": "นายกวีวุฒิ ตั้งพิบูลธรรม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 383,
+    "app_id": 791,
+    "record_id": "143",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-143",
+    "target_name": "นายนพกร นามัง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 384,
+    "app_id": 791,
+    "record_id": "142",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-142",
+    "target_name": "นายโยสุเกะ ฟูจิตะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 385,
+    "app_id": 791,
+    "record_id": "141",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-141",
+    "target_name": "นายอนุวัฒน์ บุญโสดากร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 386,
+    "app_id": 791,
+    "record_id": "140",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-140",
+    "target_name": "นายอัครวิทย์ ปรุงเกียรติ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 387,
+    "app_id": 791,
+    "record_id": "139",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-139",
+    "target_name": "น.ส.สิริวิมล ชูผล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 388,
+    "app_id": 791,
+    "record_id": "138",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-138",
+    "target_name": "นายอโนชัย วงศ์ประยูรศรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 389,
+    "app_id": 791,
+    "record_id": "137",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-137",
+    "target_name": "น.ส.สุวิมล แก่นจันทร์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 390,
+    "app_id": 791,
+    "record_id": "136",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-136",
+    "target_name": "น.ส.กัลยา มีตา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 391,
+    "app_id": 791,
+    "record_id": "135",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-135",
+    "target_name": "น.ส.รินรดี สุวรรณ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 392,
+    "app_id": 791,
+    "record_id": "134",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-134",
+    "target_name": "โยชิคาซู ยามาโมโตะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 393,
+    "app_id": 791,
+    "record_id": "133",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-133",
+    "target_name": "นายอนุชา ธรรมวงค์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 394,
+    "app_id": 791,
+    "record_id": "132",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-132",
+    "target_name": "นายมาซาโตะ อูเอโนะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 395,
+    "app_id": 791,
+    "record_id": "131",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-131",
+    "target_name": "นายสามารถ สอนสุภาพ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 396,
+    "app_id": 791,
+    "record_id": "130",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-130",
+    "target_name": "นางสาวรดีมาศ เจือไทย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 397,
+    "app_id": 791,
+    "record_id": "129",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-129",
+    "target_name": "น.ส.แก้วกัญญพัชร วรปภาดากุล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 398,
+    "app_id": 791,
+    "record_id": "128",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-128",
+    "target_name": "น.ส.สุทธิดา ทักขิณาพงศ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 399,
+    "app_id": 791,
+    "record_id": "127",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-127",
+    "target_name": "นายสุวัฒน์ วิเศษสิงห์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 400,
+    "app_id": 791,
+    "record_id": "126",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-126",
+    "target_name": "น.ส.กมลวรรณ คำศรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 401,
+    "app_id": 791,
+    "record_id": "125",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-125",
+    "target_name": "นางสาวอรอนงค์ ดำนุ้ย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 402,
+    "app_id": 791,
+    "record_id": "124",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-124",
+    "target_name": "นายชิตไชยา ทองนาค",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 403,
+    "app_id": 791,
+    "record_id": "123",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-123",
+    "target_name": "นายยาซูฮิโระ ทามูระ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 404,
+    "app_id": 791,
+    "record_id": "122",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-122",
+    "target_name": "นายทาอิชิ ทาคายานากิ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 405,
+    "app_id": 791,
+    "record_id": "121",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-121",
+    "target_name": "นายนัท พรหมประสิทธิ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 406,
+    "app_id": 791,
+    "record_id": "120",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-120",
+    "target_name": "นายอรุษ จินดาหลวง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 407,
+    "app_id": 791,
+    "record_id": "119",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-119",
+    "target_name": "นายชนาธิป กุซัว",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 408,
+    "app_id": 791,
+    "record_id": "118",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-118",
+    "target_name": "นายณัฐวุฒิ นาคชลธี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 409,
+    "app_id": 791,
+    "record_id": "117",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-117",
+    "target_name": "น.ส.ยุวรัตน์ บรรลือเกียรติ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 410,
+    "app_id": 791,
+    "record_id": "116",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-116",
+    "target_name": "นางสาวปัทมา สมงาม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 411,
+    "app_id": 791,
+    "record_id": "115",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-115",
+    "target_name": "นายประจักร มะลาศรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 412,
+    "app_id": 791,
+    "record_id": "114",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-114",
+    "target_name": "นางสาวฉัตร์รวี พีระทวีศรีกุล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 413,
+    "app_id": 791,
+    "record_id": "113",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-113",
+    "target_name": "นายปิยธนา ยินดีสุข",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 414,
+    "app_id": 791,
+    "record_id": "112",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-112",
+    "target_name": "นายกฤษฎา คำดา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 415,
+    "app_id": 791,
+    "record_id": "111",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-111",
+    "target_name": "นายนรากร มิ่งเมือง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 416,
+    "app_id": 791,
+    "record_id": "110",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-110",
+    "target_name": "นางสาวธัญธนาดา แซ่เหีย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 417,
+    "app_id": 791,
+    "record_id": "109",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-109",
+    "target_name": "นางสาววันดี เล็กเจริญ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 418,
+    "app_id": 791,
+    "record_id": "108",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-108",
+    "target_name": "นางณิรดา ทั้งวิจิตรกุล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 419,
+    "app_id": 791,
+    "record_id": "107",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-107",
+    "target_name": "นายธนัท เมืองโคตร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 420,
+    "app_id": 791,
+    "record_id": "106",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-106",
+    "target_name": "นางสาวจงจิตต์ โสดา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 421,
+    "app_id": 791,
+    "record_id": "105",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-105",
+    "target_name": "นางสาวนริศรา จันทลา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 422,
+    "app_id": 791,
+    "record_id": "104",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-104",
+    "target_name": "นางสาวเสาวนีย์ เนตรพิภพ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 423,
+    "app_id": 791,
+    "record_id": "103",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-103",
+    "target_name": "นางสาวดารัตน์ พรชื่นชูวงศ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 424,
+    "app_id": 791,
+    "record_id": "102",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-102",
+    "target_name": "นางสาววิไลลักษณ์ จันทร์ศรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 425,
+    "app_id": 791,
+    "record_id": "101",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-101",
+    "target_name": "นางสาววณิชวรรณ บุดดา",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 426,
+    "app_id": 791,
+    "record_id": "100",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-100",
+    "target_name": "นางสาวศลิษา รักการงาน",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 427,
+    "app_id": 791,
+    "record_id": "99",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-099",
+    "target_name": "นางสาววรฤทัย วงชารี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 428,
+    "app_id": 791,
+    "record_id": "98",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-098",
+    "target_name": "นายสมศักดิ์ สืบจันทร์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 429,
+    "app_id": 791,
+    "record_id": "97",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-097",
+    "target_name": "นายนพนันท์ เดชขันธ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 430,
+    "app_id": 791,
+    "record_id": "96",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-096",
+    "target_name": "นางสาวศุภรัตน์ อาวรณ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 431,
+    "app_id": 791,
+    "record_id": "95",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-095",
+    "target_name": "นางสาวจุฑาพร วงศ์ชื่นสุนทร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 432,
+    "app_id": 791,
+    "record_id": "94",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-094",
+    "target_name": "นางอารยา หิรัญปัณฑาพร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 433,
+    "app_id": 791,
+    "record_id": "93",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-093",
+    "target_name": "นางสาวสมฤดี แป้นหนู",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 434,
+    "app_id": 791,
+    "record_id": "92",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-092",
+    "target_name": "นางสาววาสนา แม้นทอง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 435,
+    "app_id": 791,
+    "record_id": "91",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-091",
+    "target_name": "นางสาวกมลวรรณ ชัยสุขี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 436,
+    "app_id": 791,
+    "record_id": "90",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-090",
+    "target_name": "นายพิชยดนย์ พงษ์ศาสตร์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 437,
+    "app_id": 791,
+    "record_id": "89",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-089",
+    "target_name": "นายวรภัทร คำสิงห์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 438,
+    "app_id": 791,
+    "record_id": "88",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-088",
+    "target_name": "นายอรรถสิทธิ์ ทองทั่ว",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 439,
+    "app_id": 791,
+    "record_id": "87",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-087",
+    "target_name": "นางสาวรสริน เลิศวัชพล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 440,
+    "app_id": 791,
+    "record_id": "86",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-086",
+    "target_name": "นางสาวจิรวรรธ ศรีสวัสดิ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 441,
+    "app_id": 791,
+    "record_id": "85",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-085",
+    "target_name": "นายสาทิตย์ สาหร่ายสลับ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 442,
+    "app_id": 791,
+    "record_id": "84",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-084",
+    "target_name": "นางสาวดุจฤดี อรุณจิต",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 443,
+    "app_id": 791,
+    "record_id": "83",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-083",
+    "target_name": "นายสมโภช ลิมป์บรรเจิด",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 444,
+    "app_id": 791,
+    "record_id": "82",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-082",
+    "target_name": "นายณัฐนันท์ เล็งเลิศผล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 445,
+    "app_id": 791,
+    "record_id": "81",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-081",
+    "target_name": "นายสุรัช ลวดลาย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 446,
+    "app_id": 791,
+    "record_id": "80",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-080",
+    "target_name": "นายกฤษณะ เลาหจีรพันธุ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 447,
+    "app_id": 791,
+    "record_id": "79",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-079",
+    "target_name": "นางสาวเพ็ญประภา ม่วงกลาง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 448,
+    "app_id": 791,
+    "record_id": "78",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-078",
+    "target_name": "นายภัทร รัตนกรแก้ว",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 449,
+    "app_id": 791,
+    "record_id": "77",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-077",
+    "target_name": "นายณรงค์ แก้วทรัพย์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 450,
+    "app_id": 791,
+    "record_id": "76",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-076",
+    "target_name": "นางสาวชญานุช เพ็งพินิจ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 451,
+    "app_id": 791,
+    "record_id": "75",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-075",
+    "target_name": "นางพัทธนันท์รัชต์ เรืองเที่ยง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 452,
+    "app_id": 791,
+    "record_id": "74",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-074",
+    "target_name": "นายอัครภูมิ ไชยเพชร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 453,
+    "app_id": 791,
+    "record_id": "73",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-073",
+    "target_name": "นายวิเชษฐ์ ประทุมภาพ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 454,
+    "app_id": 791,
+    "record_id": "72",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-072",
+    "target_name": "นายวิฑูร สุขวิสุทธิโชติ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 455,
+    "app_id": 791,
+    "record_id": "71",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-071",
+    "target_name": "นายณัฐพล โกศลกิติวงศ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 456,
+    "app_id": 791,
+    "record_id": "70",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-070",
+    "target_name": "นางสาวชุลีพร เมณฑ์กูล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 457,
+    "app_id": 791,
+    "record_id": "69",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-069",
+    "target_name": "นางสาวหทัยรัตน์ ศรีกุลวงศ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 458,
+    "app_id": 791,
+    "record_id": "68",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-068",
+    "target_name": "นายกีรติ วรรณบุตร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 459,
+    "app_id": 791,
+    "record_id": "67",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-067",
+    "target_name": "นางสาวณัฐธิดา ทองวิเศษ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 460,
+    "app_id": 791,
+    "record_id": "66",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-066",
+    "target_name": "นายศรันยู รัตนสุวรรณ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 461,
+    "app_id": 791,
+    "record_id": "65",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-065",
+    "target_name": "นายพงศ์พัฒน์ ศรีโคตร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 462,
+    "app_id": 791,
+    "record_id": "64",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-064",
+    "target_name": "นางสาวพิชชากานต์ องค์สวัสดิ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 463,
+    "app_id": 791,
+    "record_id": "63",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-063",
+    "target_name": "นายสุธน สอนสุภาพ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 464,
+    "app_id": 791,
+    "record_id": "62",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-062",
+    "target_name": "นางสาวปภัชญา ถาวรรินพงศ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 465,
+    "app_id": 791,
+    "record_id": "61",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-061",
+    "target_name": "นายสรสิช ศรีสุดใจ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 466,
+    "app_id": 791,
+    "record_id": "60",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-060",
+    "target_name": "นายณัฐวุฒิ เสมอวงศ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 467,
+    "app_id": 791,
+    "record_id": "59",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-059",
+    "target_name": "นายจักรกฤษณ์ แพน้อย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 468,
+    "app_id": 791,
+    "record_id": "58",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-058",
+    "target_name": "นายพีรณัฐ หาญประทุม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 469,
+    "app_id": 791,
+    "record_id": "57",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-057",
+    "target_name": "นางสาวสุธาดา ใจมนต์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 470,
+    "app_id": 791,
+    "record_id": "56",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-056",
+    "target_name": "นายปวีร์ หอมเลิศนลิน",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 471,
+    "app_id": 791,
+    "record_id": "55",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-055",
+    "target_name": "นางสาววรธัญ สามารถ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 472,
+    "app_id": 791,
+    "record_id": "54",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-054",
+    "target_name": "นางสาวกันต์กนิษฐ์ นิ่มน้อย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 473,
+    "app_id": 791,
+    "record_id": "53",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-053",
+    "target_name": "นางสาวลักษมี แก้วศรีงาม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 474,
+    "app_id": 791,
+    "record_id": "52",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-052",
+    "target_name": "นายประเวศ ปัญญาอภิวัฒนะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 475,
+    "app_id": 791,
+    "record_id": "51",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-051",
+    "target_name": "นางสาวนิตยา หอมทอง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 476,
+    "app_id": 791,
+    "record_id": "50",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-050",
+    "target_name": "นายณัฐพล พุทธศรี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 477,
+    "app_id": 791,
+    "record_id": "49",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-049",
+    "target_name": "นางสาวโสภิดา คำล้าน",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 478,
+    "app_id": 791,
+    "record_id": "48",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-048",
+    "target_name": "นายพงศกร โพธิ์พิมล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 479,
+    "app_id": 791,
+    "record_id": "47",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-047",
+    "target_name": "นายณัฐวุฒิ แก้วกังวาล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 480,
+    "app_id": 791,
+    "record_id": "46",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-046",
+    "target_name": "นางสาวจุฑารัตน์ สุเฌอ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 481,
+    "app_id": 791,
+    "record_id": "45",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-045",
+    "target_name": "นายจิรายุสวัฒ ประสม",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 482,
+    "app_id": 791,
+    "record_id": "44",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-044",
+    "target_name": "นายศิรา โสวัณณะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 483,
+    "app_id": 791,
+    "record_id": "43",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-043",
+    "target_name": "นายธีระพงษ์ ประสาร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 484,
+    "app_id": 791,
+    "record_id": "42",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-042",
+    "target_name": "นายมิคิโอะ คาโตะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 485,
+    "app_id": 791,
+    "record_id": "41",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-041",
+    "target_name": "นายทาคุโร อิโนะอุเอะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 486,
+    "app_id": 791,
+    "record_id": "40",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-040",
+    "target_name": "นายมาซาฮิโต อาซูมิ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 487,
+    "app_id": 791,
+    "record_id": "39",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-039",
+    "target_name": "นายปกป้อง วานิชสุจิต",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 488,
+    "app_id": 791,
+    "record_id": "38",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-038",
+    "target_name": "นายวรภฤศ ม่วงมิ่งสุข",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 489,
+    "app_id": 791,
+    "record_id": "37",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-037",
+    "target_name": "นายชิษณุพงศ์ กมลไชยอนันต์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 490,
+    "app_id": 791,
+    "record_id": "36",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-036",
+    "target_name": "มูเนะโนบุ ซาโต้",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 491,
+    "app_id": 791,
+    "record_id": "35",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-035",
+    "target_name": "นายวรุตม์ อัศวตรีรัตนกุล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 492,
+    "app_id": 791,
+    "record_id": "34",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-034",
+    "target_name": "นายสงกรานต์ ขันนอก",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 493,
+    "app_id": 791,
+    "record_id": "33",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-033",
+    "target_name": "นายศักดิ์ชัย พันธุริ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 494,
+    "app_id": 791,
+    "record_id": "32",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-032",
+    "target_name": "นายสุทัศน์ หมอไทย",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 495,
+    "app_id": 791,
+    "record_id": "31",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-031",
+    "target_name": "นายวีรกุล เจริญกุล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 496,
+    "app_id": 791,
+    "record_id": "30",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-030",
+    "target_name": "นายกฤษณ์ชัย สมพลกรัง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 497,
+    "app_id": 791,
+    "record_id": "29",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-029",
+    "target_name": "นายมรรคภพ ขำสิทธิ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 498,
+    "app_id": 791,
+    "record_id": "28",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-028",
+    "target_name": "น.ส.ปริยนาถ สงวนสุข",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 499,
+    "app_id": 791,
+    "record_id": "27",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-027",
+    "target_name": "นายทาเคชิ อะชิซาว่า",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 500,
+    "app_id": 791,
+    "record_id": "26",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-026",
+    "target_name": "นางสาวอุษณิษา ผาตินาวิน",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 501,
+    "app_id": 791,
+    "record_id": "25",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-025",
+    "target_name": "นายรณชัย ดอกดวน",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 502,
+    "app_id": 791,
+    "record_id": "24",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-024",
+    "target_name": "นายศุภณัฐ เตียรถ์สุวรรณ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 503,
+    "app_id": 791,
+    "record_id": "23",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-023",
+    "target_name": "น.ส.เพ็ญพิชชา หุตะจูฑะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 504,
+    "app_id": 791,
+    "record_id": "22",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-022",
+    "target_name": "นายเคอิซุเกะ ชิเกตะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 505,
+    "app_id": 791,
+    "record_id": "21",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-021",
+    "target_name": "นายวิชา สารเสวก",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 506,
+    "app_id": 791,
+    "record_id": "20",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-020",
+    "target_name": "นายอิสระ คงทวี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 507,
+    "app_id": 791,
+    "record_id": "19",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-019",
+    "target_name": "นายปฏิพล พวงจันทร์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 508,
+    "app_id": 791,
+    "record_id": "18",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-018",
+    "target_name": "น.ส.นีร น้อยหัวหาด",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 509,
+    "app_id": 791,
+    "record_id": "17",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-017",
+    "target_name": "นายนราศักดิ์ จันทบูรณ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 510,
+    "app_id": 791,
+    "record_id": "16",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-016",
+    "target_name": "นายเจษฎา มูลสาร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 511,
+    "app_id": 791,
+    "record_id": "15",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-015",
+    "target_name": "นายธนภูมิ เกษามูล",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 512,
+    "app_id": 791,
+    "record_id": "14",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-014",
+    "target_name": "นายธรรมรัตน์ พลวารี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 513,
+    "app_id": 791,
+    "record_id": "13",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-013",
+    "target_name": "นายธัมกาล ลักษณะหุต",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 514,
+    "app_id": 791,
+    "record_id": "12",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-012",
+    "target_name": "นายคณิน แสงทอง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 515,
+    "app_id": 791,
+    "record_id": "11",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-011",
+    "target_name": "น.ส.พิชชานันท์ เหลี่ยมสุวรรณ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 516,
+    "app_id": 791,
+    "record_id": "10",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-010",
+    "target_name": "น.ส.จันทรัสม์ รอดสว่าง",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 517,
+    "app_id": 791,
+    "record_id": "9",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-009",
+    "target_name": "น.ส.รัตนาภรณ์ พิเชฐโชติวงษ์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 518,
+    "app_id": 791,
+    "record_id": "8",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-008",
+    "target_name": "น.ส.รสริน อินทร์จันทร์",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 519,
+    "app_id": 791,
+    "record_id": "7",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-007",
+    "target_name": "นายไตรรัตน์ พันธุ์ดี",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 520,
+    "app_id": 791,
+    "record_id": "6",
+    "action": "UPDATE",
+    "target_code": "TMS0",
+    "target_name": "Technical Services Department",
+    "reason": "Update canonical department name & hierarchy to exact Org.FY2026_Rev.2 standard"
+  },
+  {
+    "sequence": 521,
+    "app_id": 791,
+    "record_id": "5",
+    "action": "UPDATE",
+    "target_code": "TMT0",
+    "target_name": "Industrial Services Department",
+    "reason": "Update canonical department name & hierarchy to exact Org.FY2026_Rev.2 standard"
+  },
+  {
+    "sequence": 522,
+    "app_id": 791,
+    "record_id": "4",
+    "action": "UPDATE",
+    "target_code": "TMT1",
+    "target_name": "Machinery Department",
+    "reason": "Update canonical department name & hierarchy to exact Org.FY2026_Rev.2 standard"
+  },
+  {
+    "sequence": 523,
+    "app_id": 791,
+    "record_id": "3",
+    "action": "UPDATE",
+    "target_code": "TMH0",
+    "target_name": "Corporate Department",
+    "reason": "Update canonical department name & hierarchy to exact Org.FY2026_Rev.2 standard"
+  },
+  {
+    "sequence": 524,
+    "app_id": 791,
+    "record_id": "2",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-002",
+    "target_name": "นายวรชัย วงค์ชะนะ",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 525,
+    "app_id": 791,
+    "record_id": "1",
+    "action": "DEACTIVATE",
+    "target_code": "DEP-001",
+    "target_name": "น.ส.พรหมศิริ พิมพ์สกุลไกร",
+    "reason": "Legacy person-contaminated record; deactivate and supersede with clean master"
+  },
+  {
+    "sequence": 526,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TME1",
+    "target_name": "Eco Energy & Textile Machinery Department",
+    "target_type": "DEPARTMENT",
+    "target_parent": "DIV-ME",
+    "reason": "Create clean canonical department node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 527,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMG0",
+    "target_name": "Mold & Engineering Department",
+    "target_type": "DEPARTMENT",
+    "target_parent": "DIV-GS",
+    "reason": "Create clean canonical department node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 528,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMT1-EXP",
+    "target_name": "Export",
+    "target_type": "SECTION",
+    "target_parent": "TMT1",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 529,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMT1-MACH",
+    "target_name": "Machine & Equipments",
+    "target_type": "TEAM",
+    "target_parent": "TMT1-EXP",
+    "reason": "Create clean canonical team node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 530,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMT1-TOOL",
+    "target_name": "Tool Part & Project",
+    "target_type": "TEAM",
+    "target_parent": "TMT1-EXP",
+    "reason": "Create clean canonical team node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 531,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMT2",
+    "target_name": "Toyota Sales",
+    "target_type": "SECTION",
+    "target_parent": "TMT1",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 532,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMT2-TOOL",
+    "target_name": "Tooling",
+    "target_type": "TEAM",
+    "target_parent": "TMT2",
+    "reason": "Create clean canonical team node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 533,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMT2-STN",
+    "target_name": "STN",
+    "target_type": "TEAM",
+    "target_parent": "TMT2",
+    "reason": "Create clean canonical team node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 534,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMT2-LOGI",
+    "target_name": "Logistics",
+    "target_type": "TEAM",
+    "target_parent": "TMT2",
+    "reason": "Create clean canonical team node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 535,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMF1",
+    "target_name": "Automotive",
+    "target_type": "SECTION",
+    "target_parent": "TMT0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 536,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMF1-MARK",
+    "target_name": "Marketing (Automotive)",
+    "target_type": "FUNCTION",
+    "target_parent": "TMF1",
+    "reason": "Create clean canonical function node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 537,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMF2",
+    "target_name": "Industry",
+    "target_type": "SECTION",
+    "target_parent": "TMT0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 538,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMF2-MARK",
+    "target_name": "Marketing (Industry)",
+    "target_type": "FUNCTION",
+    "target_parent": "TMF2",
+    "reason": "Create clean canonical function node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 539,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMF3",
+    "target_name": "Sales Engineering",
+    "target_type": "SECTION",
+    "target_parent": "TMT0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 540,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMF3-SALE",
+    "target_name": "Sales",
+    "target_type": "FUNCTION",
+    "target_parent": "TMF3",
+    "reason": "Create clean canonical function node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 541,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMF3-MARK",
+    "target_name": "Marketing (Sales Engineering)",
+    "target_type": "FUNCTION",
+    "target_parent": "TMF3",
+    "reason": "Create clean canonical function node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 542,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TME3",
+    "target_name": "Eco Energy & Textile Machinery",
+    "target_type": "SECTION",
+    "target_parent": "TME1",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 543,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TME3-MARK",
+    "target_name": "Marketing (Eco Energy)",
+    "target_type": "FUNCTION",
+    "target_parent": "TME3",
+    "reason": "Create clean canonical function node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 544,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMS1",
+    "target_name": "Technical Services",
+    "target_type": "SECTION",
+    "target_parent": "TMS0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 545,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMS1-PROJ",
+    "target_name": "Project Team",
+    "target_type": "TEAM",
+    "target_parent": "TMS1",
+    "reason": "Create clean canonical team node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 546,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMS1-ENGI",
+    "target_name": "Engineering Team",
+    "target_type": "TEAM",
+    "target_parent": "TMS1",
+    "reason": "Create clean canonical team node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 547,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMS1-SAFE",
+    "target_name": "Safety Team",
+    "target_type": "TEAM",
+    "target_parent": "TMS1",
+    "reason": "Create clean canonical team node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 548,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMG1",
+    "target_name": "Die Casting",
+    "target_type": "SECTION",
+    "target_parent": "TMG0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 549,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMG2",
+    "target_name": "Injection",
+    "target_type": "SECTION",
+    "target_parent": "TMG0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 550,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMH1",
+    "target_name": "GA",
+    "target_type": "SECTION",
+    "target_parent": "TMH0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 551,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMH2",
+    "target_name": "HR & Personnel",
+    "target_type": "SECTION",
+    "target_parent": "TMH0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 552,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "TMH3",
+    "target_name": "Accounting & Finance",
+    "target_type": "SECTION",
+    "target_parent": "TMH0",
+    "reason": "Create clean canonical section node from Org.FY2026_Rev.2"
+  },
+  {
+    "sequence": 553,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-001",
+    "target_name": "Operator",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Operator\""
+  },
+  {
+    "sequence": 554,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-002",
+    "target_name": "Marketing Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Marketing Staff\""
+  },
+  {
+    "sequence": 555,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-003",
+    "target_name": "Technician",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Technician\""
+  },
+  {
+    "sequence": 556,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-004",
+    "target_name": "Support Marketing Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Support Marketing Staff\""
+  },
+  {
+    "sequence": 557,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-005",
+    "target_name": "Coordinator",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Coordinator\""
+  },
+  {
+    "sequence": 558,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-006",
+    "target_name": "Marketing Engineer",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Marketing Engineer\""
+  },
+  {
+    "sequence": 559,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-007",
+    "target_name": "Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Staff\""
+  },
+  {
+    "sequence": 560,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-008",
+    "target_name": "Engineering Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Engineering Staff\""
+  },
+  {
+    "sequence": 561,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-009",
+    "target_name": "CAM Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"CAM Staff\""
+  },
+  {
+    "sequence": 562,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-010",
+    "target_name": "Design Engineer",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Design Engineer\""
+  },
+  {
+    "sequence": 563,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-011",
+    "target_name": "Factory Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Factory Manager\""
+  },
+  {
+    "sequence": 564,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-012",
+    "target_name": "Vice President",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Vice President\""
+  },
+  {
+    "sequence": 565,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-013",
+    "target_name": "Assistant Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Assistant Chief\""
+  },
+  {
+    "sequence": 566,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-014",
+    "target_name": "Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Chief\""
+  },
+  {
+    "sequence": 567,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-015",
+    "target_name": "Clerk",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Clerk\""
+  },
+  {
+    "sequence": 568,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-016",
+    "target_name": "Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Manager\""
+  },
+  {
+    "sequence": 569,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-017",
+    "target_name": "Safety Officer& ISO Control",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Safety Officer& ISO Control\""
+  },
+  {
+    "sequence": 570,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-018",
+    "target_name": "Senior Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Senior Chief\""
+  },
+  {
+    "sequence": 571,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-019",
+    "target_name": "Section Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Section Manager\""
+  },
+  {
+    "sequence": 572,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-020",
+    "target_name": "Assistant Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Assistant Manager\""
+  },
+  {
+    "sequence": 573,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-021",
+    "target_name": "Messenger",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Messenger\""
+  },
+  {
+    "sequence": 574,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-022",
+    "target_name": "Warehouse Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Warehouse Staff\""
+  },
+  {
+    "sequence": 575,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-023",
+    "target_name": "Support Marketing Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Support Marketing Chief\""
+  },
+  {
+    "sequence": 576,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-024",
+    "target_name": "Supoort Marketing Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Supoort Marketing Chief\""
+  },
+  {
+    "sequence": 577,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-025",
+    "target_name": "Interpreter",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Interpreter\""
+  },
+  {
+    "sequence": 578,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-026",
+    "target_name": "Accounting Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Accounting Staff\""
+  },
+  {
+    "sequence": 579,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-027",
+    "target_name": "General manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"General manager\""
+  },
+  {
+    "sequence": 580,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-028",
+    "target_name": "IT Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"IT Staff\""
+  },
+  {
+    "sequence": 581,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-029",
+    "target_name": "Trainee",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Trainee\""
+  },
+  {
+    "sequence": 582,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-030",
+    "target_name": "Contract (Japan Support)",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Contract (Japan Support)\""
+  },
+  {
+    "sequence": 583,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-031",
+    "target_name": "Contract (Apite)",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Contract (Apite)\""
+  },
+  {
+    "sequence": 584,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-032",
+    "target_name": "General Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"General Manager\""
+  },
+  {
+    "sequence": 585,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-033",
+    "target_name": "Driver",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Driver\""
+  },
+  {
+    "sequence": 586,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-034",
+    "target_name": "Warehouse Support",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Warehouse Support\""
+  },
+  {
+    "sequence": 587,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-035",
+    "target_name": "Assistant Section Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Assistant Section Manager\""
+  },
+  {
+    "sequence": 588,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-036",
+    "target_name": "Marketing Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Marketing Chief\""
+  },
+  {
+    "sequence": 589,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-037",
+    "target_name": "Accounting Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Accounting Chief\""
+  },
+  {
+    "sequence": 590,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-038",
+    "target_name": "Deputy General Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Deputy General Manager\""
+  },
+  {
+    "sequence": 591,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-039",
+    "target_name": "Technical Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Technical Chief\""
+  },
+  {
+    "sequence": 592,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-040",
+    "target_name": "Senior Specilaist",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Senior Specilaist\""
+  },
+  {
+    "sequence": 593,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-041",
+    "target_name": "Asst. Section Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Asst. Section Manager\""
+  },
+  {
+    "sequence": 594,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-042",
+    "target_name": "Senior Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Senior Manager\""
+  },
+  {
+    "sequence": 595,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-043",
+    "target_name": "Technical Service Engineer",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Technical Service Engineer\""
+  },
+  {
+    "sequence": 596,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-044",
+    "target_name": "Chief of Engineer",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Chief of Engineer\""
+  },
+  {
+    "sequence": 597,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-045",
+    "target_name": "Technical Service Chief",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Technical Service Chief\""
+  },
+  {
+    "sequence": 598,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-046",
+    "target_name": "Technical Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Technical Staff\""
+  },
+  {
+    "sequence": 599,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-047",
+    "target_name": "Chief of Safety Officer",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Chief of Safety Officer\""
+  },
+  {
+    "sequence": 600,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-048",
+    "target_name": "Supoort Marketing Staff",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Supoort Marketing Staff\""
+  },
+  {
+    "sequence": 601,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-049",
+    "target_name": "Safety",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Safety\""
+  },
+  {
+    "sequence": 602,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-050",
+    "target_name": "Advisor",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Advisor\""
+  },
+  {
+    "sequence": 603,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-051",
+    "target_name": "Service Engineer",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Service Engineer\""
+  },
+  {
+    "sequence": 604,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-052",
+    "target_name": "President",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"President\""
+  },
+  {
+    "sequence": 605,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-053",
+    "target_name": "Executive Management Coordinator",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Executive Management Coordinator\""
+  },
+  {
+    "sequence": 606,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-054",
+    "target_name": "Specialist",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Specialist\""
+  },
+  {
+    "sequence": 607,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-055",
+    "target_name": "Co Project Manager",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Co Project Manager\""
+  },
+  {
+    "sequence": 608,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-056",
+    "target_name": "DESIGN ENGINEER ASSISTANT MANAGER",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"DESIGN ENGINEER ASSISTANT MANAGER\""
+  },
+  {
+    "sequence": 609,
+    "app_id": 791,
+    "record_id": "NEW",
+    "action": "CREATE",
+    "target_code": "POS-057",
+    "target_name": "Safety Officer",
+    "target_type": "POSITION",
+    "target_parent": "ROOT",
+    "reason": "Create clean canonical Position Master for job title \"Safety Officer\""
+  }
+]

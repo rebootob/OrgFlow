@@ -1,0 +1,4602 @@
+[
+  {
+    "app_id": 791,
+    "record_id": "522",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "521",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "520",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "519",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "518",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "517",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "516",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "515",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "514",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "513",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "512",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "511",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "510",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "509",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "508",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "507",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "506",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "505",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "504",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "503",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "502",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "501",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "500",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "499",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "498",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "497",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "496",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "495",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "494",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "493",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "492",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "491",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "490",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "489",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "488",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "487",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "486",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "485",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "484",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "483",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "482",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "481",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "480",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "479",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "478",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "477",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "476",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "475",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "474",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "473",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "472",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "471",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "470",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "469",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "468",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "467",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "466",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "465",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "464",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "463",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "462",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "461",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "460",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "459",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "458",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "457",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "456",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "455",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "454",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "453",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "452",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "451",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "450",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "449",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "448",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "447",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "446",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "445",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "444",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "443",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "442",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "441",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "440",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "439",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "438",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "437",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "436",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "435",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "434",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "433",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "432",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "431",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "430",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "429",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "428",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "427",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "426",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "425",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "424",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "423",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "422",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "421",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "420",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "419",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "418",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "417",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "416",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "415",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "414",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "413",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "412",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "411",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "410",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "409",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "408",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "407",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "406",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "405",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "404",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "403",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "402",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "401",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "400",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "399",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "398",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "397",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "396",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "395",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "394",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "393",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "392",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "391",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "390",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "389",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "388",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "387",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "386",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "385",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "384",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "383",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "382",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "381",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "380",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "379",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "378",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "377",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "376",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "375",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "374",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "373",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "372",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "371",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "370",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "369",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "368",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "367",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "366",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "365",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "364",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "363",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "362",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "361",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "360",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "359",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "358",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "357",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "356",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "355",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "354",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "353",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "352",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "351",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "350",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "349",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "348",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "347",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "346",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "345",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "344",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "343",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "342",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "341",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "340",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "339",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "338",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "337",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "336",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "335",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "334",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "333",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "332",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "331",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "330",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "329",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "328",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "327",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "326",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "325",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "324",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "323",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "322",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "321",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "320",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "319",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "318",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "317",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "316",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "315",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "314",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "313",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "312",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "311",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "310",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "309",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "308",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "307",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "306",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "305",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "304",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "303",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "302",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "301",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "300",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "299",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "298",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "297",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "296",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "295",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "294",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "293",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "292",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "291",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "290",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "289",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "288",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "287",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "286",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "285",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "284",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "283",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "282",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "281",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "280",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "279",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "278",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "277",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "276",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "275",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "274",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "273",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "272",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "271",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "270",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "269",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "268",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "267",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "266",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "265",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "264",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "263",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "262",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "261",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "260",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "259",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "258",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "257",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "256",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "255",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "254",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "253",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "252",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "251",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "250",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "249",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "248",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "247",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "246",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "245",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "244",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "243",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "242",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "241",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "240",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "239",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "238",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "237",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "236",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "235",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "234",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "233",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "232",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "231",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "230",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "229",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "228",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "227",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "226",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "225",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "224",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "223",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "222",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "221",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "220",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "219",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "218",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "217",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "216",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "215",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "214",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "213",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "212",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "211",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "210",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "209",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "208",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "207",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "206",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "205",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "204",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "203",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "202",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "201",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "200",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "199",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "198",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "197",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "196",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "195",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "194",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "193",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "192",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "191",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "190",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "189",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "188",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "187",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "186",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "185",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "184",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "183",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "182",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "181",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "180",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "179",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "178",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "177",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "176",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "175",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "174",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "173",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "172",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "171",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "170",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "169",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "168",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "167",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "166",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "165",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "164",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "163",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "162",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "161",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "160",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "159",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "158",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "157",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "156",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "155",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "154",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "153",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "152",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "151",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "150",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "149",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "148",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "147",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "146",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "145",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "144",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "143",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "142",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "141",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "140",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "139",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "138",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "137",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "136",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "135",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "134",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "133",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "132",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "131",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "130",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "129",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "128",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "127",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "126",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "125",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "124",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "123",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "122",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "121",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "120",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "119",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "118",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "117",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "116",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "115",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "114",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "113",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "112",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "111",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "110",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "109",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "108",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "107",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "106",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "105",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "104",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "103",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "102",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "101",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "100",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "99",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "98",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "97",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "96",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "95",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "94",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "93",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "92",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "91",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "90",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "89",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "88",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "87",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "86",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "85",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "84",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "83",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "82",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "81",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "80",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "79",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "78",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "77",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "76",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "75",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "74",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "73",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "72",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "71",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "70",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "69",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "68",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "67",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "66",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "65",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "64",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "63",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "62",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "61",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "60",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "59",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "58",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "57",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "56",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "55",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "54",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "53",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "52",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "51",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "50",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "49",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "48",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "47",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "46",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "45",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "44",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "43",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "42",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "41",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "40",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "39",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "38",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "37",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "36",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "35",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "34",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "33",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "32",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "31",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "30",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "29",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "28",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "27",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "26",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "25",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "24",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "23",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "22",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "21",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "20",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "19",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "18",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "17",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "16",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "15",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "14",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "13",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "12",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "11",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "10",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "9",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "8",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "7",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "6",
+    "rollback_action": "REVERT_UPDATE",
+    "previous_state": {
+      "title_en": "น.ส.อะคะริ ซูซูกิ",
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "5",
+    "rollback_action": "REVERT_UPDATE",
+    "previous_state": {
+      "title_en": "นายชินิจิ มากิโนะ",
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "4",
+    "rollback_action": "REVERT_UPDATE",
+    "previous_state": {
+      "title_en": "นายทาเคชิ สึชิฮิระ",
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "3",
+    "rollback_action": "REVERT_UPDATE",
+    "previous_state": {
+      "title_en": "น.ส.ธารทิพย์ ภูพาดแร่",
+      "is_active": "ACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "2",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "record_id": "1",
+    "rollback_action": "REACTIVATE",
+    "previous_state": {
+      "is_active": "INACTIVE"
+    }
+  },
+  {
+    "app_id": 791,
+    "target_code": "TME1",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMG0",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMT1-EXP",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMT1-MACH",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMT1-TOOL",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMT2",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMT2-TOOL",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMT2-STN",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMT2-LOGI",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMF1",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMF1-MARK",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMF2",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMF2-MARK",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMF3",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMF3-SALE",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMF3-MARK",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TME3",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TME3-MARK",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMS1",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMS1-PROJ",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMS1-ENGI",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMS1-SAFE",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMG1",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMG2",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMH1",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMH2",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "TMH3",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-001",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-002",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-003",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-004",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-005",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-006",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-007",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-008",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-009",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-010",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-011",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-012",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-013",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-014",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-015",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-016",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-017",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-018",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-019",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-020",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-021",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-022",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-023",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-024",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-025",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-026",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-027",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-028",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-029",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-030",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-031",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-032",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-033",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-034",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-035",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-036",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-037",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-038",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-039",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-040",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-041",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-042",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-043",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-044",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-045",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-046",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-047",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-048",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-049",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-050",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-051",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-052",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-053",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-054",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-055",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-056",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  },
+  {
+    "app_id": 791,
+    "target_code": "POS-057",
+    "rollback_action": "DELETE_CREATED_RECORD"
+  }
+]
