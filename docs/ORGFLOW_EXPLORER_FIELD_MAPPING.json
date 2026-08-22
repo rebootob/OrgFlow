@@ -1,0 +1,586 @@
+{
+  "version": "2.0.0",
+  "updated_at": "2026-08-22",
+  "source_of_truth_rules": {
+    "EMPLOYEE_IDENTITY": "App 53",
+    "ORGANIZATION_STRUCTURE": "App 791",
+    "CURRENT_AND_HISTORICAL_ASSIGNMENTS": "App 792",
+    "CHANGE_REQUEST_AND_WORKFLOW_AUDIT": "App 793"
+  },
+  "app_53_employee_master": {
+    "app_id": 53,
+    "app_name": "Employee Namelist",
+    "fields": [
+      {
+        "code": "emp_text",
+        "label": "Employee ID",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Primary stable employee key",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "Text_0",
+        "label": "ชื่อ - นามสกุล (Thai Name)",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Official Thai name",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "Text",
+        "label": "Name - Surname (English Name)",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Official English name",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "Text_1",
+        "label": "Nickname",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Informal name",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "Text_2",
+        "label": "Position",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Authentic raw position title",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "Text_4",
+        "label": "Email",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Corporate email",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "Text_11",
+        "label": "Mobile",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Phone number",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "Attachment",
+        "label": "Attachment",
+        "type": "FILE",
+        "purpose": "Employee profile photo",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "Date",
+        "label": "Start Date",
+        "type": "DATE",
+        "purpose": "Company joining date",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      }
+    ]
+  },
+  "app_791_organization_master": {
+    "app_id": 791,
+    "app_name": "OrgFlow Organization Masters",
+    "fields": [
+      {
+        "code": "organization_code",
+        "label": "Organization Code",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Canonical primary key",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "organization_name",
+        "label": "Organization Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Official English node name",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "organization_type",
+        "label": "Organization Type",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "COMPANY, DIVISION, DEPARTMENT, SECTION, TEAM",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "organization_level",
+        "label": "Organization Level",
+        "type": "NUMBER",
+        "purpose": "Hierarchy level depth (1 to 5)",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "parent_organization_code",
+        "label": "Parent Organization Code",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Pointer to parent node",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "hierarchy_path",
+        "label": "Hierarchy Path",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Full breadcrumb path",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "code_status",
+        "label": "Code Status",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "ACTIVE or INACTIVE",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      }
+    ]
+  },
+  "app_792_assignment_history": {
+    "app_id": 792,
+    "app_name": "OrgFlow Assignment History",
+    "fields": [
+      {
+        "code": "assignment_id",
+        "label": "Assignment ID",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Unique Assignment Key (ASG-XXXX-XXX)",
+        "sot": "App 792",
+        "rw": "READ_ONLY_EXPLORER"
+      },
+      {
+        "code": "employee_id",
+        "label": "Employee ID",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Foreign key to App 53",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "thai_name",
+        "label": "Thai Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Cached Thai name",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "english_name",
+        "label": "English Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Cached English name",
+        "sot": "App 53",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "position_code",
+        "label": "Position Code",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Canonical position code",
+        "sot": "App 792",
+        "rw": "READ_ONLY_EXPLORER"
+      },
+      {
+        "code": "position_name",
+        "label": "Position Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Verified position title",
+        "sot": "App 792",
+        "rw": "READ_ONLY_EXPLORER"
+      },
+      {
+        "code": "organization_code",
+        "label": "Organization Code",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Foreign key to App 791",
+        "sot": "App 791",
+        "rw": "READ_ONLY_EXPLORER"
+      },
+      {
+        "code": "organization_name",
+        "label": "Organization Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Cached org name",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "organization_type",
+        "label": "Organization Type",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Cached entity level",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      },
+      {
+        "code": "assignment_type",
+        "label": "Assignment Type",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "PRIMARY, CONCURRENT, TEMPORARY",
+        "sot": "App 792",
+        "rw": "READ_ONLY_EXPLORER"
+      },
+      {
+        "code": "assignment_status",
+        "label": "Assignment Status",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "CURRENT, HISTORICAL, FUTURE",
+        "sot": "App 792",
+        "rw": "READ_ONLY_EXPLORER"
+      },
+      {
+        "code": "effective_start_date",
+        "label": "Effective Start Date",
+        "type": "DATE",
+        "purpose": "Start of assignment",
+        "sot": "App 792",
+        "rw": "READ_ONLY_EXPLORER"
+      },
+      {
+        "code": "effective_end_date",
+        "label": "Effective End Date",
+        "type": "DATE",
+        "purpose": "End of assignment",
+        "sot": "App 792",
+        "rw": "READ_ONLY_EXPLORER"
+      },
+      {
+        "code": "hierarchy_path",
+        "label": "Hierarchy Path",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Org hierarchy path",
+        "sot": "App 791",
+        "rw": "READ_ONLY"
+      }
+    ]
+  },
+  "app_793_change_request": {
+    "app_id": 793,
+    "app_name": "OrgFlow Org Change Request",
+    "fields": [
+      {
+        "code": "request_id",
+        "label": "Request ID",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Unique Change Request Key (CR-YYYYMM-XXXX)",
+        "sot": "App 793",
+        "rw": "SYSTEM_GENERATED"
+      },
+      {
+        "code": "request_type",
+        "label": "Request Type",
+        "type": "DROP_DOWN",
+        "purpose": "EMPLOYEE_TRANSFER, PROMOTION, POSITION_CHANGE, etc.",
+        "sot": "App 793",
+        "rw": "HR_WRITE"
+      },
+      {
+        "code": "request_date",
+        "label": "Request Date",
+        "type": "DATE",
+        "purpose": "Creation date",
+        "sot": "App 793",
+        "rw": "SYSTEM_GENERATED"
+      },
+      {
+        "code": "requested_by",
+        "label": "Requested By",
+        "type": "USER_SELECT",
+        "purpose": "Initiator user",
+        "sot": "App 793",
+        "rw": "SYSTEM_GENERATED"
+      },
+      {
+        "code": "effective_date",
+        "label": "Effective Date",
+        "type": "DATE",
+        "purpose": "Target effective start date",
+        "sot": "App 793",
+        "rw": "HR_WRITE"
+      },
+      {
+        "code": "reason",
+        "label": "Reason",
+        "type": "MULTI_LINE_TEXT",
+        "purpose": "Business justification",
+        "sot": "App 793",
+        "rw": "HR_WRITE"
+      },
+      {
+        "code": "remarks",
+        "label": "Remarks",
+        "type": "MULTI_LINE_TEXT",
+        "purpose": "General notes",
+        "sot": "App 793",
+        "rw": "HR_WRITE"
+      },
+      {
+        "code": "employee_id",
+        "label": "Employee ID",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Target employee key from App 53",
+        "sot": "App 53",
+        "rw": "HR_SELECT"
+      },
+      {
+        "code": "thai_name",
+        "label": "Thai Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 53",
+        "sot": "App 53",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "english_name",
+        "label": "English Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 53",
+        "sot": "App 53",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "current_assignment_id",
+        "label": "Current Assignment ID",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 792",
+        "sot": "App 792",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "current_position_code",
+        "label": "Current Position Code",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 792",
+        "sot": "App 792",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "current_position_name",
+        "label": "Current Position Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 792",
+        "sot": "App 792",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "current_organization_code",
+        "label": "Current Organization Code",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 792",
+        "sot": "App 792",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "current_organization_name",
+        "label": "Current Organization Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 792",
+        "sot": "App 792",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "current_organization_type",
+        "label": "Current Organization Type",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 792",
+        "sot": "App 792",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "current_assignment_type",
+        "label": "Current Assignment Type",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 792",
+        "sot": "App 792",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "proposed_position_code",
+        "label": "Proposed Position Code",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Target position code",
+        "sot": "Dictionary",
+        "rw": "HR_WRITE"
+      },
+      {
+        "code": "proposed_position_name",
+        "label": "Proposed Position Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Target position title",
+        "sot": "Dictionary",
+        "rw": "HR_WRITE"
+      },
+      {
+        "code": "proposed_organization_code",
+        "label": "Proposed Organization Code",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Target canonical node from App 791",
+        "sot": "App 791",
+        "rw": "HR_SELECT"
+      },
+      {
+        "code": "proposed_organization_name",
+        "label": "Proposed Organization Name",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 791",
+        "sot": "App 791",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "proposed_organization_type",
+        "label": "Proposed Organization Type",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Auto-filled from App 791",
+        "sot": "App 791",
+        "rw": "AUTO_FILLED"
+      },
+      {
+        "code": "proposed_assignment_type",
+        "label": "Proposed Assignment Type",
+        "type": "DROP_DOWN",
+        "purpose": "PRIMARY, CONCURRENT, TEMPORARY",
+        "sot": "App 793",
+        "rw": "HR_WRITE"
+      },
+      {
+        "code": "submitted_by",
+        "label": "Submitted By",
+        "type": "USER_SELECT",
+        "purpose": "Workflow submitter",
+        "sot": "Workflow",
+        "rw": "SYSTEM"
+      },
+      {
+        "code": "submitted_date",
+        "label": "Submitted Date",
+        "type": "DATETIME",
+        "purpose": "Workflow submission timestamp",
+        "sot": "Workflow",
+        "rw": "SYSTEM"
+      },
+      {
+        "code": "hr_reviewer",
+        "label": "HR Reviewer",
+        "type": "USER_SELECT",
+        "purpose": "HR review user",
+        "sot": "Workflow",
+        "rw": "HR_REVIEW_ACTOR"
+      },
+      {
+        "code": "hr_review_date",
+        "label": "HR Review Date",
+        "type": "DATETIME",
+        "purpose": "HR review timestamp",
+        "sot": "Workflow",
+        "rw": "SYSTEM"
+      },
+      {
+        "code": "hr_comment",
+        "label": "HR Comment",
+        "type": "MULTI_LINE_TEXT",
+        "purpose": "HR review notes",
+        "sot": "Workflow",
+        "rw": "HR_REVIEW_ACTOR"
+      },
+      {
+        "code": "gm_approver",
+        "label": "GM Approver",
+        "type": "USER_SELECT",
+        "purpose": "Mandatory GM approver user",
+        "sot": "Workflow",
+        "rw": "GM_APPROVER_ACTOR"
+      },
+      {
+        "code": "gm_approval_date",
+        "label": "GM Approval Date",
+        "type": "DATETIME",
+        "purpose": "GM approval timestamp",
+        "sot": "Workflow",
+        "rw": "SYSTEM"
+      },
+      {
+        "code": "gm_approval_comment",
+        "label": "GM Approval Comment",
+        "type": "MULTI_LINE_TEXT",
+        "purpose": "GM approval remarks",
+        "sot": "Workflow",
+        "rw": "GM_APPROVER_ACTOR"
+      },
+      {
+        "code": "reject_reason",
+        "label": "Reject Reason",
+        "type": "MULTI_LINE_TEXT",
+        "purpose": "Return or rejection rationale",
+        "sot": "Workflow",
+        "rw": "WORKFLOW_ACTOR"
+      },
+      {
+        "code": "execution_status",
+        "label": "Execution Status",
+        "type": "DROP_DOWN",
+        "purpose": "NOT_EXECUTED, EXECUTION_PENDING, EXECUTED, ERROR",
+        "sot": "System",
+        "rw": "EXECUTION_ENGINE"
+      },
+      {
+        "code": "executed_by",
+        "label": "Executed By",
+        "type": "USER_SELECT",
+        "purpose": "Service execution account",
+        "sot": "System",
+        "rw": "EXECUTION_ENGINE"
+      },
+      {
+        "code": "executed_date",
+        "label": "Executed Date",
+        "type": "DATETIME",
+        "purpose": "Execution timestamp",
+        "sot": "System",
+        "rw": "EXECUTION_ENGINE"
+      },
+      {
+        "code": "previous_assignment_id",
+        "label": "Previous Assignment ID",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Historical closed assignment ID in App 792",
+        "sot": "App 792",
+        "rw": "EXECUTION_ENGINE"
+      },
+      {
+        "code": "created_assignment_id",
+        "label": "Created Assignment ID",
+        "type": "SINGLE_LINE_TEXT",
+        "purpose": "Newly created active assignment ID in App 792",
+        "sot": "App 792",
+        "rw": "EXECUTION_ENGINE"
+      },
+      {
+        "code": "execution_error",
+        "label": "Execution Error",
+        "type": "MULTI_LINE_TEXT",
+        "purpose": "Diagnostic error log if failed",
+        "sot": "System",
+        "rw": "EXECUTION_ENGINE"
+      },
+      {
+        "code": "execution_log",
+        "label": "Execution Log",
+        "type": "MULTI_LINE_TEXT",
+        "purpose": "Complete audit trail log",
+        "sot": "System",
+        "rw": "EXECUTION_ENGINE"
+      }
+    ]
+  }
+}
