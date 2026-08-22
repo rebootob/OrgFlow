@@ -1,0 +1,4916 @@
+[
+  {
+    "asgId": "275",
+    "empRef": "173",
+    "currentOrgCode": "DEP-001",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-001",
+    "targetPosCode": "POS-001",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-001",
+      "currentPosCode": "POS-001",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "273",
+    "empRef": "295",
+    "currentOrgCode": "DEP-251",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-271",
+    "targetPosCode": "POS-271",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-251",
+      "currentPosCode": "POS-271",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "272",
+    "empRef": "294",
+    "currentOrgCode": "DEP-250",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-270",
+    "targetPosCode": "POS-270",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-250",
+      "currentPosCode": "POS-270",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "271",
+    "empRef": "293",
+    "currentOrgCode": "DEP-249",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-269",
+    "targetPosCode": "POS-269",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-249",
+      "currentPosCode": "POS-269",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "270",
+    "empRef": "297",
+    "currentOrgCode": "DEP-248",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-268",
+    "targetPosCode": "POS-268",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-248",
+      "currentPosCode": "POS-268",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "269",
+    "empRef": "296",
+    "currentOrgCode": "DEP-247",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-267",
+    "targetPosCode": "POS-267",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-247",
+      "currentPosCode": "POS-267",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "268",
+    "empRef": "292",
+    "currentOrgCode": "DEP-246",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-266",
+    "targetPosCode": "POS-266",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-246",
+      "currentPosCode": "POS-266",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "267",
+    "empRef": "9050",
+    "currentOrgCode": "DEP-245",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-265",
+    "targetPosCode": "POS-265",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-245",
+      "currentPosCode": "POS-265",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "266",
+    "empRef": "8046",
+    "currentOrgCode": "DEP-244",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-264",
+    "targetPosCode": "POS-264",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-244",
+      "currentPosCode": "POS-264",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "265",
+    "empRef": "291",
+    "currentOrgCode": "DEP-243",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-263",
+    "targetPosCode": "POS-263",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-243",
+      "currentPosCode": "POS-263",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "264",
+    "empRef": "290",
+    "currentOrgCode": "DEP-242",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-262",
+    "targetPosCode": "POS-262",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-242",
+      "currentPosCode": "POS-262",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "263",
+    "empRef": "289",
+    "currentOrgCode": "DEP-241",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-261",
+    "targetPosCode": "POS-261",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-241",
+      "currentPosCode": "POS-261",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "262",
+    "empRef": "288",
+    "currentOrgCode": "DEP-240",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-260",
+    "targetPosCode": "POS-260",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-240",
+      "currentPosCode": "POS-260",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "261",
+    "empRef": "287",
+    "currentOrgCode": "DEP-239",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-259",
+    "targetPosCode": "POS-259",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-239",
+      "currentPosCode": "POS-259",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "260",
+    "empRef": "286",
+    "currentOrgCode": "DEP-238",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-258",
+    "targetPosCode": "POS-258",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-238",
+      "currentPosCode": "POS-258",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "259",
+    "empRef": "285",
+    "currentOrgCode": "DEP-237",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-257",
+    "targetPosCode": "POS-257",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-237",
+      "currentPosCode": "POS-257",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "258",
+    "empRef": "9049",
+    "currentOrgCode": "DEP-236",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-256",
+    "targetPosCode": "POS-256",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-236",
+      "currentPosCode": "POS-256",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "257",
+    "empRef": "284",
+    "currentOrgCode": "DEP-235",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-255",
+    "targetPosCode": "POS-255",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-235",
+      "currentPosCode": "POS-255",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "256",
+    "empRef": "283",
+    "currentOrgCode": "DEP-234",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-254",
+    "targetPosCode": "POS-254",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-234",
+      "currentPosCode": "POS-254",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "255",
+    "empRef": "282",
+    "currentOrgCode": "DEP-233",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-253",
+    "targetPosCode": "POS-253",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-233",
+      "currentPosCode": "POS-253",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "254",
+    "empRef": "281",
+    "currentOrgCode": "DEP-232",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-252",
+    "targetPosCode": "POS-252",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-232",
+      "currentPosCode": "POS-252",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "253",
+    "empRef": "280",
+    "currentOrgCode": "DEP-231",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-251",
+    "targetPosCode": "POS-251",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-231",
+      "currentPosCode": "POS-251",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "252",
+    "empRef": "279",
+    "currentOrgCode": "DEP-230",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-250",
+    "targetPosCode": "POS-250",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-230",
+      "currentPosCode": "POS-250",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "251",
+    "empRef": "278",
+    "currentOrgCode": "DEP-229",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-249",
+    "targetPosCode": "POS-249",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-229",
+      "currentPosCode": "POS-249",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "250",
+    "empRef": "277",
+    "currentOrgCode": "DEP-228",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-248",
+    "targetPosCode": "POS-248",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-228",
+      "currentPosCode": "POS-248",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "249",
+    "empRef": "276",
+    "currentOrgCode": "DEP-227",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-247",
+    "targetPosCode": "POS-247",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-227",
+      "currentPosCode": "POS-247",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "248",
+    "empRef": "275",
+    "currentOrgCode": "DEP-226",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-246",
+    "targetPosCode": "POS-246",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-226",
+      "currentPosCode": "POS-246",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "247",
+    "empRef": "274",
+    "currentOrgCode": "DEP-225",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-245",
+    "targetPosCode": "POS-245",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-225",
+      "currentPosCode": "POS-245",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "246",
+    "empRef": "273",
+    "currentOrgCode": "DEP-224",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-244",
+    "targetPosCode": "POS-244",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-224",
+      "currentPosCode": "POS-244",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "245",
+    "empRef": "271",
+    "currentOrgCode": "DEP-223",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-243",
+    "targetPosCode": "POS-243",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-223",
+      "currentPosCode": "POS-243",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "244",
+    "empRef": "272",
+    "currentOrgCode": "DEP-222",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-242",
+    "targetPosCode": "POS-242",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-222",
+      "currentPosCode": "POS-242",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "243",
+    "empRef": "9048",
+    "currentOrgCode": "DEP-221",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-241",
+    "targetPosCode": "POS-241",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-221",
+      "currentPosCode": "POS-241",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "242",
+    "empRef": "9047",
+    "currentOrgCode": "DEP-220",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-240",
+    "targetPosCode": "POS-240",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-220",
+      "currentPosCode": "POS-240",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "241",
+    "empRef": "212",
+    "currentOrgCode": "DEP-219",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-239",
+    "targetPosCode": "POS-239",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-219",
+      "currentPosCode": "POS-239",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "240",
+    "empRef": "213",
+    "currentOrgCode": "DEP-218",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-238",
+    "targetPosCode": "POS-238",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-218",
+      "currentPosCode": "POS-238",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "239",
+    "empRef": "214",
+    "currentOrgCode": "DEP-217",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-237",
+    "targetPosCode": "POS-237",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-217",
+      "currentPosCode": "POS-237",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "238",
+    "empRef": "215",
+    "currentOrgCode": "DEP-216",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-236",
+    "targetPosCode": "POS-236",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-216",
+      "currentPosCode": "POS-236",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "237",
+    "empRef": "216",
+    "currentOrgCode": "DEP-215",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-235",
+    "targetPosCode": "POS-235",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-215",
+      "currentPosCode": "POS-235",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "236",
+    "empRef": "217",
+    "currentOrgCode": "DEP-214",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-234",
+    "targetPosCode": "POS-234",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-214",
+      "currentPosCode": "POS-234",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "235",
+    "empRef": "218",
+    "currentOrgCode": "DEP-213",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-233",
+    "targetPosCode": "POS-233",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-213",
+      "currentPosCode": "POS-233",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "234",
+    "empRef": "219",
+    "currentOrgCode": "DEP-212",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-232",
+    "targetPosCode": "POS-232",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-212",
+      "currentPosCode": "POS-232",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "233",
+    "empRef": "220",
+    "currentOrgCode": "DEP-211",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-231",
+    "targetPosCode": "POS-231",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-211",
+      "currentPosCode": "POS-231",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "232",
+    "empRef": "221",
+    "currentOrgCode": "DEP-210",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-230",
+    "targetPosCode": "POS-230",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-210",
+      "currentPosCode": "POS-230",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "231",
+    "empRef": "222",
+    "currentOrgCode": "DEP-209",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-229",
+    "targetPosCode": "POS-229",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-209",
+      "currentPosCode": "POS-229",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "230",
+    "empRef": "223",
+    "currentOrgCode": "DEP-208",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-228",
+    "targetPosCode": "POS-228",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-208",
+      "currentPosCode": "POS-228",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "229",
+    "empRef": "224",
+    "currentOrgCode": "DEP-207",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-227",
+    "targetPosCode": "POS-227",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-207",
+      "currentPosCode": "POS-227",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "228",
+    "empRef": "225",
+    "currentOrgCode": "DEP-206",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-226",
+    "targetPosCode": "POS-226",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-206",
+      "currentPosCode": "POS-226",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "227",
+    "empRef": "226",
+    "currentOrgCode": "DEP-205",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-225",
+    "targetPosCode": "POS-225",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-205",
+      "currentPosCode": "POS-225",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "226",
+    "empRef": "227",
+    "currentOrgCode": "DEP-204",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-224",
+    "targetPosCode": "POS-224",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-204",
+      "currentPosCode": "POS-224",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "225",
+    "empRef": "228",
+    "currentOrgCode": "DEP-203",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-223",
+    "targetPosCode": "POS-223",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-203",
+      "currentPosCode": "POS-223",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "224",
+    "empRef": "229",
+    "currentOrgCode": "DEP-202",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-222",
+    "targetPosCode": "POS-222",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-202",
+      "currentPosCode": "POS-222",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "223",
+    "empRef": "230",
+    "currentOrgCode": "DEP-201",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-221",
+    "targetPosCode": "POS-221",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-201",
+      "currentPosCode": "POS-221",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "222",
+    "empRef": "231",
+    "currentOrgCode": "DEP-200",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-220",
+    "targetPosCode": "POS-220",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-200",
+      "currentPosCode": "POS-220",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "221",
+    "empRef": "232",
+    "currentOrgCode": "DEP-199",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-219",
+    "targetPosCode": "POS-219",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-199",
+      "currentPosCode": "POS-219",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "220",
+    "empRef": "233",
+    "currentOrgCode": "DEP-198",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-218",
+    "targetPosCode": "POS-218",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-198",
+      "currentPosCode": "POS-218",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "219",
+    "empRef": "234",
+    "currentOrgCode": "DEP-197",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-217",
+    "targetPosCode": "POS-217",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-197",
+      "currentPosCode": "POS-217",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "218",
+    "empRef": "235",
+    "currentOrgCode": "DEP-196",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-216",
+    "targetPosCode": "POS-216",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-196",
+      "currentPosCode": "POS-216",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "217",
+    "empRef": "236",
+    "currentOrgCode": "DEP-195",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-215",
+    "targetPosCode": "POS-215",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-195",
+      "currentPosCode": "POS-215",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "216",
+    "empRef": "237",
+    "currentOrgCode": "DEP-194",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-214",
+    "targetPosCode": "POS-214",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-194",
+      "currentPosCode": "POS-214",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "215",
+    "empRef": "238",
+    "currentOrgCode": "DEP-193",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-213",
+    "targetPosCode": "POS-213",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-193",
+      "currentPosCode": "POS-213",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "214",
+    "empRef": "239",
+    "currentOrgCode": "DEP-192",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-212",
+    "targetPosCode": "POS-212",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-192",
+      "currentPosCode": "POS-212",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "213",
+    "empRef": "240",
+    "currentOrgCode": "DEP-191",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-211",
+    "targetPosCode": "POS-211",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-191",
+      "currentPosCode": "POS-211",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "212",
+    "empRef": "241",
+    "currentOrgCode": "DEP-190",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-210",
+    "targetPosCode": "POS-210",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-190",
+      "currentPosCode": "POS-210",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "211",
+    "empRef": "242",
+    "currentOrgCode": "DEP-189",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-209",
+    "targetPosCode": "POS-209",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-189",
+      "currentPosCode": "POS-209",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "210",
+    "empRef": "243",
+    "currentOrgCode": "DEP-188",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-208",
+    "targetPosCode": "POS-208",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-188",
+      "currentPosCode": "POS-208",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "209",
+    "empRef": "244",
+    "currentOrgCode": "DEP-187",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-207",
+    "targetPosCode": "POS-207",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-187",
+      "currentPosCode": "POS-207",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "208",
+    "empRef": "245",
+    "currentOrgCode": "DEP-186",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-206",
+    "targetPosCode": "POS-206",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-186",
+      "currentPosCode": "POS-206",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "207",
+    "empRef": "246",
+    "currentOrgCode": "DEP-185",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-205",
+    "targetPosCode": "POS-205",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-185",
+      "currentPosCode": "POS-205",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "206",
+    "empRef": "247",
+    "currentOrgCode": "DEP-184",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-204",
+    "targetPosCode": "POS-204",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-184",
+      "currentPosCode": "POS-204",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "205",
+    "empRef": "248",
+    "currentOrgCode": "DEP-183",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-203",
+    "targetPosCode": "POS-203",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-183",
+      "currentPosCode": "POS-203",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "204",
+    "empRef": "249",
+    "currentOrgCode": "DEP-182",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-202",
+    "targetPosCode": "POS-202",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-182",
+      "currentPosCode": "POS-202",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "203",
+    "empRef": "250",
+    "currentOrgCode": "DEP-181",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-201",
+    "targetPosCode": "POS-201",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-181",
+      "currentPosCode": "POS-201",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "202",
+    "empRef": "251",
+    "currentOrgCode": "DEP-180",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-200",
+    "targetPosCode": "POS-200",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-180",
+      "currentPosCode": "POS-200",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "201",
+    "empRef": "252",
+    "currentOrgCode": "DEP-179",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-199",
+    "targetPosCode": "POS-199",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-179",
+      "currentPosCode": "POS-199",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "200",
+    "empRef": "253",
+    "currentOrgCode": "DEP-178",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-198",
+    "targetPosCode": "POS-198",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-178",
+      "currentPosCode": "POS-198",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "199",
+    "empRef": "254",
+    "currentOrgCode": "DEP-177",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-197",
+    "targetPosCode": "POS-197",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-177",
+      "currentPosCode": "POS-197",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "198",
+    "empRef": "255",
+    "currentOrgCode": "DEP-176",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-196",
+    "targetPosCode": "POS-196",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-176",
+      "currentPosCode": "POS-196",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "197",
+    "empRef": "256",
+    "currentOrgCode": "DEP-175",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-195",
+    "targetPosCode": "POS-195",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-175",
+      "currentPosCode": "POS-195",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "196",
+    "empRef": "257",
+    "currentOrgCode": "DEP-174",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-194",
+    "targetPosCode": "POS-194",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-174",
+      "currentPosCode": "POS-194",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "195",
+    "empRef": "258",
+    "currentOrgCode": "DEP-173",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-193",
+    "targetPosCode": "POS-193",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-173",
+      "currentPosCode": "POS-193",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "194",
+    "empRef": "259",
+    "currentOrgCode": "DEP-172",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-192",
+    "targetPosCode": "POS-192",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-172",
+      "currentPosCode": "POS-192",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "193",
+    "empRef": "260",
+    "currentOrgCode": "DEP-171",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-191",
+    "targetPosCode": "POS-191",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-171",
+      "currentPosCode": "POS-191",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "192",
+    "empRef": "270",
+    "currentOrgCode": "DEP-170",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-190",
+    "targetPosCode": "POS-190",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-170",
+      "currentPosCode": "POS-190",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "191",
+    "empRef": "269",
+    "currentOrgCode": "DEP-169",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-189",
+    "targetPosCode": "POS-189",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-169",
+      "currentPosCode": "POS-189",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "190",
+    "empRef": "268",
+    "currentOrgCode": "DEP-168",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-188",
+    "targetPosCode": "POS-188",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-168",
+      "currentPosCode": "POS-188",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "189",
+    "empRef": "267",
+    "currentOrgCode": "DEP-167",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-187",
+    "targetPosCode": "POS-187",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-167",
+      "currentPosCode": "POS-187",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "188",
+    "empRef": "266",
+    "currentOrgCode": "DEP-166",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-186",
+    "targetPosCode": "POS-186",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-166",
+      "currentPosCode": "POS-186",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "187",
+    "empRef": "265",
+    "currentOrgCode": "DEP-165",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-185",
+    "targetPosCode": "POS-185",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-165",
+      "currentPosCode": "POS-185",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "186",
+    "empRef": "264",
+    "currentOrgCode": "DEP-164",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-184",
+    "targetPosCode": "POS-184",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-164",
+      "currentPosCode": "POS-184",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "185",
+    "empRef": "263",
+    "currentOrgCode": "DEP-163",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-183",
+    "targetPosCode": "POS-183",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-163",
+      "currentPosCode": "POS-183",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "184",
+    "empRef": "262",
+    "currentOrgCode": "DEP-162",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-182",
+    "targetPosCode": "POS-182",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-162",
+      "currentPosCode": "POS-182",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "183",
+    "empRef": "261",
+    "currentOrgCode": "DEP-161",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-181",
+    "targetPosCode": "POS-181",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-161",
+      "currentPosCode": "POS-181",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "182",
+    "empRef": "211",
+    "currentOrgCode": "DEP-160",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-180",
+    "targetPosCode": "POS-180",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-160",
+      "currentPosCode": "POS-180",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "181",
+    "empRef": "210",
+    "currentOrgCode": "DEP-159",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-179",
+    "targetPosCode": "POS-179",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-159",
+      "currentPosCode": "POS-179",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "180",
+    "empRef": "209",
+    "currentOrgCode": "DEP-158",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-178",
+    "targetPosCode": "POS-178",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-158",
+      "currentPosCode": "POS-178",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "179",
+    "empRef": "208",
+    "currentOrgCode": "DEP-157",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-177",
+    "targetPosCode": "POS-177",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-157",
+      "currentPosCode": "POS-177",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "178",
+    "empRef": "207",
+    "currentOrgCode": "DEP-156",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-176",
+    "targetPosCode": "POS-176",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-156",
+      "currentPosCode": "POS-176",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "177",
+    "empRef": "206",
+    "currentOrgCode": "DEP-155",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-175",
+    "targetPosCode": "POS-175",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-155",
+      "currentPosCode": "POS-175",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "176",
+    "empRef": "205",
+    "currentOrgCode": "DEP-154",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-174",
+    "targetPosCode": "POS-174",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-154",
+      "currentPosCode": "POS-174",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "175",
+    "empRef": "204",
+    "currentOrgCode": "DEP-153",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-173",
+    "targetPosCode": "POS-173",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-153",
+      "currentPosCode": "POS-173",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "174",
+    "empRef": "203",
+    "currentOrgCode": "DEP-152",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-172",
+    "targetPosCode": "POS-172",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-152",
+      "currentPosCode": "POS-172",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "173",
+    "empRef": "202",
+    "currentOrgCode": "DEP-151",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-171",
+    "targetPosCode": "POS-171",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-151",
+      "currentPosCode": "POS-171",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "172",
+    "empRef": "201",
+    "currentOrgCode": "DEP-150",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-170",
+    "targetPosCode": "POS-170",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-150",
+      "currentPosCode": "POS-170",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "171",
+    "empRef": "200",
+    "currentOrgCode": "DEP-149",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-169",
+    "targetPosCode": "POS-169",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-149",
+      "currentPosCode": "POS-169",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "170",
+    "empRef": "199",
+    "currentOrgCode": "DEP-148",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-168",
+    "targetPosCode": "POS-168",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-148",
+      "currentPosCode": "POS-168",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "169",
+    "empRef": "198",
+    "currentOrgCode": "DEP-147",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-167",
+    "targetPosCode": "POS-167",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-147",
+      "currentPosCode": "POS-167",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "168",
+    "empRef": "197",
+    "currentOrgCode": "DEP-146",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-166",
+    "targetPosCode": "POS-166",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-146",
+      "currentPosCode": "POS-166",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "167",
+    "empRef": "196",
+    "currentOrgCode": "DEP-145",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-165",
+    "targetPosCode": "POS-165",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-145",
+      "currentPosCode": "POS-165",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "166",
+    "empRef": "195",
+    "currentOrgCode": "DEP-144",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-164",
+    "targetPosCode": "POS-164",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-144",
+      "currentPosCode": "POS-164",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "165",
+    "empRef": "194",
+    "currentOrgCode": "DEP-143",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-163",
+    "targetPosCode": "POS-163",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-143",
+      "currentPosCode": "POS-163",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "164",
+    "empRef": "193",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-162",
+    "targetPosCode": "POS-162",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-162",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "163",
+    "empRef": "168.01",
+    "currentOrgCode": "DEP-009",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-161",
+    "targetPosCode": "POS-161",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-009",
+      "currentPosCode": "POS-161",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "162",
+    "empRef": "30.01",
+    "currentOrgCode": "DEP-102",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-160",
+    "targetPosCode": "POS-160",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-102",
+      "currentPosCode": "POS-160",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "161",
+    "empRef": "135.02",
+    "currentOrgCode": "DEP-046",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-159",
+    "targetPosCode": "POS-159",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-046",
+      "currentPosCode": "POS-159",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "160",
+    "empRef": "9046",
+    "currentOrgCode": "DEP-142",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-158",
+    "targetPosCode": "POS-158",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-142",
+      "currentPosCode": "POS-158",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "159",
+    "empRef": "192",
+    "currentOrgCode": "DEP-141",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-157",
+    "targetPosCode": "POS-157",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-141",
+      "currentPosCode": "POS-157",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "158",
+    "empRef": "191",
+    "currentOrgCode": "DEP-140",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-156",
+    "targetPosCode": "POS-156",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-140",
+      "currentPosCode": "POS-156",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "157",
+    "empRef": "9045",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-155",
+    "targetPosCode": "POS-155",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-155",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "156",
+    "empRef": "190",
+    "currentOrgCode": "DEP-139",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-154",
+    "targetPosCode": "POS-154",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-139",
+      "currentPosCode": "POS-154",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "155",
+    "empRef": "189",
+    "currentOrgCode": "DEP-138",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-153",
+    "targetPosCode": "POS-153",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-138",
+      "currentPosCode": "POS-153",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "154",
+    "empRef": "188",
+    "currentOrgCode": "DEP-137",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-152",
+    "targetPosCode": "POS-152",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-137",
+      "currentPosCode": "POS-152",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "153",
+    "empRef": "9042",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-151",
+    "targetPosCode": "POS-151",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-151",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "152",
+    "empRef": "187",
+    "currentOrgCode": "DEP-136",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-150",
+    "targetPosCode": "POS-150",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-136",
+      "currentPosCode": "POS-150",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "151",
+    "empRef": "186",
+    "currentOrgCode": "DEP-135",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-149",
+    "targetPosCode": "POS-149",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-135",
+      "currentPosCode": "POS-149",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "150",
+    "empRef": "9044",
+    "currentOrgCode": "DEP-134",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-148",
+    "targetPosCode": "POS-148",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-134",
+      "currentPosCode": "POS-148",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "149",
+    "empRef": "185",
+    "currentOrgCode": "DEP-133",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-147",
+    "targetPosCode": "POS-147",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-133",
+      "currentPosCode": "POS-147",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "148",
+    "empRef": "9043",
+    "currentOrgCode": "DEP-132",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-146",
+    "targetPosCode": "POS-146",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-132",
+      "currentPosCode": "POS-146",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "147",
+    "empRef": "184",
+    "currentOrgCode": "DEP-131",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-145",
+    "targetPosCode": "POS-145",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-131",
+      "currentPosCode": "POS-145",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "146",
+    "empRef": "183",
+    "currentOrgCode": "DEP-130",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-144",
+    "targetPosCode": "POS-144",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-130",
+      "currentPosCode": "POS-144",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "145",
+    "empRef": "182",
+    "currentOrgCode": "DEP-129",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-143",
+    "targetPosCode": "POS-143",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-129",
+      "currentPosCode": "POS-143",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "144",
+    "empRef": "181",
+    "currentOrgCode": "DEP-128",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-142",
+    "targetPosCode": "POS-142",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-128",
+      "currentPosCode": "POS-142",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "143",
+    "empRef": "50.03",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-141",
+    "targetPosCode": "POS-141",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-141",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "142",
+    "empRef": "50.02",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-140",
+    "targetPosCode": "POS-140",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-140",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "141",
+    "empRef": "50.2",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-095",
+    "targetPosCode": "POS-095",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-095",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "140",
+    "empRef": "9041",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-139",
+    "targetPosCode": "POS-139",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-139",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "139",
+    "empRef": "9040",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-138",
+    "targetPosCode": "POS-138",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-138",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "138",
+    "empRef": "180",
+    "currentOrgCode": "DEP-127",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-137",
+    "targetPosCode": "POS-137",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-127",
+      "currentPosCode": "POS-137",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "137",
+    "empRef": "179",
+    "currentOrgCode": "DEP-126",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-136",
+    "targetPosCode": "POS-136",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-126",
+      "currentPosCode": "POS-136",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "136",
+    "empRef": "178",
+    "currentOrgCode": "DEP-125",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-135",
+    "targetPosCode": "POS-135",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-125",
+      "currentPosCode": "POS-135",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "135",
+    "empRef": "177",
+    "currentOrgCode": "DEP-124",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-134",
+    "targetPosCode": "POS-134",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-124",
+      "currentPosCode": "POS-134",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "134",
+    "empRef": "9039",
+    "currentOrgCode": "DEP-123",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-133",
+    "targetPosCode": "POS-133",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-123",
+      "currentPosCode": "POS-133",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "133",
+    "empRef": "9038",
+    "currentOrgCode": "DEP-122",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-132",
+    "targetPosCode": "POS-132",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-122",
+      "currentPosCode": "POS-132",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "132",
+    "empRef": "176",
+    "currentOrgCode": "DEP-121",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-131",
+    "targetPosCode": "POS-131",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-121",
+      "currentPosCode": "POS-131",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "131",
+    "empRef": "8017",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-130",
+    "targetPosCode": "POS-130",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-130",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "130",
+    "empRef": "8007",
+    "currentOrgCode": "DEP-120",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-129",
+    "targetPosCode": "POS-129",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-120",
+      "currentPosCode": "POS-129",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "129",
+    "empRef": "8006",
+    "currentOrgCode": "DEP-119",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-128",
+    "targetPosCode": "POS-128",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-119",
+      "currentPosCode": "POS-128",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "128",
+    "empRef": "175",
+    "currentOrgCode": "DEP-118",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-127",
+    "targetPosCode": "POS-127",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-118",
+      "currentPosCode": "POS-127",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "127",
+    "empRef": "174",
+    "currentOrgCode": "DEP-117",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-126",
+    "targetPosCode": "POS-126",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-117",
+      "currentPosCode": "POS-126",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "126",
+    "empRef": "2",
+    "currentOrgCode": "DEP-116",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-125",
+    "targetPosCode": "POS-125",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-116",
+      "currentPosCode": "POS-125",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "125",
+    "empRef": "7",
+    "currentOrgCode": "DEP-115",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-124",
+    "targetPosCode": "POS-124",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-115",
+      "currentPosCode": "POS-124",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "124",
+    "empRef": "8",
+    "currentOrgCode": "DEP-114",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-123",
+    "targetPosCode": "POS-123",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-114",
+      "currentPosCode": "POS-123",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "123",
+    "empRef": "10",
+    "currentOrgCode": "DEP-113",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-122",
+    "targetPosCode": "POS-122",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-113",
+      "currentPosCode": "POS-122",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "122",
+    "empRef": "12",
+    "currentOrgCode": "DEP-112",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-121",
+    "targetPosCode": "POS-121",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-112",
+      "currentPosCode": "POS-121",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "121",
+    "empRef": "15",
+    "currentOrgCode": "DEP-111",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-120",
+    "targetPosCode": "POS-120",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-111",
+      "currentPosCode": "POS-120",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "120",
+    "empRef": "16",
+    "currentOrgCode": "DEP-110",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-119",
+    "targetPosCode": "POS-119",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-110",
+      "currentPosCode": "POS-119",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "119",
+    "empRef": "20",
+    "currentOrgCode": "DEP-109",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-118",
+    "targetPosCode": "POS-118",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-109",
+      "currentPosCode": "POS-118",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "118",
+    "empRef": "21",
+    "currentOrgCode": "DEP-108",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-117",
+    "targetPosCode": "POS-117",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-108",
+      "currentPosCode": "POS-117",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "117",
+    "empRef": "22",
+    "currentOrgCode": "DEP-107",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-116",
+    "targetPosCode": "POS-116",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-107",
+      "currentPosCode": "POS-116",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "116",
+    "empRef": "24",
+    "currentOrgCode": "DEP-106",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-115",
+    "targetPosCode": "POS-115",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-106",
+      "currentPosCode": "POS-115",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "115",
+    "empRef": "25",
+    "currentOrgCode": "DEP-105",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-114",
+    "targetPosCode": "POS-114",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-105",
+      "currentPosCode": "POS-114",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "114",
+    "empRef": "26",
+    "currentOrgCode": "DEP-104",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-113",
+    "targetPosCode": "POS-113",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-104",
+      "currentPosCode": "POS-113",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "113",
+    "empRef": "27",
+    "currentOrgCode": "DEP-103",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-112",
+    "targetPosCode": "POS-112",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-103",
+      "currentPosCode": "POS-112",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "112",
+    "empRef": "30",
+    "currentOrgCode": "DEP-102",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-111",
+    "targetPosCode": "POS-111",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-102",
+      "currentPosCode": "POS-111",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "111",
+    "empRef": "31",
+    "currentOrgCode": "DEP-101",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-110",
+    "targetPosCode": "POS-110",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-101",
+      "currentPosCode": "POS-110",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "110",
+    "empRef": "32",
+    "currentOrgCode": "DEP-100",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-109",
+    "targetPosCode": "POS-109",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-100",
+      "currentPosCode": "POS-109",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "109",
+    "empRef": "33",
+    "currentOrgCode": "DEP-099",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-108",
+    "targetPosCode": "POS-108",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-099",
+      "currentPosCode": "POS-108",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "108",
+    "empRef": "35",
+    "currentOrgCode": "DEP-098",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-107",
+    "targetPosCode": "POS-107",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-098",
+      "currentPosCode": "POS-107",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "107",
+    "empRef": "38",
+    "currentOrgCode": "DEP-097",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-106",
+    "targetPosCode": "POS-106",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-097",
+      "currentPosCode": "POS-106",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "106",
+    "empRef": "39",
+    "currentOrgCode": "DEP-096",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-105",
+    "targetPosCode": "POS-105",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-096",
+      "currentPosCode": "POS-105",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "105",
+    "empRef": "41",
+    "currentOrgCode": "DEP-095",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-104",
+    "targetPosCode": "POS-104",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-095",
+      "currentPosCode": "POS-104",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "104",
+    "empRef": "42",
+    "currentOrgCode": "DEP-094",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-103",
+    "targetPosCode": "POS-103",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-094",
+      "currentPosCode": "POS-103",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "103",
+    "empRef": "43",
+    "currentOrgCode": "DEP-093",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-102",
+    "targetPosCode": "POS-102",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-093",
+      "currentPosCode": "POS-102",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "102",
+    "empRef": "44",
+    "currentOrgCode": "DEP-092",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-101",
+    "targetPosCode": "POS-101",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-092",
+      "currentPosCode": "POS-101",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "101",
+    "empRef": "45",
+    "currentOrgCode": "DEP-091",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-100",
+    "targetPosCode": "POS-100",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-091",
+      "currentPosCode": "POS-100",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "100",
+    "empRef": "46",
+    "currentOrgCode": "DEP-090",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-099",
+    "targetPosCode": "POS-099",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-090",
+      "currentPosCode": "POS-099",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "99",
+    "empRef": "47",
+    "currentOrgCode": "DEP-089",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-098",
+    "targetPosCode": "POS-098",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-089",
+      "currentPosCode": "POS-098",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "98",
+    "empRef": "48",
+    "currentOrgCode": "DEP-088",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-097",
+    "targetPosCode": "POS-097",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-088",
+      "currentPosCode": "POS-097",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "97",
+    "empRef": "49",
+    "currentOrgCode": "DEP-087",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-096",
+    "targetPosCode": "POS-096",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-087",
+      "currentPosCode": "POS-096",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "96",
+    "empRef": "50",
+    "currentOrgCode": "DEP-086",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-095",
+    "targetPosCode": "POS-095",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-086",
+      "currentPosCode": "POS-095",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "95",
+    "empRef": "51",
+    "currentOrgCode": "DEP-085",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-094",
+    "targetPosCode": "POS-094",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-085",
+      "currentPosCode": "POS-094",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "94",
+    "empRef": "52",
+    "currentOrgCode": "DEP-084",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-093",
+    "targetPosCode": "POS-093",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-084",
+      "currentPosCode": "POS-093",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "93",
+    "empRef": "53",
+    "currentOrgCode": "DEP-083",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-092",
+    "targetPosCode": "POS-092",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-083",
+      "currentPosCode": "POS-092",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "92",
+    "empRef": "61",
+    "currentOrgCode": "DEP-082",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-091",
+    "targetPosCode": "POS-091",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-082",
+      "currentPosCode": "POS-091",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "91",
+    "empRef": "63",
+    "currentOrgCode": "DEP-081",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-090",
+    "targetPosCode": "POS-090",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-081",
+      "currentPosCode": "POS-090",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "90",
+    "empRef": "67",
+    "currentOrgCode": "DEP-080",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-089",
+    "targetPosCode": "POS-089",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-080",
+      "currentPosCode": "POS-089",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "89",
+    "empRef": "68",
+    "currentOrgCode": "DEP-079",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-088",
+    "targetPosCode": "POS-088",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-079",
+      "currentPosCode": "POS-088",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "88",
+    "empRef": "69",
+    "currentOrgCode": "DEP-078",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-087",
+    "targetPosCode": "POS-087",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-078",
+      "currentPosCode": "POS-087",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "87",
+    "empRef": "75",
+    "currentOrgCode": "DEP-077",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-086",
+    "targetPosCode": "POS-086",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-077",
+      "currentPosCode": "POS-086",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "86",
+    "empRef": "76",
+    "currentOrgCode": "DEP-076",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-085",
+    "targetPosCode": "POS-085",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-076",
+      "currentPosCode": "POS-085",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "85",
+    "empRef": "78",
+    "currentOrgCode": "DEP-075",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-084",
+    "targetPosCode": "POS-084",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-075",
+      "currentPosCode": "POS-084",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "84",
+    "empRef": "81",
+    "currentOrgCode": "DEP-074",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-083",
+    "targetPosCode": "POS-083",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-074",
+      "currentPosCode": "POS-083",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "83",
+    "empRef": "82",
+    "currentOrgCode": "DEP-073",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-082",
+    "targetPosCode": "POS-082",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-073",
+      "currentPosCode": "POS-082",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "82",
+    "empRef": "93",
+    "currentOrgCode": "DEP-072",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-081",
+    "targetPosCode": "POS-081",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-072",
+      "currentPosCode": "POS-081",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "81",
+    "empRef": "96",
+    "currentOrgCode": "DEP-071",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-080",
+    "targetPosCode": "POS-080",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-071",
+      "currentPosCode": "POS-080",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "80",
+    "empRef": "99",
+    "currentOrgCode": "DEP-070",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-079",
+    "targetPosCode": "POS-079",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-070",
+      "currentPosCode": "POS-079",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "79",
+    "empRef": "100",
+    "currentOrgCode": "DEP-069",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-078",
+    "targetPosCode": "POS-078",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-069",
+      "currentPosCode": "POS-078",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "78",
+    "empRef": "104",
+    "currentOrgCode": "DEP-068",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-077",
+    "targetPosCode": "POS-077",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-068",
+      "currentPosCode": "POS-077",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "77",
+    "empRef": "105",
+    "currentOrgCode": "DEP-067",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-076",
+    "targetPosCode": "POS-076",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-067",
+      "currentPosCode": "POS-076",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "76",
+    "empRef": "107",
+    "currentOrgCode": "DEP-066",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-075",
+    "targetPosCode": "POS-075",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-066",
+      "currentPosCode": "POS-075",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "75",
+    "empRef": "109",
+    "currentOrgCode": "DEP-065",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-074",
+    "targetPosCode": "POS-074",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-065",
+      "currentPosCode": "POS-074",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "74",
+    "empRef": "111",
+    "currentOrgCode": "DEP-064",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-073",
+    "targetPosCode": "POS-073",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-064",
+      "currentPosCode": "POS-073",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "73",
+    "empRef": "112",
+    "currentOrgCode": "DEP-063",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-072",
+    "targetPosCode": "POS-072",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-063",
+      "currentPosCode": "POS-072",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "72",
+    "empRef": "113",
+    "currentOrgCode": "DEP-062",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-071",
+    "targetPosCode": "POS-071",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-062",
+      "currentPosCode": "POS-071",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "71",
+    "empRef": "115",
+    "currentOrgCode": "DEP-061",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-070",
+    "targetPosCode": "POS-070",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-061",
+      "currentPosCode": "POS-070",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "70",
+    "empRef": "116",
+    "currentOrgCode": "DEP-060",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-069",
+    "targetPosCode": "POS-069",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-060",
+      "currentPosCode": "POS-069",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "69",
+    "empRef": "117",
+    "currentOrgCode": "DEP-059",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-068",
+    "targetPosCode": "POS-068",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-059",
+      "currentPosCode": "POS-068",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "68",
+    "empRef": "118",
+    "currentOrgCode": "DEP-058",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-067",
+    "targetPosCode": "POS-067",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-058",
+      "currentPosCode": "POS-067",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "67",
+    "empRef": "120",
+    "currentOrgCode": "DEP-057",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-066",
+    "targetPosCode": "POS-066",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-057",
+      "currentPosCode": "POS-066",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "66",
+    "empRef": "122",
+    "currentOrgCode": "DEP-056",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-065",
+    "targetPosCode": "POS-065",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-056",
+      "currentPosCode": "POS-065",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "65",
+    "empRef": "123",
+    "currentOrgCode": "DEP-055",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-064",
+    "targetPosCode": "POS-064",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-055",
+      "currentPosCode": "POS-064",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "64",
+    "empRef": "125",
+    "currentOrgCode": "DEP-054",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-063",
+    "targetPosCode": "POS-063",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-054",
+      "currentPosCode": "POS-063",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "63",
+    "empRef": "126",
+    "currentOrgCode": "DEP-053",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-062",
+    "targetPosCode": "POS-062",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-053",
+      "currentPosCode": "POS-062",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "62",
+    "empRef": "127",
+    "currentOrgCode": "DEP-052",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-061",
+    "targetPosCode": "POS-061",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-052",
+      "currentPosCode": "POS-061",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "61",
+    "empRef": "143",
+    "currentOrgCode": "DEP-051",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-060",
+    "targetPosCode": "POS-060",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-051",
+      "currentPosCode": "POS-060",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "60",
+    "empRef": "130",
+    "currentOrgCode": "DEP-050",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-059",
+    "targetPosCode": "POS-059",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-050",
+      "currentPosCode": "POS-059",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "59",
+    "empRef": "131",
+    "currentOrgCode": "DEP-049",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-058",
+    "targetPosCode": "POS-058",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-049",
+      "currentPosCode": "POS-058",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "58",
+    "empRef": "132",
+    "currentOrgCode": "DEP-048",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-057",
+    "targetPosCode": "POS-057",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-048",
+      "currentPosCode": "POS-057",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "57",
+    "empRef": "134",
+    "currentOrgCode": "DEP-047",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-056",
+    "targetPosCode": "POS-056",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-047",
+      "currentPosCode": "POS-056",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "56",
+    "empRef": "135",
+    "currentOrgCode": "DEP-046",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-055",
+    "targetPosCode": "POS-055",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-046",
+      "currentPosCode": "POS-055",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "55",
+    "empRef": "136",
+    "currentOrgCode": "DEP-045",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-054",
+    "targetPosCode": "POS-054",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-045",
+      "currentPosCode": "POS-054",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "54",
+    "empRef": "137",
+    "currentOrgCode": "DEP-044",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-053",
+    "targetPosCode": "POS-053",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-044",
+      "currentPosCode": "POS-053",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "53",
+    "empRef": "138",
+    "currentOrgCode": "DEP-043",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-052",
+    "targetPosCode": "POS-052",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-043",
+      "currentPosCode": "POS-052",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "52",
+    "empRef": "9003",
+    "currentOrgCode": "DEP-042",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-051",
+    "targetPosCode": "POS-051",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-042",
+      "currentPosCode": "POS-051",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "51",
+    "empRef": "9011",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-050",
+    "targetPosCode": "POS-050",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-050",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "50",
+    "empRef": "9015",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-043",
+    "targetPosCode": "POS-043",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-043",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "49",
+    "empRef": "9020",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-049",
+    "targetPosCode": "POS-049",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-049",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "48",
+    "empRef": "9025",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-048",
+    "targetPosCode": "POS-048",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-048",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "47",
+    "empRef": "9026",
+    "currentOrgCode": "DEP-041",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-047",
+    "targetPosCode": "POS-047",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-041",
+      "currentPosCode": "POS-047",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "46",
+    "empRef": "9027",
+    "currentOrgCode": "DEP-040",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-046",
+    "targetPosCode": "POS-046",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-040",
+      "currentPosCode": "POS-046",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "45",
+    "empRef": "139",
+    "currentOrgCode": "DEP-039",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-045",
+    "targetPosCode": "POS-045",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-039",
+      "currentPosCode": "POS-045",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "44",
+    "empRef": "9022",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-044",
+    "targetPosCode": "POS-044",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-044",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "43",
+    "empRef": "9021",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-043",
+    "targetPosCode": "POS-043",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-043",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "42",
+    "empRef": "140",
+    "currentOrgCode": "DEP-038",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-042",
+    "targetPosCode": "POS-042",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-038",
+      "currentPosCode": "POS-042",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "41",
+    "empRef": "142",
+    "currentOrgCode": "DEP-037",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-041",
+    "targetPosCode": "POS-041",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-037",
+      "currentPosCode": "POS-041",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "40",
+    "empRef": "9029",
+    "currentOrgCode": "DEP-036",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-040",
+    "targetPosCode": "POS-040",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-036",
+      "currentPosCode": "POS-040",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "39",
+    "empRef": "144",
+    "currentOrgCode": "DEP-035",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-039",
+    "targetPosCode": "POS-039",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-035",
+      "currentPosCode": "POS-039",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "38",
+    "empRef": "145",
+    "currentOrgCode": "DEP-034",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-038",
+    "targetPosCode": "POS-038",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-034",
+      "currentPosCode": "POS-038",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "37",
+    "empRef": "146",
+    "currentOrgCode": "DEP-033",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-037",
+    "targetPosCode": "POS-037",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-033",
+      "currentPosCode": "POS-037",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "36",
+    "empRef": "147",
+    "currentOrgCode": "DEP-032",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-036",
+    "targetPosCode": "POS-036",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-032",
+      "currentPosCode": "POS-036",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "35",
+    "empRef": "9028",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-035",
+    "targetPosCode": "POS-035",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-035",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "34",
+    "empRef": "148",
+    "currentOrgCode": "DEP-031",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-034",
+    "targetPosCode": "POS-034",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-031",
+      "currentPosCode": "POS-034",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "33",
+    "empRef": "149",
+    "currentOrgCode": "DEP-030",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-033",
+    "targetPosCode": "POS-033",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-030",
+      "currentPosCode": "POS-033",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "32",
+    "empRef": "150",
+    "currentOrgCode": "DEP-029",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-032",
+    "targetPosCode": "POS-032",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-029",
+      "currentPosCode": "POS-032",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "31",
+    "empRef": "151",
+    "currentOrgCode": "DEP-028",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-031",
+    "targetPosCode": "POS-031",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-028",
+      "currentPosCode": "POS-031",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "30",
+    "empRef": "9030",
+    "currentOrgCode": "DEP-027",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-030",
+    "targetPosCode": "POS-030",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-027",
+      "currentPosCode": "POS-030",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "29",
+    "empRef": "152",
+    "currentOrgCode": "DEP-026",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-029",
+    "targetPosCode": "POS-029",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-026",
+      "currentPosCode": "POS-029",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "28",
+    "empRef": "153",
+    "currentOrgCode": "DEP-025",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-028",
+    "targetPosCode": "POS-028",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-025",
+      "currentPosCode": "POS-028",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "27",
+    "empRef": "154",
+    "currentOrgCode": "DEP-024",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-027",
+    "targetPosCode": "POS-027",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-024",
+      "currentPosCode": "POS-027",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "26",
+    "empRef": "155",
+    "currentOrgCode": "DEP-023",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-026",
+    "targetPosCode": "POS-026",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-023",
+      "currentPosCode": "POS-026",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "25",
+    "empRef": "9031",
+    "currentOrgCode": "DEP-022",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-025",
+    "targetPosCode": "POS-025",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-022",
+      "currentPosCode": "POS-025",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "24",
+    "empRef": "156",
+    "currentOrgCode": "DEP-021",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-024",
+    "targetPosCode": "POS-024",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-021",
+      "currentPosCode": "POS-024",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "23",
+    "empRef": "9032",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-023",
+    "targetPosCode": "POS-023",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-023",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "22",
+    "empRef": "157",
+    "currentOrgCode": "DEP-020",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-022",
+    "targetPosCode": "POS-022",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-020",
+      "currentPosCode": "POS-022",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "21",
+    "empRef": "158",
+    "currentOrgCode": "DEP-019",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-021",
+    "targetPosCode": "POS-021",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-019",
+      "currentPosCode": "POS-021",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "20",
+    "empRef": "159",
+    "currentOrgCode": "DEP-018",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-020",
+    "targetPosCode": "POS-020",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-018",
+      "currentPosCode": "POS-020",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "19",
+    "empRef": "160",
+    "currentOrgCode": "DEP-017",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-019",
+    "targetPosCode": "POS-019",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-017",
+      "currentPosCode": "POS-019",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "18",
+    "empRef": "161",
+    "currentOrgCode": "DEP-016",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-018",
+    "targetPosCode": "POS-018",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-016",
+      "currentPosCode": "POS-018",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "17",
+    "empRef": "162",
+    "currentOrgCode": "DEP-015",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-017",
+    "targetPosCode": "POS-017",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-015",
+      "currentPosCode": "POS-017",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "16",
+    "empRef": "163",
+    "currentOrgCode": "DEP-014",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-016",
+    "targetPosCode": "POS-016",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-014",
+      "currentPosCode": "POS-016",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "15",
+    "empRef": "9033",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-015",
+    "targetPosCode": "POS-015",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-015",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "14",
+    "empRef": "164",
+    "currentOrgCode": "DEP-013",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-014",
+    "targetPosCode": "POS-014",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-013",
+      "currentPosCode": "POS-014",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "13",
+    "empRef": "165",
+    "currentOrgCode": "DEP-012",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-013",
+    "targetPosCode": "POS-013",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-012",
+      "currentPosCode": "POS-013",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "12",
+    "empRef": "166",
+    "currentOrgCode": "DEP-011",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-012",
+    "targetPosCode": "POS-012",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-011",
+      "currentPosCode": "POS-012",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "11",
+    "empRef": "167",
+    "currentOrgCode": "DEP-010",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-011",
+    "targetPosCode": "POS-011",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-010",
+      "currentPosCode": "POS-011",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "10",
+    "empRef": "168",
+    "currentOrgCode": "DEP-009",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-010",
+    "targetPosCode": "POS-010",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-009",
+      "currentPosCode": "POS-010",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "9",
+    "empRef": "169",
+    "currentOrgCode": "DEP-008",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-009",
+    "targetPosCode": "POS-009",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-008",
+      "currentPosCode": "POS-009",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "8",
+    "empRef": "170",
+    "currentOrgCode": "DEP-007",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-008",
+    "targetPosCode": "POS-008",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-007",
+      "currentPosCode": "POS-008",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "7",
+    "empRef": "9034",
+    "currentOrgCode": "DEP-006",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-007",
+    "targetPosCode": "POS-007",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-006",
+      "currentPosCode": "POS-007",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "6",
+    "empRef": "9036",
+    "currentOrgCode": "DEP-UNRESOLVED",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-006",
+    "targetPosCode": "POS-006",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-UNRESOLVED",
+      "currentPosCode": "POS-006",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "5",
+    "empRef": "9035",
+    "currentOrgCode": "DEP-005",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-005",
+    "targetPosCode": "POS-005",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-005",
+      "currentPosCode": "POS-005",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "4",
+    "empRef": "9037",
+    "currentOrgCode": "DEP-004",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-004",
+    "targetPosCode": "POS-004",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-004",
+      "currentPosCode": "POS-004",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "3",
+    "empRef": "171",
+    "currentOrgCode": "DEP-003",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-003",
+    "targetPosCode": "POS-003",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-003",
+      "currentPosCode": "POS-003",
+      "managerRef": ""
+    }
+  },
+  {
+    "asgId": "2",
+    "empRef": "172",
+    "currentOrgCode": "DEP-002",
+    "currentOrgName": "",
+    "targetOrgCode": "TMT1",
+    "targetOrgName": "Canonical Organization Target (TMT1)",
+    "currentPosCode": "POS-002",
+    "targetPosCode": "POS-002",
+    "managerRef": "",
+    "repairAction": "UPDATE_EXISTING_ASSIGNMENTS",
+    "risk": "LOW (100% Safe Remap)",
+    "rollbackData": {
+      "currentOrgCode": "DEP-002",
+      "currentPosCode": "POS-002",
+      "managerRef": ""
+    }
+  }
+]

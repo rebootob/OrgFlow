@@ -42,6 +42,20 @@
 
 ---
 
+## [v1.4.4-phase6] - 2026-08-22
+
+### Added
+- **OrgFlow Controlled Data Repair Phase — Simulation & Field Audit (100% Read-Only):** Conducted in-memory repair simulation and Thai/English field contamination audit.
+- Audited 247 Person-as-Department records and confirmed 247/247 contain Thai script in `title_en` (`THAI_VALUE_IN_ENGLISH_FIELD`).
+- Verified zero AI-generated translations/transliterations (App 53 Employee ID / Number enforced as single immutable identity key).
+- Simulated in-memory App 792 assignment remapping for 273 active current employees to canonical org nodes (21 nodes) and canonical positions (271 titles).
+- Audited and verified all 29/29 mandatory acceptance gates passed (G01 to G29).
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable reports in `docs/data-repair/` ([`PERSON_AS_DEPARTMENT_REPAIR_SIMULATION.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/data-repair/PERSON_AS_DEPARTMENT_REPAIR_SIMULATION.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_CONTROLLED_PRODUCTION_REPAIR_APPROVAL`).
+
+---
+
 ## [v1.4.3-phase6] - 2026-08-22
 
 ### Added

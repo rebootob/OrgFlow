@@ -1,0 +1,14 @@
+{
+  "totalEmployees": 275,
+  "totalCurrentAssignments": 275,
+  "duplicateCurrentAssignment": 0,
+  "missingCurrentAssignment": 0,
+  "orphanEmployeeRef": 0,
+  "orphanOrganizationRef": 0,
+  "orphanPositionRef": 0,
+  "invalidPersonCurrentRefsAfterSimulation": 0,
+  "circularReporting": 0,
+  "canonicalTreeIntegrity": "PASS",
+  "systemApplyCompatibility": "PASS",
+  "dryRunStatus": "PASS"
+}
