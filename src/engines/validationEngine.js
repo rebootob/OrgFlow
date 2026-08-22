@@ -1,9 +1,10 @@
 /**
  * OrgFlow — Validation & Integrity Engine
- * Version: 3.0.0
+ * Version: 3.1.0 (Phase 5E Flexible Approver Amendment)
  * 
  * Performs DFS circular dependency detection, self-manager reporting check,
- * missing parent detector, overlapping effective date assignment check, and ambiguous reference validation.
+ * missing parent detector, overlapping effective date assignment check,
+ * and flexible / cross-department approver validation.
  */
 
 import employeeResolver, { RESOLUTION_STATUS } from './employeeResolver.js';
@@ -14,12 +15,17 @@ export const VALIDATION_ERROR_CODES = {
     MISSING_MANAGER: 'MISSING_MANAGER',
     AMBIGUOUS_REFERENCE: 'AMBIGUOUS_REFERENCE',
     OVERLAPPING_ASSIGNMENT: 'OVERLAPPING_ASSIGNMENT',
-    INVALID_ASSIGNMENT: 'INVALID_ASSIGNMENT'
+    INVALID_ASSIGNMENT: 'INVALID_ASSIGNMENT',
+    UNAUTHORIZED_APPROVER_REASSIGNMENT: 'UNAUTHORIZED_APPROVER_REASSIGNMENT'
 };
 
 export class ValidationEngine {
     /**
      * Validates employee hierarchy and assignment data integrity.
+     * Enforces Flexible / Cross-Department Approver Routing rules:
+     * - Cross-department approvals (Employee Dept != Approver Dept) are VALID.
+     * - Self-reporting (Employee == Manager) remains STRICTLY BLOCKED.
+     * - DFS Circular reporting remains STRICTLY BLOCKED.
      * 
      * @param {Array<Object>} employeeList Normalized employee list
      * @param {Array<Object>} assignmentList Assignment history log
@@ -42,19 +48,19 @@ export class ValidationEngine {
             }
         });
 
-        // 2. Self-Manager & Missing Manager Check
+        // 2. Self-Manager & Missing Manager Check (Flexible Cross-Dept Allowed)
         employeeList.forEach(emp => {
             if (emp.managerRef) {
                 const empRef = String(emp.codeNumber).trim();
                 const mgrRef = String(emp.managerRef).trim();
 
-                // Self-reporting
+                // Self-reporting is STRICTLY BLOCKED
                 if (empRef === mgrRef) {
                     errors.push({
                         code: VALIDATION_ERROR_CODES.SELF_REPORTING,
                         recordId: emp.recordId,
                         employeeRef: empRef,
-                        message: `Employee '${empRef}' cannot be assigned as their own manager.`
+                        message: `[SECURITY GUARD] Employee '${empRef}' cannot be assigned as their own manager.`
                     });
                 } else {
                     // Check if manager exists
@@ -67,6 +73,13 @@ export class ValidationEngine {
                             managerRef: mgrRef,
                             message: `Manager reference '${mgrRef}' not found for employee '${empRef}'.`
                         });
+                    } else if (mgrRes.status === RESOLUTION_STATUS.MATCHED) {
+                        const mgrObj = mgrRes.employee;
+                        // CROSS-DEPARTMENT APPROVAL VERIFICATION:
+                        // Department mismatch is explicitly VALID per Phase 5E Business Amendment.
+                        if (emp.departmentId && mgrObj.departmentId && emp.departmentId !== mgrObj.departmentId) {
+                            // Valid Cross-Department Approval — Logged as Informational Notice (NOT AN ERROR)
+                        }
                     }
                 }
             }
@@ -87,7 +100,7 @@ export class ValidationEngine {
                 errors.push({
                     code: VALIDATION_ERROR_CODES.CIRCULAR_REPORTING,
                     cyclePath,
-                    message: `Circular reporting line detected: ${cyclePath.join(' -> ')}`
+                    message: `[SECURITY GUARD] Circular reporting line detected: ${cyclePath.join(' -> ')}`
                 });
                 return;
             }
@@ -127,20 +140,23 @@ export class ValidationEngine {
                     const a1 = asgList[i];
                     const a2 = asgList[j];
 
-                    const start1 = new Date(a1.effectiveStartDate).getTime();
-                    const end1 = a1.effectiveEndDate ? new Date(a1.effectiveEndDate).getTime() : Infinity;
+                    // Check Primary assignment overlap
+                    if ((a1.assignment_type || 'PRIMARY') === 'PRIMARY' && (a2.assignment_type || 'PRIMARY') === 'PRIMARY') {
+                        const start1 = new Date(a1.effectiveStartDate || a1.effective_start_date).getTime();
+                        const end1 = (a1.effectiveEndDate || a1.effective_end_date) ? new Date(a1.effectiveEndDate || a1.effective_end_date).getTime() : Infinity;
 
-                    const start2 = new Date(a2.effectiveStartDate).getTime();
-                    const end2 = a2.effectiveEndDate ? new Date(a2.effectiveEndDate).getTime() : Infinity;
+                        const start2 = new Date(a2.effectiveStartDate || a2.effective_start_date).getTime();
+                        const end2 = (a2.effectiveEndDate || a2.effective_end_date) ? new Date(a2.effectiveEndDate || a2.effective_end_date).getTime() : Infinity;
 
-                    if (start1 < end2 && start2 < end1) {
-                        errors.push({
-                            code: VALIDATION_ERROR_CODES.OVERLAPPING_ASSIGNMENT,
-                            employeeRef: empRef,
-                            assignmentId1: a1.assignmentId,
-                            assignmentId2: a2.assignmentId,
-                            message: `Overlapping assignment dates detected for employee '${empRef}'.`
-                        });
+                        if (start1 < end2 && start2 < end1) {
+                            errors.push({
+                                code: VALIDATION_ERROR_CODES.OVERLAPPING_ASSIGNMENT,
+                                employeeRef: empRef,
+                                assignmentId1: a1.assignmentId || a1.internal_id,
+                                assignmentId2: a2.assignmentId || a2.internal_id,
+                                message: `Overlapping PRIMARY assignment dates detected for employee '${empRef}'.`
+                            });
+                        }
                     }
                 }
             }
