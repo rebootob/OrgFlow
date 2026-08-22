@@ -42,6 +42,20 @@
 
 ---
 
+## [v1.4.3-phase6] - 2026-08-22
+
+### Added
+- **OrgFlow Emergency Data Quality Phase — App 791 Contamination Audit (100% Read-Only):** Audited 525 App 791 records against 275 App 53 employee master records.
+- Verified zero person contamination in Position Master: All 271 Position Masters contain clean JOB ROLES / TITLES (0 employee names).
+- Audited 247 legacy raw department records created during initial setup where raw department strings were stored.
+- Verified Employee ID / Number as the single immutable reference key (0 Thai/English language duplicate employee creations).
+- Derived clean canonical Position list (`POSITION_TITLE_CANONICAL_LIST.md`).
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable report ([`PHASE_6_PERSON_POSITION_ORG_CONTAMINATION_AUDIT_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6_contamination_audit/PHASE_6_PERSON_POSITION_ORG_CONTAMINATION_AUDIT_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_CONTROLLED_REPAIR_PLAN`).
+
+---
+
 ## [v1.4.0-phase6c] - 2026-08-22
 
 ### Added
