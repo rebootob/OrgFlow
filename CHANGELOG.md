@@ -42,6 +42,20 @@
 
 ---
 
+## [v1.4.7-phase3] - 2026-08-22
+
+### Added
+- **OrgFlow Emergency Data Repair Phase 3 — Person Name Repair Investigation & Simulation (100% Read-Only):** Discovered App 53 (`Text_0` for Thai, `Text` for English) as single authoritative person source.
+- Built Employee Identity Crosswalk for all 275 employee records.
+- Identified 247 Person-like records in App 791 where Thai name was copied into English field (`title_en`).
+- Generated BEFORE -> AFTER simulation preview mapping `title_en` directly to App 53 `Text` field (0 AI-generated names).
+- Audited and verified all 25/25 mandatory acceptance gates passed (G01 to G25).
+- Verified 0 production writes across App 53, App 791, App 792, and App 793.
+- Created deliverable reports in `docs/data-repair/` ([`PHASE_3_PERSON_NAME_REPAIR_SIMULATION.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/data-repair/PHASE_3_PERSON_NAME_REPAIR_SIMULATION.md)).
+- Enforced Mandatory Final Stop Gate (Status: `STOPPED FOR USER REVIEW`).
+
+---
+
 ## [v1.4.6-phase2] - 2026-08-22
 
 ### Added
