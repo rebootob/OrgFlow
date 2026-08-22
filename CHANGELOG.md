@@ -42,6 +42,20 @@
 
 ---
 
+## [v1.4.5-phase1] - 2026-08-22
+
+### Added
+- **OrgFlow Production Data Repair Phase 1 — App 792 Controlled Remap (100% Complete & Certified PASS):** Successfully remapped all 273 active current employee assignment references in App 792 to canonical organization targets and canonical position targets.
+- Took fresh pre-change local snapshots in `secure-backup/repair_phase1/` (`app53_before_repair.json`, `app791_before_repair.json`, `app792_before_repair.json`, `app793_before_repair.json`, `REPAIR_MANIFEST.json`, `SHA256SUMS.txt`).
+- Updated 273 active current assignment records in App 792 across 11 controlled batches with revision-aware updates and immediate record read-back verification.
+- Invalid Person-as-Department current assignment references reduced to exactly 0.
+- Verified App 53 (275 records), App 791 (525 records), and App 793 (2 records) remained 100% untouched with 0 unintended writes.
+- Audited and verified all 25/25 post-repair acceptance gates passed (G01 to G25).
+- Created deliverable report ([`PHASE_1_APP792_PRODUCTION_REPAIR_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/data-repair/PHASE_1_APP792_PRODUCTION_REPAIR_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `READY_FOR_APP791_CONTAMINATED_RECORD_DEACTIVATION_APPROVAL`).
+
+---
+
 ## [v1.4.4-phase6] - 2026-08-22
 
 ### Added

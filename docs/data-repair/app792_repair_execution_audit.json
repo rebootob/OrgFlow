@@ -1,0 +1,23 @@
+{
+  "executionTime": "2026-08-22T08:51:33.454Z",
+  "employeesCount": 275,
+  "currentAssignmentsCount": 273,
+  "assignmentsPlanned": 273,
+  "assignmentsModified": 273,
+  "alreadyCorrectSkipped": 0,
+  "failed": 0,
+  "rolledBack": 0,
+  "invalidPersonCurrentRefs": 0,
+  "duplicateCurrentAssignments": 0,
+  "missingCurrentAssignments": 0,
+  "orphanEmployee": 0,
+  "orphanOrganization": 0,
+  "orphanPosition": 0,
+  "app53Writes": 0,
+  "app791Writes": 0,
+  "app792Writes": 273,
+  "app793Writes": 0,
+  "unintendedWrites": 0,
+  "acceptanceGatesPassed": 25,
+  "finalStatus": "READY_FOR_APP791_CONTAMINATED_RECORD_DEACTIVATION_APPROVAL"
+}
