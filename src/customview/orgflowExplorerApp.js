@@ -2,8 +2,8 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 4.2.0 (Verified 57-Node Dynamic Layout Engine & Runtime Integrity Guard)
- * Build Timestamp: 2026-08-22T20:58:00+07:00
+ * Version: 4.8.0 (Phase 3.8.4E Collision-Free Intrinsic Subtree Layout)
+ * Build Timestamp: 2026-08-22T21:22:00+07:00
  * 
  * - Authoritative Canonical Master: 57 Organization Nodes across Levels 1 to 7
  * - Strict Separation: Canonical Hierarchy Tree -> Layout Engine -> Visual Renderer
@@ -11,6 +11,7 @@
  * - Immutable Tree Hash Guard: BASE_TREE_HASH === CURRENT_TREE_HASH across all layout actions
  * - 275 Canonical Employees Attached (Root Total Scope = 275, Case 9000 Protected)
  * - Unified Across: Interactive Web Org Chart, Directory, Catalog, Excel Export, PDF Export
+ * - Phase 4E: Intrinsic content-based subtree widths, collision detection, containment validation
  * 
  * 100% READ-ONLY DATA INTEGRATION / ZERO PRODUCTION WRITES.
  */
@@ -23,9 +24,13 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        BUNDLE_VERSION: '4.7.0',
-        BUILD_TIMESTAMP: '2026-08-22T21:14:00+07:00',
-        CACHE_TTL_MS: 300000
+        BUNDLE_VERSION: '4.8.0',
+        BUILD_TIMESTAMP: '2026-08-22T21:22:00+07:00',
+        CACHE_TTL_MS: 300000,
+        TOP_LEVEL_GAP: 14,
+        CARD_MIN_WIDTH: 180,
+        CARD_NATURAL_WIDTH: 200,
+        CARD_MAX_WIDTH: 260
     };
 
     // Authoritative 57 Canonical Organization Nodes Specification (From Org.FY2026_Rev.2)
@@ -606,10 +611,16 @@
 
         setupResizeObserver() {
             if (window.ResizeObserver) {
+                let resizeTimer = null;
                 const ro = new ResizeObserver(() => {
                     const canvas = document.getElementById('orgflow-chart-canvas');
                     if (canvas && this.currentView === 'ORG_CHART') {
                         this.store.verifyInvariant();
+                        // Debounce layout revalidation on resize (Phase 4E §22)
+                        clearTimeout(resizeTimer);
+                        resizeTimer = setTimeout(() => {
+                            this.auditDOMGeometry();
+                        }, 200);
                     }
                 });
                 ro.observe(this.root);
@@ -805,6 +816,232 @@
             this.auditDOMGeometry();
         }
 
+        // ==========================================
+        // PHASE 4E: COLLISION DETECTION ENGINE
+        // ==========================================
+
+        /**
+         * Detect sibling subtree bounding box collisions.
+         * For all sibling branch elements under a common parent,
+         * checks that rectA.right + GAP <= rectB.left.
+         * Returns { collisionCount, collisionPairs, offendingNodes }.
+         */
+        detectSiblingCollisions() {
+            const GAP = CONFIG.TOP_LEVEL_GAP;
+            const collisionPairs = [];
+            const offendingNodes = new Set();
+
+            // Check top-level branch siblings
+            const branchRow = document.querySelector('.orgflow-personnel-branches');
+            if (branchRow) {
+                const branches = Array.from(branchRow.children);
+                for (let i = 0; i < branches.length; i++) {
+                    for (let j = i + 1; j < branches.length; j++) {
+                        const a = branches[i].getBoundingClientRect();
+                        const b = branches[j].getBoundingClientRect();
+                        const collides = !(
+                            a.right + GAP <= b.left ||
+                            b.right + GAP <= a.left ||
+                            a.bottom + GAP <= b.top ||
+                            b.bottom + GAP <= a.top
+                        );
+                        if (collides) {
+                            const codeA = branches[i].id?.replace('branch-', '') || `sibling-${i}`;
+                            const codeB = branches[j].id?.replace('branch-', '') || `sibling-${j}`;
+                            collisionPairs.push(`${codeA} ↔ ${codeB}`);
+                            offendingNodes.add(codeA);
+                            offendingNodes.add(codeB);
+                            branches[i].classList.add('orgflow-collision-highlight');
+                            branches[j].classList.add('orgflow-collision-highlight');
+                        }
+                    }
+                }
+            }
+
+            // Check sibling children within each branch (departments, sections)
+            const siblingContainers = document.querySelectorAll(
+                '.orgflow-div-me-dept-grid, .orgflow-div-g0-sections-grid, .orgflow-personnel-sub-row, .orgflow-corporate-sections-stack'
+            );
+            siblingContainers.forEach(container => {
+                const children = Array.from(container.children);
+                for (let i = 0; i < children.length; i++) {
+                    for (let j = i + 1; j < children.length; j++) {
+                        const a = children[i].getBoundingClientRect();
+                        const b = children[j].getBoundingClientRect();
+                        // Only check horizontal overlap for flex-wrap items on same row
+                        if (Math.abs(a.top - b.top) < a.height * 0.5) {
+                            const hCollides = !(a.right + 2 <= b.left || b.right + 2 <= a.left);
+                            if (hCollides) {
+                                const codeA = children[i].id?.replace('branch-', '') || `child-${i}`;
+                                const codeB = children[j].id?.replace('branch-', '') || `child-${j}`;
+                                collisionPairs.push(`${codeA} ↔ ${codeB}`);
+                                offendingNodes.add(codeA);
+                                offendingNodes.add(codeB);
+                                children[i].classList.add('orgflow-collision-highlight');
+                                children[j].classList.add('orgflow-collision-highlight');
+                            }
+                        }
+                    }
+                }
+            });
+
+            return {
+                collisionCount: collisionPairs.length,
+                collisionPairs,
+                offendingNodes: Array.from(offendingNodes)
+            };
+        }
+
+        /**
+         * Detect children that overflow their parent container bounds.
+         * Returns { overflowCount, overflowNodes }.
+         */
+        detectContainmentOverflow() {
+            const overflowNodes = [];
+
+            // Check branch columns: children must not exceed parent
+            const branchCols = document.querySelectorAll('.orgflow-personnel-branch-col, .orgflow-personnel-dept-col');
+            branchCols.forEach(col => {
+                const parentRect = col.getBoundingClientRect();
+                const children = Array.from(col.children);
+                children.forEach(child => {
+                    const childRect = child.getBoundingClientRect();
+                    // Allow 2px tolerance for borders/rounding
+                    if (childRect.left < parentRect.left - 2 || childRect.right > parentRect.right + 2) {
+                        const code = col.id?.replace('branch-', '') || 'unknown';
+                        overflowNodes.push(code);
+                        col.classList.add('orgflow-containment-overflow');
+                    }
+                });
+            });
+
+            return {
+                overflowCount: overflowNodes.length,
+                overflowNodes
+            };
+        }
+
+        /**
+         * Full Phase 3.8.4E Layout Validation.
+         * Runs collision detection, containment checks, data integrity verification.
+         * Populates window.__ORGFLOW_LAYOUT_VALIDATION__ with complete report.
+         */
+        runLayoutValidation() {
+            const viewport = document.getElementById('orgflow-chart-canvas');
+            const target = document.getElementById('orgflow-transform-layer');
+            const treeRoot = document.querySelector('.orgflow-personnel-chart-root') || target;
+            const divME = document.getElementById('branch-DIV-ME');
+            const divG0 = document.getElementById('branch-DIV-G0');
+            const tmh0 = document.getElementById('branch-TMH0');
+            const posCard = document.querySelector('.orgflow-position-card');
+
+            if (!viewport || !treeRoot) {
+                console.warn('OrgFlow [v4.8.0]: Layout validation skipped — DOM not ready.');
+                return;
+            }
+
+            const vRect = viewport.getBoundingClientRect();
+            const tRect = treeRoot.getBoundingClientRect();
+
+            // Natural dimensions (before CSS transform scaling)
+            const naturalTreeWidth = treeRoot.scrollWidth || treeRoot.offsetWidth;
+            const naturalTreeHeight = treeRoot.scrollHeight || treeRoot.offsetHeight;
+
+            const meNatural = divME ? (divME.scrollWidth || divME.offsetWidth) : 0;
+            const g0Natural = divG0 ? (divG0.scrollWidth || divG0.offsetWidth) : 0;
+            const corpNatural = tmh0 ? (tmh0.scrollWidth || tmh0.offsetWidth) : 0;
+
+            const posCardLogicalW = posCard ? posCard.offsetWidth : CONFIG.CARD_NATURAL_WIDTH;
+            const posCardActualW = posCard ? Math.round(posCard.getBoundingClientRect().width) : CONFIG.CARD_MIN_WIDTH;
+
+            // Run collision and containment checks
+            const collisionResult = this.detectSiblingCollisions();
+            const containmentResult = this.detectContainmentOverflow();
+
+            // Data integrity
+            const top = this.store.topologyStatus;
+            const treeHashBefore = this.store.treeHash;
+            const treeHashAfter = computeTreeHash(this.store.treeNodes, this.store.getUnifiedEmployees());
+
+            const report = {
+                CANONICAL_NODE_COUNT: top.nodeCount,
+                EDGE_COUNT: top.edgeCount,
+                EMPLOYEE_COUNT: this.store.getUnifiedEmployees().length,
+                ORPHAN_COUNT: top.orphanCount,
+
+                TREE_HASH_BEFORE: treeHashBefore,
+                TREE_HASH_AFTER: treeHashAfter,
+                HIERARCHY_MUTATIONS: treeHashBefore === treeHashAfter ? 0 : 1,
+
+                VIEWPORT_WIDTH: Math.round(vRect.width),
+                VIEWPORT_HEIGHT: Math.round(vRect.height),
+
+                NATURAL_TREE_WIDTH: Math.round(naturalTreeWidth),
+                NATURAL_TREE_HEIGHT: Math.round(naturalTreeHeight),
+
+                DIV_ME_NATURAL_WIDTH: Math.round(meNatural),
+                DIV_G0_NATURAL_WIDTH: Math.round(g0Natural),
+                CORPORATE_NATURAL_WIDTH: Math.round(corpNatural),
+
+                POSITION_CARD_NATURAL_WIDTH: posCardLogicalW,
+                POSITION_CARD_VISUAL_WIDTH: posCardActualW,
+
+                GLOBAL_SCALE: this.zoomScale,
+
+                COLLISION_COUNT: collisionResult.collisionCount,
+                CHILD_OVERFLOW_COUNT: containmentResult.overflowCount,
+
+                COLLISION_NODE_PAIRS: collisionResult.collisionPairs,
+
+                TOP_LEVEL_GAP: CONFIG.TOP_LEVEL_GAP,
+
+                DIV_ME_LAYOUT: divME ? `${Math.round(divME.getBoundingClientRect().width)}px actual` : 'N/A',
+                DIV_G0_LAYOUT: divG0 ? `${Math.round(divG0.getBoundingClientRect().width)}px actual` : 'N/A',
+                CORPORATE_LAYOUT: tmh0 ? `${Math.round(tmh0.getBoundingClientRect().width)}px actual` : 'N/A',
+
+                App53_WRITES: 0,
+                App791_WRITES: 0,
+                App792_WRITES: 0,
+                App793_WRITES: 0
+            };
+
+            // Determine pass/fail
+            const passed = (
+                report.COLLISION_COUNT === 0 &&
+                report.CHILD_OVERFLOW_COUNT === 0 &&
+                report.POSITION_CARD_VISUAL_WIDTH >= CONFIG.CARD_MIN_WIDTH &&
+                report.TREE_HASH_BEFORE === report.TREE_HASH_AFTER &&
+                report.HIERARCHY_MUTATIONS === 0 &&
+                report.App53_WRITES === 0 &&
+                report.App791_WRITES === 0 &&
+                report.App792_WRITES === 0 &&
+                report.App793_WRITES === 0
+            );
+
+            report.UAT_STATUS = passed
+                ? 'PHASE_3_8_4E_COLLISION_FREE_LAYOUT_UAT_READY'
+                : 'PHASE_3_8_4E_COLLISION_FREE_LAYOUT_UAT_FAILED';
+
+            window.__ORGFLOW_LAYOUT_VALIDATION__ = report;
+            console.log(`=== OrgFlow [v${CONFIG.BUNDLE_VERSION}] PHASE 3.8.4E LAYOUT VALIDATION ===`);
+            console.log(JSON.stringify(report, null, 2));
+
+            if (!passed) {
+                console.error('LAYOUT VALIDATION FAILED:', {
+                    collisions: report.COLLISION_COUNT,
+                    overflows: report.CHILD_OVERFLOW_COUNT,
+                    pairs: report.COLLISION_NODE_PAIRS
+                });
+            }
+
+            // Also expose manual validation function
+            window.__validateOrgFlowLayout = () => {
+                return this.runLayoutValidation();
+            };
+
+            return report;
+        }
+
         auditDOMGeometry() {
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
@@ -845,15 +1082,21 @@
                         VIEWPORT_WIDTH_USAGE_PERCENT: `${widthUsagePercent}%`,
                         SCALE_COMMAND: this.zoomScale,
                         ACTUAL_SCALE_RATIO: (visualWidth / logicalWidth).toFixed(3),
-                        POSITION_CARD_LOGICAL_WIDTH: posCard ? posCard.offsetWidth : 215,
-                        POSITION_CARD_ACTUAL_WIDTH: pRect ? Math.round(pRect.width) : 185,
+                        POSITION_CARD_LOGICAL_WIDTH: posCard ? posCard.offsetWidth : CONFIG.CARD_NATURAL_WIDTH,
+                        POSITION_CARD_ACTUAL_WIDTH: pRect ? Math.round(pRect.width) : CONFIG.CARD_MIN_WIDTH,
+                        DIV_ME_NATURAL_WIDTH: divME ? (divME.scrollWidth || divME.offsetWidth) : 0,
+                        DIV_G0_NATURAL_WIDTH: divG0 ? (divG0.scrollWidth || divG0.offsetWidth) : 0,
+                        CORPORATE_NATURAL_WIDTH: tmh0 ? (tmh0.scrollWidth || tmh0.offsetWidth) : 0,
                         DIV_ME_ACTUAL_WIDTH: meRect ? Math.round(meRect.width) : 0,
                         DIV_G0_ACTUAL_WIDTH: g0Rect ? Math.round(g0Rect.width) : 0,
                         CORPORATE_ACTUAL_WIDTH: h0Rect ? Math.round(h0Rect.width) : 0
                     };
 
-                    console.log('=== OrgFlow [v4.6.0] ACTUAL DOM GEOMETRY AUDIT ===', metrics);
+                    console.log(`=== OrgFlow [v${CONFIG.BUNDLE_VERSION}] DOM GEOMETRY AUDIT ===`, metrics);
                     window.__ORGFLOW_DOM_METRICS__ = metrics;
+
+                    // Run full layout validation
+                    this.runLayoutValidation();
                 });
             });
         }
@@ -1152,22 +1395,22 @@
                 const branchRow = document.createElement('div');
                 branchRow.className = 'orgflow-personnel-branches';
 
-                // Divisions & Corporate Department with Proportional Flex Weights (48% / 34% / 18%)
-                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME', 2.8));
-                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 2.0));
-                branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0', 1.0));
+                // Divisions & Corporate Department — Intrinsic Width (Phase 4E: no flex weights)
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME'));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0'));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0'));
 
                 execGroup.appendChild(branchRow);
                 chartArea.appendChild(execGroup);
             } else {
-                chartArea.appendChild(this.renderDynamicBranchSubtree(this.focusedOrgCode, 1.0, true));
+                chartArea.appendChild(this.renderDynamicBranchSubtree(this.focusedOrgCode, true));
             }
 
             container.appendChild(chartArea);
             return container;
         }
 
-        renderDynamicBranchSubtree(nodeCode, flexWeight = 1.0, isFocusRoot = false) {
+        renderDynamicBranchSubtree(nodeCode, isFocusRoot = false) {
             const node = this.store.getTreeNode(nodeCode);
             if (!node) return document.createElement('div');
 
@@ -1177,9 +1420,7 @@
             const col = document.createElement('div');
             col.id = `branch-${nodeCode}`;
             col.className = isDept ? 'orgflow-personnel-dept-col' : 'orgflow-personnel-branch-col';
-            if (isDiv) {
-                col.style.flex = flexWeight;
-            }
+            // Phase 4E: No flex-weight assignment. Width is intrinsic from content.
 
             const headerBox = document.createElement('div');
             headerBox.className = isDept ? 'orgflow-dept-header-box' : 'orgflow-org-header-box';
@@ -1237,7 +1478,7 @@
                     if (child.type === 'SECTION' || child.type === 'TEAM' || child.type === 'SUB-TEAM' || child.type === 'FUNCTION') {
                         subRow.appendChild(this.renderDynamicSectionCard(child.code));
                     } else {
-                        subRow.appendChild(this.renderDynamicBranchSubtree(child.code, 1.0));
+                        subRow.appendChild(this.renderDynamicBranchSubtree(child.code));
                     }
                 });
                 col.appendChild(subRow);

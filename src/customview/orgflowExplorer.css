@@ -611,8 +611,9 @@
 
 .orgflow-personnel-branches {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    flex-wrap: nowrap;
     gap: 14px;
     width: 100%;
     margin-top: 6px;
@@ -620,7 +621,7 @@
     box-sizing: border-box;
 }
 
-/* Independent Subtree Column */
+/* Independent Subtree Column — Intrinsic Width (Phase 4E) */
 .orgflow-personnel-branch-col {
     background: #ffffff;
     border: 1px solid #cbd5e1;
@@ -629,11 +630,13 @@
     min-width: 280px;
     height: auto;
     align-self: flex-start;
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .orgflow-org-header-box {
@@ -677,20 +680,20 @@
     box-sizing: border-box;
 }
 
-/* DIV-ME 4-Department Responsive Grid */
+/* DIV-ME Department Layout — Intrinsic Flex-Wrap (Phase 4E) */
 .orgflow-div-me-dept-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     width: 100%;
     align-items: flex-start;
     box-sizing: border-box;
 }
 
-@media (max-width: 1650px) {
-    .orgflow-div-me-dept-grid {
-        grid-template-columns: repeat(2, minmax(210px, 1fr));
-    }
+.orgflow-div-me-dept-grid > * {
+    flex: 1 1 200px;
+    min-width: 200px;
+    max-width: 100%;
 }
 
 /* DIV-G0 2-Column Section Grid */
@@ -723,7 +726,7 @@
     box-sizing: border-box;
 }
 
-/* Department Subtree Container */
+/* Department Subtree Container — Contained (Phase 4E) */
 .orgflow-personnel-dept-col {
     background: #f8fafc;
     border: 1px solid #e2e8f0;
@@ -736,6 +739,7 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .orgflow-dept-header-box {
@@ -987,6 +991,18 @@
     gap: 10px;
     font-size: 12px;
     color: #854d0e;
+}
+
+/* Phase 4E — Layout Validation Debug Highlights */
+.orgflow-collision-highlight {
+    outline: 3px solid #ef4444 !important;
+    outline-offset: 2px;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.4) !important;
+}
+
+.orgflow-containment-overflow {
+    outline: 3px dashed #f59e0b !important;
+    outline-offset: 1px;
 }
 
 @media print {
