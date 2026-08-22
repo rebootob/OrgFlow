@@ -1,5 +1,18 @@
 # CHANGELOG — ORGFLOW
 
+## [v0.9.8] - 2026-08-22
+
+### Added
+- **Phase 5D Production App Deployment:** Created `OrgFlow Org Change Request` App (**App ID: 793**) on Kintone Production (`https://ttmet.cybozu.com`).
+- Added 11 approved fields (`request_id`, `employee_ref`, `change_type`, `current_dept_code`, `target_dept_code`, `current_pos_code`, `target_pos_code`, `target_manager_ref`, `effective_date`, `justification`, `applied_assignment_id`).
+- Deployed live preview to production and verified read-back schema (11/11 Fields Present, 0 Production Records inserted).
+- Verified `Employee Namelist` (App ID 53) remains 100% untouched (275 records, 0 modifications).
+- Verified `OrgFlow Organization Masters` (App ID 791) remains 100% untouched (0 records, 0 modifications).
+- Verified `OrgFlow Org Assignment History Log` (App ID 792) remains 100% untouched (0 records, 0 modifications).
+- Created deployment verification report ([`PHASE_5D_CHANGE_REQUEST_VERIFICATION.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/PHASE_5D_CHANGE_REQUEST_VERIFICATION.md)).
+
+---
+
 ## [v0.9.5] - 2026-08-22
 
 ### Added
