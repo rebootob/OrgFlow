@@ -1,0 +1,844 @@
+{
+  "app_info": {
+    "appId": "793",
+    "code": "",
+    "name": "OrgFlow Org Change Request",
+    "description": "",
+    "createdAt": "2026-08-22T06:44:52.000Z",
+    "creator": {
+      "code": "admin-form",
+      "name": "Admin-Form"
+    },
+    "modifiedAt": "2026-08-22T11:49:52.000Z",
+    "modifier": {
+      "code": "admin-form",
+      "name": "Admin-Form"
+    },
+    "spaceId": null,
+    "threadId": null
+  },
+  "fields": {
+    "revision": "10",
+    "properties": {
+      "request_type": {
+        "type": "DROP_DOWN",
+        "code": "request_type",
+        "label": "Request Type",
+        "noLabel": false,
+        "required": false,
+        "options": {
+          "DEACTIVATE_ORGANIZATION": {
+            "label": "DEACTIVATE_ORGANIZATION",
+            "index": "7"
+          },
+          "POSITION_CHANGE": {
+            "label": "POSITION_CHANGE",
+            "index": "1"
+          },
+          "UPDATE_ORGANIZATION": {
+            "label": "UPDATE_ORGANIZATION",
+            "index": "4"
+          },
+          "ORGANIZATION_CHANGE": {
+            "label": "ORGANIZATION_CHANGE",
+            "index": "2"
+          },
+          "MANAGER_CHANGE": {
+            "label": "MANAGER_CHANGE",
+            "index": "8"
+          },
+          "EMPLOYEE_TRANSFER": {
+            "label": "EMPLOYEE_TRANSFER",
+            "index": "0"
+          },
+          "MOVE_ORGANIZATION": {
+            "label": "MOVE_ORGANIZATION",
+            "index": "5"
+          },
+          "CREATE_ORGANIZATION": {
+            "label": "CREATE_ORGANIZATION",
+            "index": "3"
+          },
+          "RENAME_ORGANIZATION": {
+            "label": "RENAME_ORGANIZATION",
+            "index": "6"
+          }
+        },
+        "defaultValue": "EMPLOYEE_TRANSFER"
+      },
+      "current_organization_code": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "current_organization_code",
+        "label": "Current Organization Code",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "proposed_organization_code": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "proposed_organization_code",
+        "label": "Proposed Organization Code",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "returned_from_status": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "returned_from_status",
+        "label": "Returned From Status",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "applied_by": {
+        "type": "USER_SELECT",
+        "code": "applied_by",
+        "label": "Applied By",
+        "noLabel": false,
+        "required": false,
+        "entities": [],
+        "defaultValue": []
+      },
+      "Updated_by": {
+        "type": "MODIFIER",
+        "code": "Updated_by",
+        "label": "Updated by",
+        "noLabel": false
+      },
+      "proposed_organization_name": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "proposed_organization_name",
+        "label": "Proposed Organization Name",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "proposed_position_code": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "proposed_position_code",
+        "label": "Proposed Position Code",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "Created_datetime": {
+        "type": "CREATED_TIME",
+        "code": "Created_datetime",
+        "label": "Created datetime",
+        "noLabel": false
+      },
+      "Record_number": {
+        "type": "RECORD_NUMBER",
+        "code": "Record_number",
+        "label": "Record number",
+        "noLabel": false
+      },
+      "effective_date": {
+        "type": "DATE",
+        "code": "effective_date",
+        "label": "Effective Date",
+        "noLabel": false,
+        "required": true,
+        "unique": false,
+        "defaultValue": "",
+        "defaultNowValue": true
+      },
+      "current_position_code": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "current_position_code",
+        "label": "Current Position Code",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "system_result": {
+        "type": "MULTI_LINE_TEXT",
+        "code": "system_result",
+        "label": "System Result",
+        "noLabel": false,
+        "required": false,
+        "defaultValue": ""
+      },
+      "rollback_reference": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "rollback_reference",
+        "label": "Rollback Reference",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "Created_by": {
+        "type": "CREATOR",
+        "code": "Created_by",
+        "label": "Created by",
+        "noLabel": false
+      },
+      "Status": {
+        "type": "STATUS",
+        "code": "Status",
+        "label": "Status",
+        "enabled": true
+      },
+      "requester": {
+        "type": "USER_SELECT",
+        "code": "requester",
+        "label": "Requester",
+        "noLabel": false,
+        "required": false,
+        "entities": [],
+        "defaultValue": []
+      },
+      "Assignee": {
+        "type": "STATUS_ASSIGNEE",
+        "code": "Assignee",
+        "label": "Assignee",
+        "enabled": true
+      },
+      "applied_at": {
+        "type": "DATETIME",
+        "code": "applied_at",
+        "label": "Applied At",
+        "noLabel": false,
+        "required": false,
+        "unique": false,
+        "defaultValue": "",
+        "defaultNowValue": false
+      },
+      "gm_comment": {
+        "type": "MULTI_LINE_TEXT",
+        "code": "gm_comment",
+        "label": "GM Comment",
+        "noLabel": false,
+        "required": false,
+        "defaultValue": ""
+      },
+      "Categories": {
+        "type": "CATEGORY",
+        "code": "Categories",
+        "label": "Categories",
+        "enabled": false
+      },
+      "employee_name": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "employee_name",
+        "label": "Employee Name",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "reject_reason": {
+        "type": "MULTI_LINE_TEXT",
+        "code": "reject_reason",
+        "label": "Reject Reason",
+        "noLabel": false,
+        "required": false,
+        "defaultValue": ""
+      },
+      "gm_approver": {
+        "type": "USER_SELECT",
+        "code": "gm_approver",
+        "label": "GM Approver",
+        "noLabel": false,
+        "required": false,
+        "entities": [],
+        "defaultValue": []
+      },
+      "request_reason": {
+        "type": "MULTI_LINE_TEXT",
+        "code": "request_reason",
+        "label": "Request Reason",
+        "noLabel": false,
+        "required": false,
+        "defaultValue": ""
+      },
+      "hr_comment": {
+        "type": "MULTI_LINE_TEXT",
+        "code": "hr_comment",
+        "label": "HR Comment",
+        "noLabel": false,
+        "required": false,
+        "defaultValue": ""
+      },
+      "current_organization_name": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "current_organization_name",
+        "label": "Current Organization Name",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "Updated_datetime": {
+        "type": "UPDATED_TIME",
+        "code": "Updated_datetime",
+        "label": "Updated datetime",
+        "noLabel": false
+      },
+      "current_position_name": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "current_position_name",
+        "label": "Current Position Name",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "employee_id": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "employee_id",
+        "label": "Employee ID",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "proposed_position_name": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "proposed_position_name",
+        "label": "Proposed Position Name",
+        "noLabel": false,
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "expression": "",
+        "hideExpression": false,
+        "unique": false,
+        "defaultValue": ""
+      },
+      "request_id": {
+        "type": "SINGLE_LINE_TEXT",
+        "code": "request_id",
+        "label": "Request ID",
+        "noLabel": false,
+        "required": true,
+        "minLength": "",
+        "maxLength": "64",
+        "expression": "",
+        "hideExpression": false,
+        "unique": true,
+        "defaultValue": ""
+      },
+      "hr_approver": {
+        "type": "USER_SELECT",
+        "code": "hr_approver",
+        "label": "HR Approver",
+        "noLabel": false,
+        "required": false,
+        "entities": [],
+        "defaultValue": []
+      }
+    }
+  },
+  "layout": {
+    "layout": [
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "request_id",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "DATE",
+            "code": "effective_date",
+            "size": {
+              "width": "117"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "DROP_DOWN",
+            "code": "request_type",
+            "size": {
+              "width": "196"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "employee_id",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "employee_name",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "current_organization_code",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "current_organization_name",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "proposed_organization_code",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "proposed_organization_name",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "current_position_code",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "current_position_name",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "proposed_position_code",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "proposed_position_name",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "MULTI_LINE_TEXT",
+            "code": "request_reason",
+            "size": {
+              "width": "315",
+              "innerHeight": "125"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "USER_SELECT",
+            "code": "requester",
+            "size": {
+              "width": "222"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "USER_SELECT",
+            "code": "gm_approver",
+            "size": {
+              "width": "222"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "USER_SELECT",
+            "code": "hr_approver",
+            "size": {
+              "width": "222"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "MULTI_LINE_TEXT",
+            "code": "gm_comment",
+            "size": {
+              "width": "315",
+              "innerHeight": "125"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "MULTI_LINE_TEXT",
+            "code": "hr_comment",
+            "size": {
+              "width": "315",
+              "innerHeight": "125"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "MULTI_LINE_TEXT",
+            "code": "reject_reason",
+            "size": {
+              "width": "315",
+              "innerHeight": "125"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "returned_from_status",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "DATETIME",
+            "code": "applied_at",
+            "size": {
+              "width": "185"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "USER_SELECT",
+            "code": "applied_by",
+            "size": {
+              "width": "222"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "MULTI_LINE_TEXT",
+            "code": "system_result",
+            "size": {
+              "width": "315",
+              "innerHeight": "125"
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "fields": [
+          {
+            "type": "SINGLE_LINE_TEXT",
+            "code": "rollback_reference",
+            "size": {
+              "width": "193"
+            }
+          }
+        ]
+      }
+    ],
+    "revision": "10"
+  },
+  "views": {
+    "views": {
+      "(Assigned to me)": {
+        "type": "LIST",
+        "name": "(Assigned to me)",
+        "id": "6438050",
+        "filterCond": "Assignee in (LOGINUSER())",
+        "sort": "Record_number desc",
+        "index": "0",
+        "fields": [
+          "Record_number",
+          "request_id",
+          "effective_date",
+          "Status",
+          "Assignee"
+        ],
+        "builtinType": "ASSIGNEE"
+      }
+    },
+    "revision": "10"
+  },
+  "status": {
+    "enable": true,
+    "states": {
+      "DRAFT": {
+        "name": "DRAFT",
+        "index": "0",
+        "assignee": {
+          "type": "ONE",
+          "entities": []
+        }
+      },
+      "GM_REVIEW": {
+        "name": "GM_REVIEW",
+        "index": "2",
+        "assignee": {
+          "type": "ONE",
+          "entities": []
+        }
+      },
+      "SUBMITTED": {
+        "name": "SUBMITTED",
+        "index": "1",
+        "assignee": {
+          "type": "ONE",
+          "entities": []
+        }
+      },
+      "SYSTEM_APPLY": {
+        "name": "SYSTEM_APPLY",
+        "index": "5",
+        "assignee": {
+          "type": "ONE",
+          "entities": []
+        }
+      },
+      "HR_REVIEW": {
+        "name": "HR_REVIEW",
+        "index": "3",
+        "assignee": {
+          "type": "ONE",
+          "entities": []
+        }
+      },
+      "APPROVED": {
+        "name": "APPROVED",
+        "index": "4",
+        "assignee": {
+          "type": "ONE",
+          "entities": []
+        }
+      },
+      "APPLIED": {
+        "name": "APPLIED",
+        "index": "6",
+        "assignee": {
+          "type": "ONE",
+          "entities": []
+        }
+      }
+    },
+    "actions": [
+      {
+        "name": "Submit Request",
+        "from": "DRAFT",
+        "to": "SUBMITTED",
+        "filterCond": "",
+        "type": "PRIMARY"
+      },
+      {
+        "name": "Send to GM Review",
+        "from": "SUBMITTED",
+        "to": "GM_REVIEW",
+        "filterCond": "",
+        "type": "PRIMARY"
+      },
+      {
+        "name": "GM Approve",
+        "from": "GM_REVIEW",
+        "to": "HR_REVIEW",
+        "filterCond": "",
+        "type": "PRIMARY"
+      },
+      {
+        "name": "GM Reject / Return to Draft",
+        "from": "GM_REVIEW",
+        "to": "DRAFT",
+        "filterCond": "",
+        "type": "PRIMARY"
+      },
+      {
+        "name": "HR Approve",
+        "from": "HR_REVIEW",
+        "to": "APPROVED",
+        "filterCond": "",
+        "type": "PRIMARY"
+      },
+      {
+        "name": "HR Return to GM",
+        "from": "HR_REVIEW",
+        "to": "GM_REVIEW",
+        "filterCond": "",
+        "type": "PRIMARY"
+      },
+      {
+        "name": "Apply Organization Change",
+        "from": "APPROVED",
+        "to": "SYSTEM_APPLY",
+        "filterCond": "",
+        "type": "PRIMARY"
+      },
+      {
+        "name": "Commit Successful",
+        "from": "SYSTEM_APPLY",
+        "to": "APPLIED",
+        "filterCond": "",
+        "type": "PRIMARY"
+      },
+      {
+        "name": "Apply Failed / Rollback",
+        "from": "SYSTEM_APPLY",
+        "to": "APPROVED",
+        "filterCond": "",
+        "type": "PRIMARY"
+      }
+    ],
+    "revision": "10"
+  },
+  "record_count": 0,
+  "records": []
+}
