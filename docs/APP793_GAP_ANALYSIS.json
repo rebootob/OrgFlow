@@ -1,0 +1,67 @@
+{
+  "app_id": 793,
+  "app_name": "OrgFlow Org Change Request",
+  "total_records": 0,
+  "gaps": [
+    {
+      "category": "EMPLOYEE_IDENTITY",
+      "item": "Separate Thai and English Names",
+      "severity": "HIGH",
+      "current_design": "Only generic 'employee_name' field exists",
+      "problem": "App 53 maintains separate 'thai_name' and 'english_name'",
+      "risk": "Data loss or ambiguity between Thai official records and English org charts",
+      "required_design": "Add 'thai_name' and 'english_name' sourced directly from App 53",
+      "recommended_fix": "Add thai_name (SINGLE_LINE_TEXT) and english_name (SINGLE_LINE_TEXT)"
+    },
+    {
+      "category": "CURRENT_ASSIGNMENT_BEFORE",
+      "item": "Current Organization Type & Assignment Type",
+      "severity": "HIGH",
+      "current_design": "current_organization_type and current_assignment_type are missing",
+      "problem": "Cannot verify the entity level (COMPANY/DIVISION/DEPARTMENT/SECTION) or assignment nature (PRIMARY/CONCURRENT)",
+      "risk": "Loss of structural context before transfer",
+      "required_design": "Store current_organization_type and current_assignment_type from App 792",
+      "recommended_fix": "Add current_organization_type (SINGLE_LINE_TEXT) and current_assignment_type (SINGLE_LINE_TEXT)"
+    },
+    {
+      "category": "PROPOSED_ASSIGNMENT_AFTER",
+      "item": "Proposed Organization Type & Assignment Type",
+      "severity": "HIGH",
+      "current_design": "proposed_organization_type and proposed_assignment_type are missing",
+      "problem": "Cannot validate whether the proposed assignment matches App 791 entity type or whether it is PRIMARY/CONCURRENT/ACTING",
+      "risk": "Invalid assignment creation in App 792",
+      "required_design": "Store proposed_organization_type (from App 791) and proposed_assignment_type (DROP_DOWN: PRIMARY, CONCURRENT, TEMPORARY)",
+      "recommended_fix": "Add proposed_organization_type (SINGLE_LINE_TEXT) and proposed_assignment_type (DROP_DOWN)"
+    },
+    {
+      "category": "EXECUTION_INFORMATION",
+      "item": "Assignment IDs & Execution Status Audit Trail",
+      "severity": "CRITICAL",
+      "current_design": "created_assignment_id and previous_assignment_id missing, execution tracking uses generic system_result",
+      "problem": "Cannot trace exact App 792 record IDs that were closed vs created",
+      "risk": "Failure of bidirectional traceability between App 793 and App 792",
+      "required_design": "Store created_assignment_id, previous_assignment_id, execution_status (PENDING, EXECUTED, ERROR), execution_error",
+      "recommended_fix": "Add created_assignment_id, previous_assignment_id, execution_status, execution_error"
+    },
+    {
+      "category": "HISTORY_PROTECTION",
+      "item": "App 792 Historical Assignment Preservation Protocol",
+      "severity": "CRITICAL",
+      "current_design": "No explicit enforcement that old App 792 assignment is archived to HISTORICAL",
+      "problem": "Risk of overwriting active record or leaving duplicate CURRENT records",
+      "risk": "Destruction of employee assignment history or active assignment collision",
+      "required_design": "Strict two-step transaction: 1. Update old record (CURRENT -> HISTORICAL + end date), 2. Create new record (CURRENT + start date)",
+      "recommended_fix": "Implement idempotent execution handler enforcing history protection protocol"
+    },
+    {
+      "category": "PROCESS_MANAGEMENT",
+      "item": "Standardized Workflow States",
+      "severity": "MEDIUM",
+      "current_design": "States: DRAFT, SUBMITTED, GM_REVIEW, HR_REVIEW, APPROVED, SYSTEM_APPLY, APPLIED",
+      "problem": "Missing explicit EXECUTION_PENDING and EXECUTION_ERROR states, and clear cancellation/returned paths",
+      "risk": "Ambiguity during automated execution failures",
+      "required_design": "DRAFT -> SUBMITTED -> HR_REVIEW -> APPROVED -> EXECUTION_PENDING -> EXECUTED (with RETURNED, CANCELLED, EXECUTION_ERROR branches)",
+      "recommended_fix": "Refine Process Management states and actions"
+    }
+  ]
+}

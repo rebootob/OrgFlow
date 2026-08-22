@@ -1,0 +1,126 @@
+{
+  "enable": true,
+  "states": {
+    "DRAFT": {
+      "index": 0,
+      "assignee": {
+        "type": "CREATOR"
+      }
+    },
+    "SUBMITTED": {
+      "index": 1,
+      "assignee": {
+        "type": "GROUP",
+        "code": "HR_Group"
+      }
+    },
+    "HR_REVIEW": {
+      "index": 2,
+      "assignee": {
+        "type": "GROUP",
+        "code": "HR_Managers"
+      }
+    },
+    "APPROVED": {
+      "index": 3,
+      "assignee": {
+        "type": "ADMIN"
+      }
+    },
+    "EXECUTION_PENDING": {
+      "index": 4,
+      "assignee": {
+        "type": "SYSTEM"
+      }
+    },
+    "EXECUTED": {
+      "index": 5,
+      "assignee": {
+        "type": "NONE"
+      }
+    },
+    "RETURNED": {
+      "index": 6,
+      "assignee": {
+        "type": "CREATOR"
+      }
+    },
+    "CANCELLED": {
+      "index": 7,
+      "assignee": {
+        "type": "NONE"
+      }
+    },
+    "EXECUTION_ERROR": {
+      "index": 8,
+      "assignee": {
+        "type": "ADMIN"
+      }
+    }
+  },
+  "actions": [
+    {
+      "name": "Submit Request",
+      "from": "DRAFT",
+      "to": "SUBMITTED",
+      "role": "Requester",
+      "validation": "Required fields filled, Employee ID valid in App 53"
+    },
+    {
+      "name": "Start HR Review",
+      "from": "SUBMITTED",
+      "to": "HR_REVIEW",
+      "role": "HR Staff",
+      "validation": "Current assignment verified against App 792"
+    },
+    {
+      "name": "Approve Request",
+      "from": "HR_REVIEW",
+      "to": "APPROVED",
+      "role": "HR Manager",
+      "validation": "Proposed Org exists in App 791, Position valid in dictionary"
+    },
+    {
+      "name": "Return to Requester",
+      "from": "HR_REVIEW",
+      "to": "RETURNED",
+      "role": "HR Staff / Manager",
+      "validation": "Reject Reason filled"
+    },
+    {
+      "name": "Cancel Request",
+      "from": "SUBMITTED",
+      "to": "CANCELLED",
+      "role": "Requester / HR",
+      "validation": "Cancellation reason filled"
+    },
+    {
+      "name": "Re-submit Request",
+      "from": "RETURNED",
+      "to": "SUBMITTED",
+      "role": "Requester",
+      "validation": "Corrected fields filled"
+    },
+    {
+      "name": "Queue Execution",
+      "from": "APPROVED",
+      "to": "EXECUTION_PENDING",
+      "role": "System / Admin",
+      "validation": "Effective Date reached / Approved status confirmed"
+    },
+    {
+      "name": "Complete Execution",
+      "from": "EXECUTION_PENDING",
+      "to": "EXECUTED",
+      "role": "Integration Engine",
+      "validation": "Old App 792 set to HISTORICAL, New App 792 created CURRENT"
+    },
+    {
+      "name": "Flag Execution Error",
+      "from": "EXECUTION_PENDING",
+      "to": "EXECUTION_ERROR",
+      "role": "Integration Engine",
+      "validation": "Preserve transaction diagnostic error in execution_error"
+    }
+  ]
+}

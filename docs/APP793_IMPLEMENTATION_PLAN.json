@@ -1,0 +1,67 @@
+{
+  "phases": [
+    {
+      "phase": 1,
+      "title": "Schema Optimization & Field Alignment",
+      "tasks": [
+        "Deploy 36 standardized English fields (lower_snake_case codes)",
+        "Configure Lookup fields from App 53 and App 791"
+      ]
+    },
+    {
+      "phase": 2,
+      "title": "Form Layout & Views Configuration",
+      "tasks": [
+        "Arrange logical sections (Request, Employee, Before, After, Approval, Execution)",
+        "Create default views (All Requests, Pending My Approval, Executed, Errors)"
+      ]
+    },
+    {
+      "phase": 3,
+      "title": "Process Management Deployment",
+      "tasks": [
+        "Configure 9 workflow states and 9 action transitions",
+        "Set branch conditions and assignee groups"
+      ]
+    },
+    {
+      "phase": 4,
+      "title": "Role & Field Permissions",
+      "tasks": [
+        "Lock executed records from modification",
+        "Restrict Execution Information fields to System/Admin only"
+      ]
+    },
+    {
+      "phase": 5,
+      "title": "Idempotent Execution Engine Implementation",
+      "tasks": [
+        "Build atomic two-step App 792 history protection handler",
+        "Implement duplicate execution guard (check request_id / created_assignment_id)"
+      ]
+    },
+    {
+      "phase": 6,
+      "title": "Referential Integrity Validation",
+      "tasks": [
+        "Test pre-approval validator (App 53 existence, App 792 active assignment match, App 791 node validation)"
+      ]
+    },
+    {
+      "phase": 7,
+      "title": "Sandbox Simulation & Audit Verification",
+      "tasks": [
+        "Simulate end-to-end transfer request for test employee",
+        "Verify App 792 historical archival + new assignment creation"
+      ]
+    },
+    {
+      "phase": 8,
+      "title": "Production Readiness Sign-Off",
+      "tasks": [
+        "Verify 0 production writes during setup",
+        "Obtain human architecture approval"
+      ]
+    }
+  ]
+}

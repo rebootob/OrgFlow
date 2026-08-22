@@ -1,0 +1,360 @@
+{
+  "app_id": 793,
+  "app_name": "OrgFlow Org Change Request",
+  "fields": [
+    {
+      "field_name": "Request ID",
+      "field_code": "request_id",
+      "type": "SINGLE_LINE_TEXT",
+      "required": true,
+      "source": "System Generated",
+      "editable_by": "System",
+      "purpose": "Unique Change Request Identifier (CR-YYYYMM-XXXX)"
+    },
+    {
+      "field_name": "Request Type",
+      "field_code": "request_type",
+      "type": "DROP_DOWN",
+      "required": true,
+      "options": [
+        "TRANSFER",
+        "ORGANIZATION_CHANGE",
+        "POSITION_CHANGE",
+        "PROMOTION",
+        "DEMOTION",
+        "CONCURRENT_ASSIGNMENT",
+        "TERMINATION"
+      ],
+      "source": "Requester",
+      "editable_by": "Requester / HR",
+      "purpose": "Classification of organizational change"
+    },
+    {
+      "field_name": "Request Date",
+      "field_code": "request_date",
+      "type": "DATE",
+      "required": true,
+      "source": "System / Requester",
+      "editable_by": "Requester",
+      "purpose": "Date when request was initiated"
+    },
+    {
+      "field_name": "Requested By",
+      "field_code": "requested_by",
+      "type": "USER_SELECT",
+      "required": true,
+      "source": "User Session",
+      "editable_by": "Requester",
+      "purpose": "User who initiated request"
+    },
+    {
+      "field_name": "Effective Date",
+      "field_code": "effective_date",
+      "type": "DATE",
+      "required": true,
+      "source": "Requester / HR",
+      "editable_by": "Requester / HR",
+      "purpose": "Target effective start date of change"
+    },
+    {
+      "field_name": "Request Reason",
+      "field_code": "request_reason",
+      "type": "MULTI_LINE_TEXT",
+      "required": true,
+      "source": "Requester",
+      "editable_by": "Requester",
+      "purpose": "Business justification for request"
+    },
+    {
+      "field_name": "Remarks",
+      "field_code": "remarks",
+      "type": "MULTI_LINE_TEXT",
+      "required": false,
+      "source": "User",
+      "editable_by": "Requester / HR",
+      "purpose": "Additional notes"
+    },
+    {
+      "field_name": "Employee ID",
+      "field_code": "employee_id",
+      "type": "SINGLE_LINE_TEXT",
+      "required": true,
+      "source": "App 53",
+      "editable_by": "Requester (Lookup)",
+      "purpose": "Target Employee ID (Stable Key)"
+    },
+    {
+      "field_name": "Thai Name",
+      "field_code": "thai_name",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 53",
+      "editable_by": "Auto-filled",
+      "purpose": "Thai full name"
+    },
+    {
+      "field_name": "English Name",
+      "field_code": "english_name",
+      "type": "SINGLE_LINE_TEXT",
+      "required": true,
+      "source": "App 53",
+      "editable_by": "Auto-filled",
+      "purpose": "English full name"
+    },
+    {
+      "field_name": "Current Position Code",
+      "field_code": "current_position_code",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 792",
+      "editable_by": "Auto-filled",
+      "purpose": "Active position code before change"
+    },
+    {
+      "field_name": "Current Position Name",
+      "field_code": "current_position_name",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 792",
+      "editable_by": "Auto-filled",
+      "purpose": "Active position name before change"
+    },
+    {
+      "field_name": "Current Organization Code",
+      "field_code": "current_organization_code",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 792",
+      "editable_by": "Auto-filled",
+      "purpose": "Active organization code before change"
+    },
+    {
+      "field_name": "Current Organization Name",
+      "field_code": "current_organization_name",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 792",
+      "editable_by": "Auto-filled",
+      "purpose": "Active organization name before change"
+    },
+    {
+      "field_name": "Current Organization Type",
+      "field_code": "current_organization_type",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 792",
+      "editable_by": "Auto-filled",
+      "purpose": "Active organization level before change"
+    },
+    {
+      "field_name": "Current Assignment Type",
+      "field_code": "current_assignment_type",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 792",
+      "editable_by": "Auto-filled",
+      "purpose": "PRIMARY or CONCURRENT"
+    },
+    {
+      "field_name": "Proposed Position Code",
+      "field_code": "proposed_position_code",
+      "type": "SINGLE_LINE_TEXT",
+      "required": true,
+      "source": "Canonical Dictionary",
+      "editable_by": "HR / Requester",
+      "purpose": "Target position code after change"
+    },
+    {
+      "field_name": "Proposed Position Name",
+      "field_code": "proposed_position_name",
+      "type": "SINGLE_LINE_TEXT",
+      "required": true,
+      "source": "Canonical Dictionary",
+      "editable_by": "HR / Requester",
+      "purpose": "Target position title after change"
+    },
+    {
+      "field_name": "Proposed Organization Code",
+      "field_code": "proposed_organization_code",
+      "type": "SINGLE_LINE_TEXT",
+      "required": true,
+      "source": "App 791",
+      "editable_by": "HR / Requester",
+      "purpose": "Target canonical organization node"
+    },
+    {
+      "field_name": "Proposed Organization Name",
+      "field_code": "proposed_organization_name",
+      "type": "SINGLE_LINE_TEXT",
+      "required": true,
+      "source": "App 791",
+      "editable_by": "Auto-filled",
+      "purpose": "Target canonical organization title"
+    },
+    {
+      "field_name": "Proposed Organization Type",
+      "field_code": "proposed_organization_type",
+      "type": "SINGLE_LINE_TEXT",
+      "required": true,
+      "source": "App 791",
+      "editable_by": "Auto-filled",
+      "purpose": "COMPANY, DIVISION, DEPARTMENT, SECTION, TEAM"
+    },
+    {
+      "field_name": "Proposed Assignment Type",
+      "field_code": "proposed_assignment_type",
+      "type": "DROP_DOWN",
+      "required": true,
+      "options": [
+        "PRIMARY",
+        "CONCURRENT",
+        "TEMPORARY"
+      ],
+      "source": "Requester / HR",
+      "editable_by": "HR / Requester",
+      "purpose": "Nature of proposed assignment"
+    },
+    {
+      "field_name": "Submitted By",
+      "field_code": "submitted_by",
+      "type": "USER_SELECT",
+      "required": false,
+      "source": "Workflow",
+      "editable_by": "System",
+      "purpose": "User who submitted request"
+    },
+    {
+      "field_name": "Submitted Date",
+      "field_code": "submitted_date",
+      "type": "DATETIME",
+      "required": false,
+      "source": "Workflow",
+      "editable_by": "System",
+      "purpose": "Submission timestamp"
+    },
+    {
+      "field_name": "HR Reviewer",
+      "field_code": "hr_reviewer",
+      "type": "USER_SELECT",
+      "required": false,
+      "source": "Workflow",
+      "editable_by": "System",
+      "purpose": "HR reviewer user"
+    },
+    {
+      "field_name": "HR Review Date",
+      "field_code": "hr_review_date",
+      "type": "DATETIME",
+      "required": false,
+      "source": "Workflow",
+      "editable_by": "System",
+      "purpose": "HR review timestamp"
+    },
+    {
+      "field_name": "HR Comment",
+      "field_code": "hr_comment",
+      "type": "MULTI_LINE_TEXT",
+      "required": false,
+      "source": "HR",
+      "editable_by": "HR",
+      "purpose": "HR notes/review comments"
+    },
+    {
+      "field_name": "Approver",
+      "field_code": "approver",
+      "type": "USER_SELECT",
+      "required": false,
+      "source": "Workflow",
+      "editable_by": "System",
+      "purpose": "Executive/GM Approver"
+    },
+    {
+      "field_name": "Approval Date",
+      "field_code": "approval_date",
+      "type": "DATETIME",
+      "required": false,
+      "source": "Workflow",
+      "editable_by": "System",
+      "purpose": "Approval timestamp"
+    },
+    {
+      "field_name": "Approval Comment",
+      "field_code": "approval_comment",
+      "type": "MULTI_LINE_TEXT",
+      "required": false,
+      "source": "Approver",
+      "editable_by": "Approver",
+      "purpose": "Final approval comment"
+    },
+    {
+      "field_name": "Reject Reason",
+      "field_code": "reject_reason",
+      "type": "MULTI_LINE_TEXT",
+      "required": false,
+      "source": "Approver / HR",
+      "editable_by": "Approver / HR",
+      "purpose": "Reason if rejected/returned"
+    },
+    {
+      "field_name": "Execution Status",
+      "field_code": "execution_status",
+      "type": "DROP_DOWN",
+      "required": true,
+      "options": [
+        "NOT_EXECUTED",
+        "EXECUTION_PENDING",
+        "EXECUTED",
+        "EXECUTION_ERROR",
+        "ALREADY_EXECUTED"
+      ],
+      "source": "System Handler",
+      "editable_by": "System",
+      "purpose": "Idempotent execution state"
+    },
+    {
+      "field_name": "Executed By",
+      "field_code": "executed_by",
+      "type": "USER_SELECT",
+      "required": false,
+      "source": "System Handler",
+      "editable_by": "System",
+      "purpose": "Service/Admin account executing change"
+    },
+    {
+      "field_name": "Executed Date",
+      "field_code": "executed_date",
+      "type": "DATETIME",
+      "required": false,
+      "source": "System Handler",
+      "editable_by": "System",
+      "purpose": "Execution timestamp"
+    },
+    {
+      "field_name": "Previous Assignment ID",
+      "field_code": "previous_assignment_id",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 792",
+      "editable_by": "System",
+      "purpose": "Closed historical assignment ID in App 792"
+    },
+    {
+      "field_name": "Created Assignment ID",
+      "field_code": "created_assignment_id",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "source": "App 792",
+      "editable_by": "System",
+      "purpose": "Newly created active assignment ID in App 792"
+    },
+    {
+      "field_name": "Execution Error",
+      "field_code": "execution_error",
+      "type": "MULTI_LINE_TEXT",
+      "required": false,
+      "source": "System Handler",
+      "editable_by": "System",
+      "purpose": "Diagnostic error log if execution fails"
+    }
+  ]
+}
