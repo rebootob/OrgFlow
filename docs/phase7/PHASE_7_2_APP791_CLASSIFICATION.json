@@ -1,0 +1,4727 @@
+[
+  {
+    "id": "525",
+    "code": "DIV-GS",
+    "type": "DEPARTMENT",
+    "title_th": "GIFU SEIKI Division",
+    "title_en": "GIFU SEIKI Division",
+    "is_active": "ACTIVE",
+    "classification": "CANONICAL_ORGANIZATION"
+  },
+  {
+    "id": "524",
+    "code": "DIV-ME",
+    "type": "DEPARTMENT",
+    "title_th": "Machinery & Engineering Division",
+    "title_en": "Machinery & Engineering Division",
+    "is_active": "ACTIVE",
+    "classification": "CANONICAL_ORGANIZATION"
+  },
+  {
+    "id": "523",
+    "code": "TTMET",
+    "type": "DEPARTMENT",
+    "title_th": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "title_en": "Toyota Tsusho M&E (Thailand) Co.,Ltd.",
+    "is_active": "ACTIVE",
+    "classification": "CANONICAL_ORGANIZATION"
+  },
+  {
+    "id": "522",
+    "code": "POS-271",
+    "type": "POSITION",
+    "title_th": "Mr.Panukorn Sathron",
+    "title_en": "MR.PANUKORN SATHRON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "521",
+    "code": "POS-270",
+    "type": "POSITION",
+    "title_th": "Mr.Anuphong Longnoi",
+    "title_en": "MR.ANUPHONG LONGNOI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "520",
+    "code": "POS-269",
+    "type": "POSITION",
+    "title_th": "Mr.Theeraphat Khiaosaart",
+    "title_en": "MR.THEERAPHAT KHIAOSAART",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "519",
+    "code": "POS-268",
+    "type": "POSITION",
+    "title_th": "Mr.Archawa Topuong",
+    "title_en": "MR.ARCHAWA TOPUONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "518",
+    "code": "POS-267",
+    "type": "POSITION",
+    "title_th": "Mr.Chetsada Rotthuk",
+    "title_en": "MR.CHETSADA ROTTHUK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "517",
+    "code": "POS-266",
+    "type": "POSITION",
+    "title_th": "Ms.Srichanok Saezee",
+    "title_en": "MS.SRICHANOK SAEZEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "516",
+    "code": "POS-265",
+    "type": "POSITION",
+    "title_th": "Mr.Keizo Nakae",
+    "title_en": "MR.KEIZO NAKAE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "515",
+    "code": "POS-264",
+    "type": "POSITION",
+    "title_th": "Mr.Watchara Khaosam-amg",
+    "title_en": "MR.WATCHARA KHAOSAM-AMG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "514",
+    "code": "POS-263",
+    "type": "POSITION",
+    "title_th": "Ms.Phattharanit  Pankhomkow",
+    "title_en": "MS.PHATTHARANIT PANKHOMKOW",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "513",
+    "code": "POS-262",
+    "type": "POSITION",
+    "title_th": "Ms.Supattra Saetiaw",
+    "title_en": "MS.SUPATTRA SAETIAW",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "512",
+    "code": "POS-261",
+    "type": "POSITION",
+    "title_th": "Mr.Chaiyuth  Sangputta",
+    "title_en": "MR.CHAIYUTH SANGPUTTA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "511",
+    "code": "POS-260",
+    "type": "POSITION",
+    "title_th": "Ms.Yanisa Laotoom",
+    "title_en": "MS.YANISA LAOTOOM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "510",
+    "code": "POS-259",
+    "type": "POSITION",
+    "title_th": "Ms.Patcharida Pramomgkit",
+    "title_en": "MS.PATCHARIDA PRAMOMGKIT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "509",
+    "code": "POS-258",
+    "type": "POSITION",
+    "title_th": "Mr.Teerapong Maingam",
+    "title_en": "MR.TEERAPONG MAINGAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "508",
+    "code": "POS-257",
+    "type": "POSITION",
+    "title_th": "Ms.Phitthayaporn Sakulyodmanee",
+    "title_en": "MS.PHITTHAYAPORN SAKULYODMANEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "507",
+    "code": "POS-256",
+    "type": "POSITION",
+    "title_th": "Mr.Osami Kondo",
+    "title_en": "MR.OSAMI KONDO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "506",
+    "code": "POS-255",
+    "type": "POSITION",
+    "title_th": "Ms.Pannipa  Boonpis",
+    "title_en": "MS.PANNIPA BOONPIS",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "505",
+    "code": "POS-254",
+    "type": "POSITION",
+    "title_th": "Ms.Kewalin Seesuksam",
+    "title_en": "MS.KEWALIN SEESUKSAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "504",
+    "code": "POS-253",
+    "type": "POSITION",
+    "title_th": "Ms.Nattha Malacham",
+    "title_en": "MS.NATTHA MALACHAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "503",
+    "code": "POS-252",
+    "type": "POSITION",
+    "title_th": "Mr.Tawatchai Thonkamson",
+    "title_en": "MR.TAWATCHAI THONKAMSON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "502",
+    "code": "POS-251",
+    "type": "POSITION",
+    "title_th": "Mr.Kitiphat Chumdee",
+    "title_en": "MR.KITIPHAT CHUMDEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "501",
+    "code": "POS-250",
+    "type": "POSITION",
+    "title_th": "Mr.Tattana Rungroj",
+    "title_en": "MR.TATTANA RUNGROJ",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "500",
+    "code": "POS-249",
+    "type": "POSITION",
+    "title_th": "Mr.Jirayu  Jariyaekkapas",
+    "title_en": "MR.JIRAYU JARIYAEKKAPAS",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "499",
+    "code": "POS-248",
+    "type": "POSITION",
+    "title_th": "Mr.Kiadtisak  Ketsirikun",
+    "title_en": "MR.KIADTISAK KETSIRIKUN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "498",
+    "code": "POS-247",
+    "type": "POSITION",
+    "title_th": "Mr.Tanabodee Khotprom",
+    "title_en": "MR.TANABODEE KHOTPROM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "497",
+    "code": "POS-246",
+    "type": "POSITION",
+    "title_th": "Mr.Korathak Yoying",
+    "title_en": "MR.KORATHAK YOYING",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "496",
+    "code": "POS-245",
+    "type": "POSITION",
+    "title_th": "Mr.Thanaphat Kaenchai",
+    "title_en": "MR.THANAPHAT KAENCHAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "495",
+    "code": "POS-244",
+    "type": "POSITION",
+    "title_th": "Ms.Wipharat Janthason",
+    "title_en": "MS.WIPHARAT JANTHASON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "494",
+    "code": "POS-243",
+    "type": "POSITION",
+    "title_th": "Mr.Jetsadaporn Plongkiang",
+    "title_en": "MR.JETSADAPORN PLONGKIANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "493",
+    "code": "POS-242",
+    "type": "POSITION",
+    "title_th": "Mr.Phithakchai  Pornphan",
+    "title_en": "MR.PHITHAKCHAI PORNPHAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "492",
+    "code": "POS-241",
+    "type": "POSITION",
+    "title_th": "Mr.Kazuhiro Hanamura",
+    "title_en": "MR.KAZUHIRO HANAMURA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "491",
+    "code": "POS-240",
+    "type": "POSITION",
+    "title_th": "Mr.Takayoshi  Uchida",
+    "title_en": "MR.TAKAYOSHI UCHIDA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "490",
+    "code": "POS-239",
+    "type": "POSITION",
+    "title_th": "Mr.Manoch  Injinda",
+    "title_en": "MR.MANOCH INJINDA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "489",
+    "code": "POS-238",
+    "type": "POSITION",
+    "title_th": "Mr.Prasertsak  Khanjaroen",
+    "title_en": "MR.PRASERTSAK KHANJAROEN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "488",
+    "code": "POS-237",
+    "type": "POSITION",
+    "title_th": "Mrs.Uthumporn  Thongsee",
+    "title_en": "MRS.UTHUMPORN THONGSEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "487",
+    "code": "POS-236",
+    "type": "POSITION",
+    "title_th": "Mr.Phanuwat  Rachalee",
+    "title_en": "MR.PHANUWAT RACHALEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "486",
+    "code": "POS-235",
+    "type": "POSITION",
+    "title_th": "Mr.Surawut  Kasasai",
+    "title_en": "MR.SURAWUT KASASAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "485",
+    "code": "POS-234",
+    "type": "POSITION",
+    "title_th": "Mr.Phadetkarn  Phukamkom",
+    "title_en": "MR.PHADETKARN PHUKAMKOM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "484",
+    "code": "POS-233",
+    "type": "POSITION",
+    "title_th": "Mr.Anurak  Tib-ud",
+    "title_en": "MR.ANURAK TIB-UD",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "483",
+    "code": "POS-232",
+    "type": "POSITION",
+    "title_th": "Mr.Anupong  Smantong",
+    "title_en": "MR.ANUPONG SMANTONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "482",
+    "code": "POS-231",
+    "type": "POSITION",
+    "title_th": "Mr.Soontorn  Arinpang",
+    "title_en": "MR.SOONTORN ARINPANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "481",
+    "code": "POS-230",
+    "type": "POSITION",
+    "title_th": "Mr.Aekkalak  Jaibut",
+    "title_en": "MR.AEKKALAK JAIBUT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "480",
+    "code": "POS-229",
+    "type": "POSITION",
+    "title_th": "Ms.Supuntip  Marukun",
+    "title_en": "MS.SUPUNTIP MARUKUN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "479",
+    "code": "POS-228",
+    "type": "POSITION",
+    "title_th": "Mr.Nopporn  Kongkasem",
+    "title_en": "MR.NOPPORN KONGKASEM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "478",
+    "code": "POS-227",
+    "type": "POSITION",
+    "title_th": "Mr.Teppantong  Boonyok",
+    "title_en": "MR.TEPPANTONG BOONYOK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "477",
+    "code": "POS-226",
+    "type": "POSITION",
+    "title_th": "Mr.Treenade Chindalert",
+    "title_en": "MR.TREENADE CHINDALERT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "476",
+    "code": "POS-225",
+    "type": "POSITION",
+    "title_th": "Mr.Songsak Photisarn",
+    "title_en": "MR.SONGSAK PHOTISARN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "475",
+    "code": "POS-224",
+    "type": "POSITION",
+    "title_th": "Ms.Patcharin  Thaicharoen",
+    "title_en": "MS.PATCHARIN THAICHAROEN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "474",
+    "code": "POS-223",
+    "type": "POSITION",
+    "title_th": "Mr.Rakkiaj  Nuampoommarin",
+    "title_en": "MR.RAKKIAJ NUAMPOOMMARIN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "473",
+    "code": "POS-222",
+    "type": "POSITION",
+    "title_th": "Ms.Sukanya  Buahombura",
+    "title_en": "MS.SUKANYA BUAHOMBURA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "472",
+    "code": "POS-221",
+    "type": "POSITION",
+    "title_th": "Mr.Nopadon  Kongkasame",
+    "title_en": "MR.NOPADON KONGKASAME",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "471",
+    "code": "POS-220",
+    "type": "POSITION",
+    "title_th": "Mrs.Kanjana  Takoengphon",
+    "title_en": "MRS.KANJANA TAKOENGPHON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "470",
+    "code": "POS-219",
+    "type": "POSITION",
+    "title_th": "Ms.Nuengruethai  Somjit",
+    "title_en": "MS.NUENGRUETHAI SOMJIT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "469",
+    "code": "POS-218",
+    "type": "POSITION",
+    "title_th": "Mr.Pichai  Panpia",
+    "title_en": "MR.PICHAI PANPIA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "468",
+    "code": "POS-217",
+    "type": "POSITION",
+    "title_th": "Mr.Teerapong  Lasom",
+    "title_en": "MR.TEERAPONG LASOM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "467",
+    "code": "POS-216",
+    "type": "POSITION",
+    "title_th": "Ms.Namfon  Paisancharoenmaitree",
+    "title_en": "MS.NAMFON PAISANCHAROENMAITREE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "466",
+    "code": "POS-215",
+    "type": "POSITION",
+    "title_th": "Ms.Piengtawan  Chanpitak",
+    "title_en": "MS.PIENGTAWAN CHANPITAK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "465",
+    "code": "POS-214",
+    "type": "POSITION",
+    "title_th": "Mr.Sakol  Senapol",
+    "title_en": "MR.SAKOL SENAPOL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "464",
+    "code": "POS-213",
+    "type": "POSITION",
+    "title_th": "Mr.Chongkol  Insom",
+    "title_en": "MR.CHONGKOL INSOM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "463",
+    "code": "POS-212",
+    "type": "POSITION",
+    "title_th": "Mr.Mongkol  Aongsaenkam",
+    "title_en": "MR.MONGKOL AONGSAENKAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "462",
+    "code": "POS-211",
+    "type": "POSITION",
+    "title_th": "Ms.Walaiporn  Chanpitak",
+    "title_en": "MS.WALAIPORN CHANPITAK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "461",
+    "code": "POS-210",
+    "type": "POSITION",
+    "title_th": "Ms.Chunkamol  Senajaroen",
+    "title_en": "MS.CHUNKAMOL SENAJAROEN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "460",
+    "code": "POS-209",
+    "type": "POSITION",
+    "title_th": "Ms.Wannapa  Laepong",
+    "title_en": "MS.WANNAPA LAEPONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "459",
+    "code": "POS-208",
+    "type": "POSITION",
+    "title_th": "Ms.Natta  Niphatthakosolsuk",
+    "title_en": "MS.NATTA NIPHATTHAKOSOLSUK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "458",
+    "code": "POS-207",
+    "type": "POSITION",
+    "title_th": "Ms.Phatcharaluk  Kompruan",
+    "title_en": "MS.PHATCHARALUK KOMPRUAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "457",
+    "code": "POS-206",
+    "type": "POSITION",
+    "title_th": "Ms.Mudsaya  Sangkla",
+    "title_en": "MS.MUDSAYA SANGKLA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "456",
+    "code": "POS-205",
+    "type": "POSITION",
+    "title_th": "Mr.Thiti  Saenkhot",
+    "title_en": "MR.THITI SAENKHOT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "455",
+    "code": "POS-204",
+    "type": "POSITION",
+    "title_th": "Mr.Prompan  Kerdsawat",
+    "title_en": "MR.PROMPAN KERDSAWAT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "454",
+    "code": "POS-203",
+    "type": "POSITION",
+    "title_th": "Ms.Nadda  Srimontree",
+    "title_en": "MS.NADDA SRIMONTREE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "453",
+    "code": "POS-202",
+    "type": "POSITION",
+    "title_th": "Mr.Amnuai  Sukphram",
+    "title_en": "MR.AMNUAI SUKPHRAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "452",
+    "code": "POS-201",
+    "type": "POSITION",
+    "title_th": "Mr.Sathit  Krasae",
+    "title_en": "MR.SATHIT KRASAE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "451",
+    "code": "POS-200",
+    "type": "POSITION",
+    "title_th": "Ms.Suphaphon  Chanwiset",
+    "title_en": "MS.SUPHAPHON CHANWISET",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "450",
+    "code": "POS-199",
+    "type": "POSITION",
+    "title_th": "Mr.Pichai  Wongruen",
+    "title_en": "MR.PICHAI WONGRUEN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "449",
+    "code": "POS-198",
+    "type": "POSITION",
+    "title_th": "Mr.Theerawat  Khosarakhoon",
+    "title_en": "MR.THEERAWAT KHOSARAKHOON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "448",
+    "code": "POS-197",
+    "type": "POSITION",
+    "title_th": "Ms.Naphat   Ainthanon",
+    "title_en": "MS.NAPHAT AINTHANON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "447",
+    "code": "POS-196",
+    "type": "POSITION",
+    "title_th": "Mr.Watcharin  Thadtheang",
+    "title_en": "MR.WATCHARIN THADTHEANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "446",
+    "code": "POS-195",
+    "type": "POSITION",
+    "title_th": "Mr.Chockchai  Chaoprajuk",
+    "title_en": "MR.CHOCKCHAI CHAOPRAJUK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "445",
+    "code": "POS-194",
+    "type": "POSITION",
+    "title_th": "Mr.Worasak  Benmat",
+    "title_en": "MR.WORASAK BENMAT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "444",
+    "code": "POS-193",
+    "type": "POSITION",
+    "title_th": "Mr.Suwinai  Arriauea",
+    "title_en": "MR.SUWINAI ARRIAUEA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "443",
+    "code": "POS-192",
+    "type": "POSITION",
+    "title_th": "Ms.Piyaphorn  Kaewdee",
+    "title_en": "MS.PIYAPHORN KAEWDEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "442",
+    "code": "POS-191",
+    "type": "POSITION",
+    "title_th": "Mr.SongsatPhoothong",
+    "title_en": "MR.SONGSATPHOOTHONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "441",
+    "code": "POS-190",
+    "type": "POSITION",
+    "title_th": "Mr.Apisit  Sukjarean",
+    "title_en": "MR.APISIT SUKJAREAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "440",
+    "code": "POS-189",
+    "type": "POSITION",
+    "title_th": "Mr.Watcharaphong  Chaemsai",
+    "title_en": "MR.WATCHARAPHONG CHAEMSAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "439",
+    "code": "POS-188",
+    "type": "POSITION",
+    "title_th": "Ms.Supaporn  Boonlert",
+    "title_en": "MS.SUPAPORN BOONLERT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "438",
+    "code": "POS-187",
+    "type": "POSITION",
+    "title_th": "Ms.Warissara  Jaihan",
+    "title_en": "MS.WARISSARA JAIHAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "437",
+    "code": "POS-186",
+    "type": "POSITION",
+    "title_th": "Mr.Kitti  Chaikla",
+    "title_en": "MR.KITTI CHAIKLA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "436",
+    "code": "POS-185",
+    "type": "POSITION",
+    "title_th": "Mr.Adisorn  Srikaewsai",
+    "title_en": "MR.ADISORN SRIKAEWSAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "435",
+    "code": "POS-184",
+    "type": "POSITION",
+    "title_th": "Mr.Kriangkai  Chuenmee",
+    "title_en": "MR.KRIANGKAI CHUENMEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "434",
+    "code": "POS-183",
+    "type": "POSITION",
+    "title_th": "Ms.Chananthorn  Kobjit",
+    "title_en": "MS.CHANANTHORN KOBJIT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "433",
+    "code": "POS-182",
+    "type": "POSITION",
+    "title_th": "Mr.Surathin  Phoonsila",
+    "title_en": "MR.SURATHIN PHOONSILA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "432",
+    "code": "POS-181",
+    "type": "POSITION",
+    "title_th": "Mr.Pongsakorn  Chaithep",
+    "title_en": "MR.PONGSAKORN CHAITHEP",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "431",
+    "code": "POS-180",
+    "type": "POSITION",
+    "title_th": "Mr.Thara  Thongsee",
+    "title_en": "MR.THARA THONGSEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "430",
+    "code": "POS-179",
+    "type": "POSITION",
+    "title_th": "Mrs.Nayada  Sermsiri",
+    "title_en": "MRS.NAYADA SERMSIRI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "429",
+    "code": "POS-178",
+    "type": "POSITION",
+    "title_th": "Mr.Tanapol  Saibua",
+    "title_en": "MR.TANAPOL SAIBUA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "428",
+    "code": "POS-177",
+    "type": "POSITION",
+    "title_th": "Mr.Thawatchai  Paometwareetorn",
+    "title_en": "MR.THAWATCHAI PAOMETWAREETORN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "427",
+    "code": "POS-176",
+    "type": "POSITION",
+    "title_th": "Mr.Sommai  Junket",
+    "title_en": "MR.SOMMAI JUNKET",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "426",
+    "code": "POS-175",
+    "type": "POSITION",
+    "title_th": "Mr.Sakkarin  Kaewtib",
+    "title_en": "MR.SAKKARIN KAEWTIB",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "425",
+    "code": "POS-174",
+    "type": "POSITION",
+    "title_th": "Ms.Thitaphat  Sutthi",
+    "title_en": "MS.THITAPHAT SUTTHI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "424",
+    "code": "POS-173",
+    "type": "POSITION",
+    "title_th": "Ms.Wanida  Nontaphan",
+    "title_en": "MS.WANIDA NONTAPHAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "423",
+    "code": "POS-172",
+    "type": "POSITION",
+    "title_th": "Mr.Phattapon  Fuekkhwamdee",
+    "title_en": "MR.PHATTAPON FUEKKHWAMDEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "422",
+    "code": "POS-171",
+    "type": "POSITION",
+    "title_th": "Ms.Phichaya  Khwanchuay",
+    "title_en": "MS.PHICHAYA KHWANCHUAY",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "421",
+    "code": "POS-170",
+    "type": "POSITION",
+    "title_th": "Mr.Akarapong  Khao-ngam",
+    "title_en": "MR.AKARAPONG KHAO-NGAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "420",
+    "code": "POS-169",
+    "type": "POSITION",
+    "title_th": "Mrs.Amporn  Choosawat",
+    "title_en": "MRS.AMPORN CHOOSAWAT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "419",
+    "code": "POS-168",
+    "type": "POSITION",
+    "title_th": "Mr.Pitinon  Buntutrakool",
+    "title_en": "MR.PITINON BUNTUTRAKOOL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "418",
+    "code": "POS-167",
+    "type": "POSITION",
+    "title_th": "Ms.Sukanya  Maneechot",
+    "title_en": "MS.SUKANYA MANEECHOT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "417",
+    "code": "POS-166",
+    "type": "POSITION",
+    "title_th": "Mr.Amnat  Khongyai",
+    "title_en": "MR.AMNAT KHONGYAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "416",
+    "code": "POS-165",
+    "type": "POSITION",
+    "title_th": "Mr.Phubodin  Mukdadilok",
+    "title_en": "MR.PHUBODIN MUKDADILOK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "415",
+    "code": "POS-164",
+    "type": "POSITION",
+    "title_th": "Mr.Kaweewut  Tangpiboontham",
+    "title_en": "MR.KAWEEWUT TANGPIBOONTHAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "414",
+    "code": "POS-163",
+    "type": "POSITION",
+    "title_th": "Mr.Nobpakorn  Namang",
+    "title_en": "MR.NOBPAKORN NAMANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "413",
+    "code": "POS-162",
+    "type": "POSITION",
+    "title_th": "Mr.Chanatip Kusua",
+    "title_en": "MR.CHANATIP KUSUA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "412",
+    "code": "POS-161",
+    "type": "POSITION",
+    "title_th": "Ms. Rattanaphorn  Phichetchotiwong (TMF1)",
+    "title_en": "MS. RATTANAPHORN PHICHETCHOTIWONG (TMF1)",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "411",
+    "code": "POS-160",
+    "type": "POSITION",
+    "title_th": "Ms.Wilailak Jansri (TMF1)",
+    "title_en": "MS.WILAILAK JANSRI (TMF1)",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "410",
+    "code": "POS-159",
+    "type": "POSITION",
+    "title_th": "Ms.Jutarat  Sucher (TMF2)",
+    "title_en": "MS.JUTARAT SUCHER (TMF2)",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "409",
+    "code": "POS-158",
+    "type": "POSITION",
+    "title_th": "Mr.Yosuke Fujita",
+    "title_en": "MR.YOSUKE FUJITA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "408",
+    "code": "POS-157",
+    "type": "POSITION",
+    "title_th": "Mr.Anuwat Boonsodakorn",
+    "title_en": "MR.ANUWAT BOONSODAKORN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "407",
+    "code": "POS-156",
+    "type": "POSITION",
+    "title_th": "Mr.Akarawit  Prungkiat",
+    "title_en": "MR.AKARAWIT PRUNGKIAT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "406",
+    "code": "POS-155",
+    "type": "POSITION",
+    "title_th": "Mr.Toshikazu  Obata",
+    "title_en": "MR.TOSHIKAZU OBATA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "405",
+    "code": "POS-154",
+    "type": "POSITION",
+    "title_th": "Ms.Siriwimon Chuphol",
+    "title_en": "MS.SIRIWIMON CHUPHOL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "404",
+    "code": "POS-153",
+    "type": "POSITION",
+    "title_th": "Mr.Anochai  Wongprayoonsri",
+    "title_en": "MR.ANOCHAI WONGPRAYOONSRI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "403",
+    "code": "POS-152",
+    "type": "POSITION",
+    "title_th": "Ms.Suwimon Kaenchan",
+    "title_en": "MS.SUWIMON KAENCHAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "402",
+    "code": "POS-151",
+    "type": "POSITION",
+    "title_th": "Mr.Shinichiro  Sato",
+    "title_en": "MR.SHINICHIRO SATO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "401",
+    "code": "POS-150",
+    "type": "POSITION",
+    "title_th": "Ms.Gallaya  Meeta",
+    "title_en": "MS.GALLAYA MEETA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "400",
+    "code": "POS-149",
+    "type": "POSITION",
+    "title_th": "Ms.Rinradee  Suwan",
+    "title_en": "MS.RINRADEE SUWAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "399",
+    "code": "POS-148",
+    "type": "POSITION",
+    "title_th": "Mr.Yashikazu  Yamamoto",
+    "title_en": "MR.YASHIKAZU YAMAMOTO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "398",
+    "code": "POS-147",
+    "type": "POSITION",
+    "title_th": "Mr.Anucha Thammawong",
+    "title_en": "MR.ANUCHA THAMMAWONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "397",
+    "code": "POS-146",
+    "type": "POSITION",
+    "title_th": "Mr.Masato Ueno",
+    "title_en": "MR.MASATO UENO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "396",
+    "code": "POS-145",
+    "type": "POSITION",
+    "title_th": "Mr.Samart  Sonsupap",
+    "title_en": "MR.SAMART SONSUPAP",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "395",
+    "code": "POS-144",
+    "type": "POSITION",
+    "title_th": "Ms.Radeemas  Juathai",
+    "title_en": "MS.RADEEMAS JUATHAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "394",
+    "code": "POS-143",
+    "type": "POSITION",
+    "title_th": "Ms.Kaewkanyapatch  Worrapaphadakul",
+    "title_en": "MS.KAEWKANYAPATCH WORRAPAPHADAKUL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "393",
+    "code": "POS-142",
+    "type": "POSITION",
+    "title_th": "Ms.Suttida  Tugkinapong",
+    "title_en": "MS.SUTTIDA TUGKINAPONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "392",
+    "code": "POS-141",
+    "type": "POSITION",
+    "title_th": "Ms.Jirawat  Srisawat (TMF3)",
+    "title_en": "MS.JIRAWAT SRISAWAT (TMF3)",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "391",
+    "code": "POS-140",
+    "type": "POSITION",
+    "title_th": "Ms.Jirawat  Srisawat (TMF2)",
+    "title_en": "MS.JIRAWAT SRISAWAT (TMF2)",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "390",
+    "code": "POS-139",
+    "type": "POSITION",
+    "title_th": "Akinobu  Kito",
+    "title_en": "AKINOBU KITO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "389",
+    "code": "POS-138",
+    "type": "POSITION",
+    "title_th": "Ms.Hasuka  Kimura",
+    "title_en": "MS.HASUKA KIMURA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "388",
+    "code": "POS-137",
+    "type": "POSITION",
+    "title_th": "Mr.Suwat WIsetsing",
+    "title_en": "MR.SUWAT WISETSING",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "387",
+    "code": "POS-136",
+    "type": "POSITION",
+    "title_th": "Ms.Kamonwan  Khamsri",
+    "title_en": "MS.KAMONWAN KHAMSRI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "386",
+    "code": "POS-135",
+    "type": "POSITION",
+    "title_th": "Ms.Aonanong  Dumnuy",
+    "title_en": "MS.AONANONG DUMNUY",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "385",
+    "code": "POS-134",
+    "type": "POSITION",
+    "title_th": "Mr.Chitchaiya  Thongnak",
+    "title_en": "MR.CHITCHAIYA THONGNAK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "384",
+    "code": "POS-133",
+    "type": "POSITION",
+    "title_th": "Mr.Yasuhiro  Tamura",
+    "title_en": "MR.YASUHIRO TAMURA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "383",
+    "code": "POS-132",
+    "type": "POSITION",
+    "title_th": "Mr.Takayanagi",
+    "title_en": "MR.TAKAYANAGI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "382",
+    "code": "POS-131",
+    "type": "POSITION",
+    "title_th": "Mr.Nut  Promprasit",
+    "title_en": "MR.NUT PROMPRASIT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "381",
+    "code": "POS-130",
+    "type": "POSITION",
+    "title_th": "Thaweesak",
+    "title_en": "THAWEESAK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "380",
+    "code": "POS-129",
+    "type": "POSITION",
+    "title_th": "Mr. Arut Jindaluang",
+    "title_en": "MR. ARUT JINDALUANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "379",
+    "code": "POS-128",
+    "type": "POSITION",
+    "title_th": "Mr. Chanatip Kusua",
+    "title_en": "MR. CHANATIP KUSUA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "378",
+    "code": "POS-127",
+    "type": "POSITION",
+    "title_th": "Mr.Natthawut Nakchonlathi",
+    "title_en": "MR.NATTHAWUT NAKCHONLATHI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "377",
+    "code": "POS-126",
+    "type": "POSITION",
+    "title_th": "Ms.Yuwarat Bunluekiat",
+    "title_en": "MS.YUWARAT BUNLUEKIAT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "376",
+    "code": "POS-125",
+    "type": "POSITION",
+    "title_th": "Ms.Pattama Somngam",
+    "title_en": "MS.PATTAMA SOMNGAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "375",
+    "code": "POS-124",
+    "type": "POSITION",
+    "title_th": "Mr.Prajak Malasri",
+    "title_en": "MR.PRAJAK MALASRI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "374",
+    "code": "POS-123",
+    "type": "POSITION",
+    "title_th": "Ms.Chatrawee  Phirathawisrikul",
+    "title_en": "MS.CHATRAWEE PHIRATHAWISRIKUL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "373",
+    "code": "POS-122",
+    "type": "POSITION",
+    "title_th": "Mr.Piyathana Yindeesuk",
+    "title_en": "MR.PIYATHANA YINDEESUK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "372",
+    "code": "POS-121",
+    "type": "POSITION",
+    "title_th": "Mr.Kritsada  Kumda",
+    "title_en": "MR.KRITSADA KUMDA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "371",
+    "code": "POS-120",
+    "type": "POSITION",
+    "title_th": "Mr.Narakorn  Mingmuang",
+    "title_en": "MR.NARAKORN MINGMUANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "370",
+    "code": "POS-119",
+    "type": "POSITION",
+    "title_th": "Ms.Thantanada  Saehea",
+    "title_en": "MS.THANTANADA SAEHEA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "369",
+    "code": "POS-118",
+    "type": "POSITION",
+    "title_th": "Ms.Wandee Lekcharoen",
+    "title_en": "MS.WANDEE LEKCHAROEN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "368",
+    "code": "POS-117",
+    "type": "POSITION",
+    "title_th": "Mrs.Nirada  Thangwichitkul",
+    "title_en": "MRS.NIRADA THANGWICHITKUL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "367",
+    "code": "POS-116",
+    "type": "POSITION",
+    "title_th": "Mr.Thanut Muangkot",
+    "title_en": "MR.THANUT MUANGKOT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "366",
+    "code": "POS-115",
+    "type": "POSITION",
+    "title_th": "Ms.Jongjit  Soda",
+    "title_en": "MS.JONGJIT SODA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "365",
+    "code": "POS-114",
+    "type": "POSITION",
+    "title_th": "Ms.Narisara Jantala",
+    "title_en": "MS.NARISARA JANTALA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "364",
+    "code": "POS-113",
+    "type": "POSITION",
+    "title_th": "Ms.Saowanee Netpipop",
+    "title_en": "MS.SAOWANEE NETPIPOP",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "363",
+    "code": "POS-112",
+    "type": "POSITION",
+    "title_th": "Ms.Darat Pornchuenchuwong",
+    "title_en": "MS.DARAT PORNCHUENCHUWONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "362",
+    "code": "POS-111",
+    "type": "POSITION",
+    "title_th": "Ms.Wilailak Jansri",
+    "title_en": "MS.WILAILAK JANSRI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "361",
+    "code": "POS-110",
+    "type": "POSITION",
+    "title_th": "Ms.Wanichawan Budda",
+    "title_en": "MS.WANICHAWAN BUDDA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "360",
+    "code": "POS-109",
+    "type": "POSITION",
+    "title_th": "Ms.Salisa Rukkanngan",
+    "title_en": "MS.SALISA RUKKANNGAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "359",
+    "code": "POS-108",
+    "type": "POSITION",
+    "title_th": "Ms.Voraruethai Wongcharee",
+    "title_en": "MS.VORARUETHAI WONGCHAREE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "358",
+    "code": "POS-107",
+    "type": "POSITION",
+    "title_th": "Mr.Somsak Seubjan",
+    "title_en": "MR.SOMSAK SEUBJAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "357",
+    "code": "POS-106",
+    "type": "POSITION",
+    "title_th": "Mr.Noppanan  Dechkhan",
+    "title_en": "MR.NOPPANAN DECHKHAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "356",
+    "code": "POS-105",
+    "type": "POSITION",
+    "title_th": "Ms.Supparat  Arworn",
+    "title_en": "MS.SUPPARAT ARWORN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "355",
+    "code": "POS-104",
+    "type": "POSITION",
+    "title_th": "Ms.Juthaporn  Wongchuensuntorn",
+    "title_en": "MS.JUTHAPORN WONGCHUENSUNTORN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "354",
+    "code": "POS-103",
+    "type": "POSITION",
+    "title_th": "Mrs.Araya  Hirunpunthaporn",
+    "title_en": "MRS.ARAYA HIRUNPUNTHAPORN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "353",
+    "code": "POS-102",
+    "type": "POSITION",
+    "title_th": "Ms.Somrudee  Pannoo",
+    "title_en": "MS.SOMRUDEE PANNOO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "352",
+    "code": "POS-101",
+    "type": "POSITION",
+    "title_th": "Ms.Vassana Maenthong",
+    "title_en": "MS.VASSANA MAENTHONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "351",
+    "code": "POS-100",
+    "type": "POSITION",
+    "title_th": "Ms.Kamonwan  Chaisukee",
+    "title_en": "MS.KAMONWAN CHAISUKEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "350",
+    "code": "POS-099",
+    "type": "POSITION",
+    "title_th": "Mr.Pitchayadol  Phongsart",
+    "title_en": "MR.PITCHAYADOL PHONGSART",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "349",
+    "code": "POS-098",
+    "type": "POSITION",
+    "title_th": "Mr.Worapat Kumsingha",
+    "title_en": "MR.WORAPAT KUMSINGHA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "348",
+    "code": "POS-097",
+    "type": "POSITION",
+    "title_th": "Mr.Athasit  Thongtua",
+    "title_en": "MR.ATHASIT THONGTUA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "347",
+    "code": "POS-096",
+    "type": "POSITION",
+    "title_th": "Ms.Rossarin  Lerdwatchapon",
+    "title_en": "MS.ROSSARIN LERDWATCHAPON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "346",
+    "code": "POS-095",
+    "type": "POSITION",
+    "title_th": "Ms.Jirawat  Srisawat",
+    "title_en": "MS.JIRAWAT SRISAWAT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "345",
+    "code": "POS-094",
+    "type": "POSITION",
+    "title_th": "Mr.Satit  Saraisalab",
+    "title_en": "MR.SATIT SARAISALAB",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "344",
+    "code": "POS-093",
+    "type": "POSITION",
+    "title_th": "Ms.Dujrudee Aroonjit",
+    "title_en": "MS.DUJRUDEE AROONJIT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "343",
+    "code": "POS-092",
+    "type": "POSITION",
+    "title_th": "Mr.Somphort  Limbunjerd",
+    "title_en": "MR.SOMPHORT LIMBUNJERD",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "342",
+    "code": "POS-091",
+    "type": "POSITION",
+    "title_th": "Mr.Nuttanun  Lenglerdphol",
+    "title_en": "MR.NUTTANUN LENGLERDPHOL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "341",
+    "code": "POS-090",
+    "type": "POSITION",
+    "title_th": "Mr.Surat Luadlai",
+    "title_en": "MR.SURAT LUADLAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "340",
+    "code": "POS-089",
+    "type": "POSITION",
+    "title_th": "Mr.Krisana Laohajirapan",
+    "title_en": "MR.KRISANA LAOHAJIRAPAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "339",
+    "code": "POS-088",
+    "type": "POSITION",
+    "title_th": "Ms.Penprapa  Muangklang",
+    "title_en": "MS.PENPRAPA MUANGKLANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "338",
+    "code": "POS-087",
+    "type": "POSITION",
+    "title_th": "Mr.Pattara Rattanakornkaew",
+    "title_en": "MR.PATTARA RATTANAKORNKAEW",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "337",
+    "code": "POS-086",
+    "type": "POSITION",
+    "title_th": "Mr.Narong Kaewsap",
+    "title_en": "MR.NARONG KAEWSAP",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "336",
+    "code": "POS-085",
+    "type": "POSITION",
+    "title_th": "Ms.Chayanoot  Pengpinit",
+    "title_en": "MS.CHAYANOOT PENGPINIT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "335",
+    "code": "POS-084",
+    "type": "POSITION",
+    "title_th": "Mrs.Pattananrat Ruangteang",
+    "title_en": "MRS.PATTANANRAT RUANGTEANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "334",
+    "code": "POS-083",
+    "type": "POSITION",
+    "title_th": "Mr.Akarapoom Chaipet",
+    "title_en": "MR.AKARAPOOM CHAIPET",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "333",
+    "code": "POS-082",
+    "type": "POSITION",
+    "title_th": "Mr.Wiched Pratumpap",
+    "title_en": "MR.WICHED PRATUMPAP",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "332",
+    "code": "POS-081",
+    "type": "POSITION",
+    "title_th": "Mr.Vitoon Sukvisuttichot",
+    "title_en": "MR.VITOON SUKVISUTTICHOT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "331",
+    "code": "POS-080",
+    "type": "POSITION",
+    "title_th": "Mr.Nattapol Kosolkitiwong",
+    "title_en": "MR.NATTAPOL KOSOLKITIWONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "330",
+    "code": "POS-079",
+    "type": "POSITION",
+    "title_th": "Ms.Chuleeporn Mainkool",
+    "title_en": "MS.CHULEEPORN MAINKOOL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "329",
+    "code": "POS-078",
+    "type": "POSITION",
+    "title_th": "Ms.Hatairat Srikulwong",
+    "title_en": "MS.HATAIRAT SRIKULWONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "328",
+    "code": "POS-077",
+    "type": "POSITION",
+    "title_th": "Mr.Keerati Wannaboot",
+    "title_en": "MR.KEERATI WANNABOOT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "327",
+    "code": "POS-076",
+    "type": "POSITION",
+    "title_th": "Ms.Nattida Thongwises",
+    "title_en": "MS.NATTIDA THONGWISES",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "326",
+    "code": "POS-075",
+    "type": "POSITION",
+    "title_th": "Mr.Sarunyoo Rattanasuwan",
+    "title_en": "MR.SARUNYOO RATTANASUWAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "325",
+    "code": "POS-074",
+    "type": "POSITION",
+    "title_th": "Mr.Pongpat Srikhote",
+    "title_en": "MR.PONGPAT SRIKHOTE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "324",
+    "code": "POS-073",
+    "type": "POSITION",
+    "title_th": "Ms. Phitchakan Ongsawat",
+    "title_en": "MS. PHITCHAKAN ONGSAWAT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "323",
+    "code": "POS-072",
+    "type": "POSITION",
+    "title_th": "Mr.Suthon  Sonsupap",
+    "title_en": "MR.SUTHON SONSUPAP",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "322",
+    "code": "POS-071",
+    "type": "POSITION",
+    "title_th": "Ms.Papatchaya Thavornrinnapong",
+    "title_en": "MS.PAPATCHAYA THAVORNRINNAPONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "321",
+    "code": "POS-070",
+    "type": "POSITION",
+    "title_th": "Mr.Sorasit  Srisoodchai",
+    "title_en": "MR.SORASIT SRISOODCHAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "320",
+    "code": "POS-069",
+    "type": "POSITION",
+    "title_th": "Mr.Nattawud  Samerwong",
+    "title_en": "MR.NATTAWUD SAMERWONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "319",
+    "code": "POS-068",
+    "type": "POSITION",
+    "title_th": "Mr.Jakkrit  Paenoi",
+    "title_en": "MR.JAKKRIT PAENOI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "318",
+    "code": "POS-067",
+    "type": "POSITION",
+    "title_th": "Mr.Peranut  Hanpratum",
+    "title_en": "MR.PERANUT HANPRATUM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "317",
+    "code": "POS-066",
+    "type": "POSITION",
+    "title_th": "Ms.Suthada  Chaimon",
+    "title_en": "MS.SUTHADA CHAIMON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "316",
+    "code": "POS-065",
+    "type": "POSITION",
+    "title_th": "Mr.Pawee  Homlirdnalin",
+    "title_en": "MR.PAWEE HOMLIRDNALIN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "315",
+    "code": "POS-064",
+    "type": "POSITION",
+    "title_th": "Ms.Warathan  Samart",
+    "title_en": "MS.WARATHAN SAMART",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "314",
+    "code": "POS-063",
+    "type": "POSITION",
+    "title_th": "Ms.Kankanit  Nimnoi",
+    "title_en": "MS.KANKANIT NIMNOI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "313",
+    "code": "POS-062",
+    "type": "POSITION",
+    "title_th": "Ms.Laksami  Kaewsringam",
+    "title_en": "MS.LAKSAMI KAEWSRINGAM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "312",
+    "code": "POS-061",
+    "type": "POSITION",
+    "title_th": "Mr.Prawes  Panyaapiwattana",
+    "title_en": "MR.PRAWES PANYAAPIWATTANA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "311",
+    "code": "POS-060",
+    "type": "POSITION",
+    "title_th": "Ms.Nittaya  Homthong",
+    "title_en": "MS.NITTAYA HOMTHONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "310",
+    "code": "POS-059",
+    "type": "POSITION",
+    "title_th": "Mr.Nattapon  Puttasee",
+    "title_en": "MR.NATTAPON PUTTASEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "309",
+    "code": "POS-058",
+    "type": "POSITION",
+    "title_th": "Ms.Sopida  Khamlarn",
+    "title_en": "MS.SOPIDA KHAMLARN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "308",
+    "code": "POS-057",
+    "type": "POSITION",
+    "title_th": "Mr.Pongsakorn  Phopimon",
+    "title_en": "MR.PONGSAKORN PHOPIMON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "307",
+    "code": "POS-056",
+    "type": "POSITION",
+    "title_th": "Mr.Natthawut  Kaewkangwan",
+    "title_en": "MR.NATTHAWUT KAEWKANGWAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "306",
+    "code": "POS-055",
+    "type": "POSITION",
+    "title_th": "Ms.Jutarat  Sucher",
+    "title_en": "MS.JUTARAT SUCHER",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "305",
+    "code": "POS-054",
+    "type": "POSITION",
+    "title_th": "Mr.Jirayusawat  Prasom",
+    "title_en": "MR.JIRAYUSAWAT PRASOM",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "304",
+    "code": "POS-053",
+    "type": "POSITION",
+    "title_th": "Mr.Sira  Sowanna",
+    "title_en": "MR.SIRA SOWANNA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "303",
+    "code": "POS-052",
+    "type": "POSITION",
+    "title_th": "Mr.Theerapong  Prasan",
+    "title_en": "MR.THEERAPONG PRASAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "302",
+    "code": "POS-051",
+    "type": "POSITION",
+    "title_th": "Mr.Mikio Kato",
+    "title_en": "MR.MIKIO KATO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "301",
+    "code": "POS-050",
+    "type": "POSITION",
+    "title_th": "Mr.Kunihiko Kuroiwa",
+    "title_en": "MR.KUNIHIKO KUROIWA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "300",
+    "code": "POS-049",
+    "type": "POSITION",
+    "title_th": "Mrs.Utsugi Rina",
+    "title_en": "MRS.UTSUGI RINA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "299",
+    "code": "POS-048",
+    "type": "POSITION",
+    "title_th": "Mr.Kazutsugu Sakakima",
+    "title_en": "MR.KAZUTSUGU SAKAKIMA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "298",
+    "code": "POS-047",
+    "type": "POSITION",
+    "title_th": "Mr.Takuro",
+    "title_en": "MR.TAKURO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "297",
+    "code": "POS-046",
+    "type": "POSITION",
+    "title_th": "Mr.Masahito Azumi",
+    "title_en": "MR.MASAHITO AZUMI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "296",
+    "code": "POS-045",
+    "type": "POSITION",
+    "title_th": "Mr.Pokpong  Wanichsujit",
+    "title_en": "MR.POKPONG WANICHSUJIT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "295",
+    "code": "POS-044",
+    "type": "POSITION",
+    "title_th": "Mr.Hisashi  Nagase",
+    "title_en": "MR.HISASHI NAGASE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "294",
+    "code": "POS-043",
+    "type": "POSITION",
+    "title_th": "Mr.Tomoaki  Shirai",
+    "title_en": "MR.TOMOAKI SHIRAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "293",
+    "code": "POS-042",
+    "type": "POSITION",
+    "title_th": "Mr.Voraprus  Muangmingsook",
+    "title_en": "MR.VORAPRUS MUANGMINGSOOK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "292",
+    "code": "POS-041",
+    "type": "POSITION",
+    "title_th": "Mr. Chisanupong  Kamolchaianan",
+    "title_en": "MR. CHISANUPONG KAMOLCHAIANAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "291",
+    "code": "POS-040",
+    "type": "POSITION",
+    "title_th": "Mr.Munenobu  Sato",
+    "title_en": "MR.MUNENOBU SATO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "290",
+    "code": "POS-039",
+    "type": "POSITION",
+    "title_th": "Mr.Warut  Asawatreratnakul",
+    "title_en": "MR.WARUT ASAWATRERATNAKUL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "289",
+    "code": "POS-038",
+    "type": "POSITION",
+    "title_th": "Mr.Songkran  Khannok",
+    "title_en": "MR.SONGKRAN KHANNOK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "288",
+    "code": "POS-037",
+    "type": "POSITION",
+    "title_th": "Mr.Sakchai  Phanthuri",
+    "title_en": "MR.SAKCHAI PHANTHURI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "287",
+    "code": "POS-036",
+    "type": "POSITION",
+    "title_th": "Mr.Suthas  Morthai",
+    "title_en": "MR.SUTHAS MORTHAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "286",
+    "code": "POS-035",
+    "type": "POSITION",
+    "title_th": "Mr.Mitsukazu Imoto",
+    "title_en": "MR.MITSUKAZU IMOTO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "285",
+    "code": "POS-034",
+    "type": "POSITION",
+    "title_th": "Mr.Weerakul  Charoenkul",
+    "title_en": "MR.WEERAKUL CHAROENKUL",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "284",
+    "code": "POS-033",
+    "type": "POSITION",
+    "title_th": "Mr.Gritchai  Somphonkrang",
+    "title_en": "MR.GRITCHAI SOMPHONKRANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "283",
+    "code": "POS-032",
+    "type": "POSITION",
+    "title_th": "Mr.Makkaphop  Khumsit",
+    "title_en": "MR.MAKKAPHOP KHUMSIT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "282",
+    "code": "POS-031",
+    "type": "POSITION",
+    "title_th": "Ms.Priyanat  Sanguansuk",
+    "title_en": "MS.PRIYANAT SANGUANSUK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "281",
+    "code": "POS-030",
+    "type": "POSITION",
+    "title_th": "Mr.Takeshi  Ashizawa",
+    "title_en": "MR.TAKESHI ASHIZAWA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "280",
+    "code": "POS-029",
+    "type": "POSITION",
+    "title_th": "Ms. Ausanisa Phatinawin",
+    "title_en": "MS. AUSANISA PHATINAWIN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "279",
+    "code": "POS-028",
+    "type": "POSITION",
+    "title_th": "Mr.Ronnachai  Dokduan",
+    "title_en": "MR.RONNACHAI DOKDUAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "278",
+    "code": "POS-027",
+    "type": "POSITION",
+    "title_th": "Mr.Supanat  Tiansuwan",
+    "title_en": "MR.SUPANAT TIANSUWAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "277",
+    "code": "POS-026",
+    "type": "POSITION",
+    "title_th": "Ms.Penpichar  Hutachutha",
+    "title_en": "MS.PENPICHAR HUTACHUTHA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "276",
+    "code": "POS-025",
+    "type": "POSITION",
+    "title_th": "Mr.Keisuke  Shigeta",
+    "title_en": "MR.KEISUKE SHIGETA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "275",
+    "code": "POS-024",
+    "type": "POSITION",
+    "title_th": "Mr.Wicha  Sarnsawek",
+    "title_en": "MR.WICHA SARNSAWEK",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "274",
+    "code": "POS-023",
+    "type": "POSITION",
+    "title_th": "Mr.Tadashi  Onuki",
+    "title_en": "MR.TADASHI ONUKI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "273",
+    "code": "POS-022",
+    "type": "POSITION",
+    "title_th": "Mr.Itsara  Kongtawee",
+    "title_en": "MR.ITSARA KONGTAWEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "272",
+    "code": "POS-021",
+    "type": "POSITION",
+    "title_th": "Mr.Patipon  Poungjun",
+    "title_en": "MR.PATIPON POUNGJUN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "271",
+    "code": "POS-020",
+    "type": "POSITION",
+    "title_th": "Ms.Neen  Noihuahat",
+    "title_en": "MS.NEEN NOIHUAHAT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "270",
+    "code": "POS-019",
+    "type": "POSITION",
+    "title_th": "Mr.Narasak Jantaboon",
+    "title_en": "MR.NARASAK JANTABOON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "269",
+    "code": "POS-018",
+    "type": "POSITION",
+    "title_th": "Mr. Jedsada  Moonsan",
+    "title_en": "MR. JEDSADA MOONSAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "268",
+    "code": "POS-017",
+    "type": "POSITION",
+    "title_th": "Mr.Thanapoom Kesamoon",
+    "title_en": "MR.THANAPOOM KESAMOON",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "267",
+    "code": "POS-016",
+    "type": "POSITION",
+    "title_th": "Mr. Tammarat Ponwaree",
+    "title_en": "MR. TAMMARAT PONWAREE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "266",
+    "code": "POS-015",
+    "type": "POSITION",
+    "title_th": "Mr.Morita  Jun",
+    "title_en": "MR.MORITA JUN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "265",
+    "code": "POS-014",
+    "type": "POSITION",
+    "title_th": "Mr.Thamkarn  Luxsanahut",
+    "title_en": "MR.THAMKARN LUXSANAHUT",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "264",
+    "code": "POS-013",
+    "type": "POSITION",
+    "title_th": "Mr.Kanin  Sangthong",
+    "title_en": "MR.KANIN SANGTHONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "263",
+    "code": "POS-012",
+    "type": "POSITION",
+    "title_th": "Ms.Pichanan  Liamsuwan",
+    "title_en": "MS.PICHANAN LIAMSUWAN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "262",
+    "code": "POS-011",
+    "type": "POSITION",
+    "title_th": "Ms.Chantarat  Rodsawang",
+    "title_en": "MS.CHANTARAT RODSAWANG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "261",
+    "code": "POS-010",
+    "type": "POSITION",
+    "title_th": "Ms. Rattanaphorn  Phichetchotiwong",
+    "title_en": "MS. RATTANAPHORN PHICHETCHOTIWONG",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "260",
+    "code": "POS-009",
+    "type": "POSITION",
+    "title_th": "Ms.Rossarin  Injun",
+    "title_en": "MS.ROSSARIN INJUN",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "259",
+    "code": "POS-008",
+    "type": "POSITION",
+    "title_th": "Mr.Trairat Pandee",
+    "title_en": "MR.TRAIRAT PANDEE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "258",
+    "code": "POS-007",
+    "type": "POSITION",
+    "title_th": "Ms.Akari  Suzuki",
+    "title_en": "MS.AKARI SUZUKI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "257",
+    "code": "POS-006",
+    "type": "POSITION",
+    "title_th": "Ms.Erika  Gaya",
+    "title_en": "MS.ERIKA GAYA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "256",
+    "code": "POS-005",
+    "type": "POSITION",
+    "title_th": "Mr.Shiichi  Makino",
+    "title_en": "MR.SHIICHI MAKINO",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "255",
+    "code": "POS-004",
+    "type": "POSITION",
+    "title_th": "Mr.Takeshi  Tsuchihira",
+    "title_en": "MR.TAKESHI TSUCHIHIRA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "254",
+    "code": "POS-003",
+    "type": "POSITION",
+    "title_th": "Ms.Thanthip  Phoopadrae",
+    "title_en": "MS.THANTHIP PHOOPADRAE",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "253",
+    "code": "POS-002",
+    "type": "POSITION",
+    "title_th": "Mr.Worachai  Wongchana",
+    "title_en": "MR.WORACHAI WONGCHANA",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "252",
+    "code": "POS-001",
+    "type": "POSITION",
+    "title_th": "Ms.Promsiri  Pimsakulkrai",
+    "title_en": "MS.PROMSIRI PIMSAKULKRAI",
+    "is_active": "ACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "251",
+    "code": "DEP-251",
+    "type": "DEPARTMENT",
+    "title_th": "นายภาณุกร สาธร",
+    "title_en": "นายภาณุกร สาธร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "250",
+    "code": "DEP-250",
+    "type": "DEPARTMENT",
+    "title_th": "นายอนุพงษ์ หลงน้อย",
+    "title_en": "นายอนุพงษ์ หลงน้อย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "249",
+    "code": "DEP-249",
+    "type": "DEPARTMENT",
+    "title_th": "นายธีรภัทร์ เขียวสะอาด",
+    "title_en": "นายธีรภัทร์ เขียวสะอาด",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "248",
+    "code": "DEP-248",
+    "type": "DEPARTMENT",
+    "title_th": "นายอาชวะ  โตพ่วง",
+    "title_en": "นายอาชวะ โตพ่วง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "247",
+    "code": "DEP-247",
+    "type": "DEPARTMENT",
+    "title_th": "นายเจษฎา  รอดทุกข์",
+    "title_en": "นายเจษฎา รอดทุกข์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "246",
+    "code": "DEP-246",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.ศรีชนก แซ่ซี",
+    "title_en": "น.ส.ศรีชนก แซ่ซี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "245",
+    "code": "DEP-245",
+    "type": "DEPARTMENT",
+    "title_th": "เคอิโซ นาคาเอะ",
+    "title_en": "เคอิโซ นาคาเอะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "244",
+    "code": "DEP-244",
+    "type": "DEPARTMENT",
+    "title_th": "นายวัชรา ขาวสำอางค์",
+    "title_en": "นายวัชรา ขาวสำอางค์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "243",
+    "code": "DEP-243",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.ภัทรนิษฐ์  พันธุ์คุ้มเก่า",
+    "title_en": "น.ส.ภัทรนิษฐ์ พันธุ์คุ้มเก่า",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "242",
+    "code": "DEP-242",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.สุพัฒตรา แซ่เตียว",
+    "title_en": "น.ส.สุพัฒตรา แซ่เตียว",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "241",
+    "code": "DEP-241",
+    "type": "DEPARTMENT",
+    "title_th": "นายชัยยุทธ์  แสงพุทธา",
+    "title_en": "นายชัยยุทธ์ แสงพุทธา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "240",
+    "code": "DEP-240",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.ญาณิศา  ลาวตูม",
+    "title_en": "น.ส.ญาณิศา ลาวตูม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "239",
+    "code": "DEP-239",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.พัชริดา  ประมงกิจ",
+    "title_en": "น.ส.พัชริดา ประมงกิจ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "238",
+    "code": "DEP-238",
+    "type": "DEPARTMENT",
+    "title_th": "นายธีรพงศ์ ไม้งาม",
+    "title_en": "นายธีรพงศ์ ไม้งาม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "237",
+    "code": "DEP-237",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.พิทยาภรณ์ สกุลยอดมณี",
+    "title_en": "น.ส.พิทยาภรณ์ สกุลยอดมณี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "236",
+    "code": "DEP-236",
+    "type": "DEPARTMENT",
+    "title_th": "นายโอซามิ คอนโด",
+    "title_en": "นายโอซามิ คอนโด",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "235",
+    "code": "DEP-235",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.พันนิภา  บุญพิษ",
+    "title_en": "น.ส.พันนิภา บุญพิษ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "234",
+    "code": "DEP-234",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวเกวลิน  สีสุขสาม",
+    "title_en": "นางสาวเกวลิน สีสุขสาม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "233",
+    "code": "DEP-233",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวณัฎฐา มาลาฉ่ำ",
+    "title_en": "นางสาวณัฎฐา มาลาฉ่ำ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "232",
+    "code": "DEP-232",
+    "type": "DEPARTMENT",
+    "title_th": "นายธวัชชัย ต่อนคำสนธิ์",
+    "title_en": "นายธวัชชัย ต่อนคำสนธิ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "231",
+    "code": "DEP-231",
+    "type": "DEPARTMENT",
+    "title_th": "นายกิตติพัฒน์ ชุ่มดี",
+    "title_en": "นายกิตติพัฒน์ ชุ่มดี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "230",
+    "code": "DEP-230",
+    "type": "DEPARTMENT",
+    "title_th": "นายทัตธน รุ่งโรจน์",
+    "title_en": "นายทัตธน รุ่งโรจน์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "229",
+    "code": "DEP-229",
+    "type": "DEPARTMENT",
+    "title_th": "นายจิรายุ  จริยาเอกภาส",
+    "title_en": "นายจิรายุ จริยาเอกภาส",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "228",
+    "code": "DEP-228",
+    "type": "DEPARTMENT",
+    "title_th": "นายเกียรติศักดิ์  เกตุสิริกูล",
+    "title_en": "นายเกียรติศักดิ์ เกตุสิริกูล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "227",
+    "code": "DEP-227",
+    "type": "DEPARTMENT",
+    "title_th": "นายธนบดี โคตรพรม",
+    "title_en": "นายธนบดี โคตรพรม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "226",
+    "code": "DEP-226",
+    "type": "DEPARTMENT",
+    "title_th": "นายกรทักษ์ โยยิ่ง",
+    "title_en": "นายกรทักษ์ โยยิ่ง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "225",
+    "code": "DEP-225",
+    "type": "DEPARTMENT",
+    "title_th": "นายธนพัฒน์ แก่นใจ",
+    "title_en": "นายธนพัฒน์ แก่นใจ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "224",
+    "code": "DEP-224",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววิพารัตน์ จันทษร",
+    "title_en": "นางสาววิพารัตน์ จันทษร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "223",
+    "code": "DEP-223",
+    "type": "DEPARTMENT",
+    "title_th": "นายเจษฎาภรณ์ ปล้องกลาง",
+    "title_en": "นายเจษฎาภรณ์ ปล้องกลาง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "222",
+    "code": "DEP-222",
+    "type": "DEPARTMENT",
+    "title_th": "นายพิทักษชัย  พรพันธ์",
+    "title_en": "นายพิทักษชัย พรพันธ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "221",
+    "code": "DEP-221",
+    "type": "DEPARTMENT",
+    "title_th": "นายคาซึฮิโระ ฮานามูระ",
+    "title_en": "นายคาซึฮิโระ ฮานามูระ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "220",
+    "code": "DEP-220",
+    "type": "DEPARTMENT",
+    "title_th": "นายทาคาโยชิ อุชิดะ",
+    "title_en": "นายทาคาโยชิ อุชิดะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "219",
+    "code": "DEP-219",
+    "type": "DEPARTMENT",
+    "title_th": "นายมาโนชญ์  อินจินดา",
+    "title_en": "นายมาโนชญ์ อินจินดา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "218",
+    "code": "DEP-218",
+    "type": "DEPARTMENT",
+    "title_th": "นายประเสริฐศักดิ์  ขันเจริญ",
+    "title_en": "นายประเสริฐศักดิ์ ขันเจริญ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "217",
+    "code": "DEP-217",
+    "type": "DEPARTMENT",
+    "title_th": "นางอุทุมพร  ทองศรี",
+    "title_en": "นางอุทุมพร ทองศรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "216",
+    "code": "DEP-216",
+    "type": "DEPARTMENT",
+    "title_th": "นายภานุวัฒน์  ราชาลี",
+    "title_en": "นายภานุวัฒน์ ราชาลี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "215",
+    "code": "DEP-215",
+    "type": "DEPARTMENT",
+    "title_th": "นายสุรวุฒิ  เกษาใส",
+    "title_en": "นายสุรวุฒิ เกษาใส",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "214",
+    "code": "DEP-214",
+    "type": "DEPARTMENT",
+    "title_th": "นายเผด็จการ  ภูขามคม",
+    "title_en": "นายเผด็จการ ภูขามคม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "213",
+    "code": "DEP-213",
+    "type": "DEPARTMENT",
+    "title_th": "นายอนุรักษ์  ติ๊บอุด",
+    "title_en": "นายอนุรักษ์ ติ๊บอุด",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "212",
+    "code": "DEP-212",
+    "type": "DEPARTMENT",
+    "title_th": "นายอนุพงษ์  สมานทอง",
+    "title_en": "นายอนุพงษ์ สมานทอง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "211",
+    "code": "DEP-211",
+    "type": "DEPARTMENT",
+    "title_th": "นายสุนทร  อะรินแปง",
+    "title_en": "นายสุนทร อะรินแปง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "210",
+    "code": "DEP-210",
+    "type": "DEPARTMENT",
+    "title_th": "นายเอกลักษณ์  ใจบุตร",
+    "title_en": "นายเอกลักษณ์ ใจบุตร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "209",
+    "code": "DEP-209",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวสุพรรณทิพย์  มฤกุล",
+    "title_en": "นางสาวสุพรรณทิพย์ มฤกุล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "208",
+    "code": "DEP-208",
+    "type": "DEPARTMENT",
+    "title_th": "นายนพพร  คงเกษม",
+    "title_en": "นายนพพร คงเกษม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "207",
+    "code": "DEP-207",
+    "type": "DEPARTMENT",
+    "title_th": "นายเทพพานทอง  บุญยก",
+    "title_en": "นายเทพพานทอง บุญยก",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "206",
+    "code": "DEP-206",
+    "type": "DEPARTMENT",
+    "title_th": "นายตรีเนตร  จินดาเลิศ",
+    "title_en": "นายตรีเนตร จินดาเลิศ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "205",
+    "code": "DEP-205",
+    "type": "DEPARTMENT",
+    "title_th": "นายทรงศักดิ์โพธิสาร",
+    "title_en": "นายทรงศักดิ์โพธิสาร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "204",
+    "code": "DEP-204",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวพัชรินทร์  ไทยเจริญ",
+    "title_en": "นางสาวพัชรินทร์ ไทยเจริญ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "203",
+    "code": "DEP-203",
+    "type": "DEPARTMENT",
+    "title_th": "นายรักเกียรติ  น่วมภุมรินทร์",
+    "title_en": "นายรักเกียรติ น่วมภุมรินทร์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "202",
+    "code": "DEP-202",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวสุกัญญา  บัวฮมบุรา",
+    "title_en": "นางสาวสุกัญญา บัวฮมบุรา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "201",
+    "code": "DEP-201",
+    "type": "DEPARTMENT",
+    "title_th": "นายนพดล  คงเกษม",
+    "title_en": "นายนพดล คงเกษม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "200",
+    "code": "DEP-200",
+    "type": "DEPARTMENT",
+    "title_th": "นางกาญจนา  ถะเกิงผล",
+    "title_en": "นางกาญจนา ถะเกิงผล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "199",
+    "code": "DEP-199",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวหนึ่งฤทัย  สมจิตร",
+    "title_en": "นางสาวหนึ่งฤทัย สมจิตร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "198",
+    "code": "DEP-198",
+    "type": "DEPARTMENT",
+    "title_th": "นายพิชัย  ปันเปี้ย",
+    "title_en": "นายพิชัย ปันเปี้ย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "197",
+    "code": "DEP-197",
+    "type": "DEPARTMENT",
+    "title_th": "นายธีระพงษ์  ลาโสม",
+    "title_en": "นายธีระพงษ์ ลาโสม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "196",
+    "code": "DEP-196",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวน้ำฝนไพศาล  เจริญไมตรี",
+    "title_en": "นางสาวน้ำฝนไพศาล เจริญไมตรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "195",
+    "code": "DEP-195",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวเพียงตะวัน  จันทร์พิทักษ์",
+    "title_en": "นางสาวเพียงตะวัน จันทร์พิทักษ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "194",
+    "code": "DEP-194",
+    "type": "DEPARTMENT",
+    "title_th": "นายสกล  เสนาพล",
+    "title_en": "นายสกล เสนาพล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "193",
+    "code": "DEP-193",
+    "type": "DEPARTMENT",
+    "title_th": "นายจงกช  อินสม",
+    "title_en": "นายจงกช อินสม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "192",
+    "code": "DEP-192",
+    "type": "DEPARTMENT",
+    "title_th": "นายมงคล  อ้องแสนคำ",
+    "title_en": "นายมงคล อ้องแสนคำ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "191",
+    "code": "DEP-191",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววลัยพร  จันทร์พิทักษ์",
+    "title_en": "นางสาววลัยพร จันทร์พิทักษ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "190",
+    "code": "DEP-190",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวชื่นกมล  เสนาเจริญ",
+    "title_en": "นางสาวชื่นกมล เสนาเจริญ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "189",
+    "code": "DEP-189",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววรรณภา  แหล่ป้อง",
+    "title_en": "นางสาววรรณภา แหล่ป้อง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "188",
+    "code": "DEP-188",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวนฑาห์  นิพัทธโกศลสุข",
+    "title_en": "นางสาวนฑาห์ นิพัทธโกศลสุข",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "187",
+    "code": "DEP-187",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวพัชรลักษณ์  คำพรวน",
+    "title_en": "นางสาวพัชรลักษณ์ คำพรวน",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "186",
+    "code": "DEP-186",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวมัสยา  แสงกล้า",
+    "title_en": "นางสาวมัสยา แสงกล้า",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "185",
+    "code": "DEP-185",
+    "type": "DEPARTMENT",
+    "title_th": "นายธิติ  แสนโคตร",
+    "title_en": "นายธิติ แสนโคตร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "184",
+    "code": "DEP-184",
+    "type": "DEPARTMENT",
+    "title_th": "นายพร้อมพันธ์  เกิดสวัสดิ์",
+    "title_en": "นายพร้อมพันธ์ เกิดสวัสดิ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "183",
+    "code": "DEP-183",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวนัดดา  ศรีมนตรี",
+    "title_en": "นางสาวนัดดา ศรีมนตรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "182",
+    "code": "DEP-182",
+    "type": "DEPARTMENT",
+    "title_th": "นายอำนวย  สุขพราม",
+    "title_en": "นายอำนวย สุขพราม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "181",
+    "code": "DEP-181",
+    "type": "DEPARTMENT",
+    "title_th": "นายสถิต  กระแสร์",
+    "title_en": "นายสถิต กระแสร์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "180",
+    "code": "DEP-180",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวสุภาภรณ์  จันทร์วิเศษ",
+    "title_en": "นางสาวสุภาภรณ์ จันทร์วิเศษ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "179",
+    "code": "DEP-179",
+    "type": "DEPARTMENT",
+    "title_th": "นายพิชัย  วงศ์เรือน",
+    "title_en": "นายพิชัย วงศ์เรือน",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "178",
+    "code": "DEP-178",
+    "type": "DEPARTMENT",
+    "title_th": "นายธีระวัฒน์  โคสารคุณ",
+    "title_en": "นายธีระวัฒน์ โคสารคุณ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "177",
+    "code": "DEP-177",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวนภัทร  อินทนนท์",
+    "title_en": "นางสาวนภัทร อินทนนท์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "176",
+    "code": "DEP-176",
+    "type": "DEPARTMENT",
+    "title_th": "นายวัชรินทร์  ทัดเที่ยง",
+    "title_en": "นายวัชรินทร์ ทัดเที่ยง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "175",
+    "code": "DEP-175",
+    "type": "DEPARTMENT",
+    "title_th": "นายโชคชัย  เชาว์ประจักษ์",
+    "title_en": "นายโชคชัย เชาว์ประจักษ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "174",
+    "code": "DEP-174",
+    "type": "DEPARTMENT",
+    "title_th": "นายวรศักดิ์  เบญมาตย์",
+    "title_en": "นายวรศักดิ์ เบญมาตย์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "173",
+    "code": "DEP-173",
+    "type": "DEPARTMENT",
+    "title_th": "นายสุวินัย  อารีเอื้อ",
+    "title_en": "นายสุวินัย อารีเอื้อ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "172",
+    "code": "DEP-172",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวปิยาภรณ์  แก้วดี",
+    "title_en": "นางสาวปิยาภรณ์ แก้วดี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "171",
+    "code": "DEP-171",
+    "type": "DEPARTMENT",
+    "title_th": "นายทรงศาสตร์  ภูธง",
+    "title_en": "นายทรงศาสตร์ ภูธง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "170",
+    "code": "DEP-170",
+    "type": "DEPARTMENT",
+    "title_th": "นายอภิสิทธิ์  สุขเจริญ",
+    "title_en": "นายอภิสิทธิ์ สุขเจริญ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "169",
+    "code": "DEP-169",
+    "type": "DEPARTMENT",
+    "title_th": "นายวัชรพงศ์  แจ่มใส",
+    "title_en": "นายวัชรพงศ์ แจ่มใส",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "168",
+    "code": "DEP-168",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวสุภาพร  บุญเลิศ",
+    "title_en": "นางสาวสุภาพร บุญเลิศ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "167",
+    "code": "DEP-167",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววริศรา ใจหาญ",
+    "title_en": "นางสาววริศรา ใจหาญ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "166",
+    "code": "DEP-166",
+    "type": "DEPARTMENT",
+    "title_th": "นายกิตติ  ใจกล้า",
+    "title_en": "นายกิตติ ใจกล้า",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "165",
+    "code": "DEP-165",
+    "type": "DEPARTMENT",
+    "title_th": "นายอดิศร  ศรีแก้วใส",
+    "title_en": "นายอดิศร ศรีแก้วใส",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "164",
+    "code": "DEP-164",
+    "type": "DEPARTMENT",
+    "title_th": "นายเกรียงไกร  ชื่นหมี้",
+    "title_en": "นายเกรียงไกร ชื่นหมี้",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "163",
+    "code": "DEP-163",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวชนันธร  ขอบจิตร",
+    "title_en": "นางสาวชนันธร ขอบจิตร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "162",
+    "code": "DEP-162",
+    "type": "DEPARTMENT",
+    "title_th": "นายสุรทิน  พูลศิลา",
+    "title_en": "นายสุรทิน พูลศิลา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "161",
+    "code": "DEP-161",
+    "type": "DEPARTMENT",
+    "title_th": "นายพงศกร  ไชยเทพ",
+    "title_en": "นายพงศกร ไชยเทพ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "160",
+    "code": "DEP-160",
+    "type": "DEPARTMENT",
+    "title_th": "นายธารา  ทองศรี",
+    "title_en": "นายธารา ทองศรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "159",
+    "code": "DEP-159",
+    "type": "DEPARTMENT",
+    "title_th": "นางณญาดา  เสริมศิริ",
+    "title_en": "นางณญาดา เสริมศิริ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "158",
+    "code": "DEP-158",
+    "type": "DEPARTMENT",
+    "title_th": "นายธนพล  สายบัว",
+    "title_en": "นายธนพล สายบัว",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "157",
+    "code": "DEP-157",
+    "type": "DEPARTMENT",
+    "title_th": "นายธวัชชัย  เผ่าเมธวารีธร",
+    "title_en": "นายธวัชชัย เผ่าเมธวารีธร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "156",
+    "code": "DEP-156",
+    "type": "DEPARTMENT",
+    "title_th": "นายสมหมาย  จันทร์เขต",
+    "title_en": "นายสมหมาย จันทร์เขต",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "155",
+    "code": "DEP-155",
+    "type": "DEPARTMENT",
+    "title_th": "นายสักรินทร์  แก้วติ๊บ",
+    "title_en": "นายสักรินทร์ แก้วติ๊บ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "154",
+    "code": "DEP-154",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวฐิตพัทธ์  สุทธิ",
+    "title_en": "นางสาวฐิตพัทธ์ สุทธิ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "153",
+    "code": "DEP-153",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววนิดา  นนทพันธุ์",
+    "title_en": "นางสาววนิดา นนทพันธุ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "152",
+    "code": "DEP-152",
+    "type": "DEPARTMENT",
+    "title_th": "นายพัทธพล  ฝึกความดี",
+    "title_en": "นายพัทธพล ฝึกความดี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "151",
+    "code": "DEP-151",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวภีชญา  ขวัญเฉื่อย",
+    "title_en": "นางสาวภีชญา ขวัญเฉื่อย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "150",
+    "code": "DEP-150",
+    "type": "DEPARTMENT",
+    "title_th": "นายอัครพงศ์  ขาวงาม",
+    "title_en": "นายอัครพงศ์ ขาวงาม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "149",
+    "code": "DEP-149",
+    "type": "DEPARTMENT",
+    "title_th": "นางอำพร  ชูสวัสดิ์",
+    "title_en": "นางอำพร ชูสวัสดิ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "148",
+    "code": "DEP-148",
+    "type": "DEPARTMENT",
+    "title_th": "นายพิตินนท์  บัณฑุตระกูล",
+    "title_en": "นายพิตินนท์ บัณฑุตระกูล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "147",
+    "code": "DEP-147",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวสุกัญญา  มณีโชติ",
+    "title_en": "นางสาวสุกัญญา มณีโชติ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "146",
+    "code": "DEP-146",
+    "type": "DEPARTMENT",
+    "title_th": "นายอำนาจ  คงใหญ่",
+    "title_en": "นายอำนาจ คงใหญ่",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "145",
+    "code": "DEP-145",
+    "type": "DEPARTMENT",
+    "title_th": "นายภูบดินทร์  มุกดาดิลก",
+    "title_en": "นายภูบดินทร์ มุกดาดิลก",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "144",
+    "code": "DEP-144",
+    "type": "DEPARTMENT",
+    "title_th": "นายกวีวุฒิ  ตั้งพิบูลธรรม",
+    "title_en": "นายกวีวุฒิ ตั้งพิบูลธรรม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "143",
+    "code": "DEP-143",
+    "type": "DEPARTMENT",
+    "title_th": "นายนพกร  นามัง",
+    "title_en": "นายนพกร นามัง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "142",
+    "code": "DEP-142",
+    "type": "DEPARTMENT",
+    "title_th": "นายโยสุเกะ ฟูจิตะ",
+    "title_en": "นายโยสุเกะ ฟูจิตะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "141",
+    "code": "DEP-141",
+    "type": "DEPARTMENT",
+    "title_th": "นายอนุวัฒน์  บุญโสดากร",
+    "title_en": "นายอนุวัฒน์ บุญโสดากร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "140",
+    "code": "DEP-140",
+    "type": "DEPARTMENT",
+    "title_th": "นายอัครวิทย์  ปรุงเกียรติ",
+    "title_en": "นายอัครวิทย์ ปรุงเกียรติ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "139",
+    "code": "DEP-139",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.สิริวิมล ชูผล",
+    "title_en": "น.ส.สิริวิมล ชูผล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "138",
+    "code": "DEP-138",
+    "type": "DEPARTMENT",
+    "title_th": "นายอโนชัย  วงศ์ประยูรศรี",
+    "title_en": "นายอโนชัย วงศ์ประยูรศรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "137",
+    "code": "DEP-137",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.สุวิมล แก่นจันทร์",
+    "title_en": "น.ส.สุวิมล แก่นจันทร์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "136",
+    "code": "DEP-136",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.กัลยา  มีตา",
+    "title_en": "น.ส.กัลยา มีตา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "135",
+    "code": "DEP-135",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.รินรดี  สุวรรณ",
+    "title_en": "น.ส.รินรดี สุวรรณ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "134",
+    "code": "DEP-134",
+    "type": "DEPARTMENT",
+    "title_th": "โยชิคาซู  ยามาโมโตะ",
+    "title_en": "โยชิคาซู ยามาโมโตะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "133",
+    "code": "DEP-133",
+    "type": "DEPARTMENT",
+    "title_th": "นายอนุชา  ธรรมวงค์",
+    "title_en": "นายอนุชา ธรรมวงค์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "132",
+    "code": "DEP-132",
+    "type": "DEPARTMENT",
+    "title_th": "นายมาซาโตะ อูเอโนะ",
+    "title_en": "นายมาซาโตะ อูเอโนะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "131",
+    "code": "DEP-131",
+    "type": "DEPARTMENT",
+    "title_th": "นายสามารถ  สอนสุภาพ",
+    "title_en": "นายสามารถ สอนสุภาพ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "130",
+    "code": "DEP-130",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวรดีมาศ  เจือไทย",
+    "title_en": "นางสาวรดีมาศ เจือไทย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "129",
+    "code": "DEP-129",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.แก้วกัญญพัชร  วรปภาดากุล",
+    "title_en": "น.ส.แก้วกัญญพัชร วรปภาดากุล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "128",
+    "code": "DEP-128",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.สุทธิดา  ทักขิณาพงศ์",
+    "title_en": "น.ส.สุทธิดา ทักขิณาพงศ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "127",
+    "code": "DEP-127",
+    "type": "DEPARTMENT",
+    "title_th": "นายสุวัฒน์  วิเศษสิงห์",
+    "title_en": "นายสุวัฒน์ วิเศษสิงห์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "126",
+    "code": "DEP-126",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.กมลวรรณ  คำศรี",
+    "title_en": "น.ส.กมลวรรณ คำศรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "125",
+    "code": "DEP-125",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวอรอนงค์  ดำนุ้ย",
+    "title_en": "นางสาวอรอนงค์ ดำนุ้ย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "124",
+    "code": "DEP-124",
+    "type": "DEPARTMENT",
+    "title_th": "นายชิตไชยา  ทองนาค",
+    "title_en": "นายชิตไชยา ทองนาค",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "123",
+    "code": "DEP-123",
+    "type": "DEPARTMENT",
+    "title_th": "นายยาซูฮิโระ  ทามูระ",
+    "title_en": "นายยาซูฮิโระ ทามูระ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "122",
+    "code": "DEP-122",
+    "type": "DEPARTMENT",
+    "title_th": "นายทาอิชิ  ทาคายานากิ",
+    "title_en": "นายทาอิชิ ทาคายานากิ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "121",
+    "code": "DEP-121",
+    "type": "DEPARTMENT",
+    "title_th": "นายนัท  พรหมประสิทธิ์",
+    "title_en": "นายนัท พรหมประสิทธิ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "120",
+    "code": "DEP-120",
+    "type": "DEPARTMENT",
+    "title_th": "นายอรุษ จินดาหลวง",
+    "title_en": "นายอรุษ จินดาหลวง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "119",
+    "code": "DEP-119",
+    "type": "DEPARTMENT",
+    "title_th": "นายชนาธิป กุซัว",
+    "title_en": "นายชนาธิป กุซัว",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "118",
+    "code": "DEP-118",
+    "type": "DEPARTMENT",
+    "title_th": "นายณัฐวุฒิ  นาคชลธี",
+    "title_en": "นายณัฐวุฒิ นาคชลธี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "117",
+    "code": "DEP-117",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.ยุวรัตน์  บรรลือเกียรติ",
+    "title_en": "น.ส.ยุวรัตน์ บรรลือเกียรติ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "116",
+    "code": "DEP-116",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวปัทมา สมงาม",
+    "title_en": "นางสาวปัทมา สมงาม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "115",
+    "code": "DEP-115",
+    "type": "DEPARTMENT",
+    "title_th": "นายประจักร มะลาศรี",
+    "title_en": "นายประจักร มะลาศรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "114",
+    "code": "DEP-114",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวฉัตร์รวี  พีระทวีศรีกุล",
+    "title_en": "นางสาวฉัตร์รวี พีระทวีศรีกุล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "113",
+    "code": "DEP-113",
+    "type": "DEPARTMENT",
+    "title_th": "นายปิยธนา  ยินดีสุข",
+    "title_en": "นายปิยธนา ยินดีสุข",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "112",
+    "code": "DEP-112",
+    "type": "DEPARTMENT",
+    "title_th": "นายกฤษฎา คำดา",
+    "title_en": "นายกฤษฎา คำดา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "111",
+    "code": "DEP-111",
+    "type": "DEPARTMENT",
+    "title_th": "นายนรากร มิ่งเมือง",
+    "title_en": "นายนรากร มิ่งเมือง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "110",
+    "code": "DEP-110",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวธัญธนาดา แซ่เหีย",
+    "title_en": "นางสาวธัญธนาดา แซ่เหีย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "109",
+    "code": "DEP-109",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววันดี เล็กเจริญ",
+    "title_en": "นางสาววันดี เล็กเจริญ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "108",
+    "code": "DEP-108",
+    "type": "DEPARTMENT",
+    "title_th": "นางณิรดา  ทั้งวิจิตรกุล",
+    "title_en": "นางณิรดา ทั้งวิจิตรกุล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "107",
+    "code": "DEP-107",
+    "type": "DEPARTMENT",
+    "title_th": "นายธนัท เมืองโคตร",
+    "title_en": "นายธนัท เมืองโคตร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "106",
+    "code": "DEP-106",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวจงจิตต์ โสดา",
+    "title_en": "นางสาวจงจิตต์ โสดา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "105",
+    "code": "DEP-105",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวนริศรา จันทลา",
+    "title_en": "นางสาวนริศรา จันทลา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "104",
+    "code": "DEP-104",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวเสาวนีย์ เนตรพิภพ",
+    "title_en": "นางสาวเสาวนีย์ เนตรพิภพ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "103",
+    "code": "DEP-103",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวดารัตน์ พรชื่นชูวงศ์",
+    "title_en": "นางสาวดารัตน์ พรชื่นชูวงศ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "102",
+    "code": "DEP-102",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววิไลลักษณ์ จันทร์ศรี",
+    "title_en": "นางสาววิไลลักษณ์ จันทร์ศรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "101",
+    "code": "DEP-101",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววณิชวรรณ บุดดา",
+    "title_en": "นางสาววณิชวรรณ บุดดา",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "100",
+    "code": "DEP-100",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวศลิษา รักการงาน",
+    "title_en": "นางสาวศลิษา รักการงาน",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "99",
+    "code": "DEP-099",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววรฤทัย วงชารี",
+    "title_en": "นางสาววรฤทัย วงชารี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "98",
+    "code": "DEP-098",
+    "type": "DEPARTMENT",
+    "title_th": "นายสมศักดิ์ สืบจันทร์",
+    "title_en": "นายสมศักดิ์ สืบจันทร์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "97",
+    "code": "DEP-097",
+    "type": "DEPARTMENT",
+    "title_th": "นายนพนันท์ เดชขันธ์",
+    "title_en": "นายนพนันท์ เดชขันธ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "96",
+    "code": "DEP-096",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวศุภรัตน์  อาวรณ์",
+    "title_en": "นางสาวศุภรัตน์ อาวรณ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "95",
+    "code": "DEP-095",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวจุฑาพร  วงศ์ชื่นสุนทร",
+    "title_en": "นางสาวจุฑาพร วงศ์ชื่นสุนทร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "94",
+    "code": "DEP-094",
+    "type": "DEPARTMENT",
+    "title_th": "นางอารยา  หิรัญปัณฑาพร",
+    "title_en": "นางอารยา หิรัญปัณฑาพร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "93",
+    "code": "DEP-093",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวสมฤดี  แป้นหนู",
+    "title_en": "นางสาวสมฤดี แป้นหนู",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "92",
+    "code": "DEP-092",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววาสนา  แม้นทอง",
+    "title_en": "นางสาววาสนา แม้นทอง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "91",
+    "code": "DEP-091",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวกมลวรรณ  ชัยสุขี",
+    "title_en": "นางสาวกมลวรรณ ชัยสุขี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "90",
+    "code": "DEP-090",
+    "type": "DEPARTMENT",
+    "title_th": "นายพิชยดนย์  พงษ์ศาสตร์",
+    "title_en": "นายพิชยดนย์ พงษ์ศาสตร์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "89",
+    "code": "DEP-089",
+    "type": "DEPARTMENT",
+    "title_th": "นายวรภัทร  คำสิงห์",
+    "title_en": "นายวรภัทร คำสิงห์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "88",
+    "code": "DEP-088",
+    "type": "DEPARTMENT",
+    "title_th": "นายอรรถสิทธิ์  ทองทั่ว",
+    "title_en": "นายอรรถสิทธิ์ ทองทั่ว",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "87",
+    "code": "DEP-087",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวรสริน  เลิศวัชพล",
+    "title_en": "นางสาวรสริน เลิศวัชพล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "86",
+    "code": "DEP-086",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวจิรวรรธ  ศรีสวัสดิ์",
+    "title_en": "นางสาวจิรวรรธ ศรีสวัสดิ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "85",
+    "code": "DEP-085",
+    "type": "DEPARTMENT",
+    "title_th": "นายสาทิตย์ สาหร่ายสลับ",
+    "title_en": "นายสาทิตย์ สาหร่ายสลับ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "84",
+    "code": "DEP-084",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวดุจฤดี  อรุณจิต",
+    "title_en": "นางสาวดุจฤดี อรุณจิต",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "83",
+    "code": "DEP-083",
+    "type": "DEPARTMENT",
+    "title_th": "นายสมโภช  ลิมป์บรรเจิด",
+    "title_en": "นายสมโภช ลิมป์บรรเจิด",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "82",
+    "code": "DEP-082",
+    "type": "DEPARTMENT",
+    "title_th": "นายณัฐนันท์  เล็งเลิศผล",
+    "title_en": "นายณัฐนันท์ เล็งเลิศผล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "81",
+    "code": "DEP-081",
+    "type": "DEPARTMENT",
+    "title_th": "นายสุรัช  ลวดลาย",
+    "title_en": "นายสุรัช ลวดลาย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "80",
+    "code": "DEP-080",
+    "type": "DEPARTMENT",
+    "title_th": "นายกฤษณะ เลาหจีรพันธุ์",
+    "title_en": "นายกฤษณะ เลาหจีรพันธุ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "79",
+    "code": "DEP-079",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวเพ็ญประภา  ม่วงกลาง",
+    "title_en": "นางสาวเพ็ญประภา ม่วงกลาง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "78",
+    "code": "DEP-078",
+    "type": "DEPARTMENT",
+    "title_th": "นายภัทร  รัตนกรแก้ว",
+    "title_en": "นายภัทร รัตนกรแก้ว",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "77",
+    "code": "DEP-077",
+    "type": "DEPARTMENT",
+    "title_th": "นายณรงค์ แก้วทรัพย์",
+    "title_en": "นายณรงค์ แก้วทรัพย์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "76",
+    "code": "DEP-076",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวชญานุช  เพ็งพินิจ",
+    "title_en": "นางสาวชญานุช เพ็งพินิจ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "75",
+    "code": "DEP-075",
+    "type": "DEPARTMENT",
+    "title_th": "นางพัทธนันท์รัชต์ เรืองเที่ยง",
+    "title_en": "นางพัทธนันท์รัชต์ เรืองเที่ยง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "74",
+    "code": "DEP-074",
+    "type": "DEPARTMENT",
+    "title_th": "นายอัครภูมิ ไชยเพชร",
+    "title_en": "นายอัครภูมิ ไชยเพชร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "73",
+    "code": "DEP-073",
+    "type": "DEPARTMENT",
+    "title_th": "นายวิเชษฐ์ ประทุมภาพ",
+    "title_en": "นายวิเชษฐ์ ประทุมภาพ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "72",
+    "code": "DEP-072",
+    "type": "DEPARTMENT",
+    "title_th": "นายวิฑูร  สุขวิสุทธิโชติ",
+    "title_en": "นายวิฑูร สุขวิสุทธิโชติ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "71",
+    "code": "DEP-071",
+    "type": "DEPARTMENT",
+    "title_th": "นายณัฐพล โกศลกิติวงศ์",
+    "title_en": "นายณัฐพล โกศลกิติวงศ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "70",
+    "code": "DEP-070",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวชุลีพร เมณฑ์กูล",
+    "title_en": "นางสาวชุลีพร เมณฑ์กูล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "69",
+    "code": "DEP-069",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวหทัยรัตน์ ศรีกุลวงศ์",
+    "title_en": "นางสาวหทัยรัตน์ ศรีกุลวงศ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "68",
+    "code": "DEP-068",
+    "type": "DEPARTMENT",
+    "title_th": "นายกีรติ วรรณบุตร",
+    "title_en": "นายกีรติ วรรณบุตร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "67",
+    "code": "DEP-067",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวณัฐธิดา ทองวิเศษ",
+    "title_en": "นางสาวณัฐธิดา ทองวิเศษ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "66",
+    "code": "DEP-066",
+    "type": "DEPARTMENT",
+    "title_th": "นายศรันยู รัตนสุวรรณ",
+    "title_en": "นายศรันยู รัตนสุวรรณ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "65",
+    "code": "DEP-065",
+    "type": "DEPARTMENT",
+    "title_th": "นายพงศ์พัฒน์ ศรีโคตร",
+    "title_en": "นายพงศ์พัฒน์ ศรีโคตร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "64",
+    "code": "DEP-064",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวพิชชากานต์ องค์สวัสดิ์",
+    "title_en": "นางสาวพิชชากานต์ องค์สวัสดิ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "63",
+    "code": "DEP-063",
+    "type": "DEPARTMENT",
+    "title_th": "นายสุธน  สอนสุภาพ",
+    "title_en": "นายสุธน สอนสุภาพ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "62",
+    "code": "DEP-062",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวปภัชญา  ถาวรรินพงศ์",
+    "title_en": "นางสาวปภัชญา ถาวรรินพงศ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "61",
+    "code": "DEP-061",
+    "type": "DEPARTMENT",
+    "title_th": "นายสรสิช  ศรีสุดใจ",
+    "title_en": "นายสรสิช ศรีสุดใจ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "60",
+    "code": "DEP-060",
+    "type": "DEPARTMENT",
+    "title_th": "นายณัฐวุฒิ  เสมอวงศ์",
+    "title_en": "นายณัฐวุฒิ เสมอวงศ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "59",
+    "code": "DEP-059",
+    "type": "DEPARTMENT",
+    "title_th": "นายจักรกฤษณ์  แพน้อย",
+    "title_en": "นายจักรกฤษณ์ แพน้อย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "58",
+    "code": "DEP-058",
+    "type": "DEPARTMENT",
+    "title_th": "นายพีรณัฐ  หาญประทุม",
+    "title_en": "นายพีรณัฐ หาญประทุม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "57",
+    "code": "DEP-057",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวสุธาดา  ใจมนต์",
+    "title_en": "นางสาวสุธาดา ใจมนต์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "56",
+    "code": "DEP-056",
+    "type": "DEPARTMENT",
+    "title_th": "นายปวีร์  หอมเลิศนลิน",
+    "title_en": "นายปวีร์ หอมเลิศนลิน",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "55",
+    "code": "DEP-055",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาววรธัญ  สามารถ",
+    "title_en": "นางสาววรธัญ สามารถ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "54",
+    "code": "DEP-054",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวกันต์กนิษฐ์  นิ่มน้อย",
+    "title_en": "นางสาวกันต์กนิษฐ์ นิ่มน้อย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "53",
+    "code": "DEP-053",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวลักษมี  แก้วศรีงาม",
+    "title_en": "นางสาวลักษมี แก้วศรีงาม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "52",
+    "code": "DEP-052",
+    "type": "DEPARTMENT",
+    "title_th": "นายประเวศ  ปัญญาอภิวัฒนะ",
+    "title_en": "นายประเวศ ปัญญาอภิวัฒนะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "51",
+    "code": "DEP-051",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวนิตยา  หอมทอง",
+    "title_en": "นางสาวนิตยา หอมทอง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "50",
+    "code": "DEP-050",
+    "type": "DEPARTMENT",
+    "title_th": "นายณัฐพล  พุทธศรี",
+    "title_en": "นายณัฐพล พุทธศรี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "49",
+    "code": "DEP-049",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวโสภิดา  คำล้าน",
+    "title_en": "นางสาวโสภิดา คำล้าน",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "48",
+    "code": "DEP-048",
+    "type": "DEPARTMENT",
+    "title_th": "นายพงศกร  โพธิ์พิมล",
+    "title_en": "นายพงศกร โพธิ์พิมล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "47",
+    "code": "DEP-047",
+    "type": "DEPARTMENT",
+    "title_th": "นายณัฐวุฒิ  แก้วกังวาล",
+    "title_en": "นายณัฐวุฒิ แก้วกังวาล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "46",
+    "code": "DEP-046",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวจุฑารัตน์  สุเฌอ",
+    "title_en": "นางสาวจุฑารัตน์ สุเฌอ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "45",
+    "code": "DEP-045",
+    "type": "DEPARTMENT",
+    "title_th": "นายจิรายุสวัฒ  ประสม",
+    "title_en": "นายจิรายุสวัฒ ประสม",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "44",
+    "code": "DEP-044",
+    "type": "DEPARTMENT",
+    "title_th": "นายศิรา  โสวัณณะ",
+    "title_en": "นายศิรา โสวัณณะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "43",
+    "code": "DEP-043",
+    "type": "DEPARTMENT",
+    "title_th": "นายธีระพงษ์  ประสาร",
+    "title_en": "นายธีระพงษ์ ประสาร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "42",
+    "code": "DEP-042",
+    "type": "DEPARTMENT",
+    "title_th": "นายมิคิโอะ  คาโตะ",
+    "title_en": "นายมิคิโอะ คาโตะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "41",
+    "code": "DEP-041",
+    "type": "DEPARTMENT",
+    "title_th": "นายทาคุโร  อิโนะอุเอะ",
+    "title_en": "นายทาคุโร อิโนะอุเอะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "40",
+    "code": "DEP-040",
+    "type": "DEPARTMENT",
+    "title_th": "นายมาซาฮิโต  อาซูมิ",
+    "title_en": "นายมาซาฮิโต อาซูมิ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "39",
+    "code": "DEP-039",
+    "type": "DEPARTMENT",
+    "title_th": "นายปกป้อง วานิชสุจิต",
+    "title_en": "นายปกป้อง วานิชสุจิต",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "38",
+    "code": "DEP-038",
+    "type": "DEPARTMENT",
+    "title_th": "นายวรภฤศ  ม่วงมิ่งสุข",
+    "title_en": "นายวรภฤศ ม่วงมิ่งสุข",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "37",
+    "code": "DEP-037",
+    "type": "DEPARTMENT",
+    "title_th": "นายชิษณุพงศ์  กมลไชยอนันต์",
+    "title_en": "นายชิษณุพงศ์ กมลไชยอนันต์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "36",
+    "code": "DEP-036",
+    "type": "DEPARTMENT",
+    "title_th": "มูเนะโนบุ  ซาโต้",
+    "title_en": "มูเนะโนบุ ซาโต้",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "35",
+    "code": "DEP-035",
+    "type": "DEPARTMENT",
+    "title_th": "นายวรุตม์  อัศวตรีรัตนกุล",
+    "title_en": "นายวรุตม์ อัศวตรีรัตนกุล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "34",
+    "code": "DEP-034",
+    "type": "DEPARTMENT",
+    "title_th": "นายสงกรานต์  ขันนอก",
+    "title_en": "นายสงกรานต์ ขันนอก",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "33",
+    "code": "DEP-033",
+    "type": "DEPARTMENT",
+    "title_th": "นายศักดิ์ชัย  พันธุริ",
+    "title_en": "นายศักดิ์ชัย พันธุริ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "32",
+    "code": "DEP-032",
+    "type": "DEPARTMENT",
+    "title_th": "นายสุทัศน์  หมอไทย",
+    "title_en": "นายสุทัศน์ หมอไทย",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "31",
+    "code": "DEP-031",
+    "type": "DEPARTMENT",
+    "title_th": "นายวีรกุล  เจริญกุล",
+    "title_en": "นายวีรกุล เจริญกุล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "30",
+    "code": "DEP-030",
+    "type": "DEPARTMENT",
+    "title_th": "นายกฤษณ์ชัย  สมพลกรัง",
+    "title_en": "นายกฤษณ์ชัย สมพลกรัง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "29",
+    "code": "DEP-029",
+    "type": "DEPARTMENT",
+    "title_th": "นายมรรคภพ  ขำสิทธิ์",
+    "title_en": "นายมรรคภพ ขำสิทธิ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "28",
+    "code": "DEP-028",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.ปริยนาถ  สงวนสุข",
+    "title_en": "น.ส.ปริยนาถ สงวนสุข",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "27",
+    "code": "DEP-027",
+    "type": "DEPARTMENT",
+    "title_th": "นายทาเคชิ  อะชิซาว่า",
+    "title_en": "นายทาเคชิ อะชิซาว่า",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "26",
+    "code": "DEP-026",
+    "type": "DEPARTMENT",
+    "title_th": "นางสาวอุษณิษา ผาตินาวิน",
+    "title_en": "นางสาวอุษณิษา ผาตินาวิน",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "25",
+    "code": "DEP-025",
+    "type": "DEPARTMENT",
+    "title_th": "นายรณชัย  ดอกดวน",
+    "title_en": "นายรณชัย ดอกดวน",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "24",
+    "code": "DEP-024",
+    "type": "DEPARTMENT",
+    "title_th": "นายศุภณัฐ  เตียรถ์สุวรรณ",
+    "title_en": "นายศุภณัฐ เตียรถ์สุวรรณ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "23",
+    "code": "DEP-023",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.เพ็ญพิชชา  หุตะจูฑะ",
+    "title_en": "น.ส.เพ็ญพิชชา หุตะจูฑะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "22",
+    "code": "DEP-022",
+    "type": "DEPARTMENT",
+    "title_th": "นายเคอิซุเกะ  ชิเกตะ",
+    "title_en": "นายเคอิซุเกะ ชิเกตะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "21",
+    "code": "DEP-021",
+    "type": "DEPARTMENT",
+    "title_th": "นายวิชา  สารเสวก",
+    "title_en": "นายวิชา สารเสวก",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "20",
+    "code": "DEP-020",
+    "type": "DEPARTMENT",
+    "title_th": "นายอิสระ  คงทวี",
+    "title_en": "นายอิสระ คงทวี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "19",
+    "code": "DEP-019",
+    "type": "DEPARTMENT",
+    "title_th": "นายปฏิพล  พวงจันทร์",
+    "title_en": "นายปฏิพล พวงจันทร์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "18",
+    "code": "DEP-018",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.นีร  น้อยหัวหาด",
+    "title_en": "น.ส.นีร น้อยหัวหาด",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "17",
+    "code": "DEP-017",
+    "type": "DEPARTMENT",
+    "title_th": "นายนราศักดิ์ จันทบูรณ์",
+    "title_en": "นายนราศักดิ์ จันทบูรณ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "16",
+    "code": "DEP-016",
+    "type": "DEPARTMENT",
+    "title_th": "นายเจษฎา  มูลสาร",
+    "title_en": "นายเจษฎา มูลสาร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "15",
+    "code": "DEP-015",
+    "type": "DEPARTMENT",
+    "title_th": "นายธนภูมิ เกษามูล",
+    "title_en": "นายธนภูมิ เกษามูล",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "14",
+    "code": "DEP-014",
+    "type": "DEPARTMENT",
+    "title_th": "นายธรรมรัตน์  พลวารี",
+    "title_en": "นายธรรมรัตน์ พลวารี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "13",
+    "code": "DEP-013",
+    "type": "DEPARTMENT",
+    "title_th": "นายธัมกาล  ลักษณะหุต",
+    "title_en": "นายธัมกาล ลักษณะหุต",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "12",
+    "code": "DEP-012",
+    "type": "DEPARTMENT",
+    "title_th": "นายคณิน  แสงทอง",
+    "title_en": "นายคณิน แสงทอง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "11",
+    "code": "DEP-011",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.พิชชานันท์  เหลี่ยมสุวรรณ",
+    "title_en": "น.ส.พิชชานันท์ เหลี่ยมสุวรรณ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "10",
+    "code": "DEP-010",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.จันทรัสม์  รอดสว่าง",
+    "title_en": "น.ส.จันทรัสม์ รอดสว่าง",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "9",
+    "code": "DEP-009",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.รัตนาภรณ์  พิเชฐโชติวงษ์",
+    "title_en": "น.ส.รัตนาภรณ์ พิเชฐโชติวงษ์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "8",
+    "code": "DEP-008",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.รสริน  อินทร์จันทร์",
+    "title_en": "น.ส.รสริน อินทร์จันทร์",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "7",
+    "code": "DEP-007",
+    "type": "DEPARTMENT",
+    "title_th": "นายไตรรัตน์  พันธุ์ดี",
+    "title_en": "นายไตรรัตน์ พันธุ์ดี",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "6",
+    "code": "TMS0",
+    "type": "DEPARTMENT",
+    "title_th": "Technical Services Department",
+    "title_en": "น.ส.อะคะริ ซูซูกิ",
+    "is_active": "ACTIVE",
+    "classification": "CANONICAL_ORGANIZATION"
+  },
+  {
+    "id": "5",
+    "code": "TMT0",
+    "type": "DEPARTMENT",
+    "title_th": "Industrial Services Department",
+    "title_en": "นายชินิจิ มากิโนะ",
+    "is_active": "ACTIVE",
+    "classification": "CANONICAL_ORGANIZATION"
+  },
+  {
+    "id": "4",
+    "code": "TMT1",
+    "type": "DEPARTMENT",
+    "title_th": "Machinery Department",
+    "title_en": "นายทาเคชิ สึชิฮิระ",
+    "is_active": "ACTIVE",
+    "classification": "CANONICAL_ORGANIZATION"
+  },
+  {
+    "id": "3",
+    "code": "TMH0",
+    "type": "DEPARTMENT",
+    "title_th": "Corporate Department",
+    "title_en": "น.ส.ธารทิพย์ ภูพาดแร่",
+    "is_active": "ACTIVE",
+    "classification": "CANONICAL_ORGANIZATION"
+  },
+  {
+    "id": "2",
+    "code": "DEP-002",
+    "type": "DEPARTMENT",
+    "title_th": "นายวรชัย  วงค์ชะนะ",
+    "title_en": "นายวรชัย วงค์ชะนะ",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  },
+  {
+    "id": "1",
+    "code": "DEP-001",
+    "type": "DEPARTMENT",
+    "title_th": "น.ส.พรหมศิริ  พิมพ์สกุลไกร",
+    "title_en": "น.ส.พรหมศิริ พิมพ์สกุลไกร",
+    "is_active": "INACTIVE",
+    "classification": "LEGACY_PERSON_CONTAMINATION"
+  }
+]

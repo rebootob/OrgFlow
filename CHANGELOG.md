@@ -42,6 +42,19 @@
 
 ---
 
+## [v1.5.0-phase7.2] - 2026-08-22
+
+### Added
+- **OrgFlow Phase 7.2 — Final Employee ↔ Organization ↔ Position Cross-Check (Strict Read-Only):**
+  - Executed complete cross-check across all 275 App 53 employee records against current App 791 and proposed Canonical Master.
+  - Verified 16 contamination categories (A through P) with exact counts.
+  - Classified all 525 App 791 records (7 Canonical Organizations, 518 Legacy Contaminations).
+  - Traced and itemized all 41 exceptions requiring human review (20 missing Thai names for expats, 1 duplicate ID, 7 position string gaps, 13 legacy section abbreviation gaps).
+  - Verified 0 production writes across App 53, App 791, App 792, and App 793.
+  - Final Status: `READY_FOR_FINAL_DATA_REPAIR_PLAN_REVIEW`.
+
+---
+
 ## [v1.4.9-phase7] - 2026-08-22
 
 ### Added
