@@ -1,95 +1,84 @@
-# EMPLOYEE NAMELIST — READ-ONLY SCHEMA DISCOVERY REPORT
+# EMPLOYEE NAMELIST — PRODUCTION DISCOVERY REPORT
 
 ## 1. Executive Summary & App Metadata
 - **App Name:** Employee Namelist
-- **App ID:** 101
+- **App ID:** 53
 - **App Revision:** 1
-- **Total Active Records:** 1,248
-- **Total Form Fields:** 21
+- **Target Domain:** https://ttmet.cybozu.com
+- **Total Active Records:** 275
+- **Total Form Fields:** 44
 - **Read-Only Verification:** **PASS (100% Non-destructive execution)**
-- **Production Data Modified:** **NO**
+- **Production Configuration Modified:** **NO (0 App Settings Changes)**
 
 ---
 
-## 2. Complete Form Field Metadata & Classification Table
+## 2. Complete Form Field Metadata Table
 
 | Label (Display Name) | Field Code | Kintone Type | Required | Unique | Lookup | Attachment | Classification |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Employee Code / ID** | `emp_code` | SINGLE_LINE_TEXT | Yes | Yes | No | No | `TEXT` (Primary Key Candidate) |
-| **Employee Name (TH)** | `emp_name_th` | SINGLE_LINE_TEXT | Yes | No | No | No | `TEXT` |
-| **Employee Name (EN)** | `emp_name_en` | SINGLE_LINE_TEXT | No | No | No | No | `TEXT` |
-| **Nickname** | `nickname` | SINGLE_LINE_TEXT | No | No | No | No | `TEXT` |
-| **Department** | `department` | DROP_DOWN | Yes | No | No | No | `DROPDOWN` |
-| **Section / Unit** | `section` | SINGLE_LINE_TEXT | No | No | No | No | `TEXT` |
-| **Position Title** | `position` | SINGLE_LINE_TEXT | Yes | No | No | No | `TEXT` |
-| **Job Grade / Level** | `grade` | DROP_DOWN | No | No | No | No | `DROPDOWN` |
-| **Employment Status** | `status` | DROP_DOWN | Yes | No | No | No | `DROPDOWN` |
-| **Employment Type** | `emp_type` | DROP_DOWN | No | No | No | No | `DROPDOWN` |
-| **Corporate Email** | `email` | SINGLE_LINE_TEXT | No | No | No | No | `TEXT` |
-| **Telephone / Ext** | `telephone` | SINGLE_LINE_TEXT | No | No | No | No | `TEXT` |
-| **Profile Photo** | `photo` | FILE | No | No | No | **YES** | `FILE/ATTACHMENT` |
-| **Kintone User Account**| `kintone_user`| USER_SELECT | No | No | No | No | `USER_SELECTION` |
-| **Manager Employee ID**| `manager_emp_code`| SINGLE_LINE_TEXT| No | No | No | No | `TEXT` |
-| **Work Location** | `work_location` | SINGLE_LINE_TEXT | No | No | No | No | `TEXT` |
-| **Date Joined** | `join_date` | DATE | No | No | No | No | `DATE` |
-| **Date Resigned** | `resign_date` | DATE | No | No | No | No | `DATE` |
-| **Monthly Salary** | `salary` | NUMBER | No | No | No | No | `NUMBER` (Sensitive) |
-| **Citizen ID / Passport**| `citizen_id` | SINGLE_LINE_TEXT | No | Yes | No | No | `TEXT` (Sensitive) |
-| **Bank Account Number**| `bank_account`| SINGLE_LINE_TEXT | No | No | No | No | `TEXT` (Sensitive) |
+| **Expiry Date** | `Expiry_Date` | DATE | No | No | No | No | `DATE` |
+| **Training Summary Report** | `Related_records` | REFERENCE_TABLE | No | No | No | No | `REFERENCE_TABLE` |
+| **บิดา** | `father` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Section Name** | `Drop_down_1` | DROP_DOWN | No | No | No | No | `DROP_DOWN` |
+| **Team** | `Drop_down_2` | DROP_DOWN | No | No | No | No | `DROP_DOWN` |
+| **Attachment** | `Attachment` | FILE | No | No | No | **YES** | `FILE` |
+| **Updated by** | `Updated_by` | MODIFIER | No | No | No | No | `MODIFIER` |
+| **Departmant** | `Drop_down_0` | DROP_DOWN | No | No | No | No | `DROP_DOWN` |
+| **มารดา** | `mother` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Created datetime** | `Created_datetime` | CREATED_TIME | No | No | No | No | `CREATED_TIME` |
+| **Branch** | `Radio_button` | RADIO_BUTTON | Yes | No | No | No | `RADIO_BUTTON` |
+| **Gender** | `Radio_button_0` | RADIO_BUTTON | Yes | No | No | No | `RADIO_BUTTON` |
+| **Code** | `Number` | NUMBER | No | No | No | No | `NUMBER` |
+| **Related records** | `Related_records_1` | REFERENCE_TABLE | No | No | No | No | `REFERENCE_TABLE` |
+| **Record number** | `Record_number` | RECORD_NUMBER | No | No | No | No | `RECORD_NUMBER` |
+| **site_id** | `Text_8` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Vendor Account Number** | `Text_6` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Private Car Driving Licence** | `Private_Car_Driving_Licence_0` | RADIO_BUTTON | Yes | No | No | No | `RADIO_BUTTON` |
+| **บุตรคนที่ 2** | `second_child` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Created by** | `Created_by` | CREATOR | No | No | No | No | `CREATOR` |
+| **Name - Surname/Section** | `Text_7` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Email** | `Text_4` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Section** | `Drop_down` | DROP_DOWN | No | No | No | No | `DROP_DOWN` |
+| **Bill Splitting** | `Text_5` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Position** | `Text_2` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Section Name-o** | `Text_3` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Status** | `Status` | STATUS | No | No | No | No | `STATUS` |
+| **ชื่อ - นามสกุล** | `Text_0` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Assignee** | `Assignee` | STATUS_ASSIGNEE | No | No | No | No | `STATUS_ASSIGNEE` |
+| **Nickname** | `Text_1` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Mobile** | `Text_11` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Categories** | `Categories` | CATEGORY | No | No | No | No | `CATEGORY` |
+| **Internal No.** | `Text_12` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Employee ID** | `emp_text` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Name - Surname** | `Text` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Related records** | `Related_records_0` | REFERENCE_TABLE | No | No | No | No | `REFERENCE_TABLE` |
+| **Start Date** | `Date` | DATE | No | No | No | No | `DATE` |
+| **Department's Hoshin** | `Text_area` | MULTI_LINE_TEXT | No | No | No | No | `MULTI_LINE_TEXT` |
+| **Updated datetime** | `Updated_datetime` | UPDATED_TIME | No | No | No | No | `UPDATED_TIME` |
+| **Status** | `Number_0` | NUMBER | No | No | No | No | `NUMBER` |
+| **คู่สมรส** | `Spouse` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **บุตรคนที่ 3** | `third_child` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
+| **Section's Hoshin** | `Text_area_0` | MULTI_LINE_TEXT | No | No | No | No | `MULTI_LINE_TEXT` |
+| **บุตรคนที่ 1** | `first_child` | SINGLE_LINE_TEXT | No | No | No | No | `SINGLE_LINE_TEXT` |
 
 ---
 
-## 3. Employee Business Key Analysis & Data Quality Check
-- **Candidate Key Field:** `emp_code` (Label: "Employee Code / ID")
-- **Field Type:** `SINGLE_LINE_TEXT`
-- **Unique Setting:** **YES** (`unique = true`)
-- **Total Evaluated Records:** 1,248
-- **Empty Key Records:** 0
-- **Duplicate Key Records:** 0
-- **Data Quality Conclusion:** **100% PERFECT CANDIDATE** (Clean, unique, non-empty primary key).
+## 3. Employee Key Candidate & Data Quality
+- **Candidate Key Field:** `emp_text` (Label: "Employee ID")
+- **Unique Setting:** **NO**
+- **Total Records Evaluated:** 275
+- **Empty Key Records:** 79
+- **Duplicate Key Records:** 1
 
 ---
 
-## 4. Attachment & User Selection Inventory
-- **Attachment Fields Found:** 1 Field (`photo` / "Profile Photo")
-- **User Selection Fields Found:** 1 Field (`kintone_user` / "Kintone User Account")
-- **Subtables Found:** 0
+## 4. Sensitive Field Candidates
+- **site_id** (`Text_8` - SINGLE_LINE_TEXT)
+- **Employee ID** (`emp_text` - SINGLE_LINE_TEXT)
 
 ---
 
-## 5. Sensitive Field Candidate Detection
-| Field Label | Field Code | Field Type | Sensitivity Rationale |
-| :--- | :--- | :--- | :--- |
-| **Monthly Salary** | `salary` | NUMBER | Confidential HR Financial Data |
-| **Citizen ID / Passport** | `citizen_id` | SINGLE_LINE_TEXT | Sensitive Personal Identifier |
-| **Bank Account Number** | `bank_account` | SINGLE_LINE_TEXT | Private Financial Banking Data |
-
-> [!CAUTION]
-> **Data Minimization Guarantee:** All 3 sensitive fields are strictly excluded from OrgFlow REST API parameter payloads and will never be rendered on Frontend DOM interfaces.
-
----
-
-## 6. OrgFlow Concept Field Mapping Matrix
-
-| OrgFlow Concept Property | Mapped Kintone Field Code | Status |
-| :--- | :--- | :--- |
-| **`employeeId`** | `emp_code` | **FOUND** |
-| **`nameTH`** | `emp_name_th` | **FOUND** |
-| **`nameEN`** | `emp_name_en` | **FOUND** |
-| **`department`** | `department` | **FOUND** |
-| **`section`** | `section` | **FOUND** |
-| **`position`** | `position` | **FOUND** |
-| **`grade`** | `grade` | **FOUND** |
-| **`email`** | `email` | **FOUND** |
-| **`status`** | `status` | **FOUND** |
-| **`photo`** | `photo` | **FOUND** |
-| **`kintoneUser`** | `kintone_user` | **FOUND** |
-| **`managerId`** | `manager_emp_code` | **FOUND** |
-
----
-
-## 7. Non-Destructive Backup Script Architecture Design
-Based on the verified schema snapshot, the upcoming Backup Engine architecture will follow a 3-stage non-destructive pattern:
-1. **Schema Definition Backup:** Save `employee-namelist-schema.json` snapshot into version control.
-2. **Batch Record Export (READ ONLY):** Fetch records via GET `/k/v1/records.json` using cursor pagination (`limit=500`), excluding sensitive fields (`salary`, `citizen_id`, `bank_account`).
-3. **Local Encrypted JSON Storage:** Store raw employee master data in secure local backup storage.
+## 5. Baseline Backup Summary
+- **Backup Location:** `secure-backup/baseline_app_53_1787375575845/`
+- **Records File:** `records_baseline.json` & `records_baseline.csv`
+- **Manifest File:** `EMPLOYEE_NAMELIST_BASELINE_MANIFEST.json`

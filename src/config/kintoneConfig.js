@@ -1,19 +1,22 @@
 /**
  * OrgFlow — Central Kintone System Configuration
- * Version: 1.0.0
- * Build Commit: 8409d30
+ * Version: 2.0.0
+ * Verified against Target Production Kintone App 53 on https://ttmet.cybozu.com
  */
 
 export const KINTONE_CONFIG = {
-    // Kintone App IDs (Configurable per environment: DEV / UAT / PROD)
+    // Kintone App IDs
     APPS: {
-        EMPLOYEE_NAMELIST: 101, // Protected Authoritative Employee Master App
-        DEPARTMENT_MASTER: 102, // Department Hierarchy Master App
-        POSITION_MASTER: 103,   // Decoupled Position & Headcount Master App
-        ASSIGNMENT_LOG: 104,    // Time-based Org Assignment Log App
-        CHANGE_REQUEST: 105,    // Org Change Workflow Request App
-        CHANGE_LOG: 106         // Business Audit Change Log App
+        EMPLOYEE_NAMELIST: 53,  // Verified Production Employee Namelist App ID
+        DEPARTMENT_MASTER: 102, // Department Master Extension App
+        POSITION_MASTER: 103,   // Position Master Extension App
+        ASSIGNMENT_LOG: 104,    // Time-based Org Assignment Log Extension App
+        CHANGE_REQUEST: 105,    // Org Change Workflow Request Extension App
+        CHANGE_LOG: 106         // Business Audit Change Log Extension App
     },
+
+    // Kintone Domain
+    DOMAIN: 'https://ttmet.cybozu.com',
 
     // API Execution Parameters
     API: {

@@ -1,27 +1,29 @@
 /**
  * OrgFlow — Central Field Mapping & Data Normalization Dictionary
- * Version: 1.0.0
+ * Version: 2.0.0
  * 
- * Maps raw Kintone Field Codes from 'Employee Namelist' into standardized OrgFlow Concept Properties.
+ * Verified against Real Kintone Production App 53 (Employee Namelist).
  * Guarantees zero field renaming or modification in protected production Kintone Apps.
  */
 
 export const EMPLOYEE_NAMELIST_FIELDS = {
-    employeeId: 'emp_code',         // Protected Primary Key Target for Lookups
-    nameTH: 'emp_name_th',          // Full Thai Name
-    nameEN: 'emp_name_en',          // Full English Name
-    nickname: 'nickname',           // Nickname
-    departmentId: 'department',     // Department Code / Title
-    section: 'section',             // Section / Sub-unit Title
-    positionId: 'position',         // Position Title / Code
-    grade: 'grade',                 // Job Level / Grade
-    status: 'status',               // Employment Status ('Working', 'Active', 'Resigned')
-    employmentType: 'emp_type',     // Full-time, Contract, Outsource
-    email: 'email',                 // Corporate Email
-    telephone: 'telephone',         // Phone / Extension
-    photo: 'photo',                 // Profile Photo File Attachment
-    kintoneUser: 'kintone_user',     // Optional Kintone User Selection Mapping
-    managerId: 'manager_emp_code'   // Direct Manager Employee ID Pointer
+    employeeId: 'emp_text',         // Real Discovered Code for "Employee ID"
+    nameTH: 'Text_0',               // Real Discovered Code for "ชื่อ - นามสกุล"
+    nameEN: 'Text',                 // Real Discovered Code for "Name - Surname"
+    nickname: 'Text_1',             // Real Discovered Code for "Nickname"
+    departmentId: 'Drop_down_0',    // Real Discovered Code for "Departmant"
+    section: 'Drop_down_1',         // Real Discovered Code for "Section Name"
+    team: 'Drop_down_2',            // Real Discovered Code for "Team"
+    positionId: 'Text_2',           // Real Discovered Code for "Position"
+    email: 'Text_4',                // Real Discovered Code for "Email"
+    telephone: 'Text_11',           // Real Discovered Code for "Mobile"
+    internalNo: 'Text_12',          // Real Discovered Code for "Internal No."
+    photo: 'Attachment',            // Real Discovered Code for "Attachment"
+    joinDate: 'Date',               // Real Discovered Code for "Start Date"
+    status: 'Status',               // Real Discovered Code for Kintone Process Status
+    codeNumber: 'Number',           // Real Discovered Code for "Code"
+    branch: 'Radio_button',         // Real Discovered Code for "Branch" (BKK, AMT)
+    gender: 'Radio_button_0'        // Real Discovered Code for "Gender"
 };
 
 /**
@@ -31,9 +33,12 @@ export const EXCLUDED_SENSITIVE_FIELDS = [
     'salary',
     'citizen_id',
     'bank_account',
-    'medical_info',
-    'private_phone',
-    'hr_notes'
+    'father',
+    'mother',
+    'Spouse',
+    'first_child',
+    'second_child',
+    'third_child'
 ];
 
 /**
@@ -46,7 +51,7 @@ export function normalizeEmployeeRecord(rawRecord) {
     if (!rawRecord) return null;
 
     const getFieldValue = (fieldCode, defaultValue = '') => {
-        if (rawRecord[fieldCode] && rawRecord[fieldCode].value !== undefined) {
+        if (rawRecord[fieldCode] && rawRecord[fieldCode].value !== undefined && rawRecord[fieldCode].value !== null) {
             return rawRecord[fieldCode].value;
         }
         return defaultValue;
@@ -67,15 +72,16 @@ export function normalizeEmployeeRecord(rawRecord) {
         nickname: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.nickname),
         departmentId: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.departmentId),
         section: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.section),
+        team: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.team),
         positionId: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.positionId),
-        grade: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.grade),
-        status: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.status, 'Active'),
-        employmentType: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.employmentType, 'Full-Time'),
         email: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.email),
         telephone: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.telephone),
+        internalNo: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.internalNo),
         photoUrl: photoUrl,
-        kintoneUser: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.kintoneUser, null),
-        managerId: String(getFieldValue(EMPLOYEE_NAMELIST_FIELDS.managerId)).trim()
+        joinDate: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.joinDate),
+        status: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.status, 'Active'),
+        branch: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.branch),
+        gender: getFieldValue(EMPLOYEE_NAMELIST_FIELDS.gender)
     };
 }
 

@@ -1,322 +1,492 @@
 {
   "app": {
-    "id": 101,
+    "id": "53",
     "name": "Employee Namelist",
     "revision": "1",
+    "domain": "https://ttmet.cybozu.com",
     "readOnlyVerification": "PASS",
     "productionDataModified": false
   },
   "metrics": {
-    "totalRecords": 1248,
-    "totalFields": 21,
+    "totalRecords": 275,
+    "totalFields": 44,
     "attachmentFound": true
   },
   "fields": [
     {
-      "label": "Employee Code / ID",
-      "code": "emp_code",
-      "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
-      "required": true,
-      "unique": true,
-      "default": "",
-      "options": null,
-      "lookup": null
-    },
-    {
-      "label": "Employee Name (TH)",
-      "code": "emp_name_th",
-      "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
-      "required": true,
-      "unique": false,
-      "default": "",
-      "options": null,
-      "lookup": null
-    },
-    {
-      "label": "Employee Name (EN)",
-      "code": "emp_name_en",
-      "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
+      "label": "Expiry Date",
+      "code": "Expiry_Date",
+      "type": "DATE",
       "required": false,
       "unique": false,
-      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Training Summary Report",
+      "code": "Related_records",
+      "type": "REFERENCE_TABLE",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "บิดา",
+      "code": "father",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Section Name",
+      "code": "Drop_down_1",
+      "type": "DROP_DOWN",
+      "required": false,
+      "unique": false,
+      "options": [
+        "Sales Engineering",
+        "Toyota  Sales",
+        "HR & Personnel",
+        "Injection",
+        "Technical Services",
+        "Automotive",
+        "Industry",
+        "Industrial  Services",
+        "Product Sales",
+        "Eco Energy & Textile Machinery",
+        "Die Casting",
+        "Export",
+        "GA",
+        "Accounting & Finance"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Team",
+      "code": "Drop_down_2",
+      "type": "DROP_DOWN",
+      "required": false,
+      "unique": false,
+      "options": [
+        "CAD",
+        "Production",
+        "Admin",
+        "Marketing"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Attachment",
+      "code": "Attachment",
+      "type": "FILE",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Updated by",
+      "code": "Updated_by",
+      "type": "MODIFIER",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Departmant",
+      "code": "Drop_down_0",
+      "type": "DROP_DOWN",
+      "required": false,
+      "unique": false,
+      "options": [
+        "Industrial  Services",
+        "Eco Energy & Textile Machinery",
+        "Corporate",
+        "Mold & Engineering",
+        "Machinery",
+        "Technical Services",
+        "Factory Services",
+        "Toyota Sales"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "มารดา",
+      "code": "mother",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Created datetime",
+      "code": "Created_datetime",
+      "type": "CREATED_TIME",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Branch",
+      "code": "Radio_button",
+      "type": "RADIO_BUTTON",
+      "required": true,
+      "unique": false,
+      "options": [
+        "BKK",
+        "AMT"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Gender",
+      "code": "Radio_button_0",
+      "type": "RADIO_BUTTON",
+      "required": true,
+      "unique": false,
+      "options": [
+        "Female",
+        "Male"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Code",
+      "code": "Number",
+      "type": "NUMBER",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Related records",
+      "code": "Related_records_1",
+      "type": "REFERENCE_TABLE",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Record number",
+      "code": "Record_number",
+      "type": "RECORD_NUMBER",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "site_id",
+      "code": "Text_8",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Vendor Account Number",
+      "code": "Text_6",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Private Car Driving Licence",
+      "code": "Private_Car_Driving_Licence_0",
+      "type": "RADIO_BUTTON",
+      "required": true,
+      "unique": false,
+      "options": [
+        "No",
+        "Yes"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "บุตรคนที่ 2",
+      "code": "second_child",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Created by",
+      "code": "Created_by",
+      "type": "CREATOR",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Name - Surname/Section",
+      "code": "Text_7",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Email",
+      "code": "Text_4",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Section",
+      "code": "Drop_down",
+      "type": "DROP_DOWN",
+      "required": false,
+      "unique": false,
+      "options": [
+        "TMT2",
+        "TMS1",
+        "TMT1",
+        "TMF3",
+        "TMF2",
+        "TME1",
+        "TMH3",
+        "TMF1",
+        "TMG2",
+        "TMH2",
+        "TMG1",
+        "TMH1"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Bill Splitting",
+      "code": "Text_5",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Position",
+      "code": "Text_2",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Section Name-o",
+      "code": "Text_3",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Status",
+      "code": "Status",
+      "type": "STATUS",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "ชื่อ - นามสกุล",
+      "code": "Text_0",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Assignee",
+      "code": "Assignee",
+      "type": "STATUS_ASSIGNEE",
+      "required": false,
+      "unique": false,
       "options": null,
       "lookup": null
     },
     {
       "label": "Nickname",
-      "code": "nickname",
+      "code": "Text_1",
       "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
       "required": false,
       "unique": false,
-      "default": "",
       "options": null,
       "lookup": null
     },
     {
-      "label": "Department",
-      "code": "department",
-      "type": "DROP_DOWN",
-      "classification": "DROPDOWN",
-      "required": true,
-      "unique": false,
-      "default": "",
-      "options": [
-        "Production",
-        "Quality",
-        "Engineering",
-        "HR",
-        "IT",
-        "Finance",
-        "Management"
-      ],
-      "lookup": null
-    },
-    {
-      "label": "Section / Unit",
-      "code": "section",
+      "label": "Mobile",
+      "code": "Text_11",
       "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
       "required": false,
       "unique": false,
-      "default": "",
       "options": null,
       "lookup": null
     },
     {
-      "label": "Position Title",
-      "code": "position",
+      "label": "Categories",
+      "code": "Categories",
+      "type": "CATEGORY",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Internal No.",
+      "code": "Text_12",
       "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
-      "required": true,
+      "required": false,
       "unique": false,
-      "default": "",
       "options": null,
       "lookup": null
     },
     {
-      "label": "Job Grade / Level",
-      "code": "grade",
-      "type": "DROP_DOWN",
-      "classification": "DROPDOWN",
-      "required": false,
-      "unique": false,
-      "default": "",
-      "options": [
-        "M1",
-        "M2",
-        "S1",
-        "S2",
-        "O1",
-        "O2"
-      ],
-      "lookup": null
-    },
-    {
-      "label": "Employment Status",
-      "code": "status",
-      "type": "DROP_DOWN",
-      "classification": "DROPDOWN",
-      "required": true,
-      "unique": false,
-      "default": "Working",
-      "options": [
-        "Working",
-        "Resigned",
-        "Suspended",
-        "Inactive"
-      ],
-      "lookup": null
-    },
-    {
-      "label": "Employment Type",
-      "code": "emp_type",
-      "type": "DROP_DOWN",
-      "classification": "DROPDOWN",
-      "required": false,
-      "unique": false,
-      "default": "Full-Time",
-      "options": [
-        "Full-Time",
-        "Contract",
-        "Outsource",
-        "Temporary"
-      ],
-      "lookup": null
-    },
-    {
-      "label": "Corporate Email",
-      "code": "email",
+      "label": "Employee ID",
+      "code": "emp_text",
       "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
       "required": false,
       "unique": false,
-      "default": "",
       "options": null,
       "lookup": null
     },
     {
-      "label": "Telephone / Extension",
-      "code": "telephone",
+      "label": "Name - Surname",
+      "code": "Text",
       "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
       "required": false,
       "unique": false,
-      "default": "",
       "options": null,
       "lookup": null
     },
     {
-      "label": "Profile Photo",
-      "code": "photo",
-      "type": "FILE",
-      "classification": "FILE/ATTACHMENT",
+      "label": "Related records",
+      "code": "Related_records_0",
+      "type": "REFERENCE_TABLE",
       "required": false,
       "unique": false,
-      "default": null,
       "options": null,
       "lookup": null
     },
     {
-      "label": "Kintone User Account",
-      "code": "kintone_user",
-      "type": "USER_SELECT",
-      "classification": "USER_SELECTION",
-      "required": false,
-      "unique": false,
-      "default": null,
-      "options": null,
-      "lookup": null
-    },
-    {
-      "label": "Manager Employee ID",
-      "code": "manager_emp_code",
-      "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
-      "required": false,
-      "unique": false,
-      "default": "",
-      "options": null,
-      "lookup": null
-    },
-    {
-      "label": "Work Location",
-      "code": "work_location",
-      "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
-      "required": false,
-      "unique": false,
-      "default": "",
-      "options": null,
-      "lookup": null
-    },
-    {
-      "label": "Date Joined",
-      "code": "join_date",
+      "label": "Start Date",
+      "code": "Date",
       "type": "DATE",
-      "classification": "DATE",
       "required": false,
       "unique": false,
-      "default": null,
       "options": null,
       "lookup": null
     },
     {
-      "label": "Date Resigned",
-      "code": "resign_date",
-      "type": "DATE",
-      "classification": "DATE",
+      "label": "Department's Hoshin",
+      "code": "Text_area",
+      "type": "MULTI_LINE_TEXT",
       "required": false,
       "unique": false,
-      "default": null,
       "options": null,
       "lookup": null
     },
     {
-      "label": "Monthly Salary",
-      "code": "salary",
+      "label": "Updated datetime",
+      "code": "Updated_datetime",
+      "type": "UPDATED_TIME",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Status",
+      "code": "Number_0",
       "type": "NUMBER",
-      "classification": "NUMBER",
       "required": false,
       "unique": false,
-      "default": null,
       "options": null,
-      "lookup": null,
-      "sensitive": true
+      "lookup": null
     },
     {
-      "label": "Citizen ID / Passport",
-      "code": "citizen_id",
+      "label": "คู่สมรส",
+      "code": "Spouse",
       "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
-      "required": false,
-      "unique": true,
-      "default": "",
-      "options": null,
-      "lookup": null,
-      "sensitive": true
-    },
-    {
-      "label": "Bank Account Number",
-      "code": "bank_account",
-      "type": "SINGLE_LINE_TEXT",
-      "classification": "TEXT",
       "required": false,
       "unique": false,
-      "default": "",
       "options": null,
-      "lookup": null,
-      "sensitive": true
+      "lookup": null
+    },
+    {
+      "label": "บุตรคนที่ 3",
+      "code": "third_child",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Section's Hoshin",
+      "code": "Text_area_0",
+      "type": "MULTI_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "บุตรคนที่ 1",
+      "code": "first_child",
+      "type": "SINGLE_LINE_TEXT",
+      "required": false,
+      "unique": false,
+      "options": null,
+      "lookup": null
     }
   ],
-  "layout": {
-    "rows": 7,
-    "groups": 2,
-    "subtables": 0
-  },
   "keyAnalysis": {
-    "candidateField": "emp_code",
-    "label": "Employee Code / ID",
-    "unique": true,
-    "emptyValues": 0,
-    "duplicateValues": 0,
-    "qualityScore": "100% PERFECT"
+    "candidateField": "emp_text",
+    "label": "Employee ID",
+    "unique": false,
+    "emptyValues": 79,
+    "duplicateValues": 1
   },
   "attachments": [
     {
-      "label": "Profile Photo",
-      "code": "photo"
+      "label": "Attachment",
+      "code": "Attachment"
     }
   ],
+  "userSelections": [],
   "lookups": [],
   "subtables": [],
-  "userSelectionFields": [
+  "sensitiveCandidates": [
     {
-      "label": "Kintone User Account",
-      "code": "kintone_user"
-    }
-  ],
-  "sensitiveFields": [
-    {
-      "label": "Monthly Salary",
-      "code": "salary",
-      "type": "NUMBER",
-      "candidateReason": "Financial Compensation"
+      "label": "site_id",
+      "code": "Text_8",
+      "type": "SINGLE_LINE_TEXT"
     },
     {
-      "label": "Citizen ID / Passport",
-      "code": "citizen_id",
-      "type": "SINGLE_LINE_TEXT",
-      "candidateReason": "National Identification"
-    },
-    {
-      "label": "Bank Account Number",
-      "code": "bank_account",
-      "type": "SINGLE_LINE_TEXT",
-      "candidateReason": "Financial Banking Details"
+      "label": "Employee ID",
+      "code": "emp_text",
+      "type": "SINGLE_LINE_TEXT"
     }
   ]
 }
