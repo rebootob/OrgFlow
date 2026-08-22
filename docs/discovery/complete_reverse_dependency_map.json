@@ -1,0 +1,4730 @@
+{
+  "scanMetadata": {
+    "timestamp": "2026-08-22T05:35:14.466Z",
+    "kintoneDomain": "https://ttmet.cybozu.com",
+    "masterAppId": "53",
+    "masterAppName": "Employee Namelist",
+    "totalAppsScanned": 268,
+    "totalFieldsInspected": 9289,
+    "totalAppsDependingOnApp53": 119,
+    "totalDependencies": 165,
+    "uniqueSourceKeysInApp53": [
+      "Number",
+      "Text"
+    ]
+  },
+  "keyAnalysis": {
+    "totalRecords": 275,
+    "numberAnalysis": {
+      "fieldCode": "Number",
+      "label": "Code",
+      "empty": 0,
+      "duplicates": 1
+    },
+    "empTextAnalysis": {
+      "fieldCode": "emp_text",
+      "label": "Employee ID",
+      "empty": 79,
+      "duplicates": 1
+    },
+    "comparison": {
+      "equalCount": 43,
+      "differentCount": 153,
+      "samples": [
+        {
+          "recordId": "642",
+          "number": "295",
+          "empText": "0295"
+        },
+        {
+          "recordId": "641",
+          "number": "294",
+          "empText": "0294"
+        },
+        {
+          "recordId": "640",
+          "number": "293",
+          "empText": "0293"
+        },
+        {
+          "recordId": "639",
+          "number": "297",
+          "empText": "0297"
+        },
+        {
+          "recordId": "638",
+          "number": "296",
+          "empText": "0296"
+        }
+      ]
+    }
+  },
+  "dependentApps": [
+    {
+      "appId": "20",
+      "appName": "Visiting Report",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Create By /Staff's ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "96",
+      "appName": "Report  Incidence  Case ( For IT )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "customer_lookup",
+          "lookupFieldLabel": "Emp ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "98",
+      "appName": "REQUEST FOR HOLIDAY AND OVERNIGHT (GA )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "99",
+      "appName": "Training Request- ( H2 )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Emp.code / รหัส",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "104",
+      "appName": "PPE Request Form",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_7"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "107",
+      "appName": "Toyota Visiting Report- ( A2 )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Emp ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "106",
+      "appName": "Man Power Requistion Form /แบบขออนุมัติกำลัง",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Emp.code / รหัส",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Emp.code / รหัส",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_6"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_1",
+          "lookupFieldLabel": "Emp.code / รหัส",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "113",
+      "appName": "Request  Mobile  phone  or  Pocket  Wifi",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "114",
+      "appName": "Printing  name  card  form",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "115",
+      "appName": "Request Air Ticket Booking / จองตั๋วเครื่องบิน (GA)",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Emp.Code / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_11"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_14"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "119",
+      "appName": "Request Hotel Booking (GA)",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_9"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "120",
+      "appName": "REQUEST RENTAL CAR & DRIVER (GA)",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_7"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "139",
+      "appName": "SLIP FOR WELFARE / สำหรับเบิกสวัสดิการ",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "161",
+      "appName": "SLIP FOR ENTERTAIN",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "163",
+      "appName": "SLIP FOR COST / สำหรับเบิกเพื่อซื้อสินค้ามาขาย",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "164",
+      "appName": "SLIP FOR OTHERS EXPENSE / สำหรับเบิกค่าใช้จ่ายอื่นๆ",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "166",
+      "appName": "Request  Bring In / Out / Return  IT Equipments",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "168",
+      "appName": "Request New Computer/ User Access /Software/System",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "170",
+      "appName": "Meeting documents",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "181",
+      "appName": "TRAVELLING REPORT",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "185",
+      "appName": "OVERSEA TRAVELLING REPORT",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "186",
+      "appName": "DOMESTIC TRAVELLING REPORT",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "190",
+      "appName": "Weekly Report",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "191",
+      "appName": "CAR BOOKING ( Calendar Colour )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "section"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "192",
+      "appName": "CASH ON DELIVERY ( COD )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "193",
+      "appName": "REMITTANCE SLIP / จ่ายต่างประเทศ",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "204",
+      "appName": "COST Version 2",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "211",
+      "appName": "IT INVENTORY",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "ID EMP",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "215",
+      "appName": "Request Create / Edit / Delete  Application on Kintone System",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_6",
+          "lookupFieldLabel": "Modify By",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "227",
+      "appName": "Training Summary Report ( HR Only )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Emp ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "237",
+      "appName": "SLIP FOR PPE/ สำหรับเบิกอุปกรณ์เซฟตี้",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "238",
+      "appName": "Request Gate Pass Card Or  Fingerprint Record",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_14"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_15"
+            },
+            {
+              "sourceField": "Text_3",
+              "destinationField": "Text_16"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_17"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_2",
+          "lookupFieldLabel": "Card issuer",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_7"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_13"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "239",
+      "appName": "Gate Pass DB",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "241",
+      "appName": "Monthly Schedule",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_1",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "243",
+      "appName": "PROJECT STATUS ( T3 )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_6",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_17"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_8",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_10"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_7",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_18"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_12",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_21"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_9",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_11"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_13",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_28"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_10",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_19"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_11",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_20"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_14",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_30"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_15",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_31"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "pic_main"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_2",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_5"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_1",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "244",
+      "appName": "PROJECT STATUS ( T3 )- Version 2",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_6",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_17"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_5",
+          "lookupFieldLabel": "Case Customers contacted by telephone or email",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_35"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_8",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_10"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_7",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_18"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_12",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_21"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_9",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_11"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_13",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_28"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_10",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_19"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_11",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_20"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_16",
+          "lookupFieldLabel": "Case Get information from internal  ( Employee No)",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_39"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_40"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_17",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "pic_main_0"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_14",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_30"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_15",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_31"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_18",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "pic_main_1"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "pic_main"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_2",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_5"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_1",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "SINGLE_LINE_TEXT",
+          "sourceKeyFieldCode": "Text",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "246",
+      "appName": "PROJECT STATUS ( T3 )- Version 3",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_5",
+          "lookupFieldLabel": "Case Customers contacted by telephone or email",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_35"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_8",
+          "lookupFieldLabel": "PIC Assembly Part (EMP NO)",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_14"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_9",
+          "lookupFieldLabel": "PIC  Punch List  ( VTO ) (EMP NO)",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_16"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_10",
+          "lookupFieldLabel": "TTMET PIC (Making Punc List Chart  For Power On Test Running)",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_31"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_16",
+          "lookupFieldLabel": "Case Get information from internal  ( Employee No)",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_39"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_40"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Emp No",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_43"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_2",
+          "lookupFieldLabel": "PIC Part Delivery (EMP NO)",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_10"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_3",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "247",
+      "appName": "Request  External Media & System tools",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "250",
+      "appName": "CAR BOOKING",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "ID / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "section"
+            },
+            {
+              "sourceField": "Text",
+              "destinationField": "name"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "E_mail"
+            },
+            {
+              "sourceField": "Private_Car_Driving_Licence_0",
+              "destinationField": "Private_Car_Driving_Licence"
+            },
+            {
+              "sourceField": "Expiry_Date",
+              "destinationField": "Expiry_Date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "253",
+      "appName": "Sales Control ( T3 )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "EMP ID ( Project Header)",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "prj_head"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "255",
+      "appName": "DAILY REPORT ( T3 )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "256",
+      "appName": "COST ( T3 )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "261",
+      "appName": "Request Create / Edit / Delete  Application on Kintone  V2",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_6",
+          "lookupFieldLabel": "Modify By",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "264",
+      "appName": "TMAC",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "create_by"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "265",
+      "appName": "Report Create / Edit / Delete  Application on Kintone",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "267",
+      "appName": "Training Need Survey ( TMH2 )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "270",
+      "appName": "Email Security Report",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Recipient",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "271",
+      "appName": "Cloud Storage Usage Report",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Recipient",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "273",
+      "appName": "ACTION PLAN",
+      "dependencies": [
+        {
+          "lookupFieldCode": "pic_Lookup",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "name_surname"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "position"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "email"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "westcode"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "status_Number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "278",
+      "appName": "DAILY REPORT ( F2 )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "279",
+      "appName": "Daily Report - Work Form Home",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Radio_button",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "emp_text",
+              "destinationField": "emp_id_text"
+            },
+            {
+              "sourceField": "Text_8",
+              "destinationField": "site_id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "282",
+      "appName": "Management By Objectives for Staff & Chief",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "283",
+      "appName": "PMS Staff & Chief",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "286",
+      "appName": "Workforce Demand Analysis",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "289",
+      "appName": "Asst. Manager",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "290",
+      "appName": "DGM",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "291",
+      "appName": "BCP / Link of Daily Status for Employee",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "292",
+      "appName": "DHL",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_9"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_12"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "298",
+      "appName": "Competency",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "299",
+      "appName": "PMS V3",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "305",
+      "appName": "PMS Sect.Mgr",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "307",
+      "appName": "PMS DGM",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "310",
+      "appName": "PMS Assistant Manager",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "312",
+      "appName": "PMS Specialist 1",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "314",
+      "appName": "Special 2",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "325",
+      "appName": "Cost Saving Report",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "327",
+      "appName": "User Manual",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "จัดทำหรือ Upload โดย. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "328",
+      "appName": "Tracking claim and repair status of the device",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "338",
+      "appName": "Request for Important Company Documents",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "358",
+      "appName": "Report Link Down",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Recipient",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "366",
+      "appName": "Running Number QT",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_11",
+              "destinationField": "Text_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "371",
+      "appName": "Request  Bring In / Out / Return  IT Equipments- V2",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "527",
+      "appName": "Leave Summary",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Employee Number",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "542",
+      "appName": "Requisition for Leave",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Employee Number",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "544",
+      "appName": "Employee In Class",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_7"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "548",
+      "appName": "Access Door Record",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Employee ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "564",
+      "appName": "Inventory Movement",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "ID Emp",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Radio_button",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "569",
+      "appName": "CONTROL PO",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "ID EMP",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "create_by"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "575",
+      "appName": "Monthly Schedule",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "PIC Request",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "section"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "578",
+      "appName": "System Company ( Additional / Revise / Deactivate )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "580",
+      "appName": "Record Remote Work",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP ID",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "587",
+      "appName": "Transfer  Asset",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "รหัสพนักงาน ( ผู้รับผิดชอบปัจจุบัน )",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "re_after"
+            },
+            {
+              "sourceField": "Text_3",
+              "destinationField": "Text_7"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "new_sec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "590",
+      "appName": "LIST  OF  AGREEMENTS",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "NAME"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "SECTION"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "POSITION"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "595",
+      "appName": "PURCHASE  REQUEST",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_9"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_12"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "596",
+      "appName": "CANCELLATION  ASSET  REQUST",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Lookup",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "609",
+      "appName": "SLIP FOR OTHERS EXPENSE  ( IN MONTH)",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "615",
+      "appName": "SLIP FOR COST ( Pay in Month )",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "620",
+      "appName": "Export",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "622",
+      "appName": "Import",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "633",
+      "appName": "แบบฟอร์มขอหนังสือรับรอง",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "640",
+      "appName": "PMS GM",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "643",
+      "appName": "PMS Senior Manager",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "646",
+      "appName": "Notification for time record / แบบแจ้งขอบันทึกเวลาทำงาน",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "emp_text",
+              "destinationField": "emp_id_text"
+            },
+            {
+              "sourceField": "Text_8",
+              "destinationField": "site_id"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "650",
+      "appName": "Work permit / ใบอนุญาตทำงาน",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "NAME_SURNAME"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "SECTION"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "POSITION"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "667",
+      "appName": "Mileage Tracking",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_EMP_CODE",
+          "lookupFieldLabel": "Lookup EMP.CODE.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "emp_text",
+              "destinationField": "EMP_CODE"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "NAME_SURNAME"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "SECTION_User"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "672",
+      "appName": "Request permission confidential documents outside",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "673",
+      "appName": "Return the computer to the IT",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_0",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_6"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "674",
+      "appName": "Request Data Erase for Notebook",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "682",
+      "appName": "Checklist Offboarding",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "683",
+      "appName": "Set View",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "705",
+      "appName": "Notification for time record / แบบแจ้งขอบันทึกเวลาทำงาน- Copy",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "emp_id"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "emp_text",
+              "destinationField": "emp_id_text"
+            },
+            {
+              "sourceField": "Text_8",
+              "destinationField": "site_id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "706",
+      "appName": "Check In-Out",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "user"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "708",
+      "appName": "Check sheet of Safety patrol",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "NAME_SURNAME"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "SECTION"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "POSITION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "709",
+      "appName": "Credit Control Alert",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_3"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "711",
+      "appName": "TEST MBO STAFF",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "712",
+      "appName": "COST FOR GIFU",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "715",
+      "appName": "PMS VP",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "716",
+      "appName": "Japan Staff",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "719",
+      "appName": "ข้อมูลพัสดุ/อุปกรณ์ (Asset Master Data)",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "ID / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "section"
+            },
+            {
+              "sourceField": "Text",
+              "destinationField": "name"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "E_mail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "720",
+      "appName": "เบิกยืม-คืนพัสดุ/อุปกรณ์ สํานักงาน",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "ID / รหัสพนักงาน ผู้ดำเนินการ",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "section"
+            },
+            {
+              "sourceField": "Text",
+              "destinationField": "name"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "E_mail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "723",
+      "appName": "360 feedback V1",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "assessment_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_10"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "emp_code"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_0",
+          "lookupFieldLabel": "Evaluator No. 1",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "evaluator_name_1"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_2",
+          "lookupFieldLabel": "Evaluator No. 3",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "evaluator_name_3"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_1",
+          "lookupFieldLabel": "Evaluator No. 2",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "evaluator_name_2"
+            }
+          ]
+        },
+        {
+          "lookupFieldCode": "Lookup_3",
+          "lookupFieldLabel": "Evaluator No. 4",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "evaluator_name_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "734",
+      "appName": "Golf Membership",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_5"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_9"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_12"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "740",
+      "appName": "Contractor Training  Request",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Emp.code / รหัส",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_4",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "750",
+      "appName": "TEST SLIP FOR WELFARE / สำหรับเบิกสวัสดิการ- Copy",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_1"
+            },
+            {
+              "sourceField": "Text_6",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "Number"
+            },
+            {
+              "sourceField": "Number_0",
+              "destinationField": "Number_0"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Text_8"
+            },
+            {
+              "sourceField": "Text_5",
+              "destinationField": "Text_4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "760",
+      "appName": "Network Change Request Form",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "Staff's ID /  รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_0"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_2"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_4"
+            },
+            {
+              "sourceField": "Drop_down_1",
+              "destinationField": "Text_5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "765",
+      "appName": "Asset Master IT",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Current_User"
+            },
+            {
+              "sourceField": "emp_text",
+              "destinationField": "Staff_ID"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "SECTION"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "POSITION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "767",
+      "appName": "MANUFACTURING INSTRUCTION",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "NAME_SURNAME"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "SECTION"
+            },
+            {
+              "sourceField": "Drop_down_2",
+              "destinationField": "Team"
+            },
+            {
+              "sourceField": "Number",
+              "destinationField": "EMP_CODE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "774",
+      "appName": "TEST PMS Staff & Chief",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup_id",
+          "lookupFieldLabel": "Emp. ID.",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "Text_name"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "Text_section"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "Text_position"
+            },
+            {
+              "sourceField": "Drop_down_0",
+              "destinationField": "Text_dep"
+            },
+            {
+              "sourceField": "Date",
+              "destinationField": "Date"
+            },
+            {
+              "sourceField": "Text_area",
+              "destinationField": "Text_area"
+            },
+            {
+              "sourceField": "Text_area_0",
+              "destinationField": "Text_area_0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "appId": "776",
+      "appName": "Work permit Request",
+      "dependencies": [
+        {
+          "lookupFieldCode": "Lookup",
+          "lookupFieldLabel": "EMP.CODE. / รหัสพนักงาน",
+          "lookupType": "NUMBER",
+          "sourceKeyFieldCode": "Number",
+          "copiedFields": [
+            {
+              "sourceField": "Text",
+              "destinationField": "NAME_SURNAME"
+            },
+            {
+              "sourceField": "Drop_down",
+              "destinationField": "SECTION"
+            },
+            {
+              "sourceField": "Text_2",
+              "destinationField": "POSITION"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
