@@ -1,0 +1,128 @@
+[
+  {
+    "id": "DIV-01",
+    "name": "Machinery & Engineering Division",
+    "type": "DIVISION",
+    "parent": "COMPANY",
+    "head": "Ms. Somrudee (Vice President)"
+  },
+  {
+    "id": "DIV-02",
+    "name": "GIFU SEIKI Division",
+    "type": "DIVISION",
+    "parent": "COMPANY",
+    "head": "Mr. Uchida (Vice President)"
+  },
+  {
+    "id": "DEPT-01",
+    "name": "Machinery Department (TM10)",
+    "type": "DEPARTMENT",
+    "parent": "Machinery & Engineering Division",
+    "head": "Ms. Darat (General Manager)"
+  },
+  {
+    "id": "DEPT-02",
+    "name": "Industrial Services Department (TM70)",
+    "type": "DEPARTMENT",
+    "parent": "Machinery & Engineering Division",
+    "head": "Mr. Kito (General Manager)"
+  },
+  {
+    "id": "DEPT-03",
+    "name": "Eco Energy & Textile Machinery Department (TME1)",
+    "type": "DEPARTMENT",
+    "parent": "Machinery & Engineering Division",
+    "head": "Ms. Somrudee (General Manager Acting)"
+  },
+  {
+    "id": "DEPT-04",
+    "name": "Technical Services Department (TM50)",
+    "type": "DEPARTMENT",
+    "parent": "Machinery & Engineering Division",
+    "head": "Mr. Makino (General Manager)"
+  },
+  {
+    "id": "DEPT-05",
+    "name": "Mold & Engineering Department (TMG0)",
+    "type": "DEPARTMENT",
+    "parent": "GIFU SEIKI Division",
+    "head": "Mr. Uchida (General Manager Acting)"
+  },
+  {
+    "id": "DEPT-06",
+    "name": "Corporate Department (TM90)",
+    "type": "DEPARTMENT",
+    "parent": "COMPANY",
+    "head": "Ms. Chutsara (General Manager)"
+  },
+  {
+    "id": "SEC-01",
+    "name": "Export (TMT1)",
+    "type": "SECTION",
+    "parent": "Machinery Department (TM10)",
+    "head": "Mr. Pitchayada (Manager)"
+  },
+  {
+    "id": "SEC-02",
+    "name": "Toyota Sales (TMT2)",
+    "type": "SECTION",
+    "parent": "Machinery Department (TM10)",
+    "head": "Ms. Darat (Manager Acting)"
+  },
+  {
+    "id": "SEC-03",
+    "name": "Automotive (TMF1)",
+    "type": "SECTION",
+    "parent": "Industrial Services Department (TM70)",
+    "head": "Mr. Kritsada (Manager)"
+  },
+  {
+    "id": "SEC-04",
+    "name": "Industry (TMF2)",
+    "type": "SECTION",
+    "parent": "Industrial Services Department (TM70)",
+    "head": "Ms. Vassana (Manager)"
+  },
+  {
+    "id": "SEC-05",
+    "name": "Sales Engineering (TMF3)",
+    "type": "SECTION",
+    "parent": "Industrial Services Department (TM70)",
+    "head": "Mr. Worapat (Manager)"
+  },
+  {
+    "id": "SEC-06",
+    "name": "Die Casting (TMG1)",
+    "type": "SECTION",
+    "parent": "Mold & Engineering Department (TMG0)",
+    "head": "Ms. Prompan (Manager Acting)"
+  },
+  {
+    "id": "SEC-07",
+    "name": "Injection (TMG2)",
+    "type": "SECTION",
+    "parent": "Mold & Engineering Department (TMG0)",
+    "head": "Mr. Phubodin (Manager Acting)"
+  },
+  {
+    "id": "SEC-08",
+    "name": "GA (TM91)",
+    "type": "SECTION",
+    "parent": "Corporate Department (TM90)",
+    "head": "Ms. Supparat (Manager)"
+  },
+  {
+    "id": "SEC-09",
+    "name": "HR & Personnel (TM92)",
+    "type": "SECTION",
+    "parent": "Corporate Department (TM90)",
+    "head": "Ms. PapatChaya (Manager)"
+  },
+  {
+    "id": "SEC-10",
+    "name": "Accounting & Finance (TM93)",
+    "type": "SECTION",
+    "parent": "Corporate Department (TM90)",
+    "head": "Ms. Chutrawee (Manager)"
+  }
+]

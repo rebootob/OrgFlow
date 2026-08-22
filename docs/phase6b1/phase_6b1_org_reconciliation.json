@@ -1,0 +1,37 @@
+[
+  {
+    "entity": "Company (TTMET)",
+    "chart": "YES",
+    "app53": "IMPLICIT",
+    "app791": "IMPLICIT",
+    "status": "MATCHED_ALL_3"
+  },
+  {
+    "entity": "Divisions (Machinery & Engineering, GIFU SEIKI)",
+    "chart": "YES",
+    "app53": "INCLUDED IN DEPT",
+    "app791": "DEPARTMENT LEVEL 1",
+    "status": "SUPPORTED_VIA_PARENT_CODE"
+  },
+  {
+    "entity": "Departments (TM10, TM70, TME1, TM50, TMG0, TM90)",
+    "chart": "YES",
+    "app53": "EXACT",
+    "app791": "EXACT (DEP-xxx)",
+    "status": "MATCHED_ALL_3"
+  },
+  {
+    "entity": "Sections / Units (Export, Toyota Sales, Automotive, etc.)",
+    "chart": "YES",
+    "app53": "EXACT IN DEPT TEXT",
+    "app791": "EXACT (DEP-xxx)",
+    "status": "MATCHED_ALL_3"
+  },
+  {
+    "entity": "Positions (GM, Manager, Asst Manager, Chief, Staff)",
+    "chart": "YES",
+    "app53": "EXACT (Text)",
+    "app791": "EXACT (POS-xxx)",
+    "status": "MATCHED_ALL_3"
+  }
+]

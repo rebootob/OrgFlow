@@ -1,5 +1,19 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.3.1-phase6b1] - 2026-08-22
+
+### Added
+- **Phase 6B.1 Legacy Organization Structure Mapping Audit (100% Read-Only):** Performed 100% read-only three-way reconciliation between Organization Chart 2026 (TTMET business reference), App 53 (Employee Namelist), and App 791 (Org Masters).
+- Verified Dynamic Tree capability (`entity_code` -> `parent_code` self-referential hierarchy) supporting Divisions, Departments, Sections, and Teams without schema modifications.
+- Verified App 791 schema sufficiency (SUFFICIENT) and App 792 assignment model (SUFFICIENT).
+- Verified legacy App 53 field protection (COMPATIBLE: `Text_0` and `Text` remain untouched for third-party Apps).
+- Identified 0 architecture gaps.
+- Verified 0 production writes across all apps.
+- Created deliverable audit reports in `docs/phase6b1/` ([`PHASE_6B1_LEGACY_ORG_MAPPING_AUDIT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b1/PHASE_6B1_LEGACY_ORG_MAPPING_AUDIT.md)).
+- Enforced Mandatory Stop Gate (Stopped for User Review).
+
+---
+
 ## [v1.3.0-phase6b] - 2026-08-22
 
 ### Added
