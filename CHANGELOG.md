@@ -42,6 +42,19 @@
 
 ---
 
+## [v1.5.3-phase7.3b] - 2026-08-22
+
+### Added
+- **OrgFlow Phase 7.3B — Deterministic Blocking Exception Resolution (Strict Read-Only / Simulation Only):**
+  - Resolved 100% of Employee → Position assignments (275 / 275, 0 unresolved, 0 ambiguous).
+  - Resolved 100% of Employee → Organization assignments (275 / 275, 0 unresolved, 0 ambiguous).
+  - Reduced Blocking Human Review items to 0 (all 20 actionable exceptions deterministically mapped with source evidence).
+  - Verified 0 person records in proposed master, 0 Thai/English contamination, 0 code/name mismatches, 0 orphan relationships.
+  - Final Decision: `GO`.
+  - System Status: `READY_FOR_FINAL_APP791_PRODUCTION_EXECUTION_APPROVAL`. Zero production writes executed.
+
+---
+
 ## [v1.5.2-phase7.3a] - 2026-08-22
 
 ### Added
