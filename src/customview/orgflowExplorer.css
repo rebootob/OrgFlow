@@ -607,12 +607,13 @@
 
 .orgflow-personnel-branches {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
     width: 100%;
     margin-top: 6px;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* Independent Subtree Column */
@@ -620,8 +621,8 @@
     background: #ffffff;
     border: 1px solid #cbd5e1;
     border-radius: 8px;
-    padding: 12px;
-    min-width: 240px;
+    padding: 10px;
+    min-width: 220px;
     height: auto;
     align-self: flex-start;
     display: flex;
@@ -638,7 +639,7 @@
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     padding: 6px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     cursor: pointer;
     transition: all 0.2s;
     box-sizing: border-box;
@@ -662,14 +663,25 @@
     margin-top: 2px;
 }
 
+/* Multi-Column Position Grid */
+.orgflow-personnel-pos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 6px;
+    width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
 .orgflow-personnel-sub-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
-    margin-top: 6px;
+    margin-top: 4px;
+    box-sizing: border-box;
 }
 
 /* Department Subtree Container */
@@ -678,8 +690,8 @@
     border: 1px solid #e2e8f0;
     border-radius: 6px;
     padding: 8px;
-    min-width: 200px;
-    max-width: 320px;
+    min-width: 210px;
+    flex: 1 1 210px;
     height: auto;
     align-self: flex-start;
     display: flex;

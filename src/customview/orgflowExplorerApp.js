@@ -23,8 +23,8 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        BUNDLE_VERSION: '4.3.0',
-        BUILD_TIMESTAMP: '2026-08-22T21:02:00+07:00',
+        BUNDLE_VERSION: '4.4.0',
+        BUILD_TIMESTAMP: '2026-08-22T21:05:00+07:00',
         CACHE_TTL_MS: 300000
     };
 
@@ -574,6 +574,10 @@
             this.loadSessionState();
             this.render();
             this.setupResizeObserver();
+
+            setTimeout(() => {
+                this.fitReadable();
+            }, 100);
         }
 
         loadSessionState() {
@@ -683,7 +687,8 @@
                         <button class="orgflow-btn orgflow-btn-outline" id="btn-zoom-out" style="font-size:11px; padding:4px 8px;">−</button>
                         <button class="orgflow-btn orgflow-btn-outline" id="btn-zoom-val" style="font-size:11px; padding:4px 8px; min-width:48px;">${Math.round(this.zoomScale * 100)}%</button>
                         <button class="orgflow-btn orgflow-btn-outline" id="btn-zoom-in" style="font-size:11px; padding:4px 8px;">+</button>
-                        <button class="orgflow-btn orgflow-btn-outline" id="btn-fit-screen" style="font-size:11px; padding:4px 8px;">Fit Screen</button>
+                        <button class="orgflow-btn orgflow-btn-primary" id="btn-fit-readable" style="font-size:11px; padding:4px 8px;" title="Smart Fit (Never below 70% zoom)">Fit Readable</button>
+                        <button class="orgflow-btn orgflow-btn-outline" id="btn-fit-entire" style="font-size:11px; padding:4px 8px;" title="Fit Entire Org (Overview mode)">Fit Entire Org</button>
                         <button class="orgflow-btn orgflow-btn-outline" id="btn-center-chart" style="font-size:11px; padding:4px 8px;">Center</button>
                     </div>
 
@@ -719,8 +724,11 @@
             bar.querySelector('#btn-zoom-val').addEventListener('click', () => {
                 this.setZoom(1.0);
             });
-            bar.querySelector('#btn-fit-screen').addEventListener('click', () => {
-                this.fitScreen();
+            bar.querySelector('#btn-fit-readable').addEventListener('click', () => {
+                this.fitReadable();
+            });
+            bar.querySelector('#btn-fit-entire').addEventListener('click', () => {
+                this.fitEntireOrg();
             });
             bar.querySelector('#btn-center-chart').addEventListener('click', () => {
                 this.panX = 0;
@@ -746,22 +754,44 @@
             this.updateTransform();
         }
 
-        fitScreen() {
+        fitReadable() {
             const container = document.getElementById('orgflow-chart-canvas');
             const target = document.getElementById('orgflow-transform-layer');
             if (!container || !target) return;
 
-            const cW = container.clientWidth - 40;
-            const cH = container.clientHeight - 40;
+            const cW = container.clientWidth - 20;
+            const cH = container.clientHeight - 20;
             const tW = target.scrollWidth || 1200;
             const tH = target.scrollHeight || 800;
 
             const scaleX = cW / tW;
             const scaleY = cH / tH;
-            let bestScale = Math.min(scaleX, scaleY);
-            bestScale = Math.max(0.4, Math.min(1.2, bestScale));
+            let idealScale = Math.min(scaleX, scaleY);
+            // Smart Fit: Clamp to MIN_READABLE_ZOOM (0.70)
+            let smartScale = Math.max(0.70, Math.min(1.10, idealScale));
 
-            this.zoomScale = parseFloat(bestScale.toFixed(2));
+            this.zoomScale = parseFloat(smartScale.toFixed(2));
+            this.panX = 0;
+            this.panY = 0;
+            this.setZoom(this.zoomScale);
+        }
+
+        fitEntireOrg() {
+            const container = document.getElementById('orgflow-chart-canvas');
+            const target = document.getElementById('orgflow-transform-layer');
+            if (!container || !target) return;
+
+            const cW = container.clientWidth - 20;
+            const cH = container.clientHeight - 20;
+            const tW = target.scrollWidth || 1200;
+            const tH = target.scrollHeight || 800;
+
+            const scaleX = cW / tW;
+            const scaleY = cH / tH;
+            let idealScale = Math.min(scaleX, scaleY);
+            let overviewScale = Math.max(0.40, Math.min(1.0, idealScale));
+
+            this.zoomScale = parseFloat(overviewScale.toFixed(2));
             this.panX = 0;
             this.panY = 0;
             this.setZoom(this.zoomScale);
@@ -1070,9 +1100,9 @@
                 branchRow.className = 'orgflow-personnel-branches';
 
                 // Divisions & Corporate Department with Proportional Flex Weights
-                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME', 2.0));
-                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 1.3));
-                branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0', 0.9));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-ME', 2.2));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('DIV-G0', 1.8));
+                branchRow.appendChild(this.renderDynamicBranchSubtree('TMH0', 1.0));
 
                 execGroup.appendChild(branchRow);
                 chartArea.appendChild(execGroup);
@@ -1126,13 +1156,14 @@
             col.appendChild(headerBox);
 
             if (node.directEmployees.length > 0) {
-                const leaderRow = document.createElement('div');
-                leaderRow.className = 'orgflow-personnel-row';
-                leaderRow.style.marginBottom = '8px';
+                const isMultiPos = node.directEmployees.length > 1;
+                const leaderContainer = document.createElement('div');
+                leaderContainer.className = isMultiPos ? 'orgflow-personnel-pos-grid' : 'orgflow-personnel-row';
+                if (!isMultiPos) leaderContainer.style.marginBottom = '8px';
                 node.directEmployees.forEach(emp => {
-                    leaderRow.appendChild(this.renderPositionEmployeeCard(emp, node.type));
+                    leaderContainer.appendChild(this.renderPositionEmployeeCard(emp, node.type));
                 });
-                col.appendChild(leaderRow);
+                col.appendChild(leaderContainer);
             }
 
             if (node.children.length > 0) {
