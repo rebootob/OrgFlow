@@ -42,6 +42,20 @@
 
 ---
 
+## [v1.5.2-phase7.3a] - 2026-08-22
+
+### Added
+- **OrgFlow Phase 7.3A — Blocking Exception Resolution Before App 791 Production Repair (Strict Read-Only):**
+  - Overrode Phase 7.3 decision to `NO-GO` pending human resolution of blocking data quality items.
+  - Profiled all 7 unresolved Position employees and all 3 unresolved Organization employees with exact source evidence and candidate resolutions.
+  - Itemized and categorized all 41 Human Review items (20 Non-Blocking Thai name gaps for expats + 21 Blocking items).
+  - Verified that all 7 Position and 13 Organization unresolved cases are 100% accounted for within the 41 items (0 double counting).
+  - Confirmed 0 modifications to the 57 Canonical Positions and 34 Canonical Organizations.
+  - Final Decision: `NO-GO`.
+  - System Status: `READY_FOR_EXCEPTION_REVIEW`. Zero production writes executed.
+
+---
+
 ## [v1.5.1-phase7.3] - 2026-08-22
 
 ### Added

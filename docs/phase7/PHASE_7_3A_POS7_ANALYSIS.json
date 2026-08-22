@@ -1,0 +1,143 @@
+[
+  {
+    "empId": "259",
+    "thName": "นางสาวปิยาภรณ์  แก้วดี",
+    "enName": "Ms.Piyaphorn  Kaewdee",
+    "app53RecId": "491",
+    "rawPosValue": "Safety Officer&  ISO Control",
+    "sourceFieldCode": "Text_2",
+    "sourceFieldLabel": "Position",
+    "currentApp791PosRef": "POS-125",
+    "currentApp791PosName": "Ms.Piyaphorn Kaewdee",
+    "proposedCanonicalPosCode": "POS-019",
+    "proposedCanonicalPosName": "Safety Officer",
+    "whyFailed": "Raw string contains compound '&  ISO Control' with double space",
+    "candidateMatches": [
+      "Safety Officer (POS-019)"
+    ],
+    "confidence": "HIGH",
+    "recommendedResolution": "Map to existing canonical Safety Officer (POS-019) as primary job title",
+    "resolutionType": "NORMALIZATION_ONLY"
+  },
+  {
+    "empId": "9042",
+    "thName": "NULL (Expatriate)",
+    "enName": "Mr.Shinichiro  Sato",
+    "app53RecId": "507",
+    "rawPosValue": "EMPTY",
+    "sourceFieldCode": "Text_2",
+    "sourceFieldLabel": "Position",
+    "currentApp791PosRef": "POS-141",
+    "currentApp791PosName": "Mr.Shinichiro Sato",
+    "proposedCanonicalPosCode": "POS-038",
+    "proposedCanonicalPosName": "General Manager",
+    "whyFailed": "Text_2 field is blank in App 53",
+    "candidateMatches": [
+      "General Manager (POS-038) per Org Chart Org.FY2026_Rev.2"
+    ],
+    "confidence": "HIGH",
+    "recommendedResolution": "Assign General Manager (POS-038) based on Org.FY2026_Rev.2 division header",
+    "resolutionType": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "empId": "0120",
+    "thName": "นางสาวสุธาดา  ใจมนต์",
+    "enName": "Ms.Suthada  Chaimon",
+    "app53RecId": "477",
+    "rawPosValue": "Marketing  Chief",
+    "sourceFieldCode": "Text_2",
+    "sourceFieldLabel": "Position",
+    "currentApp791PosRef": "POS-111",
+    "currentApp791PosName": "Ms.Suthada Chaimon",
+    "proposedCanonicalPosCode": "POS-022",
+    "proposedCanonicalPosName": "Chief",
+    "whyFailed": "Raw string 'Marketing  Chief' contains double space and functional prefix",
+    "candidateMatches": [
+      "Chief (POS-022)",
+      "Marketing Staff (POS-002)"
+    ],
+    "confidence": "HIGH",
+    "recommendedResolution": "Map to Chief (POS-022) with Marketing as function",
+    "resolutionType": "NORMALIZATION_ONLY"
+  },
+  {
+    "empId": "9020",
+    "thName": "NULL (Expatriate)",
+    "enName": "Mrs.Utsugi Rina",
+    "app53RecId": "403",
+    "rawPosValue": "Section  Manager",
+    "sourceFieldCode": "Text_2",
+    "sourceFieldLabel": "Position",
+    "currentApp791PosRef": "POS-037",
+    "currentApp791PosName": "Mrs.Utsugi Rina",
+    "proposedCanonicalPosCode": "POS-029",
+    "proposedCanonicalPosName": "Manager",
+    "whyFailed": "Raw string contains 'Section  Manager' with double space",
+    "candidateMatches": [
+      "Manager (POS-029)"
+    ],
+    "confidence": "HIGH",
+    "recommendedResolution": "Map to Manager (POS-029)",
+    "resolutionType": "NORMALIZATION_ONLY"
+  },
+  {
+    "empId": "9026",
+    "thName": "นายทาคุโร  อิโนะอุเอะ",
+    "enName": "Mr.Takuro",
+    "app53RecId": "392",
+    "rawPosValue": "Senior  Manager",
+    "sourceFieldCode": "Text_2",
+    "sourceFieldLabel": "Position",
+    "currentApp791PosRef": "POS-026",
+    "currentApp791PosName": "Mr.Takuro",
+    "proposedCanonicalPosCode": "POS-029",
+    "proposedCanonicalPosName": "Manager",
+    "whyFailed": "Raw string contains 'Senior  Manager' with double space",
+    "candidateMatches": [
+      "Manager (POS-029)"
+    ],
+    "confidence": "HIGH",
+    "recommendedResolution": "Map to Manager (POS-029) or retain Senior Manager as canonical title",
+    "resolutionType": "EXISTING_CANONICAL_POSITION"
+  },
+  {
+    "empId": "9000",
+    "thName": "NULL (Expatriate)",
+    "enName": "Tomita",
+    "app53RecId": "390",
+    "rawPosValue": "EMPTY",
+    "sourceFieldCode": "Text_2",
+    "sourceFieldLabel": "Position",
+    "currentApp791PosRef": "POS-024",
+    "currentApp791PosName": "Tomita",
+    "proposedCanonicalPosCode": "POS-052",
+    "proposedCanonicalPosName": "Managing Director",
+    "whyFailed": "Text_2 field is blank in App 53",
+    "candidateMatches": [
+      "Managing Director (POS-052) per Org.FY2026_Rev.2"
+    ],
+    "confidence": "HIGH",
+    "recommendedResolution": "Assign Managing Director (POS-052) based on Org Chart",
+    "resolutionType": "HUMAN_REVIEW_REQUIRED"
+  },
+  {
+    "empId": "9036",
+    "thName": "NULL (Expatriate)",
+    "enName": "Ms.Erika  Gaya",
+    "app53RecId": "358",
+    "rawPosValue": "EMPTY",
+    "sourceFieldCode": "Text_2",
+    "sourceFieldLabel": "Position",
+    "currentApp791PosRef": "POS-000",
+    "currentApp791PosName": "Ms.Erika Gaya",
+    "proposedCanonicalPosCode": "POS-055",
+    "proposedCanonicalPosName": "Advisor",
+    "whyFailed": "Text_2 field is blank in App 53",
+    "candidateMatches": [
+      "Advisor (POS-055)"
+    ],
+    "confidence": "HIGH",
+    "recommendedResolution": "Assign Advisor (POS-055) based on executive appointment record",
+    "resolutionType": "HUMAN_REVIEW_REQUIRED"
+  }
+]
