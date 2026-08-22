@@ -2,7 +2,7 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 3.6.0 (Recursive Hierarchy Engine & Data-Binding Fix)
+ * Version: 3.7.0 (Canonical Internal Identity Architecture: ORG-APP53-{recordId})
  * Verified against Real Production Kintone Apps:
  * App 53  = Employee Master (275 records)
  * App 791 = Canonical Organization Master (33 nodes)
@@ -33,11 +33,10 @@
             this.requests793 = [];
             this.unifiedEmployees = [];
 
-            this.empMap = new Map();
-            this.orgMap = new Map();
-            this.currentAssignmentMap = new Map();
-            this.historyMap = new Map();
-            this.treeNodes = new Map();
+            this.empMap = new Map(); // Map<internal_id, EmployeeObject>
+            this.orgMap = new Map(); // Map<organization_code, OrgObject>
+            this.historyMap = new Map(); // Map<internal_id, Array<AssignmentObject>>
+            this.treeNodes = new Map(); // Map<organization_code, TreeNodeObject>
             this.rootNodeCode = 'TTMET';
             this.isLoaded = false;
         }
@@ -66,7 +65,7 @@
                 this.requests793 = [];
             }
 
-            // Build Index Maps
+            // Build Organization Map (App 791)
             this.orgMap.clear();
             this.orgs791.forEach(o => {
                 const code = o.organization_code?.value?.trim();
@@ -83,92 +82,137 @@
                 }
             });
 
+            // Build App 53 Identity Map using Synthetic Internal ID (ORG-APP53-{recordId})
             this.empMap.clear();
+            const rawIdentities = [];
             this.employees53.forEach(e => {
-                const id = (e.emp_text?.value || e.Number?.value || '').trim();
-                if (id) {
-                    let photoUrl = '';
-                    if (e.Attachment?.value?.length > 0) {
-                        photoUrl = `/k/v1/file.json?fileKey=${e.Attachment.value[0].fileKey}`;
-                    }
-                    this.empMap.set(id, {
-                        employee_id: id,
-                        thai_name: (e.Text_0?.value || '').trim(),
-                        english_name: (e.Text?.value || '').trim(),
-                        nickname: (e.Text_1?.value || '').trim(),
-                        raw_position: (e.Text_2?.value || '').trim(),
-                        email: (e.Text_4?.value || '').trim(),
-                        mobile: (e.Text_11?.value || '').trim(),
-                        start_date: (e.Date?.value || '').trim(),
-                        photo_url: photoUrl
-                    });
-                }
-            });
+                const recId = String(e.$id?.value || '').trim();
+                const rawEmpText = String(e.emp_text?.value || '').trim();
+                const rawNumber = String(e.Number?.value || '').trim();
+                // Preserve original string representation without numeric coercion
+                const empNumStr = rawEmpText ? rawEmpText : rawNumber;
+                const internalId = `ORG-APP53-${recId}`;
 
-            this.currentAssignmentMap.clear();
-            this.historyMap.clear();
-            this.assignments792.forEach(a => {
-                const empId = (a.employee_id?.value || '').trim();
-                const asgObj = {
-                    assignment_id: (a.assignment_id?.value || '').trim(),
-                    employee_id: empId,
-                    thai_name: (a.thai_name?.value || '').trim(),
-                    english_name: (a.english_name?.value || '').trim(),
-                    position_code: (a.position_code?.value || '').trim(),
-                    position_name: (a.position_name?.value || '').trim(),
-                    organization_code: (a.organization_code?.value || '').trim(),
-                    organization_name: (a.organization_name?.value || '').trim(),
-                    organization_type: (a.organization_type?.value || '').trim(),
-                    assignment_type: (a.assignment_type?.value || 'PRIMARY').trim(),
-                    assignment_status: (a.assignment_status?.value || 'CURRENT').trim(),
-                    effective_start_date: (a.effective_start_date?.value || '').trim(),
-                    effective_end_date: (a.effective_end_date?.value || '').trim(),
-                    hierarchy_path: (a.hierarchy_path?.value || '').trim()
+                let photoUrl = '';
+                if (e.Attachment?.value?.length > 0) {
+                    photoUrl = `/k/v1/file.json?fileKey=${e.Attachment.value[0].fileKey}`;
+                }
+
+                const identityObj = {
+                    record_id: parseInt(recId, 10),
+                    internal_id: internalId,
+                    employee_id: empNumStr, // Business attribute (string)
+                    thai_name: String(e.Text_0?.value || '').trim(),
+                    english_name: String(e.Text?.value || '').trim(),
+                    nickname: String(e.Text_1?.value || '').trim(),
+                    raw_position: String(e.Text_2?.value || '').trim(),
+                    email: String(e.Text_4?.value || '').trim(),
+                    mobile: String(e.Text_11?.value || '').trim(),
+                    start_date: String(e.Date?.value || '').trim(),
+                    photo_url: photoUrl
                 };
 
-                if (asgObj.assignment_status === 'CURRENT') {
-                    this.currentAssignmentMap.set(empId, asgObj);
-                }
-
-                if (!this.historyMap.has(empId)) {
-                    this.historyMap.set(empId, []);
-                }
-                this.historyMap.get(empId).push(asgObj);
+                this.empMap.set(internalId, identityObj);
+                rawIdentities.push(identityObj);
             });
 
-            // Build Unified Employee Model (App 53 Identity + App 792 Current Placement + App 791 Canonical Node)
-            this.unifiedEmployees = [];
-            this.empMap.forEach((identity, empId) => {
-                const asg = this.currentAssignmentMap.get(empId) || {};
-                const org = this.orgMap.get(asg.organization_code) || {};
+            // Parse App 792 Assignments
+            const parsedAssignments = [];
+            this.assignments792.forEach(a => {
+                const asgRecId = String(a.$id?.value || '').trim();
+                const asgId = String(a.assignment_id?.value || '').trim();
+                const empId = String(a.employee_id?.value || '').trim();
 
-                this.unifiedEmployees.push({
+                parsedAssignments.push({
+                    assignment_rec_id: asgRecId,
+                    assignment_id: asgId,
                     employee_id: empId,
-                    thai_name: identity.thai_name || asg.thai_name || '',
-                    english_name: identity.english_name || asg.english_name || '',
+                    thai_name: String(a.thai_name?.value || '').trim(),
+                    english_name: String(a.english_name?.value || '').trim(),
+                    position_code: String(a.position_code?.value || '').trim(),
+                    position_name: String(a.position_name?.value || '').trim(),
+                    organization_code: String(a.organization_code?.value || '').trim(),
+                    organization_name: String(a.organization_name?.value || '').trim(),
+                    organization_type: String(a.organization_type?.value || '').trim(),
+                    assignment_type: String(a.assignment_type?.value || 'PRIMARY').trim(),
+                    assignment_status: String(a.assignment_status?.value || 'CURRENT').trim(),
+                    effective_start_date: String(a.effective_start_date?.value || '').trim(),
+                    effective_end_date: String(a.effective_end_date?.value || '').trim(),
+                    hierarchy_path: String(a.hierarchy_path?.value || '').trim()
+                });
+            });
+
+            // Disambiguated In-Memory Joining between App 53 and App 792
+            this.unifiedEmployees = [];
+            this.historyMap.clear();
+
+            rawIdentities.forEach(identity => {
+                let matchedAsg = null;
+
+                // Handle Ambiguous Employee IDs (e.g. '9000') using corroborating attributes
+                if (identity.employee_id === '9000') {
+                    if (identity.english_name.toLowerCase().includes('tomita')) {
+                        matchedAsg = parsedAssignments.find(a => a.employee_id === '9000' && a.english_name.toLowerCase().includes('tomita') && a.assignment_status === 'CURRENT');
+                    } else {
+                        matchedAsg = parsedAssignments.find(a => a.employee_id === '9000' && a.english_name.toLowerCase().includes('panu') && a.assignment_status === 'CURRENT');
+                    }
+                } else {
+                    matchedAsg = parsedAssignments.find(a => a.employee_id === identity.employee_id && a.assignment_status === 'CURRENT');
+                }
+
+                // Fallback matching if not directly found
+                if (!matchedAsg) {
+                    matchedAsg = {
+                        assignment_id: `ASG-${identity.record_id}-DEF`,
+                        position_code: 'POS-STAFF',
+                        position_name: identity.raw_position || 'Staff',
+                        organization_code: 'TTMET',
+                        organization_name: 'Toyota Tsusho M&E (Thailand)',
+                        organization_type: 'COMPANY',
+                        assignment_type: 'PRIMARY',
+                        assignment_status: 'CURRENT',
+                        effective_start_date: identity.start_date,
+                        hierarchy_path: 'TTMET'
+                    };
+                }
+
+                const org = this.orgMap.get(matchedAsg.organization_code) || {};
+
+                const unifiedObj = {
+                    internal_id: identity.internal_id,
+                    record_id: identity.record_id,
+                    employee_id: identity.employee_id, // String (e.g. '0043', '9000')
+                    thai_name: identity.thai_name || matchedAsg.thai_name || '',
+                    english_name: identity.english_name || matchedAsg.english_name || '',
                     nickname: identity.nickname || '',
                     email: identity.email || '',
                     mobile: identity.mobile || '',
                     photo_url: identity.photo_url || '',
                     start_date: identity.start_date || '',
                     raw_position: identity.raw_position || '',
-                    position_code: asg.position_code || 'POS-STAFF',
-                    position_name: asg.position_name || identity.raw_position || 'Staff',
-                    organization_code: asg.organization_code || 'TTMET',
-                    organization_name: asg.organization_name || org.organization_name || 'Toyota Tsusho M&E (Thailand)',
-                    organization_type: asg.organization_type || org.organization_type || 'COMPANY',
-                    assignment_type: asg.assignment_type || 'PRIMARY',
-                    assignment_status: asg.assignment_status || 'CURRENT',
-                    effective_start_date: asg.effective_start_date || '',
-                    hierarchy_path: asg.hierarchy_path || org.hierarchy_path || ''
-                });
+                    position_code: matchedAsg.position_code || 'POS-STAFF',
+                    position_name: matchedAsg.position_name || identity.raw_position || 'Staff',
+                    organization_code: matchedAsg.organization_code || 'TTMET',
+                    organization_name: matchedAsg.organization_name || org.organization_name || 'Toyota Tsusho M&E (Thailand)',
+                    organization_type: matchedAsg.organization_type || org.organization_type || 'COMPANY',
+                    assignment_type: matchedAsg.assignment_type || 'PRIMARY',
+                    assignment_status: matchedAsg.assignment_status || 'CURRENT',
+                    effective_start_date: matchedAsg.effective_start_date || identity.start_date || '',
+                    hierarchy_path: matchedAsg.hierarchy_path || org.hierarchy_path || ''
+                };
+
+                this.unifiedEmployees.push(unifiedObj);
+
+                // Populate History Map by internal_id
+                const empHistory = parsedAssignments.filter(a => a.employee_id === identity.employee_id);
+                this.historyMap.set(identity.internal_id, empHistory);
             });
 
             // Build Recursive Tree Graph from App 791 and compute exact Headcounts
             this.buildRecursiveHierarchyTree();
 
             this.isLoaded = true;
-            console.log(`OrgFlow Data Loaded & Reconciled: ${this.unifiedEmployees.length} Employees across ${this.orgMap.size} Canonical Units.`);
+            console.log(`OrgFlow Data Loaded: ${this.unifiedEmployees.length} Canonical Person Identities (Unique internal_ids: ${this.empMap.size}) across ${this.orgMap.size} Canonical Units.`);
         }
 
         buildRecursiveHierarchyTree() {
@@ -199,13 +243,12 @@
                 }
             });
 
-            // Step 3: Populate Direct Employees
+            // Step 3: Populate Direct Employees using internal_id uniqueness
             this.unifiedEmployees.forEach(emp => {
                 const orgNode = this.treeNodes.get(emp.organization_code);
                 if (orgNode) {
                     orgNode.directEmployees.push(emp);
                 } else {
-                    // Fallback to root if unassigned
                     const rootNode = this.treeNodes.get(this.rootNodeCode);
                     if (rootNode) rootNode.directEmployees.push(emp);
                 }
@@ -254,6 +297,10 @@
 
         getUnifiedEmployees() {
             return this.unifiedEmployees;
+        }
+
+        getEmployeeByInternalId(internalId) {
+            return this.unifiedEmployees.find(e => e.internal_id === internalId) || null;
         }
 
         getOrganizations() {
@@ -370,8 +417,8 @@
             }));
         }
 
-        getAssignmentHistory(empId) {
-            return this.historyMap.get(empId) || [];
+        getAssignmentHistory(internalId) {
+            return this.historyMap.get(internalId) || [];
         }
     }
 
@@ -469,7 +516,6 @@
             searchInput.addEventListener('input', (e) => {
                 this.searchQuery = e.target.value.toLowerCase().trim();
                 if (this.searchQuery && this.currentView === 'ORG_CHART') {
-                    // Auto-expand all matching branches
                     this.autoExpandSearchMatches(this.searchQuery);
                 }
                 this.renderContentOnly();
@@ -503,7 +549,6 @@
                     emp.employee_id.toLowerCase().includes(query) ||
                     emp.position_name.toLowerCase().includes(query)) {
                     
-                    // Trace and expand path up to root
                     let curr = this.store.getTreeNode(emp.organization_code);
                     while (curr) {
                         this.expandedNodeCodes.add(curr.code);
@@ -880,7 +925,7 @@
                                         <td><b>${e.employee_id}</b></td>
                                         <td>${e.english_name}</td>
                                         <td><b>${e.position_name}</b> (<code>${e.position_code}</code>)</td>
-                                        <td><button class="orgflow-btn orgflow-btn-outline btn-open-emp" data-id="${e.employee_id}" style="padding:2px 6px; font-size:10px;">Profile</button></td>
+                                        <td><button class="orgflow-btn orgflow-btn-outline btn-open-emp" data-id="${e.internal_id}" style="padding:2px 6px; font-size:10px;">Profile</button></td>
                                     </tr>
                                 `).join('')}
                             </tbody>
@@ -911,8 +956,8 @@
 
             drawer.querySelectorAll('.btn-open-emp').forEach(btn => {
                 btn.addEventListener('click', () => {
-                    const empId = btn.getAttribute('data-id');
-                    this.activeEmployee = this.store.getUnifiedEmployees().find(e => e.employee_id === empId);
+                    const intId = btn.getAttribute('data-id');
+                    this.activeEmployee = this.store.getEmployeeByInternalId(intId);
                     this.activeOrgDetail = null;
                     this.render();
                 });
@@ -961,7 +1006,7 @@
                     </thead>
                     <tbody>
                         ${list.map(e => `
-                            <tr data-emp="${e.employee_id}">
+                            <tr data-internal-id="${e.internal_id}">
                                 <td><b>${e.employee_id}</b></td>
                                 <td>${e.english_name}</td>
                                 <td>${e.thai_name}</td>
@@ -978,8 +1023,8 @@
 
             view.querySelectorAll('tbody tr').forEach(row => {
                 row.addEventListener('click', () => {
-                    const empId = row.getAttribute('data-emp');
-                    this.activeEmployee = this.store.getUnifiedEmployees().find(e => e.employee_id === empId);
+                    const intId = row.getAttribute('data-internal-id');
+                    this.activeEmployee = this.store.getEmployeeByInternalId(intId);
                     this.drawerTab = 'OVERVIEW';
                     this.render();
                 });
@@ -1154,7 +1199,7 @@
             overlay.className = 'orgflow-drawer-overlay';
 
             const e = this.activeEmployee;
-            const history = this.store.getAssignmentHistory(e.employee_id);
+            const history = this.store.getAssignmentHistory(e.internal_id);
 
             const drawer = document.createElement('div');
             drawer.className = 'orgflow-drawer';
@@ -1163,7 +1208,7 @@
                 <div class="orgflow-drawer-header">
                     <div>
                         <div class="orgflow-drawer-title">${e.english_name}</div>
-                        <div style="font-size: 12px; color: #64748b;">${e.thai_name} • <code>${e.employee_id}</code></div>
+                        <div style="font-size: 12px; color: #64748b;">${e.thai_name} • <code>${e.employee_id}</code> (${e.internal_id})</div>
                     </div>
                     <button class="orgflow-drawer-close" id="drawer-close-btn">✕</button>
                 </div>
@@ -1190,6 +1235,8 @@
                         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 14px; margin-bottom: 16px;">
                             <div style="font-weight: 700; font-size: 12px; margin-bottom: 8px; color: #334155;">Assignment Attributes</div>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 12px;">
+                                <div><span style="color:#64748b;">Employee No:</span> <b>${e.employee_id}</b></div>
+                                <div><span style="color:#64748b;">Internal ID:</span> <code>${e.internal_id}</code></div>
                                 <div><span style="color:#64748b;">Assignment Type:</span> <b>${e.assignment_type}</b></div>
                                 <div><span style="color:#64748b;">Status:</span> <span class="orgflow-badge badge-active">${e.assignment_status}</span></div>
                                 <div><span style="color:#64748b;">Start Date:</span> <b>${e.effective_start_date || e.start_date || 'N/A'}</b></div>
@@ -1268,7 +1315,7 @@
                 <div class="orgflow-drawer-header">
                     <div>
                         <div class="orgflow-drawer-title">HR Change Request Wizard</div>
-                        <div style="font-size: 12px; color: #64748b;">Target: ${e.english_name} (<code>${e.employee_id}</code>)</div>
+                        <div style="font-size: 12px; color: #64748b;">Target: ${e.english_name} (<code>${e.employee_id}</code> / <code>${e.internal_id}</code>)</div>
                     </div>
                     <button class="orgflow-drawer-close" id="wizard-close-btn">✕</button>
                 </div>
@@ -1421,9 +1468,10 @@
 
         handleExcelExport() {
             const filename = `OrgFlow_Export_${this.currentView}_${new Date().toISOString().slice(0, 10)}.csv`;
-            let headers = ['Employee ID', 'Thai Name', 'English Name', 'Position Code', 'Position Name', 'Org Code', 'Org Name', 'Assignment Type', 'Status'];
+            let headers = ['Internal ID', 'Employee ID', 'Thai Name', 'English Name', 'Position Code', 'Position Name', 'Org Code', 'Org Name', 'Assignment Type', 'Status'];
             let rows = this.store.getUnifiedEmployees().map(e => [
-                `"${e.employee_id}"`,
+                `"${e.internal_id}"`,
+                `"=""${e.employee_id}"""`, // Preserves leading zeros in Excel as text
                 `"${e.thai_name.replace(/"/g, '""')}"`,
                 `"${e.english_name.replace(/"/g, '""')}"`,
                 `"${e.position_code}"`,
@@ -1467,11 +1515,12 @@
                     <p><b>Unit:</b> ${org.organization_name} (<code>${org.organization_code}</code>) | <b>Direct:</b> ${node?.directHeadcount || 0} | <b>Total Scope:</b> ${node?.totalHeadcount || emps.length} employees</p>
                     <table>
                         <thead>
-                            <tr><th>Emp ID</th><th>English Name</th><th>Thai Name</th><th>Position Title</th><th>Position Code</th><th>Unit</th></tr>
+                            <tr><th>Internal ID</th><th>Emp ID</th><th>English Name</th><th>Thai Name</th><th>Position Title</th><th>Position Code</th><th>Unit</th></tr>
                         </thead>
                         <tbody>
                             ${emps.map(e => `
                                 <tr>
+                                    <td><code>${e.internal_id}</code></td>
                                     <td><b>${e.employee_id}</b></td>
                                     <td>${e.english_name}</td>
                                     <td>${e.thai_name}</td>
