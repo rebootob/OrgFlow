@@ -42,6 +42,22 @@
 
 ---
 
+## [v1.4.0-phase6c] - 2026-08-22
+
+### Added
+- **Phase 6C Controlled Production Migration Execution (100% Complete & Certified PASS):** Successfully migrated App 791 Organization Master to the approved Canonical Organization Model (`Org.FY2026_Rev.2.pdf`).
+- Took full pre-change local snapshots in `secure-backup/phase6c/` (`app53_before_phase6c.json`, `app791_before_phase6c.json`, `app792_before_phase6c.json`, `app793_before_phase6c.json`, `PHASE_6C_MANIFEST.json`, `SHA256SUMS.txt`).
+- Created 3 canonical Company/Division records (`523` TTMET, `524` Machinery & Engineering Division, `525` GIFU SEIKI Division) in App 791.
+- Re-coded 4 official department records (`3` TMH0, `4` TMT1, `5` TMT0, `6` TMS0).
+- Re-parented 12 section nodes.
+- Safely deactivated 251 legacy raw department records (`is_active = INACTIVE`) across 10 controlled batches with 0 physical deletes.
+- Verified App 53 (275 records), App 792 (275 records), and App 793 (2 records) remained 100% untouched with 0 unintended writes.
+- Audited and verified all 23/23 post-migration acceptance gates passed (G01 to G23).
+- Created deliverable reports in `docs/phase6c/` ([`PHASE_6C_PRODUCTION_MIGRATION_REPORT.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6c/PHASE_6C_PRODUCTION_MIGRATION_REPORT.md)).
+- Enforced Mandatory Stop Gate (Status: `PASS` / Stopped for User Review).
+
+---
+
 ## [v1.4.2-phase6b4a] - 2026-08-22
 
 ### Added
