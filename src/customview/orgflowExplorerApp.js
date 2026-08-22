@@ -2,8 +2,8 @@
  * OrgFlow — Organization Explorer & HR Change Management Portal
  * Standalone Client-Side Custom View Application
  * 
- * Version: 4.8.0 (Phase 3.8.4E Collision-Free Intrinsic Subtree Layout)
- * Build Timestamp: 2026-08-22T21:22:00+07:00
+ * Version: 4.9.0 (Phase 3.8.4F Top-Level Sibling Packing & Corporate Visibility Fix)
+ * Build Timestamp: 2026-08-22T21:30:00+07:00
  * 
  * - Authoritative Canonical Master: 57 Organization Nodes across Levels 1 to 7
  * - Strict Separation: Canonical Hierarchy Tree -> Layout Engine -> Visual Renderer
@@ -11,7 +11,7 @@
  * - Immutable Tree Hash Guard: BASE_TREE_HASH === CURRENT_TREE_HASH across all layout actions
  * - 275 Canonical Employees Attached (Root Total Scope = 275, Case 9000 Protected)
  * - Unified Across: Interactive Web Org Chart, Directory, Catalog, Excel Export, PDF Export
- * - Phase 4E: Intrinsic content-based subtree widths, collision detection, containment validation
+ * - Phase 4E/4F: Intrinsic content-based subtree widths, collision detection, top-level sibling row with visible Corporate Department
  * 
  * 100% READ-ONLY DATA INTEGRATION / ZERO PRODUCTION WRITES.
  */
@@ -24,8 +24,8 @@
         APP_791: 791,
         APP_792: 792,
         APP_793: 793,
-        BUNDLE_VERSION: '4.8.0',
-        BUILD_TIMESTAMP: '2026-08-22T21:22:00+07:00',
+        BUNDLE_VERSION: '4.9.0',
+        BUILD_TIMESTAMP: '2026-08-22T21:30:00+07:00',
         CACHE_TTL_MS: 300000,
         TOP_LEVEL_GAP: 14,
         CARD_MIN_WIDTH: 180,
@@ -775,10 +775,11 @@
             if (!container || !target) return;
 
             const cW = container.clientWidth - 40;
-            const tW = target.scrollWidth || 1300;
+            const treeRoot = document.querySelector('.orgflow-personnel-chart-root') || target;
+            const tW = treeRoot.scrollWidth || target.scrollWidth || 1500;
             const idealScale = cW / tW;
-            // HARD CLAMP: Minimum 0.70 (70%), Maximum 1.00 (100%)
-            const clampedScale = Math.max(0.70, Math.min(1.00, idealScale));
+            // HARD CLAMP: Minimum 0.75 (75%), Maximum 1.00 (100%) as per Phase 4F directive
+            const clampedScale = Math.max(0.75, Math.min(1.00, idealScale));
 
             this.zoomScale = parseFloat(clampedScale.toFixed(2));
             this.panX = 0;
@@ -922,34 +923,42 @@
         }
 
         /**
-         * Full Phase 3.8.4E Layout Validation.
-         * Runs collision detection, containment checks, data integrity verification.
+         * Full Phase 3.8.4F Layout Validation.
+         * Runs collision detection, containment checks, corporate visibility verification, data integrity verification.
          * Populates window.__ORGFLOW_LAYOUT_VALIDATION__ with complete report.
          */
         runLayoutValidation() {
             const viewport = document.getElementById('orgflow-chart-canvas');
             const target = document.getElementById('orgflow-transform-layer');
             const treeRoot = document.querySelector('.orgflow-personnel-chart-root') || target;
+            const branchRow = document.querySelector('.orgflow-personnel-branches');
             const divME = document.getElementById('branch-DIV-ME');
             const divG0 = document.getElementById('branch-DIV-G0');
             const tmh0 = document.getElementById('branch-TMH0');
             const posCard = document.querySelector('.orgflow-position-card');
 
             if (!viewport || !treeRoot) {
-                console.warn('OrgFlow [v4.8.0]: Layout validation skipped — DOM not ready.');
+                console.warn(`OrgFlow [v${CONFIG.BUNDLE_VERSION}]: Layout validation skipped — DOM not ready.`);
                 return;
             }
 
             const vRect = viewport.getBoundingClientRect();
             const tRect = treeRoot.getBoundingClientRect();
+            const meRect = divME ? divME.getBoundingClientRect() : null;
+            const g0Rect = divG0 ? divG0.getBoundingClientRect() : null;
+            const h0Rect = tmh0 ? tmh0.getBoundingClientRect() : null;
+            const rowRect = branchRow ? branchRow.getBoundingClientRect() : null;
 
             // Natural dimensions (before CSS transform scaling)
-            const naturalTreeWidth = treeRoot.scrollWidth || treeRoot.offsetWidth;
-            const naturalTreeHeight = treeRoot.scrollHeight || treeRoot.offsetHeight;
-
             const meNatural = divME ? (divME.scrollWidth || divME.offsetWidth) : 0;
             const g0Natural = divG0 ? (divG0.scrollWidth || divG0.offsetWidth) : 0;
             const corpNatural = tmh0 ? (tmh0.scrollWidth || tmh0.offsetWidth) : 0;
+
+            const naturalTreeWidth = Math.max(
+                treeRoot.scrollWidth || treeRoot.offsetWidth,
+                meNatural + CONFIG.TOP_LEVEL_GAP + g0Natural + CONFIG.TOP_LEVEL_GAP + corpNatural + 48
+            );
+            const naturalTreeHeight = treeRoot.scrollHeight || treeRoot.offsetHeight;
 
             const posCardLogicalW = posCard ? posCard.offsetWidth : CONFIG.CARD_NATURAL_WIDTH;
             const posCardActualW = posCard ? Math.round(posCard.getBoundingClientRect().width) : CONFIG.CARD_MIN_WIDTH;
@@ -957,6 +966,23 @@
             // Run collision and containment checks
             const collisionResult = this.detectSiblingCollisions();
             const containmentResult = this.detectContainmentOverflow();
+
+            // Corporate specific child containment check
+            let corpChildOverflowCount = 0;
+            if (tmh0) {
+                const corpRect = tmh0.getBoundingClientRect();
+                const corpChildren = tmh0.querySelectorAll('.orgflow-personnel-section-card, .orgflow-dept-header-box, .orgflow-org-header-box');
+                corpChildren.forEach(child => {
+                    const cRect = child.getBoundingClientRect();
+                    if (cRect.left < corpRect.left - 2 || cRect.right > corpRect.right + 2) {
+                        corpChildOverflowCount++;
+                    }
+                });
+            }
+
+            // Top-Level branch counts
+            const topLevelVisibleCount = branchRow ? branchRow.children.length : 0;
+            const corpVisible = !!(tmh0 && h0Rect && h0Rect.width >= 260 && h0Rect.height > 50);
 
             // Data integrity
             const top = this.store.topologyStatus;
@@ -983,21 +1009,25 @@
                 DIV_G0_NATURAL_WIDTH: Math.round(g0Natural),
                 CORPORATE_NATURAL_WIDTH: Math.round(corpNatural),
 
-                POSITION_CARD_NATURAL_WIDTH: posCardLogicalW,
-                POSITION_CARD_VISUAL_WIDTH: posCardActualW,
+                DIV_ME_RECT: meRect ? { left: Math.round(meRect.left), right: Math.round(meRect.right), width: Math.round(meRect.width), height: Math.round(meRect.height) } : null,
+                DIV_G0_RECT: g0Rect ? { left: Math.round(g0Rect.left), right: Math.round(g0Rect.right), width: Math.round(g0Rect.width), height: Math.round(g0Rect.height) } : null,
+                CORPORATE_RECT: h0Rect ? { left: Math.round(h0Rect.left), right: Math.round(h0Rect.right), width: Math.round(h0Rect.width), height: Math.round(h0Rect.height) } : null,
 
-                GLOBAL_SCALE: this.zoomScale,
+                TOP_LEVEL_ROW_RECT: rowRect ? { left: Math.round(rowRect.left), right: Math.round(rowRect.right), width: Math.round(rowRect.width), height: Math.round(rowRect.height) } : null,
+                CANVAS_RECT: { left: Math.round(vRect.left), right: Math.round(vRect.right), width: Math.round(vRect.width), height: Math.round(vRect.height) },
+
+                TOP_LEVEL_GAP: CONFIG.TOP_LEVEL_GAP,
+
+                TOP_LEVEL_EXPECTED_BRANCH_COUNT: 3,
+                TOP_LEVEL_VISIBLE_BRANCH_COUNT: topLevelVisibleCount,
+
+                CORPORATE_VISIBLE: corpVisible,
+                CORPORATE_CHILD_OVERFLOW_COUNT: corpChildOverflowCount,
 
                 COLLISION_COUNT: collisionResult.collisionCount,
                 CHILD_OVERFLOW_COUNT: containmentResult.overflowCount,
 
-                COLLISION_NODE_PAIRS: collisionResult.collisionPairs,
-
-                TOP_LEVEL_GAP: CONFIG.TOP_LEVEL_GAP,
-
-                DIV_ME_LAYOUT: divME ? `${Math.round(divME.getBoundingClientRect().width)}px actual` : 'N/A',
-                DIV_G0_LAYOUT: divG0 ? `${Math.round(divG0.getBoundingClientRect().width)}px actual` : 'N/A',
-                CORPORATE_LAYOUT: tmh0 ? `${Math.round(tmh0.getBoundingClientRect().width)}px actual` : 'N/A',
+                GLOBAL_SCALE: this.zoomScale,
 
                 App53_WRITES: 0,
                 App791_WRITES: 0,
@@ -1007,6 +1037,10 @@
 
             // Determine pass/fail
             const passed = (
+                report.TOP_LEVEL_VISIBLE_BRANCH_COUNT === 3 &&
+                report.CORPORATE_VISIBLE === true &&
+                report.CORPORATE_NATURAL_WIDTH >= 260 &&
+                report.CORPORATE_CHILD_OVERFLOW_COUNT === 0 &&
                 report.COLLISION_COUNT === 0 &&
                 report.CHILD_OVERFLOW_COUNT === 0 &&
                 report.POSITION_CARD_VISUAL_WIDTH >= CONFIG.CARD_MIN_WIDTH &&
@@ -1019,18 +1053,21 @@
             );
 
             report.UAT_STATUS = passed
-                ? 'PHASE_3_8_4E_COLLISION_FREE_LAYOUT_UAT_READY'
-                : 'PHASE_3_8_4E_COLLISION_FREE_LAYOUT_UAT_FAILED';
+                ? 'PHASE_3_8_4F_TOP_LEVEL_UAT_READY'
+                : 'PHASE_3_8_4F_TOP_LEVEL_UAT_FAILED';
 
             window.__ORGFLOW_LAYOUT_VALIDATION__ = report;
-            console.log(`=== OrgFlow [v${CONFIG.BUNDLE_VERSION}] PHASE 3.8.4E LAYOUT VALIDATION ===`);
+            console.log(`=== OrgFlow [v${CONFIG.BUNDLE_VERSION}] PHASE 3.8.4F LAYOUT VALIDATION ===`);
             console.log(JSON.stringify(report, null, 2));
 
             if (!passed) {
                 console.error('LAYOUT VALIDATION FAILED:', {
+                    topLevelCount: report.TOP_LEVEL_VISIBLE_BRANCH_COUNT,
+                    corpVisible: report.CORPORATE_VISIBLE,
+                    corpWidth: report.CORPORATE_NATURAL_WIDTH,
+                    corpOverflow: report.CORPORATE_CHILD_OVERFLOW_COUNT,
                     collisions: report.COLLISION_COUNT,
-                    overflows: report.CHILD_OVERFLOW_COUNT,
-                    pairs: report.COLLISION_NODE_PAIRS
+                    overflows: report.CHILD_OVERFLOW_COUNT
                 });
             }
 
@@ -1062,7 +1099,14 @@
                     const h0Rect = tmh0 ? tmh0.getBoundingClientRect() : null;
                     const pRect = posCard ? posCard.getBoundingClientRect() : null;
 
-                    const logicalWidth = treeRoot.offsetWidth || treeRoot.scrollWidth;
+                    const meNatural = divME ? (divME.scrollWidth || divME.offsetWidth) : 0;
+                    const g0Natural = divG0 ? (divG0.scrollWidth || divG0.offsetWidth) : 0;
+                    const corpNatural = tmh0 ? (tmh0.scrollWidth || tmh0.offsetWidth) : 0;
+
+                    const logicalWidth = Math.max(
+                        treeRoot.scrollWidth || treeRoot.offsetWidth,
+                        meNatural + CONFIG.TOP_LEVEL_GAP + g0Natural + CONFIG.TOP_LEVEL_GAP + corpNatural + 48
+                    );
                     const visualWidth = tRect.width;
                     const widthUsagePercent = ((visualWidth / vRect.width) * 100).toFixed(1);
                     const leftUnused = Math.max(0, (tRect.left - vRect.left)).toFixed(1);
@@ -1084,9 +1128,9 @@
                         ACTUAL_SCALE_RATIO: (visualWidth / logicalWidth).toFixed(3),
                         POSITION_CARD_LOGICAL_WIDTH: posCard ? posCard.offsetWidth : CONFIG.CARD_NATURAL_WIDTH,
                         POSITION_CARD_ACTUAL_WIDTH: pRect ? Math.round(pRect.width) : CONFIG.CARD_MIN_WIDTH,
-                        DIV_ME_NATURAL_WIDTH: divME ? (divME.scrollWidth || divME.offsetWidth) : 0,
-                        DIV_G0_NATURAL_WIDTH: divG0 ? (divG0.scrollWidth || divG0.offsetWidth) : 0,
-                        CORPORATE_NATURAL_WIDTH: tmh0 ? (tmh0.scrollWidth || tmh0.offsetWidth) : 0,
+                        DIV_ME_NATURAL_WIDTH: meNatural,
+                        DIV_G0_NATURAL_WIDTH: g0Natural,
+                        CORPORATE_NATURAL_WIDTH: corpNatural,
                         DIV_ME_ACTUAL_WIDTH: meRect ? Math.round(meRect.width) : 0,
                         DIV_G0_ACTUAL_WIDTH: g0Rect ? Math.round(g0Rect.width) : 0,
                         CORPORATE_ACTUAL_WIDTH: h0Rect ? Math.round(h0Rect.width) : 0
@@ -1414,28 +1458,29 @@
             const node = this.store.getTreeNode(nodeCode);
             if (!node) return document.createElement('div');
 
+            const isTopLevel = nodeCode === 'DIV-ME' || nodeCode === 'DIV-G0' || nodeCode === 'TMH0';
             const isDept = node.type === 'DEPARTMENT';
             const isDiv = node.type === 'DIVISION';
 
             const col = document.createElement('div');
             col.id = `branch-${nodeCode}`;
-            col.className = isDept ? 'orgflow-personnel-dept-col' : 'orgflow-personnel-branch-col';
-            // Phase 4E: No flex-weight assignment. Width is intrinsic from content.
+            // Phase 4F: Top-level branches (DIV-ME, DIV-G0, TMH0) all share orgflow-personnel-branch-col
+            col.className = isTopLevel ? 'orgflow-personnel-branch-col' : (isDept ? 'orgflow-personnel-dept-col' : 'orgflow-personnel-branch-col');
 
             const headerBox = document.createElement('div');
-            headerBox.className = isDept ? 'orgflow-dept-header-box' : 'orgflow-org-header-box';
+            headerBox.className = (isTopLevel || !isDept) ? 'orgflow-org-header-box' : 'orgflow-dept-header-box';
             
-            if (isDept) {
-                headerBox.innerHTML = `
-                    <div class="orgflow-dept-title">${node.name}</div>
-                    <div class="orgflow-dept-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b></div>
-                    ${!isFocusRoot ? `<button class="orgflow-btn orgflow-btn-outline btn-focus-unit" style="margin-top:2px; font-size:8px; padding:1px 5px;">🔍 Focus</button>` : ''}
-                `;
-            } else {
+            if (isTopLevel || !isDept) {
                 headerBox.innerHTML = `
                     <div class="orgflow-org-header-title">${node.name}</div>
                     <div class="orgflow-org-header-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b> • Level ${node.level} (${node.type})</div>
                     ${!isFocusRoot ? `<button class="orgflow-btn orgflow-btn-outline btn-focus-unit" style="margin-top:4px; font-size:9px; padding:2px 6px;">🔍 Focus Subtree</button>` : ''}
+                `;
+            } else {
+                headerBox.innerHTML = `
+                    <div class="orgflow-dept-title">${node.name}</div>
+                    <div class="orgflow-dept-sub"><code>${node.code}</code> • Scope: <b>${node.totalHeadcount} Staff</b></div>
+                    ${!isFocusRoot ? `<button class="orgflow-btn orgflow-btn-outline btn-focus-unit" style="margin-top:2px; font-size:8px; padding:1px 5px;">🔍 Focus</button>` : ''}
                 `;
             }
 

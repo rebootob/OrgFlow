@@ -112,14 +112,13 @@ async function run() {
         throw new Error(`Bundle not found at ${bundlePath}`);
     }
 
-    console.log(`[STEP 1] Uploading orgflow-explorer-bundle.js to Kintone...`);
-    const fileKey = await uploadFile(bundlePath, 'orgflow-explorer-bundle.js');
-    console.log(`Bundle uploaded successfully. fileKey: ${fileKey}\n`);
-
-    // Target App: App 791 (OrgFlow Organization Masters) and App 792 (OrgFlow Assignment History)
     const targetApps = [791, 792];
 
     for (const appId of targetApps) {
+        console.log(`[STEP 1] Uploading fresh orgflow-explorer-bundle.js for App ${appId}...`);
+        const fileKey = await uploadFile(bundlePath, 'orgflow-explorer-bundle.js');
+        console.log(`Bundle uploaded for App ${appId}. fileKey: ${fileKey}`);
+
         console.log(`[STEP 2] Configuring JavaScript Customization for App ${appId}...`);
         const customizePayload = {
             app: appId,
