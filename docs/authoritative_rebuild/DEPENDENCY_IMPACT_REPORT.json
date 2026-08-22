@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-22T10:18:43.540Z",
+  "analysis_summary": "Safe to perform Clean Rebuild using canonical codes (ORG_CODE, POSITION_CODE, EMPLOYEE_ID)",
+  "dependencies": [
+    {
+      "source_app": "App 792 (Assignment History)",
+      "target_app": "App 791 (Organization Master)",
+      "referenced_fields": [
+        "dept_code",
+        "section_code",
+        "pos_code"
+      ],
+      "dependency_type": "CANONICAL_CODE_REFERENCE",
+      "impact_status": "MIGRATION_REQUIRED",
+      "mitigation_strategy": "Reinitialize baseline current assignment with new canonical App 791 entity codes"
+    },
+    {
+      "source_app": "App 793 (Change Request)",
+      "target_app": "App 791 (Organization Master)",
+      "referenced_fields": [
+        "dept_code",
+        "section_code",
+        "pos_code"
+      ],
+      "dependency_type": "CANONICAL_CODE_REFERENCE",
+      "impact_status": "MIGRATION_REQUIRED",
+      "mitigation_strategy": "Preserve change request audit trail referencing canonical codes"
+    },
+    {
+      "source_app": "App 53 (Employee Master)",
+      "target_app": "App 791 (Organization Master)",
+      "referenced_fields": [
+        "None (App 53 uses independent Dropdown & Text fields)"
+      ],
+      "dependency_type": "READ_ONLY_SOURCE",
+      "impact_status": "SAFE_TO_REBUILD",
+      "mitigation_strategy": "Zero writes to App 53; App 53 acts as immutable Person Authority"
+    }
+  ]
+}
