@@ -1,0 +1,322 @@
+{
+  "app": {
+    "id": 101,
+    "name": "Employee Namelist",
+    "revision": "1",
+    "readOnlyVerification": "PASS",
+    "productionDataModified": false
+  },
+  "metrics": {
+    "totalRecords": 1248,
+    "totalFields": 21,
+    "attachmentFound": true
+  },
+  "fields": [
+    {
+      "label": "Employee Code / ID",
+      "code": "emp_code",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": true,
+      "unique": true,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Employee Name (TH)",
+      "code": "emp_name_th",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": true,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Employee Name (EN)",
+      "code": "emp_name_en",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Nickname",
+      "code": "nickname",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Department",
+      "code": "department",
+      "type": "DROP_DOWN",
+      "classification": "DROPDOWN",
+      "required": true,
+      "unique": false,
+      "default": "",
+      "options": [
+        "Production",
+        "Quality",
+        "Engineering",
+        "HR",
+        "IT",
+        "Finance",
+        "Management"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Section / Unit",
+      "code": "section",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Position Title",
+      "code": "position",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": true,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Job Grade / Level",
+      "code": "grade",
+      "type": "DROP_DOWN",
+      "classification": "DROPDOWN",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": [
+        "M1",
+        "M2",
+        "S1",
+        "S2",
+        "O1",
+        "O2"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Employment Status",
+      "code": "status",
+      "type": "DROP_DOWN",
+      "classification": "DROPDOWN",
+      "required": true,
+      "unique": false,
+      "default": "Working",
+      "options": [
+        "Working",
+        "Resigned",
+        "Suspended",
+        "Inactive"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Employment Type",
+      "code": "emp_type",
+      "type": "DROP_DOWN",
+      "classification": "DROPDOWN",
+      "required": false,
+      "unique": false,
+      "default": "Full-Time",
+      "options": [
+        "Full-Time",
+        "Contract",
+        "Outsource",
+        "Temporary"
+      ],
+      "lookup": null
+    },
+    {
+      "label": "Corporate Email",
+      "code": "email",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Telephone / Extension",
+      "code": "telephone",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Profile Photo",
+      "code": "photo",
+      "type": "FILE",
+      "classification": "FILE/ATTACHMENT",
+      "required": false,
+      "unique": false,
+      "default": null,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Kintone User Account",
+      "code": "kintone_user",
+      "type": "USER_SELECT",
+      "classification": "USER_SELECTION",
+      "required": false,
+      "unique": false,
+      "default": null,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Manager Employee ID",
+      "code": "manager_emp_code",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Work Location",
+      "code": "work_location",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Date Joined",
+      "code": "join_date",
+      "type": "DATE",
+      "classification": "DATE",
+      "required": false,
+      "unique": false,
+      "default": null,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Date Resigned",
+      "code": "resign_date",
+      "type": "DATE",
+      "classification": "DATE",
+      "required": false,
+      "unique": false,
+      "default": null,
+      "options": null,
+      "lookup": null
+    },
+    {
+      "label": "Monthly Salary",
+      "code": "salary",
+      "type": "NUMBER",
+      "classification": "NUMBER",
+      "required": false,
+      "unique": false,
+      "default": null,
+      "options": null,
+      "lookup": null,
+      "sensitive": true
+    },
+    {
+      "label": "Citizen ID / Passport",
+      "code": "citizen_id",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": true,
+      "default": "",
+      "options": null,
+      "lookup": null,
+      "sensitive": true
+    },
+    {
+      "label": "Bank Account Number",
+      "code": "bank_account",
+      "type": "SINGLE_LINE_TEXT",
+      "classification": "TEXT",
+      "required": false,
+      "unique": false,
+      "default": "",
+      "options": null,
+      "lookup": null,
+      "sensitive": true
+    }
+  ],
+  "layout": {
+    "rows": 7,
+    "groups": 2,
+    "subtables": 0
+  },
+  "keyAnalysis": {
+    "candidateField": "emp_code",
+    "label": "Employee Code / ID",
+    "unique": true,
+    "emptyValues": 0,
+    "duplicateValues": 0,
+    "qualityScore": "100% PERFECT"
+  },
+  "attachments": [
+    {
+      "label": "Profile Photo",
+      "code": "photo"
+    }
+  ],
+  "lookups": [],
+  "subtables": [],
+  "userSelectionFields": [
+    {
+      "label": "Kintone User Account",
+      "code": "kintone_user"
+    }
+  ],
+  "sensitiveFields": [
+    {
+      "label": "Monthly Salary",
+      "code": "salary",
+      "type": "NUMBER",
+      "candidateReason": "Financial Compensation"
+    },
+    {
+      "label": "Citizen ID / Passport",
+      "code": "citizen_id",
+      "type": "SINGLE_LINE_TEXT",
+      "candidateReason": "National Identification"
+    },
+    {
+      "label": "Bank Account Number",
+      "code": "bank_account",
+      "type": "SINGLE_LINE_TEXT",
+      "candidateReason": "Financial Banking Details"
+    }
+  ]
+}
