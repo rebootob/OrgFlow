@@ -1,0 +1,8 @@
+# ORGFLOW PHASE 6B — BASELINE REPORT
+
+- **TARGET KINTONE DOMAIN:** `https://ttmet.cybozu.com`
+- **APP 53 (EMPLOYEE NAMELIST):** 275 Records (100% UNTOUCHED, 0 Writes)
+- **APP 791 (ORG MASTERS):** 522 Records (100% UNTOUCHED, 0 Writes)
+- **APP 792 (ASSIGNMENT HISTORY):** 275 Records (273 Current Active + 2 Historical from Phase 6A)
+- **APP 793 (ORG CHANGE REQUEST):** 2 Records (2 APPLIED from Phase 6A)
+- **BASELINE DRIFT STATUS:** **`MATCH — NO UNEXPECTED DRIFT DETECTED`**

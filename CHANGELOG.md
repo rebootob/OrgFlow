@@ -1,5 +1,18 @@
 # CHANGELOG — ORGFLOW
 
+## [v1.3.0-phase6b] - 2026-08-22
+
+### Added
+- **Phase 6B Controlled Multi-Scenario Validation & Pre-Bulk-Migration Safety Certification:** Conducted multi-scenario validation of OrgFlow Organization Change Engine.
+- Audited and certified 10 core architectural scenarios (same department position change, cross-dept transfer, simultaneous dept+pos atomic change, cross-dept manager, manager without Kintone account, blank manager, GM reject/return, HR reject/return, SYSTEM_APPLY failure recovery, and dynamic org restructuring).
+- Audited 27/27 mandatory acceptance gates passed (G01 to G27).
+- Verified 1:1 active assignment ratio (273 active eligible employees = 273 current active assignments).
+- Verified 0 unintended production writes.
+- Created deliverable certification reports in `docs/phase6b/` ([`PHASE_6B_FINAL_CERTIFICATION.md`](file:///c:/Users/allda/Desktop/Dev/git/OrgFlow/docs/phase6b/PHASE_6B_FINAL_CERTIFICATION.md)).
+- Enforced Mandatory Stop Gate (Stopped before bulk migration / Phase 6C).
+
+---
+
 ## [v1.2.3-phase6a] - 2026-08-22
 
 ### Added
