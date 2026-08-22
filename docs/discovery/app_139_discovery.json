@@ -1,0 +1,25 @@
+{
+  "appId": "139",
+  "appName": "SLIP FOR WELFARE / สำหรับเบิกสวัสดิการ",
+  "totalFields": 34,
+  "lookups": [
+    {
+      "fieldCode": "Lookup",
+      "label": "EMP.CODE. / รหัสพนักงาน",
+      "type": "NUMBER",
+      "relatedAppId": "53",
+      "relatedKeyField": "Number",
+      "copiedFields": [
+        "Text <- Text",
+        "Text_0 <- Drop_down",
+        "Text_1 <- Text_2",
+        "Text_2 <- Text_6",
+        "Number <- Number",
+        "Number_0 <- Number_0",
+        "Text_8 <- Drop_down_2",
+        "Text_4 <- Text_5"
+      ]
+    }
+  ],
+  "timestamp": "2026-08-22T05:31:02.652Z"
+}
